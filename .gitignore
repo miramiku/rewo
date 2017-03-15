@@ -1,0 +1,9 @@
+# brackets 設定ファイル
+.brackets.json
+gulpfile.js
+
+# folder
+styles/raw-image/
+node_modules/
+private/
+.vscode/
