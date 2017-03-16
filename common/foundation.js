@@ -1,0 +1,81 @@
+var REWO = {};
+
+/** page-scroller */
+REWO.pageScroller = function () {
+	"use strict";
+
+	$( "#rewo" ).on( "click", "a[href^=\"#\"]", function ( e ) {
+		var speed = 500,
+			href = $( this ).attr( "href" ),
+			target = $( href === "#" || href === "" ? "html" : href.replace( ":", "\\:" ) ),
+			position = target.offset().top;
+
+		$( "body, html" ).animate( {
+			scrollTop: position
+		}, speed, "swing" );
+
+		e.preventDefault();
+	} );
+};
+
+/** boot */
+$( document ).ready( function () {
+	"use strict";
+
+	REWO.pageScroller();
+
+	$( "header" )
+		.click( function ( e ) {
+			if ( $( e.target ).attr( "id" ) === "header-content-inner" ) {
+				if ( $( "body" ).hasClass( "hide-header" ) ) {
+					$( "body" ).animate( {
+						width: "1200px"
+					}, {
+							duration: 500,
+							queue: false
+						} );
+					$( "header" ).animate( {
+						width: "300px"
+					}, {
+							duration: 500,
+							queue: false,
+							complete: function () {
+								$( "body" ).removeClass( "hide-header" );
+								$( "#header-content-inner *" ).show();
+							}
+						} );
+					$( "main" ).animate( {
+						marginLeft: "350px",
+						width: "850px"
+					}, {
+							duration: 500,
+							queue: false
+						} );
+				} else {
+					$( "#header-content-inner *" ).hide();
+					$( "body" ).animate( {
+						width: "910px"
+					}, {
+							duration: 500,
+							queue: false
+						} );
+					$( "header" ).animate( {
+						width: "10px"
+					}, {
+							duration: 500,
+							queue: false,
+							complete: function () {
+								$( "body" ).addClass( "hide-header" );
+							}
+						} );
+					$( "main" ).animate( {
+						marginLeft: "50px",
+						width: "850px"
+					}, {
+							duration: 500,
+							queue: false
+						} );
+				}
+			}
+		} );
+} );
