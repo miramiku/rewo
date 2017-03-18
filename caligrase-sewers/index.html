@@ -1,0 +1,5292 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>カリグラーゼ下水道 | Recollection of Wizardry Online</title>
+
+	<!-- meta data -->
+	<meta name="author" content="Miku">
+
+	<!-- scripts -->
+	<script src="../common/core.js" async></script>
+
+	<!-- style / favicon -->
+	<link href="../common/foundation.css" rel="stylesheet" type="text/css">
+	<link href="../common/fancybox.css" rel="stylesheet" type="text/css">
+	<link href="../favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body id="rewo">
+	<header style="background-image: url( header-background.jpg );">
+		<div id="header-content">
+			<div id="header-content-inner">
+				<a href="https://miramiku.github.io/rewo/" id="page-info">
+					<span id="meta-info" class="page-headings">1st</span>
+					<span id="major-title" class="page-headings">カリグラーゼ下水道</span>
+					<span id="title-divider" class="page-headings"></span>
+					<span id="minor-title" class="page-headings">Caligrase Sewers</span>
+				</a>
+
+				<footer>
+					<ul>
+						<li><a href="http://miramiku.github.io/"><span class="basis-icon me"> </span> みく(๑・ω・๑)</a></li>
+						<li><a href="https://twitter.com/miramiku"><span class="basis-icon tw"> </span> @miramiku</a></li>
+						<li><a href="https://github.com/miramiku/rewo"><span class="basis-icon gh"> </span> Repository</a></li>
+					</ul>
+				</footer>
+
+				<p id="wo-credit">
+					"Wizardry&reg;" of GMO Gamepot Inc. All rights reserved.<br>
+					Wizardry Renaissance&trade; &copy;2009 GMO Gamepot Inc.<br>
+					All rights reserved.
+				</p>
+			</div>
+		</div>
+	</header>
+
+	<main id="top">
+		<div id="main-inner">
+			<article>
+				<h3 id="lore">Lore</h3>
+				<div class="lore-wrapper">
+					<div class="lore">
+						<p>
+							カリグラーゼ下水道。
+						</p>
+						<p>
+							今では、使われなくなった地下水路の一区画。<br>
+							出現する魔物も弱く、駆け出し冒険者の<br>
+							腕試しの場として活用されている。
+						</p>
+						<p>
+							だが、そういった冒険者達を襲う<br>
+							盗賊団が出現した。
+						</p>
+						<p>
+							事態の打開策として冒険者ギルドは<br>
+							魔法局の力を借り、罠を仕掛け<br>
+							盗賊団を閉じ込めることに成功した。
+						</p>
+						<p>
+							しかし、再びその盗賊団が罠を<br>
+							抜け出したとの噂が立つ……。
+						</p>
+					</div>
+					<div class="lore">
+						<p>An unused portion of the underground sewer system. Beginner adventurers can use this area to test their skills as only weak monsters appear in Caligrase.</p>
+						<p>Of course, that leads certain thieves looking to profit from beginners, to this area.</p>
+						<p>The Adventurer's guild, with the help of the Ministry of Arcanum, set traps for the thieves to lock them in the dungeon.</p>
+						<p>However, there are rumors that the thieves have finally escaped.</p>
+					</div>
+				</div>
+
+				<h3 id="enemies">モンスターリスト</h3>
+				<table class="enemies">
+					<thead>
+						<tr>
+							<th></th>
+							<th>モンスター名 / Literal</th>
+							<th>解釈</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><img class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/zombie.jpg" alt="ゾンビ"></td>
+							<td>
+								<span class="display">ゾンビ</span>
+								<span class="literal">Zombie</span>
+							</td>
+							<td>
+								<a href="https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%BC%E3%83%89%E3%82%A5%E3%83%BC%E6%95%99">ブードゥー教</a> の霊魂。<br>
+								現在のイメージが定着したのは 1968 年に公開されたアメリカ映画 <a href="https://ja.wikipedia.org/wiki/%E3%83%8A%E3%82%A4%E3%83%88%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%82%B6%E3%83%BB%E3%83%AA%E3%83%93%E3%83%B3%E3%82%B0%E3%83%87%E3%83%83%E3%83%89">Night of the Living Dead</a> により定着している。
+							</td>
+						</tr>
+						<tr>
+							<td><img class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/beetle.jpg" alt="ビートル"></td>
+							<td>
+								<span class="display">ビートル</span>
+								<span class="literal">Beetle</span>
+							</td>
+							<td>甲虫</td>
+						</tr>
+						<tr>
+							<td><img class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/hide-beetle.jpg" alt="ハイドビートル"></td>
+							<td>
+								<span class="display">ハイドビートル</span>
+								<span class="literal">Hide Beetle</span>
+							</td>
+							<td>
+								hide: 潜伏している<br>
+								beetle: 甲虫
+							</td>
+						</tr>
+						<tr>
+							<td><img class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/rookie-scout.jpg" alt="バッドローズ団員 ルーキースカウト"></td>
+							<td>
+								<span class="display"><span class="syn">バッドローズ団員</span>ルーキースカウト</span>
+								<span class="literal"><span class="syn">The Bad Rose Clan Member</span>Rookie Scout</span>
+							</td>
+							<td>
+								rookie: 新人<br>
+								scout: 偵察者
+							</td>
+						</tr>
+						<tr>
+							<td><img class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/rogue-leader.jpg" alt="追放者 ローグリーダー"></td>
+							<td>
+								<span class="display"><span class="syn">追放者</span>ローグリーダー</span>
+								<span class="literal"><span class="syn">Outcast</span>Rogue Leader</span>
+							</td>
+							<td>rogue: 悪漢、ごろつき、悪党</td>
+						</tr>
+						<tr>
+							<td><img class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/living-dead.jpg" alt="リビングデッド"></td>
+							<td>
+								<span class="display">リビングデッド</span>
+								<span class="literal">Living Dead</span>
+							</td>
+							<td>
+								living: 生きている<br>
+								daed: 死者
+							</td>
+						</tr>
+						<tr>
+							<td><img class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/rookie-watchman.jpg" alt="バッドローズ団員 ルーキーウォッチマン"></td>
+							<td>
+								<span class="display"><span class="syn">バッドローズ団員</span>ルーキーウォッチマン</span>
+								<span class="literal"><span class="syn">The Bad Rose Clan Member</span>Rookie Watchman</span>
+							</td>
+							<td>
+								rookie: 新人<br>
+								watchman: 警備員
+							</td>
+						</tr>
+						<tr>
+							<td><img class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/highwayman.jpg" alt="ハイウェイマン"></td>
+							<td>
+								<span class="display">ハイウェイマン</span>
+								<span class="literal">Highwayman</span>
+							</td>
+							<td>おいはぎ</td>
+						</tr>
+						<tr>
+							<td><img class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/lumberjack.jpg" alt="ランバージャック"></td>
+							<td>
+								<span class="display">ランバージャック</span>
+								<span class="literal">Lumberjack</span>
+							</td>
+							<td>木こり</td>
+						</tr>
+						<tr>
+							<td><img class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/garbage.jpg" alt="ガーベッジ"></td>
+							<td>
+								<span class="display">ガーベッジ</span>
+								<span class="literal">Garbage</span>
+							</td>
+							<td>生ごみ</td>
+						</tr>
+						<tr>
+							<td><img class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/gas-cloud.jpg" alt="ガスクラウド"></td>
+							<td>
+								<span class="display">ガスクラウド</span>
+								<span class="literal">Gas Cloud</span>
+							</td>
+							<td>cloud: 立ち込める物</td>
+						</tr>
+						<tr>
+							<td><img class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/swamp-fear.jpg" alt="スワンプフィアー"></td>
+							<td>
+								<span class="display">スワンプフィアー</span>
+								<span class="literal">Swamp Fear</span>
+							</td>
+							<td>
+								swamp: 湿地<br>
+								fear: 恐怖感
+							</td>
+						</tr>
+						<tr>
+							<td><img class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/huge-frog.jpg" alt="ヒュージフロッグ"></td>
+							<td>
+								<span class="display">ヒュージフロッグ</span>
+								<span class="literal">Huge Frog</span>
+							</td>
+							<td>
+								huge: 巨大な<br>
+								frog: カエル
+							</td>
+						</tr>
+						<tr>
+							<td><img class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/kobold.jpg" alt="コボルド"></td>
+							<td>
+								<span class="display">コボルド</span>
+								<span class="literal">Kobold</span>
+							</td>
+							<td>
+								ドイツの<strong>醜い</strong>妖精、精霊（日本語のニュアンスでは子鬼）。<br>
+								<a href="https://ja.wikipedia.org/wiki/%E3%83%80%E3%83%B3%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%BA%26%E3%83%89%E3%83%A9%E3%82%B4%E3%83%B3%E3%82%BA">ダンジョンズ &amp; ドラゴンズ</a> では、臆病だが残酷な小柄で犬に似た頭部を持つ人型生物。<br>
+								日本においては<a href="https://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%A3%E3%82%B6%E3%83%BC%E3%83%89%E3%83%AA%E3%82%A3">ウィザードリィ</a>をファミコン版に移植したときに担当した<a href="https://ja.wikipedia.org/wiki/%E6%9C%AB%E5%BC%A5%E7%B4%94">末弥純</a> 氏のイラストにより犬頭の人型生物というイメージが定着している。
+							</td>
+						</tr>
+						<tr>
+							<td><img class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/scrooge-beetle.jpg" alt="スクルージビートル"></td>
+							<td>
+								<span class="note rare">Rare Creature</span>
+								<span class="display">スクルージビートル</span>
+								<span class="literal">Scrooge Beetle</span>
+							</td>
+							<td>
+								beetle: 甲虫<br>
+								scrooge: 守銭奴<br>
+								<a href="https://ja.wikipedia.org/wiki/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%AB%E3%82%BA%E3%83%BB%E3%83%87%E3%82%A3%E3%82%B1%E3%83%B3%E3%82%BA">チャールズ・ディケンズ (Charles Dickens)</a> 作の<a href="">クリスマス・キャロル (A Christmas Carol)</a> の主人公が守銭奴である事が由来
+							</td>
+						</tr>
+						<tr>
+							<td><img class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/silver-fang.jpg" alt="孤高の銀狼 シルバーファング"></td>
+							<td>
+								<span class="note unique">Unique Creature</span>
+								<span class="display"><span class="syn">孤高の銀狼</span>シルバーファング</span>
+								<span class="literal"><span class="syn">Lone Wolf</span>Silver Fang</span>
+							</td>
+							<td>
+								silver: 銀色をした<br>
+								fang: 肉食動物の牙
+							</td>
+						</tr>
+						<tr>
+							<td><img class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/ragly-legion.jpg" alt="ラグリーレギオン"></td>
+							<td>
+								<span class="note guardian">1st Guardian's Gate</span>
+								<span class="display">ラグリーレギオン</span>
+								<span class="literal">Ｒagly Legion</span>
+							</td>
+							<td>
+								ragly: ぼろぼろの<br>
+								legion: 軍団
+							</td>
+						</tr>
+						<tr>
+							<td><img class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/ragly-dominion.jpg" alt="腐敗者 ラグリードミニオン"></td>
+							<td>
+								<span class="note guardian">1st Guardian's Gate</span>
+								<span class="display"><span class="syn">腐敗者</span>ラグリードミニオン</span>
+								<span class="literal"><span class="syn">Corruptionist</span>Ｒagly Dominion</span>
+							</td>
+							<td>
+								ragly: ぼろぼろの<br>
+								dominion: 支配（者？）
+							</td>
+						</tr>
+						<tr>
+							<td><img class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/caged-beetle.jpg" alt="ケージドビートル"></td>
+							<td>
+								<span class="note guardian">2nd Guardian's Gate</span>
+								<span class="display">ケージドビートル</span>
+								<span class="literal">Caged Beetle</span>
+							</td>
+							<td>
+								caged: 虫取りかごに入った<br>
+								beetle: 甲虫
+							</td>
+						</tr>
+						<tr>
+							<td><img class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/crazy-lilac.jpg" alt="バッドローズ団員 クレイジーライラック"></td>
+							<td>
+								<span class="note guardian">3rd Guardian's Gate</span>
+								<span class="display"><span class="syn">バッドローズ団員</span>クレイジーライラック</span>
+								<span class="literal"><span class="syn">The Bad Rose Clan Member</span>Crazy Lilac</span>
+							</td>
+							<td>
+								（参考）<br>
+								crazy: 正気でない<br>
+								lilac: ライラック《植物名》
+							</td>
+						</tr>
+						<tr>
+							<td><img class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/dandelion.jpg" alt="バッドローズ団員 ダンデライオン"></td>
+							<td>
+								<span class="note guardian">3rd Guardian's Gate</span>
+								<span class="display"><span class="syn">バッドローズ団員</span>ダンデライオン</span>
+								<span class="literal"><span class="syn">The Bad Rose Clan Member</span>Dandelion</span>
+							</td>
+							<td>
+								（参考）<br>
+								タンポポ
+							</td>
+						</tr>
+						<tr>
+							<td><img class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/hungry-pansy.jpg" alt="バッドローズ団員 ハングリーパンジー"></td>
+							<td>
+								<span class="note guardian">3rd Guardian's Gate</span>
+								<span class="display"><span class="syn">バッドローズ団員</span>ハングリーパンジー</span>
+								<span class="literal"><span class="syn">The Bad Rose Clan Member</span>Hungry Pansy</span>
+							</td>
+							<td>
+								（参考）<br>
+								hungry: 空腹の<br>
+								pansy: スミレ（女々しい男）
+							</td>
+						</tr>
+						<tr>
+							<td><img class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/mad-jasmine.jpg" alt="バッドローズ団員 マッドジャスミン"></td>
+							<td>
+								<span class="note guardian">3rd Guardian's Gate</span>
+								<span class="display"><span class="syn">バッドローズ団員</span>マッドジャスミン</span>
+								<span class="literal"><span class="syn">The Bad Rose Clan Member</span>Mad Jasmine</span>
+							</td>
+							<td>
+								（参考）<br>
+								mad: 気が狂った<br>
+								jasmine: ジャスミン《植物名》
+							</td>
+						</tr>
+						<tr>
+							<td><img class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/bad-rose.jpg" alt="盗賊団バッドローズ バッドローズ"></td>
+							<td>
+								<span class="note guardian">3rd Guardian's Gate</span>
+								<span class="display"><span class="syn">盗賊団バッドローズ</span>バッドローズ</span>
+								<span class="literal"><span class="syn">The Bad Rose Clan</span>Bad Rose</span>
+							</td>
+							<td>
+								（参考）<br>
+								bad: 悪の<br>
+								rose: バラ
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3 id="portal">クエスト受注</h3>
+				<h4 id="portal-1">冒険者ギルドへの登録</h4>
+				<div class="lines">
+					<div class="header">
+						<span class="character">リアール（再掲）</span>
+						<span class="race">HUM♀</span>
+					</div>
+					<div class="text">
+						<p>
+							<span class="tag"><span>valuable</span> <span>item</span></span> 冒険者の証<br>
+							道が分からないようなら、<br>
+							そこにある<span class="wo-name">トランスポーター</span>を使うと良い。<br>
+							あれを使えば<span class="wo-site">港町イルファーロ</span>の要所に<br>
+							移動することが出来る。
+						</p>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox src="../common/placeholder.png" data-src="../deep-sea-port/npcs/リアール.jpg" alt="訓練所係員 リアール">
+					</div>
+					<div class="footer">
+						<span class="fullname">訓練所係員 リアール</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 I3</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> 冒険者ギルドへの登録（開始）</div>
+						<div class="client"><span class="wo-name">エレシェ</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							よくぞ「冒険者の証」を手に入れた。<br>
+							ギルドへ行き、登録を済ませれば、<br>
+							キミも晴れて冒険者の仲間入りだ。
+						</p>
+					</div>
+					<span class="label">報酬</span>
+					<div class="rewards">
+						<span class="exp">150</span>
+						<span class="price">0</span>
+					</div>
+					<div class="footer">
+						<span class="unit">ソウル単位</span>
+						<span class="breach">放棄不可</span>
+						<span>無操作進行</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> 冒険者ギルドへの登録#01</div>
+						<div class="client"><span class="wo-name">エレシェ</span></div>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						<span class="wo-item">冒険者の証</span>を持ってギルドへ行き登録を済ませろ！
+						<div class="tasks">
+							<span class="task"><span>冒険者の証を渡す</span><span>1</span></span>
+						</div>
+					</div>
+					<div class="footer">
+						<span class="unit">ソウル単位</span>
+						<span class="breach">放棄不可</span>
+						<span>無操作進行</span>
+					</div>
+				</div>
+
+				<div class="movie">
+					<div class="header">
+						<span class="title">（タイトル不詳）</span>
+					</div>
+					<div class="scripts">
+						<p>
+							<span class="speaker">スザンヌ</span>
+							冒険者ギルドに行きたいの？<br>
+							それならまず広場にでるといいよ。<br>
+							Ｍキーを押してマップを見てごらん。<br>
+							北のほうに冒険者ギルドがあるから。<br>
+							目的地を探すことも冒険者に必要な能力だから。<br>
+							辿りつけないなんて事は…ないよね？<br>
+							ちょっと解りにくいところにあるけど<br>
+							頑張っていってみなよ。<br>
+							もし道がわからなくなっても大丈夫。<br>
+							きっと誰かが教えてくれるからさ。<br>
+							新米冒険者さんへの道案内は街の人に<br>
+							とっては恒例行事みたいなもんだからね。
+						</p>
+					</div>
+					<div class="screenshots">
+						<img class="lazyload" data-fancybox="movie-a" src="../common/placeholder.png" data-src="movies/001.jpg" alt="">
+						<img class="lazyload" data-fancybox="movie-a" src="../common/placeholder.png" data-src="movies/002.jpg" alt="">
+						<img class="lazyload" data-fancybox="movie-a" src="../common/placeholder.png" data-src="movies/003.jpg" alt="">
+					</div>
+					<div class="footer">
+						<span class="flag">イベントリプレイ対象外</span>
+					</div>
+				</div>
+
+				<h4 id="portal-2">冒険者ギルドの試練</h4>
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> 冒険者ギルドの試練（開始）</div>
+						<div class="client"><span class="wo-name">ドルク</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							<span class="wo-site">カリグラーゼ下水道</span>でバッドローズって盗賊団が<br>
+							悪さをして迷惑している。<br>
+							奴らを退治してくれ。まあ、新米冒険者にゃ、<br>
+							骨の折れる仕事だと思うが、頑張ってくれや。
+						</p>
+					</div>
+					<span class="label">報酬</span>
+					<div class="rewards">
+						<span class="exp">3,500</span>
+						<span class="price">3,000</span>
+						<span class="items">
+						<br>
+						<span class="reward-item"><img class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/冒険者のペンダント.png" alt="冒険者のペンダント">冒険者のペンダント</span>
+						<span class="reward-item"><img class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/簡易キャンプ.png" alt="簡易キャンプ">簡易キャンプx5</span>
+						<span class="reward-item"><img class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/冒険者ポーチ.png" alt="冒険者ポーチ">冒険者ポーチ</span>
+						</span>
+					</div>
+					<span class="label">選択報酬</span>
+					<div class="choices">
+						<span class="choice-item"><img class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/セスタス.png" alt="セスタス">セスタス</span>
+						<span class="choice-item"><img class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/ダガー.png" alt="ダガー">ダガー</span>
+						<span class="choice-item"><img class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/メイジナイフ.png" alt="メイジナイフ">メイジナイフ</span>
+						<span class="choice-item"><img class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/ハンガー.png" alt="ハンガー">ハンガー</span>
+						<span class="choice-item"><img class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/カジェル.png" alt="カジェル">カジェル</span>
+						<span class="choice-item"><img class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/スタッフ.png" alt="スタッフ">スタッフ</span>
+						<span class="choice-item"><img class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/バックラー.png" alt="バックラー">バックラー</span>
+						<span class="choice-item"><img class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/メイジバックラー.png" alt="メイジバックラー">メイジバックラー</span>
+					</div>
+					<div class="footer">
+						<span>ソウル単位</span><span>放棄不可</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ドルク</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<div class="either">
+							<span class="gauge"></span>
+							<div class="option">
+								<span class="option"><span class="tag"><span>first</span></span>初回</span>
+								<p>
+									ん？　なんの用だ？<br>
+									……って、まぁ、ここに来るやつの用なんて<br>
+									だいたい決まっているけどな。
+								</p>
+								<p class="descriptive">
+									冒険者の証を渡しました。
+								</p>
+								<p>
+									ほう、証明書を持ってきたってことは<br>
+									お前さんも一人前の冒険者ってこったな。<br>
+									よし、ギルドの一員と認めてやろう。
+								</p>
+								<p class="descriptive">
+									冒険者ギルドの許可を得たので、<br>
+									自由と賑わいの市場に行けるようになりました。
+								</p>
+								<p>
+									で、さっそく仕事を受ける気はあるか？<br>
+									この頃、やけに依頼が多くてな。<br>
+									お前さんのような新米の手も借りたいんだよ。<br>
+									仕事の内容だが、<span class="wo-site">カリグラーゼ下水道</span>ってダンジョンが<br>
+									あるんだが、そこは大した魔物もいなくって<br>
+									駆け出し冒険者の腕鳴らしにゃちょうどいい場所なんだ。<br>
+									だが、そこで盗賊ギルドに所属しないバッドローズと<br>
+									名乗る盗賊団が悪さを始めて問題になったんだ。<br>
+									冒険者ギルドとしても黙っているわけにはいかんからな。<br>
+									魔法局と協力してやつらの頭領と幹部連中を<br>
+									閉鎖空間に閉じ込めてやったんだ。<br>
+									しばらくは静かになったが、<br>
+									ここに来てまた駆け出し冒険者が襲われる事件が<br>
+									頻発するようになった。<br>
+									どうやらやつら閉鎖空間を抜け出して、<br>
+									また悪さを働いているらしい。
+								</p>
+							</div>
+							<div class="option">
+								<span class="option"><span class="tag"><span>again</span></span>２回目以降</span>
+								<p>
+									ん？　どうした、依頼を受ける気になったか？
+								</p>
+							</div>
+						</div>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>quest</span></span>冒険者ギルドの試練</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>accept</span></span>受注</span>
+									<p>
+										新米にゃあ、ちょいと骨の折れる仕事かもしれんが<br>
+										まあ、やってやれないことはないだろう。<br>
+										がんばってくれ。<br>
+										バッドローズの連中は徒党を組んでいるからな、<br>
+										一人できついと感じたら他の冒険者と<br>
+										パーティを組むのも手だぞ。<br>
+										これは、ダンジョンの入場許可証だ。<br>
+										持っていけ。<br>
+										ん？　どうした、まだいるのか？<br>
+										何？　ダンジョンへの行き方だと？<br>
+										まったく、そんなことも分からんのか、お前さんは。<br>
+										しかたねえ、教えてやるか。<br>
+										このギルド出て階段を下った先に噴水のある<br>
+										広場があるだろう？<br>
+										その先に旅立ちの門と呼ばれる大きな門があるんだ。<br>
+										その前にダンジョン案内をしてくれる野郎が居る。<br>
+										そいつに話しかければ、ダンジョンまでの<br>
+										行く道を案内してくれるぞ。<br>
+										旅立ちの門までは、地図を見ながら行ってくれ。<br>
+										あ、あと今回だけ特別に 2,000 G やるから<br>
+										<span class="wo-site">自由と賑わいの市場</span>で冒険に必要な品を揃えていくといい。<br>
+										<span class="tag"><span>valuable</span> <span>item</span></span> カリグラーゼ下水道入場許可証<br>
+										<span class="tag"><span>gold</span></span> 2,000 G
+									</p>
+									<p class="descriptive">
+										2000G を受け取った。
+									</p>
+									<p class="descriptive">
+										カリグラーゼ下水道に行けるようになりました。
+									</p>
+									<p>
+										おおっと、そうだな。<br>
+										お前さんの門出を祝って旅立ちの門までは案内してやる。<br>
+										今後道に迷ったら<span class="wo-name">トランスポーター</span>を使うといいぜ。
+									</p>
+									<p class="descriptive">
+										ダンジョン案内 NPC まで移動します。
+									</p>
+									<p>
+										<span class="tag"><span>teleportation</span></span>G9
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>reject</span></span>閉じる</span>
+									<p>
+										そうかい。<br>
+										気が向いたら、いつでも来てくれ。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox src="../common/placeholder.png" data-src="../heros-sqaure/npcs/Dwark.jpg" alt="冒険者ギルド ドルク">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者ギルド ドルク</span>
+						<span class="coordinate">港町イルファーロ 英雄の集う広場 G2 冒険者ギルド</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> 冒険者ギルドへの登録（達成）</div>
+						<div class="client"><span class="wo-name">エレシェ</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							冒険者ギルドに登録した。
+						</p>
+					</div>
+					<div class="footer">
+						<span class="unit">ソウル単位</span>
+						<span class="breach">放棄不可</span>
+						<span>無操作進行</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> 冒険者ギルドの試練#01</div>
+						<div class="client"><span class="wo-name">ドルク</span></div>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						<span class="wo-site">カリグラーゼ下水道</span>にいるバッドローズ盗賊団を倒す
+						<div class="tasks">
+							<span class="task"><span>バッドローズ団を倒す</span><span>1</span></span>
+						</div>
+					</div>
+					<div class="footer">
+						<span class="unit">ソウル単位</span>
+						<span class="breach">放棄不可</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ドルク</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<p>
+							ん？　どうした？<br>
+							ちょいと骨の折れる仕事かもしれんが<br>
+							がんばってくれ。
+						</p>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox src="../common/placeholder.png" data-src="../heros-sqaure/npcs/Dwark.jpg" alt="冒険者ギルド ドルク">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者ギルド ドルク</span>
+						<span class="coordinate">港町イルファーロ 英雄の集う広場 G2 冒険者ギルド</span>
+					</div>
+				</div>
+
+				<h3 id="walk-through">ダンジョン攻略</h3>
+				<h4 id="walk-through-1">入口付近の NPC と設備</h4>
+				<div class="lines">
+					<div class="header">
+						<span class="character">スティア</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>冒険者ギルド出張所</span>
+							<span>ADVENTURER'S GUILD : BRANCH OFFICE</span>
+						</p>
+						<p>
+							ここでは、<span class="wo-site">カリグラーゼ下水道</span>の<br>
+							ミッションの受注・報告を行なっている。<br>
+							それと簡単な冒険者の心得も教えているぞ。<br>
+							そうそう、冒険者ギルドからお得なお知らせがあるぞ。<br>
+							倍率が付いたミッションは一日一回報酬に倍率が掛かる。<br>
+							日付が変われば元に戻るので、うまく利用すると良い。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>どうする？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>ミッションを受注</span>
+									<p>
+										<span class="tag"><span>function</span></span>GuildMissions (limited)
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>ミッションを報告</span>
+									<p>
+										報告可能なミッションは無いようだが…。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>冒険者の心得を学びたい<span class="footnote"></span></span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>situation</span></span>未クリアのチュートリアルミッションが１つ以上ある</span>
+											<p>
+												おう、冒険者の心得を学びたいとは良い事だ。<br>
+												俺に教えられる事であれば聞いてくれ。
+											</p>
+											<div class="dialog">
+												<span class="dialog"><span class="tag"><span>dialogue</span></span>どれについて聞きたいんだ？</span>
+												<div class="options">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#t006</span></span>キャンプについて</span>
+														<p>
+															<a href="#tutorial-1">スティアのチュートリアルミッション - キャンプについて</a>
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#t007</span></span>ガーディアンズゲートを攻略しよう</span>
+														<p>
+															<a href="#tutorial-2">スティアのチュートリアルミッション - ガーディアンズゲートを攻略しよう</a>
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#t008</span></span>守護者の像を使いこなそう</span>
+														<p>
+															<a href="#tutorial-3">スティアのチュートリアルミッション - 守護者の像を使いこなそう</a>
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#close</span></span>立ち去る</span>
+														<p>
+															<span class="tag"><span>empty</span></span>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>situation</span></span>現在受注可能なチュートリアルミッションをすべてクリア</span>
+											<p>
+												おう、冒険者の心得を学びたいとは良い事だ。<br>
+												だがこれ以上俺から教えられることはなさそうだな。<br>
+												そのまま向上心を忘れずに頑張ってくれよな。
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>立ち去る</span>
+									<p>
+										<span class="wo-site">カリグラーゼ下水道</span>で仕事がしたくなったら<br>
+										来るといい。
+									</p>
+								</div>
+							</div>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>クリアしたチュートリアルミッションの項目は消滅する</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-1" src="../common/placeholder.png" data-src="npcs/スティア.jpg" alt="冒険者ギルド職員 スティア">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者ギルド職員 スティア</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G6</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">バードン</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								俺が掴んだ情報によると、このダンジョンでは<br>
+								<span class="wo-item">冒険者ポーチ</span>が手に入るそうだ。<br>
+								どこかにいる<span class="wo-enemy">盗賊</span>が落とすようだぞ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								下水道にいる<span class="wo-enemy">カエル</span>に靴を取られた<br>
+								冒険者がいるそうだ。<br>
+								かなりいい靴だったらしいぞ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								このダンジョンでも<span class="wo-item">ジェム</span>が手に入るな。<br>
+								効果は微々たるものだが、無いよりはマシだろう。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+							<p>
+								このダンジョンの奥に<span class="wo-enemy">コボルド</span>がいるぞ。<br>
+								奴らは良いアイテムをため込んでいるな。<br>
+								まあ、めったに落とさないんだが。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>E</span>
+							<p>
+								ついに<span class="wo-item">盗賊の小手</span>を手に入れたぞ！<br>
+								だが、どの<span class="wo-enemy">盗賊</span>が落としたか忘れてしまった…<br>
+								ダンジョンの入口付近ではなかったはずだが…
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>F</span>
+							<p>
+								盗賊共の中に体の大きい奴がいるだろう？<br>
+								そいつはまれに<span class="wo-item">戦士の盾</span>を落とすぞ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>G</span>
+							<p>
+								防御力を上げたいのか？<br>
+								それなら<span class="wo-item">忍耐の脚鎧</span>を探してみろ。<br>
+								体の大きい敵から手に入るはずだ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>H</span>
+							<p>
+								<span class="wo-site">冒険者の入口</span>の地図は集めているか？<br>
+								<span class="wo-enemy">ルーキースカウト</span>、<span class="wo-enemy">コボルド</span>がそれぞれ落とすぞ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>I</span>
+							<p>
+								<span class="wo-item">マジックガード</span>が欲しければ<br>
+								盗賊のアジトを<span class="footnote">超えて</span>下水道に行くといい。<br>
+								<span class="wo-enemy">溶けたゾンビ</span>を沢山倒してりゃ手に入るだろうよ。
+							</p>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>原文のママ</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-1" src="../common/placeholder.png" data-src="npcs/バードン.jpg" alt="トレジャーハンター バードン">
+					</div>
+					<div class="footer">
+						<span class="fullname">トレジャーハンター バードン</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 F3</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">モニーク</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							やぁ、死んでしまいましたね！<br>
+							そんなあなたにいいことを教えましょう。<br>
+							その<span class="wo-keyword">守護者の像</span>とかいうのにお祈りすると<br>
+							<span class="wo-keyword">魂の天秤</span>を呼び出せますよ。<br>
+							<span class="wo-keyword">魂の天秤</span>を呼び出せば、<br>
+							対価を払って蘇る確率を上げることもできます。<br>
+							私？　私は<span class="footnote">自縛霊</span>ってやつですよ。<br>
+							肉体はとっくに消滅して、<br>
+							もう生き返ることはできないんですよ。<br>
+							あの天秤に対価を払うべきか、<br>
+							何も払わず運に任せるべきか<br>
+							迷ってるうちに肉体がなくなっちゃいましたよ。
+						</p>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>原文のママ</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-1" src="../common/placeholder.png" data-src="npcs/モニーク.jpg" alt="幽霊 モニーク">
+					</div>
+					<div class="footer">
+						<span class="fullname">幽霊 モニーク</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G2</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">パーキー</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							やぁ、死んでしまったのかい？　ふふふ<br>
+							ダンジョン入り口に置いてある<span class="wo-keyword">守護者の像</span>に<br>
+							願をかけるといい。<br>
+							生き返る資格があるのなら<span class="wo-keyword">魂の天秤</span>を呼び出せるからさ。<br>
+							入り口はここより北にあるよ。<br>
+							私は蘇生に失敗して灰になったり消滅するのが嫌なのでね<br>
+							ずっとこのままでいようかと思ってね。<br>
+							腹も減らないし、働かなくていいし、満足しているよ。<br>
+							たまに魂を浄化しに来る<span class="wo-keyword">ソウルイーター</span>の<br>
+							<span class="wo-enemy">ウォーカー</span>は怖いけどね！
+						</p>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-1" src="../common/placeholder.png" data-src="npcs/パーキー.jpg" alt="幽霊 パーキー">
+					</div>
+					<div class="footer">
+						<span class="fullname">幽霊 パーキー</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 F5</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">（無名）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p class="descriptive">
+							ここからイルファーロに帰還できます。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>街に戻りますか？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+									<p>
+										<span class="tag"><span>entering</span></span><span class="wo-site">港町イルファーロ</span>
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-1" src="../common/placeholder.png" data-src="npcs/帰還用ポール1.jpg" alt="帰還用ポール">
+					</div>
+					<div class="footer">
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G7</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">守護者の像</span>
+						<span class="race">Guardian Statue</span>
+					</div>
+					<div class="text">
+						<p>
+							灯火は静かに輝いている…。
+						</p>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-1" src="../common/placeholder.png" data-src="npcs/守護者の像1.jpg" alt="守護者の像">
+					</div>
+					<div class="footer">
+						<span class="fullname">守護者の像</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G2</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">回復の泉</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>回復の泉</span>
+							<span>fountain of healing</span>
+						</p>
+						<p class="descriptive">
+							泉はなみなみと水を湛えている。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>効果：HP と MP が最大の 100% まで回復</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<div class="dialog">
+										<span class="option"><span class="tag"><span>#01</span></span>飲む</span>
+										<div class="either">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+												<p>
+													<span class="tag"><span>function</span></span> fountain
+												</p>
+												<p class="descriptive">
+													次のレベルになるには<br>
+													<span class="var"><span>next-exp</span></span>の経験値が必要です
+												</p>
+												<div class="append">
+													<span class="gauge"></span>
+													<span class="option">ソウルランクアップ可能</span>
+													<p>
+														"ソウルランク"が上がりそうです<br>
+														寺院にいるイシークの巫女のもとへ向かいましょう
+													</p>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>state</span></span>HP と MP が最大時</span>
+												<p class="descriptive">
+													試しに水を飲んでみたが、効果は無いようだ……
+												</p>
+												<p class="descriptive">
+													次のレベルになるには<br>
+													<span class="var"><span>next-exp</span></span>の経験値が必要です
+												</p>
+												<div class="append">
+													<span class="gauge"></span>
+													<span class="option">ソウルランクアップ可能</span>
+													<p>
+														"ソウルランク"が上がりそうです<br>
+														寺院にいるイシークの巫女のもとへ向かいましょう
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>飲まない</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-1" src="../common/placeholder.png" data-src="npcs/回復の泉1.jpg" alt="回復の泉">
+					</div>
+					<div class="footer">
+						<span class="fullname">回復の泉</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G3</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">相互転送装置 A</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>first</span></span>初回</span>
+							<p>
+								転送装置が起動した。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>again</span></span>２回目以降</span>
+							<p>
+								A と描かれた転送装置がある。
+							</p>
+						</div>
+						<div class="dialog">
+							<span class="dialog">
+								<span class="tag"><span>dialogue</span></span>どこに転送しますか？</span>
+							</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#A</span></span>転送装置 A に転送</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>転送装置を使用しますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#A-y</span></span>はい</span>
+												<p>
+													<span class="tag"><span>teleportation</span> G2</span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#A-n</span></span>いいえ</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#B</span></span>転送装置 B に転送<span class="footnote"></span></span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>転送装置を使用しますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#B-y</span></span>はい</span>
+												<p>
+													<span class="tag"><span>teleportation</span> G6</span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#B-n</span></span>いいえ</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#C</span></span>転送装置 C に転送<span class="footnote"></span></span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>転送装置を使用しますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#C-y</span></span>はい</span>
+												<p>
+													<span class="tag"><span>teleportation</span> I7</span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#C-n</span></span>いいえ</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#D</span></span>転送装置 D に転送<span class="footnote"></span></span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>転送装置を使用しますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#D-y</span></span>はい</span>
+												<p>
+													<span class="tag"><span>teleportation</span> G9</span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#D-n</span></span>いいえ</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#leave</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>該当する転送装置を起動すると追加される</li>
+							<li>該当する転送装置を起動すると追加される</li>
+							<li>該当する転送装置を起動すると追加される</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-1" src="../common/placeholder.png" data-src="npcs/相互転送装置_A.jpg" alt="相互転送装置 A">
+					</div>
+					<div class="footer">
+						<span class="fullname">相互転送装置 A</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G2</span>
+					</div>
+				</div>
+
+				<h4 id="walk-through-2">第一ガーディアンズゲート</h4>
+				<div class="lines">
+					<div class="header">
+						<span class="character">光天使の像</span>
+						<span class="race">Guardian's Gate</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>initial state</span></span> 初期状態</span>
+							<p class="descriptive">
+								光天使の像がある。<br>
+								何かの装置のようだ。メッセージが書かれている。
+							</p>
+							<p>
+								ここより先は危険なので、未熟な者は通れないよう<br>
+								宮廷魔術師によって、転送魔法がかかっている。<br>
+								先に進みたければ、4 つのスイッチを押して<br>
+								この装置を起動するべし。<br>
+								　　　　　―　冒険者ギルド　新人冒険者担当　ドルク
+							</p>
+							<div class="append">
+								<span class="gauge"></span>
+								<span class="option">初めてガーディアンズゲートに触れた時のみ追加</span>
+								<p class="descriptive">
+									　　＊　ガーディアンズゲートについて　＊<br>
+									ダンジョンの途中には、ガーディアンズゲートと<br>
+									呼ばれる関門が存在します。
+								</p>
+								<p class="descriptive">
+									リドルと呼ばれる謎解きを解き、装置を起動後、<br>
+									インスタンスバトルをクリアすると道を塞いでいる魔法<br>
+									の障壁を通り抜けられるようになります。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/光天使の像1.jpg" alt="光天使の像">
+					</div>
+					<div class="footer">
+						<span class="fullname">光天使の像</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 F6</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">魔法の障壁</span>
+						<span class="race">void space</span>
+					</div>
+					<div class="text">
+						<p class="descriptive">
+							不思議な力に阻まれ進むことが出来ない
+						</p>
+					</div>
+					<div class="footer">
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">パーロット</span>
+						<span class="race">GNO</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>state</span></span> 第一リドル未解読時</span>
+							<p>
+								こんにちは、冒険者さん。<br>
+								私は<span class="wo-warn">駆け出し冒険者</span>の支援をしている<br>
+								冒険者ギルド職員よ。<br>
+								あなたはまだ最初の仕掛けを突破していないようね。<br>
+								<span class="footnote">1 番、2 番、3 番、4 番</span>のスイッチが<br>
+								まだ押されていないみたい。<br>
+								自ら道を切り開くも良し、<br>
+								他人の助言に耳を傾けるも良し。<br>
+								もしご入り用なら、私から助言を出しましょうか？
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>助言は必要ですか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>1 番のスイッチの位置が知りたい</span>
+										<p>
+											なるほど、1 番のスイッチね。<br>
+											もしかして、下の広間を探していたりするのかしら？<br>
+											探索は手前から順に行うのが基本よ。<br>
+											そうね、<br>
+											そこの階段を下りてすぐ右側にある<br>
+											通路とか調べてみたらどう？
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>2 番のスイッチの位置が知りたい</span>
+										<p>
+											なるほど、2 番のスイッチね。<br>
+											普通に歩き回っていたら見つかるような位置にある<br>
+											と思うけど、意外と見逃したりするのかしら？<br>
+											そうね、<br>
+											光天使の像が見える位置まで真っすぐ降りて行って、<br>
+											左側に見える階段を登って<span class="footnote">みたどう</span>？
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#03</span></span>3 番のスイッチの位置が知りたい</span>
+										<p>
+											なるほど、3 番のスイッチね。<br>
+											普通に歩き回っていたら見つかるような位置にある<br>
+											と思うけど、意外と見逃したりするのかしら？<br>
+											そうね、<br>
+											光天使の像が見える位置まで真っすぐ降りて行って、<br>
+											右側に見える階段を登って<span class="footnote">みたどう</span>？
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#04</span></span>4 番のスイッチの位置が知りたい</span>
+										<p>
+											なるほど、4 番のスイッチね。<br>
+											探索時に迷ったら、壁沿いに歩いてみるのも<br>
+											一つの攻略方法よ。<br>
+											そうね、<br>
+											ここから壁に左手沿いに進んでみたらどう？<br>
+											宝箱の置かれている小部屋に辿り着くと思うわ。
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#05</span></span>立ち去る</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>state</span></span> 第一リドル未解読後<span class="footnote"></span></span>
+							<p>
+								こんにちは、冒険者さん。<br>
+								私は<span class="wo-warn">駆け出し冒険者</span>の支援をしている<br>
+								冒険者ギルド職員よ。<br>
+								おめでとう。<br>
+								一つ目の仕掛けを無事に突破したようね。<br>
+								これからあなたが進む冒険の道には今回のような<br>
+								謎解きが待ち構えていることがあるわ。<br>
+								その時は、冷静に考えダンジョンを隅々まで探索<br>
+								すればきっと道が切り開けるはずよ。<br>
+								さあ、次の仕掛けがあなたを待っているわ。<br>
+								これ以上は私からは手伝えないけれども、<br>
+								冒険者としての知恵と勇気で切り開いてみてね。
+							</p>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>まだ押していないスイッチのみ表示</li>
+							<li>原文のママ</li>
+							<li>原文のママ</li>
+							<li>ガーディアンズゲートの解法状態は問わない</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/パーロット.jpg" alt="冒険者ギルド案内人 パーロット">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者ギルド案内人 パーロット</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G2</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">カート</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<p>
+							うう…なんてザマだ……<br>
+							一攫千金を夢見て冒険者になったはいいが……<br>
+							やはり一人では無理だったか……<br>
+							いいか、よく聞け……<br>
+							下水道の最奥にいるバッドローズは、強敵だ……<br>
+							パーティを組んで挑んだほうがいい……<br>
+							私には地位も名誉も富もあった……<br>
+							だが、最も大切な財産である【友】が無かった……<br>
+							今頃それに気づくとは……
+						</p>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/カート1.jpg" alt="元大富豪の冒険者 カート">
+					</div>
+					<div class="footer">
+						<span class="fullname">元大富豪の冒険者 カート</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 F3</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">朽ち果てた遺体</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>initial state</span></span>初期状態</span>
+							<p class="descriptive">
+								朽ち果てた冒険者と思われる遺体が<br>
+								力なく壁にもたれかかっている。
+							</p>
+							<p>
+								その手には、ボロボロになった<br>
+								羊皮紙（ようひし）が握り締められていた。
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>羊皮紙を取りますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>取る</span>
+										<p>
+											羊皮紙を手に取ってみると<br>
+											それには、地図のようなものが描かれていた。<br>
+											どうやらこのフロアの地図の一部らしい。<br>
+											<span class="tag"><span>item</span></span>冒険者の入口の地図1
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+										<p>
+											遺体は無言のまま、佇んでいる…。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>yield state</span></span><span class="footnote"></span>羊皮紙取得後</span>
+							<p>
+								遺体は無言のまま、佇んでいる…
+							</p>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>ソウル単位</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/朽ち果てた遺体.jpg" alt="朽ち果てた遺体">
+					</div>
+					<div class="footer">
+						<span class="fullname">朽ち果てた遺体</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G4</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">（無名）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p class="headings">
+							＊　落石注意<span class="footnote"></span>　＊
+						</p>
+						<ul class="footnote">
+							<li>落石しない</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/石板1.jpg" alt="石板">
+					</div>
+					<div class="footer">
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G4</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">（無名）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p class="headings">
+							＊　落石注意<span class="footnote"></span>　＊
+						</p>
+						<ul class="footnote">
+							<li>落石しない</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/石板2.jpg" alt="石板">
+					</div>
+					<div class="footer">
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 F4</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">（無名）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p class="headings">
+							＊　落石注意<span class="footnote"></span>　＊
+						</p>
+						<ul class="footnote">
+							<li>落石しない</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/石板3.jpg" alt="石板">
+					</div>
+					<div class="footer">
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 F4</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">チュートン</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							うむぅ……おかしいな。<br>
+							4 つのスイッチを押したはずなのに<br>
+							装置が起動できないな……どこかで間違えたか？<br>
+							もう一度、壁を右手沿いに一周回ってくるか……<br>
+							それとも、入口付近にいる<span class="wo-name">パーロット</span>さんから<br>
+							助言を受けるかなぁ……
+						</p>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/チュートン.jpg" alt="冒険者 チュートン">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者 チュートン</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 F6</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">相互転送装置 B</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>first</span></span>初回</span>
+							<p>
+								転送装置が起動した。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>again</span></span>２回目以降</span>
+							<p>
+								B と描かれた転送装置がある。
+							</p>
+						</div>
+						<div class="dialog">
+							<span class="dialog">
+								<span class="tag"><span>dialogue</span></span>どこに転送しますか？</span>
+							</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#A</span></span>転送装置 A に転送</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>転送装置を使用しますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#A-y</span></span>はい</span>
+												<p>
+													<span class="tag"><span>teleportation</span> G2</span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#A-n</span></span>いいえ</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#B</span></span>転送装置 B に転送</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>転送装置を使用しますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#B-y</span></span>はい</span>
+												<p>
+													<span class="tag"><span>teleportation</span> G6</span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#B-n</span></span>いいえ</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#C</span></span>転送装置 C に転送<span class="footnote"></span></span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>転送装置を使用しますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#C-y</span></span>はい</span>
+												<p>
+													<span class="tag"><span>teleportation</span> I7</span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#C-n</span></span>いいえ</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#D</span></span>転送装置 D に転送<span class="footnote"></span></span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>転送装置を使用しますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#D-y</span></span>はい</span>
+												<p>
+													<span class="tag"><span>teleportation</span> G9</span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#D-n</span></span>いいえ</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#leave</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>該当する転送装置を起動すると追加される</li>
+							<li>該当する転送装置を起動すると追加される</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/相互転送装置_B.jpg" alt="相互転送装置 B">
+					</div>
+					<div class="footer">
+						<span class="fullname">相互転送装置 B</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G6</span>
+					</div>
+				</div>
+
+				<h5 id="switch-1">スイッチ１</h5>
+				<div class="lines">
+					<div class="header">
+						<span class="character">スイッチ</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>initial state</span></span>初期状態</span>
+							<p>
+								何かのスイッチがある。<br>
+								かすれた文字で「<span class="wo-keyword">1</span>」と書かれているようだ。
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>押しますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>押す</span>
+										<p>
+											カチッと音がなった。<br>
+											遠くの方で何かが振動する音が聞こえた。
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+										<p>
+							<span class="tag"><span>empty</span></span>
+						</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>yield state</span></span>スイッチを押した後</span>
+							<p>
+								かすれた文字で「<span class="wo-keyword">1</span>」と書かれたスイッチがある。<br>
+								スイッチは、すでに押されている。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/スイッチ1.jpg" alt="スイッチ">
+					</div>
+					<div class="footer">
+						<span class="fullname">スイッチ</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 E3</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">（無名）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p class="headings">
+							＊　落石注意<span class="footnote"></span>　＊
+						</p>
+						<ul class="footnote">
+							<li>落石ポイント付近にあり</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/石板4.jpg" alt="石板">
+					</div>
+					<div class="footer">
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 E4</span>
+					</div>
+				</div>
+
+				<h5 id="switch-2">スイッチ２</h5>
+				<div class="lines">
+					<div class="header">
+						<span class="character">（無名）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p class="headings">
+							＊　落石注意<span class="footnote"></span>　＊
+						</p>
+						<ul class="footnote">
+							<li>落石ポイントが石板の直下にあるため、正面から石板に近づくと必ず落石する</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/石板5.jpg" alt="石板">
+					</div>
+					<div class="footer">
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 H5</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">（無名）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p>
+							穴の奥に何かあるようだ。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>調べますか？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>調べる</span>
+									<p>
+										中から何かが手を触れてきた！
+									</p>
+									<p class="effective">
+										<span class="negative">HP ダメージ -5%</span>
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/壁穴1.jpg" alt="壁穴">
+					</div>
+					<div class="footer">
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 H4</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">スイッチ</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>initial state</span></span>初期状態</span>
+							<p>
+								何かのスイッチがある。<br>
+								かすれた文字で「<span class="wo-keyword">2</span>」と書かれているようだ。
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>押しますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>押す</span>
+										<p>
+											カチッと音がなった。<br>
+											遠くの方で何かが振動する音が聞こえた。
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>yield state</span></span>スイッチを押した後</span>
+							<p>
+								かすれた文字で「<span class="wo-keyword">2</span>」と書かれたスイッチがある。<br>
+								スイッチは、すでに押されている。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/スイッチ2.jpg" alt="スイッチ">
+					</div>
+					<div class="footer">
+						<span class="fullname">スイッチ</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G4</span>
+					</div>
+				</div>
+
+				<h5 id="switch-3">スイッチ３</h5>
+				<div class="lines">
+					<div class="header">
+						<span class="character">スイッチ</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>initial state</span></span>初期状態</span>
+							<p>
+								何かのスイッチがある。<br>
+								かすれた文字で「<span class="wo-keyword">3</span>」と書かれているようだ。
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>押しますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>押す</span>
+										<p>
+											カチッと音がなった。<br>
+											遠くの方で何かが振動する音が聞こえた。
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>yield state</span></span>スイッチを押した後</span>
+							<p>
+								かすれた文字で「<span class="wo-keyword">3</span>」と書かれたスイッチがある。<br>
+								スイッチは、すでに押されている。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/スイッチ3.jpg" alt="スイッチ">
+					</div>
+					<div class="footer">
+						<span class="fullname">スイッチ</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 E6</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">（無名）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p class="headings">
+							＊　落石注意<span class="footnote"></span>　＊
+						</p>
+						<ul class="footnote">
+							<li>落石ポイント付近にあり</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/石板6.jpg" alt="石板">
+					</div>
+					<div class="footer">
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 E5</span>
+					</div>
+				</div>
+
+				<h5 id="switch-4">スイッチ４</h5>
+				<div class="lines">
+					<div class="header">
+						<span class="character">スイッチ</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>initial state</span></span>初期状態</span>
+							<p>
+								何かのスイッチがある。<br>
+								かすれた文字で「<span class="wo-keyword">4</span>」と書かれているようだ。
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>押しますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>押す</span>
+										<p>
+											カチッと音がなった。<br>
+											遠くの方で何かが振動する音が聞こえた。
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>yield state</span></span>スイッチを押した後</span>
+							<p>
+								かすれた文字で「<span class="wo-keyword">4</span>」と書かれたスイッチがある。<br>
+								スイッチは、すでに押されている。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/スイッチ4.jpg" alt="スイッチ">
+					</div>
+					<div class="footer">
+						<span class="fullname">スイッチ</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G5</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">光天使の像</span>
+						<span class="race">Guardian's Gate</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>yield state</span></span> リドル解読後</span>
+							<p class="descriptive">
+								光天使の像がある。<br>
+								何かの装置のようだ。メッセージが書かれている。
+							</p>
+							<p>
+								ここより先は危険なので、未熟な者は通れないよう<br>
+								宮廷魔術師によって、転送魔法がかかっている。<br>
+								先に進みたければ、4 つのスイッチを押して<br>
+								この装置を起動するべし。<br>
+								　　　　　―　冒険者ギルド　新人冒険者担当　ドルク<br>
+								装置はゴウゴウ音を立てて稼働しているようだ。<br>
+								装置に取り付けられた水晶玉が光を放っている。<br>
+								触れてみますか？
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>水晶玉に触れますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+										<p class="descriptive">
+											あたり一面を強い光が包んだ。
+										</p>
+										<p>
+											<span class="tag"><span>entering</span></span> 決戦場 決闘者の間
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/光天使の像1.jpg" alt="光天使の像">
+					</div>
+					<div class="footer">
+						<span class="fullname">光天使の像</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 F6</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="race">void space</span>
+					</div>
+					<div class="text">
+						<div class="append">
+							<span class="gauge"></span>
+							<span class="option">ガーディアンズゲートを初めてクリアしたとき</span>
+							<p class="descriptive">
+								魔法の結界を通れるようになりました。
+							</p>
+						</div>
+					</div>
+					<div class="footer">
+						<span class="coordinate">決戦場 決闘者の間</span>
+					</div>
+				</div>
+
+				<h4 id="walk-through-3">第二ガーディアンズゲート</h4>
+				<div class="lines">
+					<div class="header">
+						<span class="character">光天使の像</span>
+						<span class="race">Guardian's Gate</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>initial state</span></span> 初期状態</span>
+							<p class="descriptive">
+								光天使の像がある。<br>
+								何かの装置のようだ。メッセージが書かれている。
+							</p>
+							<p class="headings">
+								＊　全自動虫取り装置　＊
+							</p>
+							<p>
+								しかし装置は稼働していないようだ。<br>
+								何かがはめ込まれていたような丸い窪みと<br>
+								レバーのようなものを差し込める穴が開いている。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-3" src="../common/placeholder.png" data-src="npcs/光天使の像2.jpg" alt="光天使の像">
+					</div>
+					<div class="footer">
+						<span class="fullname">光天使の像</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 J7</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">魔法の障壁</span>
+						<span class="race">void space</span>
+					</div>
+					<div class="text">
+						<p class="descriptive">
+							不思議な力に阻まれ進むことが出来ない
+						</p>
+					</div>
+					<div class="footer">
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">（無名）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p class="headings">
+							＊　落石注意<span class="footnote"></span>　＊
+						</p>
+						<ul class="footnote">
+							<li>落石しない</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-3" src="../common/placeholder.png" data-src="npcs/石板7.jpg" alt="石板">
+					</div>
+					<div class="footer">
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 F7</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ジャスティン</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<p>
+							あんたも<span class="wo-enemy">ゾンビ</span>どもにやられたのかい？<br>
+							それとも高いところから飛び降りて死んだマヌケかい？<br>
+							この先には魂を浄化する<span class="wo-keyword">ソウルイーター</span>の<br>
+							<span class="wo-enemy">ウォーカー</span>がいるから注意しな。<br>
+							もしあんたが<span class="wo-keyword">守護者の像</span>を探しているのなら、<br>
+							それは北にあるぜ。
+						</p>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-3" src="../common/placeholder.png" data-src="npcs/ジャスティン.jpg" alt="幽霊 ジャスティン">
+					</div>
+					<div class="footer">
+						<span class="fullname">幽霊 ジャスティン</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G7</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">（無名）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>initial state</span></span>初期状態</span>
+							<p class="descriptive">
+								薄汚れた机の上にボロボロになった<br>
+								羊皮紙（ようひし）が無造作に置かれていた。
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>羊皮紙を取りますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>取る</span>
+										<p>
+											羊皮紙を手に取ってみると<br>
+											それには、地図のようなものが描かれていた。<br>
+											どうやらこのフロアの地図の一部らしい。<br>
+											<span class="tag"><span>item</span></span>冒険者の入口の地図2
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>yield state</span></span><span class="footnote"></span>羊皮紙取得後</span>
+							<p>
+								机の上には何もない。
+							</p>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>ソウル単位</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-3" src="../common/placeholder.png" data-src="npcs/薄汚れた机.jpg" alt="薄汚れた机">
+					</div>
+					<div class="footer">
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G1</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ラッシェ</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<p>
+							あんた冒険者？<br>
+							大方、冒険者ギルドの盗賊退治の<br>
+							依頼受けてきたってとこね。<br>
+							同業者のよしみで教えてあげるけど<br>
+							この先に盗賊のアジトがあるわよ。<br>
+							そこは、見張りのシーフが巡回しているから<br>
+							通り抜けるのは一苦労ね…<br>
+							でも、奴らマヌケだから後ろからこっそり付いていけば<br>
+							気付かないわよ。<br>
+							まあ、親玉はそこのアジトじゃなく<br>
+							もっと奥に居るみたいだけどね。
+						</p>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-3" src="../common/placeholder.png" data-src="npcs/ラッシェ.jpg" alt="冒険者 ラッシェ">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者 ラッシェ</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 H6</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ウークンツ</span>
+						<span class="race">POR♂</span>
+					</div>
+					<div class="text">
+						<p>
+							こそ泥ども一人あたりは、どおってことなくても<br>
+							纏まった数とやり合うとなりゃ、それなりに骨だからな。<br>
+							一人づつ誘い出して叩くのも手かもしれねえな。
+						</p>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-3" src="../common/placeholder.png" data-src="npcs/ウークンツ.jpg" alt="冒険者 ウークンツ">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者 ウークンツ</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 H6</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">カート</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<p>
+							うう…なんてザマだ……<br>
+							たかが盗賊と侮っていたが……<br>
+							多勢に無勢だったか……<br>
+							しかも同じ冒険者に襲われるとは……<br>
+							これが噂に聞く PK か……<br>
+							襲われるだけならまだしも……<br>
+							装備品まで奪われた……<br>
+							一から出直すか……
+						</p>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-3" src="../common/placeholder.png" data-src="npcs/カート2.jpg" alt="元大富豪の冒険者 カート">
+					</div>
+					<div class="footer">
+						<span class="fullname">元大富豪の冒険者 カート</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 I3 盗賊のアジト</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">回復の泉</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>回復の泉</span>
+							<span>fountain of healing</span>
+						</p>
+						<p class="descriptive">
+							泉に所持金を投げ込み汝の献身を示せ。<br>
+							さすればアヴルールの加護により汝の傷は<br>
+							癒えるだろう。<br>
+							　　　　　　　　　‐　クォパティ教会　‐
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>count</span></span> 利用回数に応じて変化<span class="footnote"></span></span>
+							<div class="either">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>未利用</span>
+									<p class="descriptive">
+										泉はなみなみと水を湛えている。<br>
+										あと 5 回は飲めそうだ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>１回利用</span>
+									<p class="descriptive">
+										泉はなみなみと水を湛えている。<br>
+										あと 4 回は飲めそうだ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>２回利用</span>
+									<p class="descriptive">
+										半分ほど水が貯まった泉がある。<br>
+										あと 3 回は飲めそうだ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>３回利用</span>
+									<p class="descriptive">
+										溜まっている水はあと 2 回も飲めば<br>
+										空になるだろう。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#05</span></span>４回利用</span>
+									<p class="descriptive">
+										泉の水はほとんど残っていない。<br>
+										あと 1 回は飲めるだろう。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#more</span></span>５回利用後<span class="footnote"></span></span>
+									<p class="descriptive">
+										だが、水は枯れてしまっている…
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="dialog">
+							<span class="dialog">
+								<span class="tag"><span>dialogue</span></span>
+							<span class="textbox" style="width: 570px;">
+									いくら投げ込みますか？<br>
+									所持金：<span class="wo-gold"><span class="var"><span>pocket</span></span> G</span>
+							</span>
+							</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>40 G</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>効果：HP と MP が最大値の 30% 回復</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01-a</span></span>投げ込む</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+														<p class="descriptive">
+															お金を投げ入れて水を飲んだ
+														</p>
+														<p>
+															<span class="tag"><span>function</span></span> fountain
+														</p>
+														<p class="descriptive">
+															次のレベルになるには<br>
+															<span class="var"><span>next-exp</span></span>の経験値が必要です
+														</p>
+														<div class="append">
+															<span class="gauge"></span>
+															<span class="option">ソウルランクアップ可能</span>
+															<p>
+																"ソウルランク"が上がりそうです<br>
+																寺院にいるイシークの巫女のもとへ向かいましょう
+															</p>
+														</div>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>pocket</span></span>所持金不足時</span>
+														<p class="descriptive">
+															所持金が足りません
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01-b</span></span>やめる</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>150 G</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>効果：HP と MP が全回復</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02-a</span></span>投げ込む</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+														<p class="descriptive">
+															お金を投げ入れて水を飲んだ
+														</p>
+														<p>
+															<span class="tag"><span>function</span></span> fountain
+														</p>
+														<p class="descriptive">
+															次のレベルになるには<br>
+															<span class="var"><span>next-exp</span></span>の経験値が必要です
+														</p>
+														<div class="append">
+															<span class="gauge"></span>
+															<span class="option">ソウルランクアップ可能</span>
+															<p>
+																"ソウルランク"が上がりそうです<br>
+																寺院にいるイシークの巫女のもとへ向かいましょう
+															</p>
+														</div>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>pocket</span></span>所持金不足時</span>
+														<p class="descriptive">
+															所持金が足りません
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02-b</span></span>やめる</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>飲まない</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>利用回数すべての回復の泉で共有される（ただし利用回数制限のない回復の泉は除く）。ダンジョンの外に出ると利用回数はリセットされる</li>
+							<li>回復の泉利用に関するダイアログは表示されない</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-3" src="../common/placeholder.png" data-src="npcs/回復の泉2.jpg" alt="回復の泉">
+					</div>
+					<div class="footer">
+						<span class="fullname">回復の泉</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 J2 盗賊のアジト</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">（無名）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p>
+							穴の奥に何かあるようだ。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>調べますか？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>調べる</span>
+									<p>
+										何もなかった。<br>
+										埃や汚れが手につき<br>
+										手の平は真っ黒になった。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-3" src="../common/placeholder.png" data-src="npcs/壁穴2.jpg" alt="壁穴">
+					</div>
+					<div class="footer">
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 I4</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">守護者の像</span>
+						<span class="race">Guardian Statue</span>
+					</div>
+					<div class="text">
+						<p>
+							灯火は静かに輝いている…。
+						</p>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-3" src="../common/placeholder.png" data-src="npcs/守護者の像2.jpg" alt="守護者の像">
+					</div>
+					<div class="footer">
+						<span class="fullname">守護者の像</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 I6</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">相互転送装置 C</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>first</span></span>初回</span>
+							<p>
+								転送装置が起動した。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>again</span></span>２回目以降</span>
+							<p>
+								C と描かれた転送装置がある。
+							</p>
+						</div>
+						<div class="dialog">
+							<span class="dialog">
+								<span class="tag"><span>dialogue</span></span>どこに転送しますか？</span>
+							</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#A</span></span>転送装置 A に転送</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>転送装置を使用しますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#A-y</span></span>はい</span>
+												<p>
+													<span class="tag"><span>teleportation</span> G2</span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#A-n</span></span>いいえ</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#B</span></span>転送装置 B に転送<span class="footnote"></span></span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>転送装置を使用しますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#B-y</span></span>はい</span>
+												<p>
+													<span class="tag"><span>teleportation</span> G6</span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#B-n</span></span>いいえ</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#C</span></span>転送装置 C に転送</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>転送装置を使用しますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#C-y</span></span>はい</span>
+												<p>
+													<span class="tag"><span>teleportation</span> I7</span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#C-n</span></span>いいえ</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#D</span></span>転送装置 D に転送<span class="footnote"></span></span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>転送装置を使用しますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#D-y</span></span>はい</span>
+												<p>
+													<span class="tag"><span>teleportation</span> G9</span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#D-n</span></span>いいえ</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#leave</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>該当する転送装置を起動すると追加される</li>
+							<li>該当する転送装置を起動すると追加される</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-3" src="../common/placeholder.png" data-src="npcs/相互転送装置_C.jpg" alt="相互転送装置 C">
+					</div>
+					<div class="footer">
+						<span class="fullname">相互転送装置 C</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 J7</span>
+					</div>
+				</div>
+
+				<h5 id="riddle-2">リドル</h5>
+				<div class="lines">
+					<div class="header">
+						<span class="character">（無名）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>initial state</span></span>初期状態</span>
+							<p>
+								古びた石板に錆付いた鉄の棒が取り付けてある。
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>取り外しますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>取り外す</span>
+										<p>
+											石板から鉄の棒を取り外した。<br>
+											<span class="wo-item">錆びたレバー</span>を手に入れた。<br>
+											<span class="tag"><span>valuable</span> <span>item</span></span> 錆びたレバー
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>yield state</span></span><span class="wo-item">錆びたレバー</span>取得後</span>
+							<p>
+								石板には何も付いていない。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-3" src="../common/placeholder.png" data-src="npcs/古びた石板1.jpg" alt="古びた石板">
+					</div>
+					<div class="footer">
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 J5</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">（無名）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>initial state</span></span>初期状態</span>
+							<p>
+								古びた石板に鈍く光を放つ水晶玉が取り付けてある。
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>取り外しますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>取り外す</span>
+										<p>
+											石板から水晶玉を取り外した。<br>
+											<span class="wo-item">輝く水晶玉</span>を手に入れた。<br>
+											<span class="tag"><span>valuable</span> <span>item</span></span> 輝く水晶玉
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>yield state</span></span><span class="wo-item">輝く水晶玉</span>取得後</span>
+							<p>
+								石板には何も付いていない。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-3" src="../common/placeholder.png" data-src="npcs/古びた石板1.jpg" alt="古びた石板">
+					</div>
+					<div class="footer">
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 I7</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">光天使の像</span>
+						<span class="race">Guardian's Gate</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>riddle state</span></span> <span class="wo-item">輝く水晶玉</span>と<span class="wo-item">錆びたレバー</span>を所持している時</span>
+							<p class="descriptive">
+								光天使の像がある。<br>
+								何かの装置のようだ。メッセージが書かれている。
+							</p>
+							<p class="headings">
+								＊　全自動虫取り装置　＊
+							</p>
+							<p>
+								しかし装置は稼働していないようだ。<br>
+								何かがはめ込まれていたような丸い窪みと<br>
+								レバーのようなものを差し込める穴が開いている。<br>
+								拾った<span class="wo-item">輝く水晶玉</span>と<span class="wo-item">錆びたレバー</span>を取り付けますか？
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>取り付けますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>取り付ける</span>
+										<p>
+											拾った<span class="wo-item">輝く水晶玉</span>と<span class="wo-item">錆びたレバー</span>を取り付け<br>
+											レバーを倒すと装置は起動しはじめた。<br>
+											水晶玉の輝きが一層強さを増す。<br>
+											装置はゴウゴウ音を立てて稼働しているようだ。<br>
+											装置に取り付けられた水晶玉が光を放っている。<br>
+											触れてみますか？
+										</p>
+										<div class="dialog">
+											<span class="dialog"><span class="tag"><span>dialogue</span></span>水晶玉に触れますか？</span>
+											<div class="options">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-a</span></span>はい</span>
+													<p class="descriptive">
+														あたり一面に強い光が包んだ。
+													</p>
+													<p>
+														<span class="tag"><span>entering</span></span> 決戦場 決闘者の間
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-b</span></span>いいえ</span>
+													<p>
+														<span class="tag"><span>empty</span></span>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>yield state</span></span> リドル解読後</span>
+							<p class="descriptive">
+								光天使の像がある。<br>
+								何かの装置のようだ。メッセージが書かれている。
+							</p>
+							<p class="headings">
+								＊　全自動虫取り装置　＊
+							</p>
+							<p>
+								装置はゴウゴウ音を立てて稼働しているようだ。<br>
+								装置に取り付けられた水晶玉が光を放っている。<br>
+								触れてみますか？
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>水晶玉に触れますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+										<p class="descriptive">
+											あたり一面に強い光が包んだ。
+										</p>
+										<p>
+											<span class="tag"><span>entering</span></span> 決闘者の間
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>empty</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-3" src="../common/placeholder.png" data-src="npcs/光天使の像2.jpg" alt="光天使の像">
+					</div>
+					<div class="footer">
+						<span class="fullname">光天使の像</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 J7</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="race">void space</span>
+					</div>
+					<div class="text">
+						<div class="append">
+							<span class="gauge"></span>
+							<span class="option">ガーディアンズゲートを初めてクリアしたとき</span>
+							<p>
+								<span class="tag"><span>valuable</span> <span>item</span></span> カオカ・パラージ遺跡入場許可証
+							</p>
+							<p class="descriptive">
+								虫の死体の山から<br>
+								カオカ・パラージ遺跡入場許可証を見つけた。<br>
+								カオカ・パラージ遺跡に行けるようになりました。
+							</p>
+							<p class="descriptive">
+								魔法の結界を通れるようになりました。
+							</p>
+						</div>
+					</div>
+					<div class="footer">
+						<span class="coordinate">決戦場 決闘者の間</span>
+					</div>
+				</div>
+
+				<h4 id="walk-through-4">第三ガーディアンズゲート</h4>
+				<div class="lines">
+					<div class="header">
+						<span class="character">光天使の像</span>
+						<span class="race">Guardian's Gate</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>initial state</span></span> 初期状態</span>
+							<p class="descriptive">
+								光天使の像がある。<br>
+								何かの装置のようだ。メッセージが書かれている。
+							</p>
+							<p>
+								この先には悪事を働く盗賊団を投獄している。<br>
+								閉鎖空間を開けるべからず！
+							</p>
+							<p class="headings">
+								＊　看守は転送装置の取り扱いに注意すること　＊
+							</p>
+							<p class="descriptive">
+								装置を調べると<br>
+								機械の一部が壊れているようだ<br>
+								あなたは看守の落書きを見つけた。
+							</p>
+							<p>
+								こんなところで看守なんてやってられるか！<br>
+								念のために装置は壊しておいた。<br>
+								後任者は３つのネジを探してきて装置を修理してから<br>
+								起動するべし！<br>
+								ネジは下水のガラクタの中に隠した！
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/光天使の像3.jpg" alt="光天使の像">
+					</div>
+					<div class="footer">
+						<span class="fullname">光天使の像</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G8</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">カート</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<p>
+							うう…なんてザマだ……<br>
+							修理を怠っていたために……<br>
+							装備品が壊れてしまった……<br>
+							せっかくいい装備を手に入れたというのに……<br>
+							もっと耐久度に気を配るべきだった……<br>
+							お前も気を付けろ……<br>
+							街に戻ったら修理するの忘れるな……<br>
+							大事な装備ならなおさらだ……
+						</p>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/カート3.jpg" alt="元大富豪の冒険者 カート">
+					</div>
+					<div class="footer">
+						<span class="fullname">元大富豪の冒険者 カート</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 J7 下水道</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">守護者の像</span>
+						<span class="race">Guardian Statue</span>
+					</div>
+					<div class="text">
+						<p>
+							灯火は静かに輝いている…。
+						</p>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/守護者の像3.jpg" alt="守護者の像">
+					</div>
+					<div class="footer">
+						<span class="fullname">守護者の像</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G9</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">相互転送装置 D</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>first</span></span>初回</span>
+							<p>
+								転送装置が起動した。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>again</span></span>２回目以降</span>
+							<p>
+								D と描かれた転送装置がある。
+							</p>
+						</div>
+						<div class="dialog">
+							<span class="dialog">
+								<span class="tag"><span>dialogue</span></span>どこに転送しますか？</span>
+							</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#A</span></span>転送装置 A に転送</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>転送装置を使用しますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#A-y</span></span>はい</span>
+												<p>
+													<span class="tag"><span>teleportation</span> G2</span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#A-n</span></span>いいえ</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#B</span></span>転送装置 B に転送<span class="footnote"></span></span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>転送装置を使用しますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#B-y</span></span>はい</span>
+												<p>
+													<span class="tag"><span>teleportation</span> G6</span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#B-n</span></span>いいえ</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#C</span></span>転送装置 C に転送<span class="footnote"></span></span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>転送装置を使用しますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#C-y</span></span>はい</span>
+												<p>
+													<span class="tag"><span>teleportation</span> I7</span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#C-n</span></span>いいえ</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#D</span></span>転送装置 D に転送</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>転送装置を使用しますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#D-y</span></span>はい</span>
+												<p>
+													<span class="tag"><span>teleportation</span> G9</span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#D-n</span></span>いいえ</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#leave</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>該当する転送装置を起動すると追加される</li>
+							<li>該当する転送装置を起動すると追加される</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/相互転送装置_D.jpg" alt="相互転送装置 D">
+					</div>
+					<div class="footer">
+						<span class="fullname">相互転送装置 D</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G9</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">（無名）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>initial state</span></span>初期状態</span>
+							<p>
+								穴の奥に何かあるようだ。
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>調べますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>調べる</span>
+										<p>
+											穴の奥には、墓場から手を伸ばしている<br>
+											不気味な死者の彫刻が彫られている。<br>
+											その彫刻の手には<br>
+											何か鍵のような物が握られていた。<br>
+											<span class="tag"><span>item</span></span> 死者の紋章が刻まれた鍵
+										</p>
+										<p class="descriptive">
+											死者の紋章が刻まれた鍵を手に入れました。
+										</p>
+										<p class="descriptive">
+											鍵を手にすると、どこからともなく声が<br>
+											聞こえてきた。
+										</p>
+										<p>
+											『Sie leben ！』
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>yield state</span></span><span class="footnote"></span><span class="wo-item">死者の紋章が刻まれた鍵</span>取得後</span>
+							<p>
+								何もなかった。<br>
+								埃や汚れが手につき<br>
+								手の平が真っ黒になった。
+							</p>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>キャラクター単位</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/壁穴3.jpg" alt="壁穴">
+					</div>
+					<div class="footer">
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 H8</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">カート</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<p>
+							うう…なんてザマだ……<br>
+							多少無理してでも進めると思ったが……<br>
+							引き際を見誤ったか……<br>
+							すぐそこに入口への近道があったのに…<br>
+							一旦街に戻るべきだった…<br>
+							いいか、よく聞け……<br>
+							冒険者には……<br>
+							引き返す勇気も必要だ……
+						</p>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/カート4.jpg" alt="元大富豪の冒険者 カート">
+					</div>
+					<div class="footer">
+						<span class="fullname">元大富豪の冒険者 カート</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G8</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">回復の泉</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>回復の泉</span>
+							<span>fountain of healing</span>
+						</p>
+						<p class="descriptive">
+							泉に所持金を投げ込み汝の献身を示せ。<br>
+							さすればアヴルールの加護により汝の傷は<br>
+							癒えるだろう。<br>
+							　　　　　　　　　‐　クォパティ教会　‐
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>count</span></span> 利用回数に応じて変化<span class="footnote"></span></span>
+							<div class="either">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>未利用</span>
+									<p class="descriptive">
+										泉はなみなみと水を湛えている。<br>
+										あと 5 回は飲めそうだ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>１回利用</span>
+									<p class="descriptive">
+										泉はなみなみと水を湛えている。<br>
+										あと 4 回は飲めそうだ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>２回利用</span>
+									<p class="descriptive">
+										半分ほど水が貯まった泉がある。<br>
+										あと 3 回は飲めそうだ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>３回利用</span>
+									<p class="descriptive">
+										溜まっている水はあと 2 回も飲めば<br>
+										空になるだろう。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#05</span></span>４回利用</span>
+									<p class="descriptive">
+										泉の水はほとんど残っていない。<br>
+										あと 1 回は飲めるだろう。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#more</span></span>５回利用後<span class="footnote"></span></span>
+									<p class="descriptive">
+										だが、水は枯れてしまっている…
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="dialog">
+							<span class="dialog">
+								<span class="tag"><span>dialogue</span></span>
+							<span class="textbox" style="width: 570px;">
+									いくら投げ込みますか？<br>
+									所持金：<span class="wo-gold"><span class="var"><span>pocket</span></span> G</span>
+							</span>
+							</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>100 G</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>効果：HP と MP が最大値の 30% 回復</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01-a</span></span>投げ込む</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+														<p class="descriptive">
+															お金を投げ入れて水を飲んだ
+														</p>
+														<p>
+															<span class="tag"><span>function</span></span> fountain
+														</p>
+														<p class="descriptive">
+															次のレベルになるには<br>
+															<span class="var"><span>next-exp</span></span>の経験値が必要です
+														</p>
+														<div class="append">
+															<span class="gauge"></span>
+															<span class="option">ソウルランクアップ可能</span>
+															<p>
+																"ソウルランク"が上がりそうです<br>
+																寺院にいるイシークの巫女のもとへ向かいましょう
+															</p>
+														</div>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>pocket</span></span>所持金不足時</span>
+														<p class="descriptive">
+															所持金が足りません
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01-b</span></span>やめる</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>300 G</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>効果：HP と MP が全回復</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02-a</span></span>投げ込む</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+														<p class="descriptive">
+															お金を投げ入れて水を飲んだ
+														</p>
+														<p>
+															<span class="tag"><span>function</span></span> fountain
+														</p>
+														<p class="descriptive">
+															次のレベルになるには<br>
+															<span class="var"><span>next-exp</span></span>の経験値が必要です
+														</p>
+														<div class="append">
+															<span class="gauge"></span>
+															<span class="option">ソウルランクアップ可能</span>
+															<p>
+																"ソウルランク"が上がりそうです<br>
+																寺院にいるイシークの巫女のもとへ向かいましょう
+															</p>
+														</div>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>pocket</span></span>所持金不足時</span>
+														<p class="descriptive">
+															所持金が足りません
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02-b</span></span>やめる</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>飲まない</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>利用回数すべての回復の泉で共有される（ただし利用回数制限のない回復の泉は除く）。ダンジョンの外に出ると利用回数はリセットされる</li>
+							<li>回復の泉利用に関するダイアログは表示されない</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/回復の泉3.jpg" alt="回復の泉">
+					</div>
+					<div class="footer">
+						<span class="fullname">回復の泉</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 F8</span>
+					</div>
+				</div>
+
+				<h5 id="riddle-3">リドル</h5>
+				<div class="lines">
+					<div class="header">
+						<span class="character">ガラクタの山</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>initial state</span></span>初期状態</span>
+							<p>
+								下水に何か落ちている。
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>拾いますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>拾う</span>
+										<p>
+											下水にネジが沈んでいた。<br>
+											<span class="wo-item">汚水まみれの短いネジ</span>を手に入れた。<br>
+											<span class="tag"><span>valuable</span> <span>item</span></span> 汚水まみれの短いネジ
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>yield state</span></span><span class="wo-item">汚水まみれの短いネジ</span>取得後</span>
+							<p>
+								もう、何も落ちていない。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/ガラクタの山1.jpg" alt="ガラクタの山">
+					</div>
+					<div class="footer">
+						<span class="fullname">ガラクタの山</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 J9 下水道</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ガラクタの山</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>initial state</span></span>初期状態</span>
+							<p>
+								下水に何か落ちている。
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>拾いますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>拾う</span>
+										<p>
+											下水にネジが沈んでいた。<br>
+											<span class="wo-item">汚水まみれの細長いネジ</span>を手に入れた。<br>
+											<span class="tag"><span>valuable</span> <span>item</span></span> 汚水まみれの細長いネジ
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>yield state</span></span><span class="wo-item">汚水まみれの細長いネジ</span>取得後</span>
+							<p>
+								もう、何も落ちていない。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/ガラクタの山2.jpg" alt="ガラクタの山">
+					</div>
+					<div class="footer">
+						<span class="fullname">ガラクタの山</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 H9 下水道</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ガラクタの山</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>initial state</span></span>初期状態</span>
+							<p>
+								下水に何か落ちている。
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>拾いますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>拾う</span>
+										<p>
+											下水にネジが沈んでいた。<br>
+											<span class="wo-item">汚水まみれの曲がったネジ</span>を手に入れた。<br>
+											<span class="tag"><span>valuable</span> <span>item</span></span> 汚水まみれの曲がったネジ
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>yield state</span></span><span class="wo-item">汚水まみれの曲がったネジ</span>取得後</span>
+							<p>
+								もう、何も落ちていない。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/ガラクタの山3.jpg" alt="ガラクタの山">
+					</div>
+					<div class="footer">
+						<span class="fullname">ガラクタの山</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 I7 下水道</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">光天使の像</span>
+						<span class="race">Guardian's Gate</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>riddle state</span></span> <span class="wo-item">汚水まみれの短いネジ</span>と<span class="wo-item">汚水まみれの細長いネジ</span>、<span class="wo-item">汚水まみれの曲がったネジ</span>を所持している時</span>
+							<p class="descriptive">
+								光天使の像がある。<br>
+								何かの装置のようだ。メッセージが書かれている。
+							</p>
+							<p>
+								この先には悪事を働く盗賊団を投獄している。<br>
+								閉鎖空間を開けるべからず！
+							</p>
+							<p class="headings">
+								＊　看守は転送装置の取り扱いに注意すること　＊
+							</p>
+							<p class="descriptive">
+								装置を調べると<br>
+								機械の一部が壊れているようだ<br>
+								あなたは看守の落書きを見つけた。
+							</p>
+							<p>
+								こんなところで看守なんてやってられるか！<br>
+								念のために装置は壊しておいた。<br>
+								後任者は３つのネジを探してきて装置を修理してから<br>
+								起動するべし！<br>
+								ネジは下水のガラクタの中に隠した！<br>
+								拾った３つのネジを使って修理をしますか？
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>修理しますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>修理する</span>
+										<p>
+											拾った３つのネジで装置を修理すると<br>
+											装置は無事起動し始めたようだ。<br>
+											装置はゴウゴウ音を立てて稼働しているようだ。<br>
+											装置に取り付けられた水晶玉が光を放っている。<br>
+											触れてみますか？
+										</p>
+										<div class="dialog">
+											<span class="dialog"><span class="tag"><span>dialogue</span></span>水晶玉に触れますか？</span>
+											<div class="options">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-a</span></span>はい</span>
+													<p class="descriptive">
+														あたり一面に強い光が包んだ。
+													</p>
+													<p>
+														<span class="tag"><span>entering</span></span> 決戦場 決闘者の間
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-b</span></span>いいえ</span>
+													<p>
+														<span class="tag"><span>empty</span></span>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>yield state</span></span> リドル解読後</span>
+							<p class="descriptive">
+								光天使の像がある。<br>
+								何かの装置のようだ。メッセージが書かれている。
+							</p>
+							<p>
+								この先には悪事を働く盗賊団を投獄している。<br>
+								閉鎖空間を開けるべからず！
+							</p>
+							<p class="headings">
+								＊　看守は転送装置の取り扱いに注意すること　＊
+							</p>
+							<p>
+								装置はゴウゴウ音を立てて稼働しているようだ。<br>
+								装置に取り付けられた水晶玉が光を放っている。<br>
+								触れてみますか？
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>水晶玉に触れますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+										<p class="descriptive">
+											あたり一面に強い光が包んだ。
+										</p>
+										<p>
+											<span class="tag"><span>entering</span></span> 決戦場 決闘者の間
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>empty</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/光天使の像3.jpg" alt="光天使の像">
+					</div>
+					<div class="footer">
+						<span class="fullname">光天使の像</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G8</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="race">void space</span>
+					</div>
+					<div class="text">
+						<div class="append">
+							<span class="gauge"></span>
+							<span class="option">ガーディアンズゲートを初めてクリアしたとき</span>
+							<p class="descriptive">
+								目的を果たしました。<br>
+								冒険者ギルドのドルクに報告しましょう。
+							</p>
+						</div>
+					</div>
+					<div class="footer">
+						<span class="coordinate">決戦場 決闘者の間</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">（無名）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>initial state</span></span> 初期状態</span>
+							<p class="descriptive">
+								起動していないようだ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>yield state</span></span> 第三ガーディアンズゲート突破後</span>
+							<p class="descriptive">
+								ここからイルファーロに帰還できます。
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>街に戻りますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>街に戻る</span>
+										<p>
+											<span class="tag"><span>entering</span></span><span class="wo-site">港町イルファーロ</span>
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>冒険者ギルドに向かう</span>
+										<p>
+											<span class="tag"><span>entering</span></span><span class="wo-site">港町イルファーロ 英雄の集う広場 G4</span>
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/帰還用ポール2.jpg" alt="帰還用ポール">
+					</div>
+					<div class="footer">
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G9</span>
+					</div>
+				</div>
+
+				<h4 id="report">クエスト報告</h4>
+				<div class="lines">
+					<div class="header">
+						<span class="character">ドルク</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<div class="append">
+							<span class="gauge"></span>
+							<span class="option">クエスト未報告</span>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>quest</span></span>冒険者ギルドの試練</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>report</span></span>報告</span>
+										<p>
+											<span class="tag"><span>title</span></span><span class="var"><span>ICI02</span></span> 悪の薔薇<br>
+											ほう！　盗賊どもを倒してきたのか。よくやったな！<br>
+											正直、あんたにゃ無理だろうと思ってたんだが……<br>
+											いい意味で裏切られたな、こりゃ。<br>
+											<span class="tag"><span>next</span></span>
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>cancel</span></span>閉じる</span>
+										<p>
+											ん？　どうした？<br>
+											依頼が終わったならちゃんと報告しないといかんぞ。<br>
+											<span class="tag"><span>quit</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="either">
+							<span class="gauge"></span>
+							<div class="option">
+								<span class="option"><span class="tag"><span>first</span></span>クエスト報告後</span>
+								<p>
+									ところで……<br>
+									本当なら新米にこんな話は回さないんだが<br>
+									ちょいと大きな仕事が来てるんだよ。<br>
+									依頼者は、<span class="wo-name">ゼーム・テール</span>っていう魔法局の<br>
+									御偉いさんだ。<br>
+									魔法局は騎士団と組んで魔法力消失の調査をやってんだ。<br>
+									で、表向きはその手助けを冒険者に依頼してる……<br>
+									ってことなんだが……<br>
+									どんな手助けするのかってのが問題でな。<br>
+									どうも調査の邪魔になる強い怪物を退治するのが<br>
+									冒険者に頼みたいことらしい。そう書きゃいいのによ！<br>
+									まあ、それなりに危険な仕事だが<br>
+									その分報酬も弾んでいる。<br>
+									どうだい、お前さんやってみる気はあるか？
+								</p>
+							</div>
+							<div class="option">
+								<span class="option"><span class="tag"><span>again</span></span>２回目以降</span>
+								<p>
+									ん？　どうした、魔法局の依頼受ける気になったか？
+								</p>
+							</div>
+						</div>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>魔法局の依頼を受けますか？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+									<p>
+										<span class="tag"><span>valuable</span> <span>item</span></span> 冒険者ギルドの紹介状<br>
+										そうかい。やってみるかい。<br>
+										ちょっと待ってくれ、今紹介状を書いてやる。<br>
+										……ほらよっと。<br>
+										これを持っていけば、魔法局に入れるぜ。<br>
+										依頼は、直接<span class="wo-name">ゼーム・テール</span>に聞いてくれ。<br>
+										<span class="wo-site">イルファーロ魔法局</span>には<span class="wo-site">自由と賑わいの市場</span>を通って<br>
+										行けるぜ。<br>
+										じゃあ、せいぜい頑張ってくれ。<br>
+									</p>
+									<p class="descriptive">
+										イルファーロ魔法局に向かいましょう。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+									<p>
+										そうかい。<br>
+										もう少し腕を磨いてからでもいいかもな。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox src="../common/placeholder.png" data-src="../heros-sqaure/npcs/Dwark.jpg" alt="冒険者ギルド ドルク">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者ギルド ドルク</span>
+						<span class="coordinate">港町イルファーロ 英雄の集う広場 G2 冒険者ギルド</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> 冒険者ギルドの試練（達成）</div>
+						<div class="client"><span class="wo-name">ドルク</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							<span class="wo-site">カリグラーゼ下水道</span>に蔓延る盗賊団を倒した。
+						</p>
+					</div>
+					<div class="footer">
+						<span class="unit">ソウル単位</span>
+						<span class="breach">放棄不可</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ドルク</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<p>
+							依頼は、直接<span class="wo-name">ゼーム・テール</span>に聞いてくれ。<br>
+							じゃあ、せいぜい頑張ってくれ。
+						</p>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox src="../common/placeholder.png" data-src="../heros-sqaure/npcs/Dwark.jpg" alt="冒険者ギルド 冒険者ギルド ドルク">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者ギルド ドルク</span>
+						<span class="coordinate">港町イルファーロ 英雄の集う広場 G2 冒険者ギルド</span>
+					</div>
+				</div>
+
+				<h3 id="sub-quest">サブクエスト</h3>
+				<h4 id="sub-quest-1">命の人形</h4>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="level">1</span> 命の人形（開始）</div>
+						<div class="client"><span class="wo-name">ウルグス</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							先日、魔物に襲われた時に命より大事な人形を<br>
+							落としてしまったのです。<br>
+							何とか探し出していただけないでしょうか。
+						</p>
+					</div>
+					<span class="label">報酬</span>
+					<div class="rewards">
+						<span class="exp">1,000</span>
+						<span class="price">1,000</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ウルグス</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							あぁ、どうしよう。どうしよう。<br>
+							困った。これは困った。<br>
+							おぉ？　あなた、身なりからして冒険者ですね！？<br>
+							唐突で申し訳ないですが、お願いがあるのです。<br>
+							先日<span class="wo-enemy">ゾンビ</span>の群れに襲われまして……。<br>
+							お恥ずかしい話、パニクってしまい<br>
+							大事なモノを失くしてしまったのです。<br>
+							美しい顔出ちの人形なのですが<br>
+							彼女を失ってしまったせいで<br>
+							私は落ち着いて眠ることも出来ません。<br>
+							こんな危険な場所ですので<br>
+							私のような武芸に覚えのない者では<br>
+							探すこともままならない状態でして……<br>
+							お願いします！　何とか探し出して<br>
+							いただくことはできないでしょうか？<br>
+							もちろん御礼は致します！<br>
+							彼女は、この迷宮のどこかで恐怖に<br>
+							怯えていることでしょう……
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>mission</span></span>守護者の像を使いこなそう</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>accept</span></span>受注</span>
+									<p>
+										おぉ！　引き受けていただけますか冒険者様。<br>
+										なにとぞよろしくお願いいたします…。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>reject</span></span>閉じる</span>
+									<p>
+										そ、そんな…<br>
+										あぁ　どうしよう　どうしよう。<br>
+										困った　困った…
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="sub-quest-1" src="../common/placeholder.png" data-src="npcs/ウルグス.jpg" alt="枢機卿 ウルグス">
+					</div>
+					<div class="footer">
+						<span class="fullname">枢機卿 ウルグス</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 F3</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="level">1</span> 命の人形#01</div>
+						<div class="client"><span class="wo-name">ウルグス</span></div>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						<span class="wo-item">ウルグス枢機卿の人形</span>を探し出し<br>
+						<span class="wo-name">ウルグス</span>に届ける。
+						<div class="tasks">
+							<span class="task"><span>ウルグス枢機卿の人形を渡す</span><span>1</span></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ウルグス</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							おや、これはこれは、冒険者様。<br>
+							彼女を探し出していただけたでしょうか？<br>
+							え？　まだ？<br>
+							ティっ…　あ、いやいや、それでは<br>
+							引き続きよろしくお願いいたします。
+						</p>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="sub-quest-1" src="../common/placeholder.png" data-src="npcs/ウルグス.jpg" alt="枢機卿 ウルグス">
+					</div>
+					<div class="footer">
+						<span class="fullname">枢機卿 ウルグス</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 F3</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ガラクタの山</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>initial state</span></span>初期状態</span>
+							<p>
+								床に何か落ちてる。
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>拾いますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>拾う</span>
+										<p>
+											少女趣味の人形を見つけた。<br>
+											<span class="wo-item">ウルグス枢機卿の人形</span>を手に入れた。<br>
+											<span class="tag"><span>item</span></span> ウルグス枢機卿の人形
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>yield state</span></span><span class="wo-item">ウルグス枢機卿の人形</span>取得後<span class="footnote"></span></span>
+							<p>
+								もう、何も落ちていない。
+							</p>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>ミッションを報告するまでは<span class="wo-item">ウルグス枢機卿の人形</span>の所持状態で判断される（つまり、<span class="wo-item">ウルグス枢機卿の人形</span>を破棄するとガラクタの山に人形が落ちている状態になる）。人形を渡した後は必ず<span class="tag"><span>yield state</span></span>になる。</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="sub-quest-1" src="../common/placeholder.png" data-src="npcs/ガラクタの山4.jpg" alt="ガラクタの山">
+					</div>
+					<div class="footer">
+						<span class="fullname">ガラクタの山</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 F4</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ウルグス</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							おや、これはこれは、冒険者様。<br>
+							彼女を探し出していただけたでしょうか？
+						</p>
+						<p class="descriptive">
+							目的の物を渡しました。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>mission</span></span>命の人形</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>report</span></span>報告</span>
+									<p>
+										<span class="tag"><span>title</span></span><span class="var"><span>ICJ10</span></span> 少女人形<br>
+										おお！？　彼女を探し出してきたのですか！？<br>
+										ありがとうござ……。<br>
+										ああ、こんなに怒って。もう大丈夫だよ。<br>
+										もう君を離したりはしないよ。
+									</p>
+									<p class="descriptive">
+										ウルグス枢機卿は<br>
+										人形を愛しそうに頬ずりしている。
+									</p>
+									<p>
+										あなたは、彼女のことどう思います？
+									</p>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>どう答えますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#law</span></span>大事にされていると思った</span>
+												<p>
+													そうですよね！　私の愛は彼女にも伝わっているはず！<br>
+													ああ…　愛おしい君よ……
+												</p>
+												<p class="descriptive">
+													ウルグス枢機卿は<br>
+													人形を愛しそうに見つめている。<br>
+													気の毒なのでそっとしておこう……
+												</p>
+												<p class="effective">
+													<span class="tag"><span>alignment</span></span><span class="wo-law">秩序</span> <span class="positive">+10</span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#cha</span></span>気持ち悪い</span>
+												<p>
+													<span class="tag"><span>uncollected</span></span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#neu</span></span>何とも思わない</span>
+												<p>
+													<span class="tag"><span>uncollected</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>cancel</span></span>閉じる</span>
+									<p>
+										おや？　報告しないのですか？<br>
+										報告していただけないと報酬を<br>
+										お渡しできないのですが……
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="sub-quest-1" src="../common/placeholder.png" data-src="npcs/ウルグス.jpg" alt="枢機卿 ウルグス">
+					</div>
+					<div class="footer">
+						<span class="fullname">枢機卿 ウルグス</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 F3</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="level">1</span> 命の人形（達成）</div>
+						<div class="client"><span class="wo-name">ウルグス</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							<span class="wo-item">ウルグス枢機卿の人形</span>を<span class="wo-name">ウルグス</span>に渡した。
+						</p>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ウルグス</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							おや？<br>
+							あなたはいつぞやの冒険者の方！<br>
+							その節は、たいへんお世話になりました。<br>
+							おかげさまで彼女とはうまくいっております。<br>
+							ええ、それはそれはもう…。
+						</p>
+						<p class="descriptive">
+							長くなりそうなので立ち去ることにした。
+						</p>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="sub-quest-1" src="../common/placeholder.png" data-src="npcs/ウルグス.jpg" alt="枢機卿 ウルグス">
+					</div>
+					<div class="footer">
+						<span class="fullname">枢機卿 ウルグス</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 F3</span>
+					</div>
+				</div>
+
+				<h4 id="sub-quest-2">暗闇のペンダント</h4>
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="level">1</span> 暗闇のペンダント（開始）</div>
+						<div class="client"><span class="wo-name">シャドルスティル</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							お気に入りのダークゾーンへ行った時に<br>
+							大事なペンダントを落としてしまったんだ。<br>
+							もし見つけてくれたらお礼をするので<br>
+							よろしく頼むよ。
+						</p>
+					</div>
+					<span class="label">報酬</span>
+					<div class="rewards">
+						<span class="exp">1,500</span>
+						<span class="price">1,000</span>
+						<span class="items">
+							<span class="reward-item"><img class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/クラーケンコイン.png" alt="クラーケンコイン">クラーケンコイン</span>
+						</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">シャドルスティル</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							うわっ！<br>
+							って、驚かさないでくれよ！<br>
+							こんな暗い場所にのこのこやってくるなんて<br>
+							怖いもの知らずだなぁ。<br>
+							ここは魔法の力で暗くされた【ダークゾーン】だよ。<br>
+							見ての通り、真っ暗闇さ！<br>
+							こういう闇にまぎれて冒険者を襲う冒険者もいるから<br>
+							注意するんだよ。<br>
+							それはそうと、ちょうどいい。<br>
+							困っていたんだよ。<br>
+							どこかの【ダークゾーン】に行ったときに<br>
+							転んでしまってね。<br>
+							命の次に大事なペンダントを落としてしまったんだよ。<br>
+							もし見つけてくれたら何かお礼をするから<br>
+							持って来てくれないか。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>mission</span></span>守護者の像を使いこなそう</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>accept</span></span>受注</span>
+									<p>
+										私のペンダントは、黒いから<br>
+										暗闇の中だと見つけにくいかもしれないけど<br>
+										目を凝らせば光って見えるはずだよ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>reject</span></span>閉じる</span>
+									<p>
+										そうかい。<br>
+										じゃあ、またあのダークゾーンに行ったときに<br>
+										自分で探すよ。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="sub-quest-2" src="../common/placeholder.png" data-src="npcs/シャドルスティル.jpg" alt="冒険者 シャドルスティル">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者 シャドルスティル</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 H6</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="level">1</span> 暗闇のペンダント#01</div>
+						<div class="client"><span class="wo-name">シャドルスティル</span></div>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						<span class="wo-item">薄汚れた黒いペンダント</span>を探し出し<br>
+						<span class="wo-name">シャドルスティル</span>に届ける。
+						<div class="tasks">
+							<span class="task"><span>薄汚れた黒いペンダントを渡す</span><span>1</span></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">シャドルスティル</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							うわっ！<br>
+							って、驚かさないでくれよ！<br>
+							あんたかい。どうだいペンダント見つかったかい？<br>
+							え、まだだって。<br>
+							見つけたらよろしく頼むよ。
+						</p>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="sub-quest-2" src="../common/placeholder.png" data-src="npcs/シャドルスティル.jpg" alt="冒険者 シャドルスティル">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者 シャドルスティル</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 H6</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ガラクタの山</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>initial state</span></span>初期状態</span>
+							<p>
+								暗闇に何か落ちている。
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>拾いますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>拾う</span>
+										<p>
+											床に首飾りが落ちていた。<br>
+											<span class="wo-item">薄汚れた黒いペンダント</span>を手に入れた。<br>
+											<span class="tag"><span>item</span></span> 薄汚れた黒いペンダント
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>yield state</span></span><span class="wo-item">薄汚れた黒いペンダント</span>取得後<span class="footnote"></span></span>
+							<p>
+								もう、何も落ちていない。
+							</p>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>ミッションを報告するまでは<span class="wo-item">薄汚れた黒いペンダント</span>の所持状態で判断される（つまり、<span class="wo-item">薄汚れた黒いペンダント</span>を破棄するとガラクタの山にペンダントが落ちている状態になる）。ペンダントを渡した後は必ず<span class="tag"><span>yield state</span></span>になる。</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="sub-quest-2" src="../common/placeholder.png" data-src="npcs/ガラクタの山5.jpg" alt="ガラクタの山">
+					</div>
+					<div class="footer">
+						<span class="fullname">ガラクタの山</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 J5</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">シャドルスティル</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							うわっ！<br>
+							って、驚かさないでくれよ！
+							あんたかい。どうだいペンダント見つかったかい？
+						</p>
+						<p class="descriptive">
+							目的の物を渡しました。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>mission</span></span>暗闇のペンダント</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>report</span></span>報告</span>
+									<p>
+										<span class="tag"><span>title</span></span><span class="var"><span>ICJ11</span></span> 暗中模索<br>
+										えっ、ペンダントを拾った？<br>
+										おぉ……暗くてよく分からないけど<br>
+										この触り心地は確かに私のペンダント！<br>
+										ありがとう。これはお礼の品だと。旧時代の硬貨らしい。<br>
+										集めておけばコレクターが買い取るかもよ。<br>
+										ところでよ、やっぱり暗闇って落ち着くよな。<br>
+										あんたもそう思うだろ？
+									</p>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>どう答えますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#law</span></span>日のあたる場所の方がいい</span>
+												<p>
+													なんだよ。だったら冒険者なんて日陰な仕事やめて<br>
+													堅い職業に就いた方が身のためだよ。
+												</p>
+												<p class="effective">
+													<span class="tag"><span>alignment</span></span><span class="wo-law">秩序</span> <span class="positive">+10</span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#cha</span></span>暗闇が一番だ</span>
+												<p>
+													<span class="tag"><span>uncollected</span></span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#neu</span></span>日向でも暗闇でもどっちでもいい</span>
+												<p>
+													<span class="tag"><span>uncollected</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>cancel</span></span>閉じる</span>
+									<p>
+										ん？　依頼終わったら報告してくれよ。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="sub-quest-2" src="../common/placeholder.png" data-src="npcs/シャドルスティル.jpg" alt="冒険者 シャドルスティル">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者 シャドルスティル</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 H6</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="level">1</span> 暗闇のペンダント（達成）</div>
+						<div class="client"><span class="wo-name">シャドルスティル</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							<span class="wo-item">薄汚れた黒いペンダント</span>を<span class="wo-name">シャドルスティル</span>に渡した。
+						</p>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">シャドルスティル</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							うわっ！<br>
+							って、驚かさないでくれよ！<br>
+							こんな暗い場所にのこのこやってくるなんて<br>
+							怖いもの知らずだなぁ。<br>
+							ここは魔法の力で暗くされた【ダークゾーン】だよ。<br>
+							見ての通り、真っ暗闇さ！<br>
+							こういう闇にまぎれて冒険者を襲う冒険者もいるから<br>
+							注意するんだよ。
+						</p>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="sub-quest-2" src="../common/placeholder.png" data-src="npcs/シャドルスティル.jpg" alt="冒険者 シャドルスティル">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者 シャドルスティル</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 H6</span>
+					</div>
+				</div>
+
+				<h3 id="tutorial">スティアのチュートリアルクエスト</h3>
+				<h4 id="tutorial-1">キャンプについて</h4>
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> キャンプを使いこなそう（開始）</div>
+						<div class="client"><span class="wo-name">スティア</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							冒険者の心得「キャンプを使う」<br>
+							キャンプを使用すると足元に魔方陣が張られ、周囲<br>
+							に入ったキャラクターは HP と MP が回復します。<br>
+							ただしキャンプの範囲内では攻撃ができません。<br>
+							魔法を使う職業にとっては数少ない MP の回復手段<br>
+							となるでしょう。
+						</p>
+					</div>
+					<span class="label">報酬</span>
+					<div class="rewards">
+						<span class="exp">500</span>
+						<span class="price">1,000</span>
+					</div>
+					<div class="footer">
+						<span class="unit">ソウル単位</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">スティア</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>mission</span></span>キャンプを使いこなそう</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>accept</span></span>受注</span>
+									<p>
+										よし、任せておけ。<br>
+										キャンプの扱いは冒険者には必須の知識だぞ。<br>
+										キャンプってのは使用すると休憩するための<br>
+										魔方陣を張るアイテムだ。<br>
+										街の道具屋などで買う事ができるぞ。<br>
+										この魔方陣の上に乗れば、HP と MP が<br>
+										徐々に回復していく優れモノだ。<br>
+										もちろんパーティで使う事も可能だぞ。<br>
+										魔法使いや僧侶にとっては貴重な<br>
+										MP の回復手段だ。<br>
+										でも気をつけておけ。<br>
+										この魔方陣の上では武器を振る事や<br>
+										スキルを使う事ができないんだ。<br>
+										モンスターのいない安全な場所で使うか、<br>
+										パーティの前衛が戦っている後方で<br>
+										使うなりの工夫が必要となるな。<br>
+										試しにこの<span class="wo-item">試供品簡易キャンプ</span>をやるから<br>
+										使ってみな。<br>
+										他のキャンプではダメだぞ。<br>
+										<span class="tag"><span>item</span></span> 試供品簡易キャンプ
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>reject</span></span>閉じる</span>
+									<p>
+										そうか。<br>
+										まあ、受けたくなったらまた来いよ。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="tutorial-1" src="../common/placeholder.png" data-src="npcs/スティア.jpg" alt="冒険者ギルド職員 スティア">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者ギルド職員 スティア</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G6</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> キャンプを使いこなそう#01</div>
+						<div class="client"><span class="wo-name">スティア</span></div>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						<span class="wo-item">試供品簡易キャンプ</span>を使おう。
+						<div class="tasks">
+							<span class="task"><span>試供品簡易キャンプを使用する</span><span>1</span></span>
+						</div>
+					</div>
+					<div class="footer">
+						<span class="unit">ソウル単位</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">スティア</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ん？　まだ<span class="wo-item">試供品簡易キャンプ</span>を<br>
+							使っていないようだな？<br>
+							他のキャンプではダメだぞ。<br>
+							それとキャンプは街では使えないから、<br>
+							気をつけろよ。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>何か用か？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>キャンプの説明をもう一度聞きたい</span>
+									<p>
+										よし、任せておけ。<br>
+										キャンプの扱いは冒険者には必須の知識だぞ。<br>
+										キャンプってのは使用すると休憩するための<br>
+										魔方陣を張るアイテムだ。<br>
+										街の道具屋などで買う事ができるぞ。<br>
+										この魔方陣の上に乗れば、HP と MP が<br>
+										徐々に回復していく優れモノだ。<br>
+										もちろんパーティで使う事も可能だぞ。<br>
+										魔法使いや僧侶にとっては貴重な<br>
+										MP の回復手段だ。<br>
+										でも気をつけておけ。<br>
+										この魔方陣の上では武器を振る事や<br>
+										スキルを使う事ができないんだ。<br>
+										モンスターのいない安全な場所で使うか、<br>
+										パーティの前衛が戦っている後方で<br>
+										使うなりの工夫が必要となるな。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>試供品簡易キャンプを無くした</span>
+									<div class="options">
+										<div class="option">
+											<span class="option"><span class="tag"><span>have</span></span><span class="wo-item">試供品簡易キャンプ</span>を所持している</span>
+											<p>
+												ん？<br>
+												お前のカバンに入っているそれは違うのか？
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>not have</span></span><span class="wo-item">試供品簡易キャンプ</span>を所持していない</span>
+											<p>
+												ん？<br>
+												<span class="wo-item">試供品簡易キャンプ</span>を無くしたのか？<br>
+												<span class="tag"><span>item</span></span> 試供品簡易キャンプ<br>
+												試しにこの<span class="wo-item">試供品簡易キャンプ</span>をやるから<br>
+												使ってみな。<br>
+												他のキャンプではダメだぞ。
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="tutorial-1" src="../common/placeholder.png" data-src="npcs/スティア.jpg" alt="冒険者ギルド職員 スティア">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者ギルド職員 スティア</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G6</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> キャンプを使いこなそう#02</div>
+						<div class="client"><span class="wo-name">スティア</span></div>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						<span class="wo-name">スティア</span>に話しかけよう。
+						<div class="tasks">
+							<span class="task"><span>スティアと話す</span><span>1</span></span>
+						</div>
+					</div>
+					<div class="footer">
+						<span class="unit">ソウル単位</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">スティア</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							おう、キャンプを使ってみたようだな。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>mission</span></span>キャンプを使いこなそう</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>report</span></span>報告</span>
+									<p>
+										どうだ、キャンプ使用のコツは掴めたか？<br>
+										道具屋で買える<span class="wo-item">簡易キャンプ</span>や<span class="wo-item">キャンプ</span>の他にも、<br>
+										ロイヤルショップで買える<span class="wo-item">ハイキャンプ</span>や…<br>
+										ディメント褒章を受けていると貰える<br>
+										<span class="wo-item">ディメントキャンプ</span>などがある。<br>
+										キャンプを使いこなせば、<br>
+										冒険を快適に進める事ができるぞ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>cancel</span></span>閉じる</span>
+									<p>
+										ん、どうしたんだ？<br>
+										報告して貰わんと報酬を渡せないぞ。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="tutorial-1" src="../common/placeholder.png" data-src="npcs/スティア.jpg" alt="冒険者ギルド職員 スティア">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者ギルド職員 スティア</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G6</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> キャンプを使いこなそう（達成）</div>
+						<div class="client"><span class="wo-name">スティア</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							キャンプの使い方を学んだ。
+						</p>
+					</div>
+					<div class="footer">
+						<span class="unit">ソウル単位</span>
+					</div>
+				</div>
+
+				<h4 id="tutorial-2">ガーディアンズゲートを攻略しよう</h4>
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> ガーディアンズゲートを攻略しよう（開始）</div>
+						<div class="client"><span class="wo-name">スティア</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							冒険者の心得「ガーディアンズゲートの攻略」<br>
+							ダンジョンの途中には、ガーディアンズゲートと<br>
+							呼ばれる関門が存在します。<br>
+							リドルと呼ばれる謎解きを説き、装置を起動後、<br>
+							インスタンスバトルをクリアすると道を塞いでいる<br>
+							魔法の障壁を通り抜けられるろうになります。
+						</p>
+					</div>
+					<span class="label">報酬</span>
+					<div class="rewards">
+						<span class="exp">500</span>
+						<span class="price">1,000</span>
+					</div>
+					<div class="footer">
+						<span class="unit">ソウル単位</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">スティア</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>mission</span></span>ガーディアンズゲートを攻略しよう</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>accept</span></span>受注</span>
+									<p>
+										よし、任せておけ。<br>
+										ガーディアンズゲートの攻略は<br>
+										冒険者には必須の知識だぞ。<br>
+										ガーディアンズゲートってのは<br>
+										ダンジョンに存在する関門だ。<br>
+										ダンジョンでは魔法の障壁によって<br>
+										通行封鎖されている箇所があるんだが、<br>
+										ガーディアンズゲートを攻略するとこれが解除されるんだ。<br>
+										このガーディアンズゲートを攻略するには、<br>
+										まずはリドルと呼ばれる謎を解き装置を起動するんだ。<br>
+										そして装置からインスタンスバトルに<br>
+										臨み中の敵を撃破できれば攻略は成功ってところだ。<br>
+										まずはそこにあるガーディアンズゲートの<br>
+										リドルから攻略してきてみてくれ。<br>
+										リドルのヒントが必要なら入口付近にいる<br>
+										<span class="wo-name">パーロット</span>に聞いてみな。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>reject</span></span>閉じる</span>
+									<p>
+										そうか。<br>
+										まあ、受けたくなったらまた来いよ。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="tutorial-2" src="../common/placeholder.png" data-src="npcs/スティア.jpg" alt="冒険者ギルド職員 スティア">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者ギルド職員 スティア</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G6</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> ガーディアンズゲートを攻略しよう#01</div>
+						<div class="client"><span class="wo-name">スティア</span></div>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						リドルをクリアしよう。
+						<div class="tasks">
+							<span class="task"><span>リドルをクリアする</span><span>1</span></span>
+						</div>
+					</div>
+					<div class="footer">
+						<span class="unit">ソウル単位</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">スティア</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							まずはそこにあるガーディアンズゲートの<br>
+							リドルから攻略してきてみてくれ。<br>
+							リドルのヒントが必要なら入口付近にいる<br>
+							<span class="wo-name">パーロット</span>に聞いてみな。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>何か用か？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>ガーディアンズゲートの説明をもう一度聞きたい</span>
+									<p>
+										よし、任せておけ。<br>
+										ガーディアンズゲートの攻略は<br>
+										冒険者には必須の知識だぞ。<br>
+										ガーディアンズゲートってのは<br>
+										ダンジョンに存在する関門だ。<br>
+										ダンジョンでは魔法の障壁によって<br>
+										通行封鎖されている箇所があるんだが、<br>
+										ガーディアンズゲートを攻略するとこれが解除されるんだ。<br>
+										このガーディアンズゲートを攻略するには、<br>
+										まずはリドルと呼ばれる謎を解き装置を起動するんだ。<br>
+										そして装置からインスタンスバトルに<br>
+										臨み中の敵を撃破できれば攻略は成功ってところだ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="tutorial-2" src="../common/placeholder.png" data-src="npcs/スティア.jpg" alt="冒険者ギルド職員 スティア">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者ギルド職員 スティア</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G6</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> ガーディアンズゲートを攻略しよう#02</div>
+						<div class="client"><span class="wo-name">スティア</span></div>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						<span class="wo-name">スティア</span>に話しかけよう。
+						<div class="tasks">
+							<span class="task"><span>スティアと話す</span><span>1</span></span>
+						</div>
+					</div>
+					<div class="footer">
+						<span class="unit">ソウル単位</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">スティア</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							おっ、リドルを攻略してきたようだな。<br>
+							次はインスタンスバトルだな。<br>
+							装置から中に入り全てのモンスターを倒せば、<br>
+							無事にガーディアンズゲートを攻略できるぞ。<br>
+							では、さっそく実践してみてくれ！
+						</p>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="tutorial-2" src="../common/placeholder.png" data-src="npcs/スティア.jpg" alt="冒険者ギルド職員 スティア">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者ギルド職員 スティア</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G6</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> ガーディアンズゲートを攻略しよう#03</div>
+						<div class="client"><span class="wo-name">スティア</span></div>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						ガーディアンズゲートをクリアしよう。
+						<div class="tasks">
+							<span class="task"><span>ガーディアンズゲートをクリアする</span><span>1</span></span>
+						</div>
+					</div>
+					<div class="footer">
+						<span class="unit">ソウル単位</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> ガーディアンズゲートを攻略しよう#04</div>
+						<div class="client"><span class="wo-name">スティア</span></div>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						<span class="wo-name">スティア</span>に話しかけよう。
+						<div class="tasks">
+							<span class="task"><span>スティアと話す</span><span>1</span></span>
+						</div>
+					</div>
+					<div class="footer">
+						<span class="unit">ソウル単位</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">スティア</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							おっ、ガーディアンズゲートを攻略してきたようだな。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>mission</span></span>キャンプを使いこなそう</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>report</span></span>報告</span>
+									<p>
+										どうだ、ガーディアンズゲート攻略のコツは掴めたか？<br>
+										ダンジョンは基本的にガーディアンズゲートを<br>
+										攻略しながら進んでいくことになるだろう。<br>
+										知恵と力を駆使してダンジョン攻略に励んでくれよな。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>cancel</span></span>閉じる</span>
+									<p>
+										ん、どうしたんだ？<br>
+										報告して貰わんと報酬を渡せないぞ。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="tutorial-2" src="../common/placeholder.png" data-src="npcs/スティア.jpg" alt="冒険者ギルド職員 スティア">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者ギルド職員 スティア</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G6</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> ガーディアンズゲートを攻略しよう（達成）</div>
+						<div class="client"><span class="wo-name">スティア</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							ガーディアンズゲートの<br>
+							攻略方法を学んだ。
+						</p>
+					</div>
+					<div class="footer">
+						<span class="unit">ソウル単位</span>
+					</div>
+				</div>
+
+				<h4 id="tutorial-3">守護者の像を使いこなそう</h4>
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> 守護者の像を使いこなそう（開始）</div>
+						<div class="client"><span class="wo-name">スティア</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							冒険者の心得「守護者の像を使う」<br>
+							ダンジョンに存在する守護者の像は<br>
+							入口付近の一つ目以外は<br>
+							火を灯す事で使用できます。
+						</p>
+					</div>
+					<span class="label">報酬</span>
+					<div class="rewards">
+						<span class="exp">500</span>
+						<span class="price">1,000</span>
+					</div>
+					<div class="footer">
+						<span class="unit">ソウル単位</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">スティア</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>mission</span></span>守護者の像を使いこなそう</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>accept</span></span>受注</span>
+									<p>
+										よし、任せておけ。<br>
+										守護者の像の使い方は<br>
+										冒険者には必須の知識だぞ。<br>
+										死んだ時に火の灯っている「守護者の像」から<br>
+										復活を試みれる事は訓練場でも習っただろう？<br>
+										だが、守護者の像に炎が灯っていないと<br>
+										蘇生が行えない。<br>
+										とはいえ、守護者の像に火を灯す方法は簡単だ。<br>
+										死ぬ前に守護者の像に触れればいいだけだからな。<br>
+										火の灯った守護者の像は、<br>
+										地図から確認する事もできる。<br>
+										十分に活用しろよ。<br>
+										そういうわけで、この先の道なりに進んだ所にある<br>
+										守護者の像に火を灯してきてくれ。<br>
+										地図でいえば H4 の位置あたりだな。<br>
+										もし既に火を灯してたとしても<br>
+										練習だからな。もう一度調べてきてくれ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>reject</span></span>閉じる</span>
+									<p>
+										そうか。<br>
+										まあ、受けたくなったらまた来いよ。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="tutorial-3" src="../common/placeholder.png" data-src="npcs/スティア.jpg" alt="冒険者ギルド職員 スティア">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者ギルド職員 スティア</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G6</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> 守護者の像を使いこなそう#01</div>
+						<div class="client"><span class="wo-name">スティア</span></div>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						守護者の像に火を灯そう。
+						<div class="tasks">
+							<span class="task"><span>守護者の像に火を灯す</span><span>1</span></span>
+						</div>
+					</div>
+					<div class="footer">
+						<span class="unit">ソウル単位</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">スティア</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							おう、まだ守護者の像を調べていないようだな。<br>
+							この先の道なりに進んだ所にある<br>
+							守護者の像に火を灯してきてくれ。<br>
+							地図でいえば H4 の位置あたりだな。<br>
+							もし既に火を灯してたとしても<br>
+							練習だからな。もう一度調べてきてくれ。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>何か用か？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>守護者の像の使い方をもう一度聞きたい</span>
+									<p>
+										よし、任せておけ。<br>
+										守護者の像の使い方は<br>
+										冒険者には必須の知識だぞ。<br>
+										死んだ時に火の灯っている「守護者の像」から<br>
+										復活を試みれる事は訓練場でも習っただろう？<br>
+										だが、守護者の像に炎が灯っていないと<br>
+										蘇生が行えない。<br>
+										とはいえ、守護者の像に火を灯す方法は簡単だ。<br>
+										死ぬ前に守護者の像に触れればいいだけだからな。<br>
+										火の灯った守護者の像は、<br>
+										地図から確認する事もできる。<br>
+										十分に活用しろよ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="tutorial-3" src="../common/placeholder.png" data-src="npcs/スティア.jpg" alt="冒険者ギルド職員 スティア">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者ギルド職員 スティア</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G6</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> 守護者の像を使いこなそう#02</div>
+						<div class="client"><span class="wo-name">スティア</span></div>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						<span class="wo-name">スティア</span>に話しかけよう。
+						<div class="tasks">
+							<span class="task"><span>スティアと話す</span><span>1</span></span>
+						</div>
+					</div>
+					<div class="footer">
+						<span class="unit">ソウル単位</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">スティア</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							おっ、守護者の像に火を灯してきたようだな。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>mission</span></span>キャンプを使いこなそう</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>report</span></span>報告</span>
+									<p>
+										どうだ、守護者の像の使い方は掴めたか？<br>
+										ダンジョンで力尽きた時に<br>
+										守護者の像はお前を守る力になる。<br>
+										知恵と力を駆使してダンジョン攻略に励んでくれよな。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>cancel</span></span>閉じる</span>
+									<p>
+										ん、どうしたんだ？<br>
+										報告して貰わんと報酬を渡せないぞ。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img class="lazyload" data-fancybox="tutorial-3" src="../common/placeholder.png" data-src="npcs/スティア.jpg" alt="冒険者ギルド職員 スティア">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者ギルド職員 スティア</span>
+						<span class="coordinate">カリグラーゼ下水道 冒険者の入口 G6</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> 守護者の像を使いこなそう（達成）</div>
+						<div class="client"><span class="wo-name">スティア</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							守護者の像の使い方を学んだ。
+						</p>
+					</div>
+					<div class="footer">
+						<span class="unit">ソウル単位</span>
+					</div>
+				</div>
+			</article>
+
+			<div id="disqus-space">
+				<p id="comment-attention">
+					名前を入力しようとすると表示される「ゲストとして投稿する」にチェックを入れるとDISQUSに登録しなくてもコメントすることができます。<br>
+					メールアドレスは入力必要ですが DISQUS で管理され、投稿したコメントに表示されることも私にも通知されることもありません。<br>
+					架空のメールアドレスでも可能ですので、お気軽にコメントしてください！
+				</p>
+				<aside id="toc-disqus">
+					<div id="disqus_thread"></div>
+				</aside>
+				<script type="text/javascript">
+					( function () {
+						var dsq = document.createElement( 'script' );
+						dsq.type = 'text/javascript';
+						dsq.async = true;
+						dsq.src = '//miramiku.disqus.com/embed.js';
+						( document.getElementsByTagName( 'head' )[ 0 ] || document.getElementsByTagName( 'body' )[ 0 ] ).appendChild( dsq );
+					})();
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+			</div>
+		</div>
+	</main>
+
+	<div id="toc">
+		<ul>
+			<li id="back2top"><a href="#top">トップページ</a></li>
+			<li><a href="#lore">Lore</a></li>
+			<li><a href="#enemies">モンスターリスト</a></li>
+			<li><a href="#portal">クエスト受注</a>
+				<ul>
+					<li><a href="#portal-1">冒険者ギルドへの登録</a></li>
+					<li><a href="#portal-2">冒険者ギルドの試練</a></li>
+				</ul>
+			</li>
+			<li><a href="#walk-through">ダンジョン攻略</a>
+				<ul>
+					<li><a href="#walk-through-1">入口付近の NPC と設備</a></li>
+					<li><a href="#walk-through-2">第一ガーディアンズゲート</a>
+						<ul>
+							<li><a href="#switch-1">スイッチ１</a></li>
+							<li><a href="#switch-2">スイッチ２</a></li>
+							<li><a href="#switch-3">スイッチ３</a></li>
+							<li><a href="#switch-4">スイッチ４</a></li>
+						</ul>
+					</li>
+					<li><a href="#walk-through-3">第二ガーディアンズゲート</a>
+						<ul>
+							<li><a href="#riddle-2">リドル</a></li>
+						</ul>
+					</li>
+					<li><a href="#walk-through-4">第三ガーディアンズゲート</a>
+						<ul>
+							<li><a href="#riddle-3">リドル</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#report">クエスト報告</a></li>
+			<li><a href="#sub-quest">サブクエスト</a>
+				<ul>
+					<li><a href="#sub-quest-1">命の人形</a></li>
+					<li><a href="#sub-quest-2">暗闇のペンダント</a></li>
+				</ul>
+			</li>
+			<li><a href="#tutorial">スティアのチュートリアルクエスト</a>
+				<ul>
+					<li><a href="#tutorial-1">キャンプについて</a></li>
+					<li><a href="#tutorial-2">ガーディアンズゲートを攻略しよう</a></li>
+					<li><a href="#tutorial-3">守護者の像を使いこなそう</a></li>
+				</ul>
+			</li>
+			<li id="jump2disqus"><a href="#toc-disqus">コメント</a></li>
+		</ul>
+	</div>
+
+	<script>
+		( function ( i, s, o, g, r, a, m ) {
+			i[ 'GoogleAnalyticsObject' ] = r; i[ r ] = i[ r ] || function () {
+				( i[ r ].q = i[ r ].q || [] ).push( arguments )
+			}, i[ r ].l = 1 * new Date(); a = s.createElement( o ),
+				m = s.getElementsByTagName( o )[ 0 ]; a.async = 1; a.src = g; m.parentNode.insertBefore( a, m )
+		})( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
+		ga( 'create', 'UA-46801675-2', 'auto' );
+		ga( 'send', 'pageview' );
+	</script>
+</body>
+
+</html>

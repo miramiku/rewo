@@ -24,6 +24,12 @@ $( document ).ready( function () {
 
 	REWO.pageScroller();
 
+	$( "[data-fancybox]" ).fancybox( {
+		caption: function () {
+			return $( this ).attr( "alt" );
+		}
+	} );
+
 	$( "header" )
 		.click( function ( e ) {
 			if ( $( e.target ).attr( "id" ) === "header-content-inner" ) {

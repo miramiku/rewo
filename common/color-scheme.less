@@ -1,6 +1,6 @@
 // out: false
 
-// color space
+// site fundamental color space
 @AzaleaPink:     #e6679a; // PANTONE 116-2126 TPX Azalea Pink
 @BlackInk:       #3c3e38; // PANTONE  19-0506 TPX Black Ink
 @CadmiumOrange:  #f5926c; // PANTONE  15-1340 TPX Cadmium Orange
@@ -10,8 +10,25 @@
 @ParrotGreen:    #8fb34c; // PANTONE 115-0541 TPX Parrot Green
 @RiverBlue:      #3bb3d0; // PANTONE  15-4720 TPX River Blue
 @StrawberryPink: #f87b90; // PANTONE  16-1731 TPX Strawberry Pink
+@310CP:          #89ccda; // selection-color
 
-@310CP:          #89ccda;
+// wizardry online text highlgiht color space
+@AutumnSunset: #f48850; // PANTONE 16-1343 TPX Autumn Sunset
+@GeorgiaPeach: #f27377; // PANTONE 16-1641 TPX Georgia Peach
+@GoldenPalm:   #af8d1f; // PANTONE 17-0839 TPX Golden Palm
+@IrishGreen:   #40c575; // PANTONE 15-6340 TPX Irish Green
+@MalibuBlue:   #0092ca; // PANTONE 14-4435 TPX Malibu Blue
+@PersianJewel: #697fc2; // PANTONE 17-3934 TPX Persian Jewel
+
+// equipment rarity color space
+@513CP:       #8E3B90;
+@CoolGray7CP: #99999B;
+@620CP:       #948521;
+@925CP:       #1596D1;
+@7456CP:      #6D79B6;
+@348CP:       #008F4C;
+@7418CP:      #C55058;
+@7618CP:      #CB734F;
 
 // Theme color
 // --------------------------------------------------
@@ -20,76 +37,70 @@
 @accent-linkc-color:     @AzaleaPink;
 @key-tone:               @BlackInk;
 @sub-key-tone:           @Gargoyle;
-@separator-color:        fade( @LunarRock, 50% );
+@separator-color:        fade( @LunarRock,     50% );
 @toc-meta:               fade( @RiverBlue,     20% );
 @toc-major:              fade( @AzaleaPink,    20% );
 @toc-minor:              fade( @ParrotGreen,   20% );
 @toc-extend:             fade( @CadmiumOrange, 20% );
 @selection-color:        fade( @310CP,         20% );
+@table-head:             fade( @ParrotGreen,   10% );
+@quote-background:       fade( @LunarRock,     25% );
+@attention-background:   fade( @GeorgiaPeach,  15% );
+@primary-color:          fade( @AzaleaPink,    40% );
+@secondary-color:        fade( @ParrotGreen,   40% );
+@tertiary-color:         fade( @CadmiumOrange, 40% );
 
-@themeColor:             fade( @AzaleaPink,    40% );
-@leadColor:              fade( @ParrotGreen,   40% );
-@altColor:               fade( @CadmiumOrange, 40% );
-@codeFontColor:          @BlackInk;
-@headColor:              fade( @ParrotGreen,   10% );
-@categoriesColor:        fade( @AzaleaPink,    20% );
-@seriesColor:            fade( @ParrotGreen,   20% );
-@disabledBackground:     fade( @LunarRock,     50% );
-@pagerBackground:        fade( @CadmiumOrange, 10% );
-@pagerActive:            fade( @CadmiumOrange, 40% );
-@blockquoteBackground:   fade( @LunarRock,     25% );
-@readMoreLinkColor:      @ParrotGreen;
-@goToTopBackground:      fade( @ParrotGreen,   40% );
-@tableEvenBackground:    fade( @CadmiumOrange, 10% );
+// @codeFontColor:          @BlackInk;
+// @categoriesColor:        fade( @AzaleaPink,    20% );
+// @seriesColor:            fade( @ParrotGreen,   20% );
+// @disabledBackground:     fade( @LunarRock,     50% );
+// @pagerBackground:        fade( @CadmiumOrange, 10% );
+// @pagerActive:            fade( @CadmiumOrange, 40% );
+// @tableEvenBackground:    fade( @CadmiumOrange, 10% );
 
 
 // Wizardry Online
 // --------------------------------------------------
-@PANTONE513CP:       #8E3B90;
-@PANTONECoolGray7CP: #99999B;
-@PANTONE620CP:       #948521;
-@PANTONE2925CP:      #1596D1;
-@PANTONE7456CP:      #6D79B6;
-@PANTONE348CP:       #008F4C;
-@PANTONE7418CP:      #C55058;
-@PANTONE7618CP:      #CB734F;
+@wo-enemy-color:   @GeorgiaPeach;
+@wo-item-color:    @GoldenPalm;
+@wo-gold-color:    @GoldenPalm;
+@wo-keyword-color: @IrishGreen;
+@wo-name-color:    @MalibuBlue;
+@wo-site-color:    @AutumnSunset;
+@wo-law-color:     @925CP;
+@wo-neu-color:     @CadmiumOrange;
+@wo-cha-color:     @513CP;
 
-// highlgiht-colors
-@AutumnSunset: #f48850; // PANTONE 16-1343 TPX Autumn Sunset
-@GeorgiaPeach: #f27377; // PANTONE 16-1641 TPX Georgia Peach
-@GoldenPalm:   #af8d1f; // PANTONE 17-0839 TPX Golden Palm
-@IrishGreen:   #40c575; // PANTONE 15-6340 TPX Irish Green
-@MalibuBlue:   #0092ca; // PANTONE 14-4435 TPX Malibu Blue
-@PersianJewel: #697fc2; // PANTONE 17-3934 TPX Persian Jewel
+@wo-rare-creature-color:     @620CP;
+@wo-unique-creature-color:   @513CP;
+@wo-guardian-creature-color: @620CP;
 
-@poorColor:     @PANTONE513CP;
-@normalColor:   @PANTONECoolGray7CP;
-@goodColor:     @PANTONE620CP;
-@masterColor:   @PANTONE2925CP;
-@epicColor:     @PANTONE7456CP;
-@legendColor:   @PANTONE348CP;
-@artifactColor: @PANTONE7418CP;
-@otherColor:    @PANTONE7618CP;
+@wo-positive-effect-color:   @IrishGreen;
+@wo-negative-effect-color:   @GeorgiaPeach;
+@wo-buff-color:              @IrishGreen;
+@wo-debuff-color:            @GeorgiaPeach;
 
-@love:        fade( @GeorgiaPeach, 25% );
-@summer:      fade( @IrishGreen,   25% );
-@autumn:      fade( @AutumnSunset, 25% );
-@winter:      fade( @MalibuBlue,   25% );
-@anniversary: fade( @PersianJewel, 25% );
-@collabo:     fade( @GoldenPalm,   25% );
+// ↓旧
+// @poorColor:     @PANTONE513CP;
+// @normalColor:   @PANTONECoolGray7CP;
+// @goodColor:     @PANTONE620CP;
+// @masterColor:   @PANTONE2925CP;
+// @epicColor:     @PANTONE7456CP;
+// @legendColor:   @PANTONE348CP;
+// @artifactColor: @PANTONE7418CP;
+// @otherColor:    @PANTONE7618CP;
 
-@log:         @Drizzle;
-@site:        @AutumnSunset;
-@action:      @GeorgiaPeach;
-@contents:    @MalibuBlue;
-@item:        @PersianJewel;
-@function:    @GoldenPalm;
-@rule:        @IrishGreen;
+// @love:        fade( @GeorgiaPeach, 25% );
+// @summer:      fade( @IrishGreen,   25% );
+// @autumn:      fade( @AutumnSunset, 25% );
+// @winter:      fade( @MalibuBlue,   25% );
+// @anniversary: fade( @PersianJewel, 25% );
+// @collabo:     fade( @GoldenPalm,   25% );
 
-@positive:    @IrishGreen;
-@negative:    @GeorgiaPeach;
-
-@buff:        @IrishGreen;
-@debuff:      @GeorgiaPeach;
-
-@attentionBackgounnd: fade( @GeorgiaPeach, 15% );
+// @log:         @Drizzle;
+// @site:        @AutumnSunset;
+// @action:      @GeorgiaPeach;
+// @contents:    @MalibuBlue;
+// @item:        @PersianJewel;
+// @function:    @GoldenPalm;
+// @rule:        @IrishGreen;

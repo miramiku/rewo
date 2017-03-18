@@ -1,6 +1,7 @@
-# brackets 設定ファイル
+# files
 .brackets.json
 gulpfile.js
+*.less
 
 # folder
 styles/raw-image/

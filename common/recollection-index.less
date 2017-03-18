@@ -26,6 +26,11 @@
 			position: absolute;
 			top:      0;
 			width:    100%;
+			&::after {
+				background: none;
+				content:    " ";
+				display:    inline;
+			}
 		}
 		&:hover .page-title {
 			color: @link-color;
