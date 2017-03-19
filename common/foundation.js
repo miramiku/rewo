@@ -30,9 +30,11 @@ $( document ).ready( function () {
 		}
 	} );
 
+	$( "header" ).css( "background-image", "url(" + $( "header" ).data( "bg" ) + " )" );
+
 	$( "header" )
 		.click( function ( e ) {
-			if ( $( e.target ).attr( "id" ) === "header-content-inner" ) {
+			if ( $( e.target ).attr( "id" ) === "header-content" ) {
 				if ( $( "body" ).hasClass( "hide-header" ) ) {
 					$( "body" ).animate( {
 						width: "1200px"
@@ -47,7 +49,7 @@ $( document ).ready( function () {
 							queue: false,
 							complete: function () {
 								$( "body" ).removeClass( "hide-header" );
-								$( "#header-content-inner *" ).show();
+								$( "#header-content *" ).show();
 							}
 						} );
 					$( "main" ).animate( {
@@ -58,7 +60,7 @@ $( document ).ready( function () {
 							queue: false
 						} );
 				} else {
-					$( "#header-content-inner *" ).hide();
+					$( "#header-content *" ).hide();
 					$( "body" ).animate( {
 						width: "910px"
 					}, {
