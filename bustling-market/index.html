@@ -1,0 +1,1951 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>自由と賑わいの市場 | Recollection of Wizardry Online</title>
+
+	<!-- meta data -->
+	<meta name="author" content="Miku">
+
+	<!-- scripts -->
+	<script src="../common/core.js" async></script>
+
+	<!-- style / favicon -->
+	<link href="../common/foundation.css" rel="stylesheet" type="text/css">
+	<link href="../common/fancybox.css" rel="stylesheet" type="text/css">
+	<link href="../favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body id="rewo">
+	<header data-bg="background.jpg">
+		<div id="header-content">
+			<a href="https://miramiku.github.io/rewo/" id="page-info">
+				<span id="meta-info" class="page-headings">Illfalo Port</span>
+				<span id="major-title" class="page-headings">自由と賑わいの市場</span>
+				<span id="title-divider" class="page-headings"></span>
+				<span id="minor-title" class="page-headings">Bustling Market</span>
+			</a>
+
+			<footer>
+				<ul>
+					<li><a href="http://miramiku.github.io/"><span class="basis-icon me"> </span> みく(๑・ω・๑)</a></li>
+					<li><a href="https://twitter.com/miramiku"><span class="basis-icon tw"> </span> @miramiku</a></li>
+					<li><a href="https://github.com/miramiku/rewo"><span class="basis-icon gh"> </span> Repository</a></li>
+				</ul>
+			</footer>
+
+			<p id="wo-credit">
+				"Wizardry&reg;" of GMO Gamepot Inc. All rights reserved.<br>
+				Wizardry Renaissance&trade; &copy;2009 GMO Gamepot Inc.<br>
+				All rights reserved.
+			</p>
+		</div>
+	</header>
+
+	<main id="top">
+		<div id="main-inner">
+			<article>
+
+				<h3 id="list">NPC リスト</h3>
+				<table class="npc-list">
+					<thead>
+						<tr><th></th><th>NPC 名</th><th></th><th>NPC 名</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>H4</td><td><a href="#マイクロークa">マイクローク 店員</a></td><td>G5</td><td><a href="#ジィドル">鍛冶職人 ジィドル</a></td></tr>
+						<tr><td>G5</td><td><a href="#ジョンレーン">イルファーロ住人 ジョンレーン</a></td><td>H5</td><td><a href="#ガルシア">鍛冶屋 ガルシア</a>（ジィドルの鍛冶屋）</td></tr>
+						<tr><td>H5</td><td><a href="#クーベ">クォパティ僧侶 クーベ</a></td><td>I5</td><td><a href="#オークション">オークション 係員</a></td></tr>
+						<tr><td>I5</td><td><a href="#行商人">行商人</a></td><td>J5</td><td><a href="#ラインハルト">見張り ラインハルト</a></td></tr>
+						<tr><td>C6</td><td><a href="#ゲーリック">ファイターギルド ゲーリック</a></td><td>D6</td><td><a href="#コーディス">見張り コーディス</a></td></tr>
+						<tr><td>F6</td><td><a href="#モーダマス">武器屋 モーダマス</a>（モーダマス武器屋）</td><td>F6</td><td><a href="#ポールソン">見張り ポールソン</a></td></tr>
+						<tr><td>G6</td><td><a href="#キュールダン">水晶工作人 キュールダン</a></td><td>G5</td><td><a href="#クシャラ">串焼き屋 クシャラ</a></td></tr>
+						<tr><td>G6</td><td><a href="#レブ">防具屋 レブ</a>（サーギル防具屋）</td><td>G6</td><td><a href="#ルイス">防具屋店員 ルイス</a></td></tr>
+						<tr><td>H6</td><td><a href="#バーレル">魔法屋店員 バーレル</a></td><td>H6</td><td><a href="#ティーエ">魔法屋 ティーエ</a>（魔法屋ジュノーン）</td></tr>
+						<tr><td>H6</td><td><a href="#ロートル">魔法使い ロートル</a></td><td>I6</td><td><a href="#ラッチョ">メイジギルド ラッチョ</a></td></tr>
+						<tr><td>D7</td><td><a href="#ユニオン管理局">ユニオン管理局 受付係</a></td><td>D7</td><td><a href="#マイクロークb">マイクローク 店員</a></td></tr>
+						<tr><td>E7</td><td><a href="#マッコイ">助手 マッコイ</a></td><td>E7</td><td><a href="#モーラル">見張り モーラル</a></td></tr>
+						<tr><td>E7</td><td><a href="#フォリック">イルファーロ住人 フォリック</a></td><td>E7</td><td><a href="#キャラクターアレンジサロン">キャラクターアレンジサロン 店員</a></td></tr>
+						<tr><td>E7</td><td><a href="#ロイヤルショップ">ロイヤルショップ 店員</a></td><td>F7</td><td><a href="#バラック">武器屋店員 バラック</a></td></tr>
+						<tr><td>G7</td><td><a href="#エルメ">ボルタック店員 エルメ</a></td><td>G7</td><td><a href="#シューバル">ジェム職人 シューバル</a></td></tr>
+						<tr><td>G7</td><td><a href="#ボルタック">道具屋 ボルタック</a>（ボルタック商店）</td><td>I7</td><td><a href="#アーガス">イルファーロ住人 アーガス</a></td></tr>
+					</tbody>
+				</table>
+
+				<h3 id="log">会話ログ</h3>
+
+				<h4 id="a">あ行</h4>
+				<div class="lines" id="アーガス">
+					<div class="header">
+						<span class="character">アーガス</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ここから先は、裏通りってやつだ。<br>
+							店とかねえから、買い物を楽しみたいなら回れ右しな。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="イルファーロ住人 アーガス" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/アーガス.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">イルファーロ住人 アーガス</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 I7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="エルメ">
+					<div class="header">
+						<span class="character">エルメ</span>
+						<span class="race">GNO</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								いらっしゃいませ！<br>
+								品質一番ボルタック商店へようこそ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								年中無休！　冒険者の強い味方<br>
+								ボルタック商店はここですよ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								不要な品物買い取ります。<br>
+								親切一番ボルタック商店へようこそ。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ボルタック店員 エルメ" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/エルメ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ボルタック店員 エルメ</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 G7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="オークション">
+					<div class="header">
+						<span class="character">係員</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<p>
+							オークションへようこそ！<br>
+							<span class="tag"><span>function</span></span> auction
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="オークション 係員" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/オークション.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">オークション 係員</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 I5</span>
+					</div>
+				</div>
+
+				<h4 id="k">か行</h4>
+				<div class="lines" id="ガルシア">
+					<div class="header">
+						<span class="character">ガルシア</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								腕の良い冒険者は装備品を大事にするもんだ。<br>
+								鍛錬を使いこなせるかがカギになるな。<br>
+								<span class="tag"><span>function</span></span>blacksmith
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								"すべて修理"を選ぶと、お前が装備中のものを<br>
+								一括で修理してやるぜ。<br>
+								<span class="tag"><span>function</span></span>blacksmith
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								装備品の耐久度が 0 になると装備が外れるぜ。<br>
+								いざって時に困らねぇように、こまめに修理しろよ。<br>
+								<span class="tag"><span>function</span></span>blacksmith
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+							<p>
+								装備品を強化したけりゃ"鍛錬"を選べ。<br>
+								鍛錬するには"鍛錬石"が必要だ。<br>
+								欲しけりゃ売ってやるぜ。<br>
+								<span class="tag"><span>function</span></span>blacksmith
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>E</span>
+							<p>
+								鍛錬ってのは必ず成功するワケじゃねぇ。<br>
+								ま、その時は笑って許してくれ。<br>
+								上等な鍛錬石を使えば失敗は減るぜ。<br>
+								<span class="tag"><span>function</span></span>blacksmith
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>F</span>
+							<p>
+								鍛錬に失敗したらどうなるかって？<br>
+								そんなモン決まってるだろ。<br>
+								きれいさっぱり無くなっちまうんだよ。<br>
+								<span class="tag"><span>function</span></span>blacksmith
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>G</span>
+							<p>
+								ヒヨっ子が何の用だ？<br>
+								<span class="tag"><span>function</span></span>blacksmith
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="鍛冶屋 ガルシア" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/ガルシア.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">鍛冶屋 ガルシア</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 H5 ジィドルの鍛冶屋</span>
+					</div>
+				</div>
+
+				<div class="lines" id="キャラクターアレンジサロン">
+					<div class="header">
+						<span class="character">店員</span>
+						<span class="race">GNO</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>キャラクターアレンジサロン</span>
+							<span>CHARACTER ARRANGE SALON</span>
+						</p>
+						<p>
+							こちらではキャラクターの容姿変更や、<br>
+							<span class="wo-item">ボイス交換チケット</span>の交換が行えます。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>いらっしゃいませ！</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>サロンに入る</span>
+									<p>
+										<span class="tag"><span>function</span></span> character-arrange-salon
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>「ボイス交換チケット」を交換する</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>どのボイスを交換しますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01</span></span>男性ボイス</span>
+												<p>
+													<span class="tag"><span>uncollected</span></span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02</span></span>女性ボイス</span>
+												<p>
+													<span class="tag"><span>uncollected</span></span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03</span></span>やめる</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="キャラクターアレンジサロン 店員" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/キャラクターアレンジサロン.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">キャラクターアレンジサロン 店員</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 E7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="キュールダン">
+					<div class="header">
+						<span class="character">キュールダン</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							秘匿の水晶の欠片が 10 個あれば<br>
+							復元いたしますよ。<br>
+							いかがですか？
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>いかがでですか？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>上位の水晶に交換してほしい</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>いかがですか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01-a</span></span>【結晶】3つを【結晶・煌】の水晶に交換</span>
+												<p>
+													<span class="tag"><span>uncollected</span></span><br>
+													おや…<br>
+													お持ちでないようですが？
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01-b</span></span>【邪】3つを【大邪】の水晶に交換</span>
+												<p>
+													<span class="tag"><span>uncollected</span></span><br>
+													おや…<br>
+													お持ちでないようですが？
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01-c</span></span>【望郷】3つを【望郷・憧】の水晶に交換</span>
+												<p>
+													<span class="tag"><span>uncollected</span></span><br>
+													おや…<br>
+													お持ちでないようですが？
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#close</span></span>立ち去る</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>【龍眼】の水晶が欲しい</span>
+									<p>
+										<span class="tag"><span>uncollected</span></span><br>
+										おや…<br>
+										お持ちでないようですが？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>【審美】の水晶が欲しい</span>
+									<p>
+										<span class="tag"><span>uncollected</span></span><br>
+										おや…<br>
+										お持ちでないようですが？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>【追憶】の水晶が欲しい</span>
+									<p>
+										<span class="tag"><span>uncollected</span></span><br>
+										おや…<br>
+										お持ちでないようですが？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>【妖蟲】の水晶が欲しい</span>
+									<p>
+										<span class="tag"><span>uncollected</span></span><br>
+										おや…<br>
+										お持ちでないようですが？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>【輪廻】の水晶が欲しい</span>
+									<p>
+										<span class="tag"><span>uncollected</span></span><br>
+										おや…<br>
+										お持ちでないようですが？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>【玩具】の水晶が欲しい</span>
+									<p>
+										<span class="tag"><span>uncollected</span></span><br>
+										おや…<br>
+										お持ちでないようですが？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>【結晶】の水晶が欲しい</span>
+									<p>
+										<span class="tag"><span>uncollected</span></span><br>
+										おや…<br>
+										お持ちでないようですが？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>【結晶・煌】の水晶が欲しい</span>
+									<p>
+										<span class="tag"><span>uncollected</span></span><br>
+										おや…<br>
+										お持ちでないようですが？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>【邪】の水晶が欲しい</span>
+									<p>
+										<span class="tag"><span>uncollected</span></span><br>
+										おや…<br>
+										お持ちでないようですが？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>【大邪】の水晶が欲しい</span>
+									<p>
+										<span class="tag"><span>uncollected</span></span><br>
+										おや…<br>
+										お持ちでないようですが？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>【望郷】の水晶が欲しい</span>
+									<p>
+										<span class="tag"><span>uncollected</span></span><br>
+										おや…<br>
+										お持ちでないようですが？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>【望郷・憧】の水晶が欲しい</span>
+									<p>
+										<span class="tag"><span>uncollected</span></span><br>
+										おや…<br>
+										お持ちでないようですが？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#close</span></span>立ち去る</span>
+									<p>
+										またのお越しをお待ちしております。<br>
+										そうそう、欠片は鑑定してからお渡しください。<br>
+										未鑑定のままでは何の欠片かさっぱり…
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="水晶工作人 キュールダン" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/キュールダン.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">水晶工作人 キュールダン</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 G6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="行商人">
+					<div class="header">
+						<span class="character">行商人</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>行商人</span>
+							<span>PEDLAR</span>
+						</p>
+						<p>
+							<span class="wo-item">ギフトボックス</span>の行商をしておりやす。<br>
+							よろしければ見ていってくだせぇ。<br>
+							お代は<span class="wo-item">無職の石</span>でお願いしますぜ。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>どうしますか？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>ギフトボックスが欲しい</span>
+									<p>
+										<span class="wo-item">ギフトボックス</span>ですかい？<br>
+										<span class="wo-item">無職の石</span>が 10 個ってとこですね。<br>
+										よろしいですかい？
+									</p>
+									<div class="dialog">
+										<span class="dialog">
+											<span class="tag"><span>dialogue</span></span>
+										<span class="textbox" style="width: 550px;">よろしいですかい？<br>必要数：無職の石 10 個</span>
+										</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01-a</span></span>はい</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>has not</span></span>アイテムを所持していない</span>
+														<p>
+															<span class="tag"><span>uncollected</span></span><br>
+															からかっちゃあいけませんぜ？<br>
+															懐具合をよく見てくだせぇ。
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01-b</span></span>いいえ</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>ギフトボックスとは？</span>
+									<p>
+										<span class="wo-item">ギフトボックス</span>ってのはですね…<br>
+										大事な方に贈るプレゼントが<br>
+										入った箱なんでさぁ。<br>
+										街の人に贈ると喜ばれると思いやすぜ。<br>
+										まあ、あっしも何が入ってるかは<br>
+										知らないんですけどね。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>やめる</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="行商人" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/行商人.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">行商人</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 I5</span>
+					</div>
+				</div>
+
+				<div class="lines" id="クーベ">
+					<div class="header">
+						<span class="character">クーベ</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>live status</span></span> 通常時</span>
+							<p>
+								貴方が魂となった時に救いを求めるのであれば、<br>
+								その時はお力になりましょう。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>soul status</span></span> 魂時</span>
+							<p>
+								うわ、マジで来ちゃったの？まいったなぁ…。<br>
+								"社交辞令"ってヤツなんだけどなぁ…。<br>
+								まあいいや、どうする？
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>どうする？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>蘇生してもらう</span>
+										<p>
+											じゃあ蘇生費用 <span class="var"><span>50 × levels</span></span> G を払ってもらおうか。<br>
+											そうそう、一度貰ったものは返さないから<br>
+											そのつもりで。
+										</p>
+										<div class="dialog">
+											<span class="dialog">
+												<span class="tag"><span>dialogue</span></span>
+											<span class="textbox" style="width: 550px;">
+													蘇生費用：<span class="var"><span>50 × levels</span></span> G<br> 所持金：
+											<span class="wo-gold"><span class="var"><span>pocket</span></span> G</span>
+											</span>
+											</span>
+											<div class="options">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-a</span></span>支払う</span>
+													<div class="either">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>ordinary</span></span>平時</span>
+															<p>
+																<span class="tag"><span>function</span></span> revive
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>pocket</span></span><span class="var"><span>50 × levels</span></span> G 未満</span>
+															<p>
+																お金が足りないなぁ…<br>
+																貧乏人に用は無いよ。
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-b</span></span>無料でお願いします</span>
+													<p>
+														無料だと蘇生率が下がるよ。<br>
+														ヤル気が下がるからね。<br>
+														<span class="tag"><span>function</span></span>revival
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-c</span></span>なぜ返さないのか？</span>
+													<p>
+														それは言えないなぁ…<br>
+														あまり気にしないで欲しいね。
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-d</span></span>立ち去る</span>
+													<p>
+														面倒くさいから、なるべく死なないでね。<br>
+														ロストしたら僕の責任みたいだろ？
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+										<p>
+											面倒くさいから、なるべく死なないでね。<br>
+											ロストしたら僕の責任みたいだろ？
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="クォパティ僧侶 クーベ" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/クーベ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">クォパティ僧侶 クーベ</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 H5</span>
+					</div>
+				</div>
+
+				<div class="lines" id="クシャラ">
+					<div class="header">
+						<span class="character">クシャラ</span>
+						<span class="race">GNO</span>
+					</div>
+					<div class="text">
+						<p>
+							ごめんなさい…今商品切らしているのよ。<br>
+							鍛冶職人のドワーフさん達が<br>
+							いっぱい買っていってくれるんでねぇ。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="串焼き屋 クシャラ" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/クシャラ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">串焼き屋 クシャラ</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 G5</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ゲーリック">
+					<div class="header">
+						<span class="character">ゲーリック</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="text">
+							<div class="option">
+								<span class="option"><span class="tag"><span>ordinary</span></span>平時</span>
+								<p>
+									ファイターに転職したいのか？
+								</p>
+								<div class="dialog">
+									<span class="dialog"><span class="tag"><span>dialogue</span></span>ファイターに転職したいのか？</span>
+									<div class="options">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+											<div class="either">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>ordinary</span></span>平時</span>
+													<div class="either">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>souk rank</span></span>SR 3 以上</span>
+															<p>
+																<span class="tag"><span>function</span></span> JobChange
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>souk rank</span></span>SR 3 未満</span>
+															<p>
+																転職したいのか？<br>
+																<span class="wo-keyword">ソウルランクが 3</span> に満たない者はダメなんだ。<br>
+																その日が来るまで待ってるぞ！
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>class</span></span>FIG</span>
+													<p>
+														ハッハッハ！<br>
+														お前はもうファイターじゃないか！<br>
+														いいか、どんな時でも筋肉だ！それを忘れるな！
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#02</span></span>ファイターとは？</span>
+											<p>
+												よくぞ聞いてくれた！<br>
+												ファイターとは鍛え上げられた己の肉体を用いて<br>
+												行く手を塞ぐ困難に悠然と立ち向かう職業だ！<br>
+												ほとんどの装備品を使いこなし<br>
+												HP も高いから前衛にうってつけだ！<br>
+												呪文？そんな物は不要だ！だから覚えないぞ！
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#03</span></span>転職とは？</span>
+											<p>
+												肉体を鍛えるためにファイターとなる事だ！<br>
+												レベルは 1 になってしまうが、そんなのは些細な事だ。<br>
+												なぜなら、現在の総経験値の一部が引き継がれるからだ！<br>
+												そうそう、もしスキルを習得していたなら<br>
+												ある程度の継承する事ができるぞ。<br>
+												呪文だって使えるようになるぞ！<br>
+												転職には<span class="wo-item">ファイター転職証</span>が必要だぞ！<br>
+												<span class="wo-item">ファイター転職証</span>は<br>
+												ファイター用の転職ミッションの報酬だ。
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#04</span></span>転職ミッション</span>
+											<div class="either">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>ordinary</span></span> 平時</span>
+													<div class="either">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>souk rank</span></span>SR 3 以上</span>
+															<div class="either">
+																<span class="gauge"></span>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>mission</span></span>ミッション受注前</span>
+																	<p>
+																		ファイターの転職ミッションを受けるのか？<br>
+																		よし！　良い心がけだ！　では次のことをやってくれ！
+																	</p>
+																	<div class="dialog">
+																		<span class="dialog"><span class="tag"><span>mission</span></span>戦士の証</span>
+																		<div class="options">
+																			<span class="gauge"></span>
+																			<div class="option">
+																				<span class="option"><span class="tag"><span>accept</span></span>受注</span>
+																				<p>
+																					では、がんばってくれよな！
+																				</p>
+																			</div>
+																			<div class="option">
+																				<span class="option"><span class="tag"><span>cancel</span></span>閉じる</span>
+																				<p>
+																					なんだ受けないのか？　ファイター…楽しいんだけどな…
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>mission</span></span>ミッション受注中</span>
+																	<p>
+																		なんだ！　まだ目的を果たしてないじゃないか！<br>
+																		弱音を吐くことは厳禁だ！　なぜならファイターは、<br>
+																		常に強くなくてはならないからだ！
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>souk rank</span></span>SR 3 未満</span>
+															<p>
+																転職したいのか？<br>
+																<span class="wo-keyword">ソウルランクが 3</span> に満たない者はダメなんだ。<br>
+																その日が来るまで待ってるぞ！
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>class</span></span>FIG</span>
+													<p>
+														ハッハッハ！<br>
+														お前はもうファイターじゃないか！<br>
+														いいか、どんな時でも筋肉だ！それを忘れるな！
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#05</span></span>立ち去る</span>
+											<p>
+												そうか…残念だ…<br>
+												ファイター…楽しいんだけどな…
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="option">
+								<span class="option"><span class="tag"><span>mission</span></span>戦士になろう</span>
+								<p>
+									おっ、<span class="wo-name">カーラルデ</span>から言われて来たんだな？<br>
+									報酬は用意してあるぞ！
+								</p>
+								<div class="dialog">
+									<span class="dialog"><span class="tag"><span>mission</span></span>戦士になろう</span>
+									<div class="options">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>report</span></span>報告</span>
+											<p>
+												<span class="tag"><span>uncollected</span></span>
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>cancel</span></span>閉じる</span>
+											<p>
+												ん、どうしたんだ？<br>
+												報告して貰わんと報酬を渡せないぞ。
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ファイターギルド ゲーリック" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/ゲーリック.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ファイターギルド ゲーリック</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 C6</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="level">1</span> 戦士の証</div>
+						<div class="client"><span class="wo-name">ゲーリック</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							ファイター転職したいのか？<br>
+							だったらお前の筋肉（ちから）を見せてもらおう！<br>
+							ファイターに相応しい筋肉（ちから）なら<br>
+							<span class="wo-item">ファイター転職証</span>をお前にやろうじゃないか！<br>
+							<span class="wo-item">戦士のルーンストーン</span>を集めてくるのだ！
+						</p>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						<span class="wo-item">戦士のルーンストーン</span>を 10 個集める。
+						<div class="tasks">
+							<span class="task"><span>戦士のルーンストーンを集める</span><span>10</span></span>
+						</div>
+					</div>
+					<span class="label">報酬</span>
+					<div class="rewards">
+						<span class="exp">0</span>
+						<span class="price">0</span>
+						<span class="items">
+							<span class="reward-item"><img alt="ファイター転職証" class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/ファイター転職証.png">ファイター転職証</span>
+						</span>
+					</div>
+					<div class="footer">
+						<span>放棄不可</span>
+					</div>
+				</div>
+
+				<div class="lines" id="コーディス">
+					<div class="header">
+						<span class="character">コーディス</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ここから先は、かの<span class="wo-site">イルファーロ魔法局</span>へと続いている。<br>
+							下々の物が立ち入ってよい場所ではないぞ！
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="見張り コーディス" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/コーディス.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">見張り コーディス</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 D6</span>
+					</div>
+				</div>
+
+				<div class="movie">
+					<div class="header">
+					</div>
+					<div class="scripts">
+						<p>
+							<span class="speaker">コーディス</span>
+							ここは<span class="wo-site">イルファーロ魔法局</span>である。貴様は冒険者だな？<br>
+							申し訳ないが、許可の無いものを通すわけにはいかん。<br>
+							早々に引き返されよ。
+						</p>
+					</div>
+					<div class="screenshots">
+						<img alt="" data-fancybox="the-ministry-of-arcanums-guard" class="lazyload" src="../common/placeholder.png" data-src="movies/001.jpg">
+						<img alt="" data-fancybox="the-ministry-of-arcanums-guard" class="lazyload" src="../common/placeholder.png" data-src="movies/002.jpg">
+					</div>
+				</div>
+
+				<h4 id="s">さ行</h4>
+				<div class="lines" id="ジィドル">
+					<div class="header">
+						<span class="character">ジィドル</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<p>
+							ん、なんだ？<br>
+							たしかにここは、ジィドルの鍛冶屋だが…。<br>
+							悪いな、今手が塞がっているんだ。<br>
+							武器の修理なら、中に居る<span class="wo-name">ガルシア</span>に言ってくれ。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="鍛冶職人 ジィドル" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/ジィドル.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">鍛冶職人 ジィドル</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 G5</span>
+					</div>
+				</div>
+
+				<div class="lines" id="シューバル">
+					<div class="header">
+						<span class="character">シューバル</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span>イルファーロ初到着時</span>
+							<p>
+								俺が相手にしているのは<br>
+								<span class="wo-keyword">ソウルランクが 2</span> 以上の冒険者なんだ。<br>
+								また来てくれ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span>クエスト「魂の導き手」クリア後</span>
+							<div class="either">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+									<p>
+										ジェム同士を合成できるのを知ってるかい？<br>
+										<span class="wo-item">ジェムの素材</span>がいるんだけどな。<br>
+										<span class="wo-keyword">合成ジェムをさらに合成する事はできない</span>からな。<br>
+										<span class="tag"><span>function</span></span> jeweler
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+									<p>
+										ジェムの破片は復元できるのを知ってるかい？<br>
+										<span class="wo-keyword">同じ種類の破片５つ</span>持ってきな。<br>
+										あとは俺に任せておけ！<br>
+										<span class="tag"><span>function</span></span> jeweler
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+									<p>
+										鍛錬以外に装備を強化する方法を知ってるかい？<br>
+										ジェムを装備品に付けるんだ。<br>
+										俺はその職人ってわけさ。<br>
+										<span class="tag"><span>function</span></span> jeweler
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ジェム職人 シューバル" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/シューバル.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ジェム職人 シューバル</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 G7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ジョンレーン">
+					<div class="header">
+						<span class="character">ジョンレーン</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ここの串焼き最高に美味いんだけど<br>
+							いつ来ても売りきれなんだよな…。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="イルファーロ住人 ジョンレーン" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/ジョンレーン.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">イルファーロ住人 ジョンレーン</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 G5</span>
+					</div>
+				</div>
+
+				<h4 id="t">た行</h4>
+				<div class="lines" id="ティーエ">
+					<div class="header">
+						<span class="character">ティーエ</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option">
+								<span class="tag"><span>lead</span></span>
+							</span>
+							<div class="either">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+									<p>
+										いらっしゃいませ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+									<p>
+										おすすめの商品ですか？<br>
+										うーん…指輪かなぁ…
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>main</span></span>
+							</span>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>今日はどんな用事だい？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>魔法品を買う</span>
+										<p>
+											<span class="tag"><span>function</span></span>魔法屋ジュノーン
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>魔法研究について</span>
+										<p>
+											おや、ぼくの研究を手伝ってくれるのかい？
+										</p>
+										<div class="dialog">
+											<span class="dialog"><span class="tag"><span>dialogue</span></span>ぼくの研究を手伝ってくれるのかい？</span>
+											<div class="options">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02-01</span></span>魔法研究について</span>
+													<p>
+															ぼくは魔法研究をしてるのだけど、<br>
+															研究意欲の湧くような珍しい素材に目が無くてね。<br>
+															もし、そういった珍しい素材を取ってきてくれるなら、<br>
+															長年の研究の結果作り出した、「潜在能力」の高まる<br>
+															特別なアイテムをお礼にあげるよ。
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02-02</span></span>研究対象について</span>
+													<p>
+														今、興味のある研究素材はこんなところかな？
+													</p>
+													<p class="descriptive">
+														◆<span class="wo-site">愛欲と淫虐の館</span><br>
+														　<span class="wo-item">悪夢の欠片</span>
+													</p>
+													<p class="descriptive">
+														◆<span class="wo-site">ユークリッドの無限回廊</span><br>
+														　<span class="wo-item">煌めきの三角水晶</span>
+													</p>
+													<p class="descriptive">
+														◆<span class="wo-site">夢幻の試練場</span><br>
+														　<span class="wo-item">夢幻の欠片【魂】</span>
+													</p>
+													<p>
+														もし見つけたら持ってきてくれないか？
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02-03</span></span>研修素材を渡す</span>
+													<p>
+														今ならこのレートで研究素材を受け取るよ。
+													</p>
+													<div class="dialog">
+														<span class="dialog"><span class="tag"><span>dialogue</span></span>どの研究素材をくれるのかい？</span>
+														<div class="options">
+															<span class="gauge"></span>
+															<div class="option">
+																<span class="option"><span class="tag"><span>#02-03-a</span></span><span class="wo-item">悪夢の欠片</span>：30 個渡す</span>
+																<p>
+																	おや？<br>
+																	<span class="wo-item">悪夢の欠片</span>の数が足りないようだよ？
+																</p>
+															</div>
+															<div class="option">
+																<span class="option"><span class="tag"><span>#02-03-b</span></span><span class="wo-item">煌めきの三角水晶</span>：10 個渡す</span>
+																<p>
+																	おや？<br>
+																	<span class="wo-item">煌めきの三角水晶</span>の数が足りないようだよ？
+																</p>
+															</div>
+															<div class="option">
+																<span class="option"><span class="tag"><span>#02-03-c</span></span><span class="wo-item">夢幻の欠片【魂】</span>：30 個渡す</span>
+																<p>
+																	おや？<br>
+																	<span class="wo-item">夢幻の欠片【魂】</span>の数が足りないようだよ？
+																</p>
+															</div>
+															<div class="option">
+																<span class="option"><span class="tag"><span>#02-03-d</span></span>またあとで</span>
+																<p>
+																	<span class="tag"><span>back</span></span><span class="tag"><span>#02</span></span>
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02-04</span></span>立ち去る</span>
+													<p>
+														<span class="tag"><span>empty</span></span>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="魔法屋 ティーエ" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/ティーエ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">魔法屋 ティーエ</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 H6 魔法屋ジュノーン</span>
+					</div>
+				</div>
+
+				<h4 id="h">は行</h4>
+				<div class="lines" id="バーレル">
+					<div class="header">
+						<span class="character">バーレル</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<p>
+							ようこそ、魔法屋ジュノーンへ。<br>
+							魔術の道を行く方は、大歓迎ですよ。<br>
+							さあ、店内でごゆっくりとお選びくださいませ。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="魔法屋店員 バーレル" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/バーレル.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">魔法屋店員 バーレル</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 H6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="バラック">
+					<div class="header">
+						<span class="character">バラック</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							いらっしゃいませー……。<br>
+							うちの店モーダマス武器屋っていうんだけどさ、<br>
+							よかったら見て行ってくんない？<br>
+							安くするとか別にないんだけどさ。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="武器屋店員 バラック" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/バラック.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">武器屋店員 バラック</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 F7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="フォリック">
+					<div class="header">
+						<span class="character">フォリック</span>
+						<span class="race">POR♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ここから先は、商店街なのだ。<br>
+							いわゆる目抜き通りというやつなのだ。へけっ。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="イルファーロ住人 フォリック" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/フォリック.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">イルファーロ住人 フォリック</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 E7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ポールソン">
+					<div class="header">
+						<span class="character">ポールソン</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ここは、者や金が行きかう所だからな。<br>
+							それなりに問題も多い。<br>
+							貴様も問題を起こすんじゃないぞ！<br>
+							問題を起こせば、すぐに牢獄行きだからな！
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="見張り ポールソン" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/ポールソン.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">見張り ポールソン</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 F6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ボルタック">
+					<div class="header">
+						<span class="character">ボルタック</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								いらっしゃいませ！<br>
+								ボルタック商店へようこそ！<br>
+								<span class="tag"><span>function</span></span>ボルタック商店
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								未鑑定のアイテムがあったら調べて差し上げますよ！<br>
+								<span class="tag"><span>function</span></span>ボルタック商店
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								私が買い取った品はどこに並ぶのかですって？<br>
+								それは"企業秘密"ってヤツですよ。<br>
+								そんなことより、何かご入用で？<br>
+								<span class="tag"><span>function</span></span>ボルタック商店
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+							<p>
+								私が無愛想ですって？　ご冗談を！<br>
+								この通り親切丁寧をモットーに商売しております！<br>
+								ボルタック商店をどうぞよろしく！<br>
+								<span class="tag"><span>function</span></span>ボルタック商店
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="道具屋 ボルタック" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/ボルタック.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">道具屋 ボルタック</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 G7 ボルタック商店</span>
+					</div>
+				</div>
+
+				<h4 id="m">ま行</h4>
+				<div class="lines" id="マイクロークa">
+					<div class="header">
+						<span class="character">店員</span>
+						<span class="race">POR♀</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>マイクローク</span>
+							<span>WAREHOUSE</span>
+						</p>
+						<p>
+							いらっしゃいませ。<br>
+							お客様の持ち物やお金をお預かりいたします。<br>
+							<span class="tag"><span>function</span></span> mycloak
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="マイクローク 店員" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/マイクロークa.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">マイクローク 店員</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 H4</span>
+					</div>
+				</div>
+
+				<div class="lines" id="マイクロークb">
+					<div class="header">
+						<span class="character">店員</span>
+						<span class="race">POR♀</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>マイクローク</span>
+							<span>WAREHOUSE</span>
+						</p>
+						<p>
+							いらっしゃいませ。<br>
+							お客様の持ち物やお金をお預かりいたします。<br>
+							<span class="tag"><span>function</span></span> mycloak
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="マイクローク 店員" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/マイクロークb.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">マイクローク 店員</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 D7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="マッコイ">
+					<div class="header">
+						<span class="character">マッコイ</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ほう……。<br>
+							あなたの装備、なかなかのものですね。<br>
+							売ればいったい、いくらになるか。<br>
+							考えたことはありますか？<br>
+							いや、売って欲しいんじゃないんです。<br>
+							昔のくせがどうにも抜けなくてね。<br>
+							ついつい、値踏みしてしまう。<br>
+							それに、今は学者で満足してるんだ。<br>
+							冒険者なんて、とてもじゃないが<br>
+							やってられませんよ。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="助手 マッコイ" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/マッコイ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">助手 マッコイ</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 E7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="モーダマス">
+					<div class="header">
+						<span class="character">モーダマス</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								一応、鑑定もやったりするぜ。<br>
+								ま、この辺の連中は誰でもできるけどな。<br>
+								<span class="tag"><span>function</span></span>モーダマス武器屋
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								いらっしゃい！<br>
+								いい武器揃ってるぜ。<br>
+								<span class="tag"><span>function</span></span>モーダマス武器屋
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								武器を買ったら装備しろよ！<br>
+								お前が素手で戦うってんなら止めねぇけどよ！<br>
+								<span class="tag"><span>function</span></span>モーダマス武器屋
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+							<p>
+								防具が欲しけりゃ防具屋に行ってくれ。<br>
+								ここは武器専門だからな！<br>
+								<span class="tag"><span>function</span></span>モーダマス武器屋
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="武器屋 モーダマス" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/モーダマス.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">武器屋 モーダマス</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 F6 モーダマス武器屋</span>
+					</div>
+				</div>
+
+				<div class="lines" id="モーラル">
+					<div class="header">
+						<span class="character">モーラル</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							そこの階段を下りると<span class="wo-site">英雄の集う広場</span>に出るぞ。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="見張り モーラル" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/モーラル.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">見張り モーラル</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 E7</span>
+					</div>
+				</div>
+
+				<h4 id="y">や行</h4>
+				<div class="lines" id="ユニオン管理局">
+					<div class="header">
+						<span class="character">受付係</span>
+						<span class="race">HUM♀</span>
+					</div>
+					<div class="text">
+						<p>
+							ユニオン関連のご用を承っております。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>ユニオン関連のご用を承っております。</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>説明を聞く</span>
+									<p>
+										ユニオンとは志を共にする冒険者の集まりです。<br>
+										設立するには<span class="wo-keyword">ソウルランクが3以上</span>である必要があります。<br>
+										また、<span class="wo-keyword">登録料として30,000G</span>をお支払いいただきます。<br>
+										<span class="wo-item">絆の証</span>というアイテムを捧げることで<br>
+										ユニオンレベルを上げる事ができます。<br>
+										レベルが上がると様々な恩恵が得られます。<br>
+										恩恵の内容はメインメニューからユニオンを選択し、<br>
+										管理タブの【<span class="wo-keyword">恩恵を表示</span>】ボタンを押すと<br>
+										確認する事ができます。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ユニオン管理局 受付係" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/ユニオン管理局.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ユニオン管理局 受付係</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 D7</span>
+					</div>
+				</div>
+
+				<h4 id="r">ら行</h4>
+				<div class="lines" id="ラインハルト">
+					<div class="header">
+						<span class="character">ラインハルト</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ここから先は、立ち入り禁止になっている！
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="見張り ラインハルト" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/ラインハルト.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">見張り ラインハルト</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 J5</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ラッチョ">
+					<div class="header">
+						<span class="character">ラッチョ</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>ordinary</span></span>平時</span>
+							<p>
+								メイジに転職する？
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>メイジに転職する？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+										<div class="either">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>ordinary</span></span>平時</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>souk rank</span></span>SR 3 以上</span>
+														<p>
+															<span class="tag"><span>function</span></span> JobChange
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>souk rank</span></span>SR 3 未満</span>
+														<p>
+															ん、転職したいの？<br>
+															<span class="wo-keyword">ソウルランクが 3</span> に満たない人はちょっと…<br>
+															まあ、そういう事だから。
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>class</span></span>MAG</span>
+												<p>
+													<span class="tag"><span>uncollected</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>メイジとは？</span>
+										<p>
+											呪文を使って敵を攻撃したり弱体化したり…<br>
+											そんな事が得意かな。<br>
+											打たれ弱いし、装備もたかが知れてるから<br>
+											前に出て戦うのはちょっとなぁ…<br>
+											MP の高さには自信があるんだけどね。
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#03</span></span>転職とは？</span>
+										<p>
+											ん、そこからか…<br>
+											転職ってのは他の職業になる事だよ。<br>
+											ここならメイジになれるんだ。<br>
+											レベルは１にもどってしまうけど、<br>
+											習得していたスキルをある程度継承できるよ。<br>
+											現在の総経験値の一部も引き継がれる。<br>
+											転職したいなら<span class="wo-item">メイジ転職証</span>がいるよ。<br>
+											<span class="wo-item">メイジ転職証</span>が欲しいなら、<br>
+											メイジ用の転職ミッションをやるんだね。
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#04</span></span>転職ミッション</span>
+										<div class="either">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>ordinary</span></span> 平時</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>souk rank</span></span>SR 3 以上</span>
+														<div class="either">
+															<span class="gauge"></span>
+															<div class="option">
+																<span class="option"><span class="tag"><span>mission</span></span>ミッション受注前</span>
+																<p>
+																	メイジの転職ミッションを受けたいの？<br>
+																	いいよ。じゃあ次のことをやってきてね。
+																</p>
+																<div class="dialog">
+																	<span class="dialog"><span class="tag"><span>mission</span></span>魔術師の証</span>
+																	<div class="options">
+																		<span class="gauge"></span>
+																		<div class="option">
+																			<span class="option"><span class="tag"><span>accept</span></span>受注</span>
+																			<p>
+																				じゃあ、がんばってくれよ。
+																			</p>
+																		</div>
+																		<div class="option">
+																			<span class="option"><span class="tag"><span>cancel</span></span>閉じる</span>
+																			<p>
+																				なんだ受けないのかい？　じゃあ帰ってくれるかな。<br>
+																				瞑想の途中なんだよね。
+																			</p>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="option">
+																<span class="option"><span class="tag"><span>mission</span></span>ミッション受注中</span>
+																<p>
+																	なんだい？　まだ目的を果たしてないみたいだね。<br>
+																	途中経過は、報告しないでいいからね。<br>
+																	瞑想の邪魔になるし。
+																</p>
+															</div>
+														</div>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>souk rank</span></span>SR 3 未満</span>
+														<p>
+															ん、転職したいの？<br>
+															<span class="wo-keyword">ソウルランクが 3</span> に満たない人はちょっと…<br>
+															まあ、そういう事だから。
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>class</span></span>MAG</span>
+												<p>
+													<span class="tag"><span>uncollected</span></span>
+												</p>
+											</div>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>souk rank</span></span>SR 3 未満</span>
+											<p>
+												ん、転職したいの？<br>
+												<span class="wo-keyword">ソウルランクが 3</span> に満たない人はちょっと…<br>
+												まあ、そういう事だから。
+											</p>
+										</div>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#05</span></span>立ち去る</span>
+										<p>
+											ん、そうなんだ。<br>
+											じゃあ帰ってくれるかな。<br>
+											瞑想の途中なんだよね。
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="option">
+								<span class="option"><span class="tag"><span>mission</span></span>魔術師になろう</span>
+								<p>
+									<span class="wo-name">カーラルデ</span>さんから言われて来たんだね？<br>
+									報酬は用意してあるよ。
+								</p>
+								<div class="dialog">
+									<span class="dialog"><span class="tag"><span>mission</span></span>魔術師になろう</span>
+									<div class="options">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>report</span></span>報告</span>
+											<p>
+												<span class="tag"><span>uncollected</span></span>
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>cancel</span></span>閉じる</span>
+											<p>
+												ん、どうしたの？<br>
+												報告してくれないと報酬を渡せないよ。
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="メイジギルド ラッチョ" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/ラッチョ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">メイジギルド ラッチョ</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 I6</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="level">1</span> 魔術師の証</div>
+						<div class="client"><span class="wo-name">ラッチョ</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							メイジ用の転職ミッションをやるんだね。<br>
+							<span class="wo-item">魔術師のルーンストーン</span>を集めてきてくれよ。<br>
+							そうしたら<span class="wo-item">メイジ転職証</span>を君にあげるよ。
+						</p>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						<span class="wo-item">魔術師のルーンストーン</span>を 10 個集める。
+						<div class="tasks">
+							<span class="task"><span>魔術師のルーンストーンを集める</span><span>10</span></span>
+						</div>
+					</div>
+					<span class="label">報酬</span>
+					<div class="rewards">
+						<span class="exp">0</span>
+						<span class="price">0</span>
+						<span class="items">
+							<span class="reward-item"><img alt="メイジ転職証" class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/メイジ転職証.png">メイジ転職証</span>
+						</span>
+					</div>
+					<div class="footer">
+						<span>放棄不可</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ルイス">
+					<div class="header">
+						<span class="character">ルイス</span>
+						<span class="race">POR♀</span>
+					</div>
+					<div class="text">
+						<p>
+							いらっしゃいませ！<br>
+							防具のご用命は、当サーギル防具屋へ！！<br>
+							お金で安全が買えると思ったら安い買い物ですよ！
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="防具屋店員 ルイス" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/ルイス.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">防具屋店員 ルイス</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 G6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="レブ">
+					<div class="header">
+						<span class="character">レブ</span>
+						<span class="race">POR♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								いらっしゃいませ！<br>
+								素晴らしい防具はいかがですか。<br>
+								<span class="tag"><span>function</span></span>サーギル防具店
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								当店の取り扱いは防具のみとなっております。<br>
+								武器をお求めでしたら武器屋にどうぞ！<br>
+								<span class="tag"><span>function</span></span>サーギル防具店
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								不要な物があれば買い取らせていただきますよ！<br>
+								その分お買い上げいただくと…。<br>
+								いえいえ、独り言ですよ。<br>
+								<span class="tag"><span>function</span></span>サーギル防具店
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+							<p>
+								防具を買ったら装備をお忘れなく！<br>
+								持ってるだけでは役に立ちませんよ！<br>
+								<span class="tag"><span>function</span></span>サーギル防具店
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="防具屋 レブ" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/レブ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">防具屋 レブ</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 G6 サーギル防具屋</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ロイヤルショップ">
+					<div class="header">
+						<span class="character">店員</span>
+						<span class="race">POR♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ロイヤルショップへようこそ！<br>
+							<span class="tag"><span>function</span></span> royalshop
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="ロイヤルショップ 店員" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/ロイヤルショップ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ロイヤルショップ 店員</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 E7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="看板ポール">
+					<div class="header">
+						<span class="character">（無名）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p class="centering">
+							＊　いらっしゃいませ！　＊<br>
+							＊　ロイヤルショップへ　＊<br>
+							＊　　　ようこそ！　　　＊
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="看板ポール" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/看板ポール.jpg">
+					</div>
+					<div class="footer">
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 E7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ロートル">
+					<div class="header">
+						<span class="character">ロートル</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<p>
+							君は、エンシェントマジックというものを知っているかな？<br>
+							文字通り、我々が使っている魔法の祖たる存在で<br>
+							今となっては、伝説でしかその名を聞かぬ。<br>
+							魔術師として、その一端にでも触れてみたいと思うが<br>
+							それは叶わぬというもの。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="魔法使い ロートル" data-fancybox="bustling-market" class="lazyload" src="../common/placeholder.png" data-src="npcs/ロートル.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">魔法使い ロートル</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 H6</span>
+					</div>
+				</div>
+			</article>
+
+			<hr class="offset-killer">
+			<div id="disqus-space">
+				<p id="comment-attention">
+					名前を入力しようとすると表示される「ゲストとして投稿する」にチェックを入れるとDISQUSに登録しなくてもコメントすることができます。<br>
+					メールアドレスは入力必要ですが DISQUS で管理され、投稿したコメントに表示されることも私にも通知されることもありません。<br>
+					架空のメールアドレスでも可能ですので、お気軽にコメントしてください！
+				</p>
+				<aside id="toc-disqus">
+					<div id="disqus_thread"></div>
+				</aside>
+				<script type="text/javascript">
+					( function () {
+						var dsq = document.createElement( 'script' );
+						dsq.type = 'text/javascript';
+						dsq.async = true;
+						dsq.src = '//miramiku.disqus.com/embed.js';
+						( document.getElementsByTagName( 'head' )[ 0 ] || document.getElementsByTagName( 'body' )[ 0 ] ).appendChild( dsq );
+					})();
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+			</div>
+		</div>
+	</main>
+
+	<div id="toc">
+		<ul>
+			<li id="back2top"><a href="#top">トップページ</a></li>
+			<li><a href="#list">NPC リスト</a></li>
+			<li><a href="#log">会話ログ</a>
+				<ul>
+					<li><a href="#a">あ行</a></li>
+					<li><a href="#k">か行</a></li>
+					<li><a href="#s">さ行</a></li>
+					<li><a href="#t">た行</a></li>
+					<li><a href="#h">は行</a></li>
+					<li><a href="#m">ま行</a></li>
+					<li><a href="#y">や行</a></li>
+					<li><a href="#r">ら行</a></li>
+				</ul>
+			</li>
+			<li id="jump2disqus"><a href="#toc-disqus">コメント</a></li>
+		</ul>
+	</div>
+
+	<script>
+		( function ( i, s, o, g, r, a, m ) {
+			i[ 'GoogleAnalyticsObject' ] = r; i[ r ] = i[ r ] || function () {
+				( i[ r ].q = i[ r ].q || [] ).push( arguments )
+			}, i[ r ].l = 1 * new Date(); a = s.createElement( o ),
+				m = s.getElementsByTagName( o )[ 0 ]; a.async = 1; a.src = g; m.parentNode.insertBefore( a, m )
+		})( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
+		ga( 'create', 'UA-46801675-2', 'auto' );
+		ga( 'send', 'pageview' );
+	</script>
+</body>
+
+</html>
