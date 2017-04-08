@@ -1,0 +1,2477 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>永遠の海原へと続く港 | Recollection of Wizardry Online</title>
+
+	<!-- meta data -->
+	<meta name="author" content="Miku">
+
+	<!-- scripts -->
+	<script src="../common/core.js"></script>
+	<script src="../common/supus.core.js"></script>
+
+	<!-- style / favicon -->
+	<link href="../common/foundation.css" rel="stylesheet" type="text/css">
+	<link href="../common/fancybox.css" rel="stylesheet" type="text/css">
+	<link href="../favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body id="rewo">
+	<header data-bg="background.jpg">
+		<div id="header-content">
+			<a href="https://miramiku.github.io/rewo/" id="page-info">
+				<span id="meta-info" class="page-headings">Illfalo Port</span>
+				<span id="major-title" class="page-headings">永遠の海原へと続く港</span>
+				<span id="title-divider" class="page-headings"></span>
+				<span id="minor-title" class="page-headings">Deep Sea Port</span>
+			</a>
+
+			<footer>
+				<ul>
+					<li><a href="http://miramiku.github.io/"><span class="basis-icon me"> </span> みく(๑・ω・๑)</a></li>
+					<li><a href="https://twitter.com/miramiku"><span class="basis-icon tw"> </span> @miramiku</a></li>
+					<li><a href="https://github.com/miramiku/rewo"><span class="basis-icon gh"> </span> Repository</a></li>
+				</ul>
+			</footer>
+
+			<p id="wo-credit">
+				"Wizardry&reg;" of GMO Gamepot Inc. All rights reserved.<br>
+				Wizardry Renaissance&trade; &copy;2009 GMO Gamepot Inc.<br>
+				All rights reserved.
+			</p>
+		</div>
+	</header>
+
+	<main id="top">
+		<div id="main-inner">
+			<article>
+				<blockquote class="epigraph">
+					古物商もいいですが，私はもっとスーパスが有名になってもいいと思うんですよね。
+					<div class="ref">
+						<span class="cite">ゲームポット Wizardry Online 運営プロデューサー（インタビュー当時） 前田有希氏</span>
+						<span class="origin">
+						4Gamer.net -
+						<a href="http://www.4gamer.net/games/044/G004471/20111115084/">
+							「Wizardry Online」の気になるアノ部分はこの人達が作っていた！<br>
+							運営・開発スタッフに聞くサービス開始までの顛末と今後の展開
+						</a>
+					</span>
+					</div>
+				</blockquote>
+
+				<h3 id="list">NPC リスト</h3>
+				<table class="npc-list">
+					<thead>
+						<tr><th></th><th>NPC 名</th><th></th><th>NPC 名</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>I3</td><td><a href="#ガルノフ">マスター ガルノフ</a></td><td>I3</td><td><a href="#リアール">訓練所係員 リアール</a></td></tr>
+						<tr><td>G4</td><td><a href="#バッジス">鍛冶屋 バッジス</a></td><td>I4</td><td><a href="#タスカード">簡易宿泊所職員 タスカード</a></td></tr>
+						<tr><td>I4</td><td><a href="#パイノン">簡易宿泊所職員 パイノン</a></td><td>H4</td><td><a href="#エレシェ">冒険者 エレシェ</a></td></tr>
+						<tr><td>H4</td><td><a href="#ミリオ">*イベント案内人* ミリオ</a></td><td>H4</td><td><a href="#ソルグラン">冒険者 ソルグラン</a></td></tr>
+						<tr><td>H4</td><td><a href="#マージェ">冒険者 マージェ</a></td><td>G5</td><td><a href="#ブランフェルド">冒険者ギルド職員 ブランフェルド</a></td></tr>
+						<tr><td>G5</td><td><a href="#ロッテ">露天商 ロッテ</a></td><td>G5</td><td><a href="#ティンプ">マイクローク支配人 ティンプ</a></td></tr>
+						<tr><td>G5</td><td><a href="#マイクローク">マイクローク 店員</a></td><td>G5</td><td><a href="#ロイヤルショップ">ロイヤルショップ 店員</a></td></tr>
+						<tr><td>G5</td><td><a href="#キャラクターアレンジサロン">キャラクターアレンジサロン 店員</a></td><td>G5</td><td><a href="#アシュー">ロイヤルショップ支配人 アシュー</a></td></tr>
+						<tr><td>H5</td><td><a href="#アル・トニア">クォパティ僧侶 アル・トニア</a></td><td>H5</td><td><a href="#クリムト">クオパティ司祭 クリムト</a></td></tr>
+						<tr><td>I5</td><td><a href="#イボンヌ">イルファーロ住人 イボンヌ</a></td><td>J5</td><td><a href="#アラハゥイ">仮面の貴族 アラハゥイ</a></td></tr>
+						<tr><td>E6</td><td><a href="#アレハンドロス">見張り アレハンドロス</a></td><td>E6</td><td><a href="#ジャック">イルファーロ住人 ジャック</a></td></tr>
+						<tr><td>E6</td><td><a href="#ドッツェン">イルファーロ住人 ドッツェン</a></td><td>E6</td><td><a href="#サイムス">イルファーロ住人 サイムス</a></td></tr>
+						<tr><td>F6</td><td><a href="#ドルフェン">古物商 ドルフェン</a></td><td>H6</td><td><a href="#スーパス">千のあだ名を持つ男 スーパス</a></td></tr>
+						<tr><td>K6</td><td><a href="#ボラルジャ">未来の発明王 ボラルジャ</a></td><td>G6</td><td><a href="#アイナ">イルファーロ住人 アイナ</a></td></tr>
+						<tr><td>G6</td><td><a href="#ソル・ベイン">ジェム職人 ソル・ベイン</a></td><td>I7</td><td><a href="#ソガーレ">イルファーロ住人 ソガーレ</a></td></tr>
+						<tr><td>F8</td><td><a href="#マイナート">港の顔役 マイナート</a></td><td></td><td></td></tr>
+					</tbody>
+				</table>
+
+				<h3 id="log">会話ログ</h3>
+
+				<h4 id="a">あ行</h4>
+				<div class="lines" id="アイナ">
+					<div class="header">
+						<span class="character">アイナ</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<p>
+							港を背にして左に進めば<span class="wo-site">英雄の集う広場</span>に通じる階段だよ。<br>
+							冒険者ギルドや寺院のある区画さ。<br>
+							そうそう、外に出るときの広場を通らないとね。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="イルファーロ住人 アイナ" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/アイナ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">イルファーロ住人 アイナ</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 G6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="アシュー">
+					<div class="header">
+						<span class="character">アシュー</span>
+						<span class="race">POR♀</span>
+					</div>
+					<div class="text">
+						<p>
+							いらっしゃいませ。<br>
+							こちらは王室御用達のロイヤルショップとなります。<br>
+							ご用のある方は店員にどうぞ。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="ロイヤルショップ支配人 アシュー" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/アシュー.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ロイヤルショップ支配人 アシュー</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 G5</span>
+					</div>
+				</div>
+
+				<div class="lines" id="アラハゥイ">
+					<div class="header">
+						<span class="character">アラハゥイ</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>live status</span></span> 通常時</span>
+							<p>
+								これは、みすぼらしい冒険者さん。ごきげんよう。<br>
+								いつか、あたなにも依頼をお願いするときが<br>
+								来るかもしれませんねえ。ええ……
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>soul status</span></span> 魂時</span>
+							<p>
+								おや、おや。死んでしまったのですか？<br>
+								それは残念、無念。ククク……。<br>
+								でも悲観することはありませんよ。<br>
+								この世界では、肉体を失うことなど日常茶飯事。<br>
+								いちいち気にしていたら、それこそ身が持ちません。<br>
+								私？　死者が見えるのかって？<br>
+								ええ、ちょっと霊感が強いもので。<br>
+								気になさらないでください。<br>
+								今話している相手が何者かなんて、<br>
+								いちいち詮索しないことです。<br>
+								それこそ身が持ちませんよ。ククク……。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="仮面の貴族 アラハゥイ" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/アラハゥイ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">仮面の貴族 アラハゥイ</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 J5</span>
+					</div>
+				</div>
+
+				<div class="lines" id="アル・トニア">
+					<div class="header">
+						<span class="character">アル・トニア</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>live status</span></span> 通常時</span>
+							<p>
+								死んでください！<br>
+								じゃなかった……あ、あの……<br>
+								死んだら私に会いにきてください！？<br>
+								実は……私は僧侶見習いなんですが、<br>
+								蘇生の経験があまり無くって……<br>
+								死体を蘇生したいんです！　なんちゃって！<br>
+								……ああ、こんな事を言っているから<br>
+								いつまでたっても見習いなのかしら……。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>soul status</span></span> 魂時</span>
+							<p>
+								死んじゃったようですね！<br>
+								蘇生しちゃっていいですか？<br>
+								失敗するかもしれませんけど……。
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>蘇生しちゃっていいですか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+										<p>
+											蘇生費用は<span class="var"><span>50 × levels</span></span> Gになります。<br>
+											ちなみに……一度いただいたものは<br>
+											お返しできませんのでご了承ください。
+										</p>
+										<div class="dialog">
+											<span class="dialog">
+											<span class="tag"><span>dialogue</span></span>
+											<span class="textbox" style="width: 550px;">蘇生費用：<span class="var"><span>50 × levels</span></span> G<br> 所持金：
+											<span class="wo-gold"><span class="var"><span>pocket</span></span> G</span>
+											</span>
+											</span>
+											<div class="options">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-a</span></span>支払う</span>
+													<div class="either">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>ordinary</span></span>平時</span>
+															<p>
+																<span class="tag"><span>function</span></span> revive
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>pocket</span></span><span class="var"><span>50 × levels</span></span> G 未満</span>
+															<p>
+																お金が足りませんよ！！<br>
+																ケチな背教者だったとは……残念です。
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-b</span></span>無料でお願いする</span>
+													<p>
+														え……無料ですか……<br>
+														蘇生率が下がりますけど……<br>
+														<span class="tag"><span>function</span></span> revive
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-c</span></span>なぜ返せないのか？</span>
+													<p>
+														まあ……なんというか……<br>
+														細かい事は気にしないほうがいいですよ。
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-d</span></span>立ち去る</span>
+													<p>
+														生き返りたくなったら<br>
+														おっしゃってくださいね。
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+										<p>
+											生き返りたくなったら<br>
+											おっしゃってくださいね。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="クォパティ僧侶 アル・トニア" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/アル・トニア.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">クォパティ僧侶 アル・トニア</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 H5</span>
+					</div>
+				</div>
+
+				<div class="lines" id="アレハンドロス">
+					<div class="header">
+						<span class="character">アレハンドロス</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> イルファーロ初到着時</span>
+							<p>
+								むっ！　お前、新参者の冒険者だな！<br>
+								冒険者ギルドに登録せんと<br>
+								<span class="wo-site">英雄の集う広場</span>への入場は、認めんぞ！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> イルファーロ訓練場突破後</span>
+							<p>
+								ん…証書を持っているようだな。ならば通っていいぞ。<br>
+								ちなみに冒険者ギルドは、<span class="wo-site">英雄の集う広場</span>に入って<br>
+								右手の方に進めばあるぞ。<br>
+								奥まった場所にあるから、分からなかったら住人に<br>
+								尋ねるといい。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> 冒険者ギルド登録完了後</span>
+							<p>
+								冒険者ギルドに登録できたようだな。<br>
+								実は俺も冒険者だったんだ。<br>
+								名を上げて騎士団に入団したものの、<br>
+								その仕事が街の見張りとは……<br>
+								こんなんだったら冒険者のままがよかったぜ……
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="見張り アレハンドロス" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/アレハンドロス.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">見張り アレハンドロス</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 E6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="イボンヌ">
+					<div class="header">
+						<span class="character">イボンヌ</span>
+						<span class="race">HUM♀</span>
+					</div>
+					<div class="text">
+						<p>
+							この橋の先は牢獄だよ。<br>
+							あんな所に用があるってのかい？<br>
+							アンタもしかして…プロだね？<br>
+							街に戻りたいなら橋を渡らずに引き返しな。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="イルファーロ住人 イボンヌ" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/イボンヌ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">イルファーロ住人 イボンヌ</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 I5</span>
+					</div>
+				</div>
+
+				<div class="lines" id="エレシェ">
+					<div class="header">
+						<span class="character">エレシェ</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> イルファーロ訓練場突破後</span>
+							<p>
+								試練合格おめでとう。<br>
+								これであなたは行動範囲が広がったけど、<br>
+								それだけ危険も増えるわ。<br>
+								最近の魔力消失事件で、冒険者に依頼も<br>
+								殺到しているみたいだけど、気をつけてね。<br>
+								あなたを殺して遺品を奪おうとする冒険者だっているし、<br>
+								十分に気をつけるのよ。<br>
+								町の中だからといって安心出来る場所は<br>
+								冒険者にはないのだから。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> クエスト「魂の導き手」クリア後</span>
+							<p>
+								あら、調子はどう？　新米冒険者さん。<br>
+								ギルドからの初めての依頼うまくこなせたようね。<br>
+								順調なようでよかったわ。<br>
+								ただし油断はしちゃだめよ。<br>
+								冒険者と危険は常に隣り合わせなんだからね。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> クエスト「魔法局の依頼」クリア後</span>
+							<p>
+								最近【<span class="wo-name">ゼロ</span>】がこの街の付近に現れたと聞いたけど……。<br>
+								キミ、【<span class="wo-name">ゼロ</span>】を見かけたらすぐに教えてちょうだいね。<br>
+								一度でいいから会ってみたいものだわ。<br>
+								生ける伝説と呼ばれる男に…。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> クエスト「魔法局の依頼」クリア後</span>
+							<p>
+								最近【<span class="wo-name">ゼロ</span>】がこの街の付近に現れたと聞いたけど……。<br>
+								キミ、【<span class="wo-name">ゼロ</span>】を見かけたらすぐに教えてちょうだいね。<br>
+								一度でいいから会ってみたいものだわ。<br>
+								生ける伝説と呼ばれる男に…。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> クエスト「仮面の貴族」クリア後</span>
+							<p>
+								えっ！　<span class="wo-site">黄龍の神殿跡</span>で【<span class="wo-name">ゼロ</span>】と会ったですって！？<br>
+								急いで行かなきゃ！<br>
+								……え、もう去った後？
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="冒険者 エレシェ" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/エレシェ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者 エレシェ</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 H4</span>
+					</div>
+				</div>
+
+				<h4 id="k">か行</h4>
+				<div class="lines" id="ガルノフ">
+					<div class="header">
+						<span class="character">ガルノフ</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> イルファーロ初到着時</span>
+							<p>
+								ふむ、汝、新参者の冒険者であるか。<br>
+								ならば、この街の冒険者ギルドに登録する必要があるぞ。<br>
+								登録せんとギルドの依頼が受けれんからな。<br>
+								詳しくは、<span class="wo-name">エレシェ</span>というエルフの女戦士に聞くといい。<br>
+								あやつは、ギルドの依頼を受けて、新米冒険者の面倒を<br>
+								見ているそうだ。<br>
+								<span class="wo-name">エレシェ</span>は、いつもここら辺をうろついているから<br>
+								すぐに見つかるだろう。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> イルファーロ訓練場突破後</span>
+							<p>
+								ここは冒険者専用の訓練施設だ。<br>
+								基礎の基礎を教えておる。<br>
+								冒険者ギルドへの登録が済み、<span class="wo-keyword">ソウルランクが 2 以上</span>の<br>
+								者に対して、各種訓練施設を自由解放している。<br>
+								興味があったら再び訪れるがいい。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> 冒険者ギルド登録完了後</span>
+							<p>
+								ふむ、冒険者ギルドの登録は済ませたようだな。<br>
+								だが、本番は、これからだ。気を抜くではないぞ。<br>
+								それと、<span class="wo-keyword">ソウルランクが 2 以上</span>の者には、<br>
+								各種訓練施設を自由解放している。<br>
+								興味があったら再び訪れるがいい。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span>クエスト「魂の導き手」クリア後</span>
+							<p>
+								ここは冒険者専用の訓練施設だ。<br>
+								ふむ、冒険者ギルドの登録は済ませているようだな。<br>
+								<span class="wo-keyword">ソウルランクが 2 以上</span>の冒険者であれば、<br>
+								各種訓練施設を自由に使って貰って構わない。<br>
+								どうする？
+							</p>
+							<div class="option">
+								<div class="dialog">
+									<span class="dialog"><span class="tag"><span>dialogue</span></span>どの施設を利用する？</span>
+									<div class="options">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#01</span></span>M. A. C を利用したい</span>
+											<div class="append">
+												<span class="gauge"></span>
+												<span class="option">１日の規定数のチケットを貰うまで</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<!--
+													<div class="option">
+														<span class="option"><span class="tag"><span>weekday</span></span>土・日</span>
+														<p>
+															今日はチケットを 2 倍配っているわ。<br>
+															本日のチケットを差上げましょう。
+														</p>
+													</div>
+													-->
+													<div class="option">
+														<span class="option"><span class="tag"><span>has</span></span>チケット所持数上限オーバー</span>
+														<p>
+															ん？　チケットはそれ以上持てないようだな。<br>
+															使ったらまた来な。
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="dialog">
+												<span class="dialog"><span class="tag"><span>dialogue</span></span>M. A. C を利用しますか？</span>
+												<div class="options">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#01</span></span>M. A. C とは？</span>
+														<p>
+															Ｍ．Ａ．Ｃ（モンスター・アロケーション・センター）は、<br>
+															配備されたモンスターの討伐に挑戦する施設だ。<br>
+															ステージごとに設定されるクリア条件や配備される<br>
+															モンスターの特性などの要素を踏まえ、パーティメンバーと<br>
+															協力しながら戦闘することが重要となるぞ。<br>
+															モンスターを倒していくと「Ｍ．Ａ．Ｃポイント」が<br>
+															入手でき、様々なアイテムと交換できるぞ。<br>
+															また、プレイ内容はスコアとして集計され、<br>
+															ランキング上位になると称号や<br>
+															期間限定の専用オーラなどの特典が入手できるのだ。<br>
+															腕に<span class="footnote">自身</span>があるなら、ぜひとも挑戦してみたまえ！
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#02</span></span>M. A. C に入場する</span>
+														<p>
+															<span class="tag"><span>function</span></span>DungeonSelect (limited)
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#03</span></span>M. A. C ポイント交換（装備品）</span>
+														<p>
+															<span class="tag"><span>function</span></span>M. A. C ポイント交換（装備品）
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#04</span></span>M. A. C ポイント交換（消耗品）</span>
+														<p>
+															<span class="tag"><span>function</span></span>M. A. C ポイント交換（消耗品）
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#05</span></span>立ち去る</span>
+														<p>
+															<span class="tag"><span>empty</span></span>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#02</span></span>対人演習施設を利用したい</span>
+											<div class="dialog">
+												<span class="dialog">
+													<span class="tag"><span>dialogue</span></span>
+												<span class="textbox" style="width: 550px;">
+													対人演習施設を利用しますか？<br>（
+													この先は PVP テスト・調整用エリアです）</span>
+												</span>
+												<div class="options">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#01</span></span>対人演習施設とは？</span>
+														<p>
+															<span class="wo-site">対人演習施設</span>は、冒険者同士で鍛錬を行える施設だ。<br>
+															施設内では自分のパーティ以外には攻撃が当たるようになる<br>
+															代わりに、犯罪者以外への攻撃や犯罪者への支援などが罪に<br>
+															問われる事は無い。<br>
+															また、施設全体に冒険者保護の魔法が掛かっている。<br>
+															例え力尽きたとしても、持物を盗まれる事はないし、<br>
+															すぐにその場で蘇生されるぞ。<br>
+															普段は試せない事も試す事ができるであろう。<br>
+															自由に利用して貰って構わない。
+														</p>
+													</div>
+													<div class="option">
+														<span class="option">
+															<span class="tag"><span>#02</span></span>
+														<span class="textbox" style="width: 560px;">
+															対人演習施設に入場する<br>
+															（現在の利用者 <span class="var"><span>users</span></span> 人）
+														</span>
+														</span>
+														<p>
+															<span class="tag"><span>entering</span></span>対人演習施設 円形演習場
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+														<p>
+															<span class="tag"><span>empty</span></span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<p>
+												<span class="tag"><span>empty</span></span>
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+											<p>
+												<span class="tag"><span>empty</span></span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>原文のママ</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img alt="マスター ガルノフ" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/ガルノフ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">マスター ガルノフ</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 I3</span>
+					</div>
+				</div>
+
+				<div class="lines" id="キャラクターアレンジサロン">
+					<div class="header">
+						<span class="character">店員</span>
+						<span class="race">GNO</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>キャラクターアレンジサロン</span>
+							<span>CHARACTER ARRANGE SALON</span>
+						</p>
+						<p>
+							こちらではキャラクターの容姿変更や、<br>
+							<span class="wo-item">ボイス交換チケット</span>の交換が行えます。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>いらっしゃいませ！</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>サロンに入る</span>
+									<p>
+										<span class="tag"><span>function</span></span> character-arrange-salon
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>「ボイス交換チケット」を交換する</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>どのボイスを交換しますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01</span></span>男性ボイス</span>
+												<p>
+													<span class="tag"><span>omit</span></span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02</span></span>女性ボイス</span>
+												<p>
+													<span class="tag"><span>omit</span></span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03</span></span>やめる</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="キャラクターアレンジサロン 店員" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/キャラクターアレンジサロン.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">キャラクターアレンジサロン 店員</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 G5</span>
+					</div>
+				</div>
+
+				<div class="lines" id="クリムト">
+					<div class="header">
+						<span class="character">クリムト</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>live status</span></span> 通常時</span>
+							<p>
+								私はクォパティ寺院より派遣されている<br>
+								司祭<span class="wo-name">クリムト</span>と申します。<br>
+								あなたに創造神アヴルールのご加護がありますことを…。<br>
+								もしや、【死】について私の説法を<br>
+								聞きたいとおっしゃるのですか？
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>説法を受けますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+										<p>
+											わかりました。<br>
+											それでは小一時間説法しますが、しっかり聞いてください。<br>
+											それでは……あなた方【冒険者】という人々は<br>
+											他者の命はもとより自分の命も軽んじすぎます。<br>
+											確かに【死】はこの世界において<br>
+											絶対的なものではありません。<br>
+											たとえ心臓が停止しても外傷が原因で死亡しても、<br>
+											神の御加護と魔力によって蘇生させることも可能です。<br>
+											但し蘇生が可能なのは、<br>
+											一握りの限られた資質を持つ方々だけです。<br>
+											誰でも蘇生できるわけではないのです。<br>
+											創造神アヴルールの神使（しんし）であり、この世の均衡を<br>
+											司る神龍リィン・リーアンに仕えた10人の【守護者】の血に<br>
+											連なるものでなければ蘇生できないのです。<br>
+											その血に連なる者たちはこの世に大勢います。<br>
+											あなたもその一人であればいいのですがね。<br>
+											それに、たとえ【守護者】の血を引いていたとしても<br>
+											あなた自身が蘇生に耐えられるだけの信心を持たなければ、<br>
+											その体は灰化してしまいます。<br>
+											そこからの蘇生は困難を極めますが、<br>
+											信心次第では蘇生することも可能です。<br>
+											もし灰の状態になってもなお信心が足りなければ<br>
+											あなたの体は永遠に消滅してしまうでしょう。<br>
+											私は死んだことがないので見たことはありませんが、<br>
+											死者に蘇生を魔法を使うと<br>
+											魂の価値を図る天秤が現れるそうです。<br>
+											あなた自身の魂の対価を払うことで、<br>
+											蘇生するかどうか大きく変わると聞いています。<br>
+											今からあなたを殺しますので<br>
+											実際に天秤があるのかどうか見てきてください。<br>
+											ははは、そんなことは言いません。<br>
+											私は聖職につく者ですから、無益な殺生は致しません。<br>
+											とにかく、あなたが冒険の旅時の中で【死】を迎えたら、<br>
+											それを回避する三つの方法が<br>
+											あることだけお教えしましょう。<br>
+											一つは誰かお仲間にあなたの遺体を運んでもらい、<br>
+											街のクォパティ寺院で蘇生させること。<br>
+											蘇生確率は多少なりとも高いです。<br>
+											もう一つはお仲間にお願いして蘇生呪文を<br>
+											かけてもらうこと。術者の能力によって蘇生確率は<br>
+											大きく左右されますがね……。<br>
+											最後の一つは各地に点在している<br>
+											【守護者の像】を頼ることです。<br>
+											これは守護者の血に連なるものにしか反応しないと言われて<br>
+											いる不可思議な像で、あらかじめ触れることであなたの魂を<br>
+											呼び覚ます力を持っています。<br>
+											あらかじめ像に触れておけば、<br>
+											もしあなたがその近辺で生命を落としたとき、<br>
+											その像のもとで魂を呼び覚ますことが出来るでしょう。<br>
+											しかしこれら三つすべて、あくまでも魂の天秤を呼び出すた<br>
+											めの儀式であることはお忘れなく。最終的に蘇生が成功する<br>
+											かどうかは天秤に掛けるあなたの対価次第なのです。<br>
+											対価にはいろいろ種類があるそうですが、<br>
+											お金であったりアイテムや装備品であったり……<br>
+											あなたの魂に等しい価値が必要だと言われています。<br>
+											つまり、【死】を迎えると<br>
+											たとえ復活できたとしてもなにかを失うことになります。<br>
+											復活はリスクを伴うことなのです。<br>
+											それでは魂とはなんなのか、<br>
+											神々の時代にまでさかのぼってお話しいたしますので……。
+										</p>
+										<p class="types">約一時間後</p>
+										<p>
+											それでは要点を改めてお教えします。<br>
+											一つ、死は灰に、灰は消滅につながる危険なことです。<br>
+											一つ、死から魂を取り戻す方法は<br>
+											【寺院】【蘇生呪文】【守護者の像】<br>
+											の三通りあります。<br>
+											一つ、魂の天秤に掛ける対価によって、<br>
+											蘇生確率が変わります。<br>
+											死んでいいことなんて一つも……ないこともないですが、<br>
+											あまりいいことはありませんよ。<br>
+											え？　いいこと、ですか……。<br>
+											魂になった者にしか見えないものや<br>
+											人物がいると聞きます。<br>
+											もしかするとそういったこの世のものではない何かが、<br>
+											冒険を助けるかも知れませんね。<br>
+											私の説法はこのあたりで終わりにしましょう。<br>
+											ああ、言い忘れるところでした。<br>
+											寄付も受け付けておりますので、<br>
+											あなたの清きゴールドをいつでもお待ちしております。
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+										<p>
+											あなたに創造神アヴルールのご加護がありますことを…
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>soul status</span></span> 魂時</span>
+							<p>
+								<span class="tag"><span>omit</span></span>（通常時と同じ）
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="クオパティ司祭 クリムト" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/クリムト.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">クオパティ司祭 クリムト</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 H5</span>
+					</div>
+				</div>
+
+				<h4 id="s">さ行</h4>
+				<div class="lines" id="サイムス">
+					<div class="header">
+						<span class="character">サイムス</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								<span class="wo-site">英雄の集う広場</span>にある酒場には行ったかゾイ？<br>
+								おいしい料理と<span class="wo-name">マリー</span>が待ってるゾイ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								OD（オド）って知ってるゾイ？<br>
+								ダッシュやジャンプやスキルを使うのに必要ゾイ。<br>
+								覚えておくといいゾイ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								買い物したいゾイ？<br>
+								だったら港にいる<br>
+								<span class="wo-name">ロッテ</span>のところに行くゾイ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+							<p>
+								困ったときは<span class="wo-keyword">キーボードの H キー</span>を押すゾイ！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>E</span>
+							<p>
+								知ってるかゾイ？<br>
+								武器を構えたままジャンプできないゾイ。<br>
+								常識ゾ～イ！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>F</span>
+							<p>
+								スキルを使うには MP や OD が必要ゾイ。<br>
+								どっちが必要かはスキルのアイコンに<br>
+								マウスカーソルを重ねると分かるゾイ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>G</span>
+							<p>
+								すぐソコの階段を上れば<span class="wo-site">英雄の集う広場</span>ゾイ！<br>
+								冒険者ギルドへの登録は済んだゾイ？<br>
+								でないと門番に追い返されるゾイ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>H</span>
+							<p>
+								ゾイってのはワシの故郷の方言ゾイ。<br>
+								みんなゾイって言うゾイ！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>I</span>
+							<p>
+								装備が壊れたゾイ？<br>
+								その時は<span class="wo-name">バッジス</span>に頼むゾイ。<br>
+								ヤツは訓練私設のそばにいるゾイ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>J</span>
+							<p>
+								ダッシュすると速く移動できるゾイ！<br>
+								でも OD（オド）が減ってくゾイ…<br>
+								OD はある程度までなら一定時間で回復するゾイ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>K</span>
+							<p>
+								ダンジョンの中では周囲の音に気をつけるゾイ。<br>
+								モンスターの声が聞こえるかもゾイ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>L</span>
+							<p>
+								ダンジョンをなめるとエラい目に遭うゾイ！<br>
+								そんな時はパーティーを組むゾイ。<br>
+								パーティー検索してみるといいゾイ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>M</span>
+							<p>
+								ちゃんと街の人の話を聞いているかゾイ？<br>
+								中には大事な事を教えてくれる人が<br>
+								いるかもしれんゾイ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>N</span>
+							<p>
+								冒険で手に入れたアイテムは鑑定するといいゾイ。<br>
+								この辺だったら<span class="wo-name">ロッテ</span>がやってくれるゾイ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>O</span>
+							<p>
+								万が一、街の中で死んだらクォパティの僧侶を探すゾイ。<br>
+								力になってくれるかもゾイ。<br>
+								この地区には<span class="wo-name">アル・トニア</span>がいるゾイ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>P</span>
+							<p>
+								無闇に他の冒険者を襲ったらいかんゾイ！<br>
+								詳しくはそこにいる<span class="wo-name">ドッツェン</span>に聞くゾイ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>Q</span>
+							<p>
+								休みたいゾイ？<br>
+								それなら<span class="wo-name">タスカード</span>に相談するゾイ。<br>
+								彼は訓練施設のそばにいるゾイ。
+							</p>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>該当するダンジョンの入場許可証を所持したら追加される。以降、一部例外を除き同様</li>
+							<li>冒険者ギルドに登録後、<a href="#エゥオニー">境界へ誘いし者 エゥオニー</a>に初めて話しかけて以降追加される</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img alt="イルファーロ住人 サイムス" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/サイムス.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">イルファーロ住人 サイムス</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 E6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ジャック">
+					<div class="header">
+						<span class="character">ジャック</span>
+						<span class="race">POR♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ここは<span class="wo-site">永遠の海原へと続く港</span>…。<br>
+							出会いと別れ…希望度挫折…<br>
+							いろんなモノが絡み合う人生の十字路さ…。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="イルファーロ住人 ジャック" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/ジャック.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">イルファーロ住人 ジャック</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 E6</span>
+					</div>
+				</div>
+
+				<script>REWO.supus();</script>
+				<div class="lines" id="スーパス">
+					<div class="header">
+						<span class="character">スーパス</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ウオォォォォォンッ！<br>
+							俺の名は<span class="wo-name">スーパス</span>！<br>
+							千のあだ名を持つ男ッ！<br>
+							<span class="wo-keyword"><script>document.write( REWO.supus.title );</script>！</span><span class="var"><span style="font-size: 10px;"><script>document.write( REWO.supus.serial );</script></span></span><br>
+							人は俺をそう呼んでいるッ！
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="千のあだ名を持つ男 スーパス" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/スーパス.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">千のあだ名を持つ男 スーパス</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 H6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ソガーレ">
+					<div class="header">
+						<span class="character">ソガーレ</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							あそこに見える大型の帆船あるじゃろ。<br>
+							あのような船が定期船として、この港を行き交った<br>
+							時期もあったのじゃが……<br>
+							今じゃ、でっかい飾り物として観光名所と化しているよ。
+						</p>
+						<p>
+							<span class="skip"></span>
+							<img alt="大型帆船" data-fancybox="" class="lazyload" src="../common/placeholder.png" data-src="windjammer.jpg" style="width: 300px;">
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="イルファーロ住人 ソガーレ" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/ソガーレ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">イルファーロ住人 ソガーレ</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 I7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ソル・ベイン">
+					<div class="header">
+						<span class="character">ソル・ベイン</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span>イルファーロ初到着時</span>
+							<p>
+								すまねぇ！<br>
+								俺が相手にしているのは<br>
+								<span class="wo-keyword">ソウルランクが 2 以上</span>の冒険者なんだッ！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span>クエスト「魂の導き手」クリア後</span>
+							<div class="either">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+									<p>
+										ジェム同士を合成する事もできるンだぜッ！<br>
+										<span class="wo-item">ジェムの素材</span>が必要だけどな…<br>
+										<span class="wo-keyword">合成ジェムをさらに合成する事はできない</span>ぜッ！<br>
+										<span class="tag"><span>function</span></span> jeweler
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+									<p>
+										ジェムの事なら任せておきなッ！<br>
+										復元かい？　合成かい？<br>
+										装備品のジェム破壊もやってるぜッ！<br>
+										<span class="tag"><span>function</span></span> jeweler
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+									<p>
+										ジェムの破片が 5 つあれば復元できるンだッ！<br>
+										<span class="wo-keyword">同じ種類の破片じゃないとダメ</span>だからなッ！<br>
+										<span class="tag"><span>function</span></span> jeweler
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ジェム職人 ソル・ベイン" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/ソル・ベイン.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ジェム職人 ソル・ベイン</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 G6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ソルグラン">
+					<div class="header">
+						<span class="character">ソルグラン</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> イルファーロ初到着時</span>
+							<p>
+								お前も無事辿り着いたか。<br>
+								まあ、あの程度の危機切り抜けられなきゃ、<br>
+								この先冒険者としてやっていけないと思うがな。<br>
+								しかし、ここで冒険者やるには<br>
+								ギルドに登録しなければならないのか。<br>
+								組織に所属するなど俺の流儀に反するのだが……
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> イルファーロ訓練場突破後</span>
+							<p>
+								お前も試練に合格したようだな。<br>
+								<span class="wo-name">マージェ</span>のやつも合格したらしい。<br>
+								俺か？　当然だ。お前らより早く合格したぜ。<br>
+								しかし<span class="wo-name">マージェ</span>のやつ、騎士みたいな規律に<br>
+								縛られるモンにどうしてなりたがるかね。<br>
+								ロウフルの考えることは、さっぱり理解できんよ…。<br>
+								まぁ、俺は俺で自由にやらせてもらうよ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> クエスト「魂の導き手」クリア後</span>
+							<p>
+								俺は、この街の住人から直接依頼を受けたりしているぜ。<br>
+								こんな時勢だからな。困っている奴は多いぜ。<br>
+								人助けを進んでするつもりはないが、<br>
+								それが仕事になるんなら、やらない手はないだろ？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> クエスト「魔法局の依頼」クリア後</span>
+							<p>
+								ほう、魔法局の依頼をこなしただと。<br>
+								ただ、頑張りは認めるが、あまり無茶はしない方が<br>
+								身のためだぞ。<br>
+								俺は自分の能力に自身はあるが過信はしていないんでな。<br>
+								身の程を弁えた上で依頼を選んでいる。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="冒険者 ソルグラン" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/ソルグラン.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者 ソルグラン</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 H4</span>
+					</div>
+				</div>
+
+				<h4 id="t">た行</h4>
+				<div class="lines" id="タスカード">
+					<div class="header">
+						<span class="character">タスカード</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>簡易宿泊所</span>
+							<span>accommodation</span>
+						</p>
+						<div class="dialog">
+							<span class="dialog">
+							<span class="tag"><span>dialogue</span></span>
+							<span class="textbox" style="width: 570px">
+								どこでお休みになりますか？<br>
+								所持金： <span class="wo-gold"><span class="var"><span>pocket</span></span> G</span>
+							</span>
+							</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>床 Free!</span>
+									<div class="dialog">
+										<span class="dialog">
+										<span class="tag"><span>dialogue</span></span>
+										効果：
+										<span class="textbox" style="width: 510px;">HP と MP が 50% まで回復<br>コンディション 50 まで回復</span>
+										</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01-a</span></span>休む</span>
+												<p>
+													床で寝るんですか？<br>
+													カゼひかないでくださいね。<br>
+													<span class="tag"><span>function</span></span> inn<br>
+													次のレベルになるには……<br>
+													<span class="var"><span>next-exp</span></span>の経験値が必要ですね。<br>
+													では、お気をつけて！
+												</p>
+												<div class="append">
+													<span class="gauge"></span>
+													<p>
+														<span class="option">ソウルランクアップ可能</span>
+														おや……"ソウルランク"が上がりそうですよ。<br>
+														寺院にいる<span class="wo-name">カーラルデ</span>さんに<br>
+														会うといいですよ。<br>
+														寺院の場所は分かりますか？<br>
+														<span class="wo-site">英雄の集う広場</span>にありますよ。
+													</p>
+												</div>
+												<div class="append">
+													<span class="gauge"></span>
+													<p>
+														<span class="option">初心者保護期間</span>
+														駆け出しの冒険者向けに<span class="wo-site">英雄の集う広場</span>の<br>
+														ダンジョン案内人から<br>
+														各種ポーションがもらえますよ。
+													</p>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01-b</span></span>やめる</span>
+												<p>
+													そうですか……。<br>
+													あまり無理しないでくださいね。
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>ベッド 60 G</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>ordinary</span></span>平時</span>
+											<div class="dialog">
+												<span class="dialog">
+												<span class="tag"><span>dialogue</span></span>
+												効果：HP と MP 全回復 / コンディション 100 まで回復
+												</span>
+												<div class="options">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#02-a</span></span>休む</span>
+														<p>
+															どうぞ　ごゆっくり！<br>
+															<span class="tag"><span>function</span></span> inn<br>
+															次のレベルになるには……<br>
+															<span class="var"><span>next-exp</span></span>の経験値が必要ですね。<br>
+															では、お気をつけて！
+														</p>
+														<div class="append">
+															<span class="gauge"></span>
+															<p>
+																<span class="option">ソウルランクアップ可能</span>
+																おや……"ソウルランク"が上がりそうですよ。<br>
+																寺院にいる<span class="wo-name">カーラルデ</span>さんに<br>
+																会うといいですよ。<br>
+																寺院の場所は分かりますか？<br>
+																<span class="wo-site">英雄の集う広場</span>にありますよ。
+															</p>
+														</div>
+														<div class="append">
+															<span class="gauge"></span>
+															<p>
+																<span class="option">ディメント褒章</span>
+																ディメント褒章を利用しているなら<br>
+																<span class="wo-name">褒章アイテム配布窓口</span>から<br>
+																<span class="wo-item">ディメントキャンプ</span>がもらえますよ。
+															</p>
+														</div>
+														<div class="append">
+															<span class="gauge"></span>
+															<p>
+																<span class="option">初心者保護期間</span>
+																駆け出しの冒険者向けに<span class="wo-site">英雄の集う広場</span>の<br>
+																ダンジョン案内人から<br>
+																各種ポーションがもらえますよ。
+															</p>
+														</div>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#02-b</span></span>やめる</span>
+														<p>
+															そうですか……。<br>
+															あまり無理しないでくださいね。
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>pocket</span></span>60 G 未満</span>
+											<p>
+												お金が足りませんよ？<br>
+												ウチもボランティアじゃないんで…。
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="option">
+								<span class="option"><span class="tag"><span>#03</span></span>やめる</span>
+								<p>
+									無理は禁物ですよ。<br>
+									死んでから後悔しないように…。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="簡易宿泊所職員 タスカード" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/タスカード.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">簡易宿泊所職員 タスカード</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 I4</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ティンプ">
+					<div class="header">
+						<span class="character">ティンプ</span>
+						<span class="race">POR♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ここは冒険者専用の預かり所だよ。あんた、冒険者かい？<br>
+							荷物預けたいなら、そっちの店員に声をかけてくれ。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="マイクローク支配人 ティンプ" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/ティンプ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">マイクローク支配人 ティンプ</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 G5</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ドッツェン">
+					<div class="header">
+						<span class="character">ドッツェン</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							犯罪について聞きたいのか？<br>
+							ちょっと長くなるぜ。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>どうする？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>犯罪者とは？</span>
+									<p>
+										他人を傷つけたり、人のものを盗むと<br>
+										当たり前なんだが犯罪行為とみなされるぜ。<br>
+										それから犯罪者への支援行為も犯罪となる。<br>
+										軽い犯罪行為であれば数分程度<br>
+										重い犯罪行為なら数時間～数十時間ものあいだ<br>
+										犯罪者として扱われるようになる。<br>
+										他人を傷つけると犯罪行為になると言ったが<br>
+										犯罪者の罪の重さに関係なく、犯罪者を攻撃することは<br>
+										罪には問われないぜ。<br>
+										犯罪者になりたくないってんなら<br>
+										オプションになる<span class="wo-keyword">犯罪者のみにダメージを与える</span>を<br>
+										オンにするんだな。<br>
+										そうそう、犯罪行為は<span class="wo-keyword">ソウルに記録される</span>からな。<br>
+										犯罪に手を染めたキャラクターと同じソウルなら<br>
+										そいつらは全員犯罪者だ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>犯罪者を見分けるには</span>
+									<p>
+										軽い罪を犯した者は「<span class="wo-keyword">黄色く明滅</span>」するようになるが<br>
+										処罰の対象者にはなっていないから<br>
+										街の衛兵は見逃してくれるぜ。<br>
+										重い罪を犯した者は「<span class="wo-keyword">赤く明滅</span>」するぜ。<br>
+										この状態になると、街で衛兵に見つかった場合<br>
+										処罰の対象者として攻撃されるぞ。<br>
+										衛兵に負けて捕まると牢屋にぶち込まれて晒し者だ。<br>
+										牢屋は港の奥にあるから<br>
+										行けば負け犬たちが見れるかもな。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>犯罪者になったら</span>
+									<p>
+										冒険者ギルドの脇道から行ける「<span class="wo-keyword">スラム街</span>」は<br>
+										衛兵の見回りが行われていないらしいぜ。<br>
+										犯罪者にとっても危険な場所に変わりはねぇが<br>
+										ある程度の施設はそろっているらしいから<br>
+										衛兵に追い回される生活よりはいいかもな。<br>
+										そういえばスラム街には「<span class="wo-keyword">闇市</span>」ってのがあって<br>
+										ちょっと変わった品物が入荷していることも<br>
+										あるみたいだぜ。<br>
+										まぁ、俺ならどんな大金をもらっても<br>
+										そんな危険な場所には行きたくないけどな。<br>
+										冒険者ギルドはどこかって？<br>
+										すぐそこの階段を上った<span class="wo-site">英雄の集う広場</span>の奥のほうだ。<br>
+										迷ったら住人の話でも聞いてみな。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>立ち去る</span>
+									<p>
+										悪事に手を染めるなよ。<br>
+										後悔するぜ…
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="イルファーロ住人 ドッツェン" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/ドッツェン.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">イルファーロ住人 ドッツェン</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 E6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ドルフェン">
+					<div class="header">
+						<span class="character">ドルフェン</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#01</span>
+							<p>
+								【ああああ】とか【そうこ】とか名乗っとる奴がおるが、<br>
+								ありゃ本名なのか？偽名なのか？<br>
+								【しょうた】ってのも見かけたのぅ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#02</span>
+							<p>
+								赤いアレか？<br>
+								もちろん持っとるよ。<br>
+								古いのも新しいのもな。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#03</span>
+							<p>
+								あちこちに女を作っとる赤毛の剣士がおるそうじゃ。<br>
+								相手のハートを体当たりで掴むらしいぞい。<br>
+								ワシは心の壁を崩す相棒が欲しいのぅ…
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#04</span>
+							<p>
+								アワワ！アワワ！母さん乗って！<br>
+								…知らんのか？有名なおまじないじゃぞ？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#05</span>
+							<p>
+								<span class="wo-site">英雄の集う広場</span>に肉屋がおるのを知っとるか？<br>
+								あいつは悪い癖があってのう。<br>
+								扉を開ける度に【新鮮な肉！】と叫ぶんじゃよ…
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#06</span>
+							<p>
+								勝手に他人の日記を読んだりせんようにな。<br>
+								何が起こるか分からんからのぅ。<br>
+								後悔先に立たずじゃ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#07</span>
+							<p>
+								<span class="wo-site">カリグラーゼ下水道</span>に行きたいのなら<br>
+								<span class="wo-site">英雄の集う広場</span>にいる門番に聞くとええ。<br>
+								酒場のワインセラーからは行けんからな！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#08</span>
+							<p>
+								カリフラワーだと思ったらモンスターだった…<br>
+								そんな経験はあるかの？<br>
+								まあ、あんな大きなカリフラワーなど見たこと無いがの。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#09</span>
+							<p>
+								この間、花屋に行ったんじゃよ。<br>
+								そしたら蓮の花が売っとってのぅ。<br>
+								えらく高い値段にビックリしたもんじゃ！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#10</span>
+							<p>
+								この間、冒険小説を買ったんじゃが<br>
+								表紙に黒幕が描かれておってガッカリじゃ。<br>
+								黒幕の名前はテラリ…忘れてしもうたわい。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#11</span>
+							<p>
+								この街には3人の鍛冶屋がおるんじゃ。<br>
+								だからカードが3枚引けるんじゃよ。<br>
+								待てよ、4人おったような…
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#12</span>
+							<p>
+								最近知り合った魔法使いがな、カワイイんじゃが…<br>
+								たまにワシをニワトリに変身させるんじゃ…
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#13</span>
+							<p>
+								最近のエルフは木の上に家を作らんのか？<br>
+								まあ、あれだけ落ちて死んでれば<br>
+								さすがに懲りるじゃろうな。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#14</span>
+							<p>
+								死んでから２０年ぐらい経ってから蘇生されたら<br>
+								寿命が延びる夢を見たんじゃ。<br>
+								もう一度同じことしたら不老不死になったんじゃ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#15</span>
+							<p>
+								倉庫の奥から古い本が見つかったんじゃ。<br>
+								なになに…【よくわかる古代魔法】…？<br>
+								第一章は…カ…ティ…なんて読むんじゃろう？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#16</span>
+							<p>
+								ただのジジイだと思ったら神様だった…<br>
+								そんな経験はあるかの？<br>
+								まあ、あっても困るんじゃがの。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#17</span>
+							<p>
+								ダンジョン攻略には水と食料が必須じゃ！<br>
+								無くなったらモンスターの肉でも食っとれ。<br>
+								…なんてな、冗談じゃよ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#18</span>
+							<p>
+								旦那に火をつけてモンスターに突っ込ませる<br>
+								恐ろしい鬼嫁がいるそうじゃ。<br>
+								よその国では普通らしいがのう…
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#19</span>
+							<p>
+								強そうな剣を拾ったんじゃが、呪われておっての。<br>
+								危ないから誰も手の届かん所に捨てたんじゃ。<br>
+								あんな寒い所なんぞ二度と行きたくないわい。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#20</span>
+							<p>
+								ドアを開けるのにも苦労する時代があってのぅ。<br>
+								いやいや、ドアのせいでは無いんじゃ。<br>
+								行動を入力しとったからなんじゃ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#21</span>
+							<p>
+								どこぞの国ではパレードの最中に<br>
+								王様がファイアーボールで殺されたそうじゃな。<br>
+								自由が売りとは聞いとったがのぅ…
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#22</span>
+							<p>
+								<span class="wo-enemy">ネクロマンサー</span>に会ったなら狭い通路に誘い込め。<br>
+								手下の<span class="wo-enemy">スケルトン</span>に囲まれて動けなくなるからの。<br>
+								まあ、そんなヤツおらんのじゃがのう。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#23</span>
+							<p>
+								呪われてしまったじゃぞ？<br>
+								クレンジングオイルでも使ったらどうじゃ？<br>
+								まあ、そんあモン無いんじゃがの。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#24</span>
+							<p>
+								パスワードが 120 文字なんて無理じゃ…<br>
+								無理じゃったんじゃよ…
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#25</span>
+							<p>
+								左利きだったり右利きになったり<br>
+								あの人も大変じゃのぅ…
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#26</span>
+							<p>
+								ファンブル…<br>
+								恐ろしい言葉じゃ…
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#27</span>
+							<p>
+								FINISH HIM!!<br>
+								言ってみたかっただけじゃ。<br>
+								気にせんでくれ…
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#28</span>
+							<p>
+								古いものが好きでのぅ。<br>
+								商売にしてしまったわい。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#29</span>
+							<p>
+								マト…いや、ツルハシがあったら<br>
+								迷宮探索も楽になるんじゃろうか？<br>
+								まあ、そんなモン無いんじゃがの。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#30</span>
+							<p>
+								<span class="wo-item">ムーンストーン</span>を知っておるか？<br>
+								長いこと探しておるんじゃが<br>
+								見つかる気がせんわい…。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#31</span>
+							<p>
+								昔は吟遊詩人と共に冒険するのが流行ったのぅ。<br>
+								ヤツらはああ見えて結構丈夫じゃったぞ。<br>
+								よく混乱して殴られたもんじゃよ！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#32</span>
+							<p>
+								昔やった仕事での、ニンニクやらトリカブトを<br>
+								持ってくるよう言われたことがあるんじゃ。<br>
+								面倒くさいから途中でためたんじゃがの。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#33</span>
+							<p>
+								むむ…<br>
+								プレイ時間よりも人形に色を塗っている方が<br>
+								長いような気がするのぅ…
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#34</span>
+							<p>
+								迷宮を震わせるほどの威力を持つ呪文…<br>
+								たしかティルなんとかって名前じゃったのう。<br>
+								エンシャントマジックの一種じゃったな。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#35</span>
+							<p>
+								名刀なのか台所用品なのか…<br>
+								永遠の謎じゃのう…
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#36</span>
+							<p>
+								もしもワシが神様じゃったら…<br>
+								まずは土地を平らにするところから始めるのう。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#37</span>
+							<p>
+								モンスターが律儀に二列縦隊を作るかとな？<br>
+								狭い通路ならあるかもしれんが…
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#38</span>
+							<p>
+								野球という遊びを知っとるか？<br>
+								棒と球と呪文を使って相手チームと戦うんじゃ。<br>
+								全員死んだらゲームセットじゃよ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#39</span>
+							<p>
+								ゆうべはお楽しみじゃったのぅ。<br>
+								…なんじゃ、違うのか？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#40</span>
+							<p>
+								ワシが<span class="wo-enemy">スケルトン</span>に似ているじゃと？<br>
+								な、なんと失礼なヤツじゃ！<br>
+								109 枚目の石板を見つけたぐらいビックリじゃ！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#41</span>
+							<p>
+								ワシの若い頃に毒薬を飲むのが流行ってのぅ。<br>
+								いやいや、度胸試しではないんじゃ。<br>
+								カルマを下げるためじゃよ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#42</span>
+							<p>
+								ワシはエンシャントマジックの使い手なんじゃよ！<br>
+								くらえ…マ…マ…シリト？<br>
+								なんか違う気がするぞい。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#43</span>
+							<p>
+								ワシは寒いのが苦手なんじゃよ。<br>
+								どうにかならんもんか？<br>
+								【永遠の夏の魔法】とか無いのか？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>#44</span>
+							<p>
+								ワシも昔はお主の様な冒険者じゃったが、<br>
+								腰に矢を受けてしまってな…
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="古物商 ドルフェン" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/ドルフェン.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">古物商 ドルフェン</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 F6</span>
+					</div>
+				</div>
+
+				<h4 id="h">は行</h4>
+				<div class="lines" id="パイノン">
+					<div class="header">
+						<span class="character">パイノン</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								体の治療にレベルアップ。休んどいて損は無いぞ。<br>
+								無理して倒れたら元も子もないからな。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								『ゲームは１日１時間』って聞いたことあるか？<br>
+								なんでも健康の秘訣らしいぞ。<br>
+								だがまあ、宿屋に泊まれば元気満タン！<br>
+								何時間でも冒険できるってもんだよな！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								『部屋を明るくして離れてみてね♪』<br>
+								って聞いたことあるか？<br>
+								これを守らないと大変なことになるらしいぞ？<br>
+								だがまあ、宿屋に泊まれば全快！　どおってことねえよな！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+							<p>
+								らっしゃい、らっしゃ～い。<br>
+								ご休憩、ご宿泊はこちら。簡易宿泊所にてどうぞ～。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="簡易宿泊所職員 パイノン" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/パイノン.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">簡易宿泊所職員 パイノン</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 I4</span>
+					</div>
+				</div>
+
+				<div class="lines" id="バッジス">
+					<div class="header">
+						<span class="character">バッジス</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								<span class="wo-name">エレシェ</span>に今度食事でも……<br>
+								い、いやなんでもねえ！　用件はなんだい！<br>
+								<span class="tag"><span>function</span></span> blacksmith
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								装備中のものを一括で修理したいときは<br>
+								"すべてを修理"を選んでくれ。<br>
+								<span class="tag"><span>function</span></span> blacksmith
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								装備品の耐久度が０になると破損してしまうぞ。<br>
+								そうなると修理しなければ使い物にならん。<br>
+								耐久度には気をつけることだ。<br>
+								<span class="tag"><span>function</span></span> blacksmith
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+							<p>
+								鍛錬石にも色々と種類があるようだぜ。<br>
+								どんな物があるかまでは知らんがな。<br>
+								<span class="tag"><span>function</span></span> blacksmith
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>E</span>
+							<p>
+								鍛錬するには"鍛錬石"がいるんだ。<br>
+								安くしておくから買ってくれよな！<br>
+								<span class="tag"><span>function</span></span> blacksmith
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>F</span>
+							<p>
+								"鍛錬"すれば１つの装備を長く使い続けられるぞ。<br>
+								何度も鍛錬すればそれだけ強くなるぜ。<br>
+								まあ、たまに失敗するんだけどな。<br>
+								<span class="tag"><span>function</span></span> blacksmith
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="鍛冶屋 バッジス" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/バッジス.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">鍛冶屋 バッジス</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 G4</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ブランフェルド">
+					<div class="header">
+						<span class="character">ブランフェルド</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<p class="facility">
+								<span>冒険者ギルド出張所</span>
+								<span>ADVENTURER'S GUILD : BRANCH OFFICE</span>
+							</p>
+							<p>
+								ん？　冒険者ギルドに登録していない者に<br>
+								仕事は紹介できんぞ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> 冒険者ギルド登録完了後</span>
+							<p class="facility">
+								<span>冒険者ギルド出張所</span>
+								<span>ADVENTURER'S GUILD : BRANCH OFFICE</span>
+							</p>
+							<div class="option">
+								<span class="option"><span class="tag"><span>lead</span></span>
+								</span>
+								<div class="either">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+										<p>
+											いらっしゃい！
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+										<p>
+											どうした？
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+										<p>
+											何か用かい？
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="option">
+								<span class="option"><span class="tag"><span>main</span></span>
+								</span>
+								<p>
+									そうそう、冒険者ギルドからお得なお知らせがあるぞ。<br>
+									倍率が付いたミッションは一日一回報酬に倍率が掛かる。<br>
+									日付が変われば元に戻るので、うまく利用すると良い。
+								</p>
+								<div class="dialog">
+									<span class="dialog"><span class="tag"><span>dialogue</span></span>どうする？</span>
+									<div class="options">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#01</span></span>ミッションを受注 (Party)</span>
+											<p>
+												<span class="tag"><span>function</span></span>GuildMissions (Party)
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#02</span></span>ミッションを報告 (Party)</span>
+											<p>
+												報告可能なミッションは無いようだが…。
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#03</span></span>ミッションを受注 (Story)</span>
+											<p>
+												<span class="tag"><span>function</span></span>GuildMissions (Story)
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#04</span></span>ミッションを報告 (Story)</span>
+											<p>
+												報告可能なミッションは無いようだが…。
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#05</span></span>ミッション初回報告状況を更新</span>
+											<p>
+												ミッション初回報告状況の更新手続きには<br>
+												<span class="wo-item">ドルクの書簡</span>が必要だぜ？
+											</p>
+											<div class="dialog">
+												<span class="dialog"><span class="tag"><span>dialogue</span></span>どうする？</span>
+												<div class="options">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#05-a</span></span>ミッションロイヤルショップ</span>
+														<p>
+															<span class="tag"><span>function</span></span> PetitRoyalShop ミッションロイヤルショップ
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#05-b</span></span>やめる</span>
+														<p>
+															<span class="tag"><span>empty</span></span>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#06</span></span>やめる</span>
+											<div class="either">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+													<p>
+														おっと、忙しいのか。<br>
+														また来いよ！
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+													<p>
+														仕事がしたくなったら<br>
+														来るといい。
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+													<p>
+														暇ができたら仕事を頼みたいんだ。<br>
+														待ってるぜ！
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="冒険者ギルド職員 ブランフェルド" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/ブランフェルド.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者ギルド職員 ブランフェルド</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 G5</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ボラルジャ">
+					<div class="header">
+						<span class="character">ボラルジャ</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<p>
+							ええい、やかましいぞ冒険者。<br>
+							わしは研究のことで頭いっぱい胸いっぱいじゃ！
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="未来の発明王 ボラルジャ" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/ボラルジャ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">未来の発明王 ボラルジャ</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 K6</span>
+					</div>
+				</div>
+
+				<h4 id="m">ま行</h4>
+				<div class="lines" id="マージェ">
+					<div class="header">
+						<span class="character">マージェ</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> イルファーロ初到着時</span>
+							<p>
+								お前も無事にたどり着いたようだな。<br>
+								よかった、これでも心配していたんだぜ。<br>
+								まあ、再会の喜びは、これぐらいにしとくか。<br>
+								この<span class="wo-site">港町イルファーロ</span>で冒険者としてやっていくには、<br>
+								まず試練を受ける必要があるそうだからな。<br>
+								こればかりは、他人の手を借りることも<br>
+								手を貸すこともできない。<br>
+								一人でやるしかないんだ。お互いがんばろうぜ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> イルファーロ訓練場突破後</span>
+							<p>
+								お前試練合格したようだな。俺も合格したぜ。<br>
+								これこの街で冒険者としてやっていけるようになったな。<br>
+								俺みいな平民出の人間が騎士に取り立ててもらうには<br>
+								冒険として名を上げるしかねえからな。<br>
+								お前、どうなんだ？<br>
+								目的を持った方が冒険にハリが出るってもんだぞ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> クエスト「魂の導き手」クリア後</span>
+							<p>
+								おう、調子はどうだ？<br>
+								俺は、ギルドが斡旋しているミッションを<br>
+								こなしているよ。<br>
+								細かい仕事でも数こなしてりゃ、<br>
+								その内でかい仕事が回ってくるかもしれないからな。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> クエスト「魔法局の依頼」クリア後</span>
+							<p>
+								なんだと！　魔法局の依頼を受けただと！<br>
+								お前すごいじゃないか！<br>
+								むむむ……<br>
+								先を越された感があるな。俺も頑張らなくては。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="冒険者 マージェ" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/マージェ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者 マージェ</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 H4</span>
+					</div>
+				</div>
+
+				<div class="lines" id="マイクローク">
+					<div class="header">
+						<span class="character">店員</span>
+						<span class="race">POR♀</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>マイクローク</span>
+							<span>WAREHOUSE</span>
+						</p>
+						<p>
+							いらっしゃいませ。<br>
+							お客様の持ち物やお金をお預かりいたします。<br>
+							<span class="tag"><span>function</span></span> mycloak
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="マイクローク 店員" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/マイクローク.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">マイクローク 店員</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 G5</span>
+					</div>
+				</div>
+
+				<div class="lines" id="マイナート">
+					<div class="header">
+						<span class="character">マイナート</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							確かにこの街も嘗ての賑わいを<br>
+							取り戻しつつあるのかもしれんがな…<br>
+							だが、交易や漁で賑わうっていうのが<br>
+							港町本来の姿のはずだ。<br>
+							魔法力消失の原因究明も結構だが<br>
+							沖合いに出没する化け物どもを先に<br>
+							なんとかして欲しいよ……
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="港の顔役 マイナート" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/マイナート.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">港の顔役 マイナート</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 F8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ミリオ">
+					<div class="header">
+						<span class="character">ミリオ</span>
+						<span class="race">HUM♀</span>
+					</div>
+					<div class="text">
+						<p>
+							各種イベントの受付はこちらです。<br>
+							<span class="tag"><span>function</span></span> event
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="*イベント案内人* ミリオ" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/ミリオ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">*イベント案内人* ミリオ</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 H4</span>
+					</div>
+				</div>
+
+				<h4 id="r">ら行</h4>
+				<div class="lines" id="リアール">
+					<div class="header">
+						<span class="character">リアール</span>
+						<span class="race">HUM♀</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> イルファーロ初到着時</span>
+							<p>
+								ここは、冒険者用の訓練施設だ。<br>
+								だが冒険者ギルドに登録していない者に<br>
+								使用は許可できない。<br>
+								冒険者ギルドの登録の仕方？　そこからか。<br>
+								そういうことは、ギルドの関係者に聞いてくれ。<br>
+								ここら付近に<span class="wo-name">エレシェ</span>という女エルフがいる。<br>
+								彼女なら教えてくれるだろう。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> イルファーロ訓練場突破後</span>
+							<p>
+								ここは、冒険者用の訓練施設だ。<br>
+								冒険者ギルドに登録してる者なら<br>
+								誰でも利用することができる。
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>何か用か？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>もう一度冒険者ギルド登録への試練を受けたい</span>
+										<p>
+											なんだ？<br>
+											まだ冒険者ギルドの登録が済んでいないじゃないか。<br>
+											先に登録を済ませてから来い！<br>
+											道がわからなければ、<br>
+											そこにある<span class="wo-name">トランスポーター</span>を使うと良い。
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+										<p>
+											強くなるがいい冒険者よ。<br>
+											誰にも負けない強さこそが<br>
+											冒険者に求められるものだ。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> 冒険者ギルド登録完了後</span>
+							<p>
+								ここは、冒険者用の訓練施設だ。<br>
+								冒険者ギルドに登録してる者なら<br>
+								誰でも利用することができる。
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>何か用か？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>もう一度冒険者ギルド登録への試練を受けたい</span>
+										<p>
+											別に誰に命令されたわけでもないのに<br>
+											時々、冒険者ギルド登録への試練を受け直したい<br>
+											という冒険者がいる。<br>
+											どうしてだろうな。懐かしいのか？<br>
+											まあいい、冒険者ギルドへの試練だな？<br>
+											では改めて忠告しておくが、試練場には魔物も放っている。<br>
+											戦闘も発生するし、ヘタをすると死ぬこともある。<br>
+											それでも試練を受けるのか？
+										</p>
+										<div class="dialog">
+											<span class="dialog"><span class="tag"><span>dialogue</span></span>冒険者ギルド登録への試練を受けますか？</span>
+											<div class="options">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-01</span></span>はい</span>
+													<p>
+														やる気はあるということか。<br>
+														一度突破したからと気を抜くなよ？<br>
+														見事、【<span class="wo-item">龍の手形</span>】を持ち帰ることを期待している。<br>
+														<span class="tag"><span>entering</span></span><span class="wo-site">イルファーロ訓練所</span>
+													</p>
+													<div class="append">
+														<span class="gauge"></span>
+														<p>
+															<span class="option"><span class="wo-item">龍の手形</span>を持ち帰ってきた場合、以下をテキストを追加</span>
+															おめでとう。<br>
+															無事に【<span class="wo-item">龍の手形</span>】を持ってきたようだな。<br>
+															これにて冒険者ギルド登録への試練を終わりとする。<br>
+															強くなるがいい冒険者よ。<br>
+															誰にも負けない強さこそが<br>
+															冒険者に求められるものだ。
+														</p>
+													</div>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-02</span></span>いいえ</span>
+													<p>
+														ふむ、そうか。強くなるがいい冒険者よ。<br>
+														誰にも負けない強さこそが<br>
+														冒険者に求められるものだ。
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+										<p>
+											強くなるがいい冒険者よ。<br>
+											誰にも負けない強さこそが<br>
+											冒険者に求められるものだ。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="訓練所係員 リアール" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/リアール.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">訓練所係員 リアール</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 I3</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ロイヤルショップ">
+					<div class="header">
+						<span class="character">店員</span>
+						<span class="race">POR♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ロイヤルショップへようこそ！<br>
+							<span class="tag"><span>function</span></span> royalshop
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="ロイヤルショップ 店員" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/ロイヤルショップ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ロイヤルショップ 店員</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 G5</span>
+					</div>
+				</div>
+
+				<div class="lines" id="看板ポール">
+					<div class="header">
+						<span class="character">（無名）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p class="centering">
+							＊　いらっしゃいませ！　＊<br>
+							＊　ロイヤルショップへ　＊<br>
+							＊　　　ようこそ！　　　＊
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="看板ポール" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/看板ポール.jpg">
+					</div>
+					<div class="footer">
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 G5</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ロッテ">
+					<div class="header">
+						<span class="character">ロッテ</span>
+						<span class="race">GNO</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								いらっしゃいませ！<br>
+								<span class="tag"><span>function</span></span> ロッテの露店
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+							耐久度が減っていたり破損した装備品は<br>
+							買取価格が下がりますよ。<br>
+							注意してくださいね。<br>
+							<span class="tag"><span>function</span></span> ロッテの露店
+						</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								武器や防具は専門店にいっぱいありますよ。<br>
+								武器屋や防具屋は<span class="wo-site">自由と賑わいの市場</span>にあるんです。<br>
+								<span class="tag"><span>function</span></span> ロッテの露店
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+							<p>
+								未鑑定品も買い取りますけど、鑑定した時よりも<br>
+								値段が下がる場合があります。<br>
+								<span class="tag"><span>function</span></span> ロッテの露店
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>E</span>
+							<p>
+								未鑑定品を手に入れたら"鑑定"してみてください。<br>
+								手数料はいただきますけどね！<br>
+								<span class="tag"><span>function</span></span> ロッテの露店
+							</p>
+						</div>
+						<p class="ref">
+							参考：<a href="../lotte/">露天商の乙女ロッテちゃん</a>
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="露天商 ロッテ" data-fancybox="deep-sea-port" class="lazyload" src="../common/placeholder.png" data-src="npcs/ロッテ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">露天商 ロッテ</span>
+						<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 G5</span>
+					</div>
+				</div>
+
+			</article>
+
+			<hr class="offset-killer">
+			<div id="disqus-space">
+				<p id="comment-attention">
+					名前を入力しようとすると表示される「ゲストとして投稿する」にチェックを入れるとDISQUSに登録しなくてもコメントすることができます。<br>
+					メールアドレスは入力必要ですが DISQUS で管理され、投稿したコメントに表示されることも私にも通知されることもありません。<br>
+					架空のメールアドレスでも可能ですので、お気軽にコメントしてください！
+				</p>
+				<aside id="toc-disqus">
+					<div id="disqus_thread"></div>
+				</aside>
+				<script type="text/javascript">
+										( function () {
+											var dsq = document.createElement( 'script' );
+											dsq.type = 'text/javascript';
+											dsq.async = true;
+											dsq.src = '//miramiku.disqus.com/embed.js';
+											( document.getElementsByTagName( 'head' )[ 0 ] || document.getElementsByTagName( 'body' )[ 0 ] ).appendChild( dsq );
+										} )();
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+			</div>
+		</div>
+	</main>
+
+	<div id="toc">
+		<ul>
+			<li id="back2top"><a href="#top">トップページ</a></li>
+			<li><a href="#list">NPC リスト</a></li>
+			<li><a href="#log">会話ログ</a>
+				<ul>
+					<li><a href="#a">あ行</a></li>
+			<li><a href="#k">か行</a></li>
+			<li><a href="#s">さ行</a></li>
+			<li><a href="#t">た行</a></li>
+			<li><a href="#h">は行</a></li>
+			<li><a href="#m">ま行</a></li>
+			<li><a href="#r">ら行</a></li>
+		</ul>
+		</li>
+		<li id="jump2disqus"><a href="#toc-disqus">コメント</a></li>
+		</ul>
+	</div>
+
+	<script>
+										( function ( i, s, o, g, r, a, m ) {
+											i[ 'GoogleAnalyticsObject' ] = r; i[ r ] = i[ r ] || function () {
+												( i[ r ].q = i[ r ].q || [] ).push( arguments )
+											}, i[ r ].l = 1 * new Date(); a = s.createElement( o ),
+												m = s.getElementsByTagName( o )[ 0 ]; a.async = 1; a.src = g; m.parentNode.insertBefore( a, m )
+										} )( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
+										ga( 'create', 'UA-46801675-2', 'auto' );
+										ga( 'send', 'pageview' );
+	</script>
+</body>
+
+</html>
