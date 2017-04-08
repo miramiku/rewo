@@ -36,15 +36,17 @@ $( document ).ready( function () {
 		.click( function ( e ) {
 			if ( $( e.target ).attr( "id" ) === "header-content" ) {
 				if ( $( "body" ).hasClass( "hide-header" ) ) {
-					$( "body" ).animate( {
-						width: "1200px"
-					}, {
+					$( "body" ).animate(
+						{
+							width: "1200px"
+						}, {
 							duration: 500,
 							queue: false
 						} );
-					$( "header" ).animate( {
-						width: "300px"
-					}, {
+					$( "header" ).animate(
+						{
+							width: "300px"
+						}, {
 							duration: 500,
 							queue: false,
 							complete: function () {
@@ -52,38 +54,51 @@ $( document ).ready( function () {
 								$( "#header-content *" ).show();
 							}
 						} );
-					$( "main" ).animate( {
-						marginLeft: "350px",
-						width: "850px"
-					}, {
+					$( "main" ).animate(
+						{
+							marginLeft: "350px",
+							width: "850px"
+						}, {
 							duration: 500,
 							queue: false
 						} );
 				} else {
 					$( "#header-content *" ).hide();
-					$( "body" ).animate( {
-						width: "910px"
-					}, {
+					$( "body" ).animate(
+						{
+							width: "910px"
+						}, {
 							duration: 500,
 							queue: false
 						} );
-					$( "header" ).animate( {
-						width: "10px"
-					}, {
+					$( "header" ).animate(
+						{
+							width: "10px"
+						}, {
 							duration: 500,
 							queue: false,
 							complete: function () {
 								$( "body" ).addClass( "hide-header" );
 							}
 						} );
-					$( "main" ).animate( {
-						marginLeft: "50px",
-						width: "850px"
-					}, {
+					$( "main" ).animate(
+						{
+							marginLeft: "50px",
+							width: "850px"
+						}, {
 							duration: 500,
 							queue: false
 						} );
 				}
 			}
 		} );
+
+	// migrate debbug
+	$.each( [ "enemy", "warn", "item", "gold", "keyword", "name", "site", "law", "neu", "cha" ], function () {
+		var length = $( "." + this ).length;
+
+		if ( length ) {
+			$( "article" ).prepend( "<p class=\"migrate-error\">" + this + ": " + length + "</p>" );
+		}
+	} );
 } );
