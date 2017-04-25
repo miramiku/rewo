@@ -1,0 +1,2894 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>チコル城址 | Recollection of Wizardry Online</title>
+
+	<!-- meta data -->
+	<meta name="author" content="Miku">
+
+	<!-- scripts -->
+	<script src="../common/core.js" async></script>
+
+	<!-- style / favicon -->
+	<link href="../common/foundation.css" rel="stylesheet" type="text/css">
+	<link href="../common/fancybox.css" rel="stylesheet" type="text/css">
+	<link href="../favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body id="rewo">
+	<header data-bg="background.jpg">
+		<div id="header-content">
+			<a href="https://miramiku.github.io/rewo/" id="page-info">
+				<span id="meta-info" class="page-headings">4th</span>
+				<span id="major-title" class="page-headings">チコル城址</span>
+				<span id="title-divider" class="page-headings"></span>
+				<span id="minor-title" class="page-headings">Chikor Castle Site</span>
+			</a>
+
+			<footer>
+				<ul>
+					<li><a href="http://miramiku.github.io/"><span class="basis-icon me"> </span> みく(๑・ω・๑)</a></li>
+					<li><a href="https://twitter.com/miramiku"><span class="basis-icon tw"> </span> @miramiku</a></li>
+					<li><a href="https://github.com/miramiku/rewo"><span class="basis-icon gh"> </span> Repository</a></li>
+				</ul>
+			</footer>
+
+			<p id="wo-credit">
+				"Wizardry&reg;" of GMO Gamepot Inc. All rights reserved.<br>
+				Wizardry Renaissance&trade; &copy;2009 GMO Gamepot Inc.<br>
+				All rights reserved.
+			</p>
+		</div>
+	</header>
+
+	<main id="top">
+		<div id="main-inner">
+			<article>
+				<h3 id="lore">Lore</h3>
+				<div class="lore">
+					<p>
+						「チコル」とはディメントの昔話に<br>
+						出てくる犬の名前である。
+					</p>
+					<p>
+						この城を建てる為に集められた工夫が<br>
+						暇つぶし相手として、どこからか<br>
+						野良犬を拾ってきた。<br>
+						その犬は「チコル」と名づけられ<br>
+						たいそう可愛がられるようになる。
+					</p>
+					<p>
+						ある晩、薪小屋の火事に気づいた<br>
+						チコルは、寝静まる工夫達の間を<br>
+						あらん限りの声で吠えながら走り回り<br>
+						結果としてボヤ騒ぎですんだという。<br>
+						それから工夫達はこの犬を守り神として<br>
+						一層可愛がるようになった。
+					</p>
+					<p>
+						その話を聞きつけた城主によって<br>
+						この城は「チコル城」と名づけられた<br>
+						のである。
+					</p>
+					<p>
+						時折、風に乗って聞こえてくる声の主は<br>
+						今もなお、この城を守らんとしているの<br>
+						かもしれない。
+					</p>
+				</div>
+				<div class="lore">
+					<p>The name "Chikor" refers to a dog from Dimento legend.</p>
+					<p>At the time this castle was built, the construction workers raised a stray dog for entertainment. They named the dog Chikor.</p>
+					<p>One night, a fire broke out in the barracks and Chikor managed to rouse everyone before anyone was lost. From that point on, Chikor was considered a guardian angel of the workers.</p>
+					<p>Hearing that tale, the owner of the castle named it Chikor Castle.</p>
+					<p>The howls you hear in the wind might just be Chikor still trying to protect this castle.</p>
+				</div>
+
+				<h3 id="enemies">モンスターリスト</h3>
+				<table class="enemies">
+					<thead>
+						<tr>
+							<th></th>
+							<th>モンスター名 / Literal</th>
+							<th>解釈</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><img alt="ロッティングコボルド" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/rotting-kobold.jpg"></td>
+							<td>
+								<span class="display">ロッティングコボルド</span>
+								<span class="literal">Rotting Kobold</span>
+							</td>
+							<td>
+								rotting: 腐りつつある
+							</td>
+						</tr>
+						<tr>
+							<td><img alt="ロッティングコープス" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/rotting-corpse.jpg"></td>
+							<td>
+								<span class="display">ロッティングコープス</span>
+								<span class="literal">Rotting Corpse</span>
+							</td>
+							<td>
+								rotting: 腐りつつある<br>
+								corpse: 人間の死体
+							</td>
+						</tr>
+						<tr>
+							<td><img alt="スカベンジャー" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/scavenger1.jpg"></td>
+							<td>
+								<span class="display">スカベンジャー</span>
+								<span class="literal">Scavenger</span>
+							</td>
+							<td>腐食動物（死体・ごみを食べる動物）</td>
+						</tr>
+						<tr>
+							<td><img alt="リビングスタチュー" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/living-statue.jpg"></td>
+							<td>
+								<span class="display">リビングスタチュー</span>
+								<span class="literal">Living Statue</span>
+							</td>
+							<td>
+								living: 生きている<br>
+								statue: 彫像<br>
+								<br>
+								（参考）<br>
+								&lt;熟&gt; living statue: リビングスタチュー。ストリートアートまたは大道芸の一種。実際の人が彫像に扮すること。
+							</td>
+						</tr>
+						<tr>
+							<td><img alt="リバーアンカー" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/river-anchor.jpg"></td>
+							<td>
+								<span class="display">リバーアンカー</span>
+								<span class="literal">River Anchor</span>
+							</td>
+							<td>
+								river: 流れ<br>
+								anchor: せき止めるもの
+							</td>
+						</tr>
+						<tr>
+							<td><img alt="ブッチャー" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/butcher.jpg"></td>
+							<td>
+								<span class="display">ブッチャー</span>
+								<span class="literal">Butcher</span>
+							</td>
+							<td>殺りく者</td>
+						</tr>
+						<tr>
+							<td><img alt="スカベンジャー" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/scavenger2.jpg"></td>
+							<td>
+								<span class="display">スカベンジャー</span>
+								<span class="literal">Scavenger</span>
+								<span class="codicil"><span class="wo-site">腐臭漂う地下室</span>区画にのみ出現</span>
+							</td>
+							<td>腐食動物（死体・ごみを食べる動物）</td>
+						</tr>
+						<tr>
+							<td><img alt="死肉喰い ダラン" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/dalan.jpg"></td>
+							<td>
+								<span class="note rare">Rare Creature</span>
+								<span class="display"><span class="syn">死肉喰い</span>ダラン</span>
+								<span class="literal"><span class="syn">Corpse Eater</span>Dalan</span>
+							</td>
+							<td>人名（？）</td>
+						</tr>
+						<tr>
+							<td><img alt="死霊使い ソログーヴァ" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/solloguva.jpg"></td>
+							<td>
+								<span class="note unique">Unique Creature</span>
+								<span class="display"><span class="syn">死霊使い</span>ソログーヴァ</span>
+								<span class="literal"><span class="syn">Spiritmancer</span>Solloguva</span>
+							</td>
+							<td>人名（？）</td>
+						</tr>
+						<tr>
+							<td><img alt="ラッシュアワー" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/rush-hour.jpg"></td>
+							<td>
+								<span class="note guardian">1st Guardian's Gate</span>
+								<span class="display">ラッシュアワー</span>
+								<span class="literal">Rush Hour</span>
+							</td>
+							<td>
+								&lt;熟&gt; rush hour: 混雑時間
+							</td>
+						</tr>
+						<tr>
+							<td><img alt="挟撃手 カーズドコボルド" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/cursed-kobold.jpg"></td>
+							<td>
+								<span class="note guardian">2nd Guardian's Gate</span>
+								<span class="display"><span class="syn">挟撃手</span>カーズドコボルド</span>
+								<span class="literal"><span class="syn">Pincer Attacker</span>Cursed Kobold</span>
+							</td>
+							<td>
+								cursed: 呪われた
+							</td>
+						</tr>
+						<tr>
+							<td><img alt="ドゥームセンチネル" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/doom-sentinel.jpg"></td>
+							<td>
+								<span class="note guardian">3rd Guardian's Gate</span>
+								<span class="display">ドゥームセンチネル</span>
+								<span class="literal">Doom Sentinel</span>
+							</td>
+							<td>
+								doom: 死・破滅（悪い方向への運命）<br>
+								sentinel: 見張り（歩哨）
+							</td>
+						</tr>
+						<tr>
+							<td><img alt="ポイゾナスデッド" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/poisonous-dead.jpg"></td>
+							<td>
+								<span class="note guardian">3rd Guardian's Gate</span>
+								<span class="display">ポイゾナスデッド</span>
+								<span class="literal">Poisonous Dead</span>
+							</td>
+							<td>
+								poisonous: 毒気をおびた<br>
+								dead: 死者
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3 id="walk-through">ダンジョン攻略</h3>
+
+				<h4 id="walk-through-1">入口付近の NPC と設備</h4>
+				<div class="lines">
+					<div class="header">
+						<span class="character">（無名）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p class="descriptive">
+							ここからイルファーロへ帰還できます。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>街に戻りますか？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+									<p>
+										<span class="tag"><span>entering</span></span>港町イルファーロ
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="帰還用ポール" class="lazyload" data-fancybox="walk-through-1" src="../common/placeholder.png" data-src="npcs/帰還用ポール.jpg">
+					</div>
+					<div class="footer">
+						<span class="coordinate">チコル城址 城郭内部 H10</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">オルバス</span>
+						<span class="race">POR♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ここは、チコル城址っていう廃墟だぜ。<br>
+							まあ、知っているから来たんだろうがな。<br>
+							観光気分で来たなら引き返した方がいいぜ。<br>
+							まあ、止めても無駄だろうがな。<br>
+							中に入りゃあ俺の言いたいこと解ると思うぜ。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="冒険者 オルバス" class="lazyload" data-fancybox="walk-through-1" src="../common/placeholder.png" data-src="npcs/オルバス.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者 オルバス</span>
+						<span class="coordinate">チコル城址 城郭内部 G10</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">回復の泉</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>回復の泉</span>
+							<span>fountain of healing</span>
+						</p>
+						<p class="descriptive">
+							泉はなみなみと水を湛えている。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>効果：HP と MP が最大の 100% まで回復</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>飲む</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+											<p>
+												<span class="tag"><span>function</span></span> fountain
+											</p>
+											<p class="descriptive">
+												次のレベルになるには<br>
+												<span class="var"><span>next-exp</span></span>の経験値が必要です
+											</p>
+											<div class="append">
+												<span class="gauge"></span>
+												<span class="option">ソウルランクアップ可能</span>
+												<p>
+													"ソウルランク"が上がりそうです<br>
+													寺院にいるイシークの巫女のもとへ向かいましょう
+												</p>
+											</div>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>state</span></span>HP と MP が最大時</span>
+											<p class="descriptive">
+												試しに水を飲んでみたが、効果は無いようだ……
+											</p>
+											<p class="descriptive">
+												次のレベルになるには<br>
+												<span class="var"><span>next-exp</span></span>の経験値が必要です
+											</p>
+											<div class="append">
+												<span class="gauge"></span>
+												<span class="option">ソウルランクアップ可能</span>
+												<p>
+													"ソウルランク"が上がりそうです<br>
+													寺院にいるイシークの巫女のもとへ向かいましょう
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>飲まない</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="回復の泉" class="lazyload" data-fancybox="walk-through-1" src="../common/placeholder.png" data-src="npcs/回復の泉.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">回復の泉</span>
+						<span class="coordinate">チコル城址 城郭内部 G10</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ポゾ</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								あいつらは光る物を集める習性があるのか？<br>
+								ええと…なんていったかな…<br>
+								<span class="wo-enemy">コボルド</span>…なんだっけな？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								<span class="wo-item">強者のキュイス</span>って呼ばれているのは<br>
+								<span class="wo-enemy">ブッチャー</span>が落とすからなのか？<br>
+								宝箱からも見つかるようだがな。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								ここにも通常より丈夫だったり頑丈な装備があるぞ。<br>
+								<span class="wo-item">頑丈なハードレギンス</span>とか<br>
+								<span class="wo-item">丈夫なエンチャントケックス</span>…他にもあるな。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+							<p>
+								ここらにいるモンスターからは<br>
+								属性攻撃の値が上がる<span class="wo-item">ジェム</span>が手に入るな。<br>
+								うまく使えば冒険が楽になると思うぞ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>E</span>
+							<p>
+								<span class="wo-site">城郭内部</span>の地図は集めているか？<br>
+								<span class="wo-enemy">ロッティングコボルド</span>、<span class="wo-enemy">ロッティングコープス</span>、<br>
+								<span class="wo-enemy">リビングスタチュー</span>、<span class="wo-enemy">ブッチャー</span>がそれぞれ落とすぞ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>F</span>
+							<p>
+								見ての通り、俺は拳で戦うのが好きなんだ。<br>
+								<span class="wo-enemy">スカベンジャー</span>が俺向きの武器を持っているようなんだが<br>
+								知っている情報は無いか？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>G</span>
+							<p>
+								両手に大きな武器を持ったモンスターがいるだろ？<br>
+								あいつは<span class="wo-item">刃こぼれした斧</span>をよく落とすんだが、<br>
+								たまに刃こぼれしれいないのも落とすらしいぜ。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="トレジャーハンター ポゾ" class="lazyload" data-fancybox="walk-through-1" src="../common/placeholder.png" data-src="npcs/ポゾ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">トレジャーハンター ポゾ</span>
+						<span class="coordinate">チコル城址 城郭内部 I9</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ギルド職員</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>冒険者ギルド出張所</span>
+							<span>ADVENTURER'S GUILD : BRANCH OFFICE</span>
+						</p>
+						<p>
+							ここでは、<span class="wo-site">チコル城址</span>の<br>
+							ミッションの受注・報告を行っています。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>どうする？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>ミッションを受注</span>
+									<p>
+										<span class="tag"><span>function</span></span>GuildMissions (limited)
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>ミッションを報告</span>
+									<p>
+										報告可能なミッションはありませんね。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>やめる</span>
+									<p>
+										<span class="wo-site">チコル城址</span>で<br>
+										仕事がしたくなったら来てください。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="冒険者ギルド出張所 ギルド職員" class="lazyload" data-fancybox="walk-through-1" src="../common/placeholder.png" data-src="npcs/ギルド職員.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者ギルド出張所 ギルド職員</span>
+						<span class="coordinate">チコル城址 城郭内部 H9</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">守護者の像</span>
+						<span class="race">Guardian Statue</span>
+					</div>
+					<div class="text">
+						<p>
+							灯火は静かに輝いている…。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="守護者の像" class="lazyload" data-fancybox="walk-through-1" src="../common/placeholder.png" data-src="npcs/守護者の像1.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">守護者の像</span>
+						<span class="coordinate">チコル城址 城郭内部 H9</span>
+					</div>
+				</div>
+
+				<h4 id="walk-through-2">第一ガーディアンズゲート</h4>
+				<div class="lines">
+					<div class="header">
+						<span class="character">光天使の像</span>
+						<span class="race">Guardian's Gate</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>initial state</span></span> 初期状態</span>
+							<p class="descriptive">
+								光天使の像がある。<br>
+								何かの装置のようだ。メッセージが書かれている。
+							</p>
+							<p class="centering">
+								＊　装置の起動方法　＊<br>
+								＊　愛犬の水晶玉を中央の窪みにはめ込む　＊
+							</p>
+							<p class="descriptive">
+								光天使の像の中央に何かをはめる窪みがある。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="光天使の像" class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/光天使の像1.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">光天使の像</span>
+						<span class="coordinate">チコル城址 城郭内部 E8</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">魔法の障壁</span>
+						<span class="race">void space</span>
+					</div>
+					<div class="text">
+						<p class="descriptive">
+							不思議な力に阻まれ進むことが出来ない
+						</p>
+					</div>
+					<div class="footer">
+						<span class="coordinate">チコル城址 城郭内部</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">メイハーン</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<p>
+							名犬チコルのお話の舞台となった<br>
+							場所っていうから来てみたんだけど<br>
+							アンデッドだらけで荒れ放題じゃない！<br>
+							なんか、もーがっかり！<br>
+							こーゆう場所は、国がちゃんと整備して<br>
+							観光地にするべきだと思わない？
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="冒険者 メイハーン" class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/メイハーン.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者 メイハーン</span>
+						<span class="coordinate">チコル城址 城郭内部 G8 死霊の盆踊り</span>
+					</div>
+				</div>
+
+				<h5 id="riddle-quest-1">愛犬に捧げるもの</h5>
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> 愛犬に捧げるもの（開始）</div>
+						<div class="client"><span class="wo-name">ミッドナイト卿</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							貴様に城主として命じる。<br>
+							チコルの失った物を取り戻すために、<br>
+							革、骨、肉を集めてまいれ。
+						</p>
+					</div>
+					<span class="label">報酬</span>
+					<div class="rewards">
+						<span class="exp">60,000</span>
+						<span class="price">0</span>
+						<span class="items">
+							<span class="reward-item"><img alt="キャンプ" class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/キャンプ.png">キャンプx3</span>
+							<span class="reward-item"><img alt="魂の大メダル" class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/魂の大メダル.png">魂の大メダル</span>
+						</span>
+					</div>
+					<div class="footer">
+						<span>ソウル単位</span>
+						<span>放棄不可</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ミッドナイト卿</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<p>
+							おおチコル……　私のチコル……<br>
+							なんだ……　貴様は……<br>
+							この荒れ果てた城に何の用だ？<br>
+							まあ、いい…　どうでもいいのだ…<br>
+							愛犬チコルを失ってから<br>
+							心穏やかだった時は、あっただろうか……<br>
+							チコルさえいれば、私は他に望むものなどなかったのだ……<br>
+							おおそうだ！　チコルが失った物を再び取り戻せば<br>
+							チコルは、私のもとに戻ってくるに違いない。<br>
+							おい、そこの貴様、この城の主として命じる。<br>
+							この城の奥に進みたければ、チコルが失った<br>
+							骨、肉、毛皮を集めてまいれ。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>mission</span></span>愛犬に捧げるもの</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>accept</span></span>受注</span>
+									<p>
+										うむ、良い返事だ。手早く頼むぞ。<br>
+										それらは、この先にいる死霊どもから剥ぎ取るがよかろう。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>reject</span></span>閉じる</span>
+									<p>
+										この私の命令が聞けぬというのか！？<br>
+										ならば今すぐこの城から立ち去れ！
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="貴族の幽霊 ミッドナイト卿" class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/ミッドナイト卿.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">貴族の幽霊 ミッドナイト卿</span>
+						<span class="coordinate">チコル城址 城郭内部 G7</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> 愛犬に捧げるもの#01</div>
+						<div class="client"><span class="wo-name">ミッドナイト卿</span></div>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						ミッドナイト卿が求める物を手に入れる。
+						<div class="tasks">
+							<span class="task"><span>死霊の骨を集める</span><span>1</span></span>
+							<span class="task"><span>死霊の肉を集める</span><span>1</span></span>
+							<span class="task"><span>死霊の毛皮を集める</span><span>1</span></span>
+						</div>
+					</div>
+					<div class="footer">
+						<span>ソウル単位</span>
+						<span>放棄不可</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ミッドナイト卿</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<p>
+							早く死霊どもから、骨、肉、毛皮を剥ぎ取ってくるのだ。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="貴族の幽霊 ミッドナイト卿" class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/ミッドナイト卿.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">貴族の幽霊 ミッドナイト卿</span>
+						<span class="coordinate">チコル城址 城郭内部 G7</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> 愛犬に捧げるもの#02</div>
+						<div class="client"><span class="wo-name">ミッドナイト卿</span></div>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						ミッドナイト卿が求める物を届けろ。
+						<div class="tasks">
+							<span class="task"><span>死霊の骨を渡す</span><span>1</span></span>
+							<span class="task"><span>死霊の肉を渡す</span><span>1</span></span>
+							<span class="task"><span>死霊の毛皮を渡す</span><span>1</span></span>
+						</div>
+					</div>
+					<div class="footer">
+						<span>ソウル単位</span>
+						<span>放棄不可</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ミッドナイト卿</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<div class="append">
+							<span class="gauge"></span>
+							<span class="option"><span class="wo-item">死霊の骨</span>を所持している かつ まだ渡していない</span>
+							<p class="descriptive">
+								死霊の骨を渡しました。
+							</p>
+						</div>
+						<div class="append">
+							<span class="gauge"></span>
+							<span class="option"><span class="wo-item">死霊の骨</span>を所持している かつ まだ渡していない</span>
+							<p class="descriptive">
+								死霊の肉を渡しました。
+							</p>
+						</div>
+						<div class="append">
+							<span class="gauge"></span>
+							<span class="option"><span class="wo-item">死霊の骨</span>を所持している かつ まだ渡していない</span>
+							<p class="descriptive">
+								死霊の毛皮を渡しました。
+							</p>
+						</div>
+						<div class="either">
+							<span class="gauge"></span>
+							<div class="option">
+								<span class="option"><span class="tag"><span>unachieved</span></span>必要なアイテムをすべて渡せていない</span>
+								<p>
+									早く死霊どもから、骨、肉、毛皮を剥ぎ取ってくるのだ。
+								</p>
+							</div>
+							<div class="option">
+								<span class="option"><span class="tag"><span>achieved</span></span>必要なアイテムをすべて渡した</span>
+								<p>
+									おお！　それらは、チコルが失った物！<br>
+									よくぞ集めてまいった！
+								</p>
+								<div class="dialog">
+									<span class="dialog"><span class="tag"><span>mission</span></span>愛犬に捧げるもの</span>
+									<div class="options">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>report</span></span>報告</span>
+											<p>
+												<span class="tag"><span>valuable</span> <span>item</span></span>愛犬の水晶玉<br>
+												約束どおり、この城の奥に進むことを許そう。<br>
+												これを持って行け。
+											</p>
+											<p class="descriptive">
+												愛犬の水晶玉を手に入れました。
+											</p>
+											<p>
+												これで……これでチコルは蘇るのだ……。
+											</p>
+											<p class="descriptive">
+												ミッドナイト卿は、死霊の骨や肉で<br>
+												犬の形を作ろうとしている……
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>cancel</span></span>閉じる</span>
+											<p>
+												ん？　どうしたのだ？<br>
+												さあ、早く報告するのだ！
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="貴族の幽霊 ミッドナイト卿" class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/ミッドナイト卿.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">貴族の幽霊 ミッドナイト卿</span>
+						<span class="coordinate">チコル城址 城郭内部 G7</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> 愛犬に捧げるもの（達成）</div>
+						<div class="client"><span class="wo-name">ミッドナイト卿</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							<span class="wo-item">死霊の骨</span>、<span class="wo-item">死霊の肉</span>、<span class="wo-item">死霊の毛皮</span>を<span class="wo-name">ミッドナイト卿</span><br>
+							に渡した。
+						</p>
+					</div>
+					<div class="footer">
+						<span>ソウル単位</span>
+						<span>放棄不可</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ミッドナイト卿</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>live status</span></span> 通常時</span>
+							<p class="descriptive">
+								ミッドナイト卿は、死霊の骨や肉で<br>
+								犬の形を作ろうとしている……
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>soul status</span></span> 魂時<span class="footnote"></span></span>
+							<p>
+								おおチコル……　私のチコル……<br>
+								なぜいなくなってしまったのだ……。<br>
+								チコルさえ、チコルさえいれば……、<br>
+								私には他に望むものなどないというのに……。
+							</p>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>ミッション受注前・遂行中・報告後問わず同じセリフ</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img alt="貴族の幽霊 ミッドナイト卿" class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/ミッドナイト卿.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">貴族の幽霊 ミッドナイト卿</span>
+						<span class="coordinate">チコル城址 城郭内部 G7</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">光天使の像</span>
+						<span class="race">Guardian's Gate</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>riddle state</span></span><span class="wo-item">愛犬の水晶玉</span>を所持している</span>
+							<p class="descriptive">
+								光天使の像がある。<br>
+								何かの装置のようだ。メッセージが書かれている。
+							</p>
+							<p class="centering">
+								＊　装置の起動方法　＊<br>
+								＊　愛犬の水晶玉を中央の窪みにはめ込む　＊
+							</p>
+							<p>
+								光天使の像に水晶玉をはめますか？
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>水晶玉をはめますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+										<p>
+											<span class="tag"><span>riddle solved</span></span><br>
+											装置はゴウゴウ音を立てて稼働しているようだ。<br>
+											装置に取り付けられた水晶玉が光を放っている。<br>
+											触れてみますか？
+										</p>
+										<div class="dialog">
+											<span class="dialog"><span class="tag"><span>dialogue</span></span>水晶玉に触れますか？</span>
+											<div class="options">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+													<p class="descriptive">
+														あたり一面に強い光が包んだ。
+													</p>
+													<p>
+														<span class="tag"><span>entering</span></span>決戦場 決闘者の間
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+													<p>
+														<span class="tag"><span>empty</span></span>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>yield state</span></span> リドル解明後</span>
+							<p>
+								装置はゴウゴウ音を立てて稼働しているようだ。<br>
+								装置に取り付けられた水晶玉が光を放っている。<br>
+								触れてみますか？
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>水晶玉に触れますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+										<p class="descriptive">
+											あたり一面に強い光が包んだ。
+										</p>
+										<p>
+											<span class="tag"><span>entering</span></span>決戦場 決闘者の間
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="光天使の像" class="lazyload" data-fancybox="walk-through-2" src="../common/placeholder.png" data-src="npcs/光天使の像1.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">光天使の像</span>
+						<span class="coordinate">チコル城址 城郭内部 E8</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="race">void space</span>
+					</div>
+					<div class="text">
+						<p class="descriptive">
+							魔法の結界を通れるようになりました。
+						</p>
+					</div>
+					<div class="footer">
+						<span class="coordinate">決戦場 決闘者の間</span>
+					</div>
+				</div>
+
+				<h4 id="walk-through-3">第二ガーディアンズゲート</h4>
+				<div class="lines">
+					<div class="header">
+						<span class="character">光天使の像</span>
+						<span class="race">Guardian's Gate</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>initial state</span></span> 初期状態</span>
+							<p class="descriptive">
+								光天使の像がある。<br>
+								何かの装置のようだ。メッセージが書かれている。
+							</p>
+							<p class="centering">
+								＊　装置の起動方法　＊<br>
+								＊　忠犬の水晶玉を中央の窪みにはめ込む　＊
+							</p>
+							<p>
+								光天使の像の中央に何かをはめる窪みがある。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="光天使の像" class="lazyload" data-fancybox="walk-through-3" src="../common/placeholder.png" data-src="npcs/光天使の像2.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">光天使の像</span>
+						<span class="coordinate">チコル城址 城郭内部 K5</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character"><span class="footnote">魔法の障壁</span></span>
+						<span class="race">void space</span>
+					</div>
+					<div class="text">
+						<p class="descriptive">
+							不思議な力に阻まれ進むことが出来ない
+						</p>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>合計４か所存在する</li>
+						</ul>
+					</div>
+					<div class="footer">
+						<span class="coordinate">チコル城址 城郭内部</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">守護者の像</span>
+						<span class="race">Guardian Statue</span>
+					</div>
+					<div class="text">
+						<p>
+							灯火は静かに輝いている…。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="守護者の像" class="lazyload" data-fancybox="walk-through-3" src="../common/placeholder.png" data-src="npcs/守護者の像2.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">守護者の像</span>
+						<span class="coordinate">チコル城址 城郭内部 D2</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">クルボバース</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							この城は、ドラグーン遺跡のバビリム空中庭園を模して<br>
+							人間達の手によって建てられたって話だ。<br>
+							しかし、末路まで模したドラグーン遺跡と同じになるとは<br>
+							皮肉としかいいようがないな。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="冒険者 クルボバース" class="lazyload" data-fancybox="walk-through-3" src="../common/placeholder.png" data-src="npcs/クルボバース.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者 クルボバース</span>
+						<span class="coordinate">チコル城址 城郭内部 D3</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">（無名）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>光るポール状の物体がある。触れますか？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+									<p>
+										<span class="tag"><span>teleportation</span></span>H6
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ポール" class="lazyload" data-fancybox="walk-through-3" src="../common/placeholder.png" data-src="npcs/ポール1.jpg">
+					</div>
+					<div class="footer">
+						<span class="coordinate">チコル城址 城郭内部 E2</span>
+					</div>
+				</div>
+
+				<h5 id="riddle-quest-2">忠犬の証</h5>
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> 忠犬の証（開始）</div>
+						<div class="client"><span class="wo-name">ミセス・ラムレー</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							チコルちゃんはよく虫を退治してくれたの。<br>
+							でもあの子がいなくなってからは<br>
+							虫が増えて困っていたの。<br>
+							そこであなた、虫を退治してきてちょうだい。<br>
+							もちろんお礼も致しますわ。<br>
+							虫を駆除した証として<span class="wo-item">虫の足</span>を<br>
+							５つほど持ってきてちょうだい。
+						</p>
+					</div>
+					<span class="label">報酬</span>
+					<div class="rewards">
+						<span class="exp">60,000</span>
+						<span class="price">0</span>
+						<span class="items">
+							<span class="reward-item"><img alt="魂の大メダル" class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/魂の大メダル.png">魂の大メダルx2</span>
+							<span class="reward-item"><img alt="きつけ薬" class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/きつけ薬.png">きつけ薬x2</span>
+						</span>
+					</div>
+					<div class="footer">
+						<span>ソウル単位</span>
+						<span>放棄不可</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ミセス・ラムレー</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<p>
+							チコルちゃんは、よく虫を退治してくれたものよ。<br>
+							あの子がいなくなってからというもの<br>
+							虫が増えて困ったものね……<br>
+							あら、そこの方、そうあなたよ。<br>
+							ちょうどいいわ。チコルちゃんの代わりに<br>
+							そこらへんに沸いている虫を駆除していただけないのかしら？
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>mission</span></span>忠犬の証</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>accept</span></span>受注</span>
+									<p>
+										もちろんお礼はしますわよ。そうね、駆除した証として<br>
+										<span class="wo-item">虫の足</span>５つ持ってきてくださる？<br>
+										駆除して欲しい虫はこの先にいますわ。<br>
+										それじゃ、よろしく頼みましたわよ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>reject</span></span>閉じる</span>
+									<p>
+										まあ…！　私の頼みを断るなんて…。<br>
+										人としてまったくなっていませんわ。<br>
+										そんな無礼な方にはもう用はありませんわ。<br>
+										今すぐここから立ち去りなさい。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="貴婦人の幽霊 ミセス・ラムレー" class="lazyload" data-fancybox="walk-through-3" src="../common/placeholder.png" data-src="npcs/ミセス・ラムレー.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">貴婦人の幽霊 ミセス・ラムレー</span>
+						<span class="coordinate">チコル城址 城郭内部 E6</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> 忠犬の証#01</div>
+						<div class="client"><span class="wo-name">ミセス・ラムレー</span></div>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						虫退治の証として<span class="wo-item">虫の足</span>を５つ集めろ。
+						<div class="tasks">
+							<span class="task"><span>虫の足を集める</span><span>5</span></span>
+						</div>
+					</div>
+					<div class="footer">
+						<span>ソウル単位</span>
+						<span>放棄不可</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ミセス・ラムレー</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<p>
+							早く虫を退治してちょうだい……<br>
+							<span class="wo-item">虫の足</span>５つ持ってきてくださる？
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="貴婦人の幽霊 ミセス・ラムレー" class="lazyload" data-fancybox="walk-through-3" src="../common/placeholder.png" data-src="npcs/ミセス・ラムレー.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">貴婦人の幽霊 ミセス・ラムレー</span>
+						<span class="coordinate">チコル城址 城郭内部 E6</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> 忠犬の証#02</div>
+						<div class="client"><span class="wo-name">ミセス・ラムレー</span></div>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						集めた<span class="wo-item">虫の足</span>を<span class="wo-name">ミセス・ラムレー</span>に<br>
+						見せに行こう。
+						<div class="tasks">
+							<span class="task"><span>虫の足を渡す</span><span>5</span></span>
+						</div>
+					</div>
+					<div class="footer">
+						<span>ソウル単位</span>
+						<span>放棄不可</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ミセス・ラムレー</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>has not</span></span><span class="wo-item">虫の足</span>を５つ以上所持していない</span>
+							<p>
+								早く虫を退治してちょうだい……<br>
+								<span class="wo-item">虫の足</span>５つ持ってきてくださる？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>has</span></span><span class="wo-item">虫の足</span>を５つ以上所持している</span>
+							<p class="descriptive">
+								目的の物を渡しました。
+							</p>
+							<p>
+								あらやだ……　こんなばっちぃ物…<br>
+								わかったから早く、捨ててちょうだい…
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>mission</span></span>忠犬の証</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>report</span></span>報告</span>
+										<p>
+											<span class="tag"><span>valuable</span> <span>item</span></span>忠犬の水晶玉<br>
+											虫は、ちゃんと駆除していただけたようね。<br>
+											よくできました。<br>
+											あなたに<span class="wo-item">忠犬の水晶玉</span>をさしあげますわ。
+										</p>
+										<p class="descriptive">
+											忠犬の水晶玉を手に入れました。
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>cancel</span></span>閉じる</span>
+										<p>
+											あら？　何をしているの？<br>
+											そんなものいつまでも持っているなんて<br>
+											気味が悪い、いやだわもう…。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="貴婦人の幽霊 ミセス・ラムレー" class="lazyload" data-fancybox="walk-through-3" src="../common/placeholder.png" data-src="npcs/ミセス・ラムレー.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">貴婦人の幽霊 ミセス・ラムレー</span>
+						<span class="coordinate">チコル城址 城郭内部 E6</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> 忠犬の証（達成）</div>
+						<div class="client"><span class="wo-name">ミセス・ラムレー</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							退治の証として<span class="wo-item">虫の足</span>５つを<span class="wo-name">ミセス・ラムレー</span>に<br>
+							渡した。
+						</p>
+					</div>
+					<div class="footer">
+						<span>ソウル単位</span>
+						<span>放棄不可</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ミセス・ラムレー</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>live status</span></span> 通常時</span>
+							<p>
+								チコルちゃんに会いたいわ…<br>
+								あの子どこ行っちゃったのかしら……。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>soul status</span></span> 魂時<span class="footnote"></span></span>
+							<p>
+								チコルちゃんに会いたいわ…<br>
+								あの子どこ行っちゃったのかしら……。<br>
+								あなた、チコルちゃんを見かけなかった？<br>
+								もし見かけたら教えてくださる？
+							</p>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>ミッション受注前・遂行中・報告後問わず同じセリフ</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img alt="貴婦人の幽霊 ミセス・ラムレー" class="lazyload" data-fancybox="walk-through-3" src="../common/placeholder.png" data-src="npcs/ミセス・ラムレー.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">貴婦人の幽霊 ミセス・ラムレー</span>
+						<span class="coordinate">チコル城址 城郭内部 E6</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">光天使の像</span>
+						<span class="race">Guardian's Gate</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>riddle state</span></span><span class="wo-item">忠犬の水晶玉</span>を所持している</span>
+							<p class="descriptive">
+								光天使の像がある。<br>
+								何かの装置のようだ。メッセージが書かれている。
+							</p>
+							<p class="centering">
+								＊　装置の起動方法　＊<br>
+								＊　忠犬の水晶玉を中央の窪みにはめ込む　＊
+							</p>
+							<p>
+								光天使の像に水晶玉をはめますか？
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>水晶玉をはめますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+										<p>
+											<span class="tag"><span>riddle solved</span></span><br>
+											装置はゴウゴウ音を立てて稼働しているようだ。<br>
+											装置に取り付けられた水晶玉が光を放っている。<br>
+											触れてみますか？
+										</p>
+										<div class="dialog">
+											<span class="dialog"><span class="tag"><span>dialogue</span></span>水晶玉に触れますか？</span>
+											<div class="options">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+													<p class="descriptive">
+														あたり一面に強い光が包んだ。
+													</p>
+													<p>
+														<span class="tag"><span>entering</span></span>決戦場 決闘者の間
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+													<p>
+														<span class="tag"><span>empty</span></span>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>yield state</span></span> リドル解明後</span>
+							<p>
+								装置はゴウゴウ音を立てて稼働しているようだ。<br>
+								装置に取り付けられた水晶玉が光を放っている。<br>
+								触れてみますか？
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>水晶玉に触れますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+										<p class="descriptive">
+											あたり一面に強い光が包んだ。
+										</p>
+										<p>
+											<span class="tag"><span>entering</span></span>決戦場 決闘者の間
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="光天使の像" class="lazyload" data-fancybox="walk-through-3" src="../common/placeholder.png" data-src="npcs/光天使の像2.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">光天使の像</span>
+						<span class="coordinate">チコル城址 城郭内部 K5</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="race">void space</span>
+					</div>
+					<div class="text">
+						<p class="descriptive">
+							魔法の結界を通れるようになりました。
+						</p>
+					</div>
+					<div class="footer">
+						<span class="coordinate">決戦場 決闘者の間</span>
+					</div>
+				</div>
+
+				<h4 id="walk-through-4">第三ガーディアンズゲート</h4>
+				<div class="lines">
+					<div class="header">
+						<span class="character">光天使の像</span>
+						<span class="race">Guardian's Gate</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>initial state</span></span> 初期状態</span>
+							<p class="descriptive">
+								光天使の像がある。<br>
+								何かの装置のようだ。メッセージが書かれている。
+							</p>
+							<p class="centering">
+								＊　装置の起動方法　＊<br>
+								＊　チコルの水晶玉を中央の窪みにはめ込む　＊
+							</p>
+							<p>
+								光天使の像の中央に何かをはめる窪みがある。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="光天使の像" class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/光天使の像3.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">光天使の像</span>
+						<span class="coordinate">チコル城址 城郭内部 H5 白き宝珠の間</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">魔法の障壁</span>
+						<span class="race">void space</span>
+					</div>
+					<div class="text">
+						<p class="descriptive">
+							不思議な力に阻まれ進むことが出来ない
+						</p>
+					</div>
+					<div class="footer">
+						<span class="coordinate">チコル城址 城郭内部</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">守護者の像</span>
+						<span class="race">Guardian Statue</span>
+					</div>
+					<div class="text">
+						<p>
+							灯火は静かに輝いている…。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="守護者の像" class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/守護者の像3.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">守護者の像</span>
+						<span class="coordinate">チコル城址 城郭内部 J5</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">スイッチ</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p class="descriptive">
+							何かのスイッチがある。
+						</p>
+						<p>
+							右に不死鳥の絵、左に獅子の絵が描かれており<br>
+							中央にダイヤルが付いている。
+						</p>
+						<div class="either">
+							<span class="gauge"></span>
+							<div class="option">
+								<span class="option"><span class="tag"><span>phoenix</span></span>不死鳥</span>
+								<p>
+									ダイヤルは、不死鳥の絵を指している。
+								</p>
+								<div class="dialog">
+									<span class="dialog"><span class="tag"><span>dialogue</span></span>ダイヤルを回しますか？</span>
+									<div class="options">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+											<p>
+												ダイヤルを左に回して獅子に合わせた。
+											</p>
+											<p class="descriptive">
+												どこか遠くで転送装置の行先が変わったようだ。
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+											<p>
+												<span class="tag"><span>empty</span></span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="option">
+								<span class="option"><span class="tag"><span>lion</span></span>獅子</span>
+								<p>
+									ダイヤルは、獅子の絵を指している。
+								</p>
+								<div class="dialog">
+									<span class="dialog"><span class="tag"><span>dialogue</span></span>ダイヤルを回しますか？</span>
+									<div class="options">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+											<p>
+												ダイヤルを右に回して不死鳥に合わせた。
+											</p>
+											<p class="descriptive">
+												どこか遠くで転送装置の行先が変わったようだ。
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+											<p>
+												<span class="tag"><span>empty</span></span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="スイッチ（不死鳥）" class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/スイッチ-1.jpg">
+						<img alt="スイッチ（獅子）" class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/スイッチ-2.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">スイッチ</span>
+						<span class="coordinate">チコル城址 城郭内部 F5</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">転送装置</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p class="descriptive">
+							光るポール状の物体がある。
+						</p>
+						<div class="either">
+							<span class="gauge"></span>
+							<div class="option">
+								<span class="option"><span class="tag"><span>phoenix</span></span>不死鳥</span>
+								<p>
+									ポールの先端に取り付けられた球状の硝子に<br>
+									薄っすらと不死鳥の模様が浮かびあがっている。
+								</p>
+								<div class="dialog">
+									<span class="dialog"><span class="tag"><span>dialogue</span></span>触れますか？</span>
+									<div class="options">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+											<p>
+												<span class="tag"><span>teleportation</span></span>H6
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+											<p>
+												<span class="tag"><span>empty</span></span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="option">
+								<span class="option"><span class="tag"><span>lion</span></span>獅子</span>
+								<p>
+									ポールの先端に取り付けられた球状の硝子に<br>
+									薄っすらと獅子の模様が浮かびあがっている。
+								</p>
+								<div class="dialog">
+									<span class="dialog"><span class="tag"><span>dialogue</span></span>触れますか？</span>
+									<div class="options">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+											<p>
+												<span class="tag"><span>teleportation</span></span>I2
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+											<p>
+												<span class="tag"><span>empty</span></span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="転送装置（不死鳥）" class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/転送装置-1.jpg">
+						<img alt="転送装置（獅子）" class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/転送装置-2.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">転送装置</span>
+						<span class="coordinate">チコル城址 城郭内部 I5</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">チェルシー</span>
+						<span class="race">HUM♀</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>live status</span></span> 通常時</span>
+							<p class="facility">
+								<span>宿屋</span>
+								<span>INN</span>
+							</p>
+							<p>
+								こんな姿になってしまい持て成しもできませんが……<br>
+								休んでいきますか？
+							</p>
+							<div class="dialog">
+								<span class="dialog">
+									<span class="tag"><span>dialogue</span></span>
+									<span class="textbox" style="width: 570px;">
+										どうする？<br>
+										所持金：<span class="wo-gold"><span class="tag"><span>pocket</span></span> G</span>
+									</span>
+								</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>薄汚れた寝床 200 G</span>
+										<div class="dialog">
+											<span class="dialog"><span class="tag"><span>dialogue</span></span>効果：HP と MP が最大値の 30% 回復</span>
+											<div class="options">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-a</span></span>休む</span>
+													<div class="either">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+															<p>
+																それでは、お休みくださいまし……<br>
+																<span class="tag"><span>function</span></span> inn<br>
+																次のレベルになるには……<br>
+																<span class="var"><span>next-exp</span></span> の経験値が必要です。<br>
+																では、がんばってください。
+															</p>
+															<div class="append">
+																<span class="gauge"></span>
+																<span class="option">ソウルランクアップ可能</span>
+																<p>
+																	あら……、"ソウルランク"が上がりそうですね。<br>
+																	寺院にいる<span class="wo-name">カーラルデ</span>さんに会われるといいですよ。
+																</p>
+															</div>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>pocket</span></span>所持金不足時</span>
+															<p>
+																お金が足りないようですね……。
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-b</span></span>やめる</span>
+													<p>
+														<span class="tag"><span>empty</span></span>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>片付いた寝床 600 G</span>
+										<div class="dialog">
+											<span class="dialog"><span class="tag"><span>dialogue</span></span>効果：HP と MP が全回復</span>
+											<div class="options">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02-a</span></span>休む</span>
+													<div class="either">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+															<p>
+																それでは、お休みくださいまし……<br>
+																<span class="tag"><span>function</span></span> inn<br>
+																次のレベルになるには……<br>
+																<span class="var"><span>next-exp</span></span> の経験値が必要です。<br>
+																では、がんばってください。
+															</p>
+															<div class="append">
+																<span class="gauge"></span>
+																<span class="option">ソウルランクアップ可能</span>
+																<p>
+																	あら……、"ソウルランク"が上がりそうですね。<br>
+																	寺院にいる<span class="wo-name">カーラルデ</span>さんに会われるといいですよ。
+																</p>
+															</div>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>pocket</span></span>所持金不足時</span>
+															<p>
+																お金が足りないようですね……。
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02-b</span></span>やめる</span>
+													<p>
+														<span class="tag"><span>empty</span></span>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+										<p>
+											そうですか、お気をつけて。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>soul status</span></span> 魂時</span>
+							<p class="facility">
+								<span>宿屋</span>
+								<span>INN</span>
+							</p>
+							<p>
+								こんな姿になってしまい持て成しもできませんが……<br>
+								休んでいきますか？<br>
+								……もう休む必要もないようですね。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="使用人の幽霊 チェルシー" class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/チェルシー.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">使用人の幽霊 チェルシー</span>
+						<span class="coordinate">チコル城址 城郭内部 G5</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">（無名）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>光るポール状の物体がある。触れますか？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+									<p>
+										<span class="tag"><span>teleportation</span></span>H6
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ポール" class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/ポール2.jpg">
+					</div>
+					<div class="footer">
+						<span class="coordinate">チコル城址 城郭内部 G4</span>
+					</div>
+				</div>
+
+				<h5 id="riddle-quest-3">犬の宝物</h5>
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> 犬の宝物（開始）</div>
+						<div class="client"><span class="wo-name">アルフォート</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							チコルが生きている時に俺は<br>
+							玩具を作ってやったんだ。<br>
+							チコルはそれで喜んで遊んでくれたんだ。<br>
+							まだこの城の何処かにあるはずなんだが、<br>
+							あんたそれを探してきてくれないか。
+						</p>
+					</div>
+					<span class="label">報酬</span>
+					<div class="rewards">
+						<span class="exp">60,000</span>
+						<span class="price">0</span>
+						<span class="items">
+							<span class="reward-item"><img alt="キャンプ" class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/キャンプ.png">キャンプx5</span>
+							<span class="reward-item"><img alt="特効薬" class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/特効薬.png">特効薬x3</span>
+						</span>
+					</div>
+					<div class="footer">
+						<span>ソウル単位</span>
+						<span>放棄不可</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">アルフォート</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<p>
+							ほう、幽霊が見える人に久々に会ったよ……。<br>
+							チコルは、ちゃんと成仏したんだがな…<br>
+							この世に未練がましい俺は、こんなざまさ……。<br>
+							チコルが生きているときに<br>
+							俺は、ヤツに玩具を作ってやったんだ。<br>
+							そいつをチコルは、喜んで遊んでくれてな…<br>
+							まだこの城のどこかにあるはずなんだが……<br>
+							そうだあんた、その玩具探してきてくれないか？<br>
+							それがあればヤツのことを思い出せる……
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>mission</span></span>犬の宝物</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>accept</span></span>受注</span>
+									<p>
+										そうか…、よろしく頼むよ。<br>
+										まだこの城のどこかにあるはずだ…。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>reject</span></span>閉じる</span>
+									<p>
+										そうか…、時間をとらせて悪かったな…。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="工夫の幽霊 アルフォート" class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/アルフォート.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">工夫の幽霊 アルフォート</span>
+						<span class="coordinate">チコル城址 城郭内部 I7</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> 犬の宝物#01</div>
+						<div class="client"><span class="wo-name">アルフォート</span></div>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						<span class="wo-item">ぼろぼろの玩具</span>を探し出せ。
+						<div class="tasks">
+							<span class="task"><span>ぼろぼろの玩具を入手する</span><span>1</span></span>
+						</div>
+					</div>
+					<div class="footer">
+						<span>ソウル単位</span>
+						<span>放棄不可</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">アルフォート</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<p>
+							ある場所？　うーん…そうだな<br>
+							チコルは彫像の側で遊ぶのが好きだったな。<br>
+							彫像のあるとこ調べたら見つかるんじゃないか。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="工夫の幽霊 アルフォート" class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/アルフォート.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">工夫の幽霊 アルフォート</span>
+						<span class="coordinate">チコル城址 城郭内部 I7</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">彫像</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>before mission</span></span> ミッション「犬の宝物」受注前</span>
+							<p class="descriptive">
+								彫像がある。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>accept mission</span></span> ミッション「犬の宝物」受注後</span>
+							<p class="descriptive">
+								彫像がある。
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>彫像の周りを調べますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+										<p class="descriptive">
+											彫像の側にぼろぼろの玩具が落ちている。
+										</p>
+										<p class="descriptive">
+											ぼろぼろの玩具を見つけました。
+										</p>
+										<p>
+											<span class="tag"><span>valuable</span> <span>item</span></span>ぼろぼろの玩具
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>yield state</span></span> <span class="wo-item">ぼろぼろの玩具</span>取得後</span>
+							<p class="descriptive">
+								彫像がある。
+							</p>
+							<p>
+								この辺りがチコルのお気に入りの場所だったようだ。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="彫像" class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/彫像.jpg">
+					</div>
+					<div class="footer">
+						<span class="coordinate">チコル城址 城郭内部 I7</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> 犬の宝物#02</div>
+						<div class="client"><span class="wo-name">アルフォート</span></div>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						<span class="wo-item">ぼろぼろの玩具</span>を見つけた！<br>
+						<span class="wo-name">アルフォート</span>に届けよう。
+						<div class="tasks">
+							<span class="task"><span>ぼろぼろの玩具を渡す</span><span>1</span></span>
+						</div>
+					</div>
+					<div class="footer">
+						<span>ソウル単位</span>
+						<span>放棄不可</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">アルフォート</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<p>
+							おお、探してきてくれたのか。ありがたい。<br>
+							この歯型…チコルがかじって付けたものだ……
+						</p>
+						<p class="descriptive">
+							目的の物を渡しました。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>mission</span></span>犬の宝物</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>report</span></span>報告</span>
+									<p>
+										<span class="tag"><span>valuable</span> <span>item</span></span>チコルの水晶玉<br>
+										<span class="tag"><span>title</span></span><span class="var"><span>ICJ14</span></span> 愛犬家<br>
+										ありがとよ。<br>
+										お礼にあんたにこれやるよ。
+									</p>
+									<p class="descriptive">
+										チコルの水晶玉を手に入れました。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>cancel</span></span>閉じる</span>
+									<p>
+										うん？　どうかしたのか？<br>
+										お礼を渡そうかと思ったんだが…いらないのかい？
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="工夫の幽霊 アルフォート" class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/アルフォート.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">工夫の幽霊 アルフォート</span>
+						<span class="coordinate">チコル城址 城郭内部 I7</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="soulrank">1</span> 犬の宝物（達成）</div>
+						<div class="client"><span class="wo-name">アルフォート</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							<span class="wo-item">ぼろぼろの玩具</span>を<span class="wo-name">アルフォート</span>に渡した。
+						</p>
+					</div>
+					<div class="footer">
+						<span>ソウル単位</span>
+						<span>放棄不可</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">アルフォート</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>live status</span></span> 通常時</span>
+							<p>
+								チコル……　あいつは、俺が拾ってきたんだよ……。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>soul status</span></span> 魂時<span class="footnote"></span></span>
+							<p>
+								チコル……　あいつは、俺が拾ってきたんだよ……。<br>
+								あんたも未練があってそんな姿なのかい？<br>
+								悪いことはいわない、さっさと成仏したほうがいいよ……。
+							</p>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>ミッション受注前・遂行中・報告後問わず同じセリフ</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img alt="工夫の幽霊 アルフォート" class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/アルフォート.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">工夫の幽霊 アルフォート</span>
+						<span class="coordinate">チコル城址 城郭内部 I7</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">光天使の像</span>
+						<span class="race">Guardian's Gate</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>riddle state</span></span><span class="wo-item">チコルの水晶玉</span>を所持している</span>
+							<p class="descriptive">
+								光天使の像がある。<br>
+								何かの装置のようだ。メッセージが書かれている。
+							</p>
+							<p class="centering">
+								＊　装置の起動方法　＊<br>
+								＊　チコルの水晶玉を中央の窪みにはめ込む　＊
+							</p>
+							<p>
+								光天使の像に水晶玉をはめますか？
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>水晶玉をはめますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+										<p>
+											<span class="tag"><span>riddle solved</span></span><br>
+											装置はゴウゴウ音を立てて稼働しているようだ。<br>
+											装置に取り付けられた水晶玉が光を放っている。<br>
+											触れてみますか？
+										</p>
+										<div class="dialog">
+											<span class="dialog"><span class="tag"><span>dialogue</span></span>水晶玉に触れますか？</span>
+											<div class="options">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+													<p class="descriptive">
+														あたり一面に強い光が包んだ。
+													</p>
+													<p>
+														<span class="tag"><span>entering</span></span>決戦場 決闘者の間
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+													<p>
+														<span class="tag"><span>empty</span></span>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>yield state</span></span> リドル解明後</span>
+							<p>
+								装置はゴウゴウ音を立てて稼働しているようだ。<br>
+								装置に取り付けられた水晶玉が光を放っている。<br>
+								触れてみますか？
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>水晶玉に触れますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+										<p class="descriptive">
+											あたり一面に強い光が包んだ。
+										</p>
+										<p>
+											<span class="tag"><span>entering</span></span>決戦場 決闘者の間
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="光天使の像" class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/光天使の像3.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">光天使の像</span>
+						<span class="coordinate">チコル城址 城郭内部 H5 白き宝珠の間</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="race">void space</span>
+					</div>
+					<div class="text">
+						<p class="descriptive">
+							魔法の結界を通れるようになりました。
+						</p>
+					</div>
+					<div class="footer">
+						<span class="coordinate">決戦場 決闘者の間</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">（石版）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>initial state</span></span>初期状態</span>
+							<p class="descriptive">
+								石版に白い玉が埋め込まれている。
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>白い玉を取りますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+										<p>
+											<span class="tag"><span>valuable</span> <span>item</span></span>ホワイト・オーブ<br>
+										<span class="tag"><span>title</span></span><span class="var"><span>ID02</span></span> 聖白の片翼<br>
+										</p>
+										<p class="descriptive">
+											ホワイト・オーブを手に入れました。
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>yield state</span></span> <span class="wo-item">ホワイト・オーブ</span>取得後</span>
+							<p class="descriptive">
+								もう、特に何も無いようだ。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="石版" class="lazyload" data-fancybox="walk-through-4" src="../common/placeholder.png" data-src="npcs/石版.jpg">
+					</div>
+					<div class="footer">
+						<span class="coordinate">チコル城址 城郭内部 H5 白き宝珠の間</span>
+					</div>
+				</div>
+
+				<h3 id="sub-quest">サブクエスト</h3>
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="level">9</span> 知識の対価（開始）</div>
+						<div class="client"><span class="wo-name">マッコイ</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							昔の冒険者仲間が<span class="wo-site">チコル城址</span>に<br>
+							行ったまま帰ってこないのです。<br>
+							生存は期待していませんが、<br>
+							彼が探していたあるモノには興味があります。<br>
+							彼の遺品と遺体を捜してきてくれませんか？
+						</p>
+					</div>
+					<span class="label">報酬</span>
+					<div class="rewards">
+						<span class="exp">30,000</span>
+						<span class="price">2,500</span>>
+						<span class="items">
+							<br>
+							<span class="reward-item"><img alt="強心ベルト" class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/強心ベルト.png">強心ベルト</span>
+							<span class="reward-item"><img alt="キャンプ" class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/キャンプ.png">キャンプx10</span>
+							<span class="reward-item"><img alt="冒険者バッグ【中】" class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/冒険者バッグ【中】.png">冒険者バッグ【中】</span>
+						</span>
+					</div>
+					<span class="label">選択報酬</span>
+					<div class="choices">
+						<span class="choice-item"><img alt="ジュエルナックル" class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/ジュエルナックル.png">ジュエルナックル</span>
+						<span class="choice-item"><img alt="バゼラード" class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/バゼラード.png">バゼラード</span>
+						<span class="choice-item"><img alt="グラディウス" class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/グラディウス.png">グラディウス</span>
+						<span class="choice-item"><img alt="バスターソード" class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/バスターソード.png">バスターソード</span>
+						<span class="choice-item"><img alt="ヘヴィアクス" class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/ヘヴィアクス.png">ヘヴィアクス</span>
+						<span class="choice-item"><img alt="ロングスピア" class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/ロングスピア.png">ロングスピア</span>
+						<span class="choice-item"><img alt="メイス" class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/メイス.png">メイス</span>
+						<span class="choice-item"><img alt="ブラックウッドスタッフ" class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/ブラックウッドスタッフ.png">ブラックウッドスタッフ</span>
+					</div>
+					<div class="footer">
+						<span>放棄不可</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">マッコイ</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ほう……。<br>
+							あなたの装備、なかなかのものですね。<br>
+							売ればいったい、いくらになるか。<br>
+							考えたことはありますか？<br>
+							いや、売って欲しいんじゃないんです。<br>
+							昔のくせがどうにも抜けなくてね。<br>
+							ついつい、値踏みしてしまう。<br>
+							それに、今は学者で満足してるんだ。<br>
+							冒険者なんて、とてもじゃないが<br>
+							やってやれませんよ。<br>
+							俺も知り合いにもいるんですよ。<br>
+							夢見がちな冒険者がね。<br>
+							……実はそいつが、冒険に出たまま<br>
+							帰ってきてなくてね……<br>
+							そうだ、あなたでいいや。<br>
+							ちょっと「探して」きてくれませんか？<br>
+							正式な依頼ですよ。報酬も払いますから、ね？
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>mission</span></span>知識の対価</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>accept</span></span>受注</span>
+									<p>
+										探して欲しいやつは、昔の冒険仲間なんですが<br>
+										学者肌の魔術師で知識を得ることに貪欲な人間でしてね。<br>
+										そのうえ、あなたと同じで儲け話に目がない。<br>
+										<span class="wo-site">チコル城址</span>に金になる知識が眠っていると知るや<br>
+										飛びだしていきましたよ。俺が止めるのも聞かずにね。<br>
+										しかし、もう一月以上も音沙汰がないんでね……<br>
+										このぶんだと、彼はもう……<br>
+										なんてね！　はっはっー！　心配なんてしてませんよ。<br>
+										最後に会ったのが俺なんで<br>
+										居心地が良くないってだけの話です。<br>
+										照れ隠しに見えますか？　……勘違いをしてるようですね。<br>
+										「探して」とは言いましたが、探すのは「彼」じゃない。<br>
+										あなたに探してきて欲しいのは彼の遺品です。<br>
+										彼が探していたのは「時だまし」と呼ばれる岩石です。<br>
+										貴重な岩石で、滅多に見つかるもんじゃない。<br>
+										手に入れられれば、いい研究材料になることでしょう。<br>
+										まあ、遺品だけ持って帰ってこいというのも<br>
+										あんまりなので、取り敢えず彼の遺体を捜し出し<br>
+										持ってきてください。<br>
+										早く報告をお待ちしてますよ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>reject</span></span>閉じる</span>
+									<p>
+										そうですか……別にいいですよ。<br>
+										冒険者なんて、掃いて捨てるほどいますからね。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="助手 マッコイ" class="lazyload" data-fancybox="sub-quest" src="../common/placeholder.png" data-src="../bustling-market/npcs/マッコイ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">助手 マッコイ</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 E7</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="level">9</span> 知識の対価#01</div>
+						<div class="client"><span class="wo-name">マッコイ</span></div>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						<span class="wo-name">マッコイ</span>の元冒険者仲間の遺体を探し出す。
+						<div class="tasks">
+							<span class="task"><span>冒険者の遺体を集める</span><span>1</span></span>
+						</div>
+					</div>
+					<div class="footer">
+						<span>放棄不可</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">マッコイ</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							どうです？　彼……の遺体見つかりましたか？<br>
+							まさか生きているってことはないよな……
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="助手 マッコイ" class="lazyload" data-fancybox="sub-quest" src="../common/placeholder.png" data-src="../bustling-market/npcs/マッコイ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">助手 マッコイ</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 E7</span>
+					</div>
+				</div>
+
+				<div class="movie">
+					<div class="header">
+						<span class="title">タイトル不詳：知識の対価</span>
+					</div>
+					<div class="scripts">
+						<p>
+							壁に、ナイフでえぐられたような文字が残っている。<br>
+							親愛なるマッコイへ<br>
+							もし君が俺を捜してここに来ているのなら引き返せ<br>
+							冒険者を引退した今の君では歯が立たないだろう…。
+						</p>
+					</div>
+					<div class="screenshots">
+						<img alt="知識の対価" class="lazyload" data-fancybox="movie-a-017-1" src="../common/placeholder.png" data-src="movies/001.jpg">
+					</div>
+					<div class="footer">
+						<span class="flag">イベントリプレイ対象外</span>
+					</div>
+				</div>
+
+				<div class="movie">
+					<div class="header">
+						<span class="title">タイトル不詳：知識の対価</span>
+					</div>
+					<div class="scripts">
+						<p>
+							壁に、ナイフでえぐられたような文字が残っている。<br>
+							親愛なるマッコイへ<br>
+							君はもう冒険者じゃない。学者だ！<br>
+							俺の二の舞を踏んではならない。
+						</p>
+					</div>
+					<div class="screenshots">
+						<img alt="知識の対価" class="lazyload" data-fancybox="movie-a-017-2" src="../common/placeholder.png" data-src="movies/002.jpg">
+					</div>
+					<div class="footer">
+						<span class="flag">イベントリプレイ対象外</span>
+					</div>
+				</div>
+
+				<div class="movie">
+					<div class="header">
+						<span class="title">タイトル不詳：知識の対価</span>
+					</div>
+					<div class="scripts">
+						<p>
+							大きな血だまりのある壁には<br>
+							ナイフでえぐられたような文字が残っている。<br>
+							親愛なるマッコイへ<br>
+							もう時間が無い<br>
+							どうやら私もスカ……の仲間……
+							<span class="skip"></span>
+							文字は、ここで途切れている。
+							<span class="skip"></span>
+							奥のほうから呻き声のようなものが<br>
+							聞こえる。
+							<span class="speaker">スカベンジャー</span>
+							マッコォォォイ、マッコォォォイ……
+						</p>
+					</div>
+					<div class="screenshots">
+						<img alt="知識の対価" class="lazyload" data-fancybox="movie-a-017-3" src="../common/placeholder.png" data-src="movies/003.jpg">
+						<img alt="知識の対価" class="lazyload" data-fancybox="movie-a-017-3" src="../common/placeholder.png" data-src="movies/004.jpg">
+					</div>
+					<div class="footer">
+						<span class="flag">イベントリプレイ対象外</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="level">9</span> 知識の対価#02</div>
+						<div class="client"><span class="wo-name">マッコイ</span></div>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						元冒険者仲間の遺体を<span class="wo-name">マッコイ</span>に届け、<br>
+						事の顛末を伝えよう
+						<div class="tasks">
+							<span class="task"><span>冒険者の遺体を渡す</span><span>1</span></span>
+						</div>
+					</div>
+					<div class="footer">
+						<span>放棄不可</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">マッコイ</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							どうです？　彼……<br>
+							うわっ！　な、なんです、このグロテスクな肉塊は！<br>
+							えっ…　これが彼の成れの果て？<br>
+							スカベンジャーと化していた……<br>
+							まあ、なんとも哀れな結末ですね……<br>
+							しかし、こんな状態では引き取れませんね。<br>
+							彼の供養のためでもありますし、<br>
+							クォパティ寺院へ行って、その遺体を浄化し<br>
+							「灰」にしてもらってください。<br>
+							<span class="wo-name">ギド</span>司祭に頼めばやってくれるでしょう。<br>
+							宜しく頼みましたよ。<br>
+							<span class="tag"><span>item</span></span>冒険者の遺体
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="助手 マッコイ" class="lazyload" data-fancybox="sub-quest" src="../common/placeholder.png" data-src="../bustling-market/npcs/マッコイ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">助手 マッコイ</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 E7</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="level">9</span> 知識の対価#03</div>
+						<div class="client"><span class="wo-name">マッコイ</span></div>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						遺体を<span class="wo-name">ギド</span>に浄化してもらう。
+						<div class="tasks">
+							<span class="task"><span>冒険者の遺体を渡す</span><span>1</span></span>
+						</div>
+					</div>
+					<div class="footer">
+						<span>放棄不可</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">マッコイ</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ん？　どうしました。<br>
+							クォパティ寺院へ行って、その遺体を浄化し<br>
+							「灰」にしてもらってください。<br>
+							<span class="wo-name">ギド</span>司祭に頼めばやってくれるでしょう。<br>
+							宜しく頼みましたよ。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="助手 マッコイ" class="lazyload" data-fancybox="sub-quest" src="../common/placeholder.png" data-src="../bustling-market/npcs/マッコイ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">助手 マッコイ</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 E7</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">ギド</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>クォパティ寺院</span>
+							<span>TEMPLE OF QUOPATY</span>
+						</p>
+						<p>
+							クォパティ寺院へようこそ。<br>
+							これは醜い有様。アヴルールよこの遺体に慈悲を。<br>
+							ちょっと、蘇生は難しいですな……。<br>
+							不死者となった者の肉体に魂を戻すことは<br>
+							できないのです。<br>
+							浄化して埋葬してあげるのがせめてもの供養……<br>
+							浄化してさしあげますが、その前にあなたのお心を<br>
+							示してください。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>お布施しますか？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#law</span> <span>#neu</span></span>500 G お布施する</span>
+									<p>
+										ありがとうございます。<br>
+										その心意気、きっとアヴルールのお慈悲がありましょう。<br>
+										では、この罪なき者の遺体を浄化して差し上げましょう。
+									</p>
+									<p class="effective">
+										<span class="tag"><span>alignment</span></span><span class="wo-law">秩序</span> <span class="positive">+10</span>
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#cha</span></span>お布施しない</span>
+									<p>
+										<span class="tag"><span>uncollected</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<p>
+							ささやき……えいしょう……いのり……ねんじろ！<br>
+							この遺体は、浄化されました。<br>
+							その魂は輪廻し、また別の人生を歩まれるでしょう。<br>
+							……たぶん。<br>
+							この遺灰はいかが致しましょうか？<br>
+							…そうですか、引き取り手がいらっしゃるのですか。<br>
+							それだけでも救われるというもの…。<br>
+							では、その方のもとに遺灰を持っていって<br>
+							あげてください。<br>
+							<span class="tag"><span>item</span></span>浄化された遺灰
+						</p>
+						<p class="descriptive">
+							浄化された遺灰を手に入れました。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="クォパティ司祭 ギド" class="lazyload" data-fancybox="sub-quest" src="../common/placeholder.png" data-src="../heros-square/npcs/ギド.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">クォパティ司祭 ギド</span>
+						<span class="coordinate">港町イルファーロ 英雄の集う広場 F8 クォパティ寺院</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="level">9</span> 知識の対価#04</div>
+						<div class="client"><span class="wo-name">マッコイ</span></div>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						<span class="wo-item">浄化された遺灰</span>を<span class="wo-name">マッコイ</span>に届けろ。
+						<div class="tasks">
+							<span class="task"><span>浄化された遺灰を渡す</span><span>1</span></span>
+						</div>
+					</div>
+					<div class="footer">
+						<span>放棄不可</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">マッコイ</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ん？　どうしました。<br>
+							クォパティ寺院へ行って、遺体を浄化してくれましたか？
+						</p>
+						<p class="descriptive">
+							マッコイに「浄化された遺灰」を手渡した。<br>
+							彼の表情が一瞬、暗くなったように見えた。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>mission</span></span>知識の対価</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>report</span></span>報告</span>
+									<p class="effective">
+										<span class="tag"><span>alignment</span></span><span class="wo-law">秩序</span> <span class="positive">+10</span>
+									</p>
+									<p>
+										<span class="tag"><span>title</span></span><span class="var"><span>ICJ09</span></span>知識の探究者<br>
+										ふっ…　こんな姿になってしまって……<br>
+										おや？　遺灰の中に何かありますね……<br>
+										これは、「時だまし」……<br>
+										手に入れた物を肌身離さず持っていたなんて彼らしい。<br>
+										こんな石ころ一つ残して……<br>
+										どんな成功も、死んでしまっては意味がない……<br>
+										……あなたは、どう思います？
+									</p>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>どう答えますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#law</span></span>その通りだ　命は尊いものだ</span>
+												<p>
+													……俺は、彼のようなヘマはしない。<br>
+													賢いやり方で、財を築きます！<br>
+													彼が残したこの「時だまし」で<br>
+													せいぜい儲けさせてもらいますよ……。
+												</p>
+												<p class="effective">
+													<span class="tag"><span>alignment</span></span><span class="wo-law">秩序</span> <span class="positive">+20</span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#cha</span></span>やりたいようにやった結果だからしかたがない</span>
+												<p>
+													<span class="tag"><span>uncollected</span></span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#neu</span></span>なんとも言えない</span>
+												<p>
+													<span class="tag"><span>uncollected</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>cancel</span></span>閉じる</span>
+									<p>
+										ん？　どうしました。<br>
+										浄化が済んだなら報告してください。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="助手 マッコイ" class="lazyload" data-fancybox="sub-quest" src="../common/placeholder.png" data-src="../bustling-market/npcs/マッコイ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">助手 マッコイ</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 E7</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="level">9</span> 知識の対価（達成）</div>
+						<div class="client"><span class="wo-name">マッコイ</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							<span class="wo-item">冒険者の遺体</span>を捜し出した。
+						</p>
+					</div>
+					<div class="footer">
+						<span>放棄不可</span>
+					</div>
+				</div>
+
+				<div class="lines">
+					<div class="header">
+						<span class="character">マッコイ</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							おや、あなたでしたか。<br>
+							まだ冒険者などという根無し草のような<br>
+							仕事をしているのですか。<br>
+							悪いことは、言いません。<br>
+							もっとまもとな職業に就いた方が身のためですよ。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="助手 マッコイ" class="lazyload" data-fancybox="sub-quest" src="../common/placeholder.png" data-src="../bustling-market/npcs/マッコイ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">助手 マッコイ</span>
+						<span class="coordinate">港町イルファーロ 自由と賑わいの市場 E7</span>
+					</div>
+				</div>
+			</article>
+
+			<hr class="offset-killer">
+			<div id="disqus-space">
+				<p id="comment-attention">
+					名前を入力しようとすると表示される「ゲストとして投稿する」にチェックを入れるとDISQUSに登録しなくてもコメントすることができます。<br>
+					メールアドレスは入力必要ですが DISQUS で管理され、投稿したコメントに表示されることも私にも通知されることもありません。<br>
+					架空のメールアドレスでも可能ですので、お気軽にコメントしてください！
+				</p>
+				<aside id="toc-disqus">
+					<div id="disqus_thread"></div>
+				</aside>
+				<script type="text/javascript">
+					( function () {
+						var dsq = document.createElement( 'script' );
+						dsq.type = 'text/javascript';
+						dsq.async = true;
+						dsq.src = '//miramiku.disqus.com/embed.js';
+						( document.getElementsByTagName( 'head' )[ 0 ] || document.getElementsByTagName( 'body' )[ 0 ] ).appendChild( dsq );
+					} )();
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript " rel="nofollow">comments powered by Disqus.</a></noscript>
+			</div>
+		</div>
+	</main>
+
+	<div id="toc">
+		<ul>
+			<li id="back2top"><a href="#top">トップページ</a></li>
+			<li><a href="#lore">Lore</a></li>
+			<li><a href="#enemies">モンスターリスト</a></li>
+			<li>
+				<a href="#walk-through">ダンジョン攻略</a>
+				<ul>
+					<li><a href="#walk-through-1">入口付近の NPC と設備</a></li>
+					<li>
+						<a href="#walk-through-2">第一ガーディアンズゲート</a>
+						<ul>
+							<li><a href="#riddle-quest-1">愛犬に捧げるもの</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#walk-through-3">第二ガーディアンズゲート</a>
+						<ul>
+							<li><a href="#riddle-quest-2">忠犬の証</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#walk-through-4">第三ガーディアンズゲート</a>
+						<ul>
+							<li><a href="#riddle-quest-3">犬の宝物</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#sub-quest">サブクエスト</a></li>
+			<li id="jump2disqus"><a href="#toc-disqus">コメント</a></li>
+		</ul>
+	</div>
+
+	<script>
+		( function ( i, s, o, g, r, a, m ) {
+			i[ 'GoogleAnalyticsObject' ] = r; i[ r ] = i[ r ] || function () {
+				( i[ r ].q = i[ r ].q || [] ).push( arguments )
+			}, i[ r ].l = 1 * new Date(); a = s.createElement( o ),
+				m = s.getElementsByTagName( o )[ 0 ]; a.async = 1; a.src = g; m.parentNode.insertBefore( a, m )
+		} )( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
+		ga( 'create', 'UA-46801675-2', 'auto' );
+		ga( 'send', 'pageview' );
+	</script>
+</body>
+
+</html>

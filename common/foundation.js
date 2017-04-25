@@ -94,7 +94,7 @@ $( document ).ready( function () {
 		} );
 
 	// migrate debbug
-	$.each( [ "enemy", "warn", "item", "gold", "keyword", "name", "site", "law", "neu", "cha" ], function () {
+	$.each( [ "enemy", "warn", "item", "gold", "keyword", "name", "site", "law", "neu", "cha", "bifurcatio" ], function () {
 		var length = $( "." + this ).length;
 
 		if ( length ) {
