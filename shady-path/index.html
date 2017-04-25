@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>光の届かない小路 | Recollection of Wizardry Online</title>
+
+	<!-- meta data -->
+	<meta name="author" content="Miku">
+
+	<!-- scripts -->
+	<script src="../common/core.js"></script>
+	<script src="../common/supus.core.js"></script>
+
+	<!-- style / favicon -->
+	<link href="../common/foundation.css" rel="stylesheet" type="text/css">
+	<link href="../common/fancybox.css" rel="stylesheet" type="text/css">
+	<link href="../favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body id="rewo">
+	<header data-bg="background.jpg">
+		<div id="header-content">
+			<a href="https://miramiku.github.io/rewo/" id="page-info">
+				<span id="meta-info" class="page-headings">Illfalo Port</span>
+				<span id="major-title" class="page-headings">光の届かない小路</span>
+				<span id="title-divider" class="page-headings"></span>
+				<span id="minor-title" class="page-headings">Shady Ppath</span>
+			</a>
+
+			<footer>
+				<ul>
+					<li><a href="http://miramiku.github.io/"><span class="basis-icon me"> </span> みく(๑・ω・๑)</a></li>
+					<li><a href="https://twitter.com/miramiku"><span class="basis-icon tw"> </span> @miramiku</a></li>
+					<li><a href="https://github.com/miramiku/rewo"><span class="basis-icon gh"> </span> Repository</a></li>
+				</ul>
+			</footer>
+
+			<p id="wo-credit">
+				"Wizardry&reg;" of GMO Gamepot Inc. All rights reserved.<br>
+				Wizardry Renaissance&trade; &copy;2009 GMO Gamepot Inc.<br>
+				All rights reserved.
+			</p>
+		</div>
+	</header>
+
+	<main id="top">
+		<div id="main-inner">
+			<article>
+				<h3 id="list">NPC リスト</h3>
+				<table class="npc-list">
+					<thead>
+						<tr><th></th><th>NPC 名</th><th></th><th>NPC 名</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>G2</td><td><a href="#ガリアン">門番 ガリアン</a>（牢獄内）</td><td>G2</td><td><a href="#エルノーラ">獄長 エルノーラ</a>（牢獄内）</td></tr>
+						<tr><td>G2</td><td><a href="#ミハール">看守 ミハール</a></td><td>G2</td><td><a href="#ウェス">ならず者 ウェス</a>（牢獄内）</td></tr>
+						<tr><td>F2</td><td><a href="#リーザル">ならず者 リーザル</a>（牢獄内）</td><td>F2</td><td><a href="#トイレ">トイレ</a>（牢獄内）</td></tr>
+						<tr><td>F3</td><td><a href="#フレット">クォパティ僧侶の幽霊 フレット</a>（牢獄内）</td><td>F4</td><td><a href="#バルク">ならず者 バルク</a>（牢獄内）</td></tr>
+						<tr><td>G4</td><td><a href="#サディック">看守長 サディック</a></td><td>G6</td><td><a href="#エルード">イルファーロ住人 エルード</a></td></tr>
+						<tr><td>G6</td><td><a href="#ベンデュラス">クォパティ僧侶 ベンデュラス</a></td><td></td><td></td></tr>
+					</tbody>
+				</table>
+
+				<h3 id="log">会話ログ</h3>
+
+				<h4 id="a">あ行</h4>
+				<div class="lines" id="ウェス">
+					<div class="header">
+						<span class="character">ウェス</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								あ～…<br>
+								メシまだかな…。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								ウワサで聞いたんだけど、<br>
+								ここから出る方法があるらしいぜ？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								ウワサで聞いたんだけど、<br>
+								こことは別に凶悪な犯罪者が送られるトコが<br>
+								あるらしいぜ？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+							<p>
+								俺…出所したら真面目に働くんだ…。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>E</span>
+							<p>
+								この部屋に宝箱があるだろ？<br>
+								みんな3分以上間隔をあけて調べてるんだよ。<br>
+								何か意味があるのかなぁ？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>F</span>
+							<p>
+								泥棒扱いされてこのザマだぜ…。<br>
+								違うんだよ！ちょっと【借りた】だけなんだよ！<br>
+								相手は死体だったしな！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>G</span>
+							<p>
+								街中の衛兵には気をつけろよ！<br>
+								アイツら…ヒドイんだよ…グスッ…。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>H</span>
+							<p>
+								もう少し痩せたら、このスキマから出れそうな気がする…。<br>
+								でも、ここのメシ旨いんだよなぁ…。<br>
+								ゲェッ！まさか…衛兵の罠かッ！
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ならず者 ウェス" data-fancybox="shady-path" class="lazyload" src="../common/placeholder.png" data-src="npcs/ウェス.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ならず者 ウェス</span>
+						<span class="coordinate">港町イルファーロ 光の届かない小路 G2（牢獄内）</span>
+					</div>
+				</div>
+
+				<div class="lines" id="エルード">
+					<div class="header">
+						<span class="character">エルード</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<p>
+							家賃が安いからって牢獄のそばに住まなければよかった…。<br>
+							空気が悪いし…治安も良くないし…。<br>
+							なにより、たまに脱獄騒ぎがあるんですよね…。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="イルファーロ住人 エルード" data-fancybox="shady-path" class="lazyload" src="../common/placeholder.png" data-src="npcs/エルード.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">イルファーロ住人 エルード</span>
+						<span class="coordinate">港町イルファーロ 光の届かない小路 G6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="エルノーラ">
+					<div class="header">
+						<span class="character">エルノーラ</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								貴様…態度が大きいな…<br>
+								反省する気が無いなら<br>
+								この懲罰棒を食らわしても良いのだぞ？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								この懲罰棒が囚人の肌をえぐるたびに<br>
+								私の戒律が秩序に傾くのだ！<br>
+								そうだ…貴様で試してやろうか？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								囚人ごときが私に話しかけるなど…<br>
+								いや…そうか…フフ…<br>
+								いつでも罰して欲しいと…そうだろう？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+							<p>
+								そんな目で見つめられても<br>
+								ここから出すわけにはいかんな！<br>
+								それとも…フン…罰して欲しいのか？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>E</span>
+							<p>
+								<span class="wo-name">ミハール</span>め…余計なものを作りおって…<br>
+								私の楽しみが減るではないか…<br>
+								奴もそろそろ…フフ…フフフ…
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>F</span>
+							<p>
+								私の仕事は罰を与える事だ。<br>
+								だから死んでくれるなよ？<br>
+								何かと事務処理が面倒だからな。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="獄長 エルノーラ" data-fancybox="shady-path" class="lazyload" src="../common/placeholder.png" data-src="npcs/エルノーラ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">獄長 エルノーラ</span>
+						<span class="coordinate">港町イルファーロ 光の届かない小路 G2（牢獄内）</span>
+					</div>
+				</div>
+
+				<h4 id="k">か行</h4>
+				<div class="lines" id="ガリアン">
+					<div class="header">
+						<span class="character">ガリアン</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							何か用か？<br>
+							無いならどっかに消え失せろ！<br>
+							お前にはトイレがお似合いだぜ…ヘヘッ…
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="門番 ガリアン" data-fancybox="shady-path" class="lazyload" src="../common/placeholder.png" data-src="npcs/ガリアン.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">門番 ガリアン</span>
+						<span class="coordinate">港町イルファーロ 光の届かない小路 G2（牢獄内）</span>
+					</div>
+				</div>
+
+				<h4 id="s">さ行</h4>
+				<div class="lines" id="サディック">
+					<div class="header">
+						<span class="character">サディック</span>
+						<span class="race">POR♂</span>
+					</div>
+					<div class="text">
+						<p>
+							この先は牢屋だよ！<br>
+							危ないから近づかないでね！
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="看守長 サディック" data-fancybox="shady-path" class="lazyload" src="../common/placeholder.png" data-src="npcs/サディック.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">看守長 サディック</span>
+						<span class="coordinate">港町イルファーロ 光の届かない小路 G4</span>
+					</div>
+				</div>
+
+				<h4 id="t">た行</h4>
+				<div class="lines" id="トイレ">
+					<div class="header">
+						<span class="character">トイレ</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>ordinary</span></span>平時</span>
+							<p>
+								底が見えないほど深い穴だ…。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>performed</span></span>宝箱調べた後</span>
+							<p>
+								底が見えないほど深い穴だ…。<br>
+								よく見ると、脇に人が通れるほどの穴がある。
+							</p>
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>どうする？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>入ってみる</span>
+									<p>
+										<span class="tag"><span>teleportation</span></span><span class="wo-site">闇を受け入れた者達の路地</span> I6
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="トイレ" data-fancybox="shady-path" class="lazyload" src="../common/placeholder.png" data-src="npcs/トイレ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">トイレ</span>
+						<span class="coordinate">港町イルファーロ 光の届かない小路 F2（牢獄内）</span>
+					</div>
+				</div>
+
+				<h4 id="h">は行</h4>
+				<div class="lines" id="バルク">
+					<div class="header">
+						<span class="character">バルク</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								誤って他の冒険者を殴っちまう事もあるだろうよ。<br>
+								そんな時はおとなしくしてるんだな。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								俺もワルだけどよ…。<br>
+								絶対にやってはいけないことは心得てるんだぜ？<br>
+								後で後悔すんのは嫌だからな…。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								ここから出たいのか？じゃあ、ヒントをやろう。<br>
+								<span class="wo-keyword">宝箱そしてトイレ</span>だ。<br>
+								うーん…これじゃあ答えそのものだな…。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+							<p>
+								ここだけの話だけど…脱獄なんて簡単なんだよ…。<br>
+								アレを見つけられない衛兵どもはマヌケだぜ！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>E</span>
+							<p>
+								ココだって慣れれば居心地いいんだぜ。<br>
+								モンスターに襲われないからな！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>F</span>
+							<p>
+								たまに故郷を思い出したりするんだよな…。<br>
+								な、泣いてなんかいねぇよ…。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>G</span>
+							<p>
+								犯罪者が生きていけるのは【スラム】ぐらいだな…<br>
+								広場にある冒険者ギルドの脇道から行けるぜ。<br>
+								あともう一つ…ヘッヘッヘ…。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>H</span>
+							<p>
+								フフフ…<br>
+								俺達にお前の攻撃なんか効かないぜ！<br>
+								門外不出の防御法があるからな！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>I</span>
+							<p>
+								冒険するの面倒クセェから、<br>
+								塀の中で３食昼寝付きの生活を選んだぜ！
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ならず者 バルク" data-fancybox="shady-path" class="lazyload" src="../common/placeholder.png" data-src="npcs/バルク.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ならず者 バルク</span>
+						<span class="coordinate">港町イルファーロ 光の届かない小路 F4（牢獄内）</span>
+					</div>
+				</div>
+
+				<div class="lines" id="フレット">
+					<div class="header">
+						<span class="character">フレット</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<p>
+							お前、俺が見えるのか？<br>
+							どうだ、蘇生してやろうか？<br>
+							あまり得意じゃないけどな！
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>蘇生してやろうか？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>蘇生してもらう</span>
+									<p>
+										<span class="tag"><span>function</span></span> revive
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+									<p>
+										ずっとここにいるつもりか？<br>
+										死体が腐っちまうぞ？
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="クォパティ僧侶の幽霊 フレット" data-fancybox="shady-path" class="lazyload" src="../common/placeholder.png" data-src="npcs/フレット.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">クォパティ僧侶の幽霊 フレット</span>
+						<span class="coordinate">港町イルファーロ 光の届かない小路 F3（牢獄内）</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ベンデュラス">
+					<div class="header">
+						<span class="character">ベンデュラス</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>live status</span></span> 通常時</span>
+							<p>
+								囚人にこそ正しき道を説く必要があるのです。<br>
+								貴方もそう思いませんか？<br>
+								もし魂の救済を求めるならば、いつでもお越しください。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>soul status</span></span> 魂時</span>
+							<p>
+								まさか、魂となられるとは…<br>
+								救済をお求めですか？
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>救済をお求めですか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>蘇生してもらう</span>
+										<p>
+											蘇生費用は<span class="var"><span>50 × levels</span></span> Gになります。<br>
+											ちなみに……一度いただいたものは<br>
+											お返しできませんのでご了承ください。
+										</p>
+										<div class="dialog">
+											<span class="dialog">
+												<span class="tag"><span>dialogue</span></span>
+												<span class="textbox" style="width: 550px;">蘇生費用：<span class="var"><span>50 × levels</span></span> G<br>
+												所持金：<span class="wo-gold"><span class="var"><span>pocket</span></span> G</span></span>
+											</span>
+											<div class="options">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-a</span></span>支払う</span>
+													<div class="either">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>ordinary</span></span>平時</span>
+															<p>
+																<span class="tag"><span>function</span></span> revive
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>pocket</span></span><span class="var"><span>50 × levels</span></span> G 未満</span>
+															<p>
+																お金が足りませんね…<br>
+																背教者を救済する事はできません。
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-b</span></span>無料でお願いする</span>
+													<p>
+														無料で…ですか？<br>
+														では蘇生率を下げましょう。<br>
+														<span class="tag"><span>function</span></span> revive
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-c</span></span>なぜ返さないのか？</span>
+													<p>
+														それを語る時ではないはずですが？<br>
+														生き返るのが先でしょう。
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-d</span></span>立ち去る</span>
+													<p>
+														貴方は一人ではありません。<br>
+														そのことをお忘れなきよう…。
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+										<p>
+											貴方は一人ではありません。<br>
+											そのことをお忘れなきよう…。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="クォパティ僧侶 ベンデュラス" data-fancybox="shady-path" class="lazyload" src="../common/placeholder.png" data-src="npcs/ベンデュラス.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">クォパティ僧侶 ベンデュラス</span>
+						<span class="coordinate">港町イルファーロ 光の届かない小路 G6</span>
+					</div>
+				</div>
+
+				<h4 id="m">ま行</h4>
+				<div class="lines" id="ミハール">
+					<div class="header">
+						<span class="character">ミハール</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>ordinary</span></span>平時</span>
+							<p>
+								あそこにある宝箱を調べたいか？<br>
+								だったら 1 回 6G 払いな！
+							</p>
+							<div class="dialog">
+								<span class="dialog">
+									<span class="tag"><span>dialogue</span></span>6G 払いな！：<span class="wo-gold"><span class="var"><span>pocket</span></span> G</span>
+								</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>支払う</span>
+										<div class="either">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>ordinary</span></span>平時</span>
+												<p>
+													毎度ありッ！<br>
+													ククク…いい趣味してるぜ…<br>
+													発動間隔は3分程度だ。覚えておけよ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>pocket</span></span>6G 未満</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>times</span></span> １回目から３回目</span>
+														<p>
+															おい…<br>
+															お金が足りないぞ…
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>times</span></span> ４回目から６回目</span>
+														<p>
+															ふざけてんのか？<br>
+															俺を怒らせないほうが身のためだぜ…
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>times</span></span> ７回目から９回目</span>
+														<p>
+															もしかしてお前アレか？<br>
+															ケンカ売ってるのか？<br>
+															俺が誰だか分かってるのか？
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>times</span></span> １０回目</span>
+														<p>
+															よしッ！分かったッ！<br>
+															お望み通りブチ込んでやるッ！<br>
+															後悔しても遅いぜッ！<br>
+															<span class="tag"><span>teleportation</span></span> F3（牢獄内）
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>やめる</span>
+										<div class="either">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+												<p>
+													あ～…スラムに行きてぇ…<br>
+													犯罪者どもをなぎ倒してぇ…<br>
+													なんせ俺は街の平和を守る正義の味方だからなァ！
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+												<p>
+													あまり牢獄に近づくと巻き添えくらうぜ！<br>
+													ま、俺はそっちのほうが楽しいけどなァ！<br>
+													なーに、ただの独り言だよ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+												<p>
+													スイッチを宝箱の形にしておいたぜ…<br>
+													みんな競い合うように…ククク…<br>
+													人の欲ってのは恐ろしいなァ！
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+												<p>
+													なあ…お前はいつ牢獄に入るんだ？<br>
+													待ってるぜ…ククク…
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>random lines</span></span>E</span>
+												<p>
+													なんだ？見学か？<br>
+													なんだったらブチ込んでやろうか？<br>
+													イヤなら消え失せな！
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>random lines</span></span>F</span>
+												<p>
+													牢獄の中で何かが起きても助けられねぇンだよ。<br>
+													非ッ常～に残念だけどなッ！<br>
+													だから死人が出ても俺のせいじゃねェんだ！
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>completion of a transaction</span></span>支払い成立後から罠作動まで</span>
+							毎度ありッ！<br>
+							ククク…いい趣味してるぜ…<br>
+							発動間隔は3分程度だ。覚えておけよ。
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="看守 ミハール" data-fancybox="shady-path" class="lazyload" src="../common/placeholder.png" data-src="npcs/ミハール.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">看守 ミハール</span>
+						<span class="coordinate">港町イルファーロ 光の届かない小路 G2</span>
+					</div>
+				</div>
+
+				<h4 id="r">ら行</h4>
+				<div class="lines" id="リーザル">
+					<div class="header">
+						<span class="character">リーザル</span>
+						<span class="race">POR♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								悪事を働くと、結局自分に帰ってくるんだよな…。<br>
+								もう少し早く気づくべきだった…。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								あのトイレ…。<br>
+								いろんな意味で"臭う"ぜ…。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								あのトイレに落ちたヤツは二度と戻って来ねぇ…。<br>
+								って噂があったんだが、結構戻ってくるんだよな…。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+							<p>
+								いいか、あのトイレは調べるなよ！<br>
+								分かったな？調べるなよ！絶対だからな！<br>
+								スラムになんか通じてないからな！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>E</span>
+							<p>
+								俺、ちっちゃいだろ？<br>
+								だから残飯に隠れて脱獄しようとしたら…。<br>
+								危うく化け物に食われるところだったぜ…。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>F</span>
+							<p>
+								ここの警備はザルだから、みんな簡単に脱獄できるんだよ。<br>
+								国はワザとそうさせてるって言われるぐらいだからな。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>G</span>
+							<p>
+								隣の部屋にドワーフいただろ？<br>
+								アイツ、昔はもっと痩せてたんだぜ。<br>
+								鉄格子のスキマを通れるぐらいにな。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ならず者 リーザル" data-fancybox="shady-path" class="lazyload" src="../common/placeholder.png" data-src="npcs/リーザル.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ならず者 リーザル</span>
+						<span class="coordinate">港町イルファーロ 光の届かない小路 F2（牢獄内）</span>
+					</div>
+				</div>
+			</article>
+
+			<hr class="offset-killer">
+			<div id="disqus-space">
+				<p id="comment-attention">
+					名前を入力しようとすると表示される「ゲストとして投稿する」にチェックを入れるとDISQUSに登録しなくてもコメントすることができます。<br>
+					メールアドレスは入力必要ですが DISQUS で管理され、投稿したコメントに表示されることも私にも通知されることもありません。<br>
+					架空のメールアドレスでも可能ですので、お気軽にコメントしてください！
+				</p>
+				<aside id="toc-disqus">
+					<div id="disqus_thread"></div>
+				</aside>
+				<script type="text/javascript">
+					( function () {
+						var dsq = document.createElement( 'script' );
+						dsq.type = 'text/javascript';
+						dsq.async = true;
+						dsq.src = '//miramiku.disqus.com/embed.js';
+						( document.getElementsByTagName( 'head' )[ 0 ] || document.getElementsByTagName( 'body' )[ 0 ] ).appendChild( dsq );
+					} )();
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+			</div>
+		</div>
+	</main>
+
+	<div id="toc">
+		<ul>
+			<li id="back2top"><a href="#top">トップページ</a></li>
+			<li><a href="#list">NPC リスト</a></li>
+			<li><a href="#log">会話ログ</a>
+				<ul>
+					<li><a href="#a">あ行</a></li>
+					<li><a href="#k">か行</a></li>
+					<li><a href="#s">さ行</a></li>
+					<li><a href="#t">た行</a></li>
+					<li><a href="#h">は行</a></li>
+					<li><a href="#m">ま行</a></li>
+					<li><a href="#r">ら行</a></li>
+				</ul>
+			</li>
+		<li id="jump2disqus"><a href="#toc-disqus">コメント</a></li>
+		</ul>
+	</div>
+
+	<script>
+		( function ( i, s, o, g, r, a, m ) {
+			i[ 'GoogleAnalyticsObject' ] = r; i[ r ] = i[ r ] || function () {
+				( i[ r ].q = i[ r ].q || [] ).push( arguments )
+			}, i[ r ].l = 1 * new Date(); a = s.createElement( o ),
+				m = s.getElementsByTagName( o )[ 0 ]; a.async = 1; a.src = g; m.parentNode.insertBefore( a, m )
+		} )( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
+		ga( 'create', 'UA-46801675-2', 'auto' );
+		ga( 'send', 'pageview' );
+	</script>
+</body>
+
+</html>
