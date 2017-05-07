@@ -1,0 +1,2848 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>真・大人の社交場 | Recollection of Wizardry Online</title>
+
+	<!-- meta data -->
+	<meta name="author" content="Miku">
+
+	<!-- scripts -->
+	<script src="../common/core.js"></script>
+	<script src="../common/supus.core.js"></script>
+
+	<!-- style / favicon -->
+	<link href="../common/foundation.css" rel="stylesheet" type="text/css">
+	<link href="../common/fancybox.css" rel="stylesheet" type="text/css">
+	<link href="../favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body id="rewo">
+	<header data-bg="background.jpg">
+		<div id="header-content">
+			<a href="https://miramiku.github.io/rewo/" id="page-info">
+				<span id="meta-info" class="page-headings">Capital Itox</span>
+				<span id="major-title" class="page-headings">真・大人の社交場</span>
+				<span id="title-divider" class="page-headings"></span>
+				<span id="minor-title" class="page-headings">The Real Watering Place for Adults</span>
+			</a>
+
+			<footer>
+				<ul>
+					<li><a href="http://miramiku.github.io/"><span class="basis-icon me"> </span> みく(๑・ω・๑)</a></li>
+					<li><a href="https://twitter.com/miramiku"><span class="basis-icon tw"> </span> @miramiku</a></li>
+					<li><a href="https://github.com/miramiku/rewo"><span class="basis-icon gh"> </span> Repository</a></li>
+				</ul>
+			</footer>
+
+			<p id="wo-credit">
+				"Wizardry&reg;" of GMO Gamepot Inc. All rights reserved.<br>
+				Wizardry Renaissance&trade; &copy;2009 GMO Gamepot Inc.<br>
+				All rights reserved.
+			</p>
+		</div>
+	</header>
+
+	<main id="top">
+		<div id="main-inner">
+			<article>
+				<h3 id="list">NPC リスト</h3>
+				<h6>社交場利用者</h6>
+				<table class="npc-list">
+					<thead>
+						<tr><th></th><th>NPC 名</th><th></th><th>NPC 名</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>J7</td><td><a href="#カート">元冒険者の大富豪 カート</a></td><td>J7</td><td><a href="#ドロリッツァ">ギャンブラー ドロリッツァ</a></td></tr>
+						<tr><td>J8</td><td><a href="#ドルバコス">調査員 ドルバコス</a></td><td>J8</td><td><a href="#ドンキー">のんだくれ ドンキー</a></td></tr>
+						<tr><td>J8</td><td><a href="#ベロナッツ">ろくでなし ベロナッツ</a></td><td>J8</td><td><a href="#ロドリオ">細工師 ロドリオ</a></td></tr>
+						<tr><td>J8</td><td><a href="#ハーゲン">抜け毛が気になる ハーゲン</a></td><td>J9</td><td><a href="#バナジール">ジゴロ バナジール</a></td></tr>
+					</tbody>
+				</table>
+
+				<h6>ロイヤルディー・ディーラー</h6>
+				<table class="npc-list">
+					<thead>
+						<tr><th></th><th>NPC 名</th><th></th><th>NPC 名</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>J8</td><td><a href="#ケイト">ディーラー ケイト</a></td><td>J8</td><td><a href="#キャサリン">ディーラー キャサリン</a></td></tr>
+						<tr><td>J8</td><td><a href="#アンジェリーナ">ディーラー アンジェリーナ</a></td><td>J8</td><td><a href="#シャーリーズ">ディーラー シャーリーズ</a></td></tr>
+						<tr><td>I7</td><td><a href="#セラフィーユ">ロイヤルレディー セラフィーユ</a></td><td>J7</td><td><a href="#ミラヴェル">ロイヤルレディー ミラヴェル</a></td></tr>
+						<tr><td>J8</td><td><a href="#イシャンテ">ロイヤルレディー イシャンテ</a></td><td>J9</td><td><a href="#マダリア">ロイヤルレディー マダリア</a></td></tr>
+						<tr><td>J9</td><td><a href="#ルルリラ">ロイヤルレディー ルルリラ</a></td><td></td><td></td></tr>
+					</tbody>
+				</table>
+
+				<h6>その他従業員・設備ほか</h6>
+				<table class="npc-list">
+					<thead>
+						<tr><th></th><th>NPC 名</th><th></th><th>NPC 名</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>I7</td><td><a href="#ジェスト">バーテンダー ジェスト</a></td><td>I8</td><td><a href="#マイクローク">マイクローク 店員</a></td></tr>
+						<tr><td>I8</td><td><a href="#アルダニス">ボーイ アルダニス</a></td><td>I9</td><td><a href="#チップ交換">カジノキャッシャー チップ交換</a></td></tr>
+						<tr><td>I9</td><td><a href="#景品交換">カジノキャッシャー 景品交換</a></td><td>J8</td><td><a href="#ジョッキーチュン">クラウンキャラバン ジョッキーチュン</a></td></tr>
+						<tr><td>K7</td><td><a href="#アークンデス">スペシャルマッサージ師 アークンデス</a></td><td>K7</td><td><a href="#ホロスト">クォパティ僧侶 ホロスト</a></td></tr>
+						<tr><td>I8</td><td><a href="#カジノ営業許可証">カジノ営業許可証</a></td><td>I8</td><td><a href="#帰還用ポール">帰還用ポール</a></td></tr>
+						<tr><td>J8</td><td><a href="#ジュークボックス">ジュークボックス</a></td><td></td><td></td></tr>
+					</tbody>
+				</table>
+
+				<h3 id="log">会話ログ</h3>
+				<h4 id="a">あ行</h4>
+				<div class="lines" id="アークンデス">
+					<div class="header">
+						<span class="character">アークンデス</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>夢心地の宿</span>
+							<span>Mellow Garden</span>
+						</p>
+						<p>
+							いらっしゃ～い♪<br>
+							癒しの園へようこそ～。
+						</p>
+						<div class="either">
+							<span class="gauge"></span>
+							<div class="option">
+								<span class="option"><span class="tag"><span>gender</span></span>男性キャラクター</span>
+								<p>
+									あら、お兄さん！　いい体してるわねぇ。<br>
+									寄ってってくれたらたっぷりサービスするわよ♪
+								</p>
+							</div>
+							<div class="option">
+								<span class="option"><span class="tag"><span>gender</span></span>女性キャラクター</span>
+								<p>
+									まあ、お嬢ちゃん！　綺麗な肌してるわねぇ。<br>
+									ふふ、アタシならもっと綺麗にしてあげられるわよ♪
+								</p>
+							</div>
+						</div>
+						<p>
+							いまならすぐにご案内できるわよ。<br>
+							た～っぷり気持ちよくさせてあげちゃうから♪
+						</p>
+						<div class="dialog">
+							<span class="dialog">
+								<span class="tag"><span>dialogue</span></span>
+								<span class="textbox" style="width: 570px;">
+									……どうする？<br>
+									所持金：<span class="wo-gold"><span class="var"><span>pocket</span></span> G</span>
+								</span>
+							</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>スタンダードコース 1,000 G</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+											<p>
+												それじゃあ、楽園へごあんな～い♪<br>
+												<span class="tag"><span>function</span></span>inn<br>
+												次のレベルになるには……<br>
+												<span class="var"><span>next-exp</span></span> の経験値が必要ね。<br>
+												もっとたくましくなったアナタ、早く見てみたいわね♪
+											</p>
+											<div class="append">
+												<span class="gauge"></span>
+												<span class="option">ソウルランクアップ可能</span>
+												<p>
+													あぁん！　あなたのソウルもうパンパンね。<br>
+													はやく巫女さまの所に行ってすっきりしてきなさいな♪
+												</p>
+											</div>
+											<p>
+												どうだった？　アタシのマッサージ♪<br>
+												天にも昇る気持ちよさでしょ？<br>
+												よかったらまたきてね。<br>
+												アタシまってるから！
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>pocket</span></span>所持金不足</span>
+											<p>
+												ちょいとお客さ……、<br>
+												いや金がねえなら客じゃねぇな。<br>
+												金がねえならとっとと出て行けや！<br>
+												……お金が出来たらまた来てね～ん♪
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>スペシャルコース 1,500 G</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+											<p>
+												それじゃあ、楽園へごあんな～い♪<br>
+												<span class="tag"><span>function</span></span>inn<br>
+												次のレベルになるには……<br>
+												<span class="var"><span>next-exp</span></span> の経験値が必要ね。<br>
+												もっとたくましくなったアナタ、早く見てみたいわね♪
+											</p>
+											<div class="append">
+												<span class="gauge"></span>
+												<span class="option">ソウルランクアップ可能</span>
+												<p>
+													あぁん！　あなたのソウルもうパンパンね。<br>
+													はやく巫女さまの所に行ってすっきりしてきなさいな♪
+												</p>
+											</div>
+											<p>
+												どうだった？　アタシのマッサージ♪<br>
+												天にも昇る気持ちよさでしょ？<br>
+												よかったらまたきてね。<br>
+												アタシまってるから！
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>pocket</span></span>所持金不足</span>
+											<p>
+												ちょいとお客さ……、<br>
+												いや金がねえなら客じゃねぇな。<br>
+												金がねえならとっとと出て行けや！<br>
+												……お金が出来たらまた来てね～ん♪
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+									<p>
+										あ～ん、やめちゃうの～。<br>
+										次は必ず寄っていってね？
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="スペシャルマッサージ師 アークンデス" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/アークンデス.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">スペシャルマッサージ師 アークンデス</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 K7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="アルダニス">
+					<div class="header">
+						<span class="character">アルダニス</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<p>
+							フゥ～！　いらっしゃァい！<br>
+							ここは、娯楽の殿堂、<span class="wo-site">真・大人の社交場</span>でェーすッ！<br>
+							ワッフゥ～<br>
+							メニーメニー楽しんじゃってくださァーいッ！<br>
+							ワッフゥ～
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>何を聞く？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>この店について</span>
+									<p>
+										フゥ～！<br>
+										<span class="wo-site">真・大人の社交場</span>は、ロイヤルレディーたちと<br>
+										楽しいワンタイムをご提供しまァーすッ！<br>
+										カワイコチャンからセクシゥイー美女まで<br>
+										メニーメニー揃ってまァーすッ！<br>
+										ウッフゥ～<br>
+										どの娘にするか、メニーメニー迷ってくださァーいッ！<br>
+										ワッフゥ～<br>
+										最近ハーサントの系列店からの紹介で<br>
+										カジノが入荷されてまァーすッ！<br>
+										ワッフゥ～
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>オーナーについて</span>
+									<p>
+										ここのオーナーさァーんは、<br>
+										<span class="wo-name">アダコーン</span>さァーんでェーすッ！<br>
+										ワッフゥ～<br>
+										最近どっかランナウェイしていきましたよォ！<br>
+										フゥ～！<br>
+										総支配人の肖像画なら入口にありまァーすッ！<br>
+										ワッフゥ～
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>ロイヤルレディーについて</span>
+									<p>
+										当店のＮｏ．１ロイヤルレディーは<br>
+										<span class="wo-name">マダリア</span>ちゃんでェーすッ！<br>
+										ワッフゥ～！<br>
+										Ｎｏ．２ロイヤルレディーは<br>
+										<span class="wo-name">ミラヴェル</span>ちゃんでェーすッ！<br>
+										ワッフゥ～！<br>
+										Ｎｏ．３ロイヤルレディーは<br>
+										<span class="wo-name">セラフィーユ</span>ちゃんでェーすッ！<br>
+										ワッフゥ～！<br>
+										以下省略でェーすッ！<br>
+										ワッフゥ～！
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>ロイヤルレディーの指名について</span>
+									<p>
+										ご指名はそれぞれのロイヤルレディーと<br>
+										交渉してみてくださァーいッ！<br>
+										もっちローン、他のお客様のご指名と重なると<br>
+										指名することがでッきませェーんッ！<br>
+										ワッフゥ～<br>
+										人気のある子は指名がメニーメニー入ってまァーすッ！<br>
+										フゥ～！<br>
+										お客さんが少ない時は狙い目でェーすッ！<br>
+										ワッフゥ～！
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#05</span></span>カジノチップについて</span>
+									<p>
+										そこのキャッシャーでチェンジしてくださァーいッ！<br>
+										ワッフゥ～！
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#06</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ボーイ アルダニス" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/アルダニス.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ボーイ アルダニス</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 I8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="アンジェリーナ">
+					<div class="header">
+						<span class="character">アンジェリーナ</span>
+						<span class="race">HUM♀</span>
+					</div>
+					<div class="text">
+						<p>
+							あはは♪<br>
+							ここではルーレットができるよ♪<br>
+							でも、ごめんね。まだ準備中なの……<br>
+							また、今度来てね♪
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="ディーラー アンジェリーナ" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/アンジェリーナ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ディーラー アンジェリーナ</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 J8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="イシャンテ">
+					<div class="header">
+						<span class="character">イシャンテ</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<p>
+							ハァ……。この人これで騎士ですって。<br>
+							これから<span class="wo-site">旧地下水路</span>に調査に行くとかなんとか。<br>
+							騎士団の人材不足は深刻って本当のことのようね……
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>何を聞く？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>この店について</span>
+									<p>
+										まあ、見ての通り、高級クラブよ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>オーナーについて</span>
+									<p>
+										この店は、<span class="wo-site">首都アイトックス</span>の<br>
+										<span class="wo-site">エンジェルフィッシュ通り</span>の中でも<br>
+										一番繁盛している店ね。<br>
+										<span class="wo-site">旧地下水路</span>にも同じ名前の姉妹店が<br>
+										あるからそちらも宜しくおねがいしますね。<br>
+										本店であるこの店からもヘルプで<br>
+										ロイヤルレディーが出向することもあるわ。<br>
+										向こうで<span class="footnote">遭った</span>ら、その時は宜しく。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>マダリアについて</span>
+									<p>
+										<span class="wo-name">マダリア</span>さんですか……<br>
+										私にとっては、雲の上の人ね。<br>
+										<span class="footnote">年</span>は、私より全然若いけど尊敬できる人だわ。<br>
+										あ、人間的にじゃなく、ロイヤルレディーとしてね。<br>
+										機嫌がいいときのお客さんのアゲっぷりと<br>
+										機嫌を損ねたときの落としっぷり。<br>
+										あの緩急のついたトーク……<br>
+										並のロイヤルレディーでは、真似のできない、<br>
+										いいや許されない、彼女だけの接客術……<br>
+										あの人を悪く言う娘もいるでしょうけど、<br>
+										それは、<span class="wo-name">マダリア</span>さんがＮｏ．１たる証でもあるわ。<br>
+										嫉妬こそロイヤルレディー最大の勲章ってことね。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>イシャンテを指名する</span>
+									<p>
+										あら嬉しい。<br>
+										でも残念だけど、今日はこの人の指名が入っているのよ。<br>
+										また機会があったらよろしくね。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#05</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>原文のママ</li>
+							<li>原文のママ</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img alt="ロイヤルレディー イシャンテ" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/イシャンテ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ロイヤルレディー イシャンテ</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 J8</span>
+					</div>
+				</div>
+
+				<h4 id="k">か行</h4>
+				<div class="lines" id="カート">
+					<div class="header">
+						<span class="character">カート</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ん？　どこかで会ったかだって？<br>
+							他人のそら似じゃないか？<br>
+							私は君のような下々の冒険者なんか知らないがね。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>何を聞く？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>この店について</span>
+									<p>
+										裕福な僕には関係ないことだが、<br>
+										世の中にはここで食い逃げするような<br>
+										不届き者もいるんだってさ。<br>
+										ここのマスターはとても腕っ節が強くてね。<br>
+										と言うか、人間じゃないし。<br>
+										加減ってものを知らないから命がないぞ。<br>
+										あまり何度も繰り返す奴は出入り禁止にされるそうだから<br>
+										君も手持ちの少ない時は無理な注文はしないようにな。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>オーナーについて</span>
+									<p>
+										ディメント屈指の大富豪で、僕よりお金持ちの<br>
+										数少ない人物だ。<br>
+										だが、ここのところ誰も姿を見かけないって話だ。<br>
+										どうしてかって？<br>
+										さあ、そこまでは僕にも分からないよ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>マダリアについて</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+											<p>
+												あっはっは、僕は最近よくここに通っているんだけどね。<br>
+												この前とうとう<span class="wo-name">マダリア</span>ちゃんに<br>
+												アレを貰っちゃったよ。<br>
+												え？　何をだって？<br>
+												それは秘密さ。まあ、僕みたいな裕福な者への<br>
+												ちょっとした<span class="wo-keyword">ステータス</span>みたいなものさ。<br>
+												もし君がお金を湯水のように使える人物なら<br>
+												君にも機会があるかもしれないがね。
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+											<p>
+												なんか、<span class="wo-name">マダリア</span>ちゃんは、機嫌がいいと<br>
+												食事の割引券をくれるらしいぞ。<br>
+												も、もちろん僕も貰ったぞ！<br>
+												あたりまえじゃないか、こう見えて常連なんだぞ。<br>
+												僕は！
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+											<p>
+												<span class="wo-name">マダリア</span>ちゃんは、お気に入りの客には、<br>
+												楽し気なゲームをしてくれたり、<br>
+												アフターに誘ってくれるらしいぞ。<br>
+												も、もちろん僕も誘われたぞ！<br>
+												ウソなんかじゃないぞ！<br>
+												どんだけこの店に通っていると思ってんだ！
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+											<p>
+												<span class="wo-name">マダリア</span>ちゃんは、親しい客に<br>
+												よくお願いごとをするそうだ。<br>
+												きっと甘えてきているんだな。<br>
+												聞いてあげると、こっちのお願いも聞いてくれる<br>
+												いい娘ちゃんだそうだ。<br>
+												ん？　と、当然、僕もお願いされたぞ！<br>
+												あたりまえじゃないか、お金持ちの僕に<br>
+												叶えられないことはないんだからな！
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="元冒険者の大富豪 カート" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/カート.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">元冒険者の大富豪 カート</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 J7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="カジノ営業許可証">
+					<div class="header">
+						<span class="character">（カジノ営業許可証）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p class="descriptive">
+							カジノ営業許可証と書いてある。
+						</p>
+						<p class="descriptive">
+							上の者にカジノの営業を許可する。<br>
+							<br>
+							　　　　　　　　　　　フェルディナント・アダコーン
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="カジノ営業許可証" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/カジノ営業許可証.jpg">
+					</div>
+					<div class="footer">
+						<span class="coordinate">首都アイトックス 真・大人の社交場 I8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="帰還用ポール">
+					<div class="header">
+						<span class="character">（無名）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p class="descriptive">
+							ここから街へ帰還できます。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>街に戻りますか？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+									<p>
+										<span class="tag"><span>entering</span></span> 港町イルファーロ
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="帰還用ポール" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/帰還用ポール.jpg">
+					</div>
+					<div class="footer">
+						<span class="coordinate">首都アイトックス 真・大人の社交場 I8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="キャサリン">
+					<div class="header">
+						<span class="character">キャサリン</span>
+						<span class="race">GNO</span>
+					</div>
+					<div class="text">
+						<p>
+							うふふ<br>
+							ここではカードゲームを扱っているわぁ♪<br>
+							どう？<br>
+							一緒に遊びませんかぁ？
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>一緒に遊びませんかぁ？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>遊んで行く</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>ゲーム選択</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#a</span></span>ハーサントポーカー</span>
+												<p>
+													<span class="tag"><span>function</span></span>MiniGame (HersantPorker)<br>
+													うふふふ<br>
+													楽しんでもらえましたかぁ？<br>
+													また遊んでくださいねぇ♪
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#b</span></span>ロイヤル 21</span>
+												<p>
+													<span class="tag"><span>function</span></span>MiniGame (Royal21)<br>
+													うふふふ<br>
+													楽しんでもらえましたかぁ？<br>
+													また遊んでくださいねぇ♪
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ディーラー キャサリン" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/キャサリン.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ディーラー キャサリン</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 J8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ケイト">
+					<div class="header">
+						<span class="character">ケイト</span>
+						<span class="race">HUM♀</span>
+					</div>
+					<div class="text">
+						<p>
+							ここではカードゲームをやってまーす♪<br>
+							遊びますかぁ？
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>遊びますかぁ？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>遊んで行く</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>ゲーム選択</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#a</span></span>ハーサントポーカー</span>
+												<p>
+													<span class="tag"><span>function</span></span>MiniGame (HersantPorker)<br>
+													うふふふ♪　勝っても負けても恨みっこなしですよ♪<br>
+													また遊んでくださいね♪
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#b</span></span>ロイヤル 21</span>
+												<p>
+													<span class="tag"><span>function</span></span>MiniGame (Royal21)<br>
+													うふふふ♪　勝っても負けても恨みっこなしですよ♪<br>
+													また遊んでくださいね♪
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ディーラー ケイト" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/ケイト.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ディーラー ケイト</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 J8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="景品交換">
+					<div class="header">
+						<span class="character">景品交換</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>大人の社交場　景品交換</span>
+						</p>
+						<p>
+							こちらでは景品交換を受け付けておりますわ♪<br>
+							景品交換されますか？
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>景品交換されますか？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>景品交換する</span>
+									<p>
+										<span class="tag"><span>function</span></span>ItemTradeHouse<br>
+										またのおこしをお待ちしておりますわ♪
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>景品交換って？</span>
+									<p>
+										ここでは、当店および系列店で使われました<br>
+										N チップや R チップを景品と交換することが<br>
+										できますわ。<br>
+										景品のラインナップは<br>
+										実際に見ていってくださいまし。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="カジノキャッシャー 景品交換" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/景品交換.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">カジノキャッシャー 景品交換</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 I9</span>
+					</div>
+				</div>
+
+				<h4 id="s">さ行</h4>
+				<div class="lines" id="ジェスト">
+					<div class="header">
+						<span class="character">ジェスト</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							娯楽の殿堂へようこそ。<br>
+							何かお飲物を頼まれますか？
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>何を聞く？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>この店について</span>
+									<p>
+										ここは、娯楽の殿堂と呼ばれる場所……<br>
+										それ以下でもそれ以上でもありませんよ……
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>オーナーについて</span>
+									<p>
+										お客さん、ここでは楽しむこと以外に<br>
+										首を突っ込むことは、ご法度ですよ……
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>マダリアについて</span>
+									<p>
+										<span class="wo-name">マダリア</span>さんですか……<br>
+										お客さんノームがお好みですか……<br>
+										<span class="wo-name">マダリア</span>さんもいいですが、私のお勧めは、<br>
+										<span class="wo-name">セラフィーユ</span>さんです……<br>
+										純粋無垢なあの笑顔……<br>
+										娯楽の殿堂に咲いた一輪の花……<br>
+										私は、その笑顔を絶やさないため、<br>
+										毎日彼女の控え室に花束をそっと<br>
+										置いておくのです……
+									</p>
+									<p class="descriptive">
+										ジェストは、セラフィーユのことを熱く語りだした！<br>
+										それは、延々と続いた……
+									</p>
+									<p>
+										……というわけです。<br>
+										どうです、今度あたなも<span class="wo-name">セラフィーユ</span>さんを<br>
+										ご指名してみては？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>飲物を出してくれ</span>
+									<p class="facility">
+										<span>バーテンダー</span>
+										<span>BARTENDER</span>
+									</p>
+									<p>
+										何か飲んでいきますか？
+									</p>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>飲んでいきますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#a</span></span>酒をたのむ</span>
+												<p>
+													<span class="tag"><span>function</span></span>バーテンダー<br>
+													また来てくださいね。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#b</span></span>立ち去る</span>
+												<p>
+													また来てくださいね。
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#05</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="バーテンダー ジェスト" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/ジェスト.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">バーテンダー ジェスト</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 I7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="シャーリーズ">
+					<div class="header">
+						<span class="character">シャーリーズ</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<p>
+							おほほ<br>
+							ここで扱っているのはダイスを使ったゲームですわ♪<br>
+							でも、ごめんなさい。まだ準備中なので<br>
+							また、今度来なさい♪
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="ディーラー シャーリーズ" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/シャーリーズ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ディーラー シャーリーズ</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 J8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ジュークボックス">
+					<div class="header">
+						<span class="character">ジュークボックス</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p>
+							現在再生中の曲は、<br>
+							<span class="var"><span>NowPlaying</span></span><br>
+							です。
+						</p>
+						<p class="descriptive">
+							1 曲 1,000 G で曲を再生できるようだ。
+						</p>
+						<div class="dialog">
+							<span class="dialog">
+								<span class="tag"><span>dialogue</span></span>
+								<span class="textbox">
+									1 曲 1,000 G で再生できます。<br>
+									所持金：<span class="wo-gold"><span class="var"><span>pocket</span></span> G</span>
+								</span>
+							</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>真・大人の社交場へようこそ</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+											<p>
+												<span class="var"><span>track</span></span>（具体例：真・大人の社交場へようこそ）<br>
+												という曲を再生します。<br>
+												よろしいですか？
+											</p>
+											<div class="dialog">
+												<span class="dialog"><span class="tag"><span>dialogue</span></span>よろしいですか？</span>
+												<div class="options">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+														<div class="either">
+															<span class="gauge"></span>
+															<div class="option">
+																<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+																<p>
+																	<span class="tag"><span>function</span></span> Jukebox
+																</p>
+															</div>
+															<div class="option">
+																<span class="option"><span class="tag"><span>pocket</span></span>所持金不足</span>
+																<p class="descriptive">
+																	お金が足りない。
+																</p>
+															</div>
+														</div>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+														<p><span class="tag"><span>empty</span></span></p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>now playing</span></span>現在再生中</span>
+											<p>
+												<span class="var"><span>track</span></span>（具体例：真・大人の社交場へようこそ）<br>
+												は現在再生中です。
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>帰らぬ持ち主を持つ剣の物語</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>鋼の絆</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>羊皮紙に込められた魔法の言葉</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#05</span></span>ディメントの夜明け</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#06</span></span>安らぎの朝</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#07</span></span>街角の語らい</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#08</span></span>緊迫</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#09</span></span>汝の名は、死</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#10</span></span>高揚と安堵</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#11</span></span>死地への誘い</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#12</span></span>memento mori</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#13</span></span>駆けぬける幻戯</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#14</span></span>魂の言葉</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#15</span></span>ソウルイーターの呼び声</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#16</span></span>転生せし魂</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#close</span></span>立ち去る</span>
+									<p><span class="tag"><span>emtpy</span></span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ジュークボックス" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/ジュークボックス.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ジュークボックス</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 J8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ジョッキーチュン">
+					<div class="header">
+						<span class="character">ジョッキーチュン</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ヘイユー！<br>
+							クラウンに転職してみないかい？
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>クラウンに転職してみないかい？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>ordinary</span></span>平時</span>
+											<p>
+												<span class="tag"><span>function</span></span> JobChange
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>class</span></span>CLO</span>
+											<p>
+												<span class="tag"><span>uncollected</span></span>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>クラウンとは？</span>
+									<p>
+										クラウンの仕事は人を楽しませることサー！<br>
+										敵をおちょくって不利な状態を誘発させたり<br>
+										見方を応援して有利な状態を呼びこんだりできるのサ。<br>
+										それと、ボクらはほぼ全ての装備を扱う事ができるけど<br>
+										扱いは苦手だし重い物も得意じゃないヨー！<br>
+										ちょっとした小道具みたいなものだネ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>転職とは？</span>
+									<p>
+										ユーは今の職業を辞める。<br>
+										そして今日からクラウンとなってボクと握手ダ！<br>
+										もちろんレベルは１からだけど、<br>
+										現在の総経験値と前職のスキルを<br>
+										いくらか継承できるヨ。<br>
+										そうそう。転職するなら<span class="wo-item">クラウン転職証</span>を持ってきなよ。<br>
+										持っていないなら<span class="wo-item">クラウン転職証</span>を報酬とした課題をだして<br>
+										あげようじゃないか。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>転職ミッション</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>ordinary</span></span>平時</span>
+											<div class="either">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>mission</span></span>ミッション受注前</span>
+													<p>
+														ヘイユー、クラウンの転職ミッションを受けるのかい？<br>
+														イイネ、カミングナウ！
+													</p>
+													<div class="dialog">
+														<span class="dialog"><span class="tag"><span>mission</span></span>道化師の証</span>
+														<div class="options">
+															<span class="gauge"></span>
+															<div class="option">
+																<span class="option"><span class="tag"><span>report</span></span>受注</span>
+																<p>
+																	ヒュー、期待しているヨ！
+																</p>
+															</div>
+															<div class="option">
+																<span class="option"><span class="tag"><span>cancel</span></span>閉じる</span>
+																<p>
+																	おおっと、冷やかしかい？<br>
+																	そいつは笑えないジョークね。
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>mission</span></span>ミッション受注中</span>
+													<p>
+														アーハン？<br>
+														君のクラウンに賭ける志はそんなものなのかい？
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>alignment</span></span><span class="wo-law">秩序</span> / <span class="wo-neu">中立</span></span>
+											<p>
+												おおっと、ユー条件満たしてないヨ？<br>
+												<span class="footnote">クラウンの転職条件</span>は確認してみたかい？
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>class</span></span>CLO</span>
+											<p>
+												<span class="tag"><span>uncollected</span></span>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#05</span></span>立ち去る</span>
+									<p>
+										ユー、今の職業なんて捨てちゃえヨ！
+									</p>
+								</div>
+							</div>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>アライメントとみチェックしており、要求パラメータ (LUK 8) はチェックされない</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img alt="クラウンキャラバン ジョッキーチュン" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/ジョッキーチュン.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">クラウンキャラバン ジョッキーチュン</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 J8</span>
+					</div>
+				</div>
+
+				<div class="quest">
+					<div class="header">
+						<div class="title"><span class="level">1</span> 道化師の証</div>
+						<div class="client"><span class="wo-name">ジョッキーチュン</span></div>
+					</div>
+					<span class="label">依頼内容</span>
+					<div class="text">
+						<p>
+							おやおや、クラウンに転職したいのかい？<br>
+							それならボクを楽しませてくれないかい？<br>
+							そうだね、<span class="wo-item">道化師のルーンストーン</span>でも集めてきて<br>
+							よ。<br>
+							そうしたら<span class="wo-item">クラウン転職証</span>をプレゼンツフォーユー<br>
+							！
+						</p>
+					</div>
+					<span class="label">目的</span>
+					<div class="objective">
+						<span class="wo-item">道化師のルーンストーン</span>を 10 個集める。
+						<div class="tasks">
+							<span class="task"><span>道化師のルーンストーンを集める</span><span>10</span></span>
+						</div>
+					</div>
+					<span class="label">報酬</span>
+					<div class="rewards">
+						<span class="exp">0</span>
+						<span class="price">0</span>
+						<span class="items">
+							<span class="reward-item"><img alt="クラウン転職証" class="lazyload" src="../common/placeholder.png" data-src="../common/item-icons/クラウン転職証.png"></span>
+						</span>
+					</div>
+					<div class="footer">
+						<span>放棄不可</span>
+					</div>
+				</div>
+
+				<div class="lines" id="セラフィーユ">
+					<div class="header">
+						<span class="character">セラフィーユ</span>
+						<span class="race">POR♂</span>
+					</div>
+					<div class="text">
+						<p>
+							いらっしゃい。ロイヤルレディーの<span class="wo-name">セラフィーユ</span>よ。<br>
+							どう？　何か食べていく？
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>どう？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>この店について</span>
+									<p>
+										ここは、娯楽の殿堂だよ♪<br>
+										楽しいカジノゲームがあったり、<br>
+										すてきなロイヤルレディーがいっぱいいるから<br>
+										楽しんでいってね♪
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>アダコーンについて</span>
+									<p>
+										ここのオーナーさんだよ。<br>
+										……でも、私を<ruby>嘗<rt>な</rt></ruby>め回すように見るの。<br>
+										その視線がこわいな……<br>
+										でも最近お店には顔を出さないの……<br>
+										ちょっと心配だな……
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>マダリアについて</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+											<p>
+												<span class="wo-name">マダリア</span>ちゃんのこと？<br>
+												ああ、あんまり大きな声じゃ言えないけど、<br>
+												Ｎｏ．２の<span class="wo-name">ミラヴェル</span>さんとすごく仲が悪いの。<br>
+												いわゆる犬猿の仲ってやつ？<br>
+												だから<span class="wo-name">ミラヴェル</span>さんの話題だすとキレるから<br>
+												気を付けたほうがいいよ。
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+											<p>
+												<span class="wo-name">マダリア</span>ちゃん？　ああ、このお店の先輩で<br>
+												私には、よくしてくれるよ。<br>
+												なんでもポークル大好きなんだって。<br>
+												でも、よく抱きついてきたり、頬ずりしてくるんで、<br>
+												ちょっと面倒かな？
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+											<p>
+												<span class="wo-name">マダリア</span>ちゃんのこと？<br>
+												んー、そういえば、ポークルランドに行きたがってたな。<br>
+												ポークルランドは、ポークルがポークルのために<br>
+												運営している喫茶店なんだけど、<br>
+												ポークル以外の種族は、入れないんだ。<br>
+												だから<span class="wo-name">マダリア</span>ちゃんすごく残念がってたな。
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+											<p>
+												<span class="wo-name">マダリア</span>ちゃんのこと？<br>
+												んーなんだろうな？<br>
+												ヘルプでよく<span class="wo-name">マダリア</span>ちゃんに付くんだけど、<br>
+												結構いろんなプレゼントされているから<br>
+												欲しいものとかよく分からないな……<br>
+												あっそうだ、お花余っているから、<br>
+												これあげてみなよ。<br>
+												シンプルな物ほど案外喜ぶかも。<br>
+												<span class="tag"><span>item</span></span>素敵な花束
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>セラフィーユを指名する</span>
+									<p>
+										<span class="tag"><span>uncollected</span></span>
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#05</span></span>ご飯食べさせて！</span>
+									<p class="facility">
+										<span>セラフィーユの食卓</span>
+										<span>SERAFEUILLE'S DINING</span>
+									</p>
+									<p>
+										どう？　何を食べていく？
+									</p>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>食べていきますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#a</span></span>料理を食べる</span>
+												<p>
+													<span class="tag"><span>function</span></span>セラフィーユの食卓<br>
+													またきてくださいね♪
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#b</span></span>立ち去る</span>
+												<p>
+													またきてくださいね♪
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#06</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ロイヤルレディー セラフィーユ" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/セラフィーユ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ロイヤルレディー セラフィーユ</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 I7</span>
+					</div>
+				</div>
+
+				<h4 id="t">た行</h4>
+				<div class="lines" id="チップ交換">
+					<div class="header">
+						<span class="character">チップ交換</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>大人の社交場　カジノチップ交換</span>
+						</p>
+						<p>
+							ここで家事のチップを交換してまーす♪<br>
+							チップを交換しますかぁ？
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>チップを交換しますかぁ？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>カジノチップ交換</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>どのチップを交換しますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#N</span></span>N チップが欲しい</span>
+												<div class="dialog">
+													<span class="dialog"><span class="tag"><span>dialogue</span></span>何枚交換しますか？</span>
+													<div class="options">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#01</span></span>N チップ 10 枚を 10,000 G で交換</span>
+															<div class="either">
+																<span class="gauge"></span>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+																	<p>
+																		<span class="tag"><span>uncollected</span></span>
+																	</p>
+																</div>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>pocket</span></span>所持金不足</span>
+																	<p>
+																		おやや、お金がないと寂しいですよねー。<br>
+																		お仕事頑張ってくださいねー♪
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#02</span></span>N チップ 100 枚を 100,000 G で交換</span>
+															<div class="either">
+																<span class="gauge"></span>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+																	<p>
+																		<span class="tag"><span>uncollected</span></span>
+																	</p>
+																</div>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>pocket</span></span>所持金不足</span>
+																	<p>
+																		おやや、お金がないと寂しいですよねー。<br>
+																		お仕事頑張ってくださいねー♪
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#03</span></span>N チップ 1000 枚を 1,000,000 G で交換</span>
+															<div class="either">
+																<span class="gauge"></span>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+																	<p>
+																		<span class="tag"><span>uncollected</span></span>
+																	</p>
+																</div>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>pocket</span></span>所持金不足</span>
+																	<p>
+																		おやや、お金がないと寂しいですよねー。<br>
+																		お仕事頑張ってくださいねー♪
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#04</span></span>N チップ 10000 枚を 10,000,000 G で交換</span>
+															<div class="either">
+																<span class="gauge"></span>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+																	<p>
+																		<span class="tag"><span>uncollected</span></span>
+																	</p>
+																</div>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>pocket</span></span>所持金不足</span>
+																	<p>
+																		おやや、お金がないと寂しいですよねー。<br>
+																		お仕事頑張ってくださいねー♪
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#05</span></span>交換しない</span>
+															<p>
+																<span class="tag"><span>back</span></span>
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#R</span></span>R チップが欲しい</span>
+												<div class="dialog">
+													<span class="dialog"><span class="tag"><span>dialogue</span></span>どのチップを交換しますか？</span>
+													<div class="options">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#01</span></span>R チップ 1 枚をクラーケンコインで交換</span>
+															<div class="either">
+																<span class="gauge"></span>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+																	<p>
+																		<span class="tag"><span>uncollected</span></span>
+																	</p>
+																</div>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>have</span></span><span class="wo-item">クラーケンコイン</span>を所持していない</span>
+																	<p>
+																		おやや、手続きに失敗しました。<br>
+																		ちゃんとアイテムはお持ちですか？
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#02</span></span>R チップ 2 枚をアリスクラートコインで交換</span>
+															<div class="either">
+																<span class="gauge"></span>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+																	<p>
+																		<span class="tag"><span>uncollected</span></span>
+																	</p>
+																</div>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>have</span></span><span class="wo-item">アリスクラートコイン</span>を所持していない</span>
+																	<p>
+																		おやや、手続きに失敗しました。<br>
+																		ちゃんとアイテムはお持ちですか？
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#03</span></span>R チップ 1 枚を模造クラーケンコインで交換！</span>
+															<div class="either">
+																<span class="gauge"></span>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+																	<p>
+																		<span class="tag"><span>uncollected</span></span>
+																	</p>
+																</div>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>have</span></span><span class="wo-item">模造クラーケンコイン</span>を所持していない</span>
+																	<p>
+																		おやや、手続きに失敗しました。<br>
+																		ちゃんとアイテムはお持ちですか？
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#04</span></span>R チップ 1 枚を模造アリスクラートコインで交換！</span>
+															<div class="either">
+																<span class="gauge"></span>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+																	<p>
+																		<span class="tag"><span>uncollected</span></span>
+																	</p>
+																</div>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>have</span></span><span class="wo-item">模造アリスクラートコイン</span>を所持していない</span>
+																	<p>
+																		おやや、手続きに失敗しました。<br>
+																		ちゃんとアイテムはお持ちですか？
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#05</span></span>交換しない</span>
+															<p>
+																<span class="tag"><span>back</span></span>
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#close</span></span>交換しない</span>
+												<p>
+													ありがとうございま～す♪
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>カジノチップって何？</span>
+									<p>
+										ここでは、当店および系列店で使用できる<br>
+										カジノチップを交換することができまーす♪<br>
+										各ゲームで使える N チップは Gold との交換でーす♪<br>
+										一部ゲームの報酬で貰える R チップは、<br>
+										貴重なコインと交換してますよー♪<br>
+										くれぐれも模造コインはご容赦をー♪
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>キャンセル</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="カジノキャッシャー チップ交換" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/チップ交換.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">カジノキャッシャー チップ交換</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 I9</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ドルバコス">
+					<div class="header">
+						<span class="character">ドルバコス</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								ウィ……ヒック！<br>
+								隊長どの！　自分の財布は緊急事態であります！<br>
+								フゥィ～
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								ウィ……ヒック！<br>
+								隊長どの！　<span class="wo-site">真・大人の社交場</span>は、異常ナシであります！<br>
+								フゥイ～
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								ウィ……ヒック！<br>
+								隊長どの！　恋愛前線は、異常ナシであります！<br>
+								……ナシであります！　フゥイ～～～
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="調査員 ドルバコス" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/ドルバコス.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">調査員 ドルバコス</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 J8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ドロリッツァ">
+					<div class="header">
+						<span class="character">ドロリッツァ</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							今日は、勝負に勝ったからな、<br>
+							豪遊しようとここに来たんだが……<br>
+							<span class="wo-name">マダリア</span>ちゃんの指名いっぱいとかでよ、<br>
+							とれねえんだよ、これが。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>何を聞く？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>この店について</span>
+									<p>
+										ここは、ディメント屈指の大富豪<span class="wo-name">アダコーン</span>が経営する<br>
+										高級クラブさ、<br>
+										おまえ、知らないでここに来たのか？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>オーナーについて</span>
+									<p>
+										ここのオーナーは、ディメント屈指の大富豪<span class="wo-name">アダコーン</span>さ。<br>
+										ディメントで娯楽と名が付くものは、<br>
+										やつの息がかかっていると考えた方がいいぜ。<br>
+										ギャンブルから歓楽までいろいろとな。<br>
+										俺も上客の一人ってわけだ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>マダリアについて</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+											<p>
+												<span class="wo-name">マダリア</span>ちゃんか、ここ最近、指名がいっぱいとかで<br>
+												相手してもらえねんだよ。<br>
+												また、一緒に不死鳥の手羽先食いてーなァ……<br>
+												彼女、大好物なんだとよ。
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+											<p>
+												<span class="wo-name">マダリア</span>ちゃんか、ここ最近、指名がいっぱいとかで<br>
+												相手してもらえねんだよ。<br>
+												また、一緒にフルーツの盛り合わせ食いてーなァ……<br>
+												彼女、大好物なんだとよ。<br>
+												まあ、ロイヤルレディーは大概喜ぶがな。
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+											<p>
+												<span class="wo-name">マダリア</span>ちゃんか、ここ最近、指名がいっぱいとかで<br>
+												相手してもらえねんだよ。<br>
+												また、ジャイアントトードのから揚げ食いてーなァ……<br>
+												彼女、メニューの中で一番好きって言ってたな。
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ギャンブラー ドロリッツァ" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/ドロリッツァ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ギャンブラー ドロリッツァ</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 J7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ドンキー">
+					<div class="header">
+						<span class="character">ドンキー</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<p>
+							ウィ…。<br>
+							<span class="wo-name">マダリア</span>ちゅあん……<br>
+							君の瞳を鑑定してあげるよ……<br>
+							でました！　君の瞳は百万Ｇ！！
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>何を聞く？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>この店について</span>
+									<p>
+										この店サイコー！！<br>
+										わしが鑑定したんだから間違いなし！<br>
+										ウィッフー……
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>オーナーについて</span>
+									<p>
+										金持ちがなんぼのもんじゃいっ……<br>
+										わしのスポンサーになってほしいわい……<br>
+										ウィッフー……
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>マダリアについて</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+											<p>
+												<span class="wo-name">マダリア</span>ちゃんオーガ・キラーがすきなんだぁ。<br>
+												渋いカクテル選ぶねぇ……<br>
+												ウィッフー……
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+											<p>
+												<span class="wo-name">マダリア</span>ちゃんは、ビールがすきなんだねぇ……<br>
+												わしもすきだよ～気が合うねぇ……<br>
+												でも、わしは、<span class="wo-name">マダリア</span>ちゃんの方が大すきだよ～<br>
+												ウィッフー……
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+											<p>
+												<span class="wo-name">マダリア</span>ちゃんは、ワインがきらいなんだね～<br>
+												すぁしもきらいだよ～気が合うねぇ……<br>
+												ウィッフー……
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="のんだくれ ドンキー" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/ドンキー.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">のんだくれ ドンキー</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 J8</span>
+					</div>
+				</div>
+
+				<h4 id="h">は行</h4>
+				<div class="lines" id="ハーゲン">
+					<div class="header">
+						<span class="character">ハーゲン</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								おう、オマエ。<br>
+								ずいぶんと暖かそうじゃねーか。<br>
+								くそっ……オマエも楽しんでけよこんちくしょう！<br>
+								アン？　寒そうなのはテメーの名前だって？<br>
+								やかましいワイ！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								おう、オマエ。<br>
+								ずいぶんと暖かそうじゃねーか。<br>
+								くそっ……オマエも楽しんでけよこんちくしょう！<br>
+								最近毛が薄くなってきちまってな。寒いんだよ。<br>
+								……そうだ、金くれよ金。<br>
+								<span class="wo-gold">15,000 G</span> 程くれりゃイイモノやるぜ？
+							</p>
+							<div class="dialog">
+								<span class="dialog">
+									<span class="tag"><span>dialogue</span></span>
+									<span class="textbox" style="width: 570px;">
+										お金を渡しますか？<br>
+										所持金：<span class="wo-gold"><span class="var"><span>pocket</span></span> G</span>
+									</span>
+								</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#a</span></span>はい 15,000 G</span>
+										<div class="either">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+												<p>
+													<span class="tag"><span>item</span></span>人狼毛皮のコート<br>
+													……おう、オマエ意外といいヤツだな。<br>
+													そいつはロイヤルレディーにでもプレゼントしてやんな！
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>pocket</span></span>所持金不足</span>
+												<p>
+													アンだよ……<br>
+													この貧乏人め！
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#b</span></span>いいえ</span>
+										<p>
+											アンだよ……<br>
+											ケチくせー奴だ。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="抜け毛が気になる ハーゲン" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/ハーゲン.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">抜け毛が気になる ハーゲン</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 J8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="バナジール">
+					<div class="header">
+						<span class="character">バナジール</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							俺の名は、<span class="wo-name">バナジール</span>。<br>
+							名の通ったジゴロだぜ。<br>
+							おおっと、俺の目をみちゃいけねェ。<br>
+							男だろうが女だろうが俺の魅力に囚われちまう。<br>
+							それがジゴロの呪われた性ってやつだ。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>何を聞く？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>この店について</span>
+									<p>
+										ふぅ……おまえさんは、<br>
+										ここがどんな所かもしらないで来たのかい？<br>
+										ここは、男と女が火花を散らす、<br>
+										恋の戦場といったところか。<br>
+										お前さん、愛の武装なしで飛び込もうだなんて、<br>
+										とんだ命知らずだな。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>オーナーについて</span>
+									<p>
+										<span class="wo-name">アダコーン</span>のダンナか……<br>
+										悪いことはいわねェ。<br>
+										あの人は、関わらない方が身のためだぜ。<br>
+										あの人の愛欲に勝る男は、<br>
+										俺は未だ<ruby>嘗<rt>かつ</rt></ruby>て出会ったことがねェ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>マダリアについて</span>
+									<p>
+										<span class="wo-name">マダリア</span>……唯一俺が落とせなかった女だぜ……<br>
+										みんなに愛される女神ってことか。<br>
+										だからな、そう簡単に落とすことはできねえぜ。<br>
+										お前も<span class="wo-name">マダリア</span>を狙っている口かい？<br>
+										ふっ、俺とお前は、さながら恋の戦友ってところか。<br>
+										そうだ俺から恋の戦友へのはなむけだ。
+									</p>
+									<p class="descriptive">
+										ハナジールは、手紙を渡してきた。
+									</p>
+									<p>
+										それは、俺が書いた愛の結晶、<br>
+										通称<span class="wo-item">ラブレター</span>ってやつだ。<br>
+										お前が書いたって事にしていい。<br>
+										これを<span class="wo-name">マダリア</span>に渡してみな。<br>
+										これで彼女もイチコロだぜ。フッ……
+									</p>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>not have</span></span><span class="wo-item">ラブレター</span>を所持していない</span>
+											<p>
+												<span class="tag"><span>item</span></span>ラブレター
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>have</span></span><span class="wo-item">ラブレター</span>を所持している</span>
+											<p>
+												おっと、既に前のを持っているようだな。
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ジゴロ バナジール" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/バナジール.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ジゴロ バナジール</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 J9</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ベロナッツ">
+					<div class="header">
+						<span class="character">ベロナッツ</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ん、なんだ？　お前もここで憂さを晴らそうってかい？<br>
+							なら、金は多く用意してきたんだろうな？<br>
+							金がねえとここでは、楽しめねぇぞ。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>何を聞く？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>この店について</span>
+									<p>
+										ん、なんだ？　おまえ一見さんか？<br>
+										しゃーねーな……<br>
+										こうやって話したのも何かの縁だ。<br>
+										痛い目見て追い出されちゃ可愛そうだから、<br>
+										ここの料金体系教えといてやるぜ。<br>
+										まずはだな、基本料金に 20,000 G かかる。<br>
+										それにロイヤルレディーの指名料 5,000 G、<br>
+										あと、サービス料とかいうのが 5,000 G がかかる。<br>
+										最低でも 30,000 G かかるってわけだ。<br>
+										さらに飲み食いしたら、その分の<br>
+										料金がかかる。当然だが。<br>
+										そして、延長するたびに 10,000 G かかるし、<br>
+										ロイヤルレディーがお代わりを頼めば、<br>
+										その分の金がかかる。<br>
+										そして、その合計をお楽しみの後に<br>
+										請求されるってわけだ。<br>
+										払えねえと、この店のマスターが出てくるぞ。<br>
+										奥の部屋連れていかれて、ぼこられるから気を付けろ。<br>
+										この店のマスター、人間じゃねえって噂あるからな。<br>
+										まあ、料金に関しては、こんなところか。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>オーナーについて</span>
+									<p>
+										<span class="wo-name">アダコーン</span>の旦那かい。<br>
+										あまりいい噂は、聞かねえなァ。<br>
+										お前も変に<ruby>嗅<rt>か</rt></ruby>ぎまわらない方が身のためだぜ。<br>
+										ここで楽しみたいなら、なおさらだ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>マダリアについて</span>
+									<p>
+										んー、<span class="wo-name">マダリア</span>か……ここのＮｏ．１だぜ。<br>
+										落とすには、相当骨が折れるぜ。<br>
+										俺は、身の程をわきまえているからな。<br>
+										他のロイヤルレディーで楽しむぜ。<br>
+										おっと、そうだ。<br>
+										ロイヤルレディーにプレゼントしようと思って<br>
+										渡しそびれたアクセサリーがあるんだ。<br>
+										どうだ？　俺のセレクションのいい物だから、<br>
+										8,000 G で譲ってやるよ。<br>
+										狙っているロイヤルレディーにプレゼントすれば、<br>
+										効果<ruby>覿面<rt>てきめん</rt></ruby>だぜ！
+									</p>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>not have</span></span><span class="wo-item">蝶のアクセサリー</span>を所持していない</span>
+											<div class="dialog">
+												<span class="dialog">
+													<span class="tag"><span>dialogue</span></span>
+													<span class="textbox" style="width: 530px;">
+														買いますか？<br>
+														所持金：<span class="wo-gold"><span class="var"><span>pocket</span></span> G</span>
+													</span>
+												</span>
+												<div class="options">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#a</span></span>はい</span>
+														<div class="either">
+															<span class="gauge"></span>
+															<div class="option">
+																<span class="option"><span class="tag"><span>ordinary</span></span>通常時</span>
+																<p>
+																	<span class="tag"><span>item</span></span>蝶のアクセサリー<br>
+																	おっと、羽振りがいいねぇ！<br>
+																	まいどあり！
+																</p>
+															</div>
+															<div class="option">
+																<span class="option"><span class="tag"><span>pocket</span></span>所持金不足</span>
+																<p>
+																	なんだよ。お金が足りないぞ……
+																</p>
+															</div>
+														</div>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#b</span></span>いいえ</span>
+														<p>
+															そうかい。<br>
+															まあ、次の機会にでもプレゼントするさ。
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>have</span></span><span class="wo-item">蝶のアクセサリー</span>を所持している</span>
+											<p>
+												……って、さっき売ってやったのを<br>
+												まだ持っているようだな。
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ろくでなし ベロナッツ" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/ベロナッツ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ろくでなし ベロナッツ</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 J8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ホロスト">
+					<div class="header">
+						<span class="character">ホロスト</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>live status</span></span>通常時</span>
+							<p>
+								私ですか？　別に遊びに来てるわけではありませんよ。<br>
+								仕事です、仕事。<br>
+								料金払えなかった人の蘇……、<br>
+								おっほん！　治療を行っているのです。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>soul status</span></span>魂時</span>
+							<p>
+								こんなところに来てまで死ぬことないのに……。
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>どうする？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>蘇生してもらう</span>
+										<p>
+											蘇生費用は <span class="var"><span>100 × levels</span></span> G となります。<br>
+											一度頂きましたものはお返しできません。
+										</p>
+										<div class="dialog">
+											<span class="dialog">
+												<span class="tag"><span>dialogue</span></span>
+												<span class="textbox" style="width: 550px;">
+													蘇生費用：<span class="var"><span>100 × levels</span></span> G<br>
+													所持金：<span class="wo-gold"><span class="var"><span>pocket</span></span> G</span>
+												</span>
+											</span>
+											<div class="options">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01</span></span>支払う</span>
+													<div class="either">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+															<p>
+																<span class="tag"><span>function</span></span> revive
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>pocket</span></span>所持金不足</span>
+															<p>
+																お金……足りませんね……
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02</span></span>無料でお願いする</span>
+													<p>
+														無料ですか？　もちろん構いませんよ。<br>
+														ただし、蘇生率は下がりますのでご了承を。<br>
+														<span class="tag"><span>function</span></span> revive
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#03</span></span>なぜ返せないのか？</span>
+													<p>
+														なぜ……ですか？<br>
+														むしろ神への捧げものを取り戻そうする<br>
+														貴方の思考の方が理解できないのですが……
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#04</span></span>立ち去る</span>
+													<p>
+														そうですか。<br>
+														また何かありましたらいつでも来てください。
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+										<p>
+											そうですか。<br>
+											また何かありましたらいつでも来てください。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="クォパティ僧侶 ホロスト" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/ホロスト.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">クォパティ僧侶 ホロスト</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 K7</span>
+					</div>
+				</div>
+
+				<h4 id="m">ま行</h4>
+				<div class="lines" id="マイクローク">
+					<div class="header">
+						<span class="character">店員</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>マイクローク</span>
+							<span>WAREHOUSE</span>
+						</p>
+						<p>
+							いらっしゃいませ。<br>
+							お客様の持ち物やお金をお預かりいたします。<br>
+							<span class="tag"><span>function</span></span> mycloak
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="マイクローク 店員" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/マイクローク.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">マイクローク 店員</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 I8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="マダリア">
+					<div class="header">
+						<span class="character">マダリア</span>
+						<span class="race">GNO</span>
+					</div>
+					<div class="text">
+						<p>
+							ロイヤルレディーの<span class="wo-name">マダリア</span>でーす♪
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>ロイヤルレディーのマダリアでーす♪</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>マダリアを指名する</span>
+									<p>
+										<span class="tag"><span>uncollected</span></span>
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>ミラヴェルについて</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+											<p>
+												はぁ？<br>
+												Ｎｏ．１のあたしに、<br>
+												なんでＮｏ．２のこと聞くの？<br>
+												気は確か？<br>
+												バッカじゃないの？<br>
+												<span class="wo-name">ミラヴェル</span>のことなんか聞くんじゃねえよ！
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+											<p>
+												<span class="wo-name">ミラヴェル</span>、<span class="wo-name">ミラヴェル</span>……<br>
+												えーと、ああ、たしか居ましたね、そんな人。<br>
+												スカしてワイン好き気取ってましたけど、<br>
+												どうせ味なんかわかってませんよ、アレ。<br>
+												この間、安物を高級品と勘違いして<br>
+												有難がって飲んでましたし。
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+											<p>
+												<span class="wo-name">ミラヴェル</span>、<span class="wo-name">ミラヴェル</span>……<br>
+												えーと、ああ、たしか居ましたね、そんな人。<br>
+												なんか体型にコンプレックス持ってるくせに<br>
+												やたら美脚自慢するんですよ。<br>
+												ただ細長いだけなのに。バッカみたいですよね。
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>セラフィーユについて</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>lead</span></span></span>
+											<p>
+												なになに？<br>
+												<span class="wo-name">セラフィーユ</span>ちゃんのこと聞きたいんですか？
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>main</span></span></span>
+											<div class="either">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+													<p>
+														<span class="wo-name">セラフィーユ</span>ちゃんはね、お菓子とかスイーツとか<br>
+														甘いもんが好きなんですよ♪
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+													<p>
+														<span class="wo-name">セラフィーユ</span>ちゃんはね、<br>
+														子供扱いすると嫌がるんだけど、<br>
+														大人っぽいねって言っても怒っちゃうんだよぉ♪
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+													<p>
+														<span class="wo-name">セラフィーユ</span>ちゃんはね、<br>
+														たのしいことが好きなんだよぉ♪<br>
+														だからね、たのしいお話してあげると喜ぶんですよぉ♪
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>closing</span></span></span>
+											<p>
+												カワユイよねぇ～♪
+											</p>
+											<p class="descriptive">
+												マダリアは、延々と<br>
+												セラフィーユのことを語り出した…
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ロイヤルレディー マダリア" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/マダリア.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ロイヤルレディー マダリア</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 J9</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ミラヴェル">
+					<div class="header">
+						<span class="character">ミラヴェル</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<p>
+							いらっしゃい。ロイヤルレディーの<span class="wo-name">ミラヴェル</span>よ。<br>
+							どう？　膝枕してあげましょうか？
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>何を聞く？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>この店について</span>
+									<p>
+										ここは、娯楽の殿堂とも呼ばれる場所。<br>
+										さあ、私と一緒に楽しみましょう♪
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>アダコーンについて</span>
+									<p>
+										ここのオーナー様ですよ。<br>
+										どんな人？<br>
+										わたしからの言葉は控えさせてもらいますわ。<br>
+										そういえば最近、お店に姿を見せませんね。<br>
+										それより、私と楽しみません？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>マダリアについて</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+											<p>
+												なんですか？<br>
+												他のロイヤルレディーのこと聞くんですか？<br>
+												お客さんデリカシーというものがないのかしら？
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+											<p>
+												は？　<span class="wo-name">マダリア</span>？　何ですかその品のない名前。<br>
+												ここのＮｏ．１？　知りませんね。<br>
+												Ｎｏ．１は、近いうちに私がなりますんで。
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+											<p>
+												<span class="wo-name">マダリア</span>……ああ、この店で一応Ｎｏ．１やってる人ね。<br>
+												あの人、指名するのやめた方がいいですよ。<br>
+												性格、最悪だし。話しても気分悪くなるだけですから。
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+											<p>
+												<span class="wo-name">マダリア</span>……よくは知りませんが、<br>
+												あの人が嫌いなものなら知ってますよ。<br>
+												たしか虫が大嫌いだったとか。<br>
+												そのうせ、スパイダーの<ruby>燻製<rt>くんせい</rt></ruby>とかおいしがって<br>
+												食べているんだから意味解らないですよね。
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>E</span>
+											<p>
+												<span class="wo-name">マダリア</span>……よくは知りませんが、<br>
+												なんか体型のことをやたら気にしていましたよ。<br>
+												肉々しさを自慢するくせに「太った」とか言うと<br>
+												やたらキレるんですよ。<br>
+												意味解らないですよ。
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>ミラヴァルを指名する</span>
+									<p>
+										<span class="tag"><span>uncollected</span></span>
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#05</span></span>膝枕させて！</span>
+									<p class="facility">
+										<span>ミラヴァルの膝枕</span>
+										<span>MIRAVILE'S LAP</span>
+									</p>
+									<p>
+										フフフ……どのコースにする？
+									</p>
+									<div class="dialog">
+										<span class="dialog">
+											<span class="tag"><span>dialogue</span></span>
+											<span class="textbox" style="width: 550px;">
+												休んでいく？<br>
+												所持金：<span class="wo-gold"><span class="var"><span>pocket</span></span> G</span>
+											</span>
+										</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01</span></span>１０分 1,000 G</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+														<p>
+															それじゃあ、おやすみなさい♪<br>
+															<span class="tag"><span>function</span></span> inn<br>
+															次のレベルになるには……<br>
+															<span class="var"><span>next-exp</span></span> の経験値が必要みたいね。<br>
+															がんばってね♪
+														</p>
+														<div class="append">
+															<span class="gauge"></span>
+															<span class="option">ソウルランクアップ可能</span>
+															<p>
+																まあ……！<br>
+																あなたソウルランクが上がりそうよ。<br>
+																巫女様に会ってくるといいわよ♪
+															</p>
+														</div>
+														<p>
+															フフフ……　可愛い寝顔でしたこと……♪<br>
+															また来てちょうだいね！　まってるわよ♪
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>pocket</span></span>所持金不足</span>
+														<p>
+															うーん、お金が足りないみたいねぇ。<br>
+															貯まったらまた来てちょうだいね♪
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02</span></span>３０分 2,000 G</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+														<p>
+															それじゃあ、おやすみなさい♪<br>
+															<span class="tag"><span>function</span></span> inn<br>
+															次のレベルになるには……<br>
+															<span class="var"><span>next-exp</span></span> の経験値が必要みたいね。<br>
+															がんばってね♪
+														</p>
+														<div class="append">
+															<span class="gauge"></span>
+															<span class="option">ソウルランクアップ可能</span>
+															<p>
+																まあ……！<br>
+																あなたソウルランクが上がりそうよ。<br>
+																巫女様に会ってくるといいわよ♪
+															</p>
+														</div>
+														<p>
+															フフフ……　可愛い寝顔でしたこと……♪<br>
+															また来てちょうだいね！　まってるわよ♪
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>pocket</span></span>所持金不足</span>
+														<p>
+															うーん、お金が足りないみたいねぇ。<br>
+															貯まったらまた来てちょうだいね♪
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#c</span></span>立ち去る</span>
+												<p>
+													あら、帰っちゃうの？<br>
+													次は休んでいってくださいね♪
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#06</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ロイヤルレディー ミラヴェル" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/ミラヴェル.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ロイヤルレディー ミラヴェル</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 J7</span>
+					</div>
+				</div>
+
+				<h4 id="r">ら行</h4>
+				<div class="lines" id="ルルリラ">
+					<div class="header">
+						<span class="character">ルルリラ</span>
+						<span class="race">HUM♀</span>
+					</div>
+					<div class="text">
+						<p>
+							ハァ……。<br>
+							指名がぜんぜん入らないわ……<br>
+							私よく暗いって言われるの……そのせいかしらね……<br>
+							えっ、ご指名ですか！？<br>
+							……ちがう……そうですか…。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>何を聞く？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>この店について</span>
+									<p>
+										え、あのー話聞きたいなら<br>
+										指名入れてもらっていいですか？<br>
+										まあ、いいですけど。ここは<span class="wo-site">真・大人の社交場</span>です。<br>
+										高級クラブを謡ってますけど、別に服装チェックが<br>
+										あるわけでもないし、種族や職業による立ち入りの<br>
+										制限を設けていません。<br>
+										来る者拒まずって感じですね……
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>オーナーについて</span>
+									<p>
+										ここのコーナーは、<span class="wo-name">アダコーン</span>さまです。<br>
+										ディメント屈指の実力者でその影響力は、<br>
+										表の世界から裏の世界、多岐に渡っていると聞きます。<br>
+										でも、最近体調を崩されたとかで、<br>
+										今は総支配人の方がここを仕切っていますよ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>マダリアについて</span>
+									<p>
+										<span class="wo-name">マダリア</span>さんですか……<br>
+										実はお店に入ってから一度も<br>
+										会話したことないんですよ……<br>
+										全然、指名の取れない私なんか<br>
+										相手にしてくれませんよね…
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>ルルリラを指名する</span>
+									<p>
+										え、ご指名ですか？<br>
+										またまたご冗談を……<br>
+										今日はＮｏ．１～Ｎｏ．３まで全員出勤しているのに、<br>
+										私に指名が入るはずが無いじゃないですか。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#05</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ロイヤルレディー ルルリラ" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/ルルリラ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ロイヤルレディー ルルリラ</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 J9</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ロドリオ">
+					<div class="header">
+						<span class="character">ロドリオ</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<p>
+							ちきしょう……動き出せねぇ……。<br>
+							やべぇよ……今月の稼ぎ全部すっちまったよ……。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>何を聞く？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>この店について</span>
+									<p>
+										ああん？　ここは<span class="wo-site">真・大人の社交場</span>だ。<br>
+										お子さまの来る場所じゃねえぜ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>オーナーについて</span>
+									<p>
+										オーナーか……<span class="wo-name">アダコーン</span>だな……<br>
+										ヤツが経営する闘技場で相当、金つぎ込んでいるからな。<br>
+										正直、あまりいい気持ちはしないぜ。<br>
+										だけどよ……ヤツの経営手腕には感服するぜ！<br>
+										なんせこんな楽しい店やっちまうんだからな。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>マダリアについて</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+											<p>
+												<span class="wo-name">マダリア</span>嬢は、上客に自分の横顔が描かれた<br>
+												プチ絵画をあげてんだ。<br>
+												いつでも<span class="wo-name">マダリア</span>のこと見てくださいね♪<br>
+												ってな！　かわいいとこあるじゃねえか。<br>
+												俺はまだ貰えてねえんだけどよ、<br>
+												ぜひ、欲しいものだぜ。<br>
+												カメオのモチーフにしてぇなあ。
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+											<p>
+												<span class="wo-name">マダリア</span>嬢はな、カメオコレクターでな、<br>
+												俺が作ったカメオをあげるとすげー喜ぶんだぜ。<br>
+												だけどよ、最近賭け事の負けが込んでいて、<br>
+												ちょっと懐がやばいから<br>
+												<span class="wo-name">マダリア</span>嬢の指名が取れねぇんだ……<br>
+												そうだ、あんたちょうどいい、<br>
+												俺が作ったカメオ買ってくれねえか？<br>
+												<span class="wo-name">マダリア</span>嬢にあげたらすごく喜ぶぞ！
+											</p>
+											<div class="either">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>not have</span></span><span class="wo-item">素敵なカメオ</span>所持していない</span>
+													<div class="dialog">
+														<span class="dialog">
+															<span class="tag"><span>dialogue</span></span>
+															<span class="textbox" style="width: 510px;">
+																買いますか？<br>
+																所持金：<span class="wo-gold"><span class="var"><span>pocket</span></span> G</span>
+															</span>
+														</span>
+														<div class="options">
+															<span class="gauge"></span>
+															<div class="option">
+																<span class="option"><span class="tag"><span>#a</span></span>はい 5,000 G</span>
+																<div class="either">
+																	<span class="gauge"></span>
+																	<div class="option">
+																		<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+																		<p>
+																			<span class="tag"><span>item</span></span>素敵なカメオ<br>
+																			おっ、話がわかるね、あんた！<br>
+																			ほらよ。<br>
+																			<span class="wo-name">マダリア</span>嬢にあげるとき、ちゃんと<span class="wo-name">ロドリオ</span>が<br>
+																			作ったって言ってくれよ！
+																		</p>
+																	</div>
+																	<div class="option">
+																		<span class="option"><span class="tag"><span>pocket</span></span>所持金不足</span>
+																		<p>
+																			なんだよ！　金が足りないぞ！
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="option">
+																<span class="option"><span class="tag"><span>#b</span></span>いいえ</span>
+																<p>
+																	なんだよ！　しけてんなァ。<br>
+																	これでも相場より安くしてんだぜ！
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>have</span></span><span class="wo-item">素敵なカメオ</span>を所持している</span>
+													<p>
+														……って、さっき売ってやったのを<br>
+														まだ持っているじゃないか！
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="細工師 ロドリオ" data-fancybox="the-real-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/ロドリオ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">細工師 ロドリオ</span>
+						<span class="coordinate">首都アイトックス 真・大人の社交場 J8</span>
+					</div>
+				</div>
+			</article>
+
+			<hr class="offset-killer">
+			<div id="disqus-space">
+				<p id="comment-attention">
+					名前を入力しようとすると表示される「ゲストとして投稿する」にチェックを入れるとDISQUSに登録しなくてもコメントすることができます。<br>
+					メールアドレスは入力必要ですが DISQUS で管理され、投稿したコメントに表示されることも私にも通知されることもありません。<br>
+					架空のメールアドレスでも可能ですので、お気軽にコメントしてください！
+				</p>
+				<aside id="toc-disqus">
+					<div id="disqus_thread"></div>
+				</aside>
+				<script type="text/javascript">
+					( function () {
+						var dsq = document.createElement( 'script' );
+						dsq.type = 'text/javascript';
+						dsq.async = true;
+						dsq.src = '//miramiku.disqus.com/embed.js';
+						( document.getElementsByTagName( 'head' )[ 0 ] || document.getElementsByTagName( 'body' )[ 0 ] ).appendChild( dsq );
+					}() );
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+			</div>
+		</div>
+	</main>
+
+	<div id="toc">
+		<ul>
+			<li id="back2top"><a href="#top">トップページ</a></li>
+			<li><a href="#list">NPC リスト</a></li>
+			<li><a href="#log">会話ログ</a>
+				<ul>
+					<li><a href="#a">あ行</a></li>
+					<li><a href="#k">か行</a></li>
+					<li><a href="#s">さ行</a></li>
+					<li><a href="#t">た行</a></li>
+					<li><a href="#h">は行</a></li>
+					<li><a href="#m">ま行</a></li>
+					<li><a href="#r">ら行</a></li>
+				</ul>
+			</li>
+		<li id="jump2disqus"><a href="#toc-disqus">コメント</a></li>
+		</ul>
+	</div>
+
+	<script>
+		( function ( i, s, o, g, r, a, m ) {
+			i[ 'GoogleAnalyticsObject' ] = r; i[ r ] = i[ r ] || function () {
+				( i[ r ].q = i[ r ].q || [] ).push( arguments )
+			}, i[ r ].l = 1 * new Date(); a = s.createElement( o ),
+				m = s.getElementsByTagName( o )[ 0 ]; a.async = 1; a.src = g; m.parentNode.insertBefore( a, m )
+		} )( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
+		ga( 'create', 'UA-46801675-2', 'auto' );
+		ga( 'send', 'pageview' );
+	</script>
+
+	<script type="text/javascript">var _lrscript = document.createElement('script');_lrscript.type = 'text/javascript';_lrscript.defer = _lrscript.async = true;_lrscript.src = '//' + ((null||location.host).split(':')[0]) + ':35729/livereload.js?';document.body.appendChild(_lrscript);</script>
+</body>
+
+</html>

@@ -92,13 +92,4 @@ $( document ).ready( function () {
 				}
 			}
 		} );
-
-	// migrate debbug
-	$.each( [ "enemy", "warn", "item", "gold", "keyword", "name", "site", "law", "neu", "cha", "bifurcatio", "Goblin" ], function () {
-		var length = $( "." + this ).length;
-
-		if ( length ) {
-			$( "article" ).prepend( "<p class=\"migrate-error\">" + this + ": " + length + "</p>" );
-		}
-	} );
 } );
