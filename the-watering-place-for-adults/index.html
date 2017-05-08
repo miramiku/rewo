@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>大人の社交場 | Recollection of Wizardry Online</title>
+
+	<!-- meta data -->
+	<meta name="author" content="Miku">
+
+	<!-- scripts -->
+	<script src="../common/core.js"></script>
+	<script src="../common/supus.core.js"></script>
+
+	<!-- style / favicon -->
+	<link href="../common/foundation.css" rel="stylesheet" type="text/css">
+	<link href="../common/fancybox.css" rel="stylesheet" type="text/css">
+	<link href="../favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body id="rewo">
+	<header data-bg="background.jpg">
+		<div id="header-content">
+			<a href="https://miramiku.github.io/rewo/" id="page-info">
+				<span id="meta-info" class="page-headings">Leviant anne' Tile</span>
+				<span id="major-title" class="page-headings">大人の社交場</span>
+				<span id="title-divider" class="page-headings"></span>
+				<span id="minor-title" class="page-headings">The Watering Place for Adults</span>
+			</a>
+
+			<footer>
+				<ul>
+					<li><a href="http://miramiku.github.io/"><span class="basis-icon me"> </span> みく(๑・ω・๑)</a></li>
+					<li><a href="https://twitter.com/miramiku"><span class="basis-icon tw"> </span> @miramiku</a></li>
+					<li><a href="https://github.com/miramiku/rewo"><span class="basis-icon gh"> </span> Repository</a></li>
+				</ul>
+			</footer>
+
+			<p id="wo-credit">
+				"Wizardry&reg;" of GMO Gamepot Inc. All rights reserved.<br>
+				Wizardry Renaissance&trade; &copy;2009 GMO Gamepot Inc.<br>
+				All rights reserved.
+			</p>
+		</div>
+	</header>
+
+	<main id="top">
+		<div id="main-inner">
+			<article>
+				<h3 id="list">NPC リスト</h3>
+				<h6>社交場利用者</h6>
+				<table class="npc-list">
+					<thead>
+						<tr><th></th><th>NPC 名</th><th></th><th>NPC 名</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>J7</td><td><a href="#マルファ">クォパティ僧侶 マルファ</a></td><td>J8</td><td><a href="#ハンナ">賭博好き ハンナ</a></td></tr>
+						<tr><td>J8</td><td><a href="#ガーター">慎重な客 ガーター</a></td><td>J8</td><td><a href="#キラリア">ついてる客 キラリア</a></td></tr>
+						<tr><td>J8</td><td><a href="#ファムナ">貴婦人 ファムナ</a></td><td>J8</td><td><a href="#ターヘル">大食漢 ターヘル</a></td></tr>
+						<tr><td>J8</td><td><a href="#ニクメパ">中堅冒険者 ニクメパ</a></td><td>J8</td><td><a href="#デアデヴィル">友好的なモンスター デアデヴィル</a></td></tr>
+						<tr><td>J8</td><td><a href="#フォーセス">怪しい商人 フォーセス</a></td><td></td><td></td></tr>
+					</tbody>
+				</table>
+
+				<h6>ディーラー</h6>
+				<table class="npc-list">
+					<thead>
+						<tr><th></th><th>NPC 名</th><th></th><th>NPC 名</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>J8</td><td><a href="#ソフィア">ディーラー ソフィア</a></td><td>J8</td><td><a href="#ルト">ディーラー ルト</a></td></tr>
+						<tr><td>J8</td><td><a href="#サラ">ディーラー サラ</a></td><td>J8</td><td><a href="#ミルオナ">ディーラー ミルオナ</a></td></tr>
+					</tbody>
+				</table>
+
+				<h6>その他従業員・設備ほか</h6>
+				<table class="npc-list">
+					<thead>
+						<tr><th></th><th>NPC 名</th><th></th><th>NPC 名</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>I7</td><td><a href="#アプトン">バーテンダー アプトン</a></td><td>I7</td><td><a href="#アリエル">ロイヤルレディー アリエル</a></td></tr>
+						<tr><td>I8</td><td><a href="#ネイテンス">ボーイ ネイテンス</a></td><td>I8</td><td><a href="#マイクローク">マイクローク 店員</a></td></tr>
+						<tr><td>I8</td><td><a href="#チップ交換">カジノキャッシャー チップ交換</a></td><td>I9</td><td><a href="#景品交換">カジノキャッシャー 景品交換</a></td></tr>
+						<tr><td>J7</td><td><a href="#キャロライン">マッサージ師 キャロライン</a></td><td>I8</td><td><a href="#帰還用ポール">帰還用ポール</a></td></tr>
+						<tr><td>I8</td><td><a href="#カジノ営業許可証">カジノ営業許可証</a></td><td>J8</td><td><a href="#ジュークボックス">ジュークボックス</a></td></tr>
+					</tbody>
+				</table>
+
+				<h3 id="log">会話ログ</h3>
+				<h4 id="a">あ行</h4>
+				<div class="lines" id="アプトン">
+					<div class="header">
+						<span class="character">アプトン</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							娯楽の殿堂へようこそ。<br>
+							何かお飲物を頼まれますか？
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>何を聞く？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>この店について</span>
+									<p>
+										ここは、娯楽の殿堂と呼ばれる場所……<br>
+										支店とはいえ、お出しするメニューと情熱は<br>
+										見劣りさせはしませんよ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>飲み物を出してくれ</span>
+									<p class="facility">
+										<span>バーテンダー</span>
+										<span>BARTENDER</span>
+									</p>
+									<p>
+										何を飲まれますか？
+									</p>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>飲んでいきますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01</span></span>酒をたのむ</span>
+												<p>
+													<span class="tag"><span>function</span></span> バーテンダー<br>
+													それでは、またお越しください。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+												<p>
+													それでは、またお越しください。
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="バーテンダー アプトン" data-fancybox="the-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/アプトン.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">バーテンダー アプトン</span>
+						<span class="coordinate">レーヴェンアンタイル 大人の社交場 I7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="アリエル">
+					<div class="header">
+						<span class="character">アリエル</span>
+						<span class="race">HUM♀</span>
+					</div>
+					<div class="text">
+						<p>
+							いらっしゃい。ロイヤルレディーの<span class="wo-name">アリエル</span>よ。<br>
+							ここで食事を提供しているんだけど。<br>
+							どう？　何か食べていく？
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>どう？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>この店について</span>
+									<p>
+										ここは、娯楽の殿堂よ♪<br>
+										<ruby>一攫千金<rt>いっかくせんきん</rt></ruby>のカジノゲームがあったり、<br>
+										すてきなロイヤルレディーがいるから<br>
+										楽しんでいってくださいね♪
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>アリエルを指名する</span>
+									<p>
+										あはは、嬉しいこと言ってくれますね。<br>
+										……でも、うちの店はそういうのは禁止なんですよね。<br>
+										私もこの仕事をまだ辞めたくないから遠慮して頂けますか？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>ご飯食べさせて！</span>
+									<p class="facility">
+										<span>アリエルの食卓</span>
+										<span>ARIEL'S DINING</span>
+									</p>
+									<p>
+										どう？　何を食べていく？<br>
+										本店直伝のメニューが入荷しているわよ。
+									</p>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>食べていきますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01</span></span>料理を食べる</span>
+												<p>
+													<span class="tag"><span>function</span></span>アリエルの食卓<br>
+													またきてくださいね♪
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+												<p>
+													またきてくださいね♪
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ロイヤルレディー アリエル" data-fancybox="the-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/アリエル.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ロイヤルレディー アリエル</span>
+						<span class="coordinate">レーヴェンアンタイル 大人の社交場 I7</span>
+					</div>
+				</div>
+
+				<h4 id="k">か行</h4>
+				<div class="lines" id="ガーター">
+					<div class="header">
+						<span class="character">ガーター</span>
+						<span class="race">POR♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								ぐぬぬ……大きく負けなければ問題無いが、<br>
+								やはり小さな負けでも重ねるとクルものがあるな……<br>
+								だが、ここで勝負に出るのも愚者の考えって奴さ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								勝負を掛けるタイミング？<br>
+								とりあえず手札の時点で勝ちが決まっていたら<br>
+								大きく賭ければ良いんじゃねーか？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								引き際は大切だぜ。<br>
+								流れが来てないと感じたら、<br>
+								賭けなんて止めて帰って寝ちまいな。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+							<p>
+								別に大きく勝つ必要はねぇ……<br>
+								コツコツ細かく勝って行ければ<br>
+								R チップは溜まるってもんよ。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="慎重な客 ガーター" data-fancybox="the-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/ガーター.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">慎重な客 ガーター</span>
+						<span class="coordinate">レーヴェンアンタイル 大人の社交場 J8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="カジノ営業許可証">
+					<div class="header">
+						<span class="character">（カジノ営業許可証）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p class="descriptive">
+							カジノ営業許可証と書いてある。
+						</p>
+						<p class="descriptive">
+							上の者にカジノの営業を許可する。<br>
+							<br>
+							　　　　　　　　　　　フェルディナント・アダコーン
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="カジノ営業許可証" data-fancybox="the-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/カジノ営業許可証.jpg">
+					</div>
+					<div class="footer">
+						<span class="coordinate">レーヴェンアンタイル 大人の社交場 I8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="帰還用ポール">
+					<div class="header">
+						<span class="character">（無名）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p class="descriptive">
+							ここから街へ帰還できます。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>街に戻りますか？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+									<p>
+										<span class="tag"><span>entering</span></span> レーヴェンアンタイル
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="帰還用ポール" data-fancybox="the-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/帰還用ポール.jpg">
+					</div>
+					<div class="footer">
+						<span class="coordinate">レーヴェンアンタイル 大人の社交場 I8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="キャロライン">
+					<div class="header">
+						<span class="character">キャロライン</span>
+						<span class="race">HUM♀</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>夢心地の宿</span>
+							<span>Mellow Garden</span>
+						</p>
+						<p>
+							いらっしゃーい。でーす。<br>
+							たっくさんサービスしちゃうので<br>
+							ぜひよってってくださーい<br>
+							いまならぁ、はじめのもみもみ３０分<br>
+							サービスしちゃいますよぉー♪
+						</p>
+						<div class="dialog">
+							<span class="dialog">
+								<span class="tag"><span>dialogue</span></span>
+								<span class="textbox" style="width: 570px;">
+									……どうする？<br>
+									所持金：<span class="wo-gold"><span class="var"><span>pocket</span></span> G</span>
+								</span>
+							</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>お試しもみもみコースで 2,500 G</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+											<p>
+												じゃあ、もみもみすたぁとー♪<br>
+												<span class="tag"><span>function</span></span>inn<br>
+												次のれべるになるにわぁ……<br>
+												<span class="var"><span>next-exp</span></span> の経験値がひつよーでーす。<br>
+												がんばってくださいねー！<br>
+												あたしの肩もみどうでしたー？<br>
+												きもちよかったでしょー♪<br>
+												また来てくださいね！　きっとですよ♪
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>pocket</span></span>所持金不足</span>
+											<p>
+												あれぇ？　お金がたりないみたいですよぉ？<br>
+												ちゃんとお金持ってきてくださいね、待ってますから♪
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>ガッツリもみもみコースで！ 4,500 G</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+											<p>
+												じゃあ、もみもみすたぁとー♪<br>
+												<span class="tag"><span>function</span></span>inn<br>
+												次のれべるになるにわぁ……<br>
+												<span class="var"><span>next-exp</span></span> の経験値がひつよーでーす。<br>
+												がんばってくださいねー！<br>
+												あたしの肩もみどうでしたー？<br>
+												きもちよかったでしょー♪<br>
+												また来てくださいね！　きっとですよ♪
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>pocket</span></span>所持金不足</span>
+											<p>
+												あれぇ？　お金がたりないみたいですよぉ？<br>
+												ちゃんとお金持ってきてくださいね、待ってますから♪
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+									<p>
+										あれぇ、かえっちゃうんですかぁ？<br>
+										次はもみもみしていってくださいねー♪
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="マッサージ師 キャロライン" data-fancybox="the-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/キャロライン.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">マッサージ師 キャロライン</span>
+						<span class="coordinate">レーヴェンアンタイル 大人の社交場 J7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="キラリア">
+					<div class="header">
+						<span class="character">キラリア</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								勝つためのコツ？<br>
+								別に大きな役を狙わなくても、<br>
+								勝てるときに大きく賭ければ良いんじゃないかしら？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								今回は手札が悪いわね。<br>
+								全部交換で良いわ。<br>
+								……あら、フラッシュね。珍しいこともあるわね。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								15 ね……風向きが悪そうだからここで止めておくわ。<br>
+								……あら、そちらはバーストかしら？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+							<p>
+								ふふ、別にこれで食べて行く気は無いのだけど、<br>
+								たったの一勝負で日給の倍以上も稼げてしまったわ。<br>
+								どうしようかしら？
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ついてる客 キラリア" data-fancybox="the-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/キラリア.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ついてる客 キラリア</span>
+						<span class="coordinate">レーヴェンアンタイル 大人の社交場 J8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="景品交換">
+					<div class="header">
+						<span class="character">景品交換</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>大人の社交場　景品交換</span>
+						</p>
+						<p>
+							こちらでは景品交換を受け付けておりますわ♪<br>
+							景品交換されますか？
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>景品交換されますか？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>景品交換する</span>
+									<p>
+										<span class="tag"><span>function</span></span>ItemTradeHouse<br>
+										またのおこしをお待ちしておりますわ♪
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>景品交換って？</span>
+									<p>
+										ここでは、当店および系列店で使われました<br>
+										N チップや R チップを景品と交換することが<br>
+										できますわ。<br>
+										景品のラインナップは<br>
+										実際に見ていってくださいまし。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="カジノキャッシャー 景品交換" data-fancybox="the-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/景品交換.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">カジノキャッシャー 景品交換</span>
+						<span class="coordinate">レーヴェンアンタイル 大人の社交場 I9</span>
+					</div>
+				</div>
+
+				<h4 id="s">さ行</h4>
+				<div class="lines" id="サラ">
+					<div class="header">
+						<span class="character">サラ</span>
+						<span class="race">GNO</span>
+					</div>
+					<div class="text">
+						<p>
+							ここではカードゲームをやってるよー♪<br>
+							ねぇ、一緒に遊ぼうよぉ？
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>ねぇ、一緒に遊ぼうよぉ？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>遊んで行く</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>ゲーム選択</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#a</span></span>ハーサントポーカー</span>
+												<p>
+													<span class="tag"><span>function</span></span>MiniGame (HersantPorker)<br>
+													えへへ♪ 勝っても負けても楽しいよね♪<br>
+													また遊んでね♪
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#b</span></span>ロイヤル 21</span>
+												<p>
+													<span class="tag"><span>function</span></span>MiniGame (Royal21)<br>
+													えへへ♪ 勝っても負けても楽しいよね♪<br>
+													また遊んでね♪
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ディーラー サラ" data-fancybox="the-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/サラ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ディーラー サラ</span>
+						<span class="coordinate">レーヴェンアンタイル 大人の社交場 J8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ジュークボックス">
+					<div class="header">
+						<span class="character">ジュークボックス</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p>
+							現在再生中の曲は、<br>
+							<span class="var"><span>NowPlaying</span></span><br>
+							です。
+						</p>
+						<p class="descriptive">
+							1 曲 1,000 G で曲を再生できるようだ。
+						</p>
+						<div class="dialog">
+							<span class="dialog">
+								<span class="tag"><span>dialogue</span></span>
+								<span class="textbox">
+									1 曲 1,000 G で再生できます。<br>
+									所持金：<span class="wo-gold"><span class="var"><span>pocket</span></span> G</span>
+								</span>
+							</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>真・大人の社交場へようこそ</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+											<p>
+												<span class="var"><span>track</span></span>（具体例：真・大人の社交場へようこそ）<br>
+												という曲を再生します。<br>
+												よろしいですか？
+											</p>
+											<div class="dialog">
+												<span class="dialog"><span class="tag"><span>dialogue</span></span>よろしいですか？</span>
+												<div class="options">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+														<div class="either">
+															<span class="gauge"></span>
+															<div class="option">
+																<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+																<p>
+																	<span class="tag"><span>function</span></span> Jukebox
+																</p>
+															</div>
+															<div class="option">
+																<span class="option"><span class="tag"><span>pocket</span></span>所持金不足</span>
+																<p class="descriptive">
+																	お金が足りない。
+																</p>
+															</div>
+														</div>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+														<p>
+															<span class="tag"><span>empty</span></span>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>now playing</span></span>現在再生中</span>
+											<p>
+												<span class="var"><span>track</span></span>（具体例：真・大人の社交場へようこそ）<br>
+												は現在再生中です。
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>帰らぬ持ち主を持つ剣の物語</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>鋼の絆</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>羊皮紙に込められた魔法の言葉</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#05</span></span>ディメントの夜明け</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#06</span></span>安らぎの朝</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#07</span></span>街角の語らい</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#08</span></span>緊迫</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#09</span></span>汝の名は、死</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#10</span></span>高揚と安堵</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#11</span></span>死地への誘い</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#12</span></span>memento mori</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#13</span></span>駆けぬける幻戯</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#14</span></span>魂の言葉</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#15</span></span>ソウルイーターの呼び声</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#16</span></span>転生せし魂</span>
+									<p>（<span class="tag"><span>omit</span></span>上記と同じ）</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#close</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>emtpy</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ジュークボックス" data-fancybox="the-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/ジュークボックス.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ジュークボックス</span>
+						<span class="coordinate">レーヴェンアンタイル 大人の社交場 J8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ソフィア">
+					<div class="header">
+						<span class="character">ソフィア</span>
+						<span class="race">GNO</span>
+					</div>
+					<div class="text">
+						<p>
+							うふふー♪<br>
+							ここではねー♪　ルーレットができますよー♪<br>
+							あーでも、ごめんねー。<br>
+							まだ準備中なんですー。<br>
+							また、今度来てねー♪
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="ディーラー ソフィア" data-fancybox="the-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/ソフィア.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ディーラー ソフィア</span>
+						<span class="coordinate">レーヴェンアンタイル 大人の社交場 J8</span>
+					</div>
+				</div>
+
+				<h4 id="t">た行</h4>
+				<div class="lines" id="ターヘル">
+					<div class="header">
+						<span class="character">ターヘル</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								うんめぇ。<br>
+								たまにはこういった店に<ruby>洒落<rt>しゃれ</rt></ruby>込むのも<br>
+								悪くねーな。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								こういう店でしか頼めない酒を<br>
+								バーカウンターで注文できるぜ。<br>
+								まあ、俺は別にエールで良いんだがな。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								この店、味はそれなりのレベルだが、<br>
+								ちと値段が高いのがな……
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="大食漢 ターヘル" data-fancybox="the-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/ターヘル.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">大食漢 ターヘル</span>
+						<span class="coordinate">レーヴェンアンタイル 大人の社交場 J8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="チップ交換">
+					<div class="header">
+						<span class="character">チップ交換</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>大人の社交場　カジノチップ交換</span>
+						</p>
+						<p>
+							ここで家事のチップを交換してまーす♪<br>
+							チップを交換しますかぁ？
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>チップを交換しますかぁ？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>カジノチップ交換</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>どのチップを交換しますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#N</span></span>N チップが欲しい</span>
+												<div class="dialog">
+													<span class="dialog"><span class="tag"><span>dialogue</span></span>何枚交換しますか？</span>
+													<div class="options">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#01</span></span>N チップ 10 枚を 10,000 G で交換</span>
+															<div class="either">
+																<span class="gauge"></span>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+																	<p>
+																		<span class="tag"><span>uncollected</span></span>
+																	</p>
+																</div>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>pocket</span></span>所持金不足</span>
+																	<p>
+																		おやや、お金がないと寂しいですよねー。<br>
+																		お仕事頑張ってくださいねー♪
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#02</span></span>N チップ 100 枚を 100,000 G で交換</span>
+															<div class="either">
+																<span class="gauge"></span>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+																	<p>
+																		<span class="tag"><span>uncollected</span></span>
+																	</p>
+																</div>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>pocket</span></span>所持金不足</span>
+																	<p>
+																		おやや、お金がないと寂しいですよねー。<br>
+																		お仕事頑張ってくださいねー♪
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#03</span></span>N チップ 1000 枚を 1,000,000 G で交換</span>
+															<div class="either">
+																<span class="gauge"></span>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+																	<p>
+																		<span class="tag"><span>uncollected</span></span>
+																	</p>
+																</div>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>pocket</span></span>所持金不足</span>
+																	<p>
+																		おやや、お金がないと寂しいですよねー。<br>
+																		お仕事頑張ってくださいねー♪
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#04</span></span>N チップ 10000 枚を 10,000,000 G で交換</span>
+															<div class="either">
+																<span class="gauge"></span>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+																	<p>
+																		<span class="tag"><span>uncollected</span></span>
+																	</p>
+																</div>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>pocket</span></span>所持金不足</span>
+																	<p>
+																		おやや、お金がないと寂しいですよねー。<br>
+																		お仕事頑張ってくださいねー♪
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#05</span></span>交換しない</span>
+															<p>
+																<span class="tag"><span>back</span></span>
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#R</span></span>R チップが欲しい</span>
+												<div class="dialog">
+													<span class="dialog"><span class="tag"><span>dialogue</span></span>どのチップを交換しますか？</span>
+													<div class="options">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#01</span></span>R チップ 1 枚をクラーケンコインで交換</span>
+															<div class="either">
+																<span class="gauge"></span>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+																	<p>
+																		<span class="tag"><span>uncollected</span></span>
+																	</p>
+																</div>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>have</span></span><span class="wo-item">クラーケンコイン</span>を所持していない</span>
+																	<p>
+																		おやや、手続きに失敗しました。<br>
+																		ちゃんとアイテムはお持ちですか？
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#02</span></span>R チップ 2 枚をアリスクラートコインで交換</span>
+															<div class="either">
+																<span class="gauge"></span>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+																	<p>
+																		<span class="tag"><span>uncollected</span></span>
+																	</p>
+																</div>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>have</span></span><span class="wo-item">アリスクラートコイン</span>を所持していない</span>
+																	<p>
+																		おやや、手続きに失敗しました。<br>
+																		ちゃんとアイテムはお持ちですか？
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#03</span></span>R チップ 1 枚を模造クラーケンコインで交換！</span>
+															<div class="either">
+																<span class="gauge"></span>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+																	<p>
+																		<span class="tag"><span>uncollected</span></span>
+																	</p>
+																</div>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>have</span></span><span class="wo-item">模造クラーケンコイン</span>を所持していない</span>
+																	<p>
+																		おやや、手続きに失敗しました。<br>
+																		ちゃんとアイテムはお持ちですか？
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#04</span></span>R チップ 1 枚を模造アリスクラートコインで交換！</span>
+															<div class="either">
+																<span class="gauge"></span>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+																	<p>
+																		<span class="tag"><span>uncollected</span></span>
+																	</p>
+																</div>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>have</span></span><span class="wo-item">模造アリスクラートコイン</span>を所持していない</span>
+																	<p>
+																		おやや、手続きに失敗しました。<br>
+																		ちゃんとアイテムはお持ちですか？
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#05</span></span>交換しない</span>
+															<p>
+																<span class="tag"><span>back</span></span>
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#close</span></span>交換しない</span>
+												<p>
+													ありがとうございま～す♪
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>カジノチップって何？</span>
+									<p>
+										ここでは、当店および系列店で使用できる<br>
+										カジノチップを交換することができまーす♪<br>
+										各ゲームで使える N チップは Gold との交換でーす♪<br>
+										一部ゲームの報酬で貰える R チップは、<br>
+										貴重なコインと交換してますよー♪<br>
+										くれぐれも模造コインはご容赦をー♪
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>キャンセル</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="カジノキャッシャー チップ交換" data-fancybox="the-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/チップ交換.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">カジノキャッシャー チップ交換</span>
+						<span class="coordinate">レーヴェンアンタイル 大人の社交場 I8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="デアデヴィル">
+					<div class="header">
+						<span class="character">デアデヴィル</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							まあ、待てや。<br>
+							今日は非番だから殺し合いはなしだ。<br>
+							楽しく飲もうぜ！
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="友好的なモンスター デアデヴィル" data-fancybox="the-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/デアデヴィル.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">友好的なモンスター デアデヴィル</span>
+						<span class="coordinate">レーヴェンアンタイル 大人の社交場 J8</span>
+					</div>
+				</div>
+
+				<h4 id="n">な行</h4>
+				<div class="lines" id="ニクメパ">
+					<div class="header">
+						<span class="character">ニクメパ</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<p>
+							うむ、酒が美味い。<br>
+							有能な戦士には適度な休息も必要じゃろうて。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="中堅冒険者 ニクメパ" data-fancybox="the-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/ニクメパ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">中堅冒険者 ニクメパ</span>
+						<span class="coordinate">レーヴェンアンタイル 大人の社交場 J8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ネイテンス">
+					<div class="header">
+						<span class="character">ネイテンス</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ヘーイ！　いらっしゃい！<br>
+							娯楽の殿堂、<span class="wo-site">大人の社交場</span><br>
+							へ、ようこそっす。<br>
+							がっつりとお金を落としてくだ……コホン。<br>
+							楽しんでいってくださーい！
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>何を聞く？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>この店について</span>
+									<p>
+										ここは娯楽の殿堂、<span class="wo-site">真・大人の社交場</span>の支店ですぜ。<br>
+										この店のメインはずばりカジノ！<br>
+										最新の遊戯を提供しやすぜ。<br>
+										そうそう最近は<span class="wo-site">ディメント王国</span>の本店の方にも<br>
+										カジノを出荷していやす。<br>
+										あ、うちの店はロイヤルレディーのサービスは<br>
+										メインでは無いので、その辺は本店の方にでも……<br>
+										組合の利権回りの問題でなかなか難しいんすよ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>オーナーについて</span>
+									<p>
+										オーナーは<span class="wo-name">アダコーン</span>さんっすね。<br>
+										最近は療養するとかで新しい総支配人がきてるっすね。<br>
+										……あ、総支配人の肖像画なら入り口にありやすぜ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>ロイヤルレディーについて</span>
+									<p>
+										すいやせん。<br>
+										うちの店はロイヤルレディーのサービスはメインでは無い<br>
+										おで、その辺は本店の方にでも……<br>
+										組合の利権回りの問題でなかなか難しいんすよ。<br>
+										あ、でも、もし良い娘がいたら紹介して欲しいっすね。<br>
+										……個人的にで構わないんで。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>ロイヤルレディーの指名について</span>
+									<p>
+										すいやせん。<br>
+										営業権利の関係でその辺はうちの店ではダメっす。<br>
+										個人的に話すくらいなら構わないんで、<br>
+										それで勘弁してちょ！<br>
+										本店の方ならそういったサービスも充実してるんすけどね。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#05</span></span>カジノチップについて</span>
+									<p>
+										そちらのキャッシャーで交換換金どちらもできますぜ。<br>
+										ええ、是非是非ご利用して欲しいっす。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#06</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ボーイ ネイテンス" data-fancybox="the-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/ネイテンス.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ボーイ ネイテンス</span>
+						<span class="coordinate">レーヴェンアンタイル 大人の社交場 I8</span>
+					</div>
+				</div>
+
+				<h4 id="h">は行</h4>
+				<div class="lines" id="ハンナ">
+					<div class="header">
+						<span class="character">ハンナ</span>
+						<span class="race">HUM♀</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								うーん、手札はワンペアとスリーカードかー。<br>
+								ここはペアを捨ててフォーカードを狙うべきよね！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								ここはストレートを狙うべきか、<br>
+								それともフラッシュを狙うべきか……<br>
+								うん、どうせなら両方同時に狙うべきね！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								手札は 17 ……ここで引く様じゃ女が廃るわ。<br>
+								さあ、次のカードを寄こしなさい！<br>
+								……この数字なら勝てる！　5 よ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+							<p>
+								手札は 20……これで負ける訳がないわね。<br>
+								さあ、ディーラー。カードを引いて負けを認めなよ！<br>
+								……え、21？　ちょ、ちょっとどういうことよ！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>E</span>
+							<p>
+								ふふふ、今回は私の勝ちよ！<br>
+								くらえ、ロイヤルストレートフラッ……え？　バースト！？<br>
+								そ、そんな……
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="賭博好き ハンナ" data-fancybox="the-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/ハンナ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">賭博好き ハンナ</span>
+						<span class="coordinate">レーヴェンアンタイル 大人の社交場 J8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ファムナ">
+					<div class="header">
+						<span class="character">ファムナ</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<p>
+							ふふふ、活気があって良いですわね。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="貴婦人 ファムナ" data-fancybox="the-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/ファムナ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">貴婦人 ファムナ</span>
+						<span class="coordinate">レーヴェンアンタイル 大人の社交場 J8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="フォーセス">
+					<div class="header">
+						<span class="character">フォーセス</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>lead</span></span></span>
+							<div class="either">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+									<p>
+										……なんだ？<br>
+										俺様の扱う商品は一見様お断りなんだがな。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+									<p>
+										はん？　元締めだぁ？<br>
+										知るかよ馬鹿。俺様の名は<span class="wo-name">フォーセス</span>。<br>
+										ちゃんと名前で呼びやがれ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+									<p>
+										ほお……雑多無像が居る中、俺様に声を掛けるたぁ<br>
+										良い勘をしてやがるな。
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>main</span></span></span>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>何の用だ？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>商品を見せて欲しい</span>
+										<p>
+											おい<span class="var"><span>gender</span></span><span class="footnote"></span>。ここが何処だかわかっているよな？<br>
+											この俺様が他人のシマで店を開くほど<br>
+											落ちぶれているとでも思ってんのか？
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>雑談する</span>
+										<div class="either">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+												<p>
+													金の流れってのは突き詰めれば人の感情の流れだ。<br>
+													こういう所にこそ新しい商売の火種は<ruby>燻<rt>くすぶ</rt></ruby>っているもんだぜ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+												<p>
+													<span class="wo-site">レーヴェンアンタイル</span>の名前の由来は、<br>
+													古い言葉で「<span class="footnote">獅子の分け前</span>」を意味する<br>
+													寓話から来ている。<br>
+													つまり、この街では強さを示し利益を<ruby>齎<rt>もたら</rt></ruby>した者が<br>
+													その利益の恩恵を大きく得る。<br>
+													まあ、当然の話だな。<br>
+													だが、勘違いするなよ。<br>
+													強さってのは腕っ節の強さだけを指しているんじゃねぇ。<br>
+													如何に多くの利益を導けるかってのも強さの一つだ。<br>
+													……とは言っても獅子に狩られて餌になる程度の<br>
+													腕っ節では話にならねぇってのも確かだがな。<br>
+													はん？　寓話の内容を聞きたいだぁ？<br>
+													そんなもん、暇な住人を捕まえて聞いてこい。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+												<p>
+													……ん。<span class="wo-site">混沌のシュトラーゼ</span>の行商人？<br>
+													ああ、連中なら俺様の子飼いだな。<br>
+													こう見えても一応まっとうな商売もしているぞ。<br>
+													裏の商売だけで儲かると考えるのは三流の考えだ。<br>
+													<span class="wo-site">ディメント王国</span>の方じゃ<span class="wo-name">アダコーン</span>が<br>
+													それなりに上手くやっているようだな。
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>キャラクターの種族が男性なら「ボウズ」、女性なら「女」になる</li>
+							<li><a href="https://ja.wikipedia.org/wiki/%E3%82%A4%E3%82%BD%E3%83%83%E3%83%97%E5%AF%93%E8%A9%B1">イソップ寓話</a> に同様の表題の寓話がある。寓話「獅子の分け前」のドイツ語タイトルが „Löwenanteil“（レーヴェンアンタイル）。</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img alt="怪しい商人 フォーセス" data-fancybox="the-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/フォーセス.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">怪しい商人 フォーセス</span>
+						<span class="coordinate">レーヴェンアンタイル 大人の社交場 J8</span>
+					</div>
+				</div>
+
+				<h4 id="m">ま行</h4>
+				<div class="lines" id="マイクローク">
+					<div class="header">
+						<span class="character">店員</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>マイクローク</span>
+							<span>WAREHOUSE</span>
+						</p>
+						<p>
+							いらっしゃいませ。<br>
+							お客様の持ち物やお金をお預かりいたします。<br>
+							<span class="tag"><span>function</span></span> mycloak
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="マイクローク 店員" data-fancybox="the-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/マイクローク.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">マイクローク 店員</span>
+						<span class="coordinate">レーヴェンアンタイル 大人の社交場 I8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="マルファ">
+					<div class="header">
+						<span class="character">マルファ</span>
+						<span class="race">GNO</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>live status</span></span>通常時</span>
+							<p>
+								私ですか？　別に仕事に来てるわけではありませんよ。<br>
+								遊びです、遊び。<br>
+								頭の悪いことでもしない限り、<br>
+								こんなところで死人が出るはずがないじゃないですか。<br>
+								……私の仕事を作らないでくださいね？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>soul status</span></span>魂時</span>
+							<p>
+								バカなの？　死ぬの？<br>
+								……あ、もう死んでるんですね。<br>
+								じゃあロストでもします？<br>
+								……私は遊びに来てるんです。<br>
+								オフです。オフ。<br>
+								分かりますか？<br>
+								いったい何をすればこんな場所で死ねるんですか？<br>
+								呪われた装備でも付けているんですか？<br>
+								……しかたありませんね。<br>
+								蘇生を受けるつもりなんですか？
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>どうする？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>蘇生してもらう</span>
+										<p>
+											蘇生費用は <span class="var"><span>1,000 × levels</span></span> G となります。<br>
+											もちろん、一度頂いたら返しませんのでそのつもりで。
+										</p>
+										<div class="dialog">
+											<span class="dialog">
+												<span class="tag"><span>dialogue</span></span>
+												<span class="textbox" style="width: 550px;">
+													蘇生費用：<span class="var"><span>1,000 × levels</span></span> G<br>
+													所持金：<span class="wo-gold"><span class="var"><span>pocket</span></span> G</span>
+												</span>
+											</span>
+											<div class="options">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01</span></span>支払う</span>
+													<div class="either">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+															<p>
+																<span class="tag"><span>function</span></span> revive
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>pocket</span></span>所持金不足</span>
+															<p>
+																……こんなところで死ぬおバカさんは、<br>
+																財布の中身も数えられないんですか？
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02</span></span>無料でお願いする</span>
+													<p>
+														……え？<br>
+														今、何か言いましたか？
+													</p>
+													<div class="dialog">
+														<span class="dialog">
+															<span class="tag"><span>dialogue</span></span>
+															<span class="textbox" style="width: 530px;">
+																蘇生費用：<span class="var"><span>1,000 × levels</span></span> G<br>
+																所持金：<span class="wo-gold"><span class="var"><span>pocket</span></span> G</span>
+															</span>
+														</span>
+														<div class="options">
+															<span class="gauge"></span>
+															<div class="option">
+																<span class="option"><span class="tag"><span>#01</span></span>有料でお願いする</span>
+																<div class="either">
+																	<span class="gauge"></span>
+																	<div class="option">
+																		<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+																		<p>
+																			<span class="tag"><span>function</span></span> revive
+																		</p>
+																	</div>
+																	<div class="option">
+																		<span class="option"><span class="tag"><span>pocket</span></span>所持金不足</span>
+																		<p>
+																			……こんなところで死ぬおバカさんは、<br>
+																			財布の中身も数えられないんですか？
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="option">
+																<span class="option"><span class="tag"><span>#02</span></span>無料でお願いする</span>
+																<p>
+																	…………はぁ。<br>
+																	今日は厄日ですね。<br>
+																	はいはい、いいですよ、やりますよ。<br>
+																	<span class="tag"><span>function</span></span> revive
+																</p>
+															</div>
+															<div class="option">
+																<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+																<p>
+																	……そうですか。<br>
+																	ようがないなら声を掛けないでくださいね？
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#03</span></span>なぜ返せないのか？</span>
+													<p>
+														バカなの？　ロストするの？<br>
+														……蘇生魔法が何も唱えられると思っている<br>
+														頭の中身お花畑さんだったりするんですか？
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#04</span></span>値段が高い気が……</span>
+													<p>
+														……普段より高いと思いますか？<br>
+														もちろん休日手当を含んでいますよ。<br>
+														私、別に仕事で来ているわけじゃないんで……
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#05</span></span>立ち去る</span>
+													<p>
+														……そうですか。<br>
+														ようがないなら声を掛けないでくださいね？
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+										<p>
+											……そうですか。<br>
+											ようがないなら声を掛けないでくださいね？
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="クォパティ僧侶 マルファ" data-fancybox="the-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/マルファ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">クォパティ僧侶 マルファ</span>
+						<span class="coordinate">レーヴェンアンタイル 大人の社交場 J7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ミルオナ">
+					<div class="header">
+						<span class="character">ミルオナ</span>
+						<span class="race">HUM♀</span>
+					</div>
+					<div class="text">
+						<p>
+							えっと、アレよ。<br>
+							ここでは……えー、アレ。<br>
+							ダイスを使ったゲームをやってるのよ。<br>
+							まあ、まだ準備中だからまた今度来てよ。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="ディーラー ミルオナ" data-fancybox="the-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/ミルオナ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ディーラー ミルオナ</span>
+						<span class="coordinate">レーヴェンアンタイル 大人の社交場 J8</span>
+					</div>
+				</div>
+
+				<h4 id="r">ら行</h4>
+				<div class="lines" id="ルト">
+					<div class="header">
+						<span class="character">ルト</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<p>
+							ふふふ<br>
+							ここではカードゲームを扱っているわ。<br>
+							アナタには勝利の風を掴むことができるかしら？<br>
+							どう、勝負してみます？
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>勝負してみます？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>遊んで行く</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>ゲーム選択</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#a</span></span>ハーサントポーカー</span>
+												<p>
+													<span class="tag"><span>function</span></span>MiniGame (HersantPorker)<br>
+													ふふふ<br>
+													楽しんで頂けたなら何より。<br>
+													また来ると良いわ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#b</span></span>ロイヤル 21</span>
+												<p>
+													<span class="tag"><span>function</span></span>MiniGame (Royal21)<br>
+													ふふふ<br>
+													楽しんで頂けたなら何より。<br>
+													また来ると良いわ。
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ディーラー ルト" data-fancybox="the-watering-place-for-adults" class="lazyload" src="../common/placeholder.png" data-src="npcs/ルト.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ディーラー ルト</span>
+						<span class="coordinate">レーヴェンアンタイル 大人の社交場 J8</span>
+					</div>
+				</div>
+			</article>
+
+			<hr class="offset-killer">
+			<div id="disqus-space">
+				<p id="comment-attention">
+					名前を入力しようとすると表示される「ゲストとして投稿する」にチェックを入れるとDISQUSに登録しなくてもコメントすることができます。<br>
+					メールアドレスは入力必要ですが DISQUS で管理され、投稿したコメントに表示されることも私にも通知されることもありません。<br>
+					架空のメールアドレスでも可能ですので、お気軽にコメントしてください！
+				</p>
+				<aside id="toc-disqus">
+					<div id="disqus_thread"></div>
+				</aside>
+				<script type="text/javascript">
+					( function () {
+						var dsq = document.createElement( 'script' );
+						dsq.type = 'text/javascript';
+						dsq.async = true;
+						dsq.src = '//miramiku.disqus.com/embed.js';
+						( document.getElementsByTagName( 'head' )[ 0 ] || document.getElementsByTagName( 'body' )[ 0 ] ).appendChild( dsq );
+					}() );
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+			</div>
+		</div>
+	</main>
+
+	<div id="toc">
+		<ul>
+			<li id="back2top"><a href="#top">トップページ</a></li>
+			<li><a href="#list">NPC リスト</a></li>
+			<li><a href="#log">会話ログ</a>
+				<ul>
+					<li><a href="#a">あ行</a></li>
+					<li><a href="#k">か行</a></li>
+					<li><a href="#s">さ行</a></li>
+					<li><a href="#t">た行</a></li>
+					<li><a href="#n">な行</a></li>
+					<li><a href="#h">は行</a></li>
+					<li><a href="#m">ま行</a></li>
+					<li><a href="#r">ら行</a></li>
+				</ul>
+			</li>
+		<li id="jump2disqus"><a href="#toc-disqus">コメント</a></li>
+		</ul>
+	</div>
+
+	<script>
+		( function ( i, s, o, g, r, a, m ) {
+			i[ 'GoogleAnalyticsObject' ] = r; i[ r ] = i[ r ] || function () {
+				( i[ r ].q = i[ r ].q || [] ).push( arguments )
+			}, i[ r ].l = 1 * new Date(); a = s.createElement( o ),
+				m = s.getElementsByTagName( o )[ 0 ]; a.async = 1; a.src = g; m.parentNode.insertBefore( a, m )
+		} )( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
+		ga( 'create', 'UA-46801675-2', 'auto' );
+		ga( 'send', 'pageview' );
+	</script>
+</body>
+
+</html>
