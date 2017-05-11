@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>エントランス | Recollection of Wizardry Online</title>
+
+	<!-- meta data -->
+	<meta name="author" content="Miku">
+
+	<!-- scripts -->
+	<script src="../common/core.js" defer></script>
+
+	<!-- style / favicon -->
+	<link href="../common/foundation.css" rel="stylesheet" type="text/css">
+	<link href="../common/fancybox.css" rel="stylesheet" type="text/css">
+	<link href="../favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body id="rewo">
+	<header data-bg="background.jpg">
+		<div id="header-content">
+			<a href="https://miramiku.github.io/rewo/" id="page-info">
+				<span id="meta-info" class="page-headings">Euclids Infinite Corridors</span>
+				<span id="major-title" class="page-headings">エントランス</span>
+				<span id="title-divider" class="page-headings"></span>
+				<span id="minor-title" class="page-headings">Entrance</span>
+			</a>
+
+			<footer>
+				<ul>
+					<li><a href="http://miramiku.github.io/"><span class="basis-icon me"> </span> みく(๑・ω・๑)</a></li>
+					<li><a href="https://twitter.com/miramiku"><span class="basis-icon tw"> </span> @miramiku</a></li>
+					<li><a href="https://github.com/miramiku/rewo"><span class="basis-icon gh"> </span> Repository</a></li>
+				</ul>
+			</footer>
+
+			<p id="wo-credit">
+				"Wizardry&reg;" of GMO Gamepot Inc. All rights reserved.<br>
+				Wizardry Renaissance&trade; &copy;2009 GMO Gamepot Inc.<br>
+				All rights reserved.
+			</p>
+		</div>
+	</header>
+
+	<main id="top">
+		<div id="main-inner">
+			<article>
+				<h3 id="list">NPC リスト</h3>
+				<table class="npc-list">
+					<thead>
+						<tr><th></th><th>NPC 名</th><th></th><th>NPC 名</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>C6</td><td><a href="#フォーセス">怪しい商人 フォーセス</a></td><td>C6</td><td><a href="#フォルニ">迷宮管理組合 フォルニ</a></td></tr>
+						<tr><td>C6</td><td><a href="#ケインズ">特級エンチャンター ケインズ</a></td><td>D6</td><td><a href="#ルービック">迷宮案内 ルービック</a></td></tr>
+						<tr><td>D6</td><td><a href="#アペリック">修理屋 アペリック</a></td><td>D6</td><td><a href="#マイクローク">マイクローク 店員</a></td></tr>
+						<tr><td>D6</td><td><a href="#ホスピタリア">簡易宿屋 ホスピタリア</a></td><td>D7</td><td><a href="#ビクトル">秘密の行商人 ビクトル</a></td></tr>
+					</tbody>
+				</table>
+
+				<h3 id="log">会話ログ</h3>
+				<h4 id="a">あ行</h4>
+				<div class="lines" id="アペリック">
+					<div class="header">
+						<span class="character">アペリック</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<p>
+							無限回廊に挑むなら装備は万全な状態にしてきな。<br>
+							<span class="tag"><span>function</span></span> 無限回廊出張修理サービス
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="修理屋 アペリック" data-fancybox="euclids-infinite-corridors" class="lazyload" src="../common/placeholder.png" data-src="npcs/アペリック.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">修理屋 アペリック</span>
+						<span class="coordinate">ユークリッドの無限回廊 エントランス D6</span>
+					</div>
+				</div>
+
+				<h4 id="k">か行</h4>
+				<div class="lines" id="ケインズ">
+					<div class="header">
+						<span class="character">ケインズ</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> ユークリッドの無限回廊初到着時</span>
+							<p>
+								ガッハッハ！<br>
+								スクロールを手に入れたら我輩の所に持ってきな。<br>
+								……ん？　なんだ。<br>
+								お前さんまだ迷宮への探索登録をしてねぇのか？<br>
+								なら<span class="footnote">隣のねーちゃん</span>に手続きして貰うんだな。<br>
+								よそ者にはエンチャントしてやらんぞ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> <span class="wo-item">ユークリッドの無限回廊入場許可証</span>入手後</span>
+							<div class="either">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+									<p>
+										エンチャントはベースとサブ両方を含めて<br>
+										同じものを付与することはできないぜ。<br>
+										どちらに付けるかは目的を持って選別するんだな。<br>
+										<span class="tag"><span>function</span></span> 特級付与術師のエンチャント屋
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+									<p>
+										ガッハッハ！<br>
+										スクロールを手に入れたら我輩の所に持ってきな。<br>
+										そこらの錬金術師程度の素人じゃ扱えんぞ。<br>
+										<span class="tag"><span>function</span></span> 特級付与術師のエンチャント屋
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+									<p>
+										ガッハッハ！<br>
+										ベースエンチャントの付与は確実に成功させるぜ。<br>
+										そこらの鍛冶屋と一緒にしないでくれや。<br>
+										<span class="tag"><span>function</span></span> 特級付与術師のエンチャント屋
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+									<p>
+										継承保護の間水晶があれば既に付与されている<br>
+										サブエンチャントを確実に保護できるぜ。<br>
+										<span class="tag"><span>function</span></span> 特級付与術師のエンチャント屋
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>E</span>
+									<p>
+										削除スクロールがあれば付与されるエンチャントを<br>
+										剥がすことができるぜ。<br>
+										付与する場所を間違えた時とかに試してみるんだな。<br>
+										<span class="tag"><span>function</span></span> 特級付与術師のエンチャント屋
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>F</span>
+									<p>
+										サブエンチャントの際には支援アイテムを<br>
+										最大で 3 つまで使用することができるぜ。<br>
+										目的に合わせたアイテムを持ってきな。<br>
+										<span class="tag"><span>function</span></span> 特級付与術師のエンチャント屋
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>G</span>
+									<p>
+										サブエンチャントの付与は付与されているものが多いほど<br>
+										継承率が悪化するぜ。<br>
+										ちゃんと成功率は教えてやるから自己責任で依頼しな。<br>
+										<span class="tag"><span>function</span></span> 特級付与術師のエンチャント屋
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>H</span>
+									<p>
+										サブエンチャントは 1 つの装備に 5 つまで付けられるぜ。<br>
+										その代わり一つ一つの効果量は少なめで、<br>
+										いくつ付いても効果は変動しないぜ。<br>
+										<span class="tag"><span>function</span></span> 特級付与術師のエンチャント屋
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>I</span>
+									<p>
+										<span class="footnote">全能の魔水晶</span>があればサブエンチャントの継承付与確率を<br>
+										向上させられるぜ。<br>
+										全能の魔水晶よりも効果は高いから使いどころを選びな。<br>
+										<span class="tag"><span>function</span></span> 特級付与術師のエンチャント屋
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>J</span>
+									<p>
+										全能の魔水晶があればサブエンチャントの新規付与確率と<br>
+										継承付与確率の両方を向上させられるぜ。<br>
+										その代わりそれぞれの効果量は低いから気をつけな。<br>
+										<span class="tag"><span>function</span></span> 特級付与術師のエンチャント屋
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>K</span>
+									<p>
+										装備の持つ付与許容値の範囲までしか<br>
+										エンチャントはできないぜ。<br>
+										強力なスクロールのコストは重いから注意するんだな。<br>
+										<span class="tag"><span>function</span></span> 特級付与術師のエンチャント屋
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>L</span>
+									<p>
+										付与の魔水晶があればサブエンチャントの新規付与確率を<br>
+										向上させられるぜ。<br>
+										全能の魔水晶よりも効果は高いから使いどころを選びな。<br>
+										<span class="tag"><span>function</span></span> 特級付与術師のエンチャント屋
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>M</span>
+									<p>
+										ベースエンチャントは 1 つの装備に 1 つまでだぜ。<br>
+										その代わり効果は比較的大きいし、<br>
+										モノによっては効果量も変動するんだ。<br>
+										<span class="tag"><span>function</span></span> 特級付与術師のエンチャント屋
+									</p>
+								</div>
+							</div>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li><a href="#フォルニ">迷宮管理組合 フォルニ</a>の事をさす</li>
+							<li>おそらく付与の魔水晶のこと</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img alt="特級エンチャンター ケインズ" data-fancybox="euclids-infinite-corridors" class="lazyload" src="../common/placeholder.png" data-src="npcs/ケインズ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">特級エンチャンター ケインズ</span>
+						<span class="coordinate">ユークリッドの無限回廊 エントランス C6</span>
+					</div>
+				</div>
+
+				<h4 id="h">は行</h4>
+				<div class="lines" id="ビクトル">
+					<div class="header">
+						<span class="character">ビクトル</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							よう、とあるルートからの商品を扱っているんだが<br>
+							興味はないか？<br>
+							……ん？　どうやら今のアンタには縁がなさそうだな。<br>
+							俺が扱っているのは各職業で必要とされる生産物なんでね。<br>
+							それらのスキルを持っているなら良い話があったんだがな。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="秘密の行商人 ビクトル" data-fancybox="euclids-infinite-corridors" class="lazyload" src="../common/placeholder.png" data-src="npcs/ビクトル.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">秘密の行商人 ビクトル</span>
+						<span class="coordinate">ユークリッドの無限回廊 エントランス D7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="フォーセス">
+					<div class="header">
+						<span class="character">フォーセス</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								特別に俺様が一般的な消耗品を揃えてやったぜ。<br>
+								遠慮せず買って行きやがれ。<br>
+								<span class="tag"><span>function</span></span> フォーセスの闇市場
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								普段は鑑定や買い取りは手下どもに任せるんだがな。<br>
+								特別に面倒を見てやってもいいぜ。<br>
+								<span class="tag"><span>function</span></span> フォーセスの闇市場
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								無限回廊だぁ？　上等だ。<br>
+								この商売の機会を俺様が逃すわけがねぇ。<br>
+								<span class="tag"><span>function</span></span> フォーセスの闇市場
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="怪しい商人 フォーセス" data-fancybox="euclids-infinite-corridors" class="lazyload" src="../common/placeholder.png" data-src="npcs/フォーセス.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">怪しい商人 フォーセス</span>
+						<span class="coordinate">ユークリッドの無限回廊 エントランス C6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="フォルニ">
+					<div class="header">
+						<span class="character">フォルニ</span>
+						<span class="race">GNO</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> ユークリッドの無限回廊初到着時</span>
+							<p>
+								迷宮管理組合へようこそ。<br>
+								こちらでは<span class="wo-site">ユークリッドの無限回廊</span>に関する各種手続きと、<br>
+								ご案内を承っております。<br>
+								おや？<br>
+								貴方はまだ無限回廊への迷宮探索登録を<br>
+								されていない方ですね。<br>
+								<span class="wo-site">ユークリッドの無限回廊</span>内の迷宮探索については、<br>
+								他所のダンジョンとは異なる様々な要素が御座いますので、<br>
+								迷宮探索登録の前に一度ご確認を推奨いたします。<br>
+								冒険者ギルドに登録済みの方でしたら<br>
+								簡単な手続きで無限回廊迷宮への探索登録が行えます。<br>
+								如何いたしますか？
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>如何いたしますか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>ユークリッドの無限回廊について</span>
+										<p>
+											<span class="tag"><span>appended</span></span> <a href="#ユークリッドの無限回廊について">ユークリッドの無限回廊について</a>
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>無限回廊への探索登録を行う</span>
+										<p>
+											それでは、こちらにお名前をお書きください。<br>
+											……<br>
+											…………<br>
+											………………<br>
+											はい、以上で登録手続きは完了です。お疲れ様でした。<br>
+											何か不明点などがございましたら<br>
+											いつでもお越しください。<br>
+											無限回廊での貴方の活躍を期待しています。<br>
+											<span class="tag"><span>valuable</span> <span>item</span></span> ユークリッドの無限回廊入場許可証
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> <span class="wo-item">ユークリッドの無限回廊入場許可証</span>入手後</span>
+							<p>
+								迷宮管理組合へようこそ。<br>
+								こちらでは<span class="wo-site">ユークリッドの無限回廊</span>に関する各種手続きと、<br>
+								ご案内を承っております。
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>御用件を伺いましょう。</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>無限回廊探索報奨交換</span>
+										<p>
+											<span class="tag"><span>function</span></span>無限回廊探索報奨交換
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>アイテム保留所</span>
+										<p>
+											こちらでは無限回廊迷宮の探索報酬のうち、<br>
+											持ち切れなかったアイテムを一時的に保管しています。<br>
+											現在こちらでお預かりしているアイテムはありません。
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#03</span></span>回廊の宝玉交換</span>
+										<p>
+											無限回廊の迷宮より持ち帰られた<span class="wo-item">回廊の宝玉</span>を<br>
+											報奨品と交換しております。<br>
+											<span class="tag"><span>以下省略</span></span>
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#04</span></span>ユークリッドの無限回廊について</span>
+										<p>
+											<span class="tag"><span>appended</span></span> <a href="#ユークリッドの無限回廊について">ユークリッドの無限回廊について</a>
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#05</span></span>立ち去る</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option" id="ユークリッドの無限回廊について">
+							<span class="option"><span class="tag"><span>appended</span></span> ユークリッドの無限回廊について</span>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>何をお話しいたしましょう？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>無限回廊の迷宮について</span>
+										<div class="dialog">
+											<span class="dialog"><span class="tag"><span>dialogue</span></span>無限回廊の迷宮についてですね？</span>
+											<div class="options">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-01</span></span>無限回廊の迷宮について</span>
+													<p>
+														無限回廊の迷宮についてですね？<br>
+														「<span class="wo-site">ユークリッドの無限回廊</span>」からは様々な時代や場所の<br>
+														迷宮が次元回廊で連結されていると言われています。<br>
+														迷宮管理組合の調査の結果、探索可能となったエリアは<br>
+														それぞれ迷宮と呼ばれ、固有の名称を付けられてますが、<br>
+														一般的なダンジョンとは異なり、同一名称のエリア<br>
+														であっても<span class="wo-keyword">一定の期間で中の構造が変化</span>してしまう<br>
+														特徴を持っています。<br>
+														また、迷宮の探索にあたっては迷宮内部でのみ<br>
+														使用可能なテンポラリインベントリや<br>
+														地図の貸し出しも行っております。<br>
+														テンポラリインベントリに収納可能なアイテムや<br>
+														迷宮内部で使用可能なポリスマタ銅貨については<br>
+														<span class="wo-keyword">探索終了時に回収致します</span>のでご了承ください。<br>
+														<span class="tag"><span>back</span></span><span class="tag"><span>#root</span></span>
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-02</span></span>入場方法</span>
+													<p>
+														入場方法についてですね？<br>
+														迷宮探索許可を得た方であれば、スロープを下りて<br>
+														左側の<span class="wo-name">ルービック</span>より、探索可能な迷宮を<br>
+														ご案内しております。<br>
+														探索可能な迷宮を選択したのち、<br>
+														選択可能な階層へと出発してみてください。<br>
+														なお、パーティで御入場の際にはパーティメンバーで<br>
+														一緒に出発される他に、既に迷宮を探索中である<br>
+														パーティリーダーに合流することも可能です。<br>
+														ただしパーティリーダーが合流のできない階層まで<br>
+														進まれている場合、合流はできなくなります。<br>
+														それと、迷宮探索者の安全を確保するために<span class="wo-keyword">一つの<br>
+														ソウルに属する方からは、入場をお一人までに限らせて<br>
+														頂いております</span>のでご了承ください。<br>
+														<span class="tag"><span>back</span></span><span class="tag"><span>#root</span></span>
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-03</span></span>探索中断</span>
+													<p>
+														探索中断についてですね？<br>
+														探索内部に存在するエレベーターと呼ばれる設備より<br>
+														探索中断を行うことができます。<br>
+														探索中断を行うと迷宮内でのテンポラリインベントリ<br>
+														各種バフ、ポリスマタ銅貨の所持状態を記録します。<br>
+														探索中断の記録が存在する場合、入場時に再開を<br>
+														選ぶことで記録された状態から再開することが可能です。<br>
+														探索中断以外での<span class="wo-keyword">迷宮からのご退出の際には、<br>
+														テンポラリインベントリに格納可能なアイテムと、<br>
+														ポリスマタ銅貨を改修致します</span>のでご了承ください。<br>
+														<span class="tag"><span>back</span></span><span class="tag"><span>#root</span></span>
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-04</span></span>リタイア</span>
+													<p>
+														リタイアについてですね？<br>
+														<span class="wo-site">ユークリッドの無限回廊</span>は特殊な空間である影響で、<br>
+														迷宮案内では「帰還」「守護者の像への転送」を<br>
+														行うことができません。<br>
+														その代りに「リタイア」を選択することができます。<br>
+														リタイアを行った場合、入場時に迷宮管理組合が<br>
+														付与するの魔法の効果により、このエントランスまで<br>
+														安全確実に退避することができます。<br>
+														リタイアでの<span class="wo-keyword">迷宮からのご退出の際には、<br>
+														テンポラリインベントリに格納可能なアイテムと、<br>
+														ポリスマタ銅貨を回収致します</span>のでご了承ください。<br>
+														また、迷宮探索者の安全を確保するために、<br>
+														内部で<span class="wo-keyword">灰になられた場合は、強制的にリタイアと<br>
+														させて頂きます</span>のでご了承ください。<br>
+														<span class="tag"><span>back</span></span><span class="tag"><span>#root</span></span>
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-05</span></span>ステージクリア</span>
+													<p>
+														ステージクリアについてですね？<br>
+														各迷宮では、幾つかの階層を纏めたものを<br>
+														ステージと呼んでいます。<br>
+														ステージをクリアするとステージの攻略評価に<br>
+														応じて報酬を振り込みます。<br>
+														また、ステージクリアの特典として入場時に<br>
+														次のステージに直接入場する許可が発行されます。<br>
+														ステージを指定して入場については、<br>
+														入場制限が設定されたステージには直接入場できないので<br>
+														ご了承ください。<br>
+														各迷宮毎に定められた最後のステージをクリアすると<br>
+														エリアクリアとなります。<br>
+														エリアクリアの際には、各ステージの攻略評価のうち<br>
+														最高の評価を基準に迷宮攻略の評価を行い<br>
+														それに応じた報酬を振り込みいたします。<br>
+														報酬には、毎回振り込まれるモノ、毎日一回だけ振り込<br>
+														まれるモノ、攻略期間中に一回だけ振り込まれるモノと<br>
+														それぞれありますのでご参考にしてください。<br>
+														また、ステージの攻略評価のうち<span class="wo-keyword">ゲート攻略数の<br>
+														評価がEランクだった場合は、報酬お支払いの<br>
+														対象からは外させて頂きます</span>のでご了承ください。<br>
+														<span class="tag"><span>back</span></span><span class="tag"><span>#root</span></span>
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-06</span></span>バフの制限について</span>
+													<p>
+														バフの制限についてですね？<br>
+														<span class="wo-site">ユークリッドの無限回廊</span>は特殊な空間である影響で、<br>
+														このエントランスにいる間に付与された効果時間の<br>
+														ある<span class="wo-keyword">バフを迷宮内に持ち込む事はできません</span>。<br>
+														同じく<span class="wo-keyword">迷宮内で付与されたバフを<br>
+														外に持ち出すことはできません</span>。<br>
+														エントランスにいる間に付与されたバフは、<br>
+														ログアウト時にも有効期限が経過するものを除き<br>
+														迷宮から退出時に入場時と同じ状態で復元されます。<br>
+														迷宮内に強力な効果を持つアイテムを持ち込んだ際には<br>
+														退出時に効果が消滅する事を念頭に置いて<br>
+														ご使用の判断を行ってください。<br>
+														<span class="tag"><span>back</span></span><span class="tag"><span>#root</span></span>
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-07</span></span>攻略期間について</span>
+													<p>
+														攻略期間についてですね？<br>
+														迷宮管理組合では、各迷宮の構造変化が発生するまでの<br>
+														期間を「攻略期間」として設定しています。<br>
+														攻略帰還を過ぎると、各迷宮は構成が再構成され<br>
+														各自で記録された地図は全て役に立たないモノとなり、<br>
+														探索中であった方は強制的に退去して頂きます。<br>
+														攻略期間が切り替わると、各攻略期間毎に設定されて<br>
+														いた報酬などは再設定いたしますので、<br>
+														探索時の参考にしてください。<br>
+														<span class="tag"><span>back</span></span><span class="tag"><span>#root</span></span>
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-08</span></span>戻る</span>
+													<p>
+														<span class="tag"><span>back</span></span><span class="tag"><span>#root</span></span>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>迷宮の探索について</span>
+										<div class="dialog">
+											<span class="dialog"><span class="tag"><span>dialogue</span></span>迷宮の探索についてですね？</span>
+											<div class="options">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02-01</span></span>テンポラリイベントリ</span>
+													<p>
+														テンポラリインベントリについてですね？<br>
+														テンポラリインベントリとは、迷宮探索者が<br>
+														迷宮の探索を行う際に、迷宮管理組合より<br>
+														お貸ししている特殊なインベントリとなります。<br>
+														テンポラリインベントリは迷宮内部でのみ扱えます。<br>
+														テンポラリインベントリの中にはテンポラリインベントリ<br>
+														専用のアイテムのみを格納することができます。<br>
+														テンポラリインベントリに入るアイテムは、各種換金<br>
+														アイテムの他に強力な効果を持つアイテムなどが<br>
+														存在します。<br>
+														ただし、探索中断以外の方法で<span class="wo-keyword">迷宮から退去<br>
+														される場合には、テンポラリインベントリの<br>
+														中身は全て回収させて頂きます</span>。<br>
+														これは迷宮管理組合における更なる無限回廊の<br>
+														研究事業のため、迷宮探索者の皆さまから<br>
+														等しく回収いたしております。<br>
+														こちらは無限回廊への挑戦費用のようなものと<br>
+														お考えいただきたく、何とぞご了承ください。<br>
+														<span class="tag"><span>back</span></span><span class="tag"><span>#root</span></span>
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02-02</span></span>ポリスマタ銅貨</span>
+													<p>
+														ポリスマタ銅貨についてですね？<br>
+														ポリスマタ銅貨は、迷宮探索中にモンスターを撃破したり<br>
+														ステージをクリアすることの報酬として獲得可能な<br>
+														通貨です。<br>
+														ポリスマタ銅貨は迷宮内に存在するショップなどにおいて<br>
+														アイテムの購入や装備品の修理などに使用することが<br>
+														可能です。<br>
+														ただし、探索中断以外の方法で<span class="wo-keyword">迷宮から退去<br>
+														される場合には、ポリスマタ銅貨を全て<br>
+														回収させて頂きます</span>。<br>
+														無限回廊内で入手されたポリスマタ銅貨は、<br>
+														迷宮管理組合における更なる無限回廊の研究事業のために、<br>
+														冒険者の皆さまから等しく回収いたしております。<br>
+														こちらは無限回廊への挑戦費用のようなものと<br>
+														お考えいただきたく、何とぞご了承ください。<br>
+														<span class="tag"><span>back</span></span><span class="tag"><span>#root</span></span>
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02-03</span></span>オートマッピング</span>
+													<p>
+														オートマッピングについてですね？<br>
+														<span class="wo-site">ユークリッドの無限回廊</span>に存在する迷宮は、<br>
+														一定期間で地形が変動してしまう都合上<br>
+														恒常的な地図を製作することができません。<br>
+														ですので、迷宮探索者それぞれで地図を記録<br>
+														して頂くこととなります。<br>
+														迷宮探索の際には、<span class="wo-keyword">迷宮を歩きまわるだけで<br>
+														自動的に地図を記録</span>する道具をお貸しいたしますので<br>
+														御利用下さい。<br>
+														<span class="tag"><span>back</span></span><span class="tag"><span>#root</span></span>
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02-04</span></span>迷宮内限定の強化アイテム</span>
+													<p>
+														迷宮内限定の強化アイテムについてですね？<br>
+														迷宮内には「<span class="wo-item">宝珠</span>」と呼ばれる自己強化アイテムが<br>
+														存在しています。<br>
+														<span class="wo-item">宝珠</span>による強化バフには有効期限が無く、<br>
+														<span class="wo-keyword">迷宮探索を行っている間、永続的に効果を得られます</span>。<br>
+														また、同種の<span class="wo-item">宝珠</span>を重ねて使う事で、<br>
+														段階的により強力な効果を得ることが可能です。<br>
+														ただし、<span class="wo-keyword">探索中断以外の方法で迷宮の外に出ると<br>
+														効果は失われます</span>のでご了承ください。<br>
+														<span class="tag"><span>back</span></span><span class="tag"><span>#root</span></span>
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02-05</span></span>拾集品探索</span>
+													<p>
+														収集品探索についてですね？<br>
+														迷宮内の木箱や<ruby>壺<rt>つぼ</rt></ruby>、草むらといった怪しげな箇所を<br>
+														見かけたら調べてみることをお勧めします。<br>
+														ポリスマタ銅貨に換金可能な遺物や、<br>
+														魔法の封じされた巻物など強力なアイテムを<br>
+														見つけられるかも知れません。<br>
+														<span class="wo-keyword">収集品の獲得数は、攻略評価の評価対象</span><br>
+														ともしていますので、積極的な探索を<br>
+														期待いたします。<br>
+														<span class="tag"><span>back</span></span><span class="tag"><span>#root</span></span>
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02-06</span></span>グループ討伐宝箱</span>
+													<p>
+														グループ討伐宝箱についてですね？<br>
+														迷宮内に存在するモンスターは、グループで一つの<br>
+														宝箱を守っていることがあるようです。<br>
+														<span class="wo-keyword">モンスターのグループを壊滅させた際に<br>
+														隠されていた宝箱が出現する</span>ことがあります。<br>
+														アイテムの獲得を狙う際にはグループの<ruby>殲滅<rt>せんめつ</rt></ruby>を<br>
+														意識して探索してみてください。<br>
+														<span class="tag"><span>back</span></span><span class="tag"><span>#root</span></span>
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02-07</span></span>ミッションボード</span>
+													<p>
+														ミッションボードについてですね？<br>
+														標準的な探索可能迷宮では、迷宮管理組合からの<br>
+														依頼を各ステージ毎にミッションボードにて<br>
+														掲示しております。<br>
+														ミッションボードは各ステージ開始階層と<br>
+														各ステージ最終階層がひと組として設置<br>
+														しているケースが多いですね。<br>
+														開始層で受注したミッションを対応した<br>
+														終了層のミッションボードで報告して頂けると<br>
+														報酬をお支払いいたします。<br>
+														迷宮探索をより優位に進める為に<br>
+														是非ともご利用ください。<br>
+														<span class="tag"><span>back</span></span><span class="tag"><span>#root</span></span>
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02-08</span></span>迷宮の鍵</span>
+													<p>
+														<span class="wo-item">迷宮の鍵</span>についてですね？<br>
+														迷宮内でモンスターグループの討伐や、仕掛けを攻略<br>
+														する事で「<span class="wo-item">迷宮の鍵</span>」と呼ばれるアイテムを<br>
+														入手することがあります。<br>
+														迷宮内の各階層の遮る魔法障壁は、その障壁に<br>
+														対応した「<span class="wo-item">迷宮の鍵</span>」を付近の装置に使う事で<br>
+														解除することができます。<br>
+														一部の障壁は、一致しない「<span class="wo-item">迷宮の鍵</span>」で<br>
+														解除することもできますが、迷宮探索の攻略評価<br>
+														としては、正しい手段での解除を評価致します。<br>
+														特にステージの攻略評価のうち<span class="wo-keyword">ゲート攻略数の<br>
+														評価がEランクだった場合は、報酬お支払いの<br>
+														対象からは外させて頂きます</span>のでご了承ください。<br>
+														また、パーティで迷宮探索中である場合、<br>
+														「<span class="wo-item">迷宮の鍵</span>」の使用は同じ階層のパーティ内<br>
+														で共有されますのでご利用してみてください。<br>
+														<span class="tag"><span>back</span></span><span class="tag"><span>#root</span></span>
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02-09</span></span>戻る</span>
+													<p>
+														<span class="tag"><span>back</span></span><span class="tag"><span>#root</span></span>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#03</span></span>迷宮の探索で得られる報酬</span>
+										<div class="dialog">
+											<span class="dialog"><span class="tag"><span>dialogue</span></span>迷宮の探索で得られる報酬についてですね？</span>
+											<div class="options">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#03-01</span></span>ダータ銀貨</span>
+													<p>
+														ダータ銀貨についてですね？<br>
+														ダータ銀貨は、各迷宮の攻略に対して報酬として<br>
+														貸与している通貨です。<br>
+														ダータ銀貨は無限回廊探索報酬交換にて<br>
+														各種のアイテムとの交換を行っております。<br>
+														ダータ銀貨は、<span class="wo-site">ユークリッドの無限回廊</span>の迷宮より<br>
+														発見された非常に歴史的価値の高い貨幣であるため<br>
+														貸与という形にさせて頂いております。<br>
+														管理の都合上、<span class="wo-keyword">貸与上限は999,999枚</span>までと<br>
+														させて頂きますのでご了承ください。<br>
+														<span class="tag"><span>back</span></span><span class="tag"><span>#root</span></span>
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#03-02</span></span>アテナイ金貨</span>
+													<p>
+														アテナイ金貨についてですね？<br>
+														アテナイ金貨は、各迷宮の攻略に対して報酬として<br>
+														貸与している通貨です。<br>
+														アテナイ金貨は無限回廊探索報酬交換にて<br>
+														各種のアイテムとの交換を行っております。<br>
+														当てない金貨は、<span class="wo-site">ユークリッドの無限回廊</span>の迷宮より<br>
+														発見された非常に歴史的価値の高い貨幣であるため<br>
+														貸与という形にさせて頂いております。<br>
+														管理の都合上、<span class="wo-keyword">貸与上限は999,999枚</span>までと<br>
+														させて頂きますのでご了承ください。<br>
+														<span class="tag"><span>back</span></span><span class="tag"><span>#root</span></span>
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#03-03</span></span>無限回廊探索報奨交換</span>
+													<p>
+														無限回廊探索報酬交換についてですね？<br>
+														迷宮管理組合より貸与していますダータ銀貨、<br>
+														アテナイ金貨を無限回廊探索報酬交換より<br>
+														各種報奨品と交換しております。<br>
+														報奨品のラインナップにつきましては、<br>
+														常時提供している物の他にも、1日あたりの<br>
+														交換制限を設けているもの……<br>
+														日替わりで入れ替わるもの、一定の周期で<br>
+														入れ替わるものなど各種取り揃えております。<br>
+														報奨交換をご希望される場合、<br>
+														私に直接お申し付けください<br>
+														<span class="tag"><span>back</span></span><span class="tag"><span>#root</span></span>
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#03-04</span></span>戻る</span>
+													<p>
+														<span class="tag"><span>back</span></span><span class="tag"><span>#root</span></span>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#04</span></span>説明は十分</span>
+										<p>
+											<span class="tag"><span>empty</span></span><span class="footnote"></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li> ユークリッドの無限回廊初到着時は「如何いたしますか？」のダイアログに戻る</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img alt="迷宮管理組合 フォルニ" data-fancybox="euclids-infinite-corridors" class="lazyload" src="../common/placeholder.png" data-src="npcs/フォルニ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">迷宮管理組合 フォルニ</span>
+						<span class="coordinate">ユークリッドの無限回廊 エントランス C6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ホスピタリア">
+					<div class="header">
+						<span class="character">ホスピタリア</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>無限回廊宿泊所</span>
+						</p>
+						<div class="dialog">
+							<span class="dialog">
+								<span class="tag"><span>dialogue</span></span>
+								<span class="textbox" style="width: 570px;">どこでお休みになりますか？<br>所持金：<span class="wo-gold"><span class="var"><span>pocket</span></span> G</span></span>
+							</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>工具置き場 10 G</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>ordinary</span></span>平時</span>
+											<div class="dialog">
+												<span class="dialog"><span class="tag"><span>dialogue</span></span>効果：HP と MP 全回復 / コンディション 50 まで回復</span>
+												<div class="options">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#01-a</span></span>休む</span>
+														どうぞ　ごゆっくり！<br>
+														<span class="tag"><span>function</span></span> inn<br>
+														ふむふむ、次のレベルになるには……<br>
+														<span class="var"><span>next-exp</span></span> の経験値が必要ですね。<br>
+														では、お気をつけて！
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#01-b</span></span>やめる</span>
+														<p>
+															そうですか……。<br>
+															あまり無理しないでくださいね。
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>pocket</span></span>10 G 未満</span>
+											<p>
+												お金が足りませんよ？<br>
+												ウチもボランティアじゃないんで…。
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>枕木の簡易寝台 100 G</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>ordinary</span></span>平時</span>
+											<div class="dialog">
+												<span class="dialog"><span class="tag"><span>dialogue</span></span>効果：HP と MP 全回復 / コンディション 100 まで回復</span>
+												<div class="options">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#02-a</span></span>休む</span>
+														どうぞ　ごゆっくり！<br>
+														<span class="tag"><span>function</span></span> inn<br>
+														ふむふむ、次のレベルになるには……<br>
+														<span class="var"><span>next-exp</span></span> の経験値が必要ですね。<br>
+														では、お気をつけて！
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#02-b</span></span>やめる</span>
+														<p>
+															そうですか……。<br>
+															あまり無理しないでくださいね。
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>pocket</span></span>10 G 未満</span>
+											<p>
+												お金が足りませんよ？<br>
+												ウチもボランティアじゃないんで…。
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>従業員用寝室 3,000 G</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>ordinary</span></span>平時</span>
+											<div class="dialog">
+												<span class="dialog"><span class="tag"><span>dialogue</span></span>効果：HP と MP 全回復 / コンディション 160 まで回復</span>
+												<div class="options">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#03-a</span></span>休む</span>
+														どうぞ　ごゆっくり！<br>
+														<span class="tag"><span>function</span></span> inn<br>
+														ふむふむ、次のレベルになるには……<br>
+														<span class="var"><span>next-exp</span></span> の経験値が必要ですね。<br>
+														では、お気をつけて！
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#03-b</span></span>やめる</span>
+														<p>
+															そうですか……。<br>
+															あまり無理しないでくださいね。
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>pocket</span></span>10 G 未満</span>
+											<p>
+												お金が足りませんよ？<br>
+												ウチもボランティアじゃないんで…。
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>やめる</span>
+									<p>
+										あらあら、無理はいけませんよ。<br>
+										無限回廊に挑むなら万全の態勢を整えないとね。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="簡易宿屋 ホスピタリア" data-fancybox="euclids-infinite-corridors" class="lazyload" src="../common/placeholder.png" data-src="npcs/ホスピタリア.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">簡易宿屋 ホスピタリア</span>
+						<span class="coordinate">ユークリッドの無限回廊 エントランス D6</span>
+					</div>
+				</div>
+
+				<h4 id="m">ま行</h4>
+				<div class="lines" id="マイクローク">
+					<div class="header">
+						<span class="character">店員</span>
+						<span class="race">POR♀</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>マイクローク</span>
+							<span>WAREHOUSE</span>
+						</p>
+						<p>
+							いらっしゃいませ。<br>
+							お客様の持ち物やお金をお預かりいたします。<br>
+							<span class="tag"><span>function</span></span> mycloak
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="マイクローク 店員" data-fancybox="euclids-infinite-corridors" class="lazyload" src="../common/placeholder.png" data-src="npcs/マイクローク.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">マイクローク 店員</span>
+						<span class="coordinate">ユークリッドの無限回廊 エントランス D6</span>
+					</div>
+				</div>
+
+				<h4 id="r">ら行</h4>
+				<div class="lines" id="ルービック">
+					<div class="header">
+						<span class="character">ルービック</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> ユークリッドの無限回廊初到着時</span>
+							<p>
+								おおっと、大変申し訳ないが<br>
+								<span class="wo-item">ユークリッドの無限回廊入場許可証</span>を持っていない奴に<br>
+								無限回廊内の迷宮に案内はできないぞ。<br>
+								無限回廊の迷宮に興味があるなら、<br>
+								向かって右のスロープを上がった先に事務所がある。<br>
+								<span class="wo-name">フォルニ</span>のお嬢さんの所で手続きをするといい。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> <span class="wo-item">ユークリッドの無限回廊入場許可証</span>入手後</span>
+							<p>
+								各褒章の支給品を預かっている。<br>
+								受け取っていくといい。<br>
+								ここから無限回廊内の迷宮へと挑めるぞ。<br>
+								どうする？<br>
+								<span class="tag"><span>function</span></span> DungeonGuide (limited)
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="迷宮案内 ルービック" data-fancybox="euclids-infinite-corridors" class="lazyload" src="../common/placeholder.png" data-src="npcs/ルービック.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">迷宮案内 ルービック</span>
+						<span class="coordinate">ユークリッドの無限回廊 エントランス D6</span>
+					</div>
+				</div>
+			</article>
+
+			<hr class="offset-killer">
+			<div id="disqus-space">
+				<p id="comment-attention">
+					名前を入力しようとすると表示される「ゲストとして投稿する」にチェックを入れるとDISQUSに登録しなくてもコメントすることができます。<br>
+					メールアドレスは入力必要ですが DISQUS で管理され、投稿したコメントに表示されることも私にも通知されることもありません。<br>
+					架空のメールアドレスでも可能ですので、お気軽にコメントしてください！
+				</p>
+				<aside id="toc-disqus">
+					<div id="disqus_thread"></div>
+				</aside>
+				<script type="text/javascript">
+					( function () {
+						var dsq = document.createElement( 'script' );
+						dsq.type = 'text/javascript';
+						dsq.async = true;
+						dsq.src = '//miramiku.disqus.com/embed.js';
+						( document.getElementsByTagName( 'head' )[ 0 ] || document.getElementsByTagName( 'body' )[ 0 ] ).appendChild( dsq );
+					}() );
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+			</div>
+		</div>
+	</main>
+
+	<div id="toc">
+		<ul>
+			<li id="back2top"><a href="#top">トップページ</a></li>
+			<li><a href="#list">NPC リスト</a></li>
+			<li><a href="#log">会話ログ</a>
+				<ul>
+					<li><a href="#a">あ行</a></li>
+					<li><a href="#k">か行</a></li>
+					<li><a href="#h">は行</a></li>
+					<li><a href="#m">ま行</a></li>
+					<li><a href="#r">ら行</a></li>
+				</ul>
+			</li>
+		<li id="jump2disqus"><a href="#toc-disqus">コメント</a></li>
+		</ul>
+	</div>
+
+	<script>
+		( function ( i, s, o, g, r, a, m ) {
+			i[ 'GoogleAnalyticsObject' ] = r; i[ r ] = i[ r ] || function () {
+				( i[ r ].q = i[ r ].q || [] ).push( arguments )
+			}, i[ r ].l = 1 * new Date(); a = s.createElement( o ),
+				m = s.getElementsByTagName( o )[ 0 ]; a.async = 1; a.src = g; m.parentNode.insertBefore( a, m )
+		} )( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
+		ga( 'create', 'UA-46801675-2', 'auto' );
+		ga( 'send', 'pageview' );
+	</script>
+</body>
+
+</html>
