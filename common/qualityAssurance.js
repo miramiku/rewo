@@ -72,7 +72,7 @@ QA.ragularUseCharacters = ( function () {
 		_chars += String.fromCharCode( i );
 	}
 	_chars += " !#$%&'()=~|-^@[];:`{}+*,./_<>?\\\"";
-	_chars += "0123456789０１２３４５６７８９ー～．　，。、・；：｛｝「」［］（）【】『』！？★々／‐♪♂♀＊×…";
+	_chars += "0123456789０１２３４５６７８９ー～．　，。、・；：｛｝「」［］（）【】『』！？★々―／‐＝♪♂♀＊×…";
 	_chars += "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	_chars += "ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ";
 	_chars += "あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをんゑぁぃぅぇぉっゃゅょ";
