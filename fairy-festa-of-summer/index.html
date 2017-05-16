@@ -1,0 +1,2577 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>夏の精霊祭 | Recollection of Wizardry Online</title>
+
+	<!-- meta data -->
+	<meta name="author" content="Miku">
+
+	<!-- scripts -->
+	<script src="../common/core.js" defer></script>
+
+	<!-- style / favicon -->
+	<link href="../common/foundation.css" rel="stylesheet" type="text/css">
+	<link href="../common/fancybox.css" rel="stylesheet" type="text/css">
+	<link href="../favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body id="rewo">
+	<header data-bg="../common/background.jpg">
+		<div id="header-content">
+			<a href="https://miramiku.github.io/rewo/" id="page-info">
+				<span id="meta-info" class="page-headings">Seasonal Event</span>
+				<span id="major-title" class="page-headings">夏の精霊祭</span>
+				<span id="title-divider" class="page-headings"></span>
+				<span id="minor-title" class="page-headings">Fairy Festa of Summer</span>
+			</a>
+
+			<footer>
+				<ul>
+					<li><a href="http://miramiku.github.io/"><span class="basis-icon me"> </span> みく(๑・ω・๑)</a></li>
+					<li><a href="https://twitter.com/miramiku"><span class="basis-icon tw"> </span> @miramiku</a></li>
+					<li><a href="https://github.com/miramiku/rewo"><span class="basis-icon gh"> </span> Repository</a></li>
+				</ul>
+			</footer>
+
+			<p id="wo-credit">
+				"Wizardry&reg;" of GMO Gamepot Inc. All rights reserved.<br>
+				Wizardry Renaissance&trade; &copy;2009 GMO Gamepot Inc.<br>
+				All rights reserved.
+			</p>
+		</div>
+	</header>
+
+	<main id="top">
+		<div id="main-inner">
+			<article>
+				<blockquote class="epigraph">
+					花火のように、賑やかさが過ぎて寂しさが戻る。
+					<div class="ref">
+						<span class="cite">ニキ日記～世界旅行編～ Cheetah Technology Corporation Limited</span>
+						<span class="origin">縦ロールセミロング</span>
+					</div>
+				</blockquote>
+
+				<h3 id="list">NPC リスト</h3>
+
+				<h4 id="npc-square">英雄の集まる広場</h4>
+				<table class="npc-list">
+					<thead>
+						<tr><th></th><th>NPC 名</th><th></th><th>NPC 名</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>G7</td><td><a href="#アラハゥイa">仮面の貴族 アラハゥイ</a></td><td>F7</td><td><a href="#イシークの霊">守護者 イシークの霊</a></td></tr>
+						<tr><td>G7</td><td><a href="#剛力ヒゲ夫">精霊祭に誘われし幽霊 剛力ヒゲ夫</a></td><td>G6</td><td><a href="#トレジャーハンターの幽霊">精霊祭に誘われし幽霊 トレジャーハンターの幽霊</a></td></tr>
+						<tr><td>G7</td><td><a href="#名を失いつつある幽霊">精霊祭に誘われし幽霊 名を失いつつある幽霊</a></td><td></td><td></td></tr>
+					</tbody>
+				</table>
+
+				<h4 id="npc-alley">闇を受け入れた者達の路地</h4>
+				<table class="npc-list">
+					<thead>
+						<tr><th></th><th>NPC 名</th><th></th><th>NPC 名</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>H4</td><td><a href="#アラハゥイb">仮面の貴族 アラハゥイ</a></td><td>H5</td><td><a href="#かつて悪名を轟かせた幽霊">精霊祭に誘われし幽霊 かつて悪名を轟かせた幽霊</a></td></tr>
+						<tr><td>H6</td><td><a href="#名もなき幽霊">精霊祭に誘われし幽霊 名もなき幽霊</a></td><td>H5</td><td><a href="#よいどれ幽霊">精霊祭に誘われし幽霊 よいどれ幽霊</a></td></tr>
+					</tbody>
+				</table>
+
+				<h4 id="npc-station">レーヴェンアンタイル</h4>
+				<table class="npc-list">
+					<thead>
+						<tr><th></th><th>NPC 名</th><th></th><th>NPC 名</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>G6</td><td><a href="#コヨード">酒屋のおっちゃん コヨード</a></td><td>H6</td><td><a href="#フルーニュ">屋台のばっちゃん フルーニュ</a></td></tr>
+						<tr><td>I6</td><td><a href="#ボリタック">くじ引き屋のおっちゃん ボリタック</a></td><td>H6</td><td><a href="#スナイパー・ジョー">射的屋のおっちゃん スナイパー・ジョー</a></td></tr>
+						<tr><td>H7</td><td><a href="#ヴォーツラフ">夜店のおっちゃん ヴォーツラフ</a></td><td>G7</td><td><a href="#アンゴラ">うさぎのおっちゃん アンゴラ</a></td></tr>
+						<tr><td>G7</td><td><a href="#デカバニー">カラーバニー デカバニー</a></td><td>G7</td><td><a href="#ミニバニー">カラーバニー ミニバニー</a></td></tr>
+						<tr><td>G7</td><td><a href="#ファッティバニー">カラーバニー ファッティバニー</a></td><td>G7</td><td><a href="#プチバニー">カラーバニー プチバニー</a></td></tr>
+						<tr><td>G6</td><td><a href="#ドドドン">太鼓の名将 ドドドン</a></td><td>G6</td><td><a href="#フォーセス">怪しい商人 フォーセス</a></td></tr>
+						<tr><td>G6</td><td><a href="#ドンドコドン">太鼓の大将 ドンドコドン</a></td><td>G6</td><td><a href="#メロン">スイカのおねぇさん メロン</a></td></tr>
+					</tbody>
+				</table>
+
+				<h3 id="enemies">モンスター</h3>
+				<table class="enemies">
+					<thead>
+						<tr>
+							<th></th>
+							<th>モンスター名<br>Literal</th>
+							<th>解釈</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><img alt="ドレッドノートちゃん" data-fancybox="enemies" class="lazyload" src="../common/placeholder.png" data-src="enemies/dreadnought-chan.jpg"></td>
+							<td>
+								<span class="display"><span class="syn">かわいいウサギ</span>ドレッドノートちゃん</span>
+								<span class="literal"><span class="syn">Lovely Bunny</span>Dreadnought-chan</span>
+							</td>
+							<td>
+								bunny: &lt;ウサギの愛称&gt; うさちゃん<br>
+								dreadnought: 恐れ知らず
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3 id="log">会話ログ</h3>
+				<h4 id="lines-square">英雄の集まる広場</h4>
+				<div class="lines" id="アラハゥイa">
+					<div class="header">
+						<span class="character">アラハゥイ</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>live status</span></span>通常時 かつ <span class="tag"><span>soul rank</span></span>SR 2 未満</span>
+							<p>
+								おや。貴殿は冒険者ですかな？<br>
+								私は落ちぶれた貴族の<span class="wo-name">アラハゥイ</span>と申します。<br>
+								ちょっと冒険者に依頼がありまして参りました、ええ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>live status</span></span>通常時 かつ <span class="tag"><span>soul rank</span></span>SR 2 以上</span>
+							<div class="either">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>first</span></span>初回</span>
+									<p>
+										おや。貴殿は冒険者ですかな？<br>
+										私は落ちぶれた貴族の<span class="wo-name">アラハゥイ</span>と申します。<br>
+										ちょっと冒険者に依頼がありまして参りました、ええ。<br>
+										夏の精霊祭の季節ですなぁ。ご存知でしたか？<br>
+										アザルス大陸に古くからある習慣で、この時期になると<br>
+										肉体を失った魂が所縁のある地に戻るそうです、ええ。<br>
+										夏の精霊祭は、その祖霊を鎮魂するための祭りだとか。<br>
+										胡散臭い話だと思いますか？<br>
+										ところが、迷信という訳でもないようでしてねぇ、ええ。<br>
+										貴方には見えませんかねぇ？<br>
+										ほら……すぐ後ろに……<br>
+										這いよる名状したがい何かが……<br>
+										それは冗談ですが。本当に普段は見かけない霊魂が<br>
+										この辺りにポツポツ沸いていましてねぇ、ええ。<br>
+										それで人間臭いこの場にわざわざ出向いたのですとも。
+									</p>
+									<p class="descriptive">
+										アラハゥイは懐から一粒の薬を取り出した。
+									</p>
+									<p>
+										おおっと、こんな所に<span class="wo-item">幽体離脱の丹</span>が！<br>
+										……ふむ、これも何かの縁というものですかねぇ。<br>
+										もし霊が気になるなら、おひとついかがですかな？
+									</p>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>おひとついかがですかな？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01</span></span>貰う</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>not have</span></span><span class="wo-item">幽体離脱の丹</span>を所持していない</span>
+														<p>
+															<span class="tag"><span>item</span></span>幽体離脱の丹<br>
+															この薬は幽体離脱の丹。一粒飲めばあっという間に<br>
+															魂状態になるので、霊魂と会話する事も出来るでしょう。<br>
+															それでは、おひとつどうぞ。<br>
+															但し、ご注意を。これをお飲みになると<br>
+															死　ん　で　し　ま　い　ま　す　よ　！<br>
+															当然、丹の効果時間は無制限。お得でしょうとも、ええ。<br>
+															生き返りたい時はどこかで蘇生を試みて下さい。<br>
+															蘇生できるかどうかはあなたの言動次第でしょうけどね。<br>
+															あぁ、私は気に食わないので絶対行きませんが<br>
+															魂状態でクォパティ寺院に行けば、<br>
+															珍しいモノを見れるそうですよ。
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>have</span></span><span class="wo-item">幽体離脱の丹</span>を所持している</span>
+														<p>
+															おや、既にお持ちのようで……<br>
+															もったいぶる気は無いのですが、<br>
+															この薬はけっして安いものではないのですよ。<br>
+															どんな魔法障壁や防御魔法をもすり抜け、<br>
+															稀代の名医でも死因を判明できないという<br>
+															素晴らしい毒殺の・・・おおっと、口が滑りましたな。<br>
+															とにかく、いまお持ちの丹を使いきっても<br>
+															まだ必要であれば私が大量購入したコレを<br>
+															再びお渡し致しましょう。
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02</span></span>貰わない</span>
+												<p>
+													おや、必要ないと？　それはご賢明なことで……。<br>
+													まあ、暫くはこちらにいるので、気が向いたら<br>
+													また話しかけて下さい、ええ……ククク……。
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>again</span></span>２回目以降</span>
+									<p>
+										おや。貴殿は冒険者ですかな？<br>
+										私は落ちぶれた貴族の<span class="wo-name">アラハゥイ</span>と申します。<br>
+										ちょっと冒険者に依頼がありまして参りました、ええ。
+									</p>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>何か御用で？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01</span></span>精霊祭について</span>
+												<p>
+													夏の精霊祭の季節ですなぁ。ご存知でしたか？<br>
+													アザルス大陸に古くからある習慣で、この時期になると<br>
+													肉体を失った魂が所縁のある地に戻るそうです、ええ。<br>
+													夏の精霊祭は、その祖霊を鎮魂するための祭りだとか。<br>
+													胡散臭い話だと思いますか？<br>
+													ところが、迷信という訳でもないようでしてねぇ、ええ。<br>
+													貴方には見えませんかねぇ？<br>
+													ほら……すぐ後ろに……<br>
+													這いよる名状したがい何かが……<br>
+													それは冗談ですが。本当に普段は見かけない霊魂が<br>
+													この辺りにポツポツ沸いていましてねぇ、ええ。<br>
+													それで人間臭いこの場にわざわざ出向いたのですとも。
+												</p>
+												<p class="descriptive">
+													アラハゥイは懐から一粒の薬を取り出した。
+												</p>
+												<p>
+													おおっと、こんな所に<span class="wo-item">幽体離脱の丹</span>が！<br>
+													……ふむ、これも何かの縁というものですかねぇ。<br>
+													もし霊が気になるなら、おひとついかがですかな？
+												</p>
+												<div class="dialog">
+													<span class="dialog"><span class="tag"><span>dialogue</span></span>おひとついかがですかな？</span>
+													<div class="options">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#01</span></span>貰う</span>
+															<div class="either">
+																<span class="gauge"></span>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>not have</span></span><span class="wo-item">幽体離脱の丹</span>を所持していない</span>
+																	<p>
+																		<span class="tag"><span>item</span></span>幽体離脱の丹<br>
+																		この薬は幽体離脱の丹。一粒飲めばあっという間に<br>
+																		魂状態になるので、霊魂と会話する事も出来るでしょう。<br>
+																		それでは、おひとつどうぞ。<br>
+																		但し、ご注意を。これをお飲みになると<br>
+																		死　ん　で　し　ま　い　ま　す　よ　！<br>
+																		当然、丹の効果時間は無制限。お得でしょうとも、ええ。<br>
+																		生き返りたい時はどこかで蘇生を試みて下さい。<br>
+																		蘇生できるかどうかはあなたの言動次第でしょうけどね。<br>
+																		あぁ、私は気に食わないので絶対行きませんが<br>
+																		魂状態でクォパティ寺院に行けば、<br>
+																		珍しいモノを見れるそうですよ。
+																	</p>
+																</div>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>have</span></span><span class="wo-item">幽体離脱の丹</span>を所持している</span>
+																	<p>
+																		おや、既にお持ちのようで……<br>
+																		もったいぶる気は無いのですが、<br>
+																		この薬はけっして安いものではないのですよ。<br>
+																		どんな魔法障壁や防御魔法をもすり抜け、<br>
+																		稀代の名医でも死因を判明できないという<br>
+																		素晴らしい毒殺の・・・おおっと、口が滑りましたな。<br>
+																		とにかく、いまお持ちの丹を使いきっても<br>
+																		まだ必要であれば私が大量購入したコレを<br>
+																		再びお渡し致しましょう。
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#02</span></span>貰わない</span>
+															<p>
+																おや、必要ないと？　それはご賢明なことで……。<br>
+																まあ、暫くはこちらにいるので、気が向いたら<br>
+																また話しかけて下さい、ええ……ククク……。
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02</span></span>死神の胃袋について<span class="footnote"></span></span>
+												<p class="facility">
+													<span>異なる門</span>
+													<span>ANOTHER GATE</span>
+												</p>
+												<p>
+													ほう、<span class="wo-item">死神の胃袋</span>ですか？<br>
+													それはまた名状しがたい品ですなぁ……<br>
+													知ってるいるのかと？　えええ、まぁ、ねぇ……<br>
+													<span class="wo-site">死神の胃袋</span>ねぇ……ふむ……<br>
+													あの黄色がいろいろと無駄な足掻きをしているようで……<br>
+													いえ、すみません。こちらの話です。<br>
+													暑い季節ですしねぇ。肝試しに行くのですか？<br>
+													決して安全とは言えない場所ですので、勧めませんが、<br>
+													<span class="wo-site">死神の胃袋</span>への道ならば案内しましょう。ええ……。<br>
+													でも、よろしいのですか？<br>
+													「<span class="wo-item">封魔の刻印</span>」をお持ちでないと、<br>
+													あそこへ行っても何もできませんよ。ええ……。
+												</p>
+												<div class="append">
+													<span class="gauge"></span>
+													<p>
+														<span class="option">１日のうち初回のみ追加</span>
+														おっと、そうそう。<br>
+														今年は面白いものを持ってきているのですよ。<br>
+														<span class="tag"><span>item</span></span>混沌とした虹の鍵<br>
+														その鍵を持って<span class="wo-item">死神の胃袋</span>の奥に行けば<br>
+														何かイイモノが手に入るかも知れませんね。ええ。<br>
+														日が変わったらまたお渡しするとしましょう。
+													</p>
+												</div>
+												<p>
+													<span class="tag"><span>function</span></span>DungeonSelect(limited)
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>soul status</span></span>魂時</span>
+							<p>
+								おや、おや。ずいぶんと生きのいい幽霊ですねぇ。<br>
+								まだ、ロストはしていない？<br>
+								それは残念、ククク……。<br>
+								いえ、この時期は様々な幽霊が見えますのでね。ええ……。<br>
+								あぁ、私は気に食わないので絶対行きませんが<br>
+								魂状態でクォパティ寺院に行けば、<br>
+								珍しいモノを見れるそうですよ。
+							</p>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li><a href="#イシークの霊">イシークの霊</a>の「何をすればいい？」を選択した後に出現</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img alt="仮面の貴族 アラハゥイ" data-fancybox="lines-square" class="lazyload" src="../common/placeholder.png" data-src="npcs/アラハゥイa.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">仮面の貴族 アラハゥイ</span>
+						<span class="coordinate">港町イルファーロ 英雄の集う広場 G7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="イシークの霊">
+					<div class="header">
+						<span class="character">イシークの霊</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<p class="descriptive">
+							美しいエルフの女性が立っている。<br>
+							彼女からは、他の幽霊とは異なる<br>
+							力強い気配を感じる。
+						</p>
+						<div class="either">
+							<span class="gauge"></span>
+							<div class="option">
+								<span class="option"><span class="tag"><span>first</span></span>初回</span>
+								<p>
+									ほう……我が悠久の魂に触れる者がいるとは……<br>
+									我は遥かなる神々の時代、神龍リィン・リーアンにより、<br>
+									世界の均衡を司る「守護者」に選ばれた者の一人。<br>
+									億の精霊を操り、兆の呪術を唱えし術師。<br>
+									我が名は<span class="wo-name">イシーク</span>。高貴なるエルフ族の巫女。<br>
+									宇宙の現在過去未来を全て記憶する<br>
+									アカシックレコードを観る力を持つ。<br>
+									貴殿の魂、懐かしい色をしている……そうか。<br>
+									そういうことか……<br>
+									ふ……我らが血族は幾時代を経てもこうして……。<br>
+									これは呪いなのかもしれぬな……。<br>
+									何のことか理解らぬのなら、それも幸せな事であろう。<br>
+									だが、心せよ。我が姿を見た貴殿は、<br>
+									我ら守護者の誰かの血を引いているに違いない。<br>
+									貴殿もいずれ守護者の使命に目覚めることになろうが……<br>
+									今の貴殿は脆弱すぎる。<br>
+									それでは使命を帯びることはできない。<br>
+									だが、我ら守護者の子孫よ。<br>
+									異界の神々を退けるためであれば、今この時に<br>
+									その力を貸してもらう必要があるのだ。
+								</p>
+							</div>
+							<div class="option">
+								<span class="option"><span class="tag"><span>again</span></span>２回目以降</span>
+								<p>
+									我が名は<span class="wo-name">イシーク</span>。高貴なるエルフ族の巫女。<br>
+									世界の均衡を司る「守護者」に選ばれた者の一人。<br>
+									貴殿の口から舞い散る言の葉を聞こう。
+								</p>
+							</div>
+						</div>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>なにようだ？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>事の始まりは？</span>
+									<p>
+										まずはこのアザルス大陸の話をしなければなるまい……<br>
+										この地には我らが神龍リィン・リーアンが眠っている。<br>
+										御身に<ruby>楔<rt>くさび</rt></ruby>を打たれながらも、忌まわしき異界の神々と共に<br>
+										この大陸の下に居られる……いや、この大陸自体が<br>
+										神龍であると言ってもいいだろう。<br>
+										だが、蒸し暑い夏の時だけは<br>
+										眠りが浅くなってしまわれる。<br>
+										その影響で、本来ならば神龍の導きで<br>
+										魂の循環に赴く魂たちが生前を懐かしむように<br>
+										地上に数日だけ舞い戻ってしまうのだ。<br>
+										地上に舞い戻った魂達は、己の血族の行く末を見守り、<br>
+										再び魂の循環に入る。ほんの数日の戯れだ。<br>
+										しかし、その戯れですら、<br>
+										忌まわしき者の前では愚行となる。<br>
+										異界の神々の一柱を担う邪神は、なんということか<br>
+										己の性質だけを「こちら側」に飛ばし、<ruby>眷属<rt>けんぞく</rt></ruby>を生み出して<br>
+										夏に舞い降りる魂を糧に、復活しようとしている。<br>
+										神龍によって施された異界の神々への封印は絶対だ。<br>
+										神龍が<ruby>楔<rt>くさび</rt></ruby>と共に眠り続けている限り、な……。<br>
+										だがまさか性質だけ抜けてこようとは……<br>
+										とにかく、その一柱の力は、刻一刻と強まっている……。<br>
+										このままでは大いなる災がこの世を覆うだろう。<br>
+										我が始祖の守護者がこれを阻止したいところだが、<br>
+										もはや数千、数万もの時を経て実態を持たぬこの身では、<br>
+										この世界に干渉することはできぬ。<br>
+										そこで、未熟ではあるが、我らが血を引きし貴殿に、<br>
+										邪神の魂狩を防いでもらいたい。<br>
+										邪神と戦えとは言わぬ。魂が送られぬようにするだけだ。<br>
+										前にも言ったが、封印されし一柱は性質のみを飛ばし<br>
+										<span class="wo-keyword">ソウルイーター</span>に酷似した<ruby>眷属<rt>けんぞく</rt></ruby>を生み、魂を狩っている。<br>
+										狩った魂は魔具「<span class="wo-keyword">魂の<ruby>嘆壺<rt>たんこ</rt></ruby></span>」を通じて邪神を送られる。<br>
+										この本来はあってはならぬ巡回の妨害を<br>
+										断ち切らねばならぬのだ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>何をすればいい？</span>
+									<p>
+										貴殿に頼みたいのは、「<span class="wo-keyword">魂の<ruby>嘆壺<rt>たんこ</rt></ruby></span>」を封印することだ。<br>
+										だが、封印するには別のものが必要だ。<br>
+										「<span class="wo-keyword">魂の<ruby>嘆壺<rt>たんこ</rt></ruby></span>」を封印するための道具は<br>
+										各地の魔物の生命力を利用して作られた、<br>
+										「<span class="wo-item">封魔の刻印</span>」だ。<br>
+										この「<span class="wo-item">封魔の刻印</span>」を得るためには<br>
+										守護者の地を引きし者の持つ、<br>
+										多量の稀有な気（オド）を必要とする。<br>
+										各地の魔物たちを討伐した際に、<br>
+										その気（オド）を使用して「<span class="wo-item">封魔の刻印</span>」を生成する。<br>
+										特殊な術式は……これだ。
+									</p>
+									<p class="descriptive">
+										イシークの手が光ったかと思うと、<br>
+										貴方の身体が火照るように熱くなった。
+									</p>
+									<p>
+										貴殿はいつも通り戦えばいい。<br>
+										今施した術式で、貴殿の特別な気が魔物の魂に反応して<br>
+										「<span class="wo-item">封魔の刻印</span>」を生成することだろう。<br>
+										今年の邪神の気配は例年に比べてとても弱い。<br>
+										よもや無理な顕現による消耗でもしたのであろうか？<br>
+										しかし、これはまさに好機である。<br>
+										邪神の力が弱まったが故、貴殿には複数の「<span class="wo-item">封魔の刻印</span>」を<br>
+										使った連続封印を行う術も授けておこう。<br>
+										ひとつひとつ試みるよりも精度は落ちるが<br>
+										「<span class="wo-item">封魔の刻印</span>」を多く集める事ができるのであれば<br>
+										役立つかも知れぬ。<br>
+										よいか。守護者の血を引きし者よ。<br>
+										各地の魔物を倒して得られる「<span class="wo-item">封魔の刻印</span>」を集め、<br>
+										<span class="wo-site">死神の胃袋</span>にある「<span class="wo-keyword">魂の<ruby>嘆壺<rt>たんこ</rt></ruby></span>」を封印するのだ。<br>
+										「<span class="wo-keyword">魂の<ruby>嘆壺<rt>たんこ</rt></ruby></span>」を封印した証である、<br>
+										「<span class="wo-item">封印の証</span>」を集めてくれば、<br>
+										初代<span class="wo-name">イシーク</span>の名において、礼を尽くそう。<br>
+										今年の術式は微細なる故、<br>
+										<span class="wo-item">封魔の刻印</span>を集めるのは難しいだろう。<br>
+										だがその分、充足たる礼を約束しよう。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>封印の証と交換<span class="footnote"></span></span>
+									<p>
+										「<span class="wo-keyword">魂の<ruby>嘆壺<rt>たんこ</rt></ruby></span>」を封印した証である、<br>
+										「<span class="wo-item">封印の証</span>」を集めてくれば、<br>
+										初代<span class="wo-name">イシーク</span>の名において、礼を尽くそう。
+									</p>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>魂の<ruby>嘆壺<rt>たんこ</rt></ruby>を封印した証を見せよ。</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01</span></span>封印の証【破邪】を 1 枚渡す</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+														<p>
+															<span class="tag"><span>item</span></span>魂のスフィア【破邪】<br>
+															<span class="wo-keyword">魂の<ruby>嘆壺<rt>たんこ</rt></ruby></span>【邪心】を封印してきたか。<br>
+															これで、かの一柱に送られる力も弱まったことだろう。<br>
+															感謝しよう。我らが血を引きし者よ。<br>
+															しかし、かの一柱の<ruby>眷属<rt>けんぞく</rt></ruby>は不滅。<br>
+															少しでも多くの霊を救うためにも、<br>
+															引き続きこの使命を果たされることを望む。
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>lack</span></span>所持数不足</span>
+														<p>
+															<span class="wo-item">封印の証【破邪】</span>の数が足りぬな。
+														</p>
+													</div>
+												</div>
+												<p>
+													<span class="tag"><span>back</span></span>魂の<ruby>嘆壺<rt>たんこ</rt></ruby>を封印した証を見せよ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02</span></span>封印の証【普遍】を 1 枚渡す</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+														<p>
+															<span class="tag"><span>item</span></span>魂のスフィア【普遍】<br>
+															<span class="wo-keyword">魂の<ruby>嘆壺<rt>たんこ</rt></ruby></span>【怠惰】を封印してきたか。<br>
+															これで、かの一柱に送られる力も弱まったことだろう。<br>
+															感謝しよう。我らが血を引きし者よ。<br>
+															しかし、かの一柱の<ruby>眷属<rt>けんぞく</rt></ruby>は不滅。<br>
+															少しでも多くの霊を救うためにも、<br>
+															引き続きこの使命を果たされることを望む。
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>lack</span></span>所持数不足</span>
+														<p>
+															<span class="wo-item">封印の証【普遍】</span>の数が足りぬな。
+														</p>
+													</div>
+												</div>
+												<p>
+													<span class="tag"><span>back</span></span>魂の<ruby>嘆壺<rt>たんこ</rt></ruby>を封印した証を見せよ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03</span></span>封印の証【昇華】を 1 枚渡す</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+														<p>
+															<span class="tag"><span>item</span></span>魂のスフィア【昇華】<br>
+															<span class="wo-keyword">魂の<ruby>嘆壺<rt>たんこ</rt></ruby></span>【退嬰】を封印してきたか。<br>
+															これで、かの一柱に送られる力も弱まったことだろう。<br>
+															感謝しよう。我らが血を引きし者よ。<br>
+															しかし、かの一柱の<ruby>眷属<rt>けんぞく</rt></ruby>は不滅。<br>
+															少しでも多くの霊を救うためにも、<br>
+															引き続きこの使命を果たされることを望む。
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>lack</span></span>所持数不足</span>
+														<p>
+															<span class="wo-item">封印の証【昇華】</span>の数が足りぬな。
+														</p>
+													</div>
+												</div>
+												<p>
+													<span class="tag"><span>back</span></span>魂の<ruby>嘆壺<rt>たんこ</rt></ruby>を封印した証を見せよ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#04</span></span>封印の証【破邪】を 10 枚渡す</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+														<p>
+															<span class="tag"><span>item</span></span>魂のスフィア【破邪】 x11<br>
+															これは沢山の<span class="wo-keyword">魂の<ruby>嘆壺<rt>たんこ</rt></ruby></span>【邪心】を封印したものだ……。<br>
+															これで、かの一柱……邪神ハスターに送られる力も<br>
+															大いに弱まったことだろう。深く礼を言う。<br>
+															しかし、邪神ハスターの<ruby>眷属<rt>けんぞく</rt></ruby>は不滅。<br>
+															少しでも多くの霊を救うためにも、<br>
+															引き続きこの使命を果たされることを望む。
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>lack</span></span>所持数不足</span>
+														<p>
+															<span class="wo-item">封印の証【破邪】</span>の数が足りぬな。
+														</p>
+													</div>
+												</div>
+												<p>
+													<span class="tag"><span>back</span></span>魂の<ruby>嘆壺<rt>たんこ</rt></ruby>を封印した証を見せよ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#05</span></span>封印の証【普遍】を 10 枚渡す</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+														<p>
+															<span class="tag"><span>item</span></span>魂のスフィア【普遍】 x11<br>
+															これは沢山の<span class="wo-keyword">魂の<ruby>嘆壺<rt>たんこ</rt></ruby></span>【怠惰】を封印したものだ……。<br>
+															これで、かの一柱……邪神ハスターに送られる力も<br>
+															大いに弱まったことだろう。深く礼を言う。<br>
+															しかし、邪神ハスターの<ruby>眷属<rt>けんぞく</rt></ruby>は不滅。<br>
+															少しでも多くの霊を救うためにも、<br>
+															引き続きこの使命を果たされることを望む。
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>lack</span></span>所持数不足</span>
+														<p>
+															<span class="wo-item">封印の証【普遍】</span>の数が足りぬな。
+														</p>
+													</div>
+												</div>
+												<p>
+													<span class="tag"><span>back</span></span>魂の<ruby>嘆壺<rt>たんこ</rt></ruby>を封印した証を見せよ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#06</span></span>封印の証【昇華】を 10 枚渡す</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+														<p>
+															<span class="tag"><span>item</span></span>魂のスフィア【昇華】 x11<br>
+															これは沢山の<span class="wo-keyword">魂の<ruby>嘆壺<rt>たんこ</rt></ruby></span>【退嬰】を封印したものだ……。<br>
+															これで、かの一柱……邪神ハスターに送られる力も<br>
+															大いに弱まったことだろう。深く礼を言う。<br>
+															しかし、邪神ハスターの<ruby>眷属<rt>けんぞく</rt></ruby>は不滅。<br>
+															少しでも多くの霊を救うためにも、<br>
+															引き続きこの使命を果たされることを望む。
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>lack</span></span>所持数不足</span>
+														<p>
+															<span class="wo-item">封印の証【昇華】</span>の数が足りぬな。
+														</p>
+													</div>
+												</div>
+												<p>
+													<span class="tag"><span>back</span></span>魂の<ruby>嘆壺<rt>たんこ</rt></ruby>を封印した証を見せよ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#07</span></span>立ち去る</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>死神の胃袋について<span class="manual-footnote">*1</span></span>
+									<p>
+										<span class="wo-site">死神の胃袋</span>は、蒸し暑い真夏のみ現れる<br>
+										不気味な迷路だと言われている。<br>
+										何者かの体内ではないかという話もあるな……。<br>
+										中は本能的な恐怖を引きずり出す<br>
+										濃厚な<ruby>瘴気<rt>しょうき</rt></ruby>に満ちており、熟練の冒険者でさえ<br>
+										武器を抜くことすら叶わないだろう。<br>
+										かの一柱は、ここを拠点とし<ruby>眷属<rt>けんぞく</rt></ruby>に<br>
+										多量の「<span class="wo-keyword">魂の<ruby>嘆壺<rt>たんこ</rt></ruby></span>」を持ちこませ、<br>
+										収拾した魂を保管し送らせているようだ。<br>
+										その所在については、すぐそこで貴殿を観察している<br>
+										仮面の男にでも聞け。奴が知らぬはずがないだろう。<br>
+										<span class="wo-site">死神の胃袋</span>へ赴き「<span class="wo-keyword">魂の<ruby>嘆壺<rt>たんこ</rt></ruby></span>」を封印してもらいたい。<br>
+										だが、仮面の男……奴はお前にとって有益な情報を出す<br>
+										だろうが、それは奴の目的に都合が良いからだ。<br>
+										けっして奴自身を信頼はせずに用心する事だ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#05</span></span>魂の<ruby>嘆壺<rt>たんこ</rt></ruby>について<span class="manual-footnote">*1</span></span>
+									<p>
+										「<span class="wo-keyword">魂の<ruby>嘆壺<rt>たんこ</rt></ruby></span>」とは、かの一柱の<ruby>眷属<rt>けんぞく</rt></ruby>達が収集した魂を<br>
+										保管、加工し、封印の先にいる邪神に送るという<br>
+										おぞましい魔具だ。<br>
+										動作していない「<span class="wo-keyword">魂の<ruby>嘆壺<rt>たんこ</rt></ruby></span>」を封印しても、意味はない。<br>
+										だが、魂を入れられたばかりの「<span class="wo-keyword">魂の<ruby>嘆壺<rt>たんこ</rt></ruby></span>」であれば<br>
+										「<span class="wo-item">封魔の刻印</span>」を用いて封印する事ができる。<br>
+										「<span class="wo-keyword">魂の<ruby>嘆壺<rt>たんこ</rt></ruby></span>」は魂を邪神にとって都合の良い形に加工する。<br>
+										その呪いには【邪心】【怠惰】【退嬰】の 3 つがある。<br>
+										それらには「<span class="wo-item">封魔の刻印</span>」の<br>
+										【破邪】【普遍】【昇華】が対応している。<br>
+										無事に魂が問われた「<span class="wo-keyword">魂の<ruby>嘆壺<rt>たんこ</rt></ruby></span>」を<br>
+										封印することができれば、<br>
+										「<span class="wo-item">封魔の刻印</span>」は「<span class="wo-item">封印の証</span>」へと変化する。<br>
+										今年は邪神の力が弱まったが故、<br>
+										貴殿には複数の「<span class="wo-item">封魔の刻印</span>」を<br>
+										使った連続封印を行う術も授けておこう。<br>
+										ひとつひとつ試みるよりも精度は落ちるが<br>
+										「<span class="wo-item">封魔の刻印</span>」を多く集める事ができるのであれば<br>
+										役立つかも知れぬ。<br>
+										より多くの魂を保管する「<span class="wo-keyword">魂の<ruby>嘆壺<rt>たんこ</rt></ruby></span>」は、奥に設置され、<br>
+										厳重な警備に守られているだろう。<br>
+										脆弱な貴殿に立ち向う力はあるまい。気をつけるのだ……
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#06</span></span>封魔の刻印について<span class="manual-footnote">*1</span></span>
+									<p>
+										「<span class="wo-item">封魔の刻印</span>」は、「<span class="wo-keyword">魂の<ruby>嘆壺<rt>たんこ</rt></ruby></span>」を動かす邪神の呪いを<br>
+										相殺し、壺自体を封印する特殊な刻印だ。<br>
+										「<span class="wo-keyword">魂の<ruby>嘆壺<rt>たんこ</rt></ruby></span>」に掛かっている邪神の呪いは<br>
+										【邪心】【怠惰】【退嬰】の 3 つだ。<br>
+										それに対応した「<span class="wo-item">封魔の刻印</span>」は<br>
+										【破邪】【普遍】【昇華】だということを忘れるな。<br>
+										この「<span class="wo-item">封魔の刻印</span>」を得るためには<br>
+										守護者の地を引きし者の持つ、<br>
+										多量の稀有な気（オド）を必要とする。<br>
+										各地の魔物たちを討伐した際に、<br>
+										その気（オド）を使用して「<span class="wo-item">封魔の刻印</span>」を生成する。<br>
+										特殊な術式は……これだ。
+									</p>
+									<p class="descriptive">
+										イシークの手が光ったかと思うと、<br>
+										貴方の身体が火照るように熱くなった。
+									</p>
+									<p>
+										貴殿はいつも通り戦えばいい。<br>
+										今施した術式で、貴殿の特別な気が魔物の魂に反応して<br>
+										「<span class="wo-item">封魔の刻印</span>」を生成することだろう。<br>
+										今年の術式は微細なる故、<br>
+										<span class="wo-item">封魔の刻印</span>を集めるのは難しいだろう。<br>
+										だがその分、充足たる礼を約束しよう。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#07</span></span>異界の神々について<span class="manual-footnote">*1</span></span>
+									<p>
+										この世界とは異なる世界から来訪した邪神……<br>
+										それが、異界の神々と呼ばれる存在だ。<br>
+										魔物の風体だが、神であることには違いはない。<br>
+										具現化すれば人が太刀打ち出来る相手ではないだろう。<br>
+										また、稀にあの邪神共を崇める者達も存在する。<br>
+										異界の神々は、かつて神龍や我々と戦った。<br>
+										異界の神々の前では天戦も児戯に等しい……<br>
+										多大な犠牲を払いながら、我々は異界の神々を封じた。<br>
+										だが、この異界の神々の一柱が<br>
+										封印から抜け出る事を目論み、<ruby>眷属<rt>けんぞく</rt></ruby>を放っているのだ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#08</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>「<span class="tag"><span>#02</span></span>何をすればいい？」を聞いた後に出現</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img alt="守護者 イシークの霊" data-fancybox="lines-square" class="lazyload" src="../common/placeholder.png" data-src="npcs/イシークの霊.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">守護者 イシークの霊</span>
+						<span class="coordinate">港町イルファーロ 英雄の集う広場 F7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="剛力ヒゲ夫">
+					<div class="header">
+						<span class="character">剛力ヒゲ夫</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<p>
+							ワシは<span class="wo-name">剛力ヒゲ夫</span>じゃ！<br>
+							かつてこの<span class="wo-site">港町イルファーロ</span>を拠点に冒険を<br>
+							しておったのじゃが、灰からの蘇生に失敗して<br>
+							しもうて肉体をロストしてしまったのじゃ……<br>
+							神の気まぐれか、久々にこの町に戻って来れたの<br>
+							じゃが、当時のワシを知る者は、まだこの町に<br>
+							残っておるのかのぉ？<br>
+							しかし、こんな立派な墓を建ててくれていたなんて……<br>
+							ワシの子孫も立派になったもんじゃのぉ。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="精霊祭に誘われし幽霊 剛力ヒゲ夫" data-fancybox="lines-square" class="lazyload" src="../common/placeholder.png" data-src="npcs/剛力ヒゲ夫.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">精霊祭に誘われし幽霊 剛力ヒゲ夫</span>
+						<span class="coordinate">港町イルファーロ 英雄の集う広場 G7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="トレジャーハンターの幽霊">
+					<div class="header">
+						<span class="character">トレジャーハンターの幽霊</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							くそぅ、どこぞの仮面の占い師の助言に従って、<br>
+							ダンジョンを探索していたら、<br>
+							巨大な宝箱を見つけたんだよ。<br>
+							だが、その宝箱のトラップ解除に失敗しちまってな。<br>
+							高圧電線で灰になって呆けている所を<br>
+							<span class="wo-enemy">ウォーカー</span>に捕まってあっさりロストだぜ……<br>
+							あの巨大宝箱に何が入っていたかだけが<br>
+							気になって、何度も成仏しかけてるのに<br>
+							戻ってきてしまったぜ……<br>
+							まあ、これ以上未練を持っても仕方がない。<br>
+							オレの子孫たちならきっと<br>
+							うまくやってくれるだろう……
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="精霊祭に誘われし幽霊 トレジャーハンターの幽霊" data-fancybox="lines-square" class="lazyload" src="../common/placeholder.png" data-src="npcs/トレジャーハンターの幽霊.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">精霊祭に誘われし幽霊 トレジャーハンターの幽霊</span>
+						<span class="coordinate">港町イルファーロ 英雄の集う広場 G6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="名を失いつつある幽霊">
+					<div class="header">
+						<span class="character">名を失いつつある幽霊</span>
+						<span class="race">POR♀</span>
+					</div>
+					<div class="text">
+						<p class="descriptive">
+							今にも消えそうな<ruby>儚<rt>はかな</rt></ruby>い幽霊が<br>
+							<ruby>佇<rt>たたず</rt></ruby>んでいる……
+						</p>
+						<div class="append">
+							<span class="gauge"></span>
+							<span class="option">ミッション「ヴォージの悲しみ」クリア済</span>
+							<p class="descriptive">
+								そして小さく微かな<ruby>呟<rt>つぶや</rt></ruby>きが聞こえた。
+							</p>
+							<p>
+								……<span class="wo-name">ヴォージ</span>、いつでもあなたのそばに……。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="精霊祭に誘われし幽霊 名を失いつつある幽霊" data-fancybox="lines-square" class="lazyload" src="../common/placeholder.png" data-src="npcs/名を失いつつある幽霊.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">精霊祭に誘われし幽霊 名を失いつつある幽霊</span>
+						<span class="coordinate">港町イルファーロ 英雄の集う広場 G7</span>
+					</div>
+				</div>
+
+				<h4 id="lines-alley">闇を受け入れた者達の路地</h4>
+				<div class="lines" id="アラハゥイb">
+					<div class="header">
+						<span class="character">アラハゥイ</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>live status</span></span>通常時 かつ <span class="tag"><span>soul rank</span></span>SR 2 未満</span>
+							<p>
+								おや。貴殿は冒険者ですかな？<br>
+								私は落ちぶれた貴族の<span class="wo-name">アラハゥイ</span>と申します。<br>
+								ちょっと冒険者に依頼がありまして参りました、ええ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>live status</span></span>通常時 かつ <span class="tag"><span>soul rank</span></span>SR 2 以上</span>
+							<div class="either">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>first</span></span>初回</span>
+									<p>
+										おや。貴殿は冒険者ですかな？<br>
+										私は落ちぶれた貴族の<span class="wo-name">アラハゥイ</span>と申します。<br>
+										ちょっと冒険者に依頼がありまして参りました、ええ。<br>
+										夏の精霊祭の季節ですなぁ。ご存知でしたか？<br>
+										アザルス大陸に古くからある習慣で、この時期になると<br>
+										肉体を失った魂が所縁のある地に戻るそうです、ええ。<br>
+										夏の精霊祭は、その祖霊を鎮魂するための祭りだとか。<br>
+										胡散臭い話だと思いますか？<br>
+										ところが、迷信という訳でもないようでしてねぇ、ええ。<br>
+										貴方には見えませんかねぇ？<br>
+										ほら……すぐ後ろに……<br>
+										這いよる名状したがい何かが……<br>
+										それは冗談ですが。本当に普段は見かけない霊魂が<br>
+										この辺りにポツポツ沸いていましてねぇ、ええ。<br>
+										それで人間臭いこの場にわざわざ出向いたのですとも。
+									</p>
+									<p class="descriptive">
+										アラハゥイは懐から一粒の薬を取り出した。
+									</p>
+									<p>
+										おおっと、こんな所に<span class="wo-item">幽体離脱の丹</span>が！<br>
+										……ふむ、これも何かの縁というものですかねぇ。<br>
+										もし霊が気になるなら、おひとついかがですかな？
+									</p>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>おひとついかがですかな？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01</span></span>貰う</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>not have</span></span><span class="wo-item">幽体離脱の丹</span>を所持していない</span>
+														<p>
+															<span class="tag"><span>item</span></span>幽体離脱の丹<br>
+															この薬は幽体離脱の丹。一粒飲めばあっという間に<br>
+															魂状態になるので、霊魂と会話する事も出来るでしょう。<br>
+															それでは、おひとつどうぞ。<br>
+															但し、ご注意を。これをお飲みになると<br>
+															死　ん　で　し　ま　い　ま　す　よ　！<br>
+															当然、丹の効果時間は無制限。お得でしょうとも、ええ。<br>
+															生き返りたい時はどこかで蘇生を試みて下さい。<br>
+															蘇生できるかどうかはあなたの言動次第でしょうけどね。<br>
+															あぁ、私は気に食わないので絶対行きませんが<br>
+															魂状態でクォパティ寺院に行けば、<br>
+															珍しいモノを見れるそうですよ。
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>have</span></span><span class="wo-item">幽体離脱の丹</span>を所持している</span>
+														<p>
+															おや、既にお持ちのようで……<br>
+															もったいぶる気は無いのですが、<br>
+															この薬はけっして安いものではないのですよ。<br>
+															どんな魔法障壁や防御魔法をもすり抜け、<br>
+															稀代の名医でも死因を判明できないという<br>
+															素晴らしい毒殺の・・・おおっと、口が滑りましたな。<br>
+															とにかく、いまお持ちの丹を使いきっても<br>
+															まだ必要であれば私が大量購入したコレを<br>
+															再びお渡し致しましょう。
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02</span></span>貰わない</span>
+												<p>
+													おや、必要ないと？　それはご賢明なことで……。<br>
+													まあ、暫くはこちらにいるので、気が向いたら<br>
+													また話しかけて下さい、ええ……ククク……。
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>again</span></span>２回目以降</span>
+									<p>
+										おや。貴殿は冒険者ですかな？<br>
+										私は落ちぶれた貴族の<span class="wo-name">アラハゥイ</span>と申します。<br>
+										ちょっと冒険者に依頼がありまして参りました、ええ。
+									</p>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>何か御用で？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01</span></span>精霊祭について</span>
+												<p>
+													夏の精霊祭の季節ですなぁ。ご存知でしたか？<br>
+													アザルス大陸に古くからある習慣で、この時期になると<br>
+													肉体を失った魂が所縁のある地に戻るそうです、ええ。<br>
+													夏の精霊祭は、その祖霊を鎮魂するための祭りだとか。<br>
+													胡散臭い話だと思いますか？<br>
+													ところが、迷信という訳でもないようでしてねぇ、ええ。<br>
+													貴方には見えませんかねぇ？<br>
+													ほら……すぐ後ろに……<br>
+													這いよる名状したがい何かが……<br>
+													それは冗談ですが。本当に普段は見かけない霊魂が<br>
+													この辺りにポツポツ沸いていましてねぇ、ええ。<br>
+													それで人間臭いこの場にわざわざ出向いたのですとも。
+												</p>
+												<p class="descriptive">
+													アラハゥイは懐から一粒の薬を取り出した。
+												</p>
+												<p>
+													おおっと、こんな所に<span class="wo-item">幽体離脱の丹</span>が！<br>
+													……ふむ、これも何かの縁というものですかねぇ。<br>
+													もし霊が気になるなら、おひとついかがですかな？
+												</p>
+												<div class="dialog">
+													<span class="dialog"><span class="tag"><span>dialogue</span></span>おひとついかがですかな？</span>
+													<div class="options">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#01</span></span>貰う</span>
+															<div class="either">
+																<span class="gauge"></span>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>not have</span></span><span class="wo-item">幽体離脱の丹</span>を所持していない</span>
+																	<p>
+																		<span class="tag"><span>item</span></span>幽体離脱の丹<br>
+																		この薬は幽体離脱の丹。一粒飲めばあっという間に<br>
+																		魂状態になるので、霊魂と会話する事も出来るでしょう。<br>
+																		それでは、おひとつどうぞ。<br>
+																		但し、ご注意を。これをお飲みになると<br>
+																		死　ん　で　し　ま　い　ま　す　よ　！<br>
+																		当然、丹の効果時間は無制限。お得でしょうとも、ええ。<br>
+																		生き返りたい時はどこかで蘇生を試みて下さい。<br>
+																		蘇生できるかどうかはあなたの言動次第でしょうけどね。<br>
+																		あぁ、私は気に食わないので絶対行きませんが<br>
+																		魂状態でクォパティ寺院に行けば、<br>
+																		珍しいモノを見れるそうですよ。
+																	</p>
+																</div>
+																<div class="option">
+																	<span class="option"><span class="tag"><span>have</span></span><span class="wo-item">幽体離脱の丹</span>を所持している</span>
+																	<p>
+																		おや、既にお持ちのようで……<br>
+																		もったいぶる気は無いのですが、<br>
+																		この薬はけっして安いものではないのですよ。<br>
+																		どんな魔法障壁や防御魔法をもすり抜け、<br>
+																		稀代の名医でも死因を判明できないという<br>
+																		素晴らしい毒殺の・・・おおっと、口が滑りましたな。<br>
+																		とにかく、いまお持ちの丹を使いきっても<br>
+																		まだ必要であれば私が大量購入したコレを<br>
+																		再びお渡し致しましょう。
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#02</span></span>貰わない</span>
+															<p>
+																おや、必要ないと？　それはご賢明なことで……。<br>
+																まあ、暫くはこちらにいるので、気が向いたら<br>
+																また話しかけて下さい、ええ……ククク……。
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02</span></span>死神の胃袋について<span class="footnote"></span></span>
+												<p class="facility">
+													<span>異なる門</span>
+													<span>ANOTHER GATE</span>
+												</p>
+												<p>
+													ほう、<span class="wo-item">死神の胃袋</span>ですか？<br>
+													それはまた名状しがたい品ですなぁ……<br>
+													知ってるいるのかと？　えええ、まぁ、ねぇ……<br>
+													<span class="wo-site">死神の胃袋</span>ねぇ……ふむ……<br>
+													あの黄色がいろいろと無駄な足掻きをしているようで……<br>
+													いえ、すみません。こちらの話です。<br>
+													暑い季節ですしねぇ。肝試しに行くのですか？<br>
+													決して安全とは言えない場所ですので、勧めませんが、<br>
+													<span class="wo-site">死神の胃袋</span>への道ならば案内しましょう。ええ……。<br>
+													でも、よろしいのですか？<br>
+													「<span class="wo-item">封魔の刻印</span>」をお持ちでないと、<br>
+													あそこへ行っても何もできませんよ。ええ……。
+												</p>
+												<div class="append">
+													<span class="gauge"></span>
+													<p>
+														<span class="option">１日のうち初回のみ追加</span>
+														おっと、そうそう。<br>
+														今年は面白いものを持ってきているのですよ。<br>
+														<span class="tag"><span>item</span></span>混沌とした虹の鍵<br>
+														その鍵を持って<span class="wo-item">死神の胃袋</span>の奥に行けば<br>
+														何かイイモノが手に入るかも知れませんね。ええ。<br>
+														日が変わったらまたお渡しするとしましょう。
+													</p>
+												</div>
+												<p>
+													<span class="tag"><span>function</span></span>DungeonSelect(limited)
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>soul status</span></span>魂時</span>
+							<p>
+								おや、おや。ずいぶんと生きのいい幽霊ですねぇ。<br>
+								まだ、ロストはしていない？<br>
+								それは残念、ククク……。<br>
+								いえ、この時期は様々な幽霊が見えますのでね。ええ……。<br>
+								あぁ、私は気に食わないので絶対行きませんが<br>
+								魂状態でクォパティ寺院に行けば、<br>
+								珍しいモノを見れるそうですよ。
+							</p>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li><a href="#イシークの霊">イシークの霊</a>の「何をすればいい？」を選択した後に出現</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img alt="仮面の貴族 アラハゥイ" data-fancybox="lines-alley" class="lazyload" src="../common/placeholder.png" data-src="npcs/アラハゥイb.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">仮面の貴族 アラハゥイ</span>
+						<span class="coordinate">港町イルファーロ 闇を受け入れた者達の路地 H4</span>
+					</div>
+				</div>
+
+				<div class="lines" id="かつて悪名を轟かせた幽霊">
+					<div class="header">
+						<span class="character">かつて悪名を轟かせた幽霊</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ゲッハッハ！<br>
+							よう、カモネギの子孫。<br>
+							犯罪者にでも殺されたか？<br>
+							俺は誰だって？　そんなのどうだっていいだろ。<br>
+							かつての俺様は、数百人の冒険者共を<br>
+							ぶった斬ってはルートを繰り返したもんだ。<br>
+							まあ、同業者だろうが構わずに、<br>
+							派手にやり続けたもんだから、<br>
+							多額の賞金を掛けられた挙句……<br>
+							同業者に断罪され、牢屋を爆破されて<br>
+							ロストしちまったんだがな！<br>
+							ゲッハッハ！
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="精霊祭に誘われし幽霊 かつて悪名を轟かせた幽霊" data-fancybox="lines-alley" class="lazyload" src="../common/placeholder.png" data-src="npcs/かつて悪名を轟かせた幽霊.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">精霊祭に誘われし幽霊 かつて悪名を轟かせた幽霊</span>
+						<span class="coordinate">港町イルファーロ 闇を受け入れた者達の路地 H5</span>
+					</div>
+				</div>
+
+				<div class="lines" id="名もなき幽霊">
+					<div class="header">
+						<span class="character">名もなき幽霊</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							た、種籾だけは勘弁してくれんかのぅ……。<br>
+							<ruby>儂<rt>わし</rt></ruby>の子孫たちがこの種籾で、立派な畑を<br>
+							育ててくれるはずなんじゃ……<br>
+							……ん、なんじゃ？<br>
+							<ruby>儂<rt>わし</rt></ruby>の体はもうそないしていないって？<br>
+							…………おお、そうじゃったわい。<br>
+							<ruby>儂<rt>わし</rt></ruby>の子孫たちは元気にやっておるかのう……
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="精霊祭に誘われし幽霊 名もなき幽霊" data-fancybox="lines-alley" class="lazyload" src="../common/placeholder.png" data-src="npcs/名もなき幽霊.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">精霊祭に誘われし幽霊 名もなき幽霊</span>
+						<span class="coordinate">港町イルファーロ 闇を受け入れた者達の路地 H6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="よいどれ幽霊">
+					<div class="header">
+						<span class="character">よいどれ幽霊</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<p>
+							ウィ～……ヒック。<br>
+							死んだらいくらでも、<br>
+							酒が飲めると思ってたぜ……<br>
+							ヒック……<br>
+							まさか、お供え物しか飲めないとはなぁ……<br>
+							ウィ～……<br>
+							死んでからは、お供え物がわんさかと<br>
+							出るこの時期が毎年唯一の楽しみだぜ……
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="精霊祭に誘われし幽霊 よいどれ幽霊" data-fancybox="lines-alley" class="lazyload" src="../common/placeholder.png" data-src="npcs/よいどれ幽霊.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">精霊祭に誘われし幽霊 よいどれ幽霊</span>
+						<span class="coordinate">港町イルファーロ 闇を受け入れた者達の路地 H5</span>
+					</div>
+				</div>
+
+				<h4 id="lines-station">レーヴェンアンタイル</h4>
+				<div class="lines" id="コヨード">
+					<div class="header">
+						<span class="character">コヨード</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<p>
+							うーぃ、酒ならたんまりあるぜぇ。<br>
+							ガッハッハ！
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>うーぃ、何にするよ？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>酒を飲んでいく</span>
+									<p class="facility">
+										<span>酒屋コヨード</span>
+										<span>LIQUOR STORE</span>
+									</p>
+									<p>
+										<span class="tag"><span>function</span></span>酒屋コヨード<br>
+										おう、まいど！
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>酒を買う</span>
+									<p class="facility">
+										<span>酒屋コヨード</span>
+										<span>LIQUOR STORE</span>
+									</p>
+									<p>
+										<span class="tag"><span>function</span></span>コヨードの酒樽<br>
+										おう、まいど！
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+									<p>
+										おう、まいど！
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="酒屋のおっちゃん コヨード" data-fancybox="lines-station" class="lazyload" src="../common/placeholder.png" data-src="npcs/コヨード.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">酒屋のおっちゃん コヨード</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 G6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="フルーニュ">
+					<div class="header">
+						<span class="character">フルーニュ</span>
+						<span class="race">HUM♀</span>
+					</div>
+					<div class="text">
+						<p>
+							おいしいおいしい料理はどうかい？<br>
+							ホウライ大陸由来の珍しい食べ物たちだよ。<br>
+							<span class="tag"><span>function</span></span>フルーニュの屋台<br>
+							また来んさいねぇ
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="屋台のばっちゃん フルーニュ" data-fancybox="lines-station" class="lazyload" src="../common/placeholder.png" data-src="npcs/フルーニュ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">屋台のばっちゃん フルーニュ</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 H6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ボリタック">
+					<div class="header">
+						<span class="character">ボリタック</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							いらっしゃい。<br>
+							はずれ無しのくじ引きだよー。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>どのくじ引きをやる？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>梅くじ…5,000 G</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+											<p>
+												では、くじをお引きください。<br>
+												……………<br>
+												<span class="var"><span>id</span></span>番だね。<br>
+												<span class="tag"><span>item</span></span><span class="var"><span>item</span></span><br>
+												おめでとうございます！<br>
+												<span class="var"><span>rating</span></span>の <span class="wo-item"><span class="var"><span>item</span></span></span> です！
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>pocket</span></span>所持金不足時</span>
+											<p>
+												おや？お金が足りないですよ？
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>竹くじ…50,000 G</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+											<p>
+												では、くじをお引きください。<br>
+												……………<br>
+												<span class="var"><span>id</span></span>番だね。<br>
+												<span class="tag"><span>item</span></span><span class="var"><span>item</span></span><br>
+												おめでとうございます！<br>
+												<span class="var"><span>rating</span></span>の <span class="wo-item"><span class="var"><span>item</span></span></span> です！
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>pocket</span></span>所持金不足時</span>
+											<p>
+												おや？お金が足りないですよ？
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>松くじ…500,000 G</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+											<p>
+												では、くじをお引きください。<br>
+												……………<br>
+												<span class="var"><span>id</span></span>番だね。<br>
+												<span class="tag"><span>item</span></span><span class="var"><span>item</span></span><br>
+												おめでとうございます！<br>
+												<span class="var"><span>rating</span></span>の <span class="wo-item"><span class="var"><span>item</span></span></span> です！
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>pocket</span></span>所持金不足時</span>
+											<p>
+												おや？お金が足りないですよ？
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>立ち去る</span>
+									<p>
+										おや？やらないのかい？<br>
+										残念だなぁ…
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="くじ引き屋のおっちゃん ボリタック" data-fancybox="lines-station" class="lazyload" src="../common/placeholder.png" data-src="npcs/ボリタック.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">くじ引き屋のおっちゃん ボリタック</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 I6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="スナイパー・ジョー">
+					<div class="header">
+						<span class="character">スナイパー・ジョー</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							おおっと、そこの<span class="var"><span>gender</span></span><span class="footnote"></span>！<br>
+							射的やりたそうな顔してるね？<br>
+							<span class="wo-item">夏祭り参加チケット</span>で遊べちゃうぞ！　さぁ寄って行きな！<br>
+							<span class="var"><span>gender</span></span>の前回のスコアは「<span class="var"><span>previous-score</span></span>」だぞ！<br>
+							<span class="var"><span>class</span></span><span class="footnote"></span><br>
+							<span class="var"><span>advice</span></span><span class="footnote"></span>
+						</p>
+						<div class="append">
+							<span class="gauge"></span>
+							<span class="option">一匹狼コースで射的開始前に特設会場から排出されて初めて話しかけた時</span>
+							<p>
+								<span class="tag"><span>item</span></span>夏祭り参加チケット<br>
+								ん？　特設会場にうまく入場できなかっただって？<br>
+								それならチケットを返してやるぞ。
+							</p>
+						</div>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>どうする？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>一匹狼コースに挑戦　夏祭り参加チケット 1枚</span>
+									<p>
+										一匹狼コースは一人用のコースになるぞ。<br>
+										こちらではスコアランキングを開催しとるから<br>
+										挑戦を待っとるぞ。
+									</p>
+									<div class="append">
+										<span class="gauge"></span>
+										<span class="option"><span class="wo-item">射的用コルク銃</span>を装備していない場合</span>
+										<p>
+											っておいおい、そんな装備で大丈夫か？<br>
+											<span class="wo-item">射的用コルク弾</span>を使わないと的は倒れないぞ。
+										</p>
+										<div class="dialog">
+											<span class="dialog"><span class="tag"><span>dialogue</span></span>そんな装備で大丈夫か？</span>
+											<div class="options">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01</span></span>大丈夫だ、問題ない</span>
+													<p>
+														……本当に良いんだな？<br>
+														警告はしたぞ。。<br>
+														<span class="tag"><span>next</span></span>
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02</span></span>一番いいのを頼む</span>
+													<p>
+														<span class="wo-name">フォーセス</span>の旦那が射的用の装備を扱っているぞ。<br>
+														まずは旦那に相談してみるんだぞ。<br>
+														<span class="tag"><span>quit</span></span>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+											<p class="descriptive">
+												ここの特殊決戦場は、ソロプレイ専用となります。<br>
+												挑戦しますか？
+											</p>
+											<div class="dialog">
+												<span class="dialog"><span class="tag"><span>dialogue</span></span>射的場に案内するぞ。</span>
+												<div class="options">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#01</span></span>はい <span class="wo-item">夏祭り参加チケット</span>消費 1</span>
+														<p>
+															<span class="tag"><span>entering</span></span>特設会場 射的場
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+														<p>
+															<span class="tag"><span>quit</span></span>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>lack</span></span>所持数不足</span>
+											<p class="descriptive">
+												所持品に必須アイテムがありません。
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>群れる羊コースに挑戦　夏祭り参加チケット 3枚</span>
+									<p>
+										群れる羊コースはパーティ用のコースになるぞ。<br>
+										こちらはスコアランキングの対象外だぞ。<br>
+										気軽に楽しむんだな。
+									</p>
+									<div class="append">
+										<span class="gauge"></span>
+										<span class="option"><span class="wo-item">射的用コルク銃</span>を装備していない場合</span>
+										<p>
+											っておいおい、そんな装備で大丈夫か？<br>
+											<span class="wo-item">射的用コルク弾</span>を使わないと的は倒れないぞ。
+										</p>
+										<div class="dialog">
+											<span class="dialog"><span class="tag"><span>dialogue</span></span>そんな装備で大丈夫か？</span>
+											<div class="options">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01</span></span>大丈夫だ、問題ない</span>
+													<p>
+														……本当に良いんだな？<br>
+														警告はしたぞ。。<br>
+														<span class="tag"><span>next</span></span>
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02</span></span>一番いいのを頼む</span>
+													<p>
+														<span class="wo-name">フォーセス</span>の旦那が射的用の装備を扱っているぞ。<br>
+														まずは旦那に相談してみるんだぞ。<br>
+														<span class="tag"><span>quit</span></span>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+											<p class="descriptive">
+												パーティプレイ可能な特殊決戦場では、<br>
+												パーティが挑戦中のアイテムは消費せずに<br>
+												合流できます。
+											</p>
+											<p class="descriptive">
+												ここの特殊決戦場は、パーティプレイ可能です。<br>
+												挑戦しますか？
+											</p>
+											<div class="dialog">
+												<span class="dialog"><span class="tag"><span>dialogue</span></span>射的場に案内するぞ。</span>
+												<div class="options">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#01</span></span>はい <span class="wo-item">夏祭り参加チケット</span>消費 3</span>
+														<p>
+															<span class="tag"><span>entering</span></span>特設会場 射的場
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+														<p>
+															<span class="tag"><span>quit</span></span>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>lack</span></span>所持数不足</span>
+											<p class="descriptive">
+												所持品に必須アイテムがありません。
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>射的の説明を聞く</span>
+									<p>
+										銃を使って<span class="wo-item">射的用コルク弾</span>を的に当てれば景品をゲットだ。<br>
+										一般の銃を使っても構わないが、専用の<span class="wo-item">射的用コルク銃</span>を<br>
+										使った方が性能としても扱いやすいはずだぞ。<br>
+										<span class="wo-item">射的用コルク弾</span>と<span class="wo-item">射的用コルク銃</span>は<br>
+										<span class="wo-name">フォーセス</span>の旦那が扱っているぞ。<br>
+										装備の持ち込みは自由だが、スコア詐称防止に<br>
+										獲得した景品の持ち込みは禁止だぞ。<br>
+										そうそう、景品は<span class="wo-name">メロン</span>ちゃんの所に持っていけば<br>
+										何かイイモノと交換してくれると思うぞ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>ハイスコア</span>
+									<p>
+										<span class="var"><span>gender</span></span>の前回のスコアは「<span class="var"><span>previous-score</span></span>」だぞ！<br>
+										<span class="var"><span>class</span></span><br>
+										<span class="var"><span>advice</span></span><br>
+										<span class="var"><span>gender</span></span>のハイスコアは「<span class="var"><span>my-high-score</span></span>」。<br>
+										ここいらのハイスコアは「<span class="var"><span>channel-high-score</span></span>」って所だな。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#05</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>キャラクターの種族が男性なら「アンちゃん」、女性なら「嬢ちゃん」になる</li>
+							<li>スコアによる技術評価</li>
+							<li>技術評価に対応する助言</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img alt="射的屋のおっちゃん スナイパー・ジョー" data-fancybox="lines-station" class="lazyload" src="../common/placeholder.png" data-src="npcs/スナイパー・ジョー.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">射的屋のおっちゃん スナイパー・ジョー</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 H6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ヴォーツラフ">
+					<div class="header">
+						<span class="character">ヴォーツラフ</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ククク、怪しい品物なぞありませんぞ。<br>
+							それ、ちらっとでいい。見て行け！<br>
+							<span class="tag"><span>function</span></span>ヴァーツラフ商店
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="夜店のおっちゃん ヴォーツラフ" data-fancybox="lines-station" class="lazyload" src="../common/placeholder.png" data-src="npcs/ヴォーツラフ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">夜店のおっちゃん ヴォーツラフ</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 H7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="アンゴラ">
+					<div class="header">
+						<span class="character">アンゴラ</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>lead</span></span></span>
+							<div class="either">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+									<p>
+										あれ？<br>
+										ウサギが何匹か足りない気がするぴょん…
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+									<p>
+										いらっしゃいぴょん！<br>
+										かわいいウサギはいらないかぴょん？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+									<p>
+										今日は楽しいお祭りで<br>
+										心がぴょんぴょんするんだぴょん！
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+									<p>
+										ハァ…仕事とはいえ、いい歳したおっさんが<br>
+										語尾にぴょんを付けて話す事になるとは…<br>
+										あっ！　何でもないぴょん！
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>main</span></span></span>
+							<div class="either">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>not have</span></span>午前０時基準を区切りに<span class="wo-item">捕獲したカラーバニー</span>を所持していない</span>
+									<p>
+										ちょっとそこのアンタ。<br>
+										もし良ければウチのうさぎちゃんを探してきて<br>
+										欲しいぴょん！　お礼にイイモノをやるだぴょん！
+									</p>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>探してきてくれるかぴょん？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01</span></span>まかせてくれ！</span>
+												<p>
+													<span class="tag"><span>item</span></span>捕獲用コルク弾 max 5<br>
+													その弾を使えばうさぎちゃんを安全に<br>
+													捕まえることができるぴょん！<br>
+													よろしく頼むだぴょん！
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02</span></span>だが断る！</span>
+												<p>
+													アンタひどい奴だぴょん！
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>have</span></span>午前０時基準を区切りに<span class="wo-item">捕獲したカラーバニー</span>を所持している</span>
+									<p>
+										おおっと、そいつはウチのうさぎちゃんだぴょん！<br>
+										届けに来てくれたのかぴょん？
+									</p>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>届けに来てくれたのかぴょん？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01</span></span><span class="wo-item">捕獲したカラーバニー</span>を渡す</span>
+												<p>
+													<span class="tag"><span>item</span></span>夏祭り参加チケット x5<br>
+													おう、ありがとな…だぴょん！<br>
+													こいつは取っておくだぴょん！
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+												<p>
+													ちょっとアンタ、そういうの困るんだよ…<br>
+													あっ！　ちゃんと返して欲しいぴょん！<br>
+													礼は弾むぴょん！
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>after</span></span><span class="wo-item">捕獲したカラーバニー</span>を渡してから次の午前０時まで</span>
+									<p>
+										さっきはありがとうだぴょん！<br>
+										またウチの奴がいなくなったらよろしく頼むぴょん！
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="うさぎのおっちゃん アンゴラ" data-fancybox="lines-station" class="lazyload" src="../common/placeholder.png" data-src="npcs/アンゴラ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">うさぎのおっちゃん アンゴラ</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 G7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="デカバニー">
+					<div class="header">
+						<span class="character">デカバニー</span>
+						<span class="race">Vorpal Bunny</span>
+					</div>
+					<div class="text">
+						<p>
+							キューキュー♪
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="カラーバニー デカバニー" data-fancybox="lines-station" class="lazyload" src="../common/placeholder.png" data-src="npcs/デカバニー.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">カラーバニー デカバニー</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 G7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ミニバニー">
+					<div class="header">
+						<span class="character">ミニバニー</span>
+						<span class="race">Vorpal Bunny</span>
+					</div>
+					<div class="text">
+						<p>
+							キシャーーー!!!
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="カラーバニー ミニバニー" data-fancybox="lines-station" class="lazyload" src="../common/placeholder.png" data-src="npcs/ミニバニー.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">カラーバニー ミニバニー</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 G7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ファッティバニー">
+					<div class="header">
+						<span class="character">ファッティバニー</span>
+						<span class="race">Vorpal Bunny</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								（酒場の方を見つめている…）
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								（冒険者ギルドの方を見つめている…）
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								（屋台の方を見つめている…）
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="カラーバニー ファッティバニー" data-fancybox="lines-station" class="lazyload" src="../common/placeholder.png" data-src="npcs/ファッティバニー.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">カラーバニー ファッティバニー</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 G7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="プチバニー">
+					<div class="header">
+						<span class="character">プチバニー</span>
+						<span class="race">Vorpal Bunny</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								（大穴の方を見つめている…）
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								（沈む夕日の方を見つめている…）
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								（路地裏の方を見つめている…）
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="カラーバニー プチバニー" data-fancybox="lines-station" class="lazyload" src="../common/placeholder.png" data-src="npcs/プチバニー.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">カラーバニー プチバニー</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 G7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ドドドン">
+					<div class="header">
+						<span class="character">ドドドン</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<div class="append">
+							<span class="gauge"></span>
+							<span class="option">初めて話しかけた時</span>
+							<p>
+								<span class="tag"><span>item</span></span>太鼓のバチ[に]<br>
+								<span class="var"><span>gender</span></span><span class="footnote"></span>太鼓を<ruby>敲<rt>たた</rt></ruby>いたことないのかい？<br>
+								しょうがないな、特別にこの<span class="wo-item">太鼓のバチ[に]</span>を<br>
+								プレゼントしちゃおう。
+							</p>
+						</div>
+						<div class="append">
+							<span class="gauge"></span>
+							<span class="option">一人で挑戦で演奏開始前に特設会場から排出されて初めて話しかけた時</span>
+							<p>
+								<span class="tag"><span>item</span></span>夏祭り参加チケット<br>
+								どうした？　特設会場にうまく入場できなかったのかい？<br>
+								それじゃあチケットを返そうじゃないか。
+							</p>
+						</div>
+						<div class="append">
+							<span class="gauge"></span>
+							<span class="option">太鼓を演奏して初めて話しかけた時</span>
+							<div class="either">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>first</span></span>初回</span>
+									<p>
+										<span class="tag"><span>item</span></span>景品の黄色いアイツ x<span class="var"><span>score-class</span></span><br>
+										<span class="tag"><span>item</span></span>ハーサントフラッペ【<span class="var"><span>random</span></span>】 x<span class="var"><span>score-class</span></span><br>
+										<span class="tag"><span>item</span></span>太鼓のバチ[は]<br>
+										<span class="var"><span>gender</span></span>前回のスコアは「<span class="var"><span>previous-score</span></span>」だぞ！<br>
+										これは前回の景品と１回目の参加章だ。<br>
+										<span class="var"><span>advice</span></span><span class="footnote"></span>
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>again</span></span>２回目以降</span>
+									<p>
+										<span class="tag"><span>item</span></span>景品の黄色いアイツ x<span class="var"><span>score-class</span></span><br>
+										<span class="tag"><span>item</span></span>ハーサントフラッペ【<span class="var"><span>random</span></span>】 x<span class="var"><span>score-class</span></span><br>
+										<span class="var"><span>gender</span></span>の前回のスコアは「<span class="var"><span>previous-score</span></span>」だぞ！<br>
+										これは前回の景品だ、受けとってくれ。<br>
+										<span class="var"><span>advice</span></span><span class="footnote"></span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<p>
+							太鼓を<ruby>敲<rt>たた</rt></ruby>いていかないか？<br>
+							<span class="wo-item">夏祭り参加チケット</span>で<ruby>敲<rt>たた</rt></ruby>かせてやるぞ！
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>どうする？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>一人で挑戦　夏祭り参加チケット 1枚</span>
+									<p>
+										一人で挑戦はスコアランキングを開催しとるから<br>
+										挑戦を待っとるぞ。
+									</p>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+											<p class="descriptive">
+												ここの特殊決戦場は、ソロプレイ専用となります。<br>
+												挑戦しますか？
+											</p>
+											<div class="dialog">
+												<span class="dialog"><span class="tag"><span>dialogue</span></span>太鼓の演奏場に案内するぞ。</span>
+												<div class="options">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#01</span></span>はい <span class="wo-item">夏祭り参加チケット</span>消費 1</span>
+														<p class="descriptive">
+															太鼓の演奏場に案内された。
+														</p>
+														<p>
+															<span class="tag"><span>entering</span></span>特設会場 太鼓の演奏場
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+														<p>
+															<span class="tag"><span>quit</span></span>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>equip</span></span><span class="wo-item">バチ</span>を装備していない時</span>
+											<p>
+												おい、太鼓を<ruby>敲<rt>たた</rt></ruby>く<span class="wo-item">バチ</span>を装備していないじゃないか？<br>
+												<span class="wo-item">バチ</span>を装備してない者に挑戦させるわけにはいかんのだ。<br>
+												装備してからきてくれ。<br>
+												<span class="var"><span>quit</span></span>
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>lack</span></span>所持数不足</span>
+											<p class="descriptive">
+												所持品に必須アイテムがありません。
+											</p>
+											<p>
+												<span class="var"><span>quit</span></span>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>二人で挑戦　夏祭り参加チケット 3枚</span>
+									<p>
+										二人で挑戦はスコアランキングの対象外だぞ。<br>
+										気軽に楽しむんだな。
+									</p>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+											<p class="descriptive">
+												パーティプレイ可能な特殊決戦場では、<br>
+												パーティが挑戦中はアイテムを消費せずに<br>
+												合流できます。
+											</p>
+											<p class="descriptive">
+												ここの特殊決戦場は、パーティプレイ可能です。<br>
+												挑戦しますか？
+											</p>
+											<div class="dialog">
+												<span class="dialog"><span class="tag"><span>dialogue</span></span>太鼓の演奏場に案内するぞ。</span>
+												<div class="options">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#01</span></span>はい <span class="wo-item">夏祭り参加チケット</span>消費 1</span>
+														<p class="descriptive">
+															太鼓の演奏場に案内された。
+														</p>
+														<p>
+															<span class="tag"><span>entering</span></span>特設会場 太鼓の演奏場
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+														<p>
+															<span class="tag"><span>quit</span></span>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>equip</span></span><span class="wo-item">バチ</span>を装備していない時</span>
+											<p>
+												おい、太鼓を<ruby>敲<rt>たた</rt></ruby>く<span class="wo-item">バチ</span>を装備していないじゃないか？<br>
+												<span class="wo-item">バチ</span>を装備してない者に挑戦させるわけにはいかんのだ。<br>
+												装備してからきてくれ。<br>
+												<span class="var"><span>quit</span></span>
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>lack</span></span>所持数不足</span>
+											<p class="descriptive">
+												所持品に必須アイテムがありません。
+											</p>
+											<p>
+												<span class="var"><span>quit</span></span>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>一人用の説明を聞く</span>
+									<p>
+										右から流れてくる提灯が太鼓の前の枠に来た時に<br>
+										太鼓を<ruby>敲<rt>たた</rt></ruby>くと得点が加算されていくぞ。<br>
+										但し、黒色の提灯を<ruby>敲<rt>たた</rt></ruby>いてしまうと減点だ。<br>
+										黒色の提灯は<ruby>敲<rt>たた</rt></ruby>かず、他の提灯を<ruby>敲<rt>たた</rt></ruby>いてなるべく<br>
+										高い点数を目指してくれ。<br>
+										各点数は以下の通りだぞ。<br>
+										【赤色の提灯】 1 点　【黄色の提灯】 2 点<br>
+										【黒色の提灯】 -2 点<br>
+										高得点なら<span class="wo-item">景品の黄色いアイツ</span>と<br>
+										<span class="wo-item">ハーサントフラッペ</span>をプレゼントするぞ。<br>
+										それと<span class="wo-item">バチ</span>で太鼓を<ruby>敲<rt>たた</rt></ruby>かないと得点にならないからな。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>二人用の説明を聞く</span>
+									<p>
+										赤い傘と青い傘の太鼓の場所に移動し、それぞれの<br>
+										傘の色にあった提灯と黄色い提灯の枠内にきたら<br>
+										太鼓を<ruby>敲<rt>たた</rt></ruby>いてくれ。<br>
+										一人用同様、黒色の提灯が来たときに<ruby>敲<rt>たた</rt></ruby>くと減点になるのと<br>
+										他人の色の提灯が来た時に<ruby>敲<rt>たた</rt></ruby>いても減点だからな。<br>
+										各点数は以下の通りだぞ。<br>
+										【傘の色と同じ提灯】 2 点　【黄色の提灯】 1 点<br>
+										【黒色の提灯】 -4 点　【他の傘の色の提灯】 -1 点<br>
+										高得点なら<span class="wo-item">景品の黄色いアイツ</span>をプレゼントするぞ。<br>
+										それと<span class="wo-item">バチ</span>で太鼓を<ruby>敲<rt>たた</rt></ruby>かないと得点にならないからな。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#05</span></span>ハイスコア</span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+											<p>
+												<span class="var"><span>gender</span></span>のハイスコアは「<span class="var"><span>my-high-score</span></span>」。<br>
+												ここいらのハイスコアは「<span class="var"><span>channel-high-score</span></span>」って所だな。
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="var"><span>my-high-score</span></span> = <span class="var"><span>channel-high-score</span></span></span>
+											<p>
+												<span class="var"><span>gender</span></span>のハイスコアは「<span class="var"><span>my-high-score</span></span>」。<br>
+												ここいらのハイスコアは「<span class="var"><span>my-high-score</span></span>」。<br>
+												今は<span class="var"><span>gender</span></span>のスコアが一番だよ！
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#06</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>キャラクターの種族が男性なら「アンちゃん」、女性なら「嬢ちゃん」になる</li>
+							<li>スコアに対応する助言</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img alt="太鼓の名将 ドドドン" data-fancybox="lines-station" class="lazyload" src="../common/placeholder.png" data-src="npcs/ドドドン.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">太鼓の名将 ドドドン</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 G6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="フォーセス">
+					<div class="header">
+						<span class="character">フォーセス</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>lead</span></span></span>
+							<div class="either">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+									<p>
+										……なんだ？<br>
+										俺様の扱う商品は一見様お断りなんだがな。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+									<p>
+										はん？　元締めだぁ？<br>
+										知るかよ馬鹿。俺様の名は<span class="wo-name">フォーセス</span>。<br>
+										ちゃんと名前で呼びやがれ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+									<p>
+										ほお……雑多無像が居る中、俺様に声を掛けるたぁ<br>
+										良い勘をしてやがるな。
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>main</span></span></span>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>何の用だ？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>商品を見せて欲しい</span>
+										<p>
+											よう<span class="var"><span>gender</span></span><span class="footnote"></span>。今日は夏の精霊祭だな。<br>
+											今なら特別に普段扱っていない商品を扱っているぜ。<br>
+											<span class="tag"><span>function</span></span>フォーセスの闇市場
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>雑談する</span>
+										<div class="either">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+												<p>
+													金の流れってのは突き詰めれば人の感情の流れだ。<br>
+													こういう所にこそ新しい商売の火種は<ruby>燻<rt>くすぶ</rt></ruby>っているもんだぜ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+												<p>
+													<span class="wo-site">レーヴェンアンタイル</span>の名前の由来は、<br>
+													古い言葉で「獅子の分け前」を意味する<br>
+													寓話から来ている。<br>
+													つまり、この街では強さを示し利益を<ruby>齎<rt>もたら</rt></ruby>した者が<br>
+													その利益の恩恵を大きく得る。<br>
+													まあ、当然の話だな。<br>
+													だが、勘違いするなよ。<br>
+													強さってのは腕っ節の強さだけを指しているんじゃねぇ。<br>
+													如何に多くの利益を導けるかってのも強さの一つだ。<br>
+													……とは言っても獅子に狩られて餌になる程度の<br>
+													腕っ節では話にならねぇってのも確かだがな。<br>
+													はん？　寓話の内容を聞きたいだぁ？<br>
+													そんなもん、暇な住人を捕まえて聞いてこい。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+												<p>
+													……ん。<span class="wo-site">混沌のシュトラーゼ</span>の行商人？<br>
+													ああ、連中なら俺様の子飼いだな。<br>
+													こう見えても一応まっとうな商売もしているぞ。<br>
+													裏の商売だけで儲かると考えるのは三流の考えだ。<br>
+													<span class="wo-site">ディメント王国</span>の方じゃ<span class="wo-name">アダコーン</span>が<br>
+													それなりに上手くやっているようだな。
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>キャラクターの種族が男性なら「ボウズ」、女性なら「女」になる</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img alt="怪しい商人 フォーセス" data-fancybox="lines-station" class="lazyload" src="../common/placeholder.png" data-src="npcs/フォーセス.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">怪しい商人 フォーセス</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 G6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ドンドコドン">
+					<div class="header">
+						<span class="character">ドンドコドン</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<p>
+							<span class="tag"><span>empty</span></span>
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="太鼓の大将 ドンドコドン" data-fancybox="lines-station" class="lazyload" src="../common/placeholder.png" data-src="npcs/ドンドコドン.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">太鼓の大将 ドンドコドン</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 G6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="メロン">
+					<div class="header">
+						<span class="character">メロン</span>
+						<span class="race">GNO</span>
+					</div>
+					<div class="text">
+						<p>
+							いらっしゃ～い♪<br>
+							かわいいかわいいスイカちゃんはいかがですかぁ～？
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>なにが欲しいですか～？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>スイカちゃんが欲しい</span>
+									<p>
+										かわいいスイカちゃんは<span class="wo-item">景品の黄色いアイツ</span>を<br>
+										30 個持ってきたら 1 個あげちゃいますよぉ～♪
+									</p>
+									<div class="dialog">
+										<span class="dialog">
+											<span class="tag"><span>dialogue</span></span>
+											<span class="textbox" style="width: 550px;">
+												どうする？<br>
+												<span class="wo-item">景品の黄色いアイツ</span>所持数：<span class="var"><span>景品の黄色いアイツ</span></span>
+											</span>
+										</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01</span></span><span class="wo-item">スイカスフィア</span> 1 個と交換する<br>（<span class="wo-item">景品の黄色いアイツ</span> 30 個消費）</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+														<p>
+															<span class="tag"><span>item</span></span>スイカスフィア<br>
+															はい～<br>
+															スイカちゃんですよぉ～♪<br>
+															大切に開けてくださいねぇ～
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>lack</span></span>所持数不足</span>
+														<p>
+															あらあらぁ～？<br>
+															ちゃんとアイテムを渡してくださいねぇ～？
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02</span></span><span class="wo-item">スイカスフィア</span> 5 個と交換する<br>（<span class="wo-item">景品の黄色いアイツ</span> 150 個消費）</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+														<p>
+															<span class="tag"><span>item</span></span>スイカスフィア x5<br>
+															はい～<br>
+															スイカちゃんですよぉ～♪<br>
+															大切に開けてくださいねぇ～
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>lack</span></span>所持数不足</span>
+														<p>
+															あらあらぁ～？<br>
+															ちゃんとアイテムを渡してくださいねぇ～？
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03</span></span><span class="wo-item">スイカスフィア</span> 10 個と交換する<br>（<span class="wo-item">景品の黄色いアイツ</span> 300 個消費）</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+														<p>
+															<span class="tag"><span>item</span></span>スイカスフィア x10<br>
+															はい～<br>
+															スイカちゃんですよぉ～♪<br>
+															大切に開けてくださいねぇ～
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>lack</span></span>所持数不足</span>
+														<p>
+															あらあらぁ～？<br>
+															ちゃんとアイテムを渡してくださいねぇ～？
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#04</span></span>やめる</span>
+												<p>
+													かわいい<span class="wo-item">景品の黄色いアイツ</span>さんを持ってきてくれたら<br>
+													スイカちゃんと交換してあげちゃいますよぉ～
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>メロンちゃんが欲しい</span>
+									<p>
+										あらあらぁ～？<br>
+										メロンちゃんは持ってきていないから<br>
+										あげられないのですよぉ～？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>バナナちゃんが欲しい</span>
+									<p>
+										ぷんぷん。それはまんまるじゃないから<br>
+										かわいくないんですぅ～
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>ふんどしが欲しい</span>
+									<p>
+										男性用の素敵な<span class="wo-item">ふんどし</span>さんは<span class="wo-item">景品の黄色いアイツ</span>を<br>
+										30 個持ってきたら 1 つあげちゃいますよぉ～♪
+									</p>
+									<div class="dialog">
+										<span class="dialog">
+											<span class="tag"><span>dialogue</span></span>
+											<span class="textbox" style="width: 550px;">
+												<span class="wo-item">景品の黄色いアイツ</span> 30 個　→　<span class="wo-item">漢ふんどし</span> 1 つ<br>
+												どうする？
+											</span>
+										</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01</span></span><span class="wo-item">漢ふんどし</span>と交換する<br>（<span class="wo-item">景品の黄色いアイツ</span> 30 個消費）</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+														<p>
+															<span class="tag"><span>item</span></span>漢ふんどし<br>
+															はい～<br>
+															素敵な<span class="wo-item">ふんどし</span>さんですよぉ～♪<br>
+															大切に使ってくださいねぇ～
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>lack</span></span>所持数不足</span>
+														<p>
+															あらあらぁ～？<br>
+															ちゃんとアイテムを渡してくださいねぇ～？
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02</span></span>やめる</span>
+												<p>
+													かわいい<span class="wo-item">景品の黄色いアイツ</span>さんを持ってきてくれたら<br>
+													<span class="wo-item">ふんどし</span>さんと交換してあげちゃいますよぉ～
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#05</span></span>水着が欲しい</span>
+									<p>
+										女性用の素敵な<span class="wo-item">水着セット</span>さんは<span class="wo-item">景品の黄色いアイツ</span>を<br>
+										30 個持ってきたら 1 つあげちゃいますよぉ～♪
+									</p>
+									<div class="dialog">
+										<span class="dialog">
+											<span class="tag"><span>dialogue</span></span>
+											<span class="textbox" style="width: 550px;">
+												<span class="wo-item">景品の黄色いアイツ</span> 30 個　→　水着セット<br>
+												どうする？
+											</span>
+										</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01</span></span>水着セットと交換する<br>（<span class="wo-item">景品の黄色いアイツ</span> 30 個消費）</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>ordinary</span></span>通常</span>
+														<p>
+															<span class="tag"><span>item</span></span>ブルービキニトップス<br>
+															<span class="tag"><span>item</span></span>ブルービキニボトム<br>
+															はい～<br>
+															素敵な<span class="wo-item">水着</span>セットですよぉ～♪<br>
+															大切に使ってくださいねぇ～
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>lack</span></span>所持数不足</span>
+														<p>
+															あらあらぁ～？<br>
+															ちゃんとアイテムを渡してくださいねぇ～？
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02</span></span>やめる</span>
+												<p>
+													かわいい<span class="wo-item">景品の黄色いアイツ</span>さんを持ってきてくれたら<br>
+													<span class="wo-item">水着</span>セットと交換してあげちゃいますよぉ～
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#06</span></span>景品はどこで手に入る？</span>
+									<p>
+										<span class="wo-item">景品の黄色いアイツ</span>さんはぁ～<br>
+										おじいちゃんの射的に挑戦すれば手に入るんですよぉ～？<br>
+										バンバンやっちゃうといいのですぅ～♪<br>
+										他にも～<br>
+										太鼓の名将さんの太鼓でも貰えるんですよぉ～？<br>
+										ドンドン叩いちゃうといいのですぅ～♪
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#07</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="スイカのおねぇさん メロン" data-fancybox="lines-station" class="lazyload" src="../common/placeholder.png" data-src="npcs/メロン.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">スイカのおねぇさん メロン</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 G6</span>
+					</div>
+				</div>
+			</article>
+
+			<hr class="offset-killer">
+			<div id="disqus-space">
+				<p id="comment-attention">
+					名前を入力しようとすると表示される「ゲストとして投稿する」にチェックを入れるとDISQUSに登録しなくてもコメントすることができます。<br>
+					メールアドレスは入力必要ですが DISQUS で管理され、投稿したコメントに表示されることも私にも通知されることもありません。<br>
+					架空のメールアドレスでも可能ですので、お気軽にコメントしてください！
+				</p>
+				<aside id="toc-disqus">
+					<div id="disqus_thread"></div>
+				</aside>
+				<script type="text/javascript">
+					( function () {
+						var dsq = document.createElement( 'script' );
+						dsq.type = 'text/javascript';
+						dsq.async = true;
+						dsq.src = '//miramiku.disqus.com/embed.js';
+						( document.getElementsByTagName( 'head' )[ 0 ] || document.getElementsByTagName( 'body' )[ 0 ] ).appendChild( dsq );
+					}() );
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+			</div>
+		</div>
+	</main>
+
+	<div id="toc">
+		<ul>
+			<li id="back2top"><a href="#top">トップページ</a></li>
+			<li>
+				<a href="#list">NPC リスト</a>
+				<ul>
+					<li><a href="#npc-square">英雄の集まる広場</a></li>
+					<li><a href="#npc-alley">闇を受け入れた者達の路地</a></li>
+					<li><a href="#npc-station">レーヴェンアンタイル</a></li>
+				</ul>
+			</li>
+			<li><a href="#enemies">モンスター</a></li>
+			<li><a href="#log">会話ログ</a>
+				<ul>
+					<li><a href="#lines-square">英雄の集まる広場</a></li>
+					<li><a href="#lines-alley">闇を受け入れた者達の路地</a></li>
+					<li><a href="#lines-station">レーヴェンアンタイル</a></li>
+				</ul>
+			</li>
+		<li id="jump2disqus"><a href="#toc-disqus">コメント</a></li>
+		</ul>
+	</div>
+
+	<script>
+		( function ( i, s, o, g, r, a, m ) {
+			i[ 'GoogleAnalyticsObject' ] = r; i[ r ] = i[ r ] || function () {
+				( i[ r ].q = i[ r ].q || [] ).push( arguments )
+			}, i[ r ].l = 1 * new Date(); a = s.createElement( o ),
+				m = s.getElementsByTagName( o )[ 0 ]; a.async = 1; a.src = g; m.parentNode.insertBefore( a, m )
+		} )( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
+		ga( 'create', 'UA-46801675-2', 'auto' );
+		ga( 'send', 'pageview' );
+	</script>
+</body>
+
+</html>
