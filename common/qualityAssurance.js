@@ -1,3 +1,4 @@
+/*global processed */
 var QA = {};
 
 QA.migrateClasses = ( function () {
@@ -36,10 +37,11 @@ QA.ragularUseCharacters = ( function () {
 	"use strict";
 
 	// var _chars = "",
-	var _prepare = function () {
-		$( "article" )
-			.prepend( "<div id=\"regular-use\"><span></span></div>" );
-	},
+	var
+		_prepare = function () {
+			$( "article" )
+				.prepend( "<div id=\"regular-use\"><span></span></div>" );
+		},
 		_core = function () {
 			var text = $( "article" ).html(),
 				result = "",
@@ -47,10 +49,9 @@ QA.ragularUseCharacters = ( function () {
 				regularUseOnly = true;
 
 			for ( var i = 0; i < text.length; i += 1 ) {
-				var c = text.charAt( i ),
-					p = _chars.indexOf( c );
+				var c = text.charAt( i );
 
-				if ( p < 0 ) {
+				if ( _chars.indexOf( c ) < 0 && processed.indexOf( c ) < 0 ) {
 					result += "<span class=\"irregular-use\">" + c + "</span>";
 					irregulars.push( c );
 					regularUseOnly = false;
@@ -72,7 +73,7 @@ QA.ragularUseCharacters = ( function () {
 		_chars += String.fromCharCode( i );
 	}
 	_chars += " !#$%&'()=~|-^@[];:`{}+*,./_<>?\\\"";
-	_chars += "0123456789０１２３４５６７８９ー～．　，。、・；：｛｝「」［］（）【】『』！？★々―／‐＝♪♂♀＊○□△×…";
+	_chars += "0123456789０１２３４５６７８９ー～．　，。、・；：｛｝「」［］（）【】『』！？★々―／→‐＝♪♂♀＊○□△×…";
 	_chars += "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	_chars += "ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ";
 	_chars += "あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをんゑぁぃぅぇぉっゃゅょ";
