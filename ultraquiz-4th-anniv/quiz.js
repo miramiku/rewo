@@ -14,15 +14,13 @@
 		.on( "click", ".ans", function () {
 			var num = $( this ).parentsUntil( ".quiz" ).parent().data( "num" );
 
-			// if ( current !== num ) {
-			// 	current = num;
-			// 	$( ".evidence" ).hide();
-			// 	$( this ).parent().next().fadeIn( "fast", "swing" );
-			// } else if ( current === num ) {
-			// 	current = 0;
-			// 	$( ".evidence" ).fadeOut( "fast", "swing" );
-			// }
+			if ( current !== num ) {
+				current = num;
+				$( ".evidence" ).hide();
+				$( this ).parent().next().fadeIn( "fast", "swing" );
+			} else if ( current === num ) {
+				current = 0;
+				$( ".evidence" ).fadeOut( "fast", "swing" );
+			}
 		} );
-
-	$( ".evidence" ).show();
 }() );
