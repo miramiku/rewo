@@ -1,0 +1,3919 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>夕闇の交わる宿場町 | Recollection of Wizardry Online</title>
+
+	<!-- meta data -->
+	<meta name="author" content="Miku">
+
+	<!-- scripts -->
+	<script src="../common/core.js" defer></script>
+
+	<!-- style / favicon -->
+	<link href="../common/foundation.css" rel="stylesheet" type="text/css">
+	<link href="../common/fancybox.css" rel="stylesheet" type="text/css">
+	<link href="../favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body id="rewo">
+	<header data-bg="background.jpg">
+		<div id="header-content">
+			<a href="https://miramiku.github.io/rewo/" id="page-info">
+				<span id="meta-info" class="page-headings">Leviant anne' Tile</span>
+				<span id="major-title" class="page-headings">夕闇の交わる宿場町</span>
+				<span id="title-divider" class="page-headings"></span>
+				<span id="minor-title" class="page-headings">Station of Dusk</span>
+			</a>
+
+			<footer>
+				<ul>
+					<li><a href="http://miramiku.github.io/"><span class="basis-icon me"> </span> みく(๑・ω・๑)</a></li>
+					<li><a href="https://twitter.com/miramiku"><span class="basis-icon tw"> </span> @miramiku</a></li>
+					<li><a href="https://github.com/miramiku/rewo"><span class="basis-icon gh"> </span> Repository</a></li>
+				</ul>
+			</footer>
+
+			<p id="wo-credit">
+				"Wizardry&reg;" of GMO Gamepot Inc. All rights reserved.<br>
+				Wizardry Renaissance&trade; &copy;2009 GMO Gamepot Inc.<br>
+				All rights reserved.
+			</p>
+		</div>
+	</header>
+
+	<main id="top">
+		<div id="main-inner">
+			<article>
+				<h3 id="list">NPC リスト</h3>
+				<table class="npc-list">
+					<thead>
+						<tr><th></th><th>NPC 名</th><th></th><th>NPC 名</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>G2</td><td><a href="#ジャバード">ダンジョン案内 ジャバード</a></td><td>H2</td><td><a href="#ビクトル">秘密の行商人 ビクトル</a></td></tr>
+						<tr><td>J2</td><td><a href="#ドナテラ">夜の蝶 ドナテラ</a></td><td>F3</td><td><a href="#フランシス">遺産相続人 フランシス</a>（裏路地）</td></tr>
+						<tr><td>G3</td><td><a href="#パリザダ">クォパティ方面門番 パリザダ</a></td><td>G3</td><td><a href="#マイクロークa">マイクローク 店員</a></td></tr>
+						<tr><td>H3</td><td><a href="#トゥーヴァ">*パーティ受付嬢* トゥーヴァ</a></td><td>H3</td><td><a href="#マルシェ">百貨店 マルシェ</a></td></tr>
+						<tr><td>K3</td><td><a href="#エリバル">鉛の錬金術師 エリバル</a></td><td>F4</td><td><a href="#ヨハン">医者 ヨハン</a>（酒場内）</td></tr>
+						<tr><td>F4</td><td><a href="#サタール">酒場のマスター サタール</a>（酒場内）</td><td>F4</td><td><a href="#ターヘル">大食漢 ターヘル</a>（酒場内）</td></tr>
+						<tr><td>F4</td><td><a href="#ラヘール">酒場の看板娘 ラヘール</a>（酒場内）</td><td>F4</td><td><a href="#ヘーヴェル">宿屋の旦那 ヘーヴェル</a>（酒場２Ｆ）</td></tr>
+						<tr><td>H4</td><td><a href="#褒章アイテム配布窓口a">褒章アイテム配布窓口</a></td><td>H4</td><td><a href="#ナーデル">鍛冶屋 ナーデル</a></td></tr>
+						<tr><td>H4</td><td><a href="#ソヘイル">愛に生きる女 ソヘイル</a></td><td>I4</td><td><a href="#エルアザール">白い粉中毒 エルアザール</a></td></tr>
+						<tr><td>J4</td><td><a href="#イマーヌ">宿屋の女将 イマーヌ</a></td><td>K4</td><td><a href="#ゴルヤー">名誉ある炭鉱夫 ゴルヤー</a>（ユークリッドの無限回廊入口）</td></tr>
+						<tr><td>C5</td><td><a href="#ウルマス">首都方面門番 ウルマス</a></td><td>D5</td><td><a href="#ポーチ交換">ポーチ交換 係員</a></td></tr>
+						<tr><td>E5</td><td><a href="#マフディ">宝石職人 マフディ</a></td><td>E5</td><td><a href="#オークション">オークション 係員</a></td></tr>
+						<tr><td>E5</td><td><a href="#エマヌエル">大富豪の貴族 エマヌエル</a></td><td>F5</td><td><a href="#アッバース">冒険者ギルド支部長 アッバース</a>（冒険者ギルド内）</td></tr>
+						<tr><td>F5</td><td><a href="#ケレト">中堅冒険者 ケレト</a>（冒険者ギルド内）</td><td>F5</td><td><a href="#モルテザ">訓練所出張員 モルテザ</a>（冒険者ギルド内）</td></tr>
+						<tr><td>F5</td><td><a href="#ニクメパ">中堅冒険者 ニクメパ</a>（冒険者ギルド 屋上）</td><td>I5</td><td><a href="#エステール">見守る者 エステール</a>（冒険者の宿 屋上）</td></tr>
+						<tr><td>I5</td><td><a href="#エリシャ">星を見る少女 エリシャ</a>（冒険者の宿 屋上）</td><td>K5</td><td><a href="#サミーン">分校学生 サミーン</a></td></tr>
+						<tr><td>K5</td><td><a href="#ヤギラス">大人の社交場　呼び込み ヤギラス</a></td><td>L5</td><td><a href="#ハンナ">賭博好き ハンナ</a></td></tr>
+						<tr><td>L5</td><td><a href="#ヨナ">ディメント方面門番 ヨナ</a></td><td>G6</td><td><a href="#ミリア">*イベント案内人* ミリア</a></td></tr>
+						<tr><td>G6</td><td><a href="#アクハト">分校教授 アクハト</a></td><td>H6</td><td><a href="#アイム">見張り アイム</a>（見張り台）</td></tr>
+						<tr><td>I6</td><td><a href="#褒章アイテム配布窓口b">褒章アイテム配布窓口</a></td><td>I6</td><td><a href="#ロイヤルショップ">ロイヤルショップ 店員</a></td></tr>
+						<tr><td>I6</td><td><a href="#キャラクターアレンジサロン">キャラクターアレンジサロン 店員</a></td><td>K6</td><td><a href="#ナイカナ">古代魔術管理官 ナイカナ</a></td></tr>
+						<tr><td>K6</td><td><a href="#ディボラ">本が大好き ディボラ</a></td><td>K6</td><td><a href="#マリエール">アルケミストマスター マリエール</a></td></tr>
+						<tr><td>D7</td><td><a href="#カリム">気弱 カリム</a></td><td>E7</td><td><a href="#アラハゥイ">仮面の貴族 アラハゥイ</a></td></tr>
+						<tr><td>F7</td><td><a href="#マイクロークb">マイクローク 店員</a></td><td>H7</td><td><a href="#セッツーノ">シリアルコード受付 セッツーノ</a></td></tr>
+						<tr><td>I7</td><td><a href="#ジュジュ">ソウルパートナー管理人 ジュジュ</a></td><td>I7</td><td><a href="#看板">看板</a></td></tr>
+						<tr><td>G8</td><td><a href="#ユニオン管理局">ユニオン管理局 受付係</a></td><td>G9</td><td><a href="#パーチ">クォパティ司祭 パーチ</a>（寺院内）</td></tr>
+						<tr><td>G9</td><td><a href="#ハーメド">クォパティ司祭 ハーメド</a>（寺院内）</td><td>H9</td><td><a href="#シェバルデ">イシークの巫女見習い シェバルデ</a>（寺院内）</td></tr>
+					</tbody>
+				</table>
+
+				<h3 id="log">会話ログ</h3>
+				<h4 id="a">あ行</h4>
+				<div class="lines" id="アイム">
+					<div class="header">
+						<span class="character">アイム</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								あそこの仮面を付けている貴族っぽいの……<br>
+								すっごく怪しいんだけど！<br>
+								ねぇあなた。もしかしてお知り合い？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								うーん、本日も異常なし！<br>
+								……え、裏路地で喧嘩沙汰があったって？<br>
+								とりあえず死人が出なければ問題ないんじゃない？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								今日の夕食は何にしようかしら……<br>
+								あそこの<ruby>蝙蝠<rt>こうもり</rt></ruby>をここから狙い撃てないものかなぁー。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+							<p>
+								この街では犯罪者であっても施設の利用制限が無いわ。<br>
+								その代わり、私たちレーヴェンアンタイル自警団が<br>
+								警備をしているから不用意な事はしないでね。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>E</span>
+							<p>
+								素敵な眺めでしょう？<br>
+								ここは私の特等席なんだぁー。<br>
+								まあ、仕事場とも言うのだけれどね。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="見張り アイム" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/アイム.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">見張り アイム</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 H6（見張り台）</span>
+					</div>
+				</div>
+
+				<div class="lines" id="アクハト">
+					<div class="header">
+						<span class="character">アクハト</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							……うむう、大学があのような状況では<br>
+							再開の見通しが立たぬ。<br>
+							貴重な魔導書も沢山あるのにどうしたものか……
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="分校教授 アクハト" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/アクハト.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">分校教授 アクハト</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 G6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="アッバース">
+					<div class="header">
+						<span class="character">アッバース</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> イルファーロ初到着時</span>
+							<p class="facility">
+								<span>冒険者ギルド</span>
+								<span>ADVENTURER'S GUILD</span>
+							</p>
+							<p>
+								おや？<br>
+								貴方は知らない顔ですね？<br>
+								冒険者ギルドに未登録の方には<br>
+								頼める仕事は有りませんのでご了承を。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> 冒険者ギルド登録完了後</span>
+							<p class="facility">
+								<span>冒険者ギルド</span>
+								<span>ADVENTURER'S GUILD</span>
+							</p>
+							<p>
+								おや<span class="wo-site">ディメント王国</span>の方から来られた冒険者のようですね。<br>
+								本日はどのような御用件ですか？
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>本日はどのような御用件ですか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>ミッションを報告 (Party)</span>
+										<p>
+											報告可能なミッションはありませんね。
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>ミッションを報告 (Story)</span>
+										<p>
+											報告可能なミッションはありませんね。
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+										<p>
+											そうでうか。<br>
+											それではお気をつけて。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="冒険者ギルド支部長 アッバース" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/アッバース.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">冒険者ギルド支部長 アッバース</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 F5（冒険者ギルド内）</span>
+					</div>
+				</div>
+
+				<div class="lines" id="アラハゥイ">
+					<div class="header">
+						<span class="character">アラハゥイ</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>live status</span></span> 通常時</span>
+							<p>
+								ここは随分と空気の悪い街ですねぇ……。<br>
+								ククク……ですが、この混沌とした雰囲気。<br>
+								悪くは無いですねぇ、ええ。<br>
+								これは、みすぼらしい冒険者さん。ごきげんよう。<br>
+								いつか、あなたにも依頼をお願いするときが<br>
+								来るかもしれませんねえ。ええ……
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>soul status</span></span> 魂時</span>
+							<p>
+								おや、おや。死んでしまったのですか？<br>
+								それは残念、無念。ククク……。<br>
+								でも悲観することはありませんよ。<br>
+								この世界では、肉体を失うことなど日常茶飯事。<br>
+								いちいち気にしていたら、それこそ身が持ちません。<br>
+								私？　死者が見えるのかって？<br>
+								ええ、ちょっと霊感が強いもので。<br>
+								気になさらないでください。<br>
+								今話している相手が何者かなんて、<br>
+								いちいち詮索しないことです。<br>
+								それこそ身が持ちませんよ。ククク……。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="仮面の貴族 アラハゥイ" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/アラハゥイ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">仮面の貴族 アラハゥイ</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 E7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="イマーヌ">
+					<div class="header">
+						<span class="character">イマーヌ</span>
+						<span class="race">HUM♀</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>冒険者の宿</span>
+							<span>ADVENTURER'S INN</span>
+						</p>
+						<div class="dialog">
+							<span class="dialog">
+								<span class="tag"><span>dialogue</span></span>
+								<span class="textbox" style="width: 570px;">
+									おや、いらっしゃい！<br>泊まる部屋を選んでおくれよ。<br>
+									所持金：<span class="wo-gold"><span class="var"><span>pocket</span></span> G</span>
+								</span>
+							</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>簡易寝台 100 G</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>効果：HP と MP 全回復 / コンディション 100 まで回復</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01-a</span></span>泊まる</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>ordinary</span></span>平時</span>
+														<p>
+															どうぞ、ゆっくりしていっておくれ。<br>
+															<span class="tag"><span>function</span></span> inn<br>
+															次のレベルになるには……<br>
+															<span class="var"><span>next-exp</span></span>の経験値が必要だね。<br>
+															あまり無茶するんじゃないよ。
+														</p>
+														<div class="append">
+															<span class="gauge"></span>
+															<p>
+																<span class="option">ソウルランクアップ可能</span>
+																おや……<br>
+																あんた"ソウルランク"が上がりそうだね。<br>
+																イシークの巫女さんに会ってきな。
+															</p>
+														</div>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>pocket</span></span>100 G 未満</span>
+														<p>
+															おや、金が足りないじゃないか。<br>
+															うちは無銭宿泊はお断りだよ！
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01-b</span></span>やめる</span>
+												<p>
+													今日は帰るのかい。<br>
+													また来るのを待っているよ。
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>エコノミールーム 500 G</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>効果：HP と MP 全回復 / コンディション 110 まで回復</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02-a</span></span>泊まる</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>ordinary</span></span>平時</span>
+														<p>
+															どうぞ、ゆっくりしていっておくれ。<br>
+															<span class="tag"><span>function</span></span> inn<br>
+															次のレベルになるには……<br>
+															<span class="var"><span>next-exp</span></span>の経験値が必要だね。<br>
+															あまり無茶するんじゃないよ。
+														</p>
+														<div class="append">
+															<span class="gauge"></span>
+															<p>
+																<span class="option">ソウルランクアップ可能</span>
+																おや……<br>
+																あんた"ソウルランク"が上がりそうだね。<br>
+																イシークの巫女さんに会ってきな。
+															</p>
+														</div>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>pocket</span></span>500 G 未満</span>
+														<p>
+															おや、金が足りないじゃないか。<br>
+															うちは無銭宿泊はお断りだよ！
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02-b</span></span>やめる</span>
+												<p>
+													今日は帰るのかい。<br>
+													また来るのを待っているよ。
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>★VIPスイート 800 G</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>効果：HP と MP 全回復 / コンディション 160 まで回復</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-a</span></span>泊まる</span>
+												<p>
+													すまないね。<br>
+													こっちは一部のネットカフェ専用メニューなんだよ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-b</span></span>やめる</span>
+												<p>
+													今日は帰るのかい。<br>
+													また来るのを待っているよ。
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>スイートルーム 2,000 G</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>効果：HP と MP 全回復 / コンディション 120 まで回復</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#05-a</span></span>泊まる</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>ordinary</span></span>平時</span>
+														<p>
+															部屋を用意しておいたよ。<br>
+															ゆっくりしていっておくれ。<br>
+															<span class="tag"><span>function</span></span> inn<br>
+															次のレベルになるには……<br>
+															<span class="var"><span>next-exp</span></span>の経験値が必要だね。<br>
+															あまり無茶するんじゃないよ。
+														</p>
+														<div class="append">
+															<span class="gauge"></span>
+															<p>
+																<span class="option">ソウルランクアップ可能</span>
+																おや……<br>
+																あんた"ソウルランク"が上がりそうだね。<br>
+																イシークの巫女さんに会ってきな。
+															</p>
+														</div>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>pocket</span></span>2,000 G 未満</span>
+														<p>
+															おや、金が足りないじゃないか。<br>
+															うちは無銭宿泊はお断りだよ！
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#05-b</span></span>やめる</span>
+												<p>
+													今日は帰るのかい。<br>
+													また来るのを待っているよ。
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#05</span></span>ロイヤルスイート 5,000 G</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>効果：HP と MP 全回復 / コンディション 160 まで回復</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#05-a</span></span>泊まる</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>ordinary</span></span>平時</span>
+														<p>
+															快適な部屋を用意しておいたよ。<br>
+															ゆっくりしていっておくれ。<br>
+															<span class="tag"><span>function</span></span> inn<br>
+															次のレベルになるには……<br>
+															<span class="var"><span>next-exp</span></span>の経験値が必要だね。<br>
+															あまり無茶するんじゃないよ。
+														</p>
+														<div class="append">
+															<span class="gauge"></span>
+															<p>
+																<span class="option">ソウルランクアップ可能</span>
+																おや……<br>
+																あんた"ソウルランク"が上がりそうだね。<br>
+																イシークの巫女さんに会ってきな。
+															</p>
+														</div>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>pocket</span></span>5,000 G 未満</span>
+														<p>
+															おや、金が足りないじゃないか。<br>
+															うちは無銭宿泊はお断りだよ！
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#05-b</span></span>やめる</span>
+												<p>
+													今日は帰るのかい。<br>
+													また来るのを待っているよ。
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#06</span></span>やめる</span>
+									<p>
+										おや、そうかい。<br>
+										また来なよ。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="宿屋の女将 イマーヌ" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/イマーヌ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">宿屋の女将 イマーヌ</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 J4</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ウルマス">
+					<div class="header">
+						<span class="character">ウルマス</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<p>
+							ん？<br>
+							こっち側は<span class="wo-site">ハーサント連邦</span>の首都方面だぜ？<br>
+							ダンジョンに向かうなら北門にいる<br>
+							<span class="wo-name">ジャバード</span>に案内してもらいな。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>まだ何か用か？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>ハーサント連邦の首都に行きたい</span>
+									<p>
+										あぁん？<br>
+										<span class="wo-site">ハーサント連邦</span>の首都に行きてぇだぁ？<br>
+										おいおい、てめぇは冒険者ギルドのもんなんだろ。<br>
+										まずはそっちに話を通すのがスジってもんなんじゃねぇか？<br>
+										ふん。向こうじゃどうだったかは知らねぇが、<br>
+										まずはこっちで実績を積んで名前を売るこったな。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="首都方面門番 ウルマス" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/ウルマス.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">首都方面門番 ウルマス</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 C5</span>
+					</div>
+				</div>
+
+				<div class="lines" id="エステール">
+					<div class="header">
+						<span class="character">エステール</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								……<span class="wo-name">エリシャ</span>の姉は<span class="wo-name">コローエトス</span>と言うのよ。<br>
+								<span class="wo-site">ディメント王国</span>の<span class="wo-site">港町イルファーロ</span>と言う下町に住む<br>
+								ポークルの所に嫁いでしまったの。非常に残念だわ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								……何、貴方？<br>
+								<span class="wo-name">エリシャ</span>に手を出す気ならただじゃおかないわよ？<br>
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								はぁー、<span class="wo-name">エリシャ</span>。いつ見てもかわいいわぁ。<br>
+								ハッ！？　……貴方、何をいつからそこに？<br>
+								……用がなければ帰ってよね。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="見守る者 エステール" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/エステール.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">見守る者 エステール</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 I5（冒険者の宿 屋上）</span>
+					</div>
+				</div>
+
+				<div class="lines" id="エマヌエル">
+					<div class="header">
+						<span class="character">エマヌエル</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>lead</span></span></span>
+							<p>
+								……ふむ。<br>
+								薄汚い冒険者が私に何か用かね？<br>
+								ふふっ、冗談だよ。<br>
+								この混沌の街で貴賎を問うのは無粋ってものさ。<br>
+								下々の者と話すのも悪くはない。話に付き合え。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>main</span></span></span>
+							<div class="either">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+									<p>
+										<span class="wo-name">カート</span>と言う冒険者を知っているかね？<br>
+										以前、彼とは友人と言える関係ではあったのだよ。<br>
+										だが、彼が落ちぶれて<ruby>下賤<rt>げせん</rt></ruby>な冒険者になって以来<br>
+										すっかり縁も切れてしまったよ。<br>
+										嘆かわしい話だと思わないかね？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+									<p>
+										それにしてもこの街は空気が悪い。<br>
+										何とかならんものかね？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+									<p>
+										ところで、落ちぶれた貴族を自称して<br>
+										動きまわっている輩がいると噂に聞くが<br>
+										キミは知っているかね？<br>
+										一部の貴族連中と取り引きがあるらしいが、<br>
+										我々の世界の情報網は<ruby>舐<rt>な</rt></ruby>められては困る。<br>
+										落ちぶれたと言えども身元の分からぬ者はそうそういまい。<br>
+										とはいえ、さすがにリーン大陸やアルシュタン大陸の方の<br>
+										没落貴族までは判り兼ねるが……<br>
+										別にそういう話でもないのだろ？<br>
+										……ん？<br>
+										<span class="footnote">通りの向かいに側にいる貴族</span>がそうじゃないのかって？<br>
+										……ふむ、貴族が素性を隠すこと自体は<br>
+										そう珍しいものでもない。彼はその類いだと思うが、<br>
+										件の輩もそうなのかもしれないな。<br>
+										通りの向かいの彼とは会話をしたことがあるが、教養もあり<br>
+										魔道具にも深く精通しているようだ。少なくとも<br>
+										とても落ちぶれているようには見えないのだがね。
+									</p>
+								</div>
+							</div>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li><a href="#アラハゥイ">仮面の貴族 アラハゥイ</a>の事をさす</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img alt="大富豪の貴族 エマヌエル" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/エマヌエル.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">大富豪の貴族 エマヌエル</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 E5</span>
+					</div>
+				</div>
+
+				<div class="lines" id="エリシャ">
+					<div class="header">
+						<span class="character">エリシャ</span>
+						<span class="race">POR♀</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>live status</span></span> 通常時</span>
+							<div class="either">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+									<p>
+										……今ここに届いている星の光は遥か昔の光らしいの。<br>
+										それなら星の所からここを見たら<br>
+										昔の景色が見えるのかな？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+									<p>
+										……お姉ちゃん<br>
+										元気してるかな？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+									<p>
+										……今日も陽が落ちるの。<br>
+										明日も陽が落ちるの。<br>
+										幾星霜が経て星は空を巡ってゆくの……
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+									<p>
+										レーヴェンアンタイルの街に代々伝わる寓話……<br>
+										「獅子の分け前」という題名なの。<br>
+										興味あったりする？　……少し長いかもしれないけど。
+									</p>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>「獅子の分け前」の話を聞きたい？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01</span></span>聞きたい</span>
+												<p>
+													……。<br>
+													昔々、獅子と馬と狐が狩りに出かけ、<br>
+													たくさん獲物が取れました。<br>
+													獲物を分配する際に、<br>
+													馬が平等に分けたところ、<br>
+													獅子は激怒して馬を喰らってしまいました。<br>
+													改めて分配するようにと獅子が狐に命じました。<br>
+													すると狐は大部分を獅子に与え、<br>
+													自分は少ししか獲物を取りませんでした。<br>
+													分配の内容に満足した獅子が、<br>
+													「どうして、このように分けたのか？」と<br>
+													狐に聞きました。<br>
+													それに狐は、<br>
+													「馬の命が、分け方を教えてくれました」<br>
+													と答えたのです。<br>
+													……。<br>
+													こういうお話なの。<br>
+													貴方はこれを聞いて、<br>
+													どう思うかな？
+												</p>
+												<div class="dialog">
+													<span class="dialog"><span class="tag"><span>dialogue</span></span>貴方はこれを聞いて、どう思うかな？</span>
+													<div class="options">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#a</span></span>獅子は不当に多くの分け前を取る卑劣な奴だ</span>
+															<p>
+																……そう。<br>
+																ロウフルな人はそういう感想が多いみたいなの。<br>
+																この街ではあまり見かけないけど……。
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#b</span></span>活躍した獅子が利益を多くもらうのは当然だ</span>
+															<p>
+																……そう。<br>
+																カオルな人はそういう感想が多いみたいなの。<br>
+																この街ではよく見かける感想かな？
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#c</span></span>狐は身近な者の災難をみて処世の知恵を得た知恵者だ</span>
+															<p>
+																……そう。<br>
+																ニュートラルな人はそういう感想が多いみたいなの。<br>
+																そういう流されてる人が嫌いと言う人もいるみたいかな？
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#d</span></span>実は獅子は活躍してないのじゃ？</span>
+															<p>
+																……え？<br>
+																確かに寓話では語られていない部分なの。<br>
+																もしかしたら、獅子はただ力強いだけだったのかも？
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#e</span></span>馬が馬面だったのが悪い</span>
+															<p>
+																…………え？<br>
+																あれ？　そういう話だったっけ……？
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#f</span></span>全ては狸の策略だ</span>
+															<p>
+																……え？　狸？<br>
+																そんなのどこにも出てきていないよ。<br>
+																……でも、もしかしたら黒幕がいたという話だったの？
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#g</span></span>兎がかわいそう…</span>
+															<p>
+																…………兎は出てきていないの。<br>
+																ちゃんと話を聞いてくれないのは悲しいかなぁ……
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#h</span></span>エリシャはカワイイ</span>
+															<p>
+																…………？<br>
+																そんな名前の動物どこにも出てきてないよ？
+															</p>
+															<p class="descriptive">
+																背後から非常に強い殺気を感じた！
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#i</span></span>わからない</span>
+															<p>
+																……そう。
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+												<p>
+													<span class="tag"><span>empty</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>soul status</span></span> 魂時</span>
+							<div class="either">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>main</span></span></span>
+									<div class="either">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+											<p>
+												……今ここに届いている星の光は遥か昔の光らしいの。<br>
+												それなら星の所からここを見たら<br>
+												昔の景色が見えるのかな？
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+											<p>
+												……お姉ちゃん<br>
+												元気してるかな？
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+											<p>
+												……今日も陽が落ちるの。<br>
+												明日も陽が落ちるの。<br>
+												幾星霜が経て星は空を巡ってゆくの……
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>closing</span></span></span>
+									<p>
+										……？　どうしたの？<br>
+										幽霊さんと普通に話してたらおかしいかな？
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="星を見る少女 エリシャ" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/エリシャ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">星を見る少女 エリシャ</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 I5（冒険者の宿 屋上）</span>
+					</div>
+				</div>
+
+				<div class="lines" id="エリバル">
+					<div class="header">
+						<span class="character">エリバル</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>lead</span></span></span>
+							<p class="descriptive">
+								男がブツブツとつぶやいている
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>main</span></span></span>
+							<div class="either">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+									<p>
+										……各地に散ったという<span class="wo-item">ハルシアの破片</span>。<br>
+										なんとか一つ手に入らねぇもんかね。<br>
+										ワイの理論が正しけりゃアイツさえあれば……
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+									<p>
+										……鉱山ギルドがごたごたしている今なら<br>
+										あの計画を進めるチャンス化？<br>
+										いや、足が足りねぇな。となると動くかすべきなのは……
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+									<p>
+										……ふむ、我が母校で騒動が起きているようだな。<br>
+										隠された図書館の資料を持ち出すにはこれが良い機会か？<br>
+										いや、とはいえ手持ちの資材だけでは……
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+									<p>
+										……むぅ、ワイの試算が正しければこの穿孔機はいずれ<br>
+										アレを掘り当てるはず……が、まさか無限の迷宮とは。<br>
+										<span class="wo-site">ユークリッドの無限回廊</span>か……一枚<ruby>咬<rt>か</rt></ruby>みたいものだが……
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>closing</span></span></span>
+							<p>
+								ああん？　なんだ冒険者か……<br>
+								帰れ帰れ、まだワイの計画は実行段階じゃねぇんだよ。<br>
+								機会があったらおめぇにも一枚<ruby>咬<rt>か</rt></ruby>ませてやるよ！
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="鉛の錬金術師 エリバル" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/エリバル.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">鉛の錬金術師 エリバル</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 K3</span>
+					</div>
+				</div>
+
+				<div class="lines" id="エルアザール">
+					<div class="header">
+						<span class="character">エルアザール</span>
+						<span class="race">POR♂</span>
+					</div>
+					<div class="text">
+						<p>
+							うっひゃっひゃっひゃー<br>
+							うーい。<br>
+							おーう、何だおめー。<br>
+							もしかしてアレか？<br>
+							アノたまんねぇ粉を持ってたりしねぇか？<br>
+							……んだよ、ねーのかよ。<br>
+							しっし、けーれけーれ！
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="白い粉中毒 エルアザール" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/エルアザール.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">白い粉中毒 エルアザール</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 I4</span>
+					</div>
+				</div>
+
+				<div class="lines" id="オークション">
+					<div class="header">
+						<span class="character">係員</span>
+						<span class="race">HUM♀</span>
+					</div>
+					<div class="text">
+						<p>
+							オークションへようこそ！<br>
+							<span class="tag"><span>function</span></span> auction
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="オークション 係員" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/オークション.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">オークション 係員</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 E5</span>
+					</div>
+				</div>
+
+				<h4 id="k">か行</h4>
+				<div class="lines" id="カリム">
+					<div class="header">
+						<span class="character">カリム</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ひ、ひぃー<br>
+							ぼ、冒険者の方がボクに何のごようですか？<br>
+							今は手持ちのお金は有りませんし、<br>
+							ご依頼できる事もありません。<br>
+							ひ、ひぃーごめんなさいごめんなさい怒らないでください。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="気弱 カリム" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/カリム.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">気弱 カリム</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 D7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="看板">
+					<div class="header">
+						<span class="character">看板</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>lead</span></span></span>
+							<p>
+								今日の店長のオススメっ！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>main</span></span></span>
+							<div class="either">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>daily random lines</span></span>エヴァ</span>
+									<p>
+										司教のエヴァさんっ。彼女から受ける加護は効果絶大っ！<br>
+										あーん、あたしも癒されたいなっ！<br>
+										そんなあなたの今日のラッキーカラーはバーミリオンっ！
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>daily random lines</span></span>ガレオン</span>
+									<p>
+										君主のガレオンさんっ。彼は家族の想いの優しいひとっ。<br>
+										パートナーになれば冒険の安心感は格段に向上するよっ！<br>
+										そんなあなたの今日のラッキーカラーはアイボリーっ！
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>daily random lines</span></span>ジノヴィー</span>
+									<p>
+										忍者のジノヴィーさんっ。闇の世界に生きるシノビっ。<br>
+										あたしもまたニンジュツつかいたいなっ！ニンニン…。<br>
+										そんなあなたの今日のラッキーカラーはビリジアンっ！
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>daily random lines</span></span>シャドウ・ファング</span>
+									<p>
+										暗殺忍者シャドウ・ファングさんっ。他人を絶対信用しない<br>
+										用心深い人っ！殺すためなら手段を選ばないらしい…。<br>
+										そんなあなたの今日のラッキーアイテムはマナの方解石っ！
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>daily random lines</span></span>ステラ</span>
+									<p>
+										司教見習いステラちゃんっ。なにかと失敗も多いみたい。<br>
+										だけど健気で人一倍努力してる子なのっ！<br>
+										そんなあなたの今日のラッキーカラーはスカーレットっ！
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>daily random lines</span></span>ツバキ</span>
+									<p>
+										侍見習いツバキさんっ。力のコントロールが未熟みたい。<br>
+										でもオケイコをして強くなるんだって意気込んでたっ！<br>
+										そんなあなたの今日のラッキーカラーはレグホーンっ！
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>daily random lines</span></span>マリカ</span>
+									<p>
+										司教のマリカさんっ。あたしのことを子供扱いするのっ！<br>
+										もう子供じゃないのにーっ！そんなあなたの今日の<br>
+										ラッキーアイテムはチコルのぬいぐるみだーっ！
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>daily random lines</span></span>ユーリ</span>
+									<p>
+										侍のユーリさんっ。主のためなら殺生だって問わない…。<br>
+										今の彼女には温かな心もった人が必要なのっ！うるる。<br>
+										そんなあなたの今日のラッキーカラーはベイジュっ！
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="看板" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/看板.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">看板</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 I7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="キャラクターアレンジサロン">
+					<div class="header">
+						<span class="character">店員</span>
+						<span class="race">GNO</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>キャラクターアレンジサロン</span>
+							<span>CHARACTER ARRANGE SALON</span>
+						</p>
+						<p>
+							こちらではキャラクターの容姿変更や、<br>
+							<span class="wo-item">ボイス交換チケット</span>の交換が行えます。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>いらっしゃいませ！</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>サロンに入る</span>
+									<p>
+										<span class="tag"><span>function</span></span> character-arrange-salon
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>「ボイス交換チケット」を交換する</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>どのボイスを交換しますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01</span></span>男性ボイス</span>
+												<p><span class="tag"><span>omit</span></span></p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02</span></span>女性ボイス</span>
+												<p><span class="tag"><span>omit</span></span></p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03</span></span>やめる</span>
+												<p><span class="tag"><span>empty</span></span></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+									<p><span class="tag"><span>empty</span></span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="キャラクターアレンジサロン 店員" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/キャラクターアレンジサロン.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">キャラクターアレンジサロン 店員</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 I6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ケレト">
+					<div class="header">
+						<span class="character">ケレト</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							おう後輩。<br>
+							アンタも儲け話を聞きに来た口かい？<br>
+							おおっと、まだこの辺りでは活動していないって顔だな。<br>
+							アンタが活動するようになったら儲け話でもしようぜ。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="中堅冒険者 ケレト" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/ケレト.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">中堅冒険者 ケレト</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 F5（冒険者ギルド内）</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ゴルヤー">
+					<div class="header">
+						<span class="character">ゴルヤー</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>lead</span></span></span>
+							<p>
+								おう、アンタは冒険者か。<br>
+								<span class="wo-site">レーヴェンアンタイル</span>の地下にて、<br>
+								<span class="wo-site">ユークリッドの無限回廊</span>の入口にようこそ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>main</span></span></span>
+							<div class="either">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+									<p>
+										俺は元々ここでの監視作業が終わったら、新しく見つかった<br>
+										<span class="wo-site">イルヴァンボーレ鉱山</span>の方へと遠征する予定だったんだが、<br>
+										とんだ世紀の大発見に巡り合えたものだ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+									<p>
+										<span class="wo-site">ユークリッドの無限回廊</span>の名前の由来は発掘事業の依頼主<br>
+										<span class="wo-name">ユークリッド・ディアマトニューゼ</span>氏の名前からきている。<br>
+										彼の探究心のお陰で俺も素晴らしい発見に立ち会えたよ。
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>closing</span></span></span>
+							<p>
+								おっと、<span class="wo-site">ユークリッドの無限回廊</span>まで降りるつもりかい？<br>
+								だったら下のエントランスまで案内するぜ。
+							</p>
+							<div class="append">
+								<span class="gauge"></span>
+								<p>
+									<span class="option"><span class="wo-item">ユークリッドの無限回廊入場許可証</span>を所持していない場合、以下をテキストを挿入</span>
+									それと、無限回廊の迷宮を管理する迷宮管理組合<br>
+									に登録すれば、他のダンジョン案内人からも<br>
+									案内して貰えるようになるぜ。<br>
+									無限回廊に関する手続きはエントランス内の事務所にいる<br>
+									<span class="wo-name">フォルニ</span>のお嬢さんに頼むといいぞ。
+								</p>
+							</div>
+							<p>
+								<span class="tag"><span>function</span></span> DungeonGuide (limited)
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="名誉ある炭鉱夫 ゴルヤー" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/ゴルヤー.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">名誉ある炭鉱夫 ゴルヤー</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 K4 ユークリッドの無限回廊入口</span>
+					</div>
+				</div>
+
+				<h4 id="s">さ行</h4>
+				<div class="lines" id="サタール">
+					<div class="header">
+						<span class="character">サタール</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>ギルガメッシュの酒場</span>
+							<span>GILGAMESH'S TAVERN</span>
+						</p>
+						<p>
+							よう、いいもん喰ってるか？
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>よう、いいもん喰ってるか？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>一人で料理を食べる</span>
+									<p>
+										<span class="tag"><span>function</span></span> ギルガメッシュの酒場<br>
+										おう、また来てくれよな！
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>パーティ用の料理を食べる</span>
+									<p>
+										<span class="tag"><span>function</span></span> ギルガメッシュの酒場<br>
+										おう、また来てくれよな！
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+									<p>
+										おう、また来てくれよな！
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="酒場のマスター サタール" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/サタール.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">酒場のマスター サタール</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 F4（酒場内）</span>
+					</div>
+				</div>
+
+				<div class="lines" id="サミーン">
+					<div class="header">
+						<span class="character">サミーン</span>
+						<span class="race">HUM♀</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								ああーレポートどうしよう。<br>
+								大学の図書館に入れないから資料が集まらないわ……<br>
+								闇天使と光天使に関する本、どこかに無いものかしら？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								うーん、バイトを始めたいと思うんだけどどうしようかなー<br>
+								<span class="wo-name">サタール</span>さんの所なら私でもできそうなんだけど<br>
+								<span class="wo-name">ラヘール</span>さんと比べられそうで嫌なのよねー
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								最近、私の通ってる大学が急に登校禁止になったのよねー。<br>
+								改装工事をやると言う話は聞いてないんだけど、<br>
+								一体どうしちゃったのかしら？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+							<p>
+								<span class="wo-name">サタール</span>さんの料理も悪くはないんだけど、<br>
+								やっぱり学食のメニューのコスパにはかなわないわよ。<br>
+								はぁー、早く大学が再開しないかしら？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>E</span>
+							<p>
+								「獅子の分け前」の寓話ってなかなか面白い題材よね。<br>
+								一見強者の独占にも見えるけど、他人の宿題を写す人は<br>
+								単位を貰えないと言いかえれば教訓っぽいわよね？
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="分校学生 サミーン" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/サミーン.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">分校学生 サミーン</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 K5</span>
+					</div>
+				</div>
+
+				<div class="lines" id="シェバルデ">
+					<div class="header">
+						<span class="character">シェバルデ</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>live status</span></span> 通常時</span>
+							<p>
+								私はイシークの巫女<span class="wo-name">シェバルデ</span>。<br>
+								何かご用でしょうか？
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>何かご用でしょうか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>ソウルマテリアルと交換</span>
+										<p>
+											<span class="tag"><span>function</span></span> ソウルマテリアル交換
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>蓄積速度アップ</span>
+										<p>
+											1回あたりの蓄積速度を増やす<br>
+											ソウルマテリアルの種類を選んでください。
+										</p>
+										<div class="dialog">
+											<span class="dialog"><span class="tag"><span>dialogue</span></span>ソウルマテリアルの種類を選んでください。</span>
+											<div class="options">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02-a</span></span>輪廻 Lv1</span>
+													<p>
+														次の段階に上げるには<br>
+														<span class="wo-keyword">ソウルランクが8以上</span>でなければなりません。
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02-b</span></span>秩序 Lv1</span>
+													<p>
+														次の段階に上げるには<br>
+														<span class="wo-keyword">ソウルランクが8以上</span>でなければなりません。
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02-c</span></span>混沌 Lv1</span>
+													<p>
+														次の段階に上げるには<br>
+														<span class="wo-keyword">ソウルランクが8以上</span>でなければなりません。
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#02-d</span></span>立ち去る</span>
+													<p>
+														もうよろしいのですか？<br>
+														それでは、またお越しください。<br>
+														いつでも貴方をお待ちしています。
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#03</span></span>蓄積限界アップ</span>
+										<p>
+											最大値を増やす<br>
+											ソウルマテリアルの種類を選んでください。
+										</p>
+										<div class="dialog">
+											<span class="dialog"><span class="tag"><span>dialogue</span></span>ソウルマテリアルの種類を選んでください。</span>
+											<div class="options">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#03-a</span></span>輪廻 Lv1</span>
+													<p>
+														次の段階に上げるには<br>
+														<span class="wo-keyword">ソウルランクが4以上</span>でなければなりません。
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#03-b</span></span>秩序 Lv1</span>
+													<p>
+														次の段階に上げるには<br>
+														<span class="wo-keyword">ソウルランクが4以上</span>でなければなりません。
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#03-c</span></span>混沌 Lv1</span>
+													<p>
+														次の段階に上げるには<br>
+														<span class="wo-keyword">ソウルランクが4以上</span>でなければなりません。
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#03-d</span></span>立ち去る</span>
+													<p>
+														もうよろしいのですか？<br>
+														それでは、またお越しください。<br>
+														いつでも貴方をお待ちしています。
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#04</span></span>アカシックレコード</span>
+										<p>
+											示しましょう…貴方の魂の輝きを…<br>
+											<span class="tag"><span>function</span></span> AkashicRecords
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#05</span></span>立ち去る</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>soul status</span></span> 魂時</span>
+							<p>
+								ああ、なんてことでしょう……<br>
+								亡くなられてしまったのですね。<br>
+								魂の状態ではこの街から出ることもできないでしょう。<br>
+								あちらの<span class="wo-name">ハーメド</span>司祭に頼んで、<br>
+								蘇生してもらってください。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="イシークの巫女見習い シェバルデ" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/シェバルデ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">イシークの巫女見習い シェバルデ</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 H9（寺院内）</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ジャバード">
+					<div class="header">
+						<span class="character">ジャバード</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> イルファーロ初到着時</span>
+							<p>
+								ダンジョンに入るには、冒険者ギルドの許可が必要です。<br>
+								まずは、冒険者ギルドの登録を済ませてください。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> 冒険者ギルド登録完了後</span>
+							<p class="facility">
+								<span>旅立ちの門</span>
+								<span>DEPARTURES GATE</span>
+							</p>
+							<p>
+								<span class="wo-site">ディメント王国</span>から来ている方ですね。<br>
+								本来ならこの旅立ちの門からダンジョンへと向かえますが、<br>
+								今案内できるダンジョンは無いようです。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ダンジョン案内 ジャバード" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/ジャバード.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ダンジョン案内 ジャバード</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 G2</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ジュジュ">
+					<div class="header">
+						<span class="character">ジュジュ</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<p>
+							おっとおきゃくさんっ！<br>
+							きみはもうちょっと強くなったらまたおいでっ！<br>
+							ごめんね～っ♪
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="ソウルパートナー管理人 ジュジュ" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/ジュジュ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ソウルパートナー管理人 ジュジュ</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 I7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="セッツーノ">
+					<div class="header">
+						<span class="character">セッツーノ</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<p>
+							アイテムコードの入力を承っております。<br>
+							<span class="tag"><span>function</span></span> serialcode
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="シリアルコード受付 セッツーノ" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/セッツーノ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">シリアルコード受付 セッツーノ</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 H7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ソヘイル">
+					<div class="header">
+						<span class="character">ソヘイル</span>
+						<span class="race">POR♀</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>lead</span></span></span>
+							<p>
+								何処かにイイ男は居ないかしら……
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>main</span></span></span>
+							<div class="either">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span><span class="wo-name">アクハト</span></span>
+									<p>
+										<a href="#アクハト"><span class="wo-name">アクハト</span></a>は知的で素敵よね！<br>
+										ただ、ちょっと朴念仁っぽいけど……
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span><span class="wo-name">アッバース</span></span>
+									<p>
+										<a href="#アッバース"><span class="wo-name">アッバース</span></a>はあの歳で支部長を務めてて超やり手よね……<br>
+										でも、なにやら悪い噂を聞くのよね……
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span><span class="wo-name">アラハゥイ</span></span>
+									<p>
+										<a href="#アラハゥイ"><span class="wo-name">アラハゥイ</span></a>っていう貴族が最近見かけるのだけれども、<br>
+										どんな人なんだろう？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span><span class="wo-name">ウルマス</span></span>
+									<p>
+										<a href="#ウルマス"><span class="wo-name">ウルマス</span></a>って人顔が怖いんだけど、<br>
+										実際の所どうなのかな……？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span><span class="wo-name">エマヌエル</span></span>
+									<p>
+										<a href="#エマヌエル"><span class="wo-name">エマヌエル</span></a>はなんといってもセレブよね……<br>
+										ただ高圧的だけれども……<br>
+										そういえば彼、結婚してるんだっけ……？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span><span class="wo-name">エリバル</span></span>
+									<p>
+										<a href="#エリバル"><span class="wo-name">エリバル</span></a>はもうちょっと清潔に気を使った方が<br>
+										いいと思うわ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span><span class="wo-name">ケレト</span></span>
+									<p>
+										<a href="#ケレト"><span class="wo-name">ケレト</span></a>て偏屈者よね、まぁ腕はいいんでしょうけど……
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span><span class="wo-name">ジャバード</span></span>
+									<p>
+										<a href="#ジャバード"><span class="wo-name">ジャバード</span></a>は最近赴任してきたのだけれども。<br>
+										どんな人なんだろう……？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span><span class="wo-name">ターヘル</span></span>
+									<p>
+										<a href="#ターヘル"><span class="wo-name">ターヘル</span></a>はなんというか……飲兵衛よね。<br>
+										さすがにちょっと……
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span><span class="wo-name">ナーデル</span></span>
+									<p>
+										すぐ後ろでお店してる<a href="#ナーデル"><span class="wo-name">ナーデル</span></a>は、職人！って感じだよね。<br>
+										ただ、凄い頑固者だけど……
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span><span class="wo-name">ニクメパ</span></span>
+									<p>
+										<a href="#ニクメパ"><span class="wo-name">ニクメパ</span></a>はハードボイルドよね。<br>
+										でも、<br>
+										冒険ばっかしててプライベートな時間取れるのかしら？
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span><span class="wo-name">フォーセス</span></span>
+									<p>
+										<span class="wo-name">フォーセス</span>という人もたまに見かけるけど、<br>
+										影があってステキね……<br>
+										でもどこに居るか分からないわ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span><span class="wo-name">へーヴェル</span></span>
+									<p>
+										<a href="#へーヴェル"><span class="wo-name">へーヴェル</span></a>は怠け者だよね。<br>
+										さすがに奥さんに宿を任せきりというのは引いちゃうわ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span><span class="wo-name">マフディ</span></span>
+									<p>
+										<a href="#マフディ"><span class="wo-name">マフディ</span></a>は宝石商として<br>
+										経済はとても安定しているわよね……<br>
+										でも生い先が気になるわ……
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>closing</span></span></span>
+							<p>
+								うーん…
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="愛に生きる女 ソヘイル" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/ソヘイル.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">愛に生きる女 ソヘイル</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 H4</span>
+					</div>
+				</div>
+
+				<h4 id="t">た行</h4>
+				<div class="lines" id="ターヘル">
+					<div class="header">
+						<span class="character">ターヘル</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>STR</span>
+							<p>
+								ぶっひゃっひゃ、この骨付き肉はイイぜ。<br>
+								STR がモリモリと<ruby>滾<rt>たぎ</rt></ruby>ってきやがらぁ。<br>
+								近接武器で殴るような奴ならコイツに限るな！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>VIT</span>
+							<p>
+								ぶっひゃっひゃ、このハーサント定食はイイぜ。<br>
+								VIT がガッチリと引き締まってきやがらぁ。<br>
+								物理攻撃を耐えようとする奴ならコイツに限るな！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>DEX</span>
+							<p>
+								ぶっひゃっひゃ、このフィッシュフライはイイぜ。<br>
+								DEX がクイっと向上してきやがらぁ。<br>
+								<ruby>罠<rt>わな</rt></ruby>や遠距離武器を扱う奴ならコイツに限るな！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>AGI</span>
+							<p>
+								ぶっひゃっひゃ、このサラダ盛り合わせはイイぜ。<br>
+								AGI がグーンと増えてきやがらぁ。<br>
+								<ruby>罠<rt>わな</rt></ruby>やハードヒットに備える奴ならコイツに限るな！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>INT</span>
+							<p>
+								ぶっひゃっひゃ、このフルーツケーキはイイぜ。<br>
+								INT がシュピーンと冴えてきやがらぁ。<br>
+								魔法攻撃を扱う奴ならコイツに限るな！
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>PIE</span>
+							<p>
+								ぶっひゃっひゃ、このハーサントシチューはイイぜ。<br>
+								PIE がキューンと高まってきやがらぁ。<br>
+								回復魔法を扱う奴ならコイツに限るな！
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="大食漢 ターヘル" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/ターヘル.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">大食漢 ターヘル</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 F4（酒場内）</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ディボラ">
+					<div class="header">
+						<span class="character">ディボラ</span>
+						<span class="race">GNO</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								紙とインクの匂いっていいよねー、<br>
+								本の香りがする香水！　とかステキだと思わない？
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								本が好きすぎて参っちゃうわー、<br>
+								もう結婚しちゃいたいくらいだよー
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								<span class="wo-site">ミスカトニック大学分校</span>の図書館に行ってー<br>
+								一日中本を読んでたいなぁ。<br>
+								……って考えてるだけでもニヤニヤしちゃうのよ。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="本が大好き ディボラ" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/ディボラ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">本が大好き ディボラ</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 K6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="トゥーヴァ">
+					<div class="header">
+						<span class="character">トゥーヴァ</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<p>
+							おや、<span class="footnote">パーティー</span>募集かい？<br>
+							それなら私の所にきなよ。<br>
+							……ん？　口調？　おおっと、失礼。<br>
+							パーティ検索を承っております。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>どうしますか？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#a</span></span>パーティ検索</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>ダンジョンを選択してください</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#01</span></span><span class="footnote">カリグラーゼ下水道</span></span>
+												<p><span class="tag"><span>function</span></span> パーティ検索（カリグラーゼ下水道）</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02</span></span><span class="footnote">DIM SPIRO SPERO</span></span>
+												<p><span class="tag"><span>function</span></span> パーティ検索 (DIM SPIRO SPERO)</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#close</span></span>立ち去る</span>
+												<p><span class="tag"><span>empty</span></span></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#b</span></span>立ち去る</span>
+									<p><span class="tag"><span>empty</span></span></p>
+								</div>
+							</div>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>表記に揺らぎがあるが原文のママ。「パーティ」の表記が標準の模様</li>
+							<li>該当するダンジョンの入場許可証を所持したら追加される。以降、一部例外を除き同様</li>
+							<li>冒険者ギルドに登録後、<a href="/post/wizon/recollections/heros-sqaure/#エゥオニー">境界へ誘いし者 エゥオニー</a>に初めて話しかけて以降追加される</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img alt="*パーティ受付嬢* トゥーヴァ" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/トゥーヴァ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">*パーティ受付嬢* トゥーヴァ</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 H3</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ドナテラ">
+					<div class="header">
+						<span class="character">ドナテラ</span>
+						<span class="race">ELF♀</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								ふふっ<br>
+								いいわね、貴女凄くいいわ。<br>
+								私、この近くの素敵なお店で働いてるの。<br>
+								よかったら貴方、働いてみない？<br>
+								考えておいてね。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								ふふっ<br>
+								<span class="wo-name">ゴルヤー</span>さんがそこの深い穴のさらに先で<br>
+								物凄い発見をしたそうよ。<br>
+								たしか…<span class="wo-site">ユークリッドの無限回廊</span>だったかしら？<br>
+								興味があったら降りてみたらどう？
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="夜の蝶 ドナテラ" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/ドナテラ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">夜の蝶 ドナテラ</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 J2</span>
+					</div>
+				</div>
+
+				<h4 id="n">な行</h4>
+				<div class="lines" id="ナーデル">
+					<div class="header">
+						<span class="character">ナーデル</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								……ふん。<br>
+								今日は何の用だ？<br>
+								<span class="tag"><span>function</span></span> blacksmith
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								……ふん。<br>
+								鍛錬に失敗した装備品は失われる。<br>
+								避けたければ良い<span class="wo-item">鍛錬石</span>を持ってくるんだな。<br>
+								<span class="tag"><span>function</span></span> blacksmith
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								……ふん。<br>
+								同一の装備が複数あれば特殊鍛錬ができる。<br>
+								装備の要求レベルを下げたければ試してみるんだな。<br>
+								<span class="tag"><span>function</span></span> blacksmith
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+							<p>
+								……ふん。<br>
+								<span class="wo-item">秘術の石</span>を使えば装備の潜在能力を調整できる。<br>
+								だが稀に存在する突出した性能は再眼できんな。<br>
+								<span class="tag"><span>function</span></span> blacksmith
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>E</span>
+							<p>
+								……ふん。<br>
+								弓や銃の消耗度合いは使用する矢や弾で変わる。<br>
+								修理が必要であればうちに持ってこい。<br>
+								<span class="tag"><span>function</span></span> blacksmith
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>F</span>
+							<p>
+								……ふん。<br>
+								弓や銃を鍛錬すると射程は性能が向上する。<br>
+								使い勝手も変わるから試してみるんだな。<br>
+								<span class="tag"><span>function</span></span> blacksmith
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="鍛冶屋 ナーデル" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/ナーデル.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">鍛冶屋 ナーデル</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 H4</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ナイカナ">
+					<div class="header">
+						<span class="character">ナイカナ</span>
+						<span class="race">POR♀</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>古代魔法管理官</span>
+							<span>ANCIENT MAGIC OFFICE</span>
+						</p>
+						<p>
+							<span class="wo-keyword">エンシェントマジック</span>と、<span class="wo-keyword">種族スキル</span>、<br>
+							それに<span class="wo-keyword">エンシェントスキル</span>の管理を請け負っているわ。<br>
+							何か御用？
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>どうしますか？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>スキル設定</span>
+									<p>
+										<span class="tag"><span>function</span></span>CustomSlot
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>スキル習得</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>どの手続きを行いますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02-a</span></span>黒魔術習得</span>
+												<p>
+													黒魔術を習得できるのは、<br>
+													メイジかビショップ、もしくはサムライだけよ。<br>
+													<span class="tag"><span>back</span></span><span class="tag"><span>#02</span></span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02-b</span></span>白魔術習得</span>
+												<p>
+													白魔術の使用方法が記された<span class="wo-item">古代の聖典</span>を<br>
+													一つも持っていないようね。<br>
+													<span class="tag"><span>back</span></span><span class="tag"><span>#02</span></span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02-c</span></span>種族スキル習得</span>
+												<p>
+													あなたの種族が習得できる種族スキルの使用方法が記された<br>
+													<span class="wo-item">祖先の秘録</span>を一つも持っていないようね。<br>
+													<span class="tag"><span>back</span></span><span class="tag"><span>#02</span></span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02-d</span></span>エンシェントスキル習得</span>
+												<p>
+													あなたの職業で習得できるエンシェントスキルの<br>
+													使用方法が記された<span class="wo-item">古の秘儀</span>を<br>
+													一つも持っていないようね。<br>
+													<span class="tag"><span>back</span></span><span class="tag"><span>#02</span></span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02-e</span></span>黒魔術使用回数上昇</span>
+												<p>
+													黒魔術の PLv に関する<span class="wo-item">呪文書の断片</span>を<br>
+													一つも持っていないようね。<br>
+													<span class="tag"><span>back</span></span><span class="tag"><span>#02</span></span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02-f</span></span>白魔術使用回数上昇</span>
+												<p>
+													白魔術の PLv に関する<span class="wo-item">聖典の断片</span>を<br>
+													一つも持っていないようね。<br>
+													<span class="tag"><span>back</span></span><span class="tag"><span>#02</span></span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02-close</span></span>やめる</span>
+												<p>
+													<span class="tag"><span>back</span></span><span class="tag"><span>#root</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>質問する</span>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>何を聞きますか？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-a</span></span>あなたは誰？</span>
+												<p>
+													私は魔法局所属の古代魔術管理官よ。<br>
+													<span class="wo-keyword">エンシェントマジック</span>、<span class="wo-keyword">種族スキル</span>、<span class="wo-keyword">エンシェントスキル</span>の<br>
+													習得や設定に関する申請を受け付けているわ。<br>
+													<span class="tag"><span>back</span></span><span class="tag"><span>#03</span></span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-b</span></span>エンシェントマジックとは？</span>
+												<p>
+													<span class="wo-keyword">エンシェントマジック</span>とは、<br>
+													古代のメイジやプリーストたちが使用していた<br>
+													強力な古代魔術のことよ。<br>
+													古代のメイジが使用していたものは、黒魔術。<br>
+													古代のプリーストが使用していたものは白魔術<br>
+													と呼ばれるわ。<br>
+													どれも強力な効果をもたらすけれども、<br>
+													習得する為にはそれぞれに対応した職業の者が<br>
+													習得に関連したアイテムを持ってくる必要があるわ。<br>
+													また、<span class="wo-keyword">エンシェントマジック</span>を扱うには<br>
+													相応のレベルが必要とされるの。<br>
+													最低でも<span class="wo-warn">中級冒険者</span>、つまりレベル 30 は無いと<br>
+													習得する事はできないし、<br>
+													たとえ習得していても使用できないわ。<br>
+													ただし、習得してかつレベルの条件さえ満たしていれば、<br>
+													たとえ他の職業に転職していても使用することはできるの。<br>
+													<span class="wo-keyword">エンシェントマジック</span>習得に関連するアイテムを<br>
+													見つけたら、私のスキル習得の件で話しかけなさい。<br>
+													<span class="wo-keyword">エンシェントマジック</span>はスキルとして使用できるけど、<br>
+													カスタムスロットに登録されていない<span class="wo-keyword">エンシェントマジック</span><br>
+													は、使うことができないから気を付けて。<br>
+													カスタムスロットに関する設定を行いたければ、<br>
+													私にスキル設定の件で話しかけなさい。<br>
+													<span class="tag"><span>back</span></span><span class="tag"><span>#03</span></span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-c</span></span>エンシェントマジックの使用回数とは？</span>
+												<p>
+													<span class="wo-keyword">エンシェントマジック</span>は、一般の魔法とは異なり、<br>
+													一般的な魔力（マナ）、つまり MP と呼ばれるものとは別の<br>
+													特殊な魔力（マナ）を使って扱うの。<br>
+													それが黒魔術、白魔術それぞれの PLv（パワーレベル）毎<br>
+													の使用回数となるのだけれど、<br>
+													この使用回数にはいろいろと制限があるわ。<br>
+													・<span class="wo-keyword">エンシェントマジック</span>の使用には MP は一切関係ない。<br>
+													・使用回数は各<span class="wo-keyword">エンシェントマジック</span>に対応した PLv の<br>
+													　使用回数が消費される。<br>
+													・各 PLv の使用回数は<span class="wo-keyword">街の宿屋</span>への宿泊のみで回復する。<br>
+													それと、使用回数の上昇についての制限事項は、<br>
+													以下のようになるわ。<br>
+													・最初にその PLv に属する古代魔術を習得した際に 1 獲得。<br>
+													・各 PLv に対応した専用アイテムで最大 9 回まで上昇可能。<br>
+													・使用回数が 0 の PLv の使用回数は上昇できない。<br>
+													あと、使用回数の上昇手続きについては、<br>
+													レベル制限や職業制限は特に設けていないわ。<br>
+													使用回数を上昇させるアイテムを見つけたら、<br>
+													私にスキル習得の件で話しかけなさい。<br>
+													<span class="tag"><span>back</span></span><span class="tag"><span>#03</span></span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-d</span></span>黒魔術とは？</span>
+												<p>
+													黒魔術とは、<span class="wo-keyword">エンシェントマジック</span>の 1 系統で、<br>
+													古代のメイジが使用していた古代魔術のことよ。<br>
+													習得する為には、古代魔術の使用方法が記された<br>
+													<span class="wo-item">古代の呪文書</span>が必要となるわ。<br>
+													習得に必要なレベルを満たしてから<br>
+													古代魔術の記された<span class="wo-item">古代の呪文書</span>を持ってきたら<br>
+													習得手続きをしてあげる。<br>
+													習得手続きはメイジ、ビショップ、サムライが可能よ。<br>
+													でも、使用するのに必要なレベルさえ満たしていれば、<br>
+													他の職業に転職したとしても使用可能よ。<br>
+													あと、各黒魔術 PLv に対応した<span class="wo-item">呪文書の断片</span>を<br>
+													持ってきたら、対応した PLv の使用回数を<br>
+													上昇させる手続きが可能よ。<br>
+													使用回数の上昇は、最低でも使用回数が 1 以上の<br>
+													もので無ければできないのと、最大が 9 回までしか<br>
+													増やせないので気をつけなさい。<br>
+													<span class="tag"><span>back</span></span><span class="tag"><span>#03</span></span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-e</span></span>白魔術とは？</span>
+												<p>
+													白魔術とは、<span class="wo-keyword">エンシェントマジック</span>の 1 系統で、<br>
+													古代のプリーストが使用していた古代魔術のことよ。<br>
+													習得する為には、古代魔術の使用方法が記された<br>
+													<span class="wo-item">古代の聖典</span>が必要となるわ。<br>
+													習得に必要なレベルを満たしてから<br>
+													古代魔術の記された<span class="wo-item">古代の聖典</span>を持ってきたら<br>
+													習得手続きをしてあげる。<br>
+													習得手続きはプリースト、ビショップ、ロードが可能よ。<br>
+													でも、使用するのに必要なレベルさえ満たしていれば、<br>
+													他の職業に転職したとしても使用可能よ。<br>
+													あと、各白魔術 PLv に対応した<span class="wo-item">古代の聖典</span>を<br>
+													持ってきたら、対応した PLv の使用回数を<br>
+													上昇させる手続きが可能よ。<br>
+													使用回数の上昇は、最低でも使用回数が 1 以上の<br>
+													もので無ければできないのと、最大が 9 回までしか<br>
+													増やせないので気をつけなさい。<br>
+													<span class="tag"><span>back</span></span><span class="tag"><span>#03</span></span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-f</span></span>種族スキルとは？</span>
+												<p>
+													<span class="wo-keyword">種族スキル</span>とは、<br>
+													古代より各種族に伝わる特別な技術のことよ。<br>
+													習得する為には、各種族に対応した<br>
+													<span class="wo-item">祖先の秘録</span>が必要となるわ。<br>
+													また、<span class="wo-keyword">種族スキル</span>を習得するには<br>
+													相応のレベルが必要とされるの。<br>
+													最低でも<span class="wo-warn">中級冒険者</span>、つまりレベル 30 は無いと<br>
+													習得する事はできないし、<br>
+													習得さえすればレベルは問わないわ。<br>
+													自身の種族の<span class="wo-keyword">種族スキル</span>が記された<span class="wo-item">祖先の秘録</span>を<br>
+													持ってきたら習得手続きをしてあげる。<br>
+													<span class="wo-keyword">種族スキル</span>習得に関連するアイテムを見つけたら、<br>
+													私にスキル習得の件で話しかけなさい。<br>
+													<span class="wo-keyword">種族スキル</span>は基本的に常時発動するスキルとなるけれども、<br>
+													カスタムスロットに登録されていない<span class="wo-keyword">種族スキル</span>は、<br>
+													効果を発揮しないから気を付けて。<br>
+													カスタムスロットに関する設定を行いたければ、<br>
+													私にスキル設定の件で話しかけなさい。<br>
+													<span class="tag"><span>back</span></span><span class="tag"><span>#03</span></span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-g</span></span>エンシェントスキルとは？</span>
+												<p>
+													<span class="wo-keyword">エンシェントスキル</span>とは、<br>
+													古代より各職業の秘技として伝わる特別な技術のことよ。<br>
+													習得する為には、各職業に対応した<br>
+													<span class="wo-item">古代の秘技</span>が必要となるわ。<br>
+													また、<span class="wo-keyword">エンシェントスキル</span>を習得するには<br>
+													相応のレベルが必要とされるの。<br>
+													習得の条件には基本職のスキルならレベル 50、<br>
+													上位職のスキルならレベル 45 を必要とされるわ。<br>
+													もちろん習得さえすれば使用にレベルは問われないわ。<br>
+													自身の職業の<span class="wo-keyword">エンシェントスキル</span>が記された<span class="wo-item">古代の秘技</span>を<br>
+													持ってきたら習得手続きをしてあげる。<br>
+													<span class="wo-keyword">エンシェントスキル</span>習得に関連するアイテムを<br>
+													見つけてきたら、<br>
+													私にスキル習得の件で話しかけなさい。<br>
+													<span class="wo-keyword">エンシェントスキル</span>は基本的に常時発動のスキルよ。<br>
+													カスタムスロットに登録されていない<span class="wo-keyword">エンシェントスキル</span>は<br>
+													効果を発揮しないから気を付けて。<br>
+													カスタムスロットに関する設定を行いたければ、<br>
+													私にスキル設定の件で話しかけなさい。<br>
+													<span class="tag"><span>back</span></span><span class="tag"><span>#03</span></span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-h</span></span>スキル設定とは？</span>
+												<p>
+													習得した<span class="wo-keyword">エンシェントマジック</span>や<span class="wo-keyword">種族スキル</span>等を<br>
+													カスタムスロットに登録して使える状態にするのが<br>
+													スキル設定よ。<br>
+													習得した<span class="wo-keyword">エンシェントマジック</span>はカスタムスロットに、<br>
+													登録しなければ使用できないし、<span class="wo-keyword">エンシェントスキル</span>等は<br>
+													カスタムスロットに登録されないと効果を発揮しないわ。<br>
+													カスタムスロットに関する設定を行いたければ、<br>
+													私にスキル設定の件で話しかけなさい。<br>
+													<span class="tag"><span>back</span></span><span class="tag"><span>#03</span></span>
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-close</span></span>やめる</span>
+												<p>
+													<span class="tag"><span>back</span></span><span class="tag"><span>#root</span></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>やめる</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="古代魔術管理官 ナイカナ" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/ナイカナ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">古代魔術管理官 ナイカナ</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 K6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ニクメパ">
+					<div class="header">
+						<span class="character">ニクメパ</span>
+						<span class="race">DWA</span>
+					</div>
+					<div class="text">
+						<p>
+							……ふむ、ここら辺では見ない顔じゃな。<br>
+							貴殿がここらで活動うるようになったら<br>
+							ダンジョンの情報でも交換しようじゃないか。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="中堅冒険者 ニクメパ" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/ニクメパ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">中堅冒険者 ニクメパ</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 F5（冒険者ギルド 屋上）</span>
+					</div>
+				</div>
+
+				<h4 id="h">は行</h4>
+				<div class="lines" id="パーチ">
+					<div class="header">
+						<span class="character">パーチ</span>
+						<span class="race">ELF♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>live status</span></span> 通常時</span>
+							<p>
+								クォパティ寺院へようこそ。<br>
+								困ったことがあれば司祭にどうぞ。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>soul status</span></span> 魂時</span>
+							<p>
+								ああ、これは大変だ……<br>
+								すぐに<span class="wo-name">ハーメド</span>司祭に頼んで蘇生してください。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="クォパティ司祭 パーチ" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/パーチ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">クォパティ司祭 パーチ</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 G9（寺院内）</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ハーメド">
+					<div class="header">
+						<span class="character">ハーメド</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>live status</span></span> 通常時</span>
+							<p class="facility">
+								<span>クォパティ寺院</span>
+								<span>TEMPLE OF QUOPATY</span>
+							</p>
+							<p>
+								クォパティ寺院へようこそ。
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>クォパティ寺院へようこそ。</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>寄付</span>
+										<p>
+											……ふむ。<br>
+											規則なんでな、蘇生の際の寄付以外は受け取れないのだよ。
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>解呪</span>
+										<p>
+											<span class="tag"><span>function</span></span> 解呪<br>
+											<span class="tag"><span>omit</span></span>
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+										<p>
+											困ったことがあったらいつでもお越しください。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>soul status</span></span> 魂時</span>
+							<p class="facility">
+								<span>クォパティ寺院</span>
+								<span>TEMPLE OF QUOPATY</span>
+							</p>
+							<p>
+								<ruby>彷徨<rt>さまよ</rt></ruby>える魂よ、クォパティ寺院へようこそ。
+							</p>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span><ruby>彷徨<rt>さまよ</rt></ruby>える魂よ、クォパティ寺院へようこそ。</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>蘇生</span>
+										<p>
+											蘇生費用は <span class="var"><span>50 × levels</span></span> G になります。<br>
+											もちろん、一度いただいたものは<br>
+											お返ししませんのでご了承を。
+										</p>
+										<div class="dialog">
+											<span class="dialog">
+												<span class="tag"><span>dialogue</span></span>
+												<span class="textbox" style="width: 550px;">
+													蘇生費用：<span class="var"><span>50 × levels</span></span> G<br>
+													所持金：<span class="wo-gold"><span class="var"><span>pocket</span></span> G</span>
+												</span>
+											</span>
+											<div class="options">
+												<span class="gauge"></span>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-a</span></span>支払う</span>
+													<div class="either">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>ordinary</span></span>平時</span>
+															<p>
+																<span class="tag"><span>function</span></span> revive
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>pocket</span></span><span class="var"><span>50 × levels</span></span> G 未満</span>
+															<p>
+																おい！　金が足りないぞ！<br>
+																ケチな背教者はロストしちまいな！
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-b</span></span>無料でお願いする</span>
+													<p>
+														仕方ねーな。<br>
+														もちろん、蘇生率は下がるからな！<br>
+														<span class="tag"><span>function</span></span> revive
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-c</span></span>なぜ返さないのか？</span>
+													<p>
+														は？<br>
+														神に寄付した金を返せとでも<br>
+														言うつもりなのか？
+													</p>
+												</div>
+												<div class="option">
+													<span class="option"><span class="tag"><span>#01-d</span></span>立ち去る</span>
+													<p>
+														そうか。<br>
+														困ったことがあったらいつでもお越しください。
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+										<p>
+											またお越しください。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="クォパティ司祭 ハーメド" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/ハーメド.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">クォパティ司祭 ハーメド</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 G9（寺院内）</span>
+					</div>
+				</div>
+
+				<div class="lines" id="パリザダ">
+					<div class="header">
+						<span class="character">パリザダ</span>
+						<span class="race">GNO</span>
+					</div>
+					<div class="text">
+						<p>
+							えへへ、<br>
+							こっちは<span class="wo-site">クォパティ法制院</span>方面の門なんだよ！<br>
+							ダンジョンに行きたいなら、隣にいる<br>
+							<span class="wo-name">ジャバード</span>君に案内してもらってね！
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>なにかな？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>クォパティ法制院方面に行きたい</span>
+									<p>
+										うん、良いよ！<br>
+										<span class="wo-site">クォパティ法制院</span>方面に行くんだね！<br>
+										それじゃあ、通行許可証を見せてねー！<br>
+										…………えー、持ってないの？<br>
+										それなりに強そうな冒険者さんに見えるのに？<br>
+										うーん……歩いて行くなら止めないけど、<br>
+										通行許可証が無いと正規のルートの施設が使えないから<br>
+										オススメできないかなー！
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="クォパティ方面門番 パリザダ" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/パリザダ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">クォパティ方面門番 パリザダ</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 G3</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ハンナ">
+					<div class="header">
+						<span class="character">ハンナ</span>
+						<span class="race">HUM♀</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								あーん！　またすっちゃった！<br>
+								どうしてこう当たらないかなー……
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								うーん、次はいつ<span class="wo-site">大人の社交場</span>に行けるんだろう……
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								前回行った時は勝てたんだけどなぁー、<br>
+								やっぱり最近ついてないのかしら。
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="賭博好き ハンナ" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/ハンナ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">賭博好き ハンナ</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 L5</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ビクトル">
+					<div class="header">
+						<span class="character">ビクトル</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							よう、とあるルートからの商品を扱っているんだが<br>
+							興味はないか？<br>
+							……ん？　どうやら今のアンタには縁はなさそうだな。<br>
+							俺が扱っているのは各職業で必要とされる生産物なんでね。<br>
+							それらのスキルを持っているなら良い話があったんだがな。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="秘密の行商人 ビクトル" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/ビクトル.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">秘密の行商人 ビクトル</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 H2</span>
+					</div>
+				</div>
+
+				<div class="lines" id="フランシス">
+					<div class="header">
+						<span class="character">フランシス</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ん？　なんだ君は。<br>
+							冒険者かい？<br>
+							見たところまだ駆け出しのようだね、<br>
+							頑張ってくれたまえ。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="遺産相続人 フランシス" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/フランシス.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">遺産相続人 フランシス</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 F3（裏路地）</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ヘーヴェル">
+					<div class="header">
+						<span class="character">ヘーヴェル</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							うむ、やっぱり<span class="wo-name">ラヘール</span>ちゃんはカワイイねぇ。<br>
+							特にあの胸が……こう、たまらん。<br>
+							ん、お前には既に嫁がいるんじゃないかって？<br>
+							誰だよそんな事を言っている奴は！<br>
+							嫁が怖くて酒を飲めるかーッてんだ！
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="宿屋の旦那 ヘーヴェル" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/ヘーヴェル.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">宿屋の旦那 ヘーヴェル</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 F4（酒場２Ｆ）</span>
+					</div>
+				</div>
+
+				<div class="lines" id="褒章アイテム配布窓口a">
+					<div class="header">
+						<span class="character">褒章アイテム配布窓口</span>
+						<span class="race">HUM♀</span>
+					</div>
+					<div class="text">
+						<p>
+							こちらではディメント褒章やハーサント褒章を<br>
+							ご利用の方に各種支給品をお配りしています。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="褒章アイテム配布窓口" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/褒章アイテム配布窓口a.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">褒章アイテム配布窓口</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 H4</span>
+					</div>
+				</div>
+
+				<div class="lines" id="褒章アイテム配布窓口b">
+					<div class="header">
+						<span class="character">褒章アイテム配布窓口</span>
+						<span class="race">HUM♀</span>
+					</div>
+					<div class="text">
+						<p>
+							こちらではディメント褒章やハーサント褒章を<br>
+							ご利用の方に各種支給品をお配りしています。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="褒章アイテム配布窓口" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/褒章アイテム配布窓口b.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">褒章アイテム配布窓口</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 I6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ポーチ交換">
+					<div class="header">
+						<span class="character">係員</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							<span class="tag"><span>omit</span></span>
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="ポーチ交換 係員" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/ポーチ交換.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ポーチ交換 係員</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 D5</span>
+					</div>
+				</div>
+
+				<h4 id="m">ま行</h4>
+				<div class="lines" id="マイクロークa">
+					<div class="header">
+						<span class="character">店員</span>
+						<span class="race">POR♀</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>マイクローク</span>
+							<span>WAREHOUSE</span>
+						</p>
+						<p>
+							いらっしゃいませ。<br>
+							お客様の持ち物やお金をお預かりいたします。<br>
+							<span class="tag"><span>function</span></span> mycloak
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="マイクローク 店員" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/マイクロークa.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">マイクローク 店員</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 G3</span>
+					</div>
+				</div>
+
+				<div class="lines" id="マイクロークb">
+					<div class="header">
+						<span class="character">店員</span>
+						<span class="race">POR♀</span>
+					</div>
+					<div class="text">
+						<p class="facility">
+							<span>マイクローク</span>
+							<span>WAREHOUSE</span>
+						</p>
+						<p>
+							いらっしゃいませ。<br>
+							お客様の持ち物やお金をお預かりいたします。<br>
+							<span class="tag"><span>function</span></span> mycloak
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="マイクローク 店員" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/マイクロークb.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">マイクローク 店員</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 F7</span>
+					</div>
+				</div>
+
+				<div class="lines" id="マフディ">
+					<div class="header">
+						<span class="character">マフディ</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							鍵や宝石の加工ならこちらで扱っておりますぞ。<br>
+							どうするかい？
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>どうするかい？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>ジェム<span class="footnote"></span></span>
+									<p>
+										<span class="tag"><span>function</span></span> jeweler
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>鍵</span>
+									<p>
+										ふむ。<span class="wo-item">光る石</span>か<span class="wo-item">輝く石</span>が 80 個あれば<br>
+										<span class="wo-item">死者の紋章が刻まれた鍵</span>に加工しますぞ。<br>
+										いかがですかな？
+									</p>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>いかがですかな？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02-a</span></span><span class="wo-item">光る石</span>を渡す</span>
+												<p>
+													<span class="tag"><span>omit</span></span><br>
+													うむぅ……<br>
+													足りないようじゃのぅ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02-b</span></span><span class="wo-item">輝く石</span>を渡す</span>
+												<p>
+													<span class="tag"><span>omit</span></span><br>
+													うむぅ……<br>
+													足りないようじゃのぅ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#02-c</span></span>立ち去る</span>
+												<p>
+													また来るがよろしい。<br>
+													おお、そうじゃ石は鑑定してから持って来ておくれ。<br>
+													未鑑定のままでは何の石かさっぱりですな……
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>水晶玉の復元</span>
+									<p>
+										ふむ。水晶玉の欠片が 10 個あれば<br>
+										復元いたしますぞ。<br>
+										いかがですかな？
+									</p>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>いかがですかな？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-a</span></span>上位の水晶に交換してほしい</span>
+												<div class="dialog">
+													<span class="dialog"><span class="tag"><span>dialogue</span></span>いかがですかな？</span>
+													<div class="options">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#03-a-a</span></span>【結晶】３つを【結晶・煌】の水晶に交換</span>
+															<p>
+																<span class="tag"><span>omit</span></span><br>
+																うむぅ……<br>
+																足りないようじゃのぅ。
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#03-a-b</span></span>【邪】３つを【大邪】の水晶に交換</span>
+															<p>
+																<span class="tag"><span>omit</span></span><br>
+																うむぅ……<br>
+																足りないようじゃのぅ。
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#03-a-c</span></span>【望郷】３つを【望郷・憧】の水晶に交換</span>
+															<p>
+																<span class="tag"><span>omit</span></span><br>
+																うむぅ……<br>
+																足りないようじゃのぅ。
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#03-a-close</span></span>立ち去る</span>
+															<p>
+																<span class="tag"><span>empty</span></span>
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-b</span></span>【穢レ】の水晶が欲しい</span>
+												<p>
+													<span class="tag"><span>omit</span></span><br>
+													うむぅ……<br>
+													足りないようじゃのぅ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-c</span></span>【龍眼】の水晶が欲しい</span>
+												<p>
+													<span class="tag"><span>omit</span></span><br>
+													うむぅ……<br>
+													足りないようじゃのぅ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-d</span></span>【審美】の水晶が欲しい</span>
+												<p>
+													<span class="tag"><span>omit</span></span><br>
+													うむぅ……<br>
+													足りないようじゃのぅ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-e</span></span>【追憶】の水晶が欲しい</span>
+												<p>
+													<span class="tag"><span>omit</span></span><br>
+													うむぅ……<br>
+													足りないようじゃのぅ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-f</span></span>【妖蟲】の水晶が欲しい</span>
+												<p>
+													<span class="tag"><span>omit</span></span><br>
+													うむぅ……<br>
+													足りないようじゃのぅ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-g</span></span>【輪廻】の水晶が欲しい</span>
+												<p>
+													<span class="tag"><span>omit</span></span><br>
+													うむぅ……<br>
+													足りないようじゃのぅ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-h</span></span>【玩具】の水晶が欲しい</span>
+												<p>
+													<span class="tag"><span>omit</span></span><br>
+													うむぅ……<br>
+													足りないようじゃのぅ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-i</span></span>【結晶】の水晶が欲しい</span>
+												<p>
+													<span class="tag"><span>omit</span></span><br>
+													うむぅ……<br>
+													足りないようじゃのぅ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-j</span></span>【結晶・煌】の水晶が欲しい</span>
+												<p>
+													<span class="tag"><span>omit</span></span><br>
+													うむぅ……<br>
+													足りないようじゃのぅ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-k</span></span>【邪】の水晶が欲しい</span>
+												<p>
+													<span class="tag"><span>omit</span></span><br>
+													うむぅ……<br>
+													足りないようじゃのぅ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-l</span></span>【大邪】の水晶が欲しい</span>
+												<p>
+													<span class="tag"><span>omit</span></span><br>
+													うむぅ……<br>
+													足りないようじゃのぅ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-m</span></span>【望郷】の水晶が欲しい</span>
+												<p>
+													<span class="tag"><span>omit</span></span><br>
+													うむぅ……<br>
+													足りないようじゃのぅ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-n</span></span>【望郷・憧】の水晶が欲しい</span>
+												<p>
+													<span class="tag"><span>omit</span></span><br>
+													うむぅ……<br>
+													足りないようじゃのぅ。
+												</p>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#03-close</span></span></span>
+												<p>
+													また来るがよろしい。<br>
+													おお、そうじゃ欠片は鑑定してから持って来ておくれ。<br>
+													未鑑定のままでは何の欠片かさっぱりですな……
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>耳飾り</span>
+									<p>
+										ほほう。<span class="wo-item">イビルロック鉱石</span>や宝石の原石を使って<br>
+										耳飾りに加工しますぞ。<br>
+										いかがですかな？
+									</p>
+									<div class="dialog">
+										<span class="dialog"><span class="tag"><span>dialogue</span></span>いかがですかな？</span>
+										<div class="options">
+											<span class="gauge"></span>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#04-a</span></span><span class="wo-item">無石の耳飾り</span></span>
+												<p>
+													ふむ。<span class="wo-item">無石の耳飾り</span>を作成するには、<br>
+													<span class="wo-item">イビルロック鉱石</span> 5 個と 10,000 G が必要ですぞ。<br>
+													いかがですかな？
+												</p>
+												<div class="dialog">
+													<span class="dialog"><span class="tag"><span>dialogue</span></span>いかがですかな？</span>
+													<div class="options">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#04-a-a</span></span><span class="wo-item">無石の耳飾り</span>を作成する 10,000 G</span>
+															<p>
+																<span class="tag"><span>omit</span></span><br>
+																うむぅ……<br>
+																足りないようじゃのぅ。
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#04-a-b</span></span>立ち去る</span>
+															<p>
+																また来るがよろしい。<br>
+																おお、そうじゃ原石は鑑定してから持って来ておくれ。<br>
+																未鑑定のままでは何の原石かさっぱりですな……
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#04-b</span></span><span class="wo-item">カーネリアンの耳飾り</span></span>
+												<p>
+													ふむ。<span class="wo-item">カーネリアンの耳飾り</span>を作成するには、<br>
+													<span class="wo-item">無石の耳飾り</span>と<span class="wo-item">カーネリアンの原石</span>、<br>
+													それに 50,000 G が必要ですぞ。いかがですかな？
+												</p>
+												<div class="dialog">
+													<span class="dialog"><span class="tag"><span>dialogue</span></span>いかがですかな？</span>
+													<div class="options">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#04-b-a</span></span><span class="wo-item">カーネリアンの耳飾り</span>を作成する 50,000 G</span>
+															<p>
+																<span class="tag"><span>omit</span></span><br>
+																うむぅ……<br>
+																足りないようじゃのぅ。
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#04-b-b</span></span>立ち去る</span>
+															<p>
+																また来るがよろしい。<br>
+																おお、そうじゃ原石は鑑定してから持って来ておくれ。<br>
+																未鑑定のままでは何の原石かさっぱりですな……
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#04-c</span></span><span class="wo-item">オニキスの耳飾り</span></span>
+												<p>
+													ふむ。<span class="wo-item">オニキスの耳飾り</span>を作成するには、<br>
+													<span class="wo-item">無石の耳飾り</span>と<span class="wo-item">オニキスの原石</span>、<br>
+													それに 50,000 G が必要ですぞ。いかがですかな？
+												</p>
+												<div class="dialog">
+													<span class="dialog"><span class="tag"><span>dialogue</span></span>いかがですかな？</span>
+													<div class="options">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#04-c-a</span></span><span class="wo-item">オニキスの耳飾り</span>を作成する 50,000 G</span>
+															<p>
+																<span class="tag"><span>omit</span></span><br>
+																うむぅ……<br>
+																足りないようじゃのぅ。
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#04-c-b</span></span>立ち去る</span>
+															<p>
+																また来るがよろしい。<br>
+																おお、そうじゃ原石は鑑定してから持って来ておくれ。<br>
+																未鑑定のままでは何の原石かさっぱりですな……
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#04-d</span></span><span class="wo-item">ガーネットの耳飾り</span></span>
+												<p>
+													ふむ。<span class="wo-item">ガーネットの耳飾り</span>を作成するには、<br>
+													<span class="wo-item">無石の耳飾り</span>と<span class="wo-item">ガーネットの原石</span>、<br>
+													それに 50,000 G が必要ですぞ。いかがですかな？
+												</p>
+												<div class="dialog">
+													<span class="dialog"><span class="tag"><span>dialogue</span></span>いかがですかな？</span>
+													<div class="options">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#04-d-a</span></span><span class="wo-item">ガーネットの耳飾り</span>を作成する 50,000 G</span>
+															<p>
+																<span class="tag"><span>omit</span></span><br>
+																うむぅ……<br>
+																足りないようじゃのぅ。
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#04-d-b</span></span>立ち去る</span>
+															<p>
+																また来るがよろしい。<br>
+																おお、そうじゃ原石は鑑定してから持って来ておくれ。<br>
+																未鑑定のままでは何の原石かさっぱりですな……
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#04-e</span></span><span class="wo-item">トルマリンの耳飾り</span></span>
+												<p>
+													ふむ。<span class="wo-item">トルマリンの耳飾り</span>を作成するには、<br>
+													<span class="wo-item">無石の耳飾り</span>と<span class="wo-item">トルマリンの原石</span>、<br>
+													それに 50,000 G が必要ですぞ。いかがですかな？
+												</p>
+												<div class="dialog">
+													<span class="dialog"><span class="tag"><span>dialogue</span></span>いかがですかな？</span>
+													<div class="options">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#04-e-a</span></span><span class="wo-item">トルマリンの耳飾り</span>を作成する 50,000 G</span>
+															<p>
+																<span class="tag"><span>omit</span></span><br>
+																うむぅ……<br>
+																足りないようじゃのぅ。
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#04-e-b</span></span>立ち去る</span>
+															<p>
+																また来るがよろしい。<br>
+																おお、そうじゃ原石は鑑定してから持って来ておくれ。<br>
+																未鑑定のままでは何の原石かさっぱりですな……
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#04-f</span></span><span class="wo-item">フローライトの耳飾り</span></span>
+												<p>
+													ふむ。<span class="wo-item">フローライトの耳飾り</span>を作成するには、<br>
+													<span class="wo-item">無石の耳飾り</span>と<span class="wo-item">フローライトの原石</span>、<br>
+													それに 50,000 G が必要ですぞ。いかがですかな？
+												</p>
+												<div class="dialog">
+													<span class="dialog"><span class="tag"><span>dialogue</span></span>いかがですかな？</span>
+													<div class="options">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#04-f-a</span></span><span class="wo-item">フローライトの耳飾り</span>を作成する 50,000 G</span>
+															<p>
+																<span class="tag"><span>omit</span></span><br>
+																うむぅ……<br>
+																足りないようじゃのぅ。
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#04-f-b</span></span>立ち去る</span>
+															<p>
+																また来るがよろしい。<br>
+																おお、そうじゃ原石は鑑定してから持って来ておくれ。<br>
+																未鑑定のままでは何の原石かさっぱりですな……
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#04-g</span></span><span class="wo-item">ルチルクオーツの耳飾り</span></span>
+												<p>
+													ふむ。<span class="wo-item">ルチルクオーツの耳飾り</span>を作成するには、<br>
+													<span class="wo-item">無石の耳飾り</span>と<span class="wo-item">ルチルクオーツの原石</span>、<br>
+													それに 50,000 G が必要ですぞ。いかがですかな？
+												</p>
+												<div class="dialog">
+													<span class="dialog"><span class="tag"><span>dialogue</span></span>いかがですかな？</span>
+													<div class="options">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#04-g-a</span></span><span class="wo-item">ルチルクオーツの耳飾り</span>を作成する 50,000 G</span>
+															<p>
+																<span class="tag"><span>omit</span></span><br>
+																うむぅ……<br>
+																足りないようじゃのぅ。
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#04-g-b</span></span>立ち去る</span>
+															<p>
+																また来るがよろしい。<br>
+																おお、そうじゃ原石は鑑定してから持って来ておくれ。<br>
+																未鑑定のままでは何の原石かさっぱりですな……
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#04-h</span></span><span class="wo-item">アンバーの耳飾り</span></span>
+												<p>
+													ふむ。<span class="wo-item">アンバーの耳飾り</span>を作成するには、<br>
+													<span class="wo-item">無石の耳飾り</span>と<span class="wo-item">アンバーの原石</span>、<br>
+													それに 50,000 G が必要ですぞ。いかがですかな？
+												</p>
+												<div class="dialog">
+													<span class="dialog"><span class="tag"><span>dialogue</span></span>いかがですかな？</span>
+													<div class="options">
+														<span class="gauge"></span>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#04-h-a</span></span><span class="wo-item">アンバーの耳飾り</span>を作成する 50,000 G</span>
+															<p>
+																<span class="tag"><span>omit</span></span><br>
+																うむぅ……<br>
+																足りないようじゃのぅ。
+															</p>
+														</div>
+														<div class="option">
+															<span class="option"><span class="tag"><span>#04-h-b</span></span>立ち去る</span>
+															<p>
+																また来るがよろしい。<br>
+																おお、そうじゃ原石は鑑定してから持って来ておくれ。<br>
+																未鑑定のままでは何の原石かさっぱりですな……
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="option">
+												<span class="option"><span class="tag"><span>#05-close</span></span>立ち去る</span>
+												<p>
+													また来るがよろしい。<br>
+													おお、そうじゃ原石は鑑定してから持って来ておくれ。<br>
+													未鑑定のままでは何の原石かさっぱりですな……
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#close</span></span>立ち去る</span>
+									<p>
+										そうか。<br>
+										用があったらいつでも来なされ。
+									</p>
+								</div>
+							</div>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>SR 2 以上の時に追加される</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img alt="宝石職人 マフディ" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/マフディ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">宝石職人 マフディ</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 E5</span>
+					</div>
+				</div>
+
+				<div class="lines" id="マリエール">
+					<div class="header">
+						<span class="character">マリエール</span>
+						<span class="race">GNO</span>
+					</div>
+					<div class="text">
+						<p>
+							どうしたんだい、冒険者さん。
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>どう答えますか？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>万有融解液を買いたい</span>
+									<p>
+										<span class="tag"><span>empty</span></span>錬金術師用道具
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>錬金術師について聞きたい</span>
+									<p>
+										う～ん、君に教えることはないよ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="アルケミストマスター マリエール" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/マリエール.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">アルケミストマスター マリエール</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 K6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="マルシェ">
+					<div class="header">
+						<span class="character">マルシェ</span>
+						<span class="race">POR♀</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>lead</span></span></span>
+							<div class="either">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+									<p>
+										射撃武器に興味はお有りですか？<br>
+										<span class="wo-site">ディメント王国</span>の方にはまだ流通していない<br>
+										最新の品物も扱っておりますわよ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+									<p>
+										マルシェ百貨店へようこそ。<br>
+										お探しのものが御座いましたら<br>
+										お伝えください。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+									<p>
+										マルシェ百貨店へようこそ。<br>
+										当店では道具の鑑定や下取りも扱っておりますわよ。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>random lines</span></span>D</span>
+									<p>
+										マルシェ百貨店へようこそ。<br>
+										当店では私が厳選した売れ筋の商品を<br>
+										販売しておりますわよ。
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>main</span></span></span>
+							<div class="dialog">
+								<span class="dialog"><span class="tag"><span>dialogue</span></span>本日はどのようなご用件ですか？</span>
+								<div class="options">
+									<span class="gauge"></span>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#01</span></span>鑑定・下取り</span>
+										<p>
+											<span class="tag"><span>function</span> マルシェ百貨店</span>
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#02</span></span>道具販売</span>
+										<p>
+											<span class="tag"><span>function</span> マルシェ百貨店</span>
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#03</span></span>武器販売</span>
+										<p>
+											<span class="tag"><span>function</span> マルシェ百貨店</span>
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#04</span></span>防具販売</span>
+										<p>
+											<span class="tag"><span>function</span> マルシェ百貨店</span>
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#05</span></span>装飾品販売</span>
+										<p>
+											<span class="tag"><span>function</span> マルシェ百貨店</span>
+										</p>
+									</div>
+									<div class="option">
+										<span class="option"><span class="tag"><span>#06</span></span>立ち去る</span>
+										<p>
+											<span class="tag"><span>empty</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="百貨店 マルシェ" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/マルシェ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">百貨店 マルシェ</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 H3</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ミリア">
+					<div class="header">
+						<span class="character">ミリア</span>
+						<span class="race">HUM♀</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>A</span>
+							<p>
+								あんた馬鹿じゃないの。<br>
+								毎日毎日私に会いに来るなんて、もぅ！<br>
+								惚れちゃったらどうするのよ<br>
+								<span class="tag"><span>function</span></span> event
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>B</span>
+							<p>
+								各種イベントの受付はこちらです。<br>
+								<span class="tag"><span>function</span></span> event
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>random lines</span></span>C</span>
+							<p>
+								ミリオ？　ああ、不肖のお……妹のことね。<br>
+								どうしてああなっちゃったんだか<br>
+								<span class="tag"><span>function</span></span> event
+							</p>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="*イベント案内人* ミリア" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/ミリア.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">*イベント案内人* ミリア</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 G6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="モルテザ">
+					<div class="header">
+						<span class="character">モルテザ</span>
+						<span class="race">POR♂</span>
+					</div>
+					<div class="text">
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> イルファーロ初到着時</span>
+							<p>
+								俺はここから、冒険者専用の訓練施設への<br>
+								案内をしているぜ。<br>
+								冒険者ギルドへの登録が済んだ<span class="wo-keyword">ソウルランクが 2 以上</span>の<br>
+								奴を対象に、各種訓練施設を自由解放しているんだ。<br>
+								まあ、興味があったら登録してから来るんだな。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span> 冒険者ギルド登録完了後</span>
+							<p>
+								俺はここから、冒険者専用の訓練施設への<br>
+								案内をしているぜ。<br>
+								冒険者ギルドへの登録は済んでいるようだな。<br>
+								ここでは<span class="wo-keyword">ソウルランクが 2 以上</span>の奴を対象に、<br>
+								各種訓練施設を自由解放しているんだ。<br>
+								まあ、興味があったら鍛えてから来るんだな。
+							</p>
+						</div>
+						<div class="option">
+							<span class="option"><span class="tag"><span>scene</span></span>クエスト「魂の導き手」クリア後</span>
+							<p>
+								俺はここから、冒険者専用の訓練施設へ<br>
+								案内をしているぜ。<br>
+								冒険者ギルドへの登録は済んでいるようだな。<br>
+								ここでは<span class="wo-keyword">ソウルランクが 2 以上</span>の奴を対象に、<br>
+								各種訓練施設を自由解放しているぜ。<br>
+								どうだ、興味はあるかい？
+							</p>
+							<div class="option">
+								<div class="dialog">
+									<span class="dialog"><span class="tag"><span>dialogue</span></span>どの施設を利用する？</span>
+									<div class="options">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#01</span></span>M. A. C を利用したい</span>
+											<div class="append">
+												<span class="gauge"></span>
+												<span class="option">１日の規定数のチケットを貰うまで</span>
+												<div class="either">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option">チケット所持数上限未満</span>
+														<div class="append">
+															<span class="gauge"></span>
+															<p>
+																<span class="option"><span class="tag"><span>weekday</span></span>土・日</span>
+																今日はチケットを 2 倍配ってるぜ。
+															</p>
+														</div>
+														<div class="either">
+															<span class="gauge"></span>
+															<div class="option">
+																<span class="option"><span class="tag"><span>ordinary</span></span>通常 および 土・日で既に１枚受け取っているとき</span>
+																<p>
+																	ほらよ。<br>
+																	こいつが今日のチケットだ。
+																</p>
+															</div>
+															<div class="option">
+																<span class="option"><span class="tag"><span>weekday</span> <span>have</span></span>土・日かつチケット６枚所持時</span>
+																<p>
+																	チケットを 1 つ受け取りな。<br>
+																	それ以上持てないようだな。<br>
+																	手持ちチケットを使用したらまた来いよ。
+																</p>
+															</div>
+														</div>
+													</div>
+													<div class="option">
+														<span class="option">チケット所持数上限オーバー</span>
+														<p>
+															ん？　チケットはそれ以上持てないようだな。<br>
+															手持ちのチケットを使用したらまた来いよ。
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="dialog">
+												<span class="dialog"><span class="tag"><span>dialogue</span></span>M. A. C を利用しますか？</span>
+												<div class="options">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#01</span></span>M. A. C とは？</span>
+														<p>
+															Ｍ．Ａ．Ｃ（モンスター・アロケーション・センター）は、<br>
+															配備されたモンスターの討伐に挑戦する施設だな。<br>
+															ステージごとに設定されるクリア条件や配備される<br>
+															モンスターの特性などの要素を踏まえ、パーティメンバーと<br>
+															協力しながら戦闘することが重要だぜ。<br>
+															モンスターを倒していくと「Ｍ．Ａ．Ｃポイント」が<br>
+															入手できる。<br>
+															こいつを使って様々なアイテムと交換できるぜ。<br>
+															それと、プレイ内容はスコアとして集計される。<br>
+															ランキング上位になれば称号や<br>
+															期間限定の専用オーラなどの特典が入手できるんだぜ。<br>
+															まあ、腕に<span class="footnote">自身</span>があるなら、<br>
+															ぜひとも挑戦してみてくれ。
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#02</span></span>M. A. C に入場する</span>
+														<p>
+															<span class="tag"><span>function</span></span>DungeonSelect (limited)
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#03</span></span>M. A. C ポイント交換（装備品）</span>
+														<p>
+															<span class="tag"><span>function</span></span>M. A. C ポイント交換（装備品）
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#04</span></span>M. A. C ポイント交換（消耗品）</span>
+														<p>
+															<span class="tag"><span>function</span></span>M. A. C ポイント交換（消耗品）
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#05</span></span>立ち去る</span>
+														<p>
+															<span class="tag"><span>empty</span></span>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#02</span></span>対人演習施設を利用したい</span>
+											<div class="dialog">
+												<span class="dialog">
+													<span class="tag"><span>dialogue</span></span>
+													<span class="textbox" style="width: 550px;">
+														対人演習施設を利用しますか？<br>
+														（この先は PVP テスト・調整用エリアです）
+													</span>
+												</span>
+												<div class="options">
+													<span class="gauge"></span>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#01</span></span>対人演習施設とは？</span>
+														<p>
+															<span class="wo-site">対人演習施設</span>は、冒険者同士で鍛錬を行える施設だぜ。<br>
+															施設内では自分のパーティ以外には攻撃が当たるようになる<br>
+															代わりに、犯罪者以外への攻撃や犯罪者への支援などが罪に<br>
+															問われる事は無いぞ。<br>
+															また、施設全体に冒険者保護の魔法が掛かっているので、<br>
+															例え力尽きたとしても、持物を盗まれる事はないし、<br>
+															すぐにその場で蘇生されるんだ。<br>
+															まあ後は自由に利用してくれ。
+														</p>
+													</div>
+													<div class="option">
+														<span class="option">
+															<span class="tag"><span>#02</span></span>
+															<span class="textbox" style="width: 560px;">
+																対人演習施設に入場する<br>
+																（現在の利用者 <span class="var"><span>users</span></span> 人）
+															</span>
+														</span>
+														<p>
+															<span class="tag"><span>entering</span></span>対人演習施設 円形演習場
+														</p>
+													</div>
+													<div class="option">
+														<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+														<p>
+															<span class="tag"><span>empty</span></span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<p>
+												<span class="tag"><span>empty</span></span>
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#03</span></span>立ち去る</span>
+											<p>
+												<span class="tag"><span>empty</span></span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr class="footnote">
+						<ul class="footnote">
+							<li>原文のママ</li>
+						</ul>
+					</div>
+					<div class="figure">
+						<img alt="訓練所出張員 モルテザ" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/モルテザ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">訓練所出張員 モルテザ</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 F5（冒険者ギルド内）</span>
+					</div>
+				</div>
+
+				<h4 id="y">や行</h4>
+				<div class="lines" id="ヤギラス">
+					<div class="header">
+						<span class="character">ヤギラス</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							どうっすかお客さん！<br>
+							<span class="wo-site">大人の社交場</span>で<br>
+							遊んでいきませんか！<br>
+							<span class="wo-site">大人の社交場</span>では楽しいカジノや<br>
+							魅力的なロイヤルレディーたちと遊びたいほうだい！<br>
+							もちろんお金はかかるけどね。
+						</p>
+						<div class="either">
+							<span class="gauge"></span>
+							<div class="option">
+								<span class="option"><span class="tag"><span>soul rank</span></span>SR 3 以上</span>
+								<div class="dialog">
+									<span class="dialog"><span class="tag"><span>dialogue</span></span>大人の社交場　レーヴェンアンタイル店に行きますか？</span>
+									<div class="options">
+										<span class="gauge"></span>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+											<p>
+												<span class="tag"><span>entering</span></span> <span class="wo-site">レーヴェンアンタイル</span> <span class="wo-site">大人の社交場</span>
+											</p>
+										</div>
+										<div class="option">
+											<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+											<p>
+												また今度よろしくねっ！
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="option">
+								<span class="option"><span class="tag"><span>soul rank</span></span>SR 3 未満</span>
+								<p>
+									……おや、お客さんは<span class="wo-keyword">ソウルランク 3 未満</span>の方ですか？<br>
+									申し訳ないけど冒険者ギルドから<span class="wo-keyword">ソウルランク 3 未満</span>の方は<br>
+									入場をお断りするようにと通達が来てるんですよ。<br>
+									<span class="wo-keyword">ソウルランク 3</span> になったら是非とも来てくださいよ。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="大人の社交場　呼び込み ヤギラス" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/ヤギラス.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">大人の社交場　呼び込み ヤギラス</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 K5</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ユニオン管理局">
+					<div class="header">
+						<span class="character">受付係</span>
+						<span class="race">HUM♀</span>
+					</div>
+					<div class="text">
+						<p>
+							ユニオン関連のご用を承っております。<br>
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>ユニオン関連のご用を承っております。</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>説明を聞く</span>
+									<p>
+										ユニオンとは志を共にする冒険者の集まりです。<br>
+										設立するには<span class="wo-keyword">ソウルランクが3以上</span>である必要があります。<br>
+										また、<span class="wo-keyword">登録料として30,000G</span>をお支払いいただきます。<br>
+										<span class="wo-item">絆の証</span>というアイテムを捧げることで<br>
+										ユニオンレベルを上げる事ができます。<br>
+										レベルが上がると様々な恩恵が得られます。<br>
+										恩恵の内容はメインメニューからユニオンを選択し、<br>
+										管理タブの【<span class="wo-keyword">恩恵を表示</span>】ボタンを押すと<br>
+										確認する事ができます。
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>立ち去る</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ユニオン管理局 受付係" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/ユニオン管理局.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ユニオン管理局 受付係</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 G8</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ヨナ">
+					<div class="header">
+						<span class="character">ヨナ</span>
+						<span class="race">HUM♀</span>
+					</div>
+					<div class="text">
+						<p>
+							あら、君は<span class="wo-site">ディメント王国</span>から来てくれた<br>
+							冒険者君だね。<br>
+							もし<span class="wo-site">港町イルファーロ</span>まで戻るなら、<br>
+							馬車を手配してあげようか？
+						</p>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>港町イルファーロに向かいますか？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>はい</span>
+									<p>
+										<span class="tag"><span>entering</span></span><span class="wo-site">港町イルファーロ 英雄の集う広場</span>
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>いいえ</span>
+									<p>
+										<span class="tag"><span>empty</span></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="figure">
+						<img alt="ディメント方面門番 ヨナ" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/ヨナ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ディメント方面門番 ヨナ</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 L5</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ヨハン">
+					<div class="header">
+						<span class="character">ヨハン</span>
+						<span class="race">HUM♂</span>
+					</div>
+					<div class="text">
+						<p>
+							君に頼もうと思ったけどまだ無理のようだ。<br>
+							他の冒険者をあたるよ。
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="医者 ヨハン" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/ヨハン.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">医者 ヨハン</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 F4（酒場内）</span>
+					</div>
+				</div>
+
+				<h4 id="r">ら行</h4>
+				<div class="lines" id="ラヘール">
+					<div class="header">
+						<span class="character">ラヘール</span>
+						<span class="race">GNO</span>
+					</div>
+					<div class="text">
+						<p>
+							あらあらー、ようこそギルガメッシュの酒場へ。<br>
+							何かおたのみにーなりますかー？
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="酒場の看板娘 ラヘール" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/ラヘール.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">酒場の看板娘 ラヘール</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 F4（酒場内）</span>
+					</div>
+				</div>
+
+				<div class="lines" id="ロイヤルショップ">
+					<div class="header">
+						<span class="character">店員</span>
+						<span class="race">POR♂</span>
+					</div>
+					<div class="text">
+						<p>
+							ロイヤルショップへようこそ！<br>
+							<span class="tag"><span>function</span></span> royalshop
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="ロイヤルショップ 店員" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/ロイヤルショップ.jpg">
+					</div>
+					<div class="footer">
+						<span class="fullname">ロイヤルショップ 店員</span>
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 I6</span>
+					</div>
+				</div>
+
+				<div class="lines" id="看板ポール">
+					<div class="header">
+						<span class="character">（無名）</span>
+						<span class="race">obj</span>
+					</div>
+					<div class="text">
+						<p class="centering">
+							＊　いらっしゃいませ！　＊<br>
+							＊　ロイヤルショップへ　＊<br>
+							＊　　　ようこそ！　　　＊
+						</p>
+					</div>
+					<div class="figure">
+						<img alt="看板ポール" data-fancybox="station-of-dusk" class="lazyload" src="../common/placeholder.png" data-src="npcs/看板ポール.jpg">
+					</div>
+					<div class="footer">
+						<span class="coordinate">レーヴェンアンタイル 夕闇の交わる宿場町 I7</span>
+					</div>
+				</div>
+			</article>
+
+			<hr class="offset-killer">
+			<div id="disqus-space">
+				<p id="comment-attention">
+					名前を入力しようとすると表示される「ゲストとして投稿する」にチェックを入れるとDISQUSに登録しなくてもコメントすることができます。<br>
+					メールアドレスは入力必要ですが DISQUS で管理され、投稿したコメントに表示されることも私にも通知されることもありません。<br>
+					架空のメールアドレスでも可能ですので、お気軽にコメントしてください！
+				</p>
+				<aside id="toc-disqus">
+					<div id="disqus_thread"></div>
+				</aside>
+				<script type="text/javascript">
+					( function () {
+						var dsq = document.createElement( 'script' );
+						dsq.type = 'text/javascript';
+						dsq.async = true;
+						dsq.src = '//miramiku.disqus.com/embed.js';
+						( document.getElementsByTagName( 'head' )[ 0 ] || document.getElementsByTagName( 'body' )[ 0 ] ).appendChild( dsq );
+					}() );
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+			</div>
+		</div>
+	</main>
+
+	<div id="toc">
+		<ul>
+			<li id="back2top"><a href="#top">トップページ</a></li>
+			<li><a href="#list">NPC リスト</a></li>
+			<li><a href="#log">会話ログ</a>
+				<ul>
+					<li><a href="#a">あ行</a></li>
+					<li><a href="#k">か行</a></li>
+					<li><a href="#s">さ行</a></li>
+					<li><a href="#t">た行</a></li>
+					<li><a href="#n">な行</a></li>
+					<li><a href="#h">は行</a></li>
+					<li><a href="#m">ま行</a></li>
+					<li><a href="#y">や行</a></li>
+					<li><a href="#r">ら行</a></li>
+				</ul>
+			</li>
+		<li id="jump2disqus"><a href="#toc-disqus">コメント</a></li>
+		</ul>
+	</div>
+
+	<script>
+		( function ( i, s, o, g, r, a, m ) {
+			i[ 'GoogleAnalyticsObject' ] = r; i[ r ] = i[ r ] || function () {
+				( i[ r ].q = i[ r ].q || [] ).push( arguments )
+			}, i[ r ].l = 1 * new Date(); a = s.createElement( o ),
+				m = s.getElementsByTagName( o )[ 0 ]; a.async = 1; a.src = g; m.parentNode.insertBefore( a, m )
+		} )( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
+		ga( 'create', 'UA-46801675-2', 'auto' );
+		ga( 'send', 'pageview' );
+	</script>
+</body>
+
+</html>
