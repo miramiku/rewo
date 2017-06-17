@@ -74,7 +74,7 @@ QA.ragularUseCharacters = ( function () {
 	}
 	_chars += " !#$%&'()=~|-^@[];:`{}+*,./_<>?†\\\"";
 	_chars += "0123456789０１２３４５６７８９ー～．　，。、・；：｛｝「」［］（）【】『』“”！？※☆★々―／→‐＝♪♂♀＊○□△×…";
-	_chars += "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	_chars += "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZé";
 	_chars += "ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ";
 	_chars += "あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをんゑぁぃぅぇぉっゃゅょ";
 	_chars += "がぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽ";
