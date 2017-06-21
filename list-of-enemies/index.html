@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>モブリスト | Recollection of Wizardry Online</title>
+
+	<!-- meta data -->
+	<meta name="author" content="Miku">
+
+	<!-- scripts -->
+	<script src="../common/core.js" defer></script>
+	<script src="recol.enemies.js" defer></script>
+
+	<!-- style / favicon -->
+	<link href="../common/foundation.css" rel="stylesheet" type="text/css">
+	<link href="list-of-enemies.css" rel="stylesheet" type="text/css">
+	<link href="../common/fancybox.css" rel="stylesheet" type="text/css">
+	<link href="../favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body id="rewo">
+	<header data-bg="../common/background.jpg">
+		<div id="header-content">
+			<a href="https://miramiku.github.io/rewo/" id="page-info">
+				<span id="meta-info" class="page-headings">Records</span>
+				<span id="major-title" class="page-headings">モブリスト</span>
+				<span id="title-divider" class="page-headings"></span>
+				<span id="minor-title" class="page-headings">List of Enemies</span>
+			</a>
+
+			<footer>
+				<ul>
+					<li><a href="http://miramiku.github.io/"><span class="basis-icon me"> </span> みく(๑・ω・๑)</a></li>
+					<li><a href="https://twitter.com/miramiku"><span class="basis-icon tw"> </span> @miramiku</a></li>
+					<li><a href="https://github.com/miramiku/rewo"><span class="basis-icon gh"> </span> Repository</a></li>
+				</ul>
+			</footer>
+
+			<p id="wo-credit">
+				"Wizardry&reg;" of GMO Gamepot Inc. All rights reserved.<br>
+				Wizardry Renaissance&trade; &copy;2009 GMO Gamepot Inc.<br>
+				All rights reserved.
+			</p>
+		</div>
+	</header>
+
+	<main id="top">
+		<div id="main-inner">
+			<article>
+				<span id="displayAchieved" class="button">採取済みを表示しない</span>
+				<span id="simplified" class="button">簡易表示</span>
+
+				<h3 id="head-summary">まとめ</h3>
+				<table id="summary-table">
+					<thead><tr><th>dungeon</th><th>layer</th><th>progress</th></tr></thead>
+					<tbody id="summary"></tbody>
+				</table>
+
+				<h3 id="head-dimento">ディメント王国方面</h3>
+				<div id="dimento"></div>
+
+				<h3 id="head-hersant">ハーサント連邦方面</h3>
+				<div id="hersant"></div>
+
+				<h3 id="sub-dungeons">サブダンジョン</h3>
+				<div id="sub"></div>
+
+				<h3 id="head-others">その他</h3>
+				<div id="others"></div>
+
+				<h3 id="about-figure">画像について</h3>
+				<p>
+					Wizardry Online サービス終了に伴い、画像送付先リンクを削除しました。<br>
+					多大なるご協力ありがとうございました。
+				</p>
+
+				<h6>画像の目安</h6>
+				<ul>
+					<li>
+						だいたい正面画像の全体画像
+						<ul>
+							<li>コインやガスは正面を気にしない</li>
+							<li>紫オーラすべては全体に含みません</li>
+						</ul>
+					</li>
+					<li>
+						モブ名表示状態（マウスカーソルをのせた状態）
+						<ul>
+							<li>ネームドモンスターは常に表示されています</li>
+						</ul>
+					</li>
+					<li>UI にかぶらせないように</li>
+					<li>
+						大きさは適度な大きさで
+						<ul>
+							<li>お送りいただける画像は無加工または<strong>広く余白をもって</strong>お願いします</li>
+							<li>200px × 300px または 200px × 200px のサイズに加工します</li>
+							<li>切り取ったサイズがこれを超えた場合はそれらのサイズに縮小します</li>
+						</ul>
+					</li>
+				</ul>
+
+				<h6>画像例</h6>
+				<p>
+					ムービングロック、ブッチャー（大きなモブ）
+				</p>
+				<p>
+					<img alt="クレイゴーレム（大きなモブ）" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="../golden-dragon-ruins/enemies/moving-rock.jpg">
+					<img alt="ブッチャー（大きなモブ）" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="../chikor-castle-site/enemies/butcher.jpg">
+				</p>
+
+				<p>
+					ベノムビートル（小さなモブ）
+				</p>
+				<p>
+					<img alt="ベノムビートル（小さなモブ）" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="../aria-reservoir/enemies/venom-beetle.jpg">
+				</p>
+
+				<p>
+					クリーピングコイン、ポイズンミスト（正面のないモブ）
+				</p>
+				<p>
+					<img alt="クリーピングコイン（正面のないモブ）" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="../aria-reservoir/enemies/creeping-coin.jpg">
+					<img alt="ポイズンミスト（正面のないモブ）" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="../aria-reservoir/enemies/poison-mist.jpg">
+				</p>
+
+				<h6>参考：オリジナル画像（50%縮小）</h6>
+				<p>
+					<img alt="狂信者（オリジナル）" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="fanatic-original.jpg">
+				</p>
+
+				<h6>参考：加工後</h6>
+				<p>
+					<img alt="狂信者（加工後）" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="fanatic.jpg">
+				</p>
+
+				<h6>紹介していただきました＞＜；</h6>
+
+				<div class="external-link">
+					<span class="guage"></span>
+					<a href="http://damiblog.blog.fc2.com/blog-entry-11.html"></a>
+					<p class="link-eyecatch"><img alt="だみぶろ" class="lazyload" src="../common/placeholder.png" data-src="damiblog-bunner.jpg"></p>
+					<p class="link-site">だみぶろ!!</p>
+					<p class="link-title">Wizモン　ゲットだぜ！！<br>モブ Recollection 計画に参加しませんか？</p>
+					<p class="link-comment">モリコレというプロジェクト名称つけていただきました ( &gt;﹏&lt;。)</p>
+				</div>
+			</article>
+
+			<hr class="offset-killer">
+			<div id="disqus-space">
+				<p id="comment-attention">
+					名前を入力しようとすると表示される「ゲストとして投稿する」にチェックを入れるとDISQUSに登録しなくてもコメントすることができます。<br>
+					メールアドレスは入力必要ですが DISQUS で管理され、投稿したコメントに表示されることはありません。
+					ただし、ログインせずゲストとして投稿するとコメントが承認制となります（DISQUS にログインすると承認の必要なくすぐにコメントが表示されます）。架空のメールアドレスでも可能ですのでお気軽にどうぞ！
+				</p>
+				<aside id="toc-disqus">
+					<div id="disqus_thread"></div>
+				</aside>
+				<script type="text/javascript">
+					( function () {
+						var dsq = document.createElement( 'script' );
+						dsq.type = 'text/javascript';
+						dsq.async = true;
+						dsq.src = '//miramiku.disqus.com/embed.js';
+						( document.getElementsByTagName( 'head' )[ 0 ] || document.getElementsByTagName( 'body' )[ 0 ] ).appendChild( dsq );
+					}() );
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+			</div>
+		</div>
+	</main>
+
+	<div id="toc">
+		<ul>
+			<li id="back2top"><a href="#top">トップページ</a></li>
+			<li><a href="#head-summary">まとめ</a></li>
+			<li><a href="#head-dimento">ディメント王国方面</a></li>
+			<li><a href="#head-hersant">ハーサント連邦方面</a></li>
+			<li><a href="#sub-dungeons">サブダンジョン</a></li>
+			<li><a href="#head-others">その他</a></li>
+			<li><a href="#about-figure">画像について</a></li>
+			<li id="jump2disqus"><a href="#toc-disqus">コメント</a></li>
+		</ul>
+	</div>
+
+	<script>
+		( function ( i, s, o, g, r, a, m ) {
+			i[ 'GoogleAnalyticsObject' ] = r; i[ r ] = i[ r ] || function () {
+				( i[ r ].q = i[ r ].q || [] ).push( arguments )
+			}, i[ r ].l = 1 * new Date(); a = s.createElement( o ),
+				m = s.getElementsByTagName( o )[ 0 ]; a.async = 1; a.src = g; m.parentNode.insertBefore( a, m )
+		} )( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
+		ga( 'create', 'UA-46801675-2', 'auto' );
+		ga( 'send', 'pageview' );
+	</script>
+</body>
+
+</html>
