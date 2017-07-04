@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>ソウルランク | Recollection of Wizardry Online</title>
+
+	<!-- meta data -->
+	<meta name="author" content="Miku">
+
+	<!-- scripts -->
+	<script src="../common/core.js" defer></script>
+	<script src="https://www.amcharts.com/lib/3/amcharts.js" defer></script>
+	<script src="https://www.amcharts.com/lib/3/serial.js" defer></script>
+	<script src="SoulRankBonuses.js" defer></script>
+
+	<!-- style / favicon -->
+	<link href="../common/foundation.css" rel="stylesheet" type="text/css">
+	<link href="partial-timeline.css" rel="stylesheet" type="text/css">
+	<link href="../favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body id="rewo">
+	<header data-bg="../common/background.jpg">
+		<div id="header-content">
+			<a href="https://miramiku.github.io/rewo/" id="page-info">
+				<span id="meta-info" class="page-headings">Partial Timeline</span>
+				<span id="major-title" class="page-headings">ソウルランク</span>
+				<span id="title-divider" class="page-headings"></span>
+				<span id="minor-title" class="page-headings">Soul Ranks</span>
+			</a>
+
+			<footer>
+				<ul>
+					<li><a href="http://miramiku.github.io/"><span class="basis-icon me"> </span> みく(๑・ω・๑)</a></li>
+					<li><a href="https://twitter.com/miramiku"><span class="basis-icon tw"> </span> @miramiku</a></li>
+					<li><a href="https://github.com/miramiku/rewo"><span class="basis-icon gh"> </span> Repository</a></li>
+				</ul>
+			</footer>
+
+			<p id="wo-credit">
+				"Wizardry&reg;" of GMO Gamepot Inc. All rights reserved.<br>
+				Wizardry Renaissance&trade; &copy;2009 GMO Gamepot Inc.<br>
+				All rights reserved.
+			</p>
+		</div>
+	</header>
+
+	<main id="top">
+		<div id="main-inner">
+			<article>
+				<blockquote class="epigraph">
+					The rose, shivering, chilled, filthy, bending beneath this dying man,<br>
+					whom he was dragging on, all dripping with slime, his soul filled with a strange light.
+					<div class="ref foreign">
+						<span class="origin">
+							Victor Hugo, Les Miserables<br>
+							Chapter VI. The Fontis / Book Three. Mire, but Soul / Volume V. Jean Valjean
+						</span>
+					</div>
+				</blockquote>
+
+				<h3 id="timeline">Timeline</h3>
+				<div class="timeline">
+					<div class="content" id="20111108">
+						<span class="date"><a href="http://www.wizardry-online.jp/info/?seq=259">2011/11/08</a>#004</span>
+						<ul>
+							<li class="site">
+								<span class="tag">実装</span>
+								<span class="tag">ダンジョン</span>
+								忘却の寺院 (7th)
+							</li>
+							<li class="action">
+								<span class="tag">調整</span>
+								<span class="tag">ソウルランク恩恵</span>
+								<table class="supple-tablelist soul_rank_bonuses">
+									<thead>
+										<tr><th>SR</th><th>分類</th><th>効果</th></tr>
+									</thead>
+									<tbody>
+										<tr><td>SR 2</td><td><span class="changevalue">（変更）</span>レベルキャップ</td><td>Level <strike>12</strike><span class="changevalue">15</span></td></tr>
+										<tr><td>SR 3</td><td><span class="changevalue">（追加）</span>経験値ブースト</td><td>Level 5</td></tr>
+										<tr><td>SR 6</td><td><span class="changevalue">（追加）</span>経験値ブースト</td><td>Level 15</td></tr>
+										<tr><td>SR 10</td><td><span class="changevalue">（変更）</span>経験値ブースト</td><td>Level <strike>30</strike><span class="changevalue">25</span></td></tr>
+									</tbody>
+								</table>
+							</li>
+						</ul>
+					</div>
+					<div class="content" id="20120124">
+						<span class="date"><a href="http://www.wizardry-online.jp/info/?seq=389">2012/01/24</a>#014</span>
+						<ul>
+							<li class="action">
+								<span class="tag">キャップ解放</span>
+								<span class="tag">ソウルランク</span>
+								<table class="changetable">
+									<thead>
+										<tr><th>ソウルランク上限</th></tr>
+									</thead>
+									<tbody>
+										<tr><td>10 → <span class="changevalue">12</span></td></tr>
+									</tbody>
+								</table>
+							</li>
+						</ul>
+					</div>
+					<div class="content" id="20120313">
+						<span class="date"><a href="http://www.wizardry-online.jp/info/?seq=454">2012/03/13</a>#021</span>
+						<ul>
+							<li class="log">
+								<span class="tag">イベント</span>
+								<a href="http://www.wizardry-online.jp/event/20120312dawnofdimento/">ディメントの夜明け</a>
+							</li>
+							<li class="log">
+								<span class="tag">特設サイト</span>
+								<a href="http://www.wizardry-online.jp/event/20120312dawnofdimento/systemSoulrank.aspx">Wizardry Online 史上最大のアップデート「ディメントの夜明け」特設サイト | Wizardry Online</a>
+							</li>
+							<li class="action">
+								<span class="tag">キャップ解放</span>
+								<span class="tag">ソウルランク</span>
+								<table class="changetable">
+									<thead>
+										<tr><th>ソウルランク上限</th></tr>
+									</thead>
+									<tbody>
+										<tr><td>12 → <span class="changevalue">20</span></td></tr>
+									</tbody>
+								</table>
+							</li>
+							<li class="action">
+								<span class="tag">キャップ解放</span>
+								<span class="tag">キャラクターレベル</span>
+								<table class="changetable">
+									<thead>
+										<tr><th>レベルキャップ</th></tr>
+									</thead>
+									<tbody>
+										<tr><td>40（SR 8 恩恵） → <span class="changevalue">50（SR 17 恩恵）</span></td></tr>
+									</tbody>
+								</table>
+							</li>
+						</ul>
+					</div>
+					<div class="content" id="20120626">
+						<span class="date"><a href="http://www.wizardry-online.jp/info/?seq=630">2012/06/26</a>#036</span>
+						<ul>
+							<li class="action">
+								<span class="tag">実装</span>
+								<span class="tag">システム（スキル）</span>
+								<a href="http://www.wizardry-online.jp/info/?seq=622">カスタムスキル</a>
+							</li>
+							<li class="action">
+								<span class="tag">追加</span>
+								<span class="tag">ソウルランク恩恵</span>
+								<table class="supple-tablelist soul_rank_bonuses">
+									<thead>
+										<tr><th>SR</th><th>分類</th><th>効果</th></tr>
+									</thead>
+									<tbody>
+										<tr><td>SR 7</td> <td>カスタムスキルスロット</td><td>+1 slot</td></tr>
+										<tr><td>SR 17</td><td>カスタムスキルスロット</td><td>+1 slot (total 2)</td></tr>
+									</tbody>
+								</table>
+							</li>
+						</ul>
+					</div>
+					<div class="content" id="20121218">
+						<span class="date"><a href="http://www.wizardry-online.jp/info/?seq=894">2012/12/18</a>#060</span>
+						<ul>
+							<li class="log">
+								<span class="tag">イベント</span>
+								冬の精霊祭
+							</li>
+							<li class="action">
+								<span class="tag">キャップ解放</span>
+								<span class="tag">ソウルランク</span>
+								<table class="changetable">
+									<thead>
+										<tr><th>ソウルランク上限</th></tr>
+									</thead>
+									<tbody>
+										<tr><td>20 → <span class="changevalue">22</span></td></tr>
+									</tbody>
+								</table>
+							</li>
+						</ul>
+					</div>
+					<div class="content" id="20130528">
+					<span class="date"><a href="http://www.wizardry-online.jp/info/?seq=1106">2013/05/28</a>#082</span>
+						<ul>
+							<li class="log">
+								<span class="tag">特設サイト</span>
+								<a href="http://www.wizardry-online.jp/event/20130528newdungeon/skilllevel.aspx">ロットハーディーの廃墟 | Wizardry Online</a>
+							</li>
+							<li class="site">
+								<span class="tag">実装</span>
+								<span class="tag">ダンジョン</span>
+								<a href="http://www.wizardry-online.jp/event/20130528newdungeon/">ロットハーディーの廃墟 (17th)</a>
+							</li>
+							<li class="action">
+								<span class="tag">キャップ解放</span>
+								<span class="tag">キャラクターレベル</span>
+								<table class="changetable">
+									<thead>
+										<tr><th>レベルキャップ</th></tr>
+									</thead>
+									<tbody>
+										<tr><td>50（SR 17 恩恵） → <span class="changevalue">55（SR 19 恩恵）</span></td></tr>
+									</tbody>
+								</table>
+							</li>
+						</ul>
+					</div>
+					<div class="content" id="20130830">
+						<span class="date"><a href="http://www.wizardry-online.jp/info/?seq=1227">2013/08/30</a>#095</span>
+						<ul>
+							<li class="log">
+								<span class="tag">特設サイト</span>
+								<a href="http://www.wizardry-online.jp/event/20130827DemonofDespair/level.aspx">絶望の蒼き悪魔 | Wizardry Online</a>
+							</li>
+							<li class="site">
+								<span class="tag">実装</span>
+								<span class="tag">ダンジョン</span>
+								<a href="http://www.wizardry-online.jp/event/20130827DemonofDespair/dungeon.aspx">蒼の洞窟 (18th)</a>
+							</li>
+							<li class="action">
+								<span class="tag">キャップ解放</span>
+								<span class="tag">ソウルランク</span>
+								<table class="changetable">
+									<thead>
+										<tr><th>ソウルランク上限</th></tr>
+									</thead>
+									<tbody>
+										<tr><td>22 → <span class="changevalue">24</span></td></tr>
+									</tbody>
+								</table>
+							</li>
+							<li class="action">
+								<span class="tag">キャップ解放</span>
+								<span class="tag">キャラクターレベル</span>
+								<table class="changetable">
+									<thead>
+										<tr><th>レベルキャップ</th></tr>
+									</thead>
+									<tbody>
+										<tr><td>55（SR 19 恩恵） → <span class="changevalue">60（SR 20 恩恵）</span></td></tr>
+									</tbody>
+								</table>
+							</li>
+							<li class="action">
+							<span class="tag">追加</span>
+							<span class="tag">ソウルランク恩恵</span>
+							<table class="supple-tablelist soul_rank_bonuses">
+								<thead>
+									<tr><th>SR</th><th>分類</th><th>効果</th></tr>
+								</thead>
+								<tbody>
+									<tr><td>SR 19</td><td>スキルポイントボーナス</td><td>+1 point</td></tr>
+									<tr><td>SR 20</td><td>レベルキャップ</td><td>Level 60</td></tr>
+									<tr><td>SR 20</td><td>スキルポイントボーナス</td><td>+3 points (total 4)</td></tr>
+									<tr><td>SR 21</td><td>スキルポイントボーナス</td><td>+3 points (total 7)</td></tr>
+									<tr><td>SR 22</td><td>スキルポイントボーナス</td><td>+3 points (total 10)</td></tr>
+								</tbody>
+							</table>
+							</li>
+						</ul>
+					</div>
+					<div class="content" id="20131029">
+						<span class="date"><a href="http://www.wizardry-online.jp/info/?seq=1325">2013/10/29</a>#104</span>
+						<ul>
+							<li class="log">
+								<span class="tag">イベント</span>
+								<a href="http://www.wizardry-online.jp/event/20131015anniversary/">Wizardry Online 2nd ANNIVERSARY</a>
+							</li>
+							<li class="action">
+								<span class="tag">緩和</span>
+								<span class="tag">転職</span>
+								転職可能なソウルランク引き下げ
+								<table class="changetable">
+									<thead>
+										<tr><th>転職可能ソウルランク</th></tr>
+									</thead>
+									<tbody>
+										<tr><td>SR 5 → <span class="changevalue">SR 3</span></td></tr>
+									</tbody>
+								</table>
+							</li>
+							<li class="action">
+								<span class="tag">緩和</span>
+								<span class="tag">beginners’</span>
+								初心者保護期間 延長
+								<table class="changetable">
+									<thead>
+										<tr><th>SR</th><th>分類</th><th>効果</th></tr>
+									</thead>
+									<tbody>
+										<tr><td>SR 2 → <span class="changevalue">SR 5</span></td></tr>
+									</tbody>
+								</table>
+							</li>
+						</ul>
+					</div>
+					<div class="content" id="20140325">
+						<span class="date"><a href="http://www.wizardry-online.jp/info/?seq=1566">2014/03/25</a>#124</span>
+						<ul>
+							<li class="contents">
+								<span class="tag">実装</span>
+								<span class="tag">ソウルパートナー</span>
+								<a href="http://www.wizardry-online.jp/event/20140325soulpartner/">ソウルパートナー</a>
+							</li>
+							<li class="action">
+								<span class="tag">追加</span>
+								<span class="tag">ソウルランク恩恵</span>
+								<table class="supple-tablelist soul_rank_bonuses">
+									<thead>
+										<tr><th>SR</th><th>分類</th><th>効果</th></tr>
+									</thead>
+									<tbody>
+										<tr><td>SR 5</td> <td>ソウルパートナー CP</td><td>+6</td></tr>
+										<tr><td>SR 7</td> <td>ソウルパートナー CP</td><td>+1 (total 7)</td></tr>
+										<tr><td>SR 9</td> <td>ソウルパートナー CP</td><td>+1 (total 8)</td></tr>
+										<tr><td>SR 11</td><td>ソウルパートナー CP</td><td>+2 (total 10)</td></tr>
+										<tr><td>SR 12</td><td>ソウルパートナー CP</td><td>+1 (total 11)</td></tr>
+										<tr><td>SR 13</td><td>ソウルパートナー CP</td><td>+1 (total 12)</td></tr>
+										<tr><td>SR 14</td><td>ソウルパートナー CP</td><td>+1 (total 13)</td></tr>
+										<tr><td>SR 15</td><td>ソウルパートナー CP</td><td>+1 (total 14)</td></tr>
+										<tr><td>SR 16</td><td>ソウルパートナー CP</td><td>+1 (total 15)</td></tr>
+										<tr><td>SR 17</td><td>ソウルパートナー CP</td><td>+1 (total 16)</td></tr>
+										<tr><td>SR 18</td><td>ソウルパートナー CP</td><td>+1 (total 17)</td></tr>
+										<tr><td>SR 19</td><td>ソウルパートナー CP</td><td>+1 (total 18)</td></tr>
+										<tr><td>SR 21</td><td>ソウルパートナー CP</td><td>+1 (total 19)</td></tr>
+										<tr><td>SR 23</td><td>ソウルパートナー CP</td><td>+1 (total 20)</td></tr>
+										<tr><td>SR 24</td><td>ソウルパートナー CP</td><td>+1 (total 21)</td></tr>
+									</tbody>
+								</table>
+							</li>
+						</ul>
+					</div>
+					<div class="content" id="20140428">
+						<span class="date"><a href="http://www.wizardry-online.jp/info/?seq=1632">2014/04/28</a>#129</span>
+						<ul>
+							<li class="log">
+								<span class="tag">イベント</span>
+								<a href="http://www.wizardry-online.jp/event/20140428snkcollaboration/">SNK プレイモアコラボレーション</a>
+							</li>
+							<li class="action">
+								<span class="tag">キャップ解放</span>
+								<span class="tag">キャラクターレベル</span>
+								<table class="changetable">
+									<thead>
+										<tr><th>レベルキャップ</th></tr>
+									</thead>
+									<tbody>
+										<tr><td>60（SR20 恩恵） → <span class="changevalue">70（SR22 恩恵）</span></td></tr>
+									</tbody>
+								</table>
+							</li>
+						</ul>
+					</div>
+					<div class="content" id="20140729">
+						<span class="date"><a href="http://www.wizardry-online.jp/info/?seq=1768">2014/07/29</a>#142</span>
+						<ul>
+							<li class="log">
+								<span class="tag">イベント</span>
+								<a href="http://www.wizardry-online.jp/event/20140729fairyfesta/">夏の精霊祭</a>
+							</li>
+							<li class="action">
+								<span class="tag">キャップ解放</span>
+								<span class="tag">ソウルランク</span>
+								<table class="changetable">
+									<thead>
+										<tr><th>ソウルランク上限</th></tr>
+									</thead>
+									<tbody>
+										<tr><td>24 → <span class="changevalue">27</span></td></tr>
+									</tbody>
+								</table>
+							</li>
+						</ul>
+					</div>
+					<div class="content" id="20141216">
+						<span class="date"><a href="http://www.wizardry-online.jp/info/?seq=1851">2014/12/16</a>#162</span>
+						<ul>
+							<li class="log">
+								<span class="tag">イベント</span>
+								<a href="http://www.wizardry-online.jp/event/20141216winterfesta/">冬の精霊祭</a>
+							</li>
+							<li class="action">
+								<span class="tag">追加</span>
+								<span class="tag">ソウルランク恩恵</span>
+								<a href="http://www.wizardry-online.jp/info/?seq=1849">ソウルランク恩恵の追加</a>
+								<table class="changetable">
+									<thead>
+										<tr><th>スキル継承最大スロット数</th></tr>
+									</thead>
+									<tbody>
+										<tr><td>最大 5 スロット → <span class="changevalue">最大 10 スロット</span></td></tr>
+									</tbody>
+								</table>
+								<table class="supple-tablelist soul_rank_bonuses">
+									<thead>
+										<tr><th>SR</th><th>分類</th><th>効果</th></tr>
+									</thead>
+									<tbody>
+										<tr><td>SR 22</td><td>継承可能スキルポイント</td><td>+3 points (total 38)</td></tr>
+										<tr><td>     </td><td>スキル継承スロット</td>   <td>+1 slot (total 6)</td></tr>
+										<tr><td>SR 25</td><td>継承可能スキルポイント</td><td>+2 points (total 40)</td></tr>
+										<tr><td>SR 27</td><td>スキル継承スロット</td>   <td>+1 slot (total 7)</td></tr>
+									</tbody>
+								</table>
+							</li>
+						</ul>
+					</div>
+					<div class="content" id="20150310">
+						<span class="date"><a href="http://www.wizardry-online.jp/info/?seq=1896">2015/03/10</a>#173</span>
+						<ul>
+							<li class="site">
+								<span class="tag">実装</span>
+								<span class="tag">ダンジョン</span>
+								<a href="http://www.wizardry-online.jp/event/20150224newdungeon/">イルヴァンボーレ鉱山 (23rd) </a>(<a href="http://www.wizardry-online.jp/info/?seq=1889">2015/02/24</a>#171)
+							</li>
+							<li class="action">
+								<span class="tag">緩和</span>
+								<span class="tag">beginners’</span>
+								初心者保護期間 延長
+								<table class="changetable">
+									<thead>
+										<tr><th>初心者保護期間</th></tr>
+									</thead>
+									<tbody>
+										<tr><td>SR 5 → <span class="changevalue">SR 10</span></td></tr>
+									</tbody>
+								</table>
+							</li>
+						</ul>
+					</div>
+					<div class="content" id="20150428">
+						<span class="date"><a href="http://www.wizardry-online.jp/info/?seq=1927">2015/04/28</a>#180</span>
+						<ul>
+							<li class="log">
+								<span class="tag">イベント</span>
+								<a href="http://www.wizardry-online.jp/event/20150428danmachi/">ダンまちコラボ</a>
+							</li>
+							<li class="action">
+								<span class="tag">撤廃</span>
+								<span class="tag">ソウルランク恩恵</span>
+								ソウルランクによるキャラクターレベル制限
+							</li>
+						</ul>
+					</div>
+					<div class="content" id="20151215">
+						<span class="date"><a href="http://www.wizardry-online.jp/info/?seq=2061">2015/12/15</a>#213</span>
+						<ul>
+							<li class="log">
+								<span class="tag">特設サイト</span>
+								<a href="http://www.wizardry-online.jp/event/20151215winterfesta/level.aspx">レベル・ソウルランクキャップ解放 | Wizardry Online</a>
+							</li>
+							<li class="site">
+								<span class="tag">実装</span>
+								<span class="tag">ダンジョン</span>
+								<a href="http://www.wizardry-online.jp/event/20151215newdungeon/">深淵の迷宮 (26th)</a>
+							</li>
+							<li class="action">
+								<span class="tag">キャップ解放</span>
+								<span class="tag">キャラクターレベル</span>
+								<table class="changetable">
+									<thead>
+										<tr><th>レベルキャップ</th></tr>
+									</thead>
+									<tbody>
+										<tr><td>70 → <span class="changevalue">80</span></td></tr>
+									</tbody>
+								</table>
+							</li>
+							<li class="action">
+								<span class="tag">キャップ解放</span>
+								<span class="tag">ソウルランク</span>
+								<table class="changetable">
+									<thead>
+										<tr><th>ソウルランク上限</th></tr>
+									</thead>
+									<tbody>
+										<tr><td>27 → <span class="changevalue">30</span></td></tr>
+									</tbody>
+								</table>
+							</li>
+						</ul>
+					</div>
+					<div class="content" id="20161005">
+						<span class="date">2016/10/05</a>#253</span>
+						<ul>
+							<li class="action">
+								<span class="tag">キャップ解放</span>
+								<span class="tag">キャラクターレベル</span>
+								<table class="changetable">
+									<thead>
+										<tr><th>レベルキャップ</th></tr>
+									</thead>
+									<tbody>
+										<tr><td>80 → <span class="changevalue">90</span></td></tr>
+									</tbody>
+								</table>
+							</li>
+							<li class="action">
+								<table class="supple-tablelist soul_rank_bonuses">
+									<thead>
+										<tr><th>SR</th><th>分類</th><th>効果</th></tr>
+									</thead>
+									<tbody>
+										<tr><td>SR 10</td><td>スキルポイントボーナス</td><td>+1 point</td></tr>
+										<tr><td>SR 15</td><td>スキルポイントボーナス</td><td>+1 point (total 2)</td></tr>
+									</tbody>
+								</table>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<h3 id="soul-rank-bonuses">Soul Rank Bonuses</h3>
+				<h4 id="head-chart">チャート</h4>
+
+				<div id="chart-select-area">
+					<span><span id="chart-points">ソウルポイント</span></span>
+					<span><span id="chart-exps">戦闘経験値</span></span>
+					<span><span id="chart-levels">キャラクタレベル</span></span>
+					<span><span id="chart-skills">スキルポイント</span></span>
+					<span><span id="chart-materials">ソウルマテリアル</span></span>
+				</div>
+
+				<div id="chart" style="width: 800px; height: 400px;"></div>
+				<div id="legend"></div>
+
+				<h4 id="head-bonuses">恩恵リスト</h4>
+
+				<div id="dead">
+					<span><span>廃止された恩恵</span></span><br>
+				</div>
+				<div id="categories">
+					<span><span>レベルキャップ</span></span>
+					<span><span>経験値ブースト</span></span>
+					<span><span>継承可能スキルポイント</span></span>
+					<span><span>スキル継承スロット</span></span>
+					<span><span>カスタムスキルスロット</span></span>
+					<span><span>スキルポイントボーナス</span></span>
+					<span><span>ソウルパートナー CP</span></span>
+					<span><span>ソウルマテリアル最大保有量</span></span>
+					<span><span>ソウルマテリアル蓄積速度</span></span>
+					<span><span>ステータスボーナス</span></span>
+					<span><span>蘇生成功率</span></span>
+					<span><span>鑑定額割引</span></span>
+					<span><span>マイクローク</span></span>
+					<span><span>モンスター討伐時ゴールド取得量</span></span>
+					<span><span>被略奪時間</span></span>
+					<span><span>許可</span></span>
+					<span><span>その他</span></span>
+				</div>
+
+				<table id="bonusesList" class="soul_rank_bonuses">
+					<thead>
+						<tr><th>SR</th><th>分類</th><th>効果</th><th>備考</th></tr>
+					</thead>
+					<tbody id="bonuses">
+					</tbody>
+				</table>
+			</article>
+
+			<hr class="offset-killer">
+			<div id="disqus-space">
+				<p id="comment-attention">
+					名前を入力しようとすると表示される「ゲストとして投稿する」にチェックを入れるとDISQUSに登録しなくてもコメントすることができます。<br>
+					メールアドレスは入力必要ですが DISQUS で管理され、投稿したコメントに表示されることはありません。
+					ただし、ログインせずゲストとして投稿するとコメントが承認制となります（DISQUS にログインすると承認の必要なくすぐにコメントが表示されます）。架空のメールアドレスでも可能ですのでお気軽にどうぞ！
+				</p>
+				<aside id="toc-disqus">
+					<div id="disqus_thread"></div>
+				</aside>
+				<script type="text/javascript">
+					( function () {
+						var dsq = document.createElement( 'script' );
+						dsq.type = 'text/javascript';
+						dsq.async = true;
+						dsq.src = '//miramiku.disqus.com/embed.js';
+						( document.getElementsByTagName( 'head' )[ 0 ] || document.getElementsByTagName( 'body' )[ 0 ] ).appendChild( dsq );
+					}() );
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+			</div>
+		</div>
+	</main>
+
+	<div id="toc">
+		<ul>
+			<li id="back2top"><a href="#top">トップページ</a></li>
+
+			<li><a href="#timeline">Timeline</a></li>
+			<li>
+				<a href="#soul-rank-bonuses">Soul Rank Bonuses</a>
+				<ul>
+					<li><a href="#head-chart">チャート</a></li>
+					<li><a href="#head-bonuses">恩恵リスト</a></li>
+				</ul>
+			</li>
+
+			<li id="jump2disqus"><a href="#toc-disqus">コメント</a></li>
+		</ul>
+	</div>
+
+	<script>
+		( function ( i, s, o, g, r, a, m ) {
+			i[ 'GoogleAnalyticsObject' ] = r; i[ r ] = i[ r ] || function () {
+				( i[ r ].q = i[ r ].q || [] ).push( arguments )
+			}, i[ r ].l = 1 * new Date(); a = s.createElement( o ),
+				m = s.getElementsByTagName( o )[ 0 ]; a.async = 1; a.src = g; m.parentNode.insertBefore( a, m )
+		} )( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
+		ga( 'create', 'UA-46801675-2', 'auto' );
+		ga( 'send', 'pageview' );
+	</script>
+</body>
+
+</html>
