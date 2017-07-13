@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>昏き揺らぎの地 石碑パズル | Recollection of Wizardry Online</title>
+
+	<!-- meta data -->
+	<meta name="author" content="Miku">
+
+	<!-- scripts -->
+	<script src="../common/core.js" defer></script>
+	<script src="https://www.amcharts.com/lib/3/amcharts.js" defer></script>
+	<script src="https://www.amcharts.com/lib/3/serial.js" defer></script>
+	<script src="recol.StelaiPuzzle.js" defer></script>
+
+	<!-- style / favicon -->
+	<link href="../common/foundation.css" rel="stylesheet" type="text/css">
+	<link href="stelai-puzzle.css" rel="stylesheet" type="text/css">
+	<link href="../favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body id="rewo">
+	<header data-bg="../common/background.jpg">
+		<div id="header-content">
+			<a href="https://miramiku.github.io/rewo/" id="page-info">
+				<span id="meta-info" class="page-headings">Tools</span>
+				<span id="major-title" class="page-headings">昏き揺らぎの地 石碑パズル</span>
+				<span id="title-divider" class="page-headings"></span>
+				<span id="minor-title" class="page-headings">Stelai Puzzle</span>
+			</a>
+
+			<footer>
+				<ul>
+					<li><a href="http://miramiku.github.io/"><span class="basis-icon me"> </span> みく(๑・ω・๑)</a></li>
+					<li><a href="https://twitter.com/miramiku"><span class="basis-icon tw"> </span> @miramiku</a></li>
+					<li><a href="https://github.com/miramiku/rewo"><span class="basis-icon gh"> </span> Repository</a></li>
+				</ul>
+			</footer>
+
+			<p id="wo-credit">
+				"Wizardry&reg;" of GMO Gamepot Inc. All rights reserved.<br>
+				Wizardry Renaissance&trade; &copy;2009 GMO Gamepot Inc.<br>
+				All rights reserved.
+			</p>
+		</div>
+	</header>
+
+	<main id="top">
+		<div id="main-inner">
+			<article>
+				<div id="stelai-puzzle">
+					<div id="stelai">
+						<span id="s0" data-stela="0"></span>
+						<span id="s1" data-stela="1"></span>
+						<span id="s2" data-stela="2"></span>
+						<span id="s3" data-stela="3"></span>
+						<span id="s4" data-stela="4"></span>
+						<span id="s5" data-stela="5"></span>
+						<span id="s6" data-stela="6"></span>
+						<span id="s7" data-stela="7"></span>
+						<span id="s8" data-stela="8"></span>
+					</div>
+
+					<div id="controles">
+						<div id="view-solution">
+							<span><span>答えの表示</span></span>
+						</div>
+						<div id="puzzle-mode">
+							<span><span data-mode="input">問題を入力</span></span>
+							<span><span data-mode="out">解いてみる</span></span>
+						</div>
+						<div id="tools">
+							<span><span data-controle="make">問題生成</span></span>
+							<span><span data-controle="reset">リセット</span></span>
+						</div>
+					</div>
+				</div>
+
+				<h3 id="head-usage">各ボタンについて</h3>
+				<table id="usage">
+					<tbody>
+						<tr>
+							<th>答えの表示</th>
+							<td>パズルを解くにあたって操作しなけれならない<span class="wo-keyword">叡智の瞳</span>の中央にオレンジ色のチェック（<img class="character-image" src="stelai-answer.png" alt="answer icon" height="12" width="12">）が表示されます。</td>
+						</tr>
+						<tr>
+							<th>問題を入力</th>
+							<td><span class="wo-keyword">叡智の瞳</span>の状態を入力するためのものです。この状態で<span class="wo-keyword">叡智の瞳</span>を操作すると操作した<span class="wo-keyword">叡智の瞳</span>のみ状態が反転します。（初期状態）</td>
+						</tr>
+						<tr>
+							<th>解いてみる</th>
+							<td><span class="wo-site">昏き揺らぎの地</span> のリドルと同様に動作をします。</td>
+						</tr>
+						<tr>
+							<th>問題生成</th>
+							<td>
+								<span class="wo-site">昏き揺らぎの地</span> のリドルと同様にランダムに２箇所の<span class="wo-keyword">叡智の瞳</span>に光を宿します（同じ問題が生成されることも多々もあります）。<br>
+								このボタンを押すと自動的に <span class="button">[解いてみる]</span> が選択されます。
+							</td>
+						</tr>
+						<tr>
+							<th>リセット</th>
+							<td>
+								<span class="button">[問題を入力]</span> <span class="wo-keyword">叡智の瞳</span>をすべて光を宿していない状態にします<br>
+								<span class="button">[解いてみる]</span> パズルを解き始めた時の状態に戻します
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3 id="derivation">解法の導出過程</h3>
+				<div class="block-anchor">
+					<span class="guage"></span>
+					<a href="../derivation-stelai-puzzle/"></a>
+					<p class="article-eyecatch"></p>
+					<p class="link-site internal">昏き揺らぎの地 石碑パズル解法導出</p>
+					<p class="link-comment">このページで実装されているアルゴリズムの導出について</p>
+				</div>
+			</article>
+
+			<hr class="offset-killer">
+			<div id="disqus-space">
+				<p id="comment-attention">
+					名前を入力しようとすると表示される「ゲストとして投稿する」にチェックを入れるとDISQUSに登録しなくてもコメントすることができます。<br>
+					メールアドレスは入力必要ですが DISQUS で管理され、投稿したコメントに表示されることはありません。
+					ただし、ログインせずゲストとして投稿するとコメントが承認制となります（DISQUS にログインすると承認の必要なくすぐにコメントが表示されます）。架空のメールアドレスでも可能ですのでお気軽にどうぞ！
+				</p>
+				<aside id="toc-disqus">
+					<div id="disqus_thread"></div>
+				</aside>
+				<script type="text/javascript">
+					( function () {
+						var dsq = document.createElement( 'script' );
+						dsq.type = 'text/javascript';
+						dsq.async = true;
+						dsq.src = '//miramiku.disqus.com/embed.js';
+						( document.getElementsByTagName( 'head' )[ 0 ] || document.getElementsByTagName( 'body' )[ 0 ] ).appendChild( dsq );
+					}() );
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+			</div>
+		</div>
+	</main>
+
+	<div id="toc">
+		<ul>
+			<li id="back2top"><a href="#top">トップページ</a></li>
+
+			<li><a href="#head-usage">各ボタンについて</a></li>
+			<li><a href="#derivation">解法の導出過程</a></li>
+
+			<li id="jump2disqus"><a href="#toc-disqus">コメント</a></li>
+		</ul>
+	</div>
+
+	<script>
+		( function ( i, s, o, g, r, a, m ) {
+			i[ 'GoogleAnalyticsObject' ] = r; i[ r ] = i[ r ] || function () {
+				( i[ r ].q = i[ r ].q || [] ).push( arguments )
+			}, i[ r ].l = 1 * new Date(); a = s.createElement( o ),
+				m = s.getElementsByTagName( o )[ 0 ]; a.async = 1; a.src = g; m.parentNode.insertBefore( a, m )
+		} )( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
+		ga( 'create', 'UA-46801675-2', 'auto' );
+		ga( 'send', 'pageview' );
+	</script>
+</body>
+
+</html>
