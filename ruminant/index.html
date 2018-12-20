@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>Ruminant - ソウルパートナー編成シミュレーション | Recollection of Wizardry Online</title>
+
+	<!-- meta data -->
+	<meta name="author" content="Miku">
+
+	<!-- scripts -->
+	<script src="../common/core.js" defer></script>
+	<script src="jquery.tooltipster.js" defer></script>
+	<script src="ruminant.js?ver=1.02" defer></script>
+
+	<!-- style / favicon -->
+	<link href="../common/foundation.css" rel="stylesheet" type="text/css">
+	<link href="ruminant.css" rel="stylesheet" type="text/css">
+	<link href="../favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body id="rewo">
+	<header data-bg="../common/background.jpg">
+		<div id="header-content">
+			<a href="https://miramiku.github.io/rewo/" id="page-info">
+				<span id="meta-info" class="page-headings">Tools</span>
+				<span id="major-title" class="page-headings">ソウルパートナー編成<br>シミュレーション</span>
+				<span id="title-divider" class="page-headings"></span>
+				<span id="minor-title" class="page-headings">Ruminant</span>
+			</a>
+
+			<footer>
+				<ul>
+					<li><a href="http://miramiku.github.io/"><span class="basis-icon me"> </span> みく(๑˃̵ᴗ˂̵)</a></li>
+					<li><a href="https://twitter.com/miramiku"><span class="basis-icon tw"> </span> @miramiku</a></li>
+					<li><a href="https://github.com/miramiku/rewo"><span class="basis-icon gh"> </span> Repository</a></li>
+				</ul>
+			</footer>
+
+			<p id="wo-credit">
+				"Wizardry&reg;" of GMO Gamepot Inc. All rights reserved.<br>
+				Wizardry Renaissance&trade; &copy;2009 GMO Gamepot Inc.<br>
+				All rights reserved.
+			</p>
+		</div>
+	</header>
+
+	<main id="top">
+		<div id="main-inner">
+			<article id="ruminant">
+				<ul id="index">
+					<li data-index="formation" class="opening">編成シミュレーション</li>
+					<li data-index="management">パートナー管理</li>
+				</ul>
+
+				<div id="formation" class="tab">
+					<h3 id="headings-request">探索先ダンジョン</h3>
+					<div id="request">
+						<div id="request-dungeon"><span id="dungeon-j"></span><span id="dungeon-e"></span></div>
+						<div id="fundamental-requests">
+							<div class="value-field"><span class="label">要求合計レベル</span><span id="level" class="value"></span></div>
+							<div class="value-field"><span class="label">CP 制限</span><span id="cp" class="value editable"></span><span id="input-cp"><input type="text"></span></div>
+						</div>
+						<div id="basic-information">
+							<div id="time-field"><span class="label">探索時間</span><span id="time" class="value"></span></div>
+							<div id="expenses-field"><span class="label">必要ゴールド</span><span id="expenses" class="value"></span></div>
+							<div id="count-field"><span class="label">ソウルパートナー編成数制限</span><span id="count" class="value"></span></div>
+						</div>
+						<table id="request-parameters" class="parameters-list">
+							<tbody>
+								<tr><th>HP</th><td id="request-hp"></td><th>STR</th><td id="request-str"></td><th>DEX</th><td id="request-dex"></td><th>INT</th><td id="request-int"></td><th>LUK</th><td id="request-luk"></td></tr>
+								<tzr><th>MP</th><td id="request-mp"></td><th>VIT</th><td id="request-vit"></td><th>AGI</th><td id="request-agi"></td><th>PIE</th><td id="request-pie"></td><th></th><td></td></tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="controles">
+						<div id="controle-value-options">
+							<div class="controle-set"><span class="label">CP 制限</span><input id="controle-cp" type="text" value="20"></div>
+							<div class="controle-set"><span class="label">編成数上限</span><input id="controle-count" type="text" value="5"></div>
+							<span id="controle-count-fix" class="controle-button">編成数を固定しない</span>
+						</div>
+						<div id="controle-formation-counts">
+							<div class="controle-set"><span class="label">編成総数</span><span id="controle-all-formations" class="value"></span></div>
+							<div class="controle-set"><span class="label">適合編成数</span><span id="controle-fullfill-formations" class="value"></span></div>
+							<div class="controle-set"><span class="label">表示上限</span><input id="controle-limit" type="text" value="50"></div>
+						</div>
+						<div id="controle-partner-counts">
+							<span class="label">パートナー登録総数</span>
+							<span id="partner-counts-sum" class="value"></span>
+							（
+							<div class="partner-counts-set fixation"><span class="label" style="font-family: icons;">&#xf041;</span><span id="partner-counts-fixation" class="value"></span></div>
+							<div class="partner-counts-set"><span class="label">フリー</span><span id="partner-counts-free" class="value"></span></div>
+							<div class="partner-counts-set resting"><span class="label">(人-ω-)｡o</span><span id="partner-counts-resting" class="value"></span></div>
+							）
+						</div>
+						<div id="controle-display-button-container"><span id="controle-display" class="controle-button">編成候補リストの表示</span><span id="is-change">編成候補が更新されました</span></div>
+					</div>
+					<h3 id="headings-formations">パートナー編成候補</h3>
+					<div id="formations-empty">
+						<p id="empty-heading">適合する編成はありませんでした ( &gt;﹏&lt;。)</p>
+						<div id="empty-text">
+							以下のことをこころみると見つかるかもしれません...
+							<ul>
+								<li>パートナーの固定設定を解除してみる</li>
+								<li>パートナーの除外設定を解除してみる</li>
+								<li>探索先ダンジョンを変更してみる</li>
+							</ul>
+						</div>
+					</div>
+					<div id="formations">
+						<div id="initial-message">
+							<p id="initial-heading">ルミナントへおかえりなさい (,,•﹏•,,)</p>
+							<div id="initial-text">
+								<p>ルミナントは前回の操作した状態を復元しておきました</p>
+								<p>編成候補リストを表示する前に探索先ダンジョンやパートナー管理でパートナーの固定・除外設定の確認してください</p>
+								<p>ソウルランクが上がったりしたら CP 制限の見直しを。また、パートナーのレベルアップなどがありましたらパートナーデータの更新も忘れずに</p>
+								<p>登録するパートナーを 35 くらいまでにとどめておかないと編成パターンが爆発的に増大しパソコンがフリーズしてしまう可能性があるのでご注意ください</p>
+								<p>それではよき編成が見つかることを願っています (๑•﹏•๑)ﾉ</p>
+							</div>
+						</div>
+						<div id="first-message">
+							<p id="first-heading">ルミナントへようこそ (๑•﹏•๑)ﾉ</p>
+							<div id="first-text">
+								<p>ソウルパートナーを事前に登録・管理して探索したいダンジョンの要求パラメータに合致する編成を探すシステムです</p>
+								<p>最初にソウルパートナーを追加しなきゃいけないので大変ですが少しづつ追加していただければ幸いです</p>
+								<p>ルミナントではパートナーに対して以下ことを設定できます</p>
+								<ul>
+									<li>固定： 必ず出発させたいパートナー</li>
+									<li>除外： SG 回復中やレギュラー登録などで出発できないパートナー</li>
+								</ul>
+								<p>ルミナントにおけるデータの編集はマウスカーソルを編集したい項目に合わせると枠線がでてくるのでクリックすれば編集できます</p>
+								<p>例えば上に表示されているピンク色の部分で<strong>カリグラーゼ下水道</strong>にカーソルを合わせると枠線がでて、クリックすると探索先ダンジョンを変更することができます</p>
+								<p><strong>パートナー管理</strong>のタブではパートナー名も含めてすべての項目が編集できます。ただし、全く同じパートナー名は登録できません</p>
+								<p>最後にパートナーデータの定期的に<strong>パートナー管理</strong>の一番下にある<strong>データ入出力</strong>でパートナーのデータをファイルとして出力・保管しておくことをおすすめします。出力したファイルを読み込むことでブラウザやパソコンを切り替えてもパートナーの入力する必要はなくなります</p>
+								<p>それではよき編成が見つかることを願っています (,,•﹏•,,)</p>
+							</div>
+						</div>
+					</div>
+					<div id="more-formations-container">
+						<span id="more-formations" class="controle-button">さらに編成を表示する</span>
+					</div>
+				</div>
+
+				<div id="management" class="tab">
+					<h3 id="headings-entry">パートナー追加</h3>
+					<div id="entry-partner" class="partner-card">
+						<div class="partner-container">
+							<span class="partner-name-container editable" data-index="0"><span class="partner-name initial">クリックしてパートナー名を入力</span></span>
+						</div>
+						<div class="fundamental-data">
+							<div class="value-field"><span class="label">レベル</span><span class="partner-level editable" data-index="1">1</span></div>
+							<div class="value-field"><span class="label">CP</span><span class="partner-cp editable" data-index="2">1</span></div>
+						</div>
+						<table class="parameters-list">
+							<tbody>
+								<tr><th>HP</th> <td><span class="partner-hp  editable zero" data-index="3" >0</span></td><th>STR</th><td><span class="partner-str editable zero" data-index="5" >0</span></td><th>DEX</th><td><span class="partner-dex editable zero" data-index="7" >0</span></td><th>INT</th><td><span class="partner-int editable zero" data-index="9" >0</span></td><th>LUK</th><td><span class="partner-luk editable zero" data-index="11">0</span></td></tr>
+								<tr><th>MP</th> <td><span class="partner-mp  editable zero" data-index="4" >0</span></td><th>VIT</th><td><span class="partner-vit editable zero" data-index="6" >0</span></td><th>AGI</th><td><span class="partner-agi editable zero" data-index="8" >0</span></td><th>PIE</th><td><span class="partner-pie editable zero" data-index="10">0</span></td><th></th><td></td></tr>
+							</tbody>
+						</table>
+						<span class="tool-button button-reset">リセット</span>
+						<div class="toolbox"><span class="button-resting  tool-button">除外</span><span class="button-fixation tool-button">固定</span><span class="button-entry    tool-button">追加</span></div>
+					</div>
+					<h3 id="headings-list-controles">パートナーリストの操作</h3>
+					<h5>フィルタ・並び替え</h5>
+					<div id="list-sort"><span id="filter-label">パートナー名</span><input id="filter-partner-name" type="text"><span id="filter-reset" class="list-controle-button">リセット</span><span id="redisplay" class="list-controle-button">再表示</span><span id="sort-key"    class="sort-button">基準：パートナー名前</span><span id="sort-order"  class="sort-button">順序：A → Z</span><span id="sort-option" class="sort-button">除外・固定を分ける</span></div>
+					<h5>一括解除</h5>
+					<div id="clear-collectively"><span id="resting-clear-collectively" class="sort-button">除外一括解除</span><span id="fixation-clear-collectively" class="sort-button">固定一括解除</span></div>
+					<h3 id="headings-list">ソウルパートナーリスト</h3>
+					<div id="partners"></div>
+					<h3 id="headings-imex">データ入出力</h3>
+					<div id="imex"><span id="data-import" class="imex-button">パートナーデータの読み込み</span><a id="data-export" class="imex-button" href="#" download="partners.json">パートナーデータの書き出し</a></div>
+				</div>
+
+				<!--
+				<h3 id="thanks">ルミナントの紹介を使い方</h3>
+				<div class="external-link">
+					<a href="http://ou-saka.seesaa.net/article/438987851.html"></a>
+					<p class="link-eyecatch"><img src="/images/wizon/liberal-related-college.png"></p>
+					<p class="link-site">りべらる系かれっじ（りべかれ）</p>
+					<p class="link-title">Ruminant - ソウルパートナー編成シミュレーションのご紹介</p>
+					<p class="link-comment">ルミナントの使い方を紹介していただきました ( &gt;﹏&lt;。)</p>
+				</div>
+				-->
+
+				<h3 id="changelog">変更履歴</h3>
+				<div class="internal-article">
+					<a href="/post/wizon/tools/ruminant-changelog/"></a>
+					<p class="article-eyecatch"></p>
+					<p class="article-title">Ruminant 変更履歴</p>
+					<p class="article-description">Ruminant のアップデート歴と詳しい変更箇所を記載</p>
+				</div>
+
+			</article>
+
+			<hr class="offset-killer">
+			<div id="disqus-space">
+				<p id="comment-attention">
+					名前を入力しようとすると表示される「ゲストとして投稿する」にチェックを入れるとDISQUSに登録しなくてもコメントすることができます。<br>
+					メールアドレスは入力必要ですが DISQUS で管理され、投稿したコメントに表示されることはありません。
+					ただし、ログインせずゲストとして投稿するとコメントが承認制となります（DISQUS にログインすると承認の必要なくすぐにコメントが表示されます）。架空のメールアドレスでも可能ですのでお気軽にどうぞ！
+				</p>
+				<aside id="toc-disqus">
+					<div id="disqus_thread"></div>
+				</aside>
+				<script type="text/javascript">
+					( function () {
+						var dsq = document.createElement( 'script' );
+						dsq.type = 'text/javascript';
+						dsq.async = true;
+						dsq.src = '//miramiku.disqus.com/embed.js';
+						( document.getElementsByTagName( 'head' )[ 0 ] || document.getElementsByTagName( 'body' )[ 0 ] ).appendChild( dsq );
+					}() );
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+			</div>
+		</div>
+	</main>
+
+	<div id="toc">
+		<ul id="toc-formation" class="tab">
+			<li><a href="#headings-request">探索先ダンジョン</a></li>
+			<li><a href="#headings-formations">パートナー編成候補</a></li>
+		</ul>
+		<ul id="toc-management" class="tab">
+			<li><a href="#headings-entry">パートナー追加</a></li>
+			<li><a href="#headings-list-controles">パートナーリストの操作</a></li>
+			<li><a href="#headings-list">ソウルパートナーリスト</a></li>
+			<li><a href="#headings-imex">データ入出力</a></li>
+		</ul>
+		<ul>
+			<!-- <li><a href="#thanks">ルミナントの紹介を使い方</a></li> -->
+			<li><a href="#changelog">変更履歴</a></li>
+		</ul>
+	</div>
+
+	<div id="dialogue-pane"></div>
+	<div id="dialogue"></div>
+
+	<script>
+		( function ( i, s, o, g, r, a, m ) {
+			i[ 'GoogleAnalyticsObject' ] = r; i[ r ] = i[ r ] || function () {
+				( i[ r ].q = i[ r ].q || [] ).push( arguments )
+			}, i[ r ].l = 1 * new Date(); a = s.createElement( o ),
+				m = s.getElementsByTagName( o )[ 0 ]; a.async = 1; a.src = g; m.parentNode.insertBefore( a, m )
+		} )( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
+		ga( 'create', 'UA-46801675-2', 'auto' );
+		ga( 'send', 'pageview' );
+	</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
