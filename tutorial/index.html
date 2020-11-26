@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>チュートリアル | Recollection of Wizardry Online</title>
+
+	<!-- meta data -->
+	<meta name="author" content="Miku">
+
+	<!-- scripts -->
+	<script src="../common/core.js" defer></script>
+
+	<!-- style / favicon -->
+	<link href="../common/foundation.css" rel="stylesheet" type="text/css">
+	<link href="supus.css" rel="stylesheet" type="text/css">
+	<link href="../favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body id="rewo">
+	<header data-bg="../common/background.jpg">
+		<div id="header-content">
+			<a href="https://miramiku.github.io/rewo/" id="page-info">
+				<span id="major-title" class="page-headings">チュートリアル</span>
+				<span id="title-divider" class="page-headings"></span>
+				<span id="minor-title" class="page-headings">tutorial</span>
+			</a>
+
+			<footer>
+				<ul>
+					<li><a href="http://miramiku.github.io/"><span class="basis-icon me"> </span> みく(๑˃̵ᴗ˂̵)</a></li>
+					<li><a href="https://twitter.com/miramiku"><span class="basis-icon tw"> </span> @miramiku</a></li>
+					<li><a href="https://github.com/miramiku/rewo"><span class="basis-icon gh"> </span> Repository</a></li>
+				</ul>
+			</footer>
+
+			<p id="wo-credit">
+				"Wizardry&reg;" of GMO Gamepot Inc. All rights reserved.<br>
+				Wizardry Renaissance&trade; &copy;2009 GMO Gamepot Inc.<br>
+				All rights reserved.
+			</p>
+		</div>
+	</header>
+
+	<main id="top">
+		<div id="main-inner">
+			<h3 id="first">港町イルファーロ 永遠の海原へと続く港</h3>
+
+			<h4>エレシェとの出会い [クエスト]</h4>
+			<div class="quest">
+				<div class="header">
+					<div class="title"><span class="soulrank">1</span> エレシェとの出会い（開始）</div>
+					<div class="client"><span class="wo-name">エレシェ</span></div>
+				</div>
+				<span class="label">依頼内容</span>
+				<div class="text">
+					<p>
+						冒険者のタマゴさんに、<br>
+						私からいろいろ教えてあげるわ。<br>
+						準備ができたら話しかけてね。
+					</p>
+				</div>
+				<span class="label">目的</span>
+				<div class="objective">
+					<span class="wo-name">エレシェ</span>を見つけ話を聞け。
+					<div class="tasks">
+						<span class="task"><span>エレシェと話す</span><span>1</span></span>
+					</div>
+				</div>
+				<span class="label">報酬</span>
+				<div class="rewards">
+					<span class="exp">0</span>
+					<span class="price">0</span>
+				</div>
+				<div class="footer">
+					<span class="unit">ソウル単位</span>
+					<span class="breach">放棄不可</span>
+					<span>無操作進行</span>
+				</div>
+			</div>
+
+			<div class="lines">
+				<div class="header">
+					<span class="character">エレシェ</span>
+					<span class="race">ELF♀</span>
+				</div>
+				<div class="text">
+					<div class="option">
+						<span class="option"><span class="tag"><span>first</span></span> 初回</span>
+						<p>
+							あ、キミか。冒険者ギルドに登録する気になった？<br>
+							いきなり試験を受けてもらっても構わないけど…。<br>
+							その前に、冒険するにあたって必要な知識や心構えを<br>
+							学んでもらうこともできるわ。<br>
+							この区画にある店舗や施設に冒険者ギルドの紹介状を<br>
+							持って行くと、そこで冒険に必要な事を教えてもらえる<br>
+							仕組みになっているの。<br>
+							そこは、任意で受けてもらうものだから<br>
+							すでに知っているようなら受けなくても大丈夫よ。<br>
+							ただ、受ければ冒険に役立つ物が貰えるけどね。
+						</p>
+					</div>
+					<div class="option">
+						<span class="option"><span class="tag"><span>again</span></span> 2 回目以降</span>
+						<p>
+							あ、キミか。冒険者ギルドに登録する気になった？<br>
+							それとも冒険者の心構えを学びたい？
+						</p>
+					</div>
+					<div class="option">
+						<span class="option"><span class="tag"><span>common</span></span> 共通</span>
+						<div class="dialog">
+							<span class="dialog"><span class="tag"><span>dialogue</span></span>何について学びますか？</span>
+							<div class="options">
+								<span class="gauge"></span>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#01</span></span>冒険者ギルドに登録したい</span>
+									<p>
+										<span class="tag"><span>quest</span></span> <a href="/post/wizon/recollections/the-adventurers-trial/">冒険者への試練</a>
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#02</span></span>宿屋にて休息の大切さを知る（任意　報酬あり）</span>
+									<p>
+										<span class="tag"><span>mission</span></span> <a href="#宿屋にて休息の大切さを知る-ミッション">宿屋にて休息の大切さを知る</a>
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#03</span></span>冒険者の必需品（任意　報酬あり）</span>
+									<p>
+										<span class="tag"><span>mission</span></span> <a href="#冒険者の必需品-ミッション">冒険者の必需品</a>
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#04</span></span>街の施設めぐり（任意　報酬あり）</span>
+									<p>
+										<span class="tag"><span>mission</span></span> <a href="#街の施設めぐり-ミッション">街の施設めぐり</a>
+									</p>
+								</div>
+								<div class="option">
+									<span class="option"><span class="tag"><span>#05</span></span>やめる</span>
+									<p>
+										あら、やめちゃうの？　まあいいわ。<br>
+										都合が良くなったらまた来てちょうだい。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="figure">
+					<img alt="冒険者 エレシェ" data-fancybox="tutorial" class="lazyload" src="../common/placeholder.png" data-src="../deep-sea-port/npcs/エレシェ.jpg">
+				</div>
+				<div class="footer">
+					<span class="fullname">冒険者 エレシェ</span>
+					<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 H4</span>
+				</div>
+			</div>
+
+			<div class="quest">
+				<div class="header">
+					<div class="title"><span class="soulrank">1</span> エレシェとの出会い（達成）</div>
+					<div class="client"><span class="wo-name">エレシェ</span></div>
+				</div>
+				<span class="label">依頼内容</span>
+				<div class="text">
+					<p>
+					<span class="wo-name">エレシェ</span>から話を聞いた。
+					</p>
+				</div>
+				<div class="footer">
+					<span class="unit">ソウル単位</span>
+					<span class="breach">放棄不可</span>
+					<span>無操作進行</span>
+				</div>
+			</div>
+
+			<h4>宿屋にて休息の大切さを知る [ミッション]</h4>
+			<div class="quest">
+				<div class="header">
+					<div class="title"><span class="soulrank">1</span> 宿屋にて休息の大切さを知る（開始）</div>
+					<div class="client"><span class="wo-name">エレシェ</span></div>
+				</div>
+				<span class="label">依頼内容</span>
+				<div class="text">
+					<p>
+						この紹介状を持っていき簡易宿泊施設にいる<br>
+						<span class="wo-name">パイノン</span>さんから宿屋についてのレクチャーを<br>
+						受けてきてちょうだい。
+					</p>
+				</div>
+				<span class="label">報酬</span>
+				<div class="rewards">
+					<span class="exp">50</span>
+					<span class="price">10</span>
+				</div>
+				<div class="footer">
+					<span class="unit">ソウル単位</span>
+				</div>
+			</div>
+
+			<div class="lines">
+				<div class="header">
+					<span class="character">エレシェ</span>
+					<span class="race">ELF♀</span>
+				</div>
+				<div class="text">
+					<p>
+						簡易宿泊施設にいる<span class="wo-name">パイノン</span>さんにこの紹介状を<br>
+						持っていって、宿屋の説明を聞いてきて。
+					</p>
+					<div class="dialog">
+						<span class="dialog"><span class="tag"><span>mission</span></span>宿屋にて休息の大切さを知る</span>
+						<div class="options">
+							<span class="gauge"></span>
+							<div class="option">
+								<span class="option"><span class="tag"><span>accept</span></span>受注</span>
+								<p>
+									<span class="tag"><span>valuable</span> <span>item</span></span> パイノン宛の紹介状<br>
+									話を聞いたあと、その紹介状にサインをもらって<br>
+									また私の所に持ってきてちょうだい。<br>
+									<span class="wo-name">パイノン</span>さんの居る場所は<br>
+									ミニマップでも確認できるから、<br>
+									そこを目指していくといいわ。
+								</p>
+								<p class="descriptive">
+									ミッションの対象となる NPC は<br>
+									ミニマップ上に【？】アイコンで表示されます。
+								</p>
+							</div>
+							<div class="option">
+								<span class="option"><span class="tag"><span>reject</span></span>閉じる</span>
+								<p>
+									おや、やめるの？<br>
+									まあいいわ、気が変わったらまた来てね。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="figure">
+					<img alt="冒険者 エレシェ" data-fancybox="tutorial" class="lazyload" src="../common/placeholder.png" data-src="../deep-sea-port/npcs/エレシェ.jpg">
+				</div>
+				<div class="footer">
+					<span class="fullname">冒険者 エレシェ</span>
+					<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 H4</span>
+				</div>
+			</div>
+
+			<div class="quest">
+				<div class="header">
+					<div class="title"><span class="soulrank">1</span> 宿屋にて休息の大切さを知る#01</div>
+					<div class="client"><span class="wo-name">エレシェ</span></div>
+				</div>
+				<span class="label">目的</span>
+				<div class="objective">
+					紹介状を持って行き、宿屋についてのレクチャーを受けろ。
+					<div class="tasks">
+						<span class="task"><span>パイノン宛の紹介状を渡す</span><span>1</span></span>
+					</div>
+				</div>
+				<div class="footer">
+					<span class="unit">ソウル単位</span>
+				</div>
+			</div>
+
+			<div class="lines">
+				<div class="header">
+					<span class="character">エレシェ</span>
+					<span class="race">ELF♀</span>
+				</div>
+				<div class="text">
+					<p>
+						あら、どうしたの？<br>
+						紹介状にサインは…まだないみたいね。<br>
+						簡易宿泊施設にいる<span class="wo-name">パイノン</span>さんから<br>
+						宿屋についての説明を聞いてきてね。
+					</p>
+				</div>
+				<div class="figure">
+					<img alt="冒険者 エレシェ" data-fancybox="tutorial" class="lazyload" src="../common/placeholder.png" data-src="../deep-sea-port/npcs/エレシェ.jpg">
+				</div>
+				<div class="footer">
+					<span class="fullname">冒険者 エレシェ</span>
+					<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 H4</span>
+				</div>
+			</div>
+
+			<div class="lines">
+				<div class="header">
+					<span class="character">パイノン</span>
+					<span class="race">DWA</span>
+				</div>
+				<div class="text">
+					<p>
+						らっしゃい。<br>
+						泊まれる場所は馬小屋しかないが、いいかね？<br>
+						お。あんた運がいいね。<br>
+						<span class="wo-name">エレシェ</span>に指導してもらってるのか。<br>
+						確かに紹介状は受け取った。<br>
+						サインしといたから、<span class="wo-name">エレシェ</span>にこの紹介状を届けてくれ。<br>
+						<span class="tag"><span>valuable</span> <span>item</span></span> パイノン宛の紹介状（サイン済）<br>
+						言い忘れるところだったが<br>
+						冒険したあとはちゃんと宿に泊まるんだぜ？<br>
+						宿には治療効果のある魔法が施してある。<br>
+						値段によって効果に違いもあるが<br>
+						傷が治ることには変わりない。<br>
+						体を休めないとレベルも上がらないからな！<br>
+						経験した事を寝ながら整理して身につけるってこった。
+					</p>
+					<p class="descriptive">
+						HP の回復やレベルアップの際は<br>
+						「宿」を利用しましょう。
+					</p>
+				</div>
+				<div class="figure">
+					<img alt="簡易宿泊所職員 パイノン" data-fancybox="tutorial" class="lazyload" src="../common/placeholder.png" data-src="../deep-sea-port/npcs/パイノン.jpg">
+				</div>
+				<div class="footer">
+					<span class="fullname">簡易宿泊所職員 パイノン</span>
+					<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 I4</span>
+				</div>
+			</div>
+
+			<div class="quest">
+				<div class="header">
+					<div class="title"><span class="soulrank">1</span> 宿屋にて休息の大切さを知る#02</div>
+					<div class="client"><span class="wo-name">エレシェ</span></div>
+				</div>
+				<span class="label">目的</span>
+				<div class="objective">
+					サイン済の紹介状を持って<span class="wo-name">エレシェ</span>の元へ戻れ。
+					<div class="tasks">
+						<span class="task"><span>パイノン宛の紹介状（サイン済）を渡す</span><span>1</span></span>
+					</div>
+				</div>
+				<div class="footer">
+					<span class="unit">ソウル単位</span>
+				</div>
+			</div>
+
+			<div class="lines">
+				<div class="header">
+					<span class="character">パイノン</span>
+					<span class="race">DWA</span>
+				</div>
+				<div class="text">
+					<p>
+						らっしゃい。<br>
+						泊まれる場所は馬小屋しかないが、いいかね？<br>
+						ん、どうしたい？<br>
+						紹介状はちゃんと<span class="wo-name">エレシェ</span>に渡してくれよ。
+					</p>
+				</div>
+				<div class="figure">
+					<img alt="簡易宿泊所職員 パイノン" data-fancybox="tutorial" class="lazyload" src="../common/placeholder.png" data-src="../deep-sea-port/npcs/パイノン.jpg">
+				</div>
+				<div class="footer">
+					<span class="fullname">簡易宿泊所職員 パイノン</span>
+					<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 I4</span>
+				</div>
+			</div>
+
+			<div class="lines">
+				<div class="header">
+					<span class="character">エレシェ</span>
+					<span class="race">ELF♀</span>
+				</div>
+				<div class="text">
+					<div class="dialog">
+						<span class="dialog"><span class="tag"><span>mission</span></span>宿屋にて休息の大切さを知る</span>
+						<div class="options">
+							<span class="gauge"></span>
+							<div class="option">
+								<span class="option"><span class="tag"><span>report</span></span>報告</span>
+								<p>
+									お疲れ様。宿屋の重要性、理解してもらえたかしら？<br>
+									冒険においても適度な休息が必要ってことね。
+								</p>
+							</div>
+							<div class="option">
+								<span class="option"><span class="tag"><span>cancel</span></span>閉じる</span>
+								<p>
+									あら、報告やめるの？<br>
+									ちゃんと報告しないと報酬は渡せないわね。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="figure">
+					<img alt="冒険者 エレシェ" data-fancybox="tutorial" class="lazyload" src="../common/placeholder.png" data-src="../deep-sea-port/npcs/エレシェ.jpg">
+				</div>
+				<div class="footer">
+					<span class="fullname">冒険者 エレシェ</span>
+					<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 H4</span>
+				</div>
+			</div>
+
+			<div class="quest">
+				<div class="header">
+					<div class="title"><span class="soulrank">1</span> 宿屋にて休息の大切さを知る（達成）</div>
+					<div class="client"><span class="wo-name">エレシェ</span></div>
+				</div>
+				<span class="label">依頼内容</span>
+				<div class="text">
+					<p>
+						宿屋についてレクチャーを受けた。
+					</p>
+				</div>
+				<div class="footer">
+					<span class="unit">ソウル単位</span>
+				</div>
+			</div>
+
+			<h4>冒険者の必需品 [ミッション]</h4>
+			<div class="quest">
+				<div class="header">
+					<div class="title"><span class="soulrank">1</span> 冒険者の必需品（開始）</div>
+					<div class="client"><span class="wo-name">エレシェ</span></div>
+				</div>
+				<span class="label">依頼内容</span>
+				<div class="text">
+					<p>
+						この紹介状を持っていき露天商の<span class="wo-name">ロッテ</span>さんから<br>
+						アイテムについてのレクチャーを受けてきて。
+					</p>
+				</div>
+				<span class="label">報酬</span>
+				<div class="rewards">
+					<span class="exp">50</span>
+					<span class="price">10</span>
+				</div>
+				<div class="footer">
+					<span class="unit">ソウル単位</span>
+				</div>
+			</div>
+
+			<div class="lines">
+				<div class="header">
+					<span class="character">エレシェ</span>
+					<span class="race">ELF♀</span>
+				</div>
+				<div class="text">
+					<p>
+						この区画に露店を出しているボルタック商店の<br>
+						<span class="wo-name">ロッテ</span>さんにこの紹介状を持っていって<br>
+						アイテムの説明を聞いてきて。
+					</p>
+					<div class="dialog">
+						<span class="dialog"><span class="tag"><span>mission</span></span>冒険者の必需品</span>
+						<div class="options">
+							<span class="gauge"></span>
+							<div class="option">
+								<span class="option"><span class="tag"><span>accept</span></span>受注</span>
+								<p>
+									<span class="tag"><span>valuable</span> <span>item</span></span> ロッテ宛の紹介状<br>
+									話を聞いたあと、その紹介状にサインをもらって<br>
+									また私の所に持ってきてちょうだい。<br>
+									<span class="wo-name">ロッテ</span>さんの居る場所は<br>
+									ミニマップでも確認できるから、<br>
+									そこを目指していくといいわ。
+								</p>
+								<p class="descriptive">
+									ミッションの対象となる NPC は<br>
+									ミニマップ上に【？】アイコンで表示されます。
+								</p>
+							</div>
+							<div class="option">
+								<span class="option"><span class="tag"><span>reject</span></span>閉じる</span>
+								<p>
+									おや、やめるの？<br>
+									まあいいわ、気が変わったらまた来てね。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="figure">
+					<img alt="冒険者 エレシェ" data-fancybox="tutorial" class="lazyload" src="../common/placeholder.png" data-src="../deep-sea-port/npcs/エレシェ.jpg">
+				</div>
+				<div class="footer">
+					<span class="fullname">冒険者 エレシェ</span>
+					<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 H4</span>
+				</div>
+			</div>
+
+			<div class="quest">
+				<div class="header">
+					<div class="title"><span class="soulrank">1</span> 冒険者の必需品#01</div>
+					<div class="client"><span class="wo-name">エレシェ</span></div>
+				</div>
+				<span class="label">目的</span>
+				<div class="objective">
+					紹介状を持って行き、アイテムについてのレクチャーを受けろ。
+					<div class="tasks">
+						<span class="task"><span>ロッテ宛の紹介状を渡す</span><span>1</span></span>
+					</div>
+				</div>
+				<div class="footer">
+					<span class="unit">ソウル単位</span>
+				</div>
+			</div>
+
+			<div class="lines">
+				<div class="header">
+					<span class="character">エレシェ</span>
+					<span class="race">ELF♀</span>
+				</div>
+				<div class="text">
+					<p>
+						あら、どうしたの？<br>
+						紹介状にサインは…まだないみたいね。<br>
+						露店を出している<span class="wo-name">ロッテ</span>さんから<br>
+						アイテムについての説明を聞いてきてちょうだい。
+					</p>
+				</div>
+				<div class="figure">
+					<img alt="冒険者 エレシェ" data-fancybox="tutorial" class="lazyload" src="../common/placeholder.png" data-src="../deep-sea-port/npcs/エレシェ.jpg">
+				</div>
+				<div class="footer">
+					<span class="fullname">冒険者 エレシェ</span>
+					<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 H4</span>
+				</div>
+			</div>
+
+			<div class="lines">
+				<div class="header">
+					<span class="character">ロッテ</span>
+					<span class="race">GNO</span>
+				</div>
+				<div class="text">
+					<p>
+						いらっしゃいませー。<br>
+						ボルタック商店出張所ですー。<br>
+						あ、<span class="wo-name">エレシェ</span>さんから紹介された方ですか？<br>
+						はい、承っております。アイテムについてのご説明ですね。<br>
+						ア、アイテムを～<br>
+						イ、一杯持っていれば～<br>
+						テ、敵が強くっても～<br>
+						ム、無茶できる！！
+					</p>
+					<p class="descriptive">
+						アイテムの売買、鑑定をする際は、<br>
+						「武器屋」「防具屋」「魔法屋」「道具屋」<br>
+						などの施設があります。
+					</p>
+					<p>
+						あ、あとこれ、<span class="wo-name">エレシェ</span>さんから前金頂いておりますので<br>
+						お持ちになってくださいー。<br>
+						<span class="tag"><span>item</span></span> 試供品簡易キャンプ x10<br>
+						紹介状にサインしましたー。<br>
+						また<span class="wo-name">エレシェ</span>さんにこの紹介状を届けてくださいー。<br>
+						<span class="tag"><span>valuable</span> <span>item</span></span> ロッテ宛の紹介状（サイン済）<br>
+					</p>
+				</div>
+				<div class="figure">
+					<img alt="露天商 ロッテ" data-fancybox="tutorial" class="lazyload" src="../common/placeholder.png" data-src="../deep-sea-port/npcs/ロッテ.jpg">
+				</div>
+				<div class="footer">
+					<span class="fullname">露天商 ロッテ</span>
+					<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 G5</span>
+				</div>
+			</div>
+
+			<div class="quest">
+				<div class="header">
+					<div class="title"><span class="soulrank">1</span> 冒険者の必需品#02</div>
+					<div class="client"><span class="wo-name">エレシェ</span></div>
+				</div>
+				<span class="label">目的</span>
+				<div class="objective">
+					サイン済の紹介状を持って<span class="wo-name">エレシェ</span>の元へ戻れ。
+					<div class="tasks">
+						<span class="task"><span>ロッテ宛の紹介状（サイン済）を渡す</span><span>1</span></span>
+					</div>
+				</div>
+				<div class="footer">
+					<span class="unit">ソウル単位</span>
+				</div>
+			</div>
+
+			<div class="lines">
+				<div class="header">
+					<span class="character">ロッテ</span>
+					<span class="race">GNO</span>
+				</div>
+				<div class="text">
+					<p>
+						いらっしゃいませー。<br>
+						ボルタック商店出張所ですー。<br>
+						どうしましたー？<br>
+						紹介状は<span class="wo-name">エレシェ</span>さんに渡してくださいねー。
+					</p>
+				</div>
+				<div class="figure">
+					<img alt="露天商 ロッテ" data-fancybox="tutorial" class="lazyload" src="../common/placeholder.png" data-src="../deep-sea-port/npcs/ロッテ.jpg">
+				</div>
+				<div class="footer">
+					<span class="fullname">露天商 ロッテ</span>
+					<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 G5</span>
+				</div>
+			</div>
+
+			<div class="lines">
+				<div class="header">
+					<span class="character">エレシェ</span>
+					<span class="race">ELF♀</span>
+				</div>
+				<div class="text">
+					<div class="dialog">
+						<span class="dialog"><span class="tag"><span>mission</span></span>冒険者の必需品</span>
+						<div class="options">
+							<span class="gauge"></span>
+							<div class="option">
+								<span class="option"><span class="tag"><span>report</span></span>報告</span>
+								<p>
+									お疲れ様。アイテムの重要性、理解してもらえたかしら？<br>
+									丸裸じゃ冒険できない。準備を怠ってはダメってことね。
+								</p>
+							</div>
+							<div class="option">
+								<span class="option"><span class="tag"><span>cancel</span></span>閉じる</span>
+								<p>
+									あら、報告やめるの？<br>
+									ちゃんと報告しないと報酬は渡せないわね。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="figure">
+					<img alt="冒険者 エレシェ" data-fancybox="tutorial" class="lazyload" src="../common/placeholder.png" data-src="../deep-sea-port/npcs/エレシェ.jpg">
+				</div>
+				<div class="footer">
+					<span class="fullname">冒険者 エレシェ</span>
+					<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 H4</span>
+				</div>
+			</div>
+
+			<div class="quest">
+				<div class="header">
+					<div class="title"><span class="soulrank">1</span> 冒険者の必需品（達成）</div>
+					<div class="client"><span class="wo-name">エレシェ</span></div>
+				</div>
+				<span class="label">依頼内容</span>
+				<div class="text">
+					<p>
+						アイテムについてレクチャーを受けた。
+					</p>
+				</div>
+				<div class="footer">
+					<span class="unit">ソウル単位</span>
+				</div>
+			</div>
+
+			<h4>街の施設めぐり [ミッション]</h4>
+			<div class="quest">
+				<div class="header">
+					<div class="title"><span class="soulrank">1</span> 街の施設めぐり（開始）</div>
+					<div class="client"><span class="wo-name">エレシェ</span></div>
+				</div>
+				<span class="label">依頼内容</span>
+				<div class="text">
+					<p>
+						その他にも冒険するのに便利な施設はまだまだあるわ。<br>
+						ただ……面倒だからもうまとめて回ることにしましょう。
+					</p>
+				</div>
+				<span class="label">報酬</span>
+				<div class="rewards">
+					<span class="exp">50</span>
+					<span class="price">10</span>
+				</div>
+				<div class="footer">
+					<span class="unit">ソウル単位</span>
+				</div>
+			</div>
+
+			<div class="lines">
+				<div class="header">
+					<span class="character">エレシェ</span>
+					<span class="race">ELF♀</span>
+				</div>
+				<div class="text">
+					<p>
+						えーと、面倒だからまとめて受けてもらおうかな。<br>
+						まずはマイクロークっていう荷物の預かり所があるんだけど<br>
+						そこの支配人の<span class="wo-name">ティンプ</span>さんに話を聞いてきて。
+					</p>
+					<div class="dialog">
+						<span class="dialog"><span class="tag"><span>mission</span></span>街の施設めぐり</span>
+						<div class="options">
+							<span class="gauge"></span>
+							<div class="option">
+								<span class="option"><span class="tag"><span>accept</span></span>受注</span>
+								<p>
+									<span class="tag"><span>valuable</span> <span>item</span></span> ティンプ宛の紹介状<br>
+									はい、まずは<span class="wo-name">ティンプ</span>さんへの紹介状を渡すわ。<br>
+									話を聞いたあと、その紹介状にサインをもらって<br>
+									また私の所に持ってきてちょうだい。<br>
+									<span class="wo-name">ティンプ</span>さんのいる場所は<br>
+									ミニマップでも確認できるから<br>
+									そこを目指していくといいわ。
+								</p>
+								<p class="descriptive">
+									ミッションの対象となる NPC は<br>
+									ミニマップ上に【？】アイコンで表示されます。
+								</p>
+							</div>
+							<div class="option">
+								<span class="option"><span class="tag"><span>reject</span></span>閉じる</span>
+								<p>
+									おや、やめるの？<br>
+									まあいいわ、気が変わったらまた来てね。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="figure">
+					<img alt="冒険者 エレシェ" data-fancybox="tutorial" class="lazyload" src="../common/placeholder.png" data-src="../deep-sea-port/npcs/エレシェ.jpg">
+				</div>
+				<div class="footer">
+					<span class="fullname">冒険者 エレシェ</span>
+					<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 H4</span>
+				</div>
+			</div>
+
+			<div class="quest">
+				<div class="header">
+					<div class="title"><span class="soulrank">1</span> 街の施設めぐり#01</div>
+					<div class="client"><span class="wo-name">エレシェ</span></div>
+				</div>
+				<span class="label">目的</span>
+				<div class="objective">
+					紹介状を持ってマイクロークへ行け。
+					<div class="tasks">
+						<span class="task"><span>ティンプ宛の紹介状を渡す</span><span>1</span></span>
+					</div>
+				</div>
+				<div class="footer">
+					<span class="unit">ソウル単位</span>
+				</div>
+			</div>
+
+			<div class="lines">
+				<div class="header">
+					<span class="character">エレシェ</span>
+					<span class="race">ELF♀</span>
+				</div>
+				<div class="text">
+					<p>
+						あら、どうしたの？<br>
+						紹介状にサインは…まだないみたいね。<br>
+						マイクローク支配人の<span class="wo-name">ティンプ</span>さんから<br>
+						話を聞いてきてちょうだい。
+					</p>
+				</div>
+				<div class="figure">
+					<img alt="簡易宿泊所職員 パイノン" data-fancybox="tutorial" class="lazyload" src="../common/placeholder.png" data-src="../deep-sea-port/npcs/パイノン.jpg">
+				</div>
+				<div class="footer">
+					<span class="fullname">冒険者 エレシェ</span>
+					<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 H4</span>
+				</div>
+			</div>
+
+			<div class="lines">
+				<div class="header">
+					<span class="character">ティンプ</span>
+					<span class="race">POR♂</span>
+				</div>
+				<div class="text">
+					<p>
+						ここは冒険者専用のマイクロークだよ。<br>
+						あんた、冒険者かい？<br>
+						あの小娘、まだこんな偽善を……。<br>
+						ま、こっちも商売だからいいけどね<br>
+						これは<span class="wo-name">エレシェ</span>が昔使ってたもんだそうだが、<br>
+						あんたにプレゼントするそうだよ。<br>
+						<span class="tag"><span>item</span></span> 使い古されたレザーガード<br>
+						紹介状にサインしといたから。<br>
+						<span class="wo-name">エレシェ</span>にこの紹介状を届けてきな。<br>
+						<span class="tag"><span>valuable</span> <span>item</span></span> ティンプ宛の紹介状（サイン済み）<br>
+						あんたも冒険者なら、よーく聞けよ。<br>
+						ここはあんたの荷物を預る場所さ。<br>
+						たとえあんたが消滅しても荷物は預かり続けるよ。
+					</p>
+					<p class="descriptive">
+						マイクロークはソウル単位でアイテムを<br>
+						預けることが出来ます。<br>
+						ソウルが同じであれば別のスロットで<br>
+						作成したキャラクターでも同じマイクロークを<br>
+						利用することが出来ます。
+					</p>
+				</div>
+				<div class="figure">
+					<img alt="マイクローク支配人 ティンプ" data-fancybox="tutorial" class="lazyload" src="../common/placeholder.png" data-src="../deep-sea-port/npcs/ティンプ.jpg">
+				</div>
+				<div class="footer">
+					<span class="fullname">マイクローク支配人 ティンプ</span>
+					<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 G5</span>
+				</div>
+			</div>
+
+			<div class="quest">
+				<div class="header">
+					<div class="title"><span class="soulrank">1</span> 街の施設めぐり#02</div>
+					<div class="client"><span class="wo-name">エレシェ</span></div>
+				</div>
+				<span class="label">目的</span>
+				<div class="objective">
+					サイン済の紹介状を持って<span class="wo-name">エレシェ</span>の元へ戻れ。
+					<div class="tasks">
+						<span class="task"><span>ティンプ宛の紹介状（サイン済）を渡す</span><span>1</span></span>
+					</div>
+				</div>
+				<div class="footer">
+					<span class="unit">ソウル単位</span>
+				</div>
+			</div>
+
+			<div class="lines">
+				<div class="header">
+					<span class="character">ティンプ</span>
+					<span class="race">POR♂</span>
+				</div>
+				<div class="text">
+					<p>
+						どうしたんだい？<br>
+						紹介状は<span class="wo-name">エレシェ</span>に渡してくれよな。
+					</p>
+				</div>
+				<div class="figure">
+					<img alt="マイクローク支配人 ティンプ" data-fancybox="tutorial" class="lazyload" src="../common/placeholder.png" data-src="../deep-sea-port/npcs/ティンプ.jpg">
+				</div>
+				<div class="footer">
+					<span class="fullname">マイクローク支配人 ティンプ</span>
+					<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 G5</span>
+				</div>
+			</div>
+
+			<div class="lines">
+				<div class="header">
+					<span class="character">エレシェ</span>
+					<span class="race">ELF♀</span>
+				</div>
+				<div class="text">
+					<p>
+						おかえりなさい。<br>
+						ちゃんと紹介状にサインはもらった？<br>
+						お疲れ様。冒険に持っていける物の数には制限があるから<br>
+						こまめに整理整頓することは大事ってことね。<br>
+						あ、あと私のお古を受け取った？<br>
+						ちょっと壊れているけど、直せばまだ使えるわよ。<br>
+						次は、これ一番重要かもしれないわね…<br>
+						ロイヤルショップっていうお店があるんだけど<br>
+						そこの支配人の<span class="wo-name">アシュー</span>さんに話を聞いてきて。<br>
+						はい、<span class="wo-name">アシュー</span>さんへの紹介状を渡すわ。<br>
+						話しを聞いたあと、その紹介状にサインをもらって<br>
+						また私の所に持ってきてちょうだい。<br>
+						<span class="tag"><span>valuable</span> <span>item</span></span> アシュー宛の紹介状<br>
+						<span class="wo-name">アシュー</span>さんの居る場所は<br>
+						ミニマップでも確認できるから<br>
+						そこを目指していくといいわ。
+					</p>
+				</div>
+				<div class="figure">
+					<img alt="冒険者 エレシェ" data-fancybox="tutorial" class="lazyload" src="../common/placeholder.png" data-src="../deep-sea-port/npcs/エレシェ.jpg">
+				</div>
+				<div class="footer">
+					<span class="fullname">冒険者 エレシェ</span>
+					<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 H4</span>
+				</div>
+			</div>
+
+			<div class="quest">
+				<div class="header">
+					<div class="title"><span class="soulrank">1</span> 街の施設めぐり#03</div>
+					<div class="client"><span class="wo-name">エレシェ</span></div>
+				</div>
+				<span class="label">目的</span>
+				<div class="objective">
+					紹介状を持ってロイヤルショップへ行け。
+					<div class="tasks">
+						<span class="task"><span>アシュー宛の紹介状を渡す</span><span>1</span></span>
+					</div>
+				</div>
+				<div class="footer">
+					<span class="unit">ソウル単位</span>
+				</div>
+			</div>
+
+			<div class="lines">
+				<div class="header">
+					<span class="character">エレシェ</span>
+					<span class="race">ELF♀</span>
+				</div>
+				<div class="text">
+					<p>
+						あら、どうしたの？<br>
+						紹介状にサインは…まだないみたい。<br>
+						ロイヤルショップ支配人の<span class="wo-name">アシュー</span>さんから<br>
+						話を聞いてきてちょうだい。
+					</p>
+				</div>
+				<div class="figure">
+					<img alt="冒険者 エレシェ" data-fancybox="tutorial" class="lazyload" src="../common/placeholder.png" data-src="../deep-sea-port/npcs/エレシェ.jpg">
+				</div>
+				<div class="footer">
+					<span class="fullname">冒険者 エレシェ</span>
+					<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 H4</span>
+				</div>
+			</div>
+
+			<div class="lines">
+				<div class="header">
+					<span class="character">アシュー</span>
+					<span class="race">POR♀</span>
+				</div>
+				<div class="text">
+					<p>
+						いらっしゃいませ。<br>
+						こちらは王室御用達のロイヤルショップとなります。<br>
+						おや、その紹介状…　<span class="wo-name">エレシェ</span>様のご紹介でございますね。<br>
+						はい、承っております。<br>
+						では、僭越ながら我が店舗のご説明をさせていただきます。<br>
+						ここは王室御用達の品を扱うロイヤルショップです。<br>
+						ここでの買い物には RG（ロイヤルゴールド）という<br>
+						特殊な通貨が必要となります。<br>
+						冒険において手助けとなる効果が長時間持続するものや<br>
+						万が一、命を失っても無事に復活できる品など<br>
+						一般の店では取り扱っていない貴重な品々をご用意して<br>
+						おりますので、どうぞご利用下さい。<br>
+						こちらは初回のみのサービスとなっております。<br>
+						よろしければお使いください。<br>
+						<span class="tag"><span>item</span></span> レッドポーション【CP】 x5<br>
+						では、紹介状にサインさせていただきました。<br>
+						どうぞ<span class="wo-name">エレシェ</span>様にお届けくださいませ。<br>
+						<span class="tag"><span>valuable</span> <span>item</span></span> アシュー宛の紹介状（サイン済）
+					</p>
+				</div>
+				<div class="figure">
+					<img alt="ロイヤルショップ支配人 アシュー" data-fancybox="tutorial" class="lazyload" src="../common/placeholder.png" data-src="../deep-sea-port/npcs/アシュー.jpg">
+				</div>
+				<div class="footer">
+					<span class="fullname">ロイヤルショップ支配人 アシュー</span>
+					<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 G5</span>
+				</div>
+			</div>
+
+			<div class="quest">
+				<div class="header">
+					<div class="title"><span class="soulrank">1</span> 街の施設めぐり#04</div>
+					<div class="client"><span class="wo-name">エレシェ</span></div>
+				</div>
+				<span class="label">目的</span>
+				<div class="objective">
+					サイン済の紹介状を持って<span class="wo-name">エレシェ</span>の元へ戻れ。
+					<div class="tasks">
+						<span class="task"><span>アシュー宛の紹介状（サイン済）を渡す</span><span>1</span></span>
+					</div>
+				</div>
+				<div class="footer">
+					<span class="unit">ソウル単位</span>
+				</div>
+			</div>
+
+			<div class="lines">
+				<div class="header">
+					<span class="character">アシュー</span>
+					<span class="race">POR♀</span>
+				</div>
+				<div class="text">
+					<p>
+						どうされました？<br>
+						紹介状は<span class="wo-name">エレシェ</span>様へとお届けください。
+					</p>
+				</div>
+				<div class="figure">
+					<img alt="ロイヤルショップ支配人 アシュー" data-fancybox="tutorial" class="lazyload" src="../common/placeholder.png" data-src="../deep-sea-port/npcs/アシュー.jpg">
+				</div>
+				<div class="footer">
+					<span class="fullname">ロイヤルショップ支配人 アシュー</span>
+					<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 G5</span>
+				</div>
+			</div>
+
+			<div class="lines">
+				<div class="header">
+					<span class="character">エレシェ</span>
+					<span class="race">ELF♀</span>
+				</div>
+				<div class="text">
+					<p>
+						おかえりなさい。<br>
+						ちゃんと紹介状にサインはもらった？<br>
+						お疲れ様。<br>
+						ロイヤルなアイテムは、冒険の大きな手助けとなるわ。<br>
+						冒険を円滑に進めたいなら活用すべきね。<br>
+						えーと、次は、どうしようかしら…<br>
+						そうね、さっき私のお古あげたじゃない。<br>
+						それって直せば、まだ使えるから直してもらうといいわ。<br>
+						この区画には、<span class="wo-name">バッジス</span>っていう鍛冶屋さんがいるの。<br>
+						彼に頼めば直してくれるわ。はい、紹介状。<br>
+						<span class="tag"><span>valuable</span> <span>item</span></span> バッジス宛の紹介状<br>
+						話を聞いたあと、その紹介状にサインをもらって<br>
+						また私の所に持ってきてちょうだい。<br>
+						<span class="wo-name">バッジス</span>の居る場所は<br>
+						ミニマップでも確認できるから<br>
+						そこを目指していくといいわ。
+					</p>
+				</div>
+				<div class="figure">
+					<img alt="冒険者 エレシェ" data-fancybox="tutorial" class="lazyload" src="../common/placeholder.png" data-src="../deep-sea-port/npcs/エレシェ.jpg">
+				</div>
+				<div class="footer">
+					<span class="fullname">冒険者 エレシェ</span>
+					<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 H4</span>
+				</div>
+			</div>
+
+			<div class="quest">
+				<div class="header">
+					<div class="title"><span class="soulrank">1</span> 街の施設めぐり#05</div>
+					<div class="client"><span class="wo-name">エレシェ</span></div>
+				</div>
+				<span class="label">目的</span>
+				<div class="objective">
+					紹介状を持って鍛冶屋へ行け。
+					<div class="tasks">
+						<span class="task"><span>バッジス宛の紹介状を渡す</span><span>1</span></span>
+					</div>
+				</div>
+				<div class="footer">
+					<span class="unit">ソウル単位</span>
+				</div>
+			</div>
+
+			<div class="lines">
+				<div class="header">
+					<span class="character">エレシェ</span>
+					<span class="race">ELF♀</span>
+				</div>
+				<div class="text">
+					<p>
+						あら、どうしたの？<br>
+						紹介状にサインは…まだないみたいね。<br>
+						鍛冶屋の<span class="wo-name">バッジス</span>のところで<br>
+						さっきあげたお古を直してきてね。
+					</p>
+				</div>
+				<div class="figure">
+					<img alt="冒険者 エレシェ" data-fancybox="tutorial" class="lazyload" src="../common/placeholder.png" data-src="../deep-sea-port/npcs/エレシェ.jpg">
+				</div>
+				<div class="footer">
+					<span class="fullname">冒険者 エレシェ</span>
+					<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 H4</span>
+				</div>
+			</div>
+
+			<div class="lines">
+				<div class="header">
+					<span class="character">バッジス</span>
+					<span class="race">DWA</span>
+				</div>
+				<div class="text">
+					<div class="option">
+						<span class="option"><span class="tag"><span>situation</span></span> 修理するアイテムを所持している</span>
+						<p>
+							ここは鍛冶屋だ。<br>
+							武器、防具の破損修理や強化ができるぜ。<br>
+							金はかかるけどな。<br>
+							ふふん。<span class="wo-name">エレシェ</span>の使いか。<br>
+							まぁ、いいだろう。今回はタダで修理してやるよ。
+						</p>
+						<p class="descriptive">
+							使い古されたレザーガードを渡しました。
+						</p>
+						<p>
+							よし！　すぐ直してやるからちょいと待ってな！
+						</p>
+						<p class="centering">
+							・<br>
+							・<br>
+							・
+						</p>
+						<p>
+							できたぜ！　ほら、持っていきな。
+						</p>
+						<p class="descriptive">
+							防具を修理してもらいました。
+						</p>
+						<p>
+							紹介状にサインしといたぜ。<br>
+							<span class="wo-name">エレシェ</span>に紹介状を返しといてくれ。<br>
+							<span class="tag"><span>valuable</span> <span>item</span></span> バッジス宛の紹介状（サイン済）<br>
+							それと、エレシェに今度メシでもどうかと<br>
+							聞いてくれないか。あ、いや、なんでもねぇ。<br>
+							なんでもねぇよ！　さっさといっちまいな！<br>
+							おっと。言い忘れるところだったが、<br>
+							武具が破損して強度が 0 になると、<br>
+							全く能力が出なくなるからな。<br>
+							こまめに修理したほうがいいぜ！<br>
+							さらに<span class="keyword">ソウルランクが 3 以上</span>になれば、<br>
+							武器の鍛錬もしてやる。<br>
+							強化した武器は冒険の助けになるだろうよ。
+						</p>
+						<p class="descriptive">
+							装備品の修理や強化を行うには、<br>
+							鍛冶屋を訪れてください。<br>
+							装備品の強化をするには<br>
+							武器や防具の「鍛錬石」が必要になります。
+						</p>
+					</div>
+					<div class="option">
+						<span class="option"><span class="tag"><span>situation</span></span> 修理するアイテムを所持していない</span>
+						<p>
+							ここは鍛冶屋だ。<br>
+							武器、防具の破損修理や強化ができるぜ。<br>
+							金はかかるけどな。<br>
+							ふふん。<span class="wo-name">エレシェ</span>の使いか。<br>
+							まぁ、いいだろう。今回はタダで修理してやるよ。<br>
+							んん？<br>
+							なんだ、修理が必要なもんなんてないじゃねえか。<br>
+							ないんじゃあ、しょうがねえ。<br>
+							修理はなしだな。<br>
+							紹介状にサインしといたぜ。<br>
+							<span class="wo-name">エレシェ</span>に紹介状を返しといてくれ。<br>
+							<span class="tag"><span>valuable</span> <span>item</span></span> バッジス宛の紹介状（サイン済）<br>
+							それと、エレシェに今度メシでもどうかと<br>
+							聞いてくれないか。あ、いや、なんでもねぇ。<br>
+							なんでもねぇよ！　さっさといっちまいな！<br>
+							おっと。言い忘れるところだったが、<br>
+							武具が破損して強度が 0 になると、<br>
+							全く能力が出なくなるからな。<br>
+							こまめに修理したほうがいいぜ！<br>
+							さらに<span class="keyword">ソウルランクが 3 以上</span>になれば、<br>
+							武器の鍛錬もしてやる。<br>
+							強化した武器は冒険の助けになるだろうよ。
+						</p>
+						<p class="descriptive">
+							装備品の修理や強化を行うには、<br>
+							鍛冶屋を訪れてください。<br>
+							装備品の強化をするには<br>
+							武器や防具の「鍛錬石」が必要になります。
+						</p>
+					</div>
+				</div>
+				<div class="figure">
+					<img alt="鍛冶屋 バッジス" data-fancybox="tutorial" class="lazyload" src="../common/placeholder.png" data-src="../deep-sea-port/npcs/バッジス.jpg">
+				</div>
+				<div class="footer">
+					<span class="fullname">鍛冶屋 バッジス</span>
+					<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 G4</span>
+				</div>
+			</div>
+
+			<div class="quest">
+				<div class="header">
+					<div class="title"><span class="soulrank">1</span> 街の施設めぐり#06</div>
+					<div class="client"><span class="wo-name">エレシェ</span></div>
+				</div>
+				<span class="label">目的</span>
+				<div class="objective">
+					サイン済の紹介状を持って<span class="wo-name">エレシェ</span>の元へ戻れ。
+					<div class="tasks">
+						<span class="task"><span>バッジス宛の紹介状（サイン済）を渡す</span><span>1</span></span>
+					</div>
+				</div>
+				<div class="footer">
+					<span class="unit">ソウル単位</span>
+				</div>
+			</div>
+
+			<div class="lines">
+				<div class="header">
+					<span class="character">バッジス</span>
+					<span class="race">DWA</span>
+				</div>
+				<div class="text">
+					<p>
+						ここは鍛冶屋だ。<br>
+						武器、防具の破損修理や強化ができるぜ。<br>
+						金はかかるけどな。<br>
+						どうしたい？<br>
+						紹介状は<span class="wo-name">エレシェ</span>に届けといてくれよ。
+					</p>
+				</div>
+				<div class="figure">
+					<img alt="鍛冶屋 バッジス" data-fancybox="tutorial" class="lazyload" src="../common/placeholder.png" data-src="../deep-sea-port/npcs/バッジス.jpg">
+				</div>
+				<div class="footer">
+					<span class="fullname">鍛冶屋 バッジス</span>
+					<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 G4</span>
+				</div>
+			</div>
+
+			<div class="lines">
+				<div class="header">
+					<span class="character">エレシェ</span>
+					<span class="race">ELF♀</span>
+				</div>
+				<div class="text">
+					<div class="dialog">
+						<span class="dialog"><span class="tag"><span>mission</span></span>街の施設めぐり</span>
+						<div class="options">
+							<span class="gauge"></span>
+							<div class="option">
+								<span class="option"><span class="tag"><span>report</span></span>報告</span>
+								<p>
+									お疲れ様。<br>
+									壊れた物でも修理すれば、新品同様になるのよ。<br>
+									新しい装備を手に入れるまでは、修理して使い続ける。<br>
+									手に入れた者を有効活用するのは冒険者によって<br>
+									必要な能力のひとつよ。
+								</p>
+							</div>
+							<div class="option">
+								<span class="option"><span class="tag"><span>cancel</span></span>閉じる</span>
+								<p>
+									あら、報告やめるの？<br>
+									ちゃんと報告しないと報酬は渡せないわね。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="figure">
+					<img alt="冒険者 エレシェ" data-fancybox="tutorial" class="lazyload" src="../common/placeholder.png" data-src="../deep-sea-port/npcs/エレシェ.jpg">
+				</div>
+				<div class="footer">
+					<span class="fullname">冒険者 エレシェ</span>
+					<span class="coordinate">港町イルファーロ 永遠の海原へと続く港 H4</span>
+				</div>
+			</div>
+
+			<div class="quest">
+				<div class="header">
+					<div class="title"><span class="soulrank">1</span> 街の施設めぐり（達成）</div>
+					<div class="client"><span class="wo-name">エレシェ</span></div>
+				</div>
+				<span class="label">依頼内容</span>
+				<div class="text">
+					<p>
+						便利な施設をまとめて回った。
+					</p>
+				</div>
+				<div class="footer">
+					<span class="unit">ソウル単位</span>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div id="toc">
+		<ul>
+			<li id="back2top"><a href="#top">トップページ</a></li>
+			<li><a href="#first">港町イルファーロ 永遠の海原へと続く港</a></li>
+		</ul>
+	</div>
+
+	<script>
+		( function ( i, s, o, g, r, a, m ) {
+			i[ 'GoogleAnalyticsObject' ] = r; i[ r ] = i[ r ] || function () {
+				( i[ r ].q = i[ r ].q || [] ).push( arguments )
+			}, i[ r ].l = 1 * new Date(); a = s.createElement( o ),
+				m = s.getElementsByTagName( o )[ 0 ]; a.async = 1; a.src = g; m.parentNode.insertBefore( a, m )
+		} )( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
+		ga( 'create', 'UA-46801675-2', 'auto' );
+		ga( 'send', 'pageview' );
+	</script>
+</body>
+
+</html>

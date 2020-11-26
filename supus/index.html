@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>スーパスメーカー | Recollection of Wizardry Online</title>
+
+	<!-- meta data -->
+	<meta name="author" content="Miku">
+
+	<!-- scripts -->
+	<script src="../common/core.js" defer></script>
+	<script src="seedrandom.min.js"></script>
+	<script src="../common/supus.core.js" defer></script>
+	<script src="supus.js" defer></script>
+
+	<!-- style favicon -->
+	<link href="../common/foundation.css" rel="stylesheet" type="text/css">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="supus.css" type="text/css">
+	<link href="../common/fancybox.css" rel="stylesheet" type="text/css">
+	<link href="../favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body id="rewo">
+	<header data-bg="../common/background.jpg">
+		<div id="header-content">
+			<a href="https://miramiku.github.io/rewo/" id="page-info">
+				<span id="major-title" class="page-headings">スーパスメーカー</span>
+				<span id="title-divider" class="page-headings"></span>
+				<span id="minor-title" class="page-headings">Supus Maker</span>
+			</a>
+
+			<footer>
+				<ul>
+					<li>
+						<a href="http://miramiku.github.io/"><span class="basis-icon me"> </span> みく(๑˃̵ᴗ˂̵)</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/miramiku"><span class="basis-icon tw"> </span> @miramiku</a>
+					</li>
+					<li>
+						<a href="https://github.com/miramiku/rewo"><span class="basis-icon gh"> </span> Repository</a>
+					</li>
+				</ul>
+			</footer>
+
+			<p id="wo-credit">
+				"Wizardry&reg;" of GMO Gamepot Inc. All rights reserved.<br>
+				Wizardry Renaissance&trade; &copy;2009 GMO Gamepot Inc.<br>
+				All rights reserved.
+			</p>
+		</div>
+	</header>
+
+	<main id="top">
+		<div id="main-inner">
+			<blockquote class="epigraph">
+				His conscience, inured to all possible assaults of adversity, might seem forever impregnable.
+				<div class="ref foreign">
+					<span class="cite"> Victor Hugo, Les Misérables </span>
+					<span class="origin">
+						Chapter I. The Blotter Talks<br>
+						Book Fifteen. The Rue de L'Hommearmé Volume IV. Saint-Denis and Idyll of the Rue Plumet
+					</span>
+				</div>
+			</blockquote>
+
+			<h3>スーパスメーカー</h3>
+			<div id="supus-container">
+				<div id="supus">
+					<div id="supus-lines"></div>
+					<span id="supus-id"></span>
+				</div>
+				<div id="share">
+					<span id="twitter" class="share-button"><img src="twitter-icon.png">結果をつぶやく</span>
+				</div>
+			</div>
+
+			<h4>コントロール</h4>
+			<div id="controles">
+				<div class="input-set">
+					<span class="label">Supus id</span>
+					<span id="serial-input-container" class="input-container">
+						<span id="serial" class="content editable"></span>
+						<span id="serial-input"><input type="text"></span>
+					</span>
+				</div>
+				<div class="input-set">
+					<span class="label">Your Name</span>
+					<span id="your-name-input-container" class="input-container">
+						<span id="your-name" class="content editable"></span>
+						<span id="your-name-input"><input type="text"></span>
+					</span>
+				</div>
+			</div>
+			<div id="buttons">
+				<p>
+					<span id="random" class="controle-button">ランダム</span>
+					<span id="daily" class="controle-button">日替わり</span>
+				</p>
+				<p>
+					<span id="display-simplicity" class="option-button"></span>
+					<span id="display-name" class="option-button"></span>
+				</p>
+			</div>
+
+			<h5>簡単な説明</h5>
+			<div id="directions">
+				<p>
+					<code>Supus id</code> は <code>0</code> ～ <code id="period"></code> までの数値で称号を一意に特定するものです。<br>
+					コントロールの数値の部分をクリックして直接指定できます。
+				</p>
+				<p>
+					<code>Your Name</code> のところに名前を設定すると <code>日替わり</code> とセリフに名前の表示の有無が選択可能になります。
+				</p>
+			</div>
+
+			<h3>称号候補リスト</h3>
+			<table id="titles">
+				<thead>
+					<tr><th></th><th>おもに形容動詞</th><th></th><th>おもに名詞＋格助詞「の」</th><th></th><th>人称代名詞</th></tr>
+				</thead>
+				<tbody id="list"></tbody>
+			</table>
+
+			<h4>脚注</h4>
+			<h5>*1 サキュバス好きの</h5>
+			<p>
+				「サ<b>ッ</b>キュバス」という表現が使われているがここでは促音のない「サキュバス」
+			</p>
+			<p>
+				<img alt="footnote" class="lazyload" data-fancybox="footnote" src="../common/placeholder.png" data-src="figure/001.jpg">
+			</p>
+
+			<h5>*2 瀕死しか狙わない</h5>
+			<p>
+				先頭部と中部に「瀕死しか狙わない」が存在している
+			</p>
+			<p>
+				<img alt="footnote" class="lazyload" data-fancybox="footnote" src="../common/placeholder.png" data-src="figure/002.jpg">
+				<img alt="footnote" class="lazyload" data-fancybox="footnote" src="../common/placeholder.png" data-src="figure/003.jpg">
+			</p>
+
+			<h5>*3 復習心に囚われる</h5>
+			<p>
+				原文のママ
+			</p>
+			<p>
+				<img alt="footnote" class="lazyload" data-fancybox="footnote" src="../common/placeholder.png" data-src="figure/004.jpg">
+			</p>
+		</div>
+	</main>
+
+	<div id="toc">
+		<ul>
+			<li id="back2top"><a href="#top">トップページ</a></li>
+			<li><a href="#abyss">深淵の迷宮</a></li>
+			<li><a href="#illfaro">港町イルファーロ</a></li>
+		</ul>
+	</div>
+
+	<script>
+		( function ( i, s, o, g, r, a, m ) {
+			i[ 'GoogleAnalyticsObject' ] = r; i[ r ] = i[ r ] || function () {
+				( i[ r ].q = i[ r ].q || [] ).push( arguments )
+			}, i[ r ].l = 1 * new Date(); a = s.createElement( o ),
+				m = s.getElementsByTagName( o )[ 0 ]; a.async = 1; a.src = g; m.parentNode.insertBefore( a, m )
+		} )( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
+		ga( 'create', 'UA-46801675-2', 'auto' );
+		ga( 'send', 'pageview' );
+	</script>
+</body>
+</html>
