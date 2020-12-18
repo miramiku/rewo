@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>ロサワルド水没砦 | Recollection of Wizardry Online</title>
+
+	<!-- meta data -->
+	<meta wo-name="author" content="Miku">
+
+	<!-- scripts -->
+	<script src="../common/core.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML" defer></script>
+	<script src="../common/mathjax.config.js" defer></script>
+
+	<!-- style favicon -->
+	<link href="../common/foundation.css" rel="stylesheet" type="text/css">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="../common/fancybox.css" rel="stylesheet" type="text/css">
+	<link href="../favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body id="rewo">
+	<header data-bg="background.jpg">
+		<div id="header-content">
+			<a href="https://miramiku.github.io/rewo/" id="page-info">
+				<span id="major-title" class="page-headings">ロサワルド水没砦</span>
+				<span id="title-divider" class="page-headings"></span>
+				<span id="minor-title" class="page-headings">Roswald Deep Fort</span>
+			</a>
+
+			<footer>
+				<ul>
+					<li>
+						<a href="http://miramiku.github.io/"><span class="basis-icon me"> </span> みく(๑˃̵ᴗ˂̵)</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/miramiku"><span class="basis-icon tw"> </span> @miramiku</a>
+					</li>
+					<li>
+						<a href="https://github.com/miramiku/rewo"><span class="basis-icon gh"> </span> Repository</a>
+					</li>
+				</ul>
+			</footer>
+
+			<p id="wo-credit">
+				"Wizardry&reg;" of GMO Gamepot Inc. All rights reserved.<br>
+				Wizardry Renaissance&trade; &copy;2009 GMO Gamepot Inc.<br>
+				All rights reserved.
+			</p>
+		</div>
+	</header>
+
+	<main id="top">
+		<div id="main-inner">
+			<h3>Lore</h3>
+			<blockquote class="ancient-lore">
+				<p>
+					<ruby>嘗<rt>かつ</rt></ruby>てシャーデが引き起こした大戦時、<br>
+					シャーデの迷宮から押し寄せてくる<br>
+					不死者の大群を防ぐために<br>
+					アリミリア大川とアリア川、ミリア川の<br>
+					交わる地点に建造された砦。
+				</p>
+				<p>
+					だが、シャーデが繰り出した大魔法により<br>
+					水没させられてしまう。<br>
+					長年放置されているため、廃墟と化していた。
+				</p>
+			</blockquote>
+
+			<h3 id="enemies">モンスターリスト</h3>
+			<h4 id="enemies-1">朽ち果てた大門</h4>
+			<table class="enemies">
+				<thead>
+					<tr>
+						<th></th>
+						<th>モンスター名<br>Literal</th>
+						<th>解釈</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><img alt="暗殺者" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/assassin-melee.jpg"></td>
+						<td>
+							<span class="display"><span class="syn">イノヴェルチ</span>暗殺者</span>
+							<span class="literal"><span class="syn">Inoverche</span>Assassin</span>
+						</td>
+						<td>
+							inoverche: [露] иноверец の音訳？<br>
+							иноверец: 異端者
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ムービングシタデル" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/moving-citadel.jpg"></td>
+						<td>
+							<span class="display">ムービングシタデル</span>
+							<span class="literal">Moving Citadel</span>
+						</td>
+						<td>
+							moving: 動く<br>
+							citadel: 要塞
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ノーティキッド" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/naughty-kid.jpg"></td>
+						<td>
+							<span class="display">ノーティキッド</span>
+							<span class="literal">Naughty Kid</span>
+						</td>
+						<td>
+							naugthy: わんぱくな<br>
+							kid: 子ども<br>
+							<br>
+							参考：&lt;熟語&gt;<br>
+							naugthy boy: わんぱく小僧
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ノイジー" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/noisy.jpg"></td>
+						<td>
+							<span class="display">ノイジー</span>
+							<span class="literal">Noisy</span>
+						</td>
+						<td>[形容詞] 騒音を立てる</td>
+					</tr>
+					<tr>
+						<td><img alt="スプリガン" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/spriggan.jpg"></td>
+						<td>
+							<span class="display">スプリガン</span>
+							<span class="literal">Spriggan</span>
+						</td>
+						<td>スプリガン：イギリスのコーンフォール地方に伝わるドワーフの一種</td>
+					</tr>
+					<tr>
+						<td><img alt="トキシックエアー" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/toxic-air.jpg"></td>
+						<td>
+							<span class="display">トキシックエアー</span>
+							<span class="literal">Toxic Air</span>
+						</td>
+						<td>
+							toxic: 有毒な、（人間関係などで）イライラさせるような<br>
+							air: 空気
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ドレッドトード" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/dread-toad.jpg"></td>
+						<td>
+							<span class="note rare">Rare Creature</span>
+							<span class="display">ドレッドトード</span>
+							<span class="literal">Dread Toad</span>
+						</td>
+						<td>
+							dread: 恐怖<br>
+							toad: ヒキガエル<br>
+							<br>
+							解釈：恐怖のカエル<br>
+							イギリス海軍の戦艦ドレッドノート (Dreadnought) に掛けている？「恐れ知らず」という意。
+							この戦艦に由来して「非常に大型」という意味もある。
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="マンモストード" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/mammoth-toad.jpg"></td>
+						<td>
+							<span class="note unique">Unique Creature</span>
+							<span class="display"><span class="syn">時代の超越者</span>マンモストード</span>
+							<span class="literal"><span class="syn">The Time Transcendencer</span>Mammoth Toad</span>
+						</td>
+						<td>
+							mammoth: とてつもなく大きい<br>
+							toad: ヒキガエル<br>
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ラスティスライム" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/rusty-slime.jpg"></td>
+						<td>
+							<span class="note guardian">1st Guardian's Gate</span>
+							<span class="display">ラスティスライム</span>
+							<span class="literal">Rusty Slime</span>
+						</td>
+						<td>
+							rusty: さび色の<br>
+							slime: 粘液
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="フォートガリソン" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/fort-garrison.jpg"></td>
+						<td>
+							<span class="note guardian">2nd/3rd/4th/5th Guardian's Gate</span>
+							<span class="display">フォートガリソン</span>
+							<span class="literal">Fort Garrison</span>
+						</td>
+						<td>
+							fort: とりで<br>
+							garrison: 守備隊
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="フォートオフィサー" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/fort-officer.jpg"></td>
+						<td>
+							<span class="note guardian">5th Guardian's Gate</span>
+							<span class="display">フォートオフィサー</span>
+							<span class="literal">Fort Officer</span>
+						</td>
+						<td>
+							fort: とりで<br>
+							officer: 将校
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h4 id="enemies-2">隔離された広間</h4>
+			<table class="enemies">
+				<thead>
+					<tr>
+						<th></th>
+						<th>モンスター名<br>Literal</th>
+						<th>解釈</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><img alt="暗殺者" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/assassin-melee.jpg"></td>
+						<td>
+							<span class="display"><span class="syn">イノヴェルチ</span>暗殺者</span>
+							<span class="literal"><span class="syn">Inoverche</span>Assassin</span>
+						</td>
+						<td>
+							inoverche: [露] иноверец の音訳？<br>
+							иноверец: 異端者
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="デーモンズブフォ" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/demons-bufo.jpg"></td>
+						<td>
+							<span class="display">デーモンズブフォ</span>
+							<span class="literal">Demons' Bufo</span>
+						</td>
+						<td>
+							demon: 悪魔<br>
+							bufo: ヒキガエル属（学名）<br>
+							<br>
+							解釈：デーモンが飼っているカエル
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="プレデタープラント" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/predator-plant.jpg"></td>
+						<td>
+							<span class="display">プレデタープラント</span>
+							<span class="literal">Predator Plant</span>
+						</td>
+						<td>
+							predator: 肉食動物<br>
+							plant: 植物<br>
+							<br>
+							解釈：肉食植物
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ラウドマウス" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/loud-mouse.jpg"></td>
+						<td>
+							<span class="display">ラウドマウス</span>
+							<span class="literal">Loud Mouse</span>
+						</td>
+						<td>
+							loud: （音が大きくて）騒々しい<br>
+							mouse: ネズミ
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ブルーダイヤビートル" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/blue-diamond-beetle.jpg"></td>
+						<td>
+							<span class="note rare">Rare Creature</span>
+							<span class="display">ブルーダイヤビートル</span>
+							<span class="literal">Blue Diamond Beetle</span>
+						</td>
+						<td>
+							blue: 青い<br>
+							diamond: ダイアモンド<br>
+							beetle: 甲虫<br>
+							<br>
+							解釈：青色ダイアモンドの羽をもつ甲虫
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="マッドキューピッド" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/mad-cupid.jpg"></td>
+						<td>
+							<span class="note unique">Unique Creature</span>
+							<span class="display"><span class="syn">愛欲の使者</span>マッドキューピッド</span>
+							<span class="literal"><span class="syn">Envoy of Lust</span>Mad Cupid</span>
+						</td>
+						<td>
+							mad: 気が狂った<br>
+							cupid: キューピッド；ローマ神話に登場する愛の神
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="クラッキングインプ" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/cracking-imp.jpg"></td>
+						<td>
+							<span class="note guardian">6th Guardian's Gate</span>
+							<span class="display">クラッキングインプ</span>
+							<span class="literal">Cracking Imp</span>
+						</td>
+						<td>
+							cracking: 猛烈な<br>
+							imp: 体長 10cm 程度の全身が黒くコウモリのような翼の生えた悪魔
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ロストトループ" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/lost-troop.jpg"></td>
+						<td>
+							<span class="note guardian">7th Guardian's Gate</span>
+							<span class="display">ロストトループ</span>
+							<span class="literal">Lost Troop</span>
+						</td>
+						<td>
+							lost: はぐれた<br>
+							troop: 隊<br>
+							<br>
+							解釈：はぐれ隊員
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ロストトループジュニア" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/lost-troop-junior.jpg"></td>
+						<td>
+							<span class="note guardian">8th Guardian's Gate</span>
+							<span class="display"><span class="syn">復讐に燃える</span>ロストトループジュニア</span>
+							<span class="literal"><span class="syn">Revengeful</span>Lost Troop Junior</span>
+						</td>
+						<td>
+							lost: はぐれた<br>
+							troop: 隊<br>
+							junior: 親族で同姓同名の二人を区別するために年下の方に末尾に付与する語<br>
+							<br>
+							解釈： ロストトループの息子
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="フォートガード" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/fort-guard.jpg"></td>
+						<td>
+							<span class="note guardian">9th Guardian's Gate</span>
+							<span class="display">フォートガード</span>
+							<span class="literal">Fort Guard</span>
+						</td>
+						<td>
+							fort: とりで<br>
+							guard: 守衛
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h4 id="enemies-3">途切れた渡り廊下</h4>
+			<table class="enemies">
+				<thead>
+					<tr>
+						<th></th>
+						<th>モンスター名<br>Literal</th>
+						<th>解釈</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><img alt="トキシックエアー" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/toxic-air.jpg"></td>
+						<td>
+							<span class="display">トキシックエアー</span>
+							<span class="literal">Toxic Air</span>
+						</td>
+						<td>
+							toxic: 有毒な、（人間関係などで）イライラさせるような<br>
+							air: 空気
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="コボルドファイター" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/kobold-fighter.jpg"></td>
+						<td>
+							<span class="display">コボルドファイター</span>
+							<span class="literal">Kobold Fighter</span>
+						</td>
+						<td>
+							kobold: ドイツの醜い妖精、精霊<br>
+							figheter: 戦士
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ゴグールファイター" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/gogoole-fighter.jpg"></td>
+						<td>
+							<span class="display">ゴグールファイター</span>
+							<span class="literal">Gogoole Fighter</span>
+						</td>
+						<td>
+							gogoole: <strong>不詳</strong><br>
+							figheter: 戦士
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ブラックズール" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/black-zule.jpg"></td>
+						<td>
+							<span class="display">ブラックズール</span>
+							<span class="literal">Black Zule</span>
+						</td>
+						<td>
+							black: 黒色の肌をした<br>
+							zule: <strong>不詳</strong><br>
+							<br>
+							参考：<br>
+							英語版では Zule Fighter
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="暗殺者" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/assassin-mage.jpg"></td>
+						<td>
+							<span class="display"><span class="syn">イノヴェルチ</span>暗殺者</span>
+							<span class="literal"><span class="syn">Inoverche</span>Assassin</span>
+						</td>
+						<td>
+							inoverche: [露] иноверец の音訳？<br>
+							иноверец: 異端者
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ストロングホールド" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/stronghold.jpg"></td>
+						<td>
+							<span class="display">ストロングホールド</span>
+							<span class="literal">Stronghold</span>
+						</td>
+						<td>とりで</td>
+					</tr>
+					<tr>
+						<td><img alt="フレムスイーパー" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/flem-sweeper.jpg"></td>
+						<td>
+							<span class="note rare">Rare Creature</span>
+							<span class="display">フレムスイーパー</span>
+							<span class="literal">Flem Sweeper</span>
+						</td>
+						<td>
+							flem: [ロマンシュ語] 川<br>
+							sweeper: 掃除をするもの
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="デモリションズール" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/demolition-zule.jpg"></td>
+						<td>
+							<span class="note unique">Unique Creature</span>
+							<span class="display"><span class="syn">暴虐の黒王</span>デモリションズール</span>
+							<span class="literal"><span class="syn">Black King of Violence</span>Demolition Zule</span>
+						</td>
+						<td>
+							demolition: 破壊・爆破<br>
+							zule: <strong>不詳</strong>
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="イノヴェルチマローダー" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/inoverche-marauder.jpg"></td>
+						<td>
+							<span class="note guardian">10th Guardian's Gate</span>
+							<span class="display">イノヴェルチマローダー</span>
+							<span class="literal">Inoverche Marauder</span>
+						</td>
+						<td>
+							inoverche: [露] иноверец の音訳？<br>
+							иноверец: 異端者<br>
+							marauder: 襲撃者
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="イノヴェルチスポーン" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/inoverche-spawn.jpg"></td>
+						<td>
+							<span class="note guardian">11th Guardian's Gate</span>
+							<span class="display">イノヴェルチスポーン</span>
+							<span class="literal">Inoverche Spawn</span>
+						</td>
+						<td>
+							inoverche: [露] иноверец の音訳？<br>
+							иноверец: 異端者<br>
+							spawn: 水生生物の卵
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="イノヴェルチドゥームセイヤー" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/inoverche-doomsayer.jpg"></td>
+						<td>
+							<span class="note guardian">12th Guardian's Gate</span>
+							<span class="display">イノヴェルチドゥーム<br>セイヤー</span>
+							<span class="literal">Inoverche Doomsayer</span>
+						</td>
+						<td>
+							inoverche: [露] иноверец の音訳？<br>
+							иноверец: 異端者<br>
+							doomsayer: 災難を予言する人
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="マカブラ" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/macabre.jpg"></td>
+						<td>
+							<span class="note guardian">Final Guardian's Gate</span>
+							<span class="display"><span class="syn">死神</span>マカブラ</span>
+							<span class="literal"><span class="syn">Reaper</span>Macabre</span>
+						</td>
+						<td>[仏] 死を連想させるような</td>
+					</tr>
+					<tr>
+						<td><img alt="イビルスピリット" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/evil-spirit.jpg"></td>
+						<td>
+							<span class="note guardian">Final Guardian's Gate</span>
+							<span class="display">イビルスピリット</span>
+							<span class="literal">Evil Spirit</span>
+						</td>
+						<td>
+							&lt;熟語&gt;<br>
+							evil spirit: 悪霊
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ヘルゲート" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/hell-gate.jpg"></td>
+						<td>
+							<span class="note guardian">Final Guardian's Gate</span>
+							<span class="display">ヘルゲート</span>
+							<span class="literal">Hell Gate</span>
+						</td>
+						<td>
+							hell: 地獄<br>
+							gate: 門
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="アグリーペット" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/ugly-pet.jpg"></td>
+						<td>
+							<span class="note guardian">Final Guardian's Gate</span>
+							<span class="display">アグリーペット</span>
+							<span class="literal">Ugly Pet</span>
+						</td>
+						<td>
+							ugly: 醜い<br>
+							pet: ペット
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3 id="walk-through">ダンジョン攻略</h3>
+			<h4 id="walk-through-1">朽ち果てた大門</h4>
+			<h4 id="walk-through-2">隔離された広間</h4>
+			<div class="movie">
+				<div class="header">
+					<span class="title">028. ノインテーターの誘導</span>
+				</div>
+				<div class="scripts">
+					<p>
+						<span class="speaker">ノインテーター</span>
+						おや、おやこれは、<br>
+						失敗続きのＡＡＡ冒険者【<span class="wo-name">ゼロ</span>】じゃないか。
+						<span class="speaker">ゼロ</span>
+						魔女の飼い犬風情に用はない。<br>
+						<span class="wo-name">シャーデ</span>は、どこに居る？
+						<span class="speaker">ノインテーター</span>
+						！　ほう……飼い犬と呼ぶか。<br>
+						<ruby>嘗<rt>かつ</rt></ruby>て吸血鬼一族の<ruby>長<rt>おさ</rt></ruby>であった、この私…
+						<span class="speaker">ゼロ</span>
+						<span class="footnote">きさま</span>とおしゃべりする気はない。<br>
+						早く<span class="wo-name">シャーデ</span>の居場所を言え。
+						<span class="speaker">ノインテーター</span>
+						……人の台詞をさえぎるなんて、マナー違反だ。<br>
+						全く、育ちの悪いやつだよ。親の顔が見てみたいね……<br>
+						ククク……
+						<span class="speaker">ゼロ</span>
+						……
+						<span class="speaker">ノインテーター</span>
+						まあ、いい。<br>
+						ここでうろうろされて私の仕事を<br>
+						邪魔されるのも迷惑だから教えてあげるよ。<br>
+						残念ながら<span class="wo-name">シャーデ</span>様は、ここに来ていない。<br>
+						後で合流する手筈とはなっているが、<br>
+						調べ物があるとかでね。<br>
+						<span class="wo-site">サンジェント遺跡</span>周辺を行ったり来たりしているよ。<br>
+						<span class="wo-name">シャーデ</span>様に会いたいのなら、とっとと、<br>
+						そっちに向かうのが賢明だと思うがね。<br>
+						君ならば<span class="wo-name">シャーデ</span>様に会えると思うよ。<br>
+						なんせ君は……<br>
+						<span class="wo-name">シャーデ</span>様のお気に入りの玩具だからな！<br>
+						ククク……
+						<span class="speaker">ゼロ</span>
+						……
+					</p>
+					<hr class="footnote">
+					<ul class="footnote">
+						<li>原文のママ</li>
+					</ul>
+				</div>
+				<div class="screenshots">
+					<img alt="ノインテーターの誘導" class="lazyload" data-fancybox="movie-028" src="../common/placeholder.png" data-src="movie/001.jpg">
+					<img alt="ノインテーターの誘導" class="lazyload" data-fancybox="movie-028" src="../common/placeholder.png" data-src="movie/002.jpg">
+					<img alt="ノインテーターの誘導" class="lazyload" data-fancybox="movie-028" src="../common/placeholder.png" data-src="movie/003.jpg">
+					<img alt="ノインテーターの誘導" class="lazyload" data-fancybox="movie-028" src="../common/placeholder.png" data-src="movie/004.jpg">
+					<img alt="ノインテーターの誘導" class="lazyload" data-fancybox="movie-028" src="../common/placeholder.png" data-src="movie/005.jpg">
+				</div>
+			</div>
+
+			<h4 id="walk-through-3">途切れた渡り廊下</h4>
+			<div class="movie">
+				<div class="header">
+					<span class="title">029. マカブラの復活</span>
+				</div>
+				<div class="scripts">
+					<p>
+						<span class="speaker">狂信者（手前）</span>
+						界の神よ　我らが神よ<br>
+						今こそ、その神姿を現したまえ<br>
+						我は血を捧げよう！　我の信仰の証に！
+						<span class="speaker">狂信者（左）</span>
+						我は肉を捧げよう！　我の信仰の証に！
+						<span class="speaker">狂信者（奥）</span>
+						我らは祈ろう！　我らが神のために！
+						<span class="speaker">狂信者（右）</span>
+						我らは祈ろう！　我らが神のために！
+						<span class="speaker">狂信者（手前）</span>
+						！？　何者だ！　貴様！！
+						<span class="skip"></span>
+						！！　おお……　我らが神の復活……
+					</p>
+				</div>
+				<div class="screenshots">
+					<img alt="ノインテーターの誘導" class="lazyload" data-fancybox="movie-029" src="../common/placeholder.png" data-src="movie/006.jpg">
+					<img alt="ノインテーターの誘導" class="lazyload" data-fancybox="movie-029" src="../common/placeholder.png" data-src="movie/007.jpg">
+					<img alt="ノインテーターの誘導" class="lazyload" data-fancybox="movie-029" src="../common/placeholder.png" data-src="movie/008.jpg">
+				</div>
+			</div>
+
+			<div class="movie">
+				<div class="header">
+					<span class="title">030. ノインテーターの企み</span>
+				</div>
+				<div class="scripts">
+					<p>
+						<span class="speaker">ノインテーター</span>
+						見ていたよ。<br>
+						三下とはいえ、仮にも死神と呼ばれるものを<ruby>降<rt>くだ</rt></ruby>すとは。<br>
+						なかなかのものじゃないか。<br>
+						さすがは、クズの中のクズ……おっと、<br>
+						クズの中のクズとは、失礼なことを言ってしまったね。<br>
+						君はまさにクズの王だ！<br>
+						これからは、この称号を名乗るがいい。<br>
+						おやおや、そんなに構える必要はないよ。<br>
+						私の用はもう済んだからね。<br>
+						君と事を構えるつもりは毛頭ない。時間の無駄だしね。<br>
+						まあ、君がこの<span class="wo-item">ハルシアの破片</span>を探していて<br>
+						私から奪おうというのなら話は別だがね。ククク……<br>
+						いずれにしろ今後も君が<span class="wo-name">シャーデ</span>様のことを<br>
+						嗅ぎ回るのであれば、また会うこともあるだろう。<br>
+						その時にでもゆっくりと話そうじゃないか。<br>
+						それも、それまで君が生き延びれたらの話だがね。<br>
+						ククク……
+					</p>
+				</div>
+				<div class="screenshots">
+					<img alt="ノインテーターの企み" class="lazyload" data-fancybox="movie-030" src="../common/placeholder.png" data-src="movie/009.jpg">
+					<img alt="ノインテーターの企み" class="lazyload" data-fancybox="movie-030" src="../common/placeholder.png" data-src="movie/010.jpg">
+					<img alt="ノインテーターの企み" class="lazyload" data-fancybox="movie-030" src="../common/placeholder.png" data-src="movie/011.jpg">
+					<img alt="ノインテーターの企み" class="lazyload" data-fancybox="movie-030" src="../common/placeholder.png" data-src="movie/012.jpg">
+				</div>
+			</div>
+
+			<div class="movie">
+				<div class="header">
+					<span class="title">031. アラハゥイの戯言 その2</span>
+				</div>
+				<div class="scripts">
+					<p>
+						<span class="speaker">アラハゥイ</span>
+						おや、これはこれは冒険者さん。<br>
+						今度は<span class="wo-item">ミラの宝珠</span>に封じられ、二人の王の命を<br>
+						奪ってきた死神をも退治なされたそうですな。<br>
+						これは英雄と讃えられても仕方ありませんねぇ、ええ。<br>
+						しかし所持者が 25 歳に「なった時」にしか封印は<br>
+						解けないはずなんですが、<br>
+						なんで封印が解けたのでしょうか？<br>
+						ひょっとして、封印を解いてしまう何かが近くに<br>
+						あったのかも知れませんがね。<br>
+						例えば……<span class="wo-item">ハルシアの破片</span>とか、ね。<br>
+						なぁに。すべては私の推測、憶測……<br>
+						あなたが気になさるほどの事ではありませんよ、ククク。
+						<span class="skip"></span>
+						……思った以上に守護者の血が濃いようですねぇ。<br>
+						このまま泳がせておくべきか、はたまた首輪を付けるべきか<br>
+						悩むところではありますが……<br>
+						いずれにしろ、面白くなってきたじゃないですか。<br>
+						クククク……。
+					</p>
+				</div>
+				<div class="screenshots">
+					<img alt="アラハゥイの戯言 その2" class="lazyload" data-fancybox="movie-031" src="../common/placeholder.png" data-src="movie/013.jpg">
+					<img alt="アラハゥイの戯言 その2" class="lazyload" data-fancybox="movie-031" src="../common/placeholder.png" data-src="movie/014.jpg">
+					<img alt="アラハゥイの戯言 その2" class="lazyload" data-fancybox="movie-031" src="../common/placeholder.png" data-src="movie/015.jpg">
+					<img alt="アラハゥイの戯言 その2" class="lazyload" data-fancybox="movie-031" src="../common/placeholder.png" data-src="movie/016.jpg">
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div id="toc">
+		<ul>
+			<li id="back2top"><a href="#top">トップページ</a></li>
+			<li>
+				<a href="#enemies">モンスターリスト</a>
+				<ul>
+					<li><a href="#enemies-1">朽ち果てた大門</a></li>
+					<li><a href="#enemies-2">隔離された広間</a></li>
+					<li><a href="#enemies-3">途切れた渡り廊下</a></li>
+				</ul>
+			</li>
+			<!-- <li><a href="#quest">クエスト受注</a></li> -->
+			<li>
+				<a href="#walk-through">ダンジョン攻略</a>
+				<ul>
+					<li><a href="#walk-through-1">朽ち果てた大門</a></li>
+					<li><a href="#walk-through-2">隔離された広間</a></li>
+					<li><a href="#walk-through-3">途切れた渡り廊下</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<script>
+		( function ( i, s, o, g, r, a, m ) {
+			i[ 'GoogleAnalyticsObject' ] = r; i[ r ] = i[ r ] || function () {
+				( i[ r ].q = i[ r ].q || [] ).push( arguments )
+			}, i[ r ].l = 1 * new Date(); a = s.createElement( o ),
+				m = s.getElementsByTagwo-Name( o )[ 0 ]; a.async = 1; a.src = g; m.parentNode.insertBefore( a, m )
+		} )( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
+		ga( 'create', 'UA-46801675-2', 'auto' );
+		ga( 'send', 'pageview' );
+	</script>
+</body>
+</html>
