@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>荒廃の廊 | Recollection of Wizardry Online</title>
+
+	<!-- meta data -->
+	<meta wo-wo-name="author" content="Miku">
+
+	<!-- scripts -->
+	<script src="../common/core.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML" defer></script>
+	<script src="../common/mathjax.config.js" defer></script>
+
+	<!-- style favicon -->
+	<link href="../common/foundation.css" rel="stylesheet" type="text/css">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="../common/fancybox.css" rel="stylesheet" type="text/css">
+	<link href="../favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body id="rewo">
+	<header data-bg="background.jpg">
+		<div id="header-content">
+			<a href="https://miramiku.github.io/rewo/" id="page-info">
+				<span id="major-title" class="page-headings">荒廃の廊</span>
+				<span id="title-divider" class="page-headings"></span>
+				<span id="minor-title" class="page-headings">Ruined Chamber</span>
+			</a>
+
+			<footer>
+				<ul>
+					<li>
+						<a href="http://miramiku.github.io/"><span class="basis-icon me"> </span> みく(๑˃̵ᴗ˂̵)</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/miramiku"><span class="basis-icon tw"> </span> @miramiku</a>
+					</li>
+					<li>
+						<a href="https://github.com/miramiku/rewo"><span class="basis-icon gh"> </span> Repository</a>
+					</li>
+				</ul>
+			</footer>
+
+			<p id="wo-credit">
+				"Wizardry&reg;" of GMO Gamepot Inc. All rights reserved.<br>
+				Wizardry Renaissance&trade; &copy;2009 GMO Gamepot Inc.<br>
+				All rights reserved.
+			</p>
+		</div>
+	</header>
+
+	<main id="top">
+		<div id="main-inner">
+			<h3>Lore</h3>
+			<blockquote class="ancient-lore">
+				<p>
+					遥か昔、牢獄として建造されたと<br>
+					思われる建造物。
+				</p>
+				<p>
+					地上部分の建物が風化しており<br>
+					地下室しか残っていなかったため、<br>
+					長年その存在が知られていなかった。
+				</p>
+				<p>
+					地下から吹き抜ける風の音は<br>
+					どこか、閉じ込められていた人々の<br>
+					<ruby>呻<rt>うめ</rt></ruby>き声にも聞こえる……。
+				</p>
+			</blockquote>
+
+			<h3 id="enemies">モンスターリスト</h3>
+			<h4 id="enemies-1">腐臭漂う監獄</h4>
+			<table class="enemies">
+				<thead>
+					<tr>
+						<th></th>
+						<th>モンスター名<br>Literal</th>
+						<th>解釈</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><img alt="ドゥームビートル" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/doom-beetle.jpg"></td>
+						<td>
+							<span class="display">ドゥームビートル</span>
+							<span class="literal">Doom Beetle</span>
+						</td>
+						<td>
+							doom: 破滅の<br>
+							beetle: 甲虫
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="キラーウェブ" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/killer-web.jpg"></td>
+						<td>
+							<span class="display">キラーウェブ</span>
+							<span class="literal">Killer Web</span>
+						</td>
+						<td>
+							killer: 致死の<br>
+							web: クモの巣
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ミートパペット" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/meat-puppet.jpg"></td>
+						<td>
+							<span class="display">ミートパペット</span>
+							<span class="literal">Meat Puppet</span>
+						</td>
+						<td>
+							meat: （哺乳動物の）肉<br>
+							puppet: <ruby>傀儡<rt>からかい</rt></ruby>；あやつり人形
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ウェイステッド" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/wasted.jpg"></td>
+						<td>
+							<span class="display">ウェイステッド</span>
+							<span class="literal">Wasted</span>
+						</td>
+						<td>無駄にされた</td>
+					</tr>
+					<tr>
+						<td><img alt="ベテランファイター" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/veteran-fighter.jpg"></td>
+						<td>
+							<span class="display">ベテランファイター</span>
+							<span class="literal">Veteran Fighter</span>
+						</td>
+						<td>
+							veteran: 熟練の<br>
+							fighter: 戦士
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ソーサラー" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/sorcerer.jpg"></td>
+						<td>
+							<span class="display">ソーサラー</span>
+							<span class="literal">Sorcerer</span>
+						</td>
+						<td>魔術師</td>
+					</tr>
+					<tr>
+						<td><img alt="デストロイヤー" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/destroyer.jpg"></td>
+						<td>
+							<span class="display">デストロイヤー</span>
+							<span class="literal">Destroyer</span>
+						</td>
+						<td>破壊者</td>
+					</tr>
+					<tr>
+						<td><img alt="ストロンガー" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/stronger.jpg"></td>
+						<td>
+							<span class="note rare">Rare Creature</span>
+							<span class="display">ストロンガー</span>
+							<span class="literal">Stronger</span>
+						</td>
+						<td>
+							stronger: 強固体<br>
+							<br>
+							ウェイステッドと比較して強固体の意味だと考えられる
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ヘイトレッド" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/hatred.jpg"></td>
+						<td>
+							<span class="note unique">Unique Creature</span>
+							<span class="display"><span class="syn">不断の怨嗟</span>ヘイトレッド</span>
+							<span class="literal"><span class="syn">Tireless Resentment</span>Hatred</span>
+						</td>
+						<td>hatred: 憎悪</td>
+					</tr>
+					<tr>
+						<td><img alt="クレイジーチャーリー" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/crazy-charlie.jpg"></td>
+						<td>
+							<span class="note guardian">1st/3rd Guardian's Gate</span>
+							<span class="display">クレイジーチャーリー</span>
+							<span class="literal">Crazy Charlie</span>
+						</td>
+						<td>
+							crazy: 気が狂った<br>
+							Charlie: チャーリー（男性名）
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="フラワームーブメント" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/flower-movement.jpg"></td>
+						<td>
+							<span class="note guardian">2nd Guardian's Gate</span>
+							<span class="display">フラワームーブメント</span>
+							<span class="literal">Flower Movement</span>
+						</td>
+						<td>
+							flower: 花<br>
+							movement: 動くこと<br>
+							<br>
+							解釈：動く花
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="カニバルデーモン" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/cannibal-demon.jpg"></td>
+						<td>
+							<span class="note guardian">3rd Guardian's Gate</span>
+							<span class="display">カニバルデーモン</span>
+							<span class="literal">Cannibal Demon</span>
+						</td>
+						<td>
+							cannibal: 人を喰う<br>
+							demon: 悪魔
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ウェイストライフ" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/waste-life.jpg"></td>
+						<td>
+							<span class="note guardian">Additional Guardian's Gate</span>
+							<span class="display">ウェイストライフ</span>
+							<span class="literal">Waste Life</span>
+						</td>
+						<td>
+							waste: 無駄にされた<br>
+							life: 人生
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h4 id="enemies-2">卑俗なる饗筵</h4>
+			<table class="enemies">
+				<thead>
+					<tr>
+						<th></th>
+						<th>モンスター名<br>Literal</th>
+						<th>解釈</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><img alt="ゴグールソルジャー" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/gogoole-soldier.jpg"></td>
+						<td>
+							<span class="display">ゴグールソルジャー</span>
+							<span class="literal">Gogoole Soldier</span>
+						</td>
+						<td>
+							gogoole: <strong>不詳</strong><br>
+							soldier: 兵隊
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ズールバーバリアン" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/zule-barbarian.jpg"></td>
+						<td>
+							<span class="display">ズールバーバリアン</span>
+							<span class="literal">Zule Barbarian</span>
+						</td>
+						<td>
+							zule: <strong>不詳</strong><br>
+							barbarian: 野蛮人
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ベノムストリング" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/venom-string.jpg"></td>
+						<td>
+							<span class="display">ベノムストリング</span>
+							<span class="literal">Venom String</span>
+						</td>
+						<td>
+							venom: 毒液<br>
+							string: 糸
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ヘルマーダー" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/hell-murderer.jpg"></td>
+						<td>
+							<span class="display">ヘルマーダー</span>
+							<span class="literal">Hell Murderer</span>
+						</td>
+						<td>
+							hell: 地獄<br>
+							murderer: 殺人者
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="マインドチューン" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/mind-tune.jpg"></td>
+						<td>
+							<span class="display">マインドチューン</span>
+							<span class="literal">Mind Tune</span>
+						</td>
+						<td>
+							mind: 精神<br>
+							tune: 調整された
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ロックボディ" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/rock-body.jpg"></td>
+						<td>
+							<span class="display">ロックボディ</span>
+							<span class="literal">Rock Body</span>
+						</td>
+						<td>
+							rock: 岩石<br>
+							body: からだ
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ミニチュアスタチュー" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/miniature-statue.jpg"></td>
+						<td>
+							<span class="note rare">Rare Creature</span>
+							<span class="display">ミニチュアスタチュー</span>
+							<span class="literal">Miniature Statue</span>
+						</td>
+						<td>
+							miniature: 小型の<br>
+							statue: 彫像
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ゴグールジャイアント" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/gogoole-giant.jpg"></td>
+						<td>
+							<span class="note unique">Unique Creature</span>
+							<span class="display"><span class="syn">怪物山脈</span>ゴグールジャイアント</span>
+							<span class="literal"><span class="syn">Monster Mountain</span>Gogoole Giant</span>
+						</td>
+						<td>
+							gogoole: <strong>不詳</strong><br>
+							giant: 巨人
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="マッドインストラクター" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/mad-instructor.jpg"></td>
+						<td>
+							<span class="note guardian">4th Guardian's Gate</span>
+							<span class="display">マッドインストラクター</span>
+							<span class="literal">Mad Instructor</span>
+						</td>
+						<td>
+							mad: 気が狂った<br>
+							instructor: 指導者
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="クレイジーチャーリー" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/crazy-charlie.jpg"></td>
+						<td>
+							<span class="note guardian">4th Guardian's Gate</span>
+							<span class="display">クレイジーチャーリー</span>
+							<span class="literal">Crazy Charlie</span>
+						</td>
+						<td>
+							crazy: 気が狂った<br>
+							Charlie: チャーリー（男性名）
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="ブラッドゼラチン" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/blood-gelatin.jpg"></td>
+						<td>
+							<span class="note guardian">5th/Final Guardian's Gate</span>
+							<span class="display">ブラッドゼラチン</span>
+							<span class="literal">Blood Gelatin</span>
+						</td>
+						<td>
+							blood: 血液<br>
+							gelatin: ゼラチン；動物の骨や皮から採れる水溶性のタンパク質。少し加熱して冷やすとゼリー状になる。
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="バルーンヘッド【炭】" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/balloon-head-coal-imp.jpg"></td>
+						<td>
+							<span class="note guardian">Specia/6th Guardian's Gate</span>
+							<span class="display">バルーンヘッド【炭】</span>
+							<span class="literal">Balloon Head Coal Imp</span>
+						</td>
+						<td>
+							ballon: 風船<br>
+							head: 頭
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="バルーンヘッド【炎】" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/balloon-head-flame-imp.jpg"></td>
+						<td>
+							<span class="note guardian">Specia/6th Guardian's Gate</span>
+							<span class="display">バルーンヘッド【炎】</span>
+							<span class="literal">Balloon Head Flame Imp</span>
+						</td>
+						<td>
+							ballon: 風船<br>
+							head: 頭
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="バルーンヘッド【灰】" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/balloon-head-ash-imp.jpg"></td>
+						<td>
+							<span class="note guardian">Specia/6th Guardian's Gate</span>
+							<span class="display">バルーンヘッド【灰】</span>
+							<span class="literal">Balloon Head Ash Imp</span>
+						</td>
+						<td>
+							ballon: 風船<br>
+							head: 頭
+						</td>
+					</tr>
+					<tr>
+						<td><img alt="サイアームツイン" class="lazyload" data-fancybox="enemies" src="../common/placeholder.png" data-src="enemies/psyarm-twins.jpg"></td>
+						<td>
+							<span class="note guardian">Final Guardian's Gate</span>
+							<span class="display"><span class="syn">悪塊双生児</span>サイアームツイン</span>
+							<span class="literal"><span class="syn">The Twins of Evil Lump</span>Psyarm Twins</span>
+						</td>
+						<td>
+							psy-：[接頭辞] 精神の、狂った<br>
+							arm: 腕<br>
+							twin: 双生児
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3 id="walk-through">ダンジョン攻略</h3>
+			<h4 id="walk-through-1">腐臭漂う監獄</h4>
+			<h4 id="walk-through-2">卑俗なる饗筵</h4>
+			<div class="movie">
+				<div class="header">
+					<span class="title">032. 邪教の司祭と目利き人</span>
+				</div>
+				<div class="scripts">
+					<p>
+						<span class="speaker">？？？ (A)</span>
+						首尾はどうです？　目利き人<span class="wo-name">ガウディン</span>。
+						<span class="speaker">目利き人ガウディン</span>
+						これはこれは、司祭様。ええ、上々で御座います。<br>
+						司祭様があの漆黒の魔女から『アレ』の生成方法を<br>
+						聞き出して頂いたおかげで、それはそれはもう。
+						<span class="speaker">司祭と呼ばれた女</span>
+						ふふふ……それは、よかったですわ。<br>
+						相応の代価を支払った甲斐があったというものです。
+						<span class="speaker">？？？ (B)</span>
+						すみません。お話中失礼いたします。<br>
+						よろしいですかな？　<span class="wo-name">カルコサス</span>司祭殿。
+						<span class="speaker">カルコサス</span>
+						これはこれは、<span class="wo-name">仮面の貴族</span>様。<br>
+						いつも資金提供の方、有難う御座います。<br>
+						さて、今日は、如何なる御用でしょうか？
+						<span class="speaker">仮面の貴族と呼ばれた男</span>
+						いえ、ちょっとアナタ達に<br>
+						忠告してさしあげたいことがありましてね。ええ。<br>
+						最近、<ruby>巷<rt>ちまた</rt></ruby>と賑わす、守護者の血を引くと言われる<br>
+						冒険者がいるのですが、ご存知でしょうか？<br>
+						その冒険者が魔法局の命を受け<br>
+						神隠し事件のことをかぎ回っているのです。<br>
+						なんでも、もう目利き人の存在を嗅ぎ付け<br>
+						この施設に来ているそうですよ。<br>
+						聞いた話によると、あの【<span class="wo-name">ゼロ</span>】より先んじて、<br>
+						<span class="wo-site">地下ドラグーン遺跡</span>の巨大な魔物を倒したとか。<br>
+						そんな人物なので注意した方がよいかと思いましてね。
+						<span class="speaker">カルコサス</span>
+						それはそれは、我らのことを気遣っていただき、<br>
+						まことに感謝いたします。<br>
+						でも、ご心配には及びませんわ。<br>
+						この<span class="wo-name">ガウディン</span>の狂気の実験により生み出されし、<br>
+						強力無比な魔物どもがこの施設を守っておりますのよ。<br>
+						そんな「伝説」を肩書きにするような輩なんぞ<br>
+						意に介す必要などございません。
+						<span class="speaker">目利き人ガウディン</span>
+						はっ、見つけ出し次第、魔物どもの餌にして<br>
+						見せましょうぞ！
+						<span class="speaker">カルコサス</span>
+						ふふふ……なんとも、頼もしいこと。
+						<span class="speaker">仮面の貴族と呼ばれた男</span>
+						おやおや、<br>
+						私の<ruby>杞憂<rt>きう</rt></ruby>ならよいですがねェ。
+					</p>
+				</div>
+				<div class="screenshots">
+					<img alt="邪教の司祭と目利き人" class="lazyload" data-fancybox="movie-032" src="../common/placeholder.png" data-src="movie/001.jpg">
+					<img alt="邪教の司祭と目利き人" class="lazyload" data-fancybox="movie-032" src="../common/placeholder.png" data-src="movie/002.jpg">
+					<img alt="邪教の司祭と目利き人" class="lazyload" data-fancybox="movie-032" src="../common/placeholder.png" data-src="movie/003.jpg">
+					<img alt="邪教の司祭と目利き人" class="lazyload" data-fancybox="movie-032" src="../common/placeholder.png" data-src="movie/004.jpg">
+					<img alt="邪教の司祭と目利き人" class="lazyload" data-fancybox="movie-032" src="../common/placeholder.png" data-src="movie/005.jpg">
+					<img alt="邪教の司祭と目利き人" class="lazyload" data-fancybox="movie-032" src="../common/placeholder.png" data-src="movie/006.jpg">
+					<img alt="邪教の司祭と目利き人" class="lazyload" data-fancybox="movie-032" src="../common/placeholder.png" data-src="movie/007.jpg">
+				</div>
+			</div>
+
+			<div class="movie">
+				<div class="header">
+					<span class="title">033. 目利き人（前）</span>
+				</div>
+				<div class="scripts">
+					<p>
+						<span class="speaker">目利き人ガウディン</span>
+						鍵はかけずにおいたよ。<br>
+						貴様に来てもらうためにねェ。ぐふふふ……。<br>
+						わざわざ良質な実験素材が自らやってきてくれるなんて<br>
+						愉快な話じゃないか。なぁ？<br>
+						貴様は、私を追い詰めたつもりでいるのだろうけど<br>
+						それは間違いだよ。<br>
+						<span class="wo-enemy">クレイジーチャーリー</span>を倒した？<br>
+						<span class="wo-enemy">マッドインストラクター</span>は？<br>
+						強靭な<span class="wo-enemy">バルーンヘッド</span>どもまで？<br>
+						だから何なのだ？<br>
+						貴様が倒してきた魔物なんざ、実験の過程で生まれた<br>
+						副産物にすぎない。<br>
+						出て来ォォォい！　<span class="wo-enemy">サイアームツイン</span>！！<br>
+						これが私の作り上げた最高傑作！<br>
+						究極の物理耐性と、究極の魔法耐性……<br>
+						それに命令に忠実かつ従順な知性を備えた<br>
+						頼もしく愛らしい私の自慢な道具たちだ。<br>
+						殺しはせん！　大事な実験素材だからなぁ！<br>
+						だが、手足はちょん切らせてもらうぞ。<br>
+						逃げられたりしたら面倒だからな！<br>
+						さあ行け、<span class="wo-enemy">サイアームツイン</span>！<br>
+						おまえたちの強さを見せつけてやれっ！
+					</p>
+				</div>
+				<div class="screenshots">
+					<img alt="目利き人（前）" class="lazyload" data-fancybox="movie-033" src="../common/placeholder.png" data-src="movie/008.jpg">
+					<img alt="目利き人（前）" class="lazyload" data-fancybox="movie-033" src="../common/placeholder.png" data-src="movie/009.jpg">
+					<img alt="目利き人（前）" class="lazyload" data-fancybox="movie-033" src="../common/placeholder.png" data-src="movie/010.jpg">
+					<img alt="目利き人（前）" class="lazyload" data-fancybox="movie-033" src="../common/placeholder.png" data-src="movie/011.jpg">
+				</div>
+			</div>
+
+			<div class="movie">
+				<div class="header">
+					<span class="title">034. 目利き人（後）</span>
+				</div>
+				<div class="scripts">
+					<p>
+						<span class="speaker">目利き人ガウディン</span>
+						ば、馬鹿な……<br>
+						わ、私の最高傑作の<span class="wo-enemy">サイアームツイン</span>が……<br>
+						は、話し合おう！<br>
+						いえ……話し合いましょう、冒険者さん！<br>
+						悪いのは私ではありません！<br>
+						実は妻子を人質に捕らえられていて、<br>
+						いやいや実験に協力させられていたのです！<br>
+						……<br>
+						……な、なんだ！<br>
+						その、私が嘘をついていると言わんばかりの目は！<br>
+						ヒ、ヒィッ！　こ……殺さないで！<br>
+						なんでも話します！　話しますから！
+					</p>
+					<p class="descriptive">
+						あなたは、ディメント騎士団を呼び、<br>
+						戦意を喪失した『目利き人』を引き渡した。
+					</p>
+					<p>
+						<span class="speaker">仮面の貴族</span>
+						おやおや、だから忠告したのに……ねえ。<br>
+						信仰心の強い人間というのは、自分が信じるもの以外の<br>
+						言葉を軽んじる傾向にあるようですね。<br>
+						私の素性を明かすことができたなら、<br>
+						違う結果になっていたかもしれませんが……ククク。<br>
+						それにしてもあの冒険者の頑張りは、大したものですね。<br>
+						その点は、認めてあげましょうか。<br>
+						まあ、このまま泳がすにしても、神隠し事件を<br>
+						追っている以上、また<span class="wo-name">シャーデ</span>さんと顔を<br>
+						合わせるのも時間の問題でしょうねぇ。<br>
+						さすがの<span class="wo-name">シャーデ</span>さんも守護者の<ruby>末裔<rt>まつえい</rt></ruby>と<br>
+						【<span class="wo-name">ゼロ</span>】とを同時に相手にするのは、<br>
+						少々辛いのではないでしょうか。<br>
+						……しかたありませんねェ。ちょっとだけ力を……<br>
+						いやいや、知恵を貸してあげましょうかね。<br>
+						その方が面白くなりそうですし……ククク。
+					</p>
+				</div>
+				<div class="screenshots">
+					<img alt="目利き人（後）" class="lazyload" data-fancybox="movie-034" src="../common/placeholder.png" data-src="movie/012.jpg">
+					<img alt="目利き人（後）" class="lazyload" data-fancybox="movie-034" src="../common/placeholder.png" data-src="movie/013.jpg">
+					<img alt="目利き人（後）" class="lazyload" data-fancybox="movie-034" src="../common/placeholder.png" data-src="movie/014.jpg">
+					<img alt="目利き人（後）" class="lazyload" data-fancybox="movie-034" src="../common/placeholder.png" data-src="movie/015.jpg">
+					<img alt="目利き人（後）" class="lazyload" data-fancybox="movie-034" src="../common/placeholder.png" data-src="movie/016.jpg">
+					<img alt="目利き人（後）" class="lazyload" data-fancybox="movie-034" src="../common/placeholder.png" data-src="movie/017.jpg">
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div id="toc">
+		<ul>
+			<li id="back2top"><a href="#top">トップページ</a></li>
+			<li>
+				<a href="#enemies">モンスターリスト</a>
+				<ul>
+					<li><a href="#enemies-1">腐臭漂う監獄</a></li>
+					<li><a href="#enemies-2">卑俗なる饗筵</a></li>
+				</ul>
+			</li>
+			<!-- <li><a href="#quest">クエスト受注</a></li> -->
+			<li>
+				<a href="#walk-through">ダンジョン攻略</a>
+				<ul>
+					<li><a href="#walk-through-1">腐臭漂う監獄</a></li>
+					<li><a href="#walk-through-2">卑俗なる饗筵</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<script>
+		( function ( i, s, o, g, r, a, m ) {
+			i[ 'GoogleAnalyticsObject' ] = r; i[ r ] = i[ r ] || function () {
+				( i[ r ].q = i[ r ].q || [] ).push( arguments )
+			}, i[ r ].l = 1 * new Date(); a = s.createElement( o ),
+				m = s.getElementsByTagwo-wo-Name( o )[ 0 ]; a.async = 1; a.src = g; m.parentNode.insertBefore( a, m )
+		} )( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
+		ga( 'create', 'UA-46801675-2', 'auto' );
+		ga( 'send', 'pageview' );
+	</script>
+</body>
+</html>
