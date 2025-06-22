@@ -1,0 +1,43 @@
+#preparation {
+	margin-bottom: 30px;
+	width:         800px;
+}
+
+#preparation thead th:nth-child( 1 ) {
+	width: 134px;
+}
+
+#preparation td {
+	border-bottom: none;
+	text-align: center;
+}
+
+#preparation th {
+	text-align: left;
+}
+
+table.riddle-items {
+	table-layout: fixed;
+	width:        710px;
+}
+
+.riddle-items img {
+	box-shadow: none;
+	width:      32px;
+}
+
+.riddle-items td {
+	vertical-align: middle;
+	white-space:    normal;
+}
+
+.riddle-items th:nth-child( 1 ) { width:  40px; }
+.riddle-items th:nth-child( 2 ) { width: 100px; }
+.riddle-items th:nth-child( 3 ) { width: 160px; }
+.riddle-items th:nth-child( 4 ) { width: 410px; }
+.riddle-items td:nth-child( 1 ) { text-align: center; }
+
+#vending-machines td {
+	border-bottom: none;
+	text-align: center;
+}

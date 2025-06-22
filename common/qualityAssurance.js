@@ -5,7 +5,7 @@ QA.migrateClasses = ( function () {
 	"use strict";
 	var _targetClass = [ "enemy", "warn", "item", "gold", "keyword", "name", "site", "law", "neu", "cha", "bifurcatio", "Goblin" ],
 		_prepare = function () {
-			$( "article" )
+			$( "main" )
 				.prepend( "<div id=\"class-migrate\"></div>" );
 		},
 		_core = function () {
@@ -39,11 +39,11 @@ QA.ragularUseCharacters = ( function () {
 	// var _chars = "",
 	var
 		_prepare = function () {
-			$( "article" )
+			$( "main" )
 				.prepend( "<div id=\"regular-use\"><span></span></div>" );
 		},
 		_core = function () {
-			var text = $( "article" ).html(),
+			var text = $( "main" ).html(),
 				result = "",
 				irregulars = [],
 				regularUseOnly = true;
@@ -59,7 +59,7 @@ QA.ragularUseCharacters = ( function () {
 					result += c;
 				}
 			}
-			$( "article" ).html( result );
+			$( "main" ).html( result );
 
 			if ( regularUseOnly ) {
 				$( "#regular-use" ).append( "<p class=\"regular-use-ok\">Regular Use OK!</p>" );

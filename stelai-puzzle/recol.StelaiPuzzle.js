@@ -301,11 +301,11 @@ RECOL.PuzzleState = ( function () {
 
 	var PuzzleState = RECOL.PuzzleState;
 
-	$( "#controles" )
+	$( "#controls" )
 		.on( "click", "#view-solution > span > span", PuzzleState.viewSolution )
 		.on( "click", "#puzzle-mode > span > span", PuzzleState.changeState )
-		.on( "click", "[data-controle=\"make\"]", PuzzleState.makePuzzle )
-		.on( "click", "[data-controle=\"reset\"]", PuzzleState.resetStelai );
+		.on( "click", "[data-control=\"make\"]", PuzzleState.makePuzzle )
+		.on( "click", "[data-control=\"reset\"]", PuzzleState.resetStelai );
 
 	$( "#puzzle-mode [data-mode=\"input\"]" )
 		.click();
